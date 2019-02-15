@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -41,13 +41,12 @@ When you edit access for a user or group, you might receive a message about not 
 ## Assigning new access
 {: #assignaccess}
 
-You can assign access by using any of the three types of policies:
+You can assign access to resources by using two types of policies:
 
 * Access to resources within a resource group including the option for just one or all
 * Access to resources in the account including the option for just one type or all types
-* Access to account management services including the option for just one or all services
 
-If you want to enable a user full administrator access to complete account management tasks such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must create two policies: one on **All Identity and Access enabled services** with the role administrator and one on **All Account Management Services** with the role administrator.
+If you want to enable a user full administrator access to complete [account management](/docs/iam/account_management.html) tasks such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must create two policies: one on **All Identity and Access enabled services** with the role administrator and one on **All Account Management Services** with the role administrator.
 {: tip}
 
 ### Access to resources within a resource group
@@ -79,18 +78,6 @@ To assign access to an individual resource in the account or access to all resou
     * **Resource ID**: Enter the name of your bucket.
 8. Choose any combination of roles to assign the wanted access for the user.
 9. Click **Assign**.
-
-
-### Access to account management services
-{: #acctmgmt}
-
-To assign access to one or all account management services, complete the following steps:
-
-1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
-2. From the row for the user that you want to assign access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and then click **Assign access**.
-3. Select to assign access to **Account Management Services**
-4. Select **All Account Management Services** or select a specific account management service.
-5. Select any combination of roles to assign the wanted access.
 
 ## Removing access
 
