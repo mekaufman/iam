@@ -41,6 +41,7 @@ Managing identity and access
     {: .topicgroup}
     Managing access
         mngiam.md
+        account_management.md
         mngcf.md
         mnginfra.md        
         groups.md
