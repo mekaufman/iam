@@ -17,7 +17,7 @@ lastupdated: "2019-01-28"
 # Updating a user's status
 {: #status}
 
-A user's assigned status depends on if the user accepted their invitation to join the account, they're a VPN-only user, or if the user adminstrator set the user as a disabled classic infrastructure user. 
+A user's assigned status depends on if the user accepted their invitation to join the account, they're a VPN-only user, or if the user administrator set the user as a disabled classic infrastructure user. 
 {:shortdesc}
 
 If you have the following access, you can update the status of another user:
