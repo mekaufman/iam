@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam/quickstart.html" path="iam"}
+{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam?topic=getstarted" path="iam"}
 Managing identity and access
 
     {: .navgroup id="learn"}
@@ -17,7 +17,7 @@ Managing identity and access
         users_roles.md
         cfaccess.md
         infrastructureaccess.md
-    
+
     bp_access.md
     {: .navgroup-end}
 
@@ -29,32 +29,32 @@ Managing identity and access
     Adding users to your account
         iamuserinv.md
         remove-users.md
-        
+
     {: .topicgroup}
-    Administering users        
+    Administering users
         parentuser.md
         update_status.md
         specific_ip.md
         vpn_password.md
         user_login.md
-     
+
     {: .topicgroup}
     Managing access
         mngiam.md
         account_management.md
         mngcf.md
-        mnginfra.md        
+        mnginfra.md
         groups.md
         accessgroup_rules.md
         userlist.md
-        
+
     {: .topicgroup}
-    Multifactor authentication    
+    Multifactor authentication
         mfatypes.md
         mfa.md
         totp.md
         external_mfa.md
-        securityquestions.md        
+        securityquestions.md
 
     {: .topicgroup}
     Working with services

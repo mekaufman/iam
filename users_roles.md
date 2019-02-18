@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-01-29"
+lastupdated: "2019-02-12"
 
 ---
 
@@ -69,7 +69,7 @@ With Cloud IAM, you can manage and define access for users and resources in your
 
 <dl>
 <dt>Platform management roles</dt> 
-<dd>Platform management roles cover a range of actions, including the ability to create and delete instances, manage aliases, bindings, and credentials, and manage access. The platform roles are administrator, editor, operator, viewer. Platform management roles also apply to account management services that enable users to invite users, manage service IDs, access policies, catalog entries, and track billing and usage depending on their assigned role on an account management service.</dd>
+<dd>Platform management roles cover a range of actions, including the ability to create and delete instances, manage aliases, bindings, and credentials, and manage access. The platform roles are administrator, editor, operator, viewer. Platform management roles also apply to [account management services](/docs/iam?topic=iam-account-services#account-services) that enable users to invite users, manage service IDs, access policies, catalog entries, and track billing and usage depending on their assigned role on an account management service.</dd>
 <dt>Service access roles</dt>
 <dd>Service access roles define a user or service’s ability to perform actions on a service instance, such as accessing the console or performing API calls. The service access roles are manager, writer, and reader. </dd>
 </dl> 
@@ -80,7 +80,7 @@ You might not see all of the roles that are listed here as options when you assi
 ### Platform management roles
 {: #platformroles}
 
-With platform management roles, users can be assigned varying levels of permission for performing platform actions within the account and on a service. For example, platform management roles that are assigned for catalog resources enable users to complete actions such as creating, deleting, editing, and viewing service instances. And, the platform management roles that are assigned for account management services enable users to complete actions such as inviting and removing users, working with resource groups, and viewing billing information. For more information about the account management services, see [Table 3. Example platform management roles and actions for account management services](#platformrolestable2).
+With platform management roles, users can be assigned varying levels of permission for performing platform actions within the account and on a service. For example, platform management roles that are assigned for catalog resources enable users to complete actions such as creating, deleting, editing, and viewing service instances. And, the platform management roles that are assigned for account management services enable users to complete actions such as inviting and removing users, working with resource groups, and viewing billing information. For more information about the account management services, see [Assigning access to account management services](/docs/iam?topic=iam-account-services#account-services).
 
 The following tables provide examples for some of the platform management actions that users can take within the context of catalog resources, resource groups, and account management services. See the documentation for each catalog offering to understand how the roles apply to users within the context of the service that is being used.
 
@@ -98,9 +98,6 @@ The first row of the table describes separate options that you can choose from w
 
 The following table describes the common actions that you can perform based on the role you're assigned for each account management service. Scroll horizontally to see all entries in the table.
 {: #acctmgmt}
-
-If you assign an access policy on **All account management services**, depending on the role that you select, the user can complete the following actions for each service for that role. In addition, this type of policy provides the user access to billing information and the ability to track usage based on their assigned role. See the following table for details.
-{: note}
 
 The first row of the table describes specific services that you can choose from when creating a policy, and the first column describes the selected type of role for the policy. The remaining cells map to which role is selected from the options in the first column, and which type of policy has been selected from the options in the first row.
 
@@ -128,6 +125,7 @@ Some services might map specific actions to the platform management roles that a
 {: caption="Table 4. Example platform management roles and actions for {{site.data.keyword.containershort_notm}} service" caption-side="top"}
 
 ### Service access roles
+{: #service_access_roles}
 
 Service access roles enable users to be assigned different levels of permission for calling the service's API and accessing the UI for the service. The following table provides example actions that can be taken depending on the assigned roles based on using the {{site.data.keyword.objectstorageshort}} service.
 
@@ -140,6 +138,5 @@ The actions that can be taken based on each assigned role vary based on the serv
 | Writer | Permissions beyond the reader role, including creating and editing service-specific resources | Create and destroy buckets and objects |
 | Manager | Permissions beyond the writer role to complete privileged actions as defined by the service, plus create and edit service-specific resources | Manage all aspects of data storage, create and destroy buckets and objects |
 {: caption="Table 5. Example service access user roles and actions" caption-side="top"}
-
 
 

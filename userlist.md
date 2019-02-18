@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-11-30"
 # Setting user view access
 {: #userlistview}
 
-As an {{site.data.keyword.Bluemix}} account owner, you can view all users in your account and define how users can view other users in the account.
+As an {{site.data.keyword.Bluemix}} account owner, you can view all users in your account and define how users can view other users in the account. 
 {:shortdesc}
 
 When the **Unrestricted view** option is selected, any user in the account can view other users from the Users page in {{site.data.keyword.Bluemix_notm}} console. When the **Restricted view** option is selected, users are restricted to viewing only the users in the account that they invited, share a Cloud Foundry org with, or users who are their descendants in the classic infrastructure user hierarchy, meaning the users that they invited or that one of their descendants invited.

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -20,7 +20,7 @@ lastupdated: "2018-11-30"
 If you have the correct access, you can update the parent for a user. Updating the parent user affects how a user sees other users in the account when the user list visibility setting is set to restricted. Users see only other users for which they are a parent and any other users invited by those descendants of the parent user.
 {:shortdesc}
 
-See [user list visibility setting](/docs/iam/userlist.html#userlistview) for more details about the setting.
+See [user list visibility setting](/docs/iam?topic=iam-userlistview#userlistview) for more details about the setting. 
 
 If you have the following access, you can update the parent for another user:
 

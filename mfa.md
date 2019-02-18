@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-30"
+  years: 2018, 2019
+lastupdated: "2019-01-30"
 
 ---
 
@@ -29,11 +29,11 @@ Review the following considerations before you enable IBMid MFA for your account
 * API keys for users and service IDs continue to work after MFA is enabled.
 * If you require the use of native CF CLI or UI login into Cloud Foundry, you must use API keys or single sign-on (SSO) after MFA is enabled for the account.
 * MFA for your account applies to a user's login, but does not apply to API calls. If a user has permission to make API calls to resources in your account, the user can do so without completing MFA. If the user belongs to other accounts, the user can make API calls to resources in your account by using an API key from an account that did not require MFA.
-* If you are a federated user, MFA is not supported.
-* If you require MFA for your account and you have users in your account that do not have an IBMid, you must enable one of the other MFA options for that user from the User details page in the {{site.data.keyword.Bluemix_notm}} console. For more information, see [Types of multifactor authentication](/docs/iam/mfatypes.html#types).
+* If you are a federated user, MFA is not supported. 
+* If you require MFA for your account and you have users in your account that do not have an IBMid, you must enable one of the other MFA options for that user from the User details page in the {{site.data.keyword.Bluemix_notm}} console. For more information, see [Types of multifactor authentication](/docs/iam?topic=iam-types#types).
 * Plan a communication and support strategy for users in your account:
   * Choose a date and time that you plan to enable MFA that results in the least impact to your business.
-  * Notify your account users after you enable MFA with information on how to [get set up](mfa.html#setupapp).
+  * Notify your account users after you enable MFA with information on how to [get set up](/docs/iam?topic=iam-enablemfa#setupapp).
 
 When the multifactor authentication account setting is enabled, all IBMid users in your account are prompted for IBMid MFA authentication upon login. If you have other MFA methods set up for any IBMid users in your account, they are no longer prompted for those MFA methods.
 {: tip}
@@ -41,7 +41,7 @@ When the multifactor authentication account setting is enabled, all IBMid users 
 ## Enabling MFA for all users in your account
 {: #enabling}
 
-To enable MFA, you must be the account owner. Enabling MFA does not affect users that are already logged in, as the enforcement of MFA on the account takes effect only at new logins. Make sure you notify your account users that MFA is enabled, and describe the impact to users at their next login.
+To enable MFA, you must be the account owner. Enabling MFA does not affect users that are already logged in, as the enforcement of MFA on the account takes effect only at new logins. Make sure you notify your account users that MFA is enabled, and describe the impact to users at their next login. 
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Settings**.
 2. Select **Multifactor authentication**.
@@ -50,11 +50,11 @@ To enable MFA, you must be the account owner. Enabling MFA does not affect users
 ## Setting up your TOTP
 {: #setupapp}
 
-After you enable MFA for your account, you must set up the one-time passcode with an authenticator app the next time that you log in. All users in your account must also set up the one-time passcode at their next login.
+After you enable MFA for your account, you must set up the one-time passcode with an authenticator app the next time that you log in. All users in your account must also set up the one-time passcode at their next login. 
 
 Complete the following steps to set up your one-time passcode with an authenticator app for the first time:
 
-1. Log in with your IBMid and password.
+1. Log in with your IBMid and password. 
 
   It might take up to 5 minutes for you to be able to log back in with MFA.
   {: note}
@@ -62,9 +62,9 @@ Complete the following steps to set up your one-time passcode with an authentica
 2. Select **Verify** on the **Verification is required** screen to set up MFA with an authenticator app.
 3. Select **Setup your authenticator app** to get a one-time code sent to your email to continue setting up the authenticator app.
 4. Select **Verify**.
-5. Scan the bar code with your app, or click **Can't scan the bar code?** to enter a provided key.
+5. Scan the bar code with your app, or click **Can't scan the bar code?** to enter a provided key. 
 6. Click **Continue** to enter your code.
-7. Enter your code and select **Verify**.
+7. Enter your code and select **Verify**. 
 
 If you encounter an error message that states that you've already set up authentication, but your verification code is not working or you do not have your verification code to enter, you must contact the [Help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") to reset your MFA enrollment.
 {: note}

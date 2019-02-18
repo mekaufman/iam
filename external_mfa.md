@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-12-07"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-12-07"
 # Ordering external authentication MFA for a user
 {: #external}
 
-As an administrator with the correct access, you can order external authentication and enable the multi-factor authentication (MFA) option for a user's login. You are charged a monthly fee for the external authentication options. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled unlike ID-based MFA. For more information, see [Types of multifactor authentication](/docs/iam/mfatypes.html#types).
+As an administrator with the correct access, you can order external authentication and enable the multi-factor authentication (MFA) option for a user's login. You are charged a monthly fee for the external authentication options. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled unlike ID-based MFA. For more information, see [Types of multifactor authentication](/docs/iam?topic=iam-types#types).
 {:shortdesc}
 
 ## Ordering external authentication
@@ -35,7 +35,7 @@ To order external authentication, complete the following steps:
 3. From the **User details** page, select **Order external authentication** in the Manage user's login section.
 4. Select **Symantec identity protection** or **Phone-based identity protection**.
     * For Symantec authentication, the user must download the [Symantec VIP](https://vip.symantec.com/){: new_window} ![External link icon](../icons/launch-glyph.svg) app and obtain a credential ID to continue with the ordering process.
-    * For phone-based authentication, you can proceed with the order, but your user must [set up their configuration](/docs/account/login_settings.html#third-party-MFA) before you can enable the option.
+    * For phone-based authentication, you can proceed with the order, but your user must [set up their configuration](/docs/account?topic=account-third-party-MFA#third-party-MFA) before you can enable the option.
 5. Based on your selection, follow the prompts to review the price and terms before you place the order.
 6. Click **Order** to finalize your selection.
 
@@ -59,7 +59,7 @@ To cancel an order for external authentication, you must be an account owner or 
 
 * Manage users classic infrastructure permission
 * Cancel services classic infrastructure permission
-* Administrator for the Support Center account management service or the view, edit, and add ticket migrated classic infrastructure permissions that are not available within the [migrated permission access groups](/docs/iam/infrastructureaccess.html#predefined).
+* Administrator for the Support Center account management service or the view, edit, and add ticket migrated classic infrastructure permissions that are not available within the [migrated permission access groups](/docs/iam?topic=iam-predefined#predefined).
 
 To cancel the external authentication order, complete the following steps:
 

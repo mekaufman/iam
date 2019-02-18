@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -23,6 +23,7 @@ Many of the capabilities of the {{site.data.keyword.Bluemix_notm}} Identity and 
 {:shortdesc}
 
 ## Create an authorization
+{: #create-auth}
 
 You can only grant the level of access that you have as a user of the target service. For example, if you only have viewer access on the service that is going to be accessed, then you can only assign the viewer role for the authorization.
 
@@ -36,6 +37,7 @@ Only services that allow this type of access to be granted are available as opti
 {: note}
 
 ## Remove an authorization
+{: #remove-auth}
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Authorizations**. 
 2. Identify the row for the authorization that you want to remove from the account.

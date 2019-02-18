@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-10-29"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -17,6 +17,7 @@ lastupdated: "2018-10-29"
 {: #iamconcepts}
 
 ## Identity
+{: #identity}
 
 The identity concept in {{site.data.keyword.Bluemix_notm}} IAM consists of the following components:
 
@@ -28,10 +29,11 @@ The identity concept in {{site.data.keyword.Bluemix_notm}} IAM consists of the f
 <dt>API keys</dt>
 <dd>{{site.data.keyword.cloud_notm}} API keys are available through Cloud IAM for you to use to authenticate by using API or CLI as a user or service ID. These API keys are provided through Cloud IAM and therefore cannot be used generally to authenticate with IBMid outside of IBM Cloud. A user can also have a single classic infrastructure API key that can be used to access classic infrastructure APIs; however, this is not required as you can use {{site.data.keyword.cloud_notm}} API keys to access the same APIs. </dd>
 <dt>Resources</dt>
-<dd>{{site.data.keyword.Bluemix_notm}} resources are identified by their cloud resource names (CRN). For more information, see [Cloud Resource Names](/docs/overview/crn.html#crn).</dd>
+<dd>{{site.data.keyword.Bluemix_notm}} resources are identified by their cloud resource names (CRN). For more information, see [Cloud Resource Names](/docs/overview?topic=overview-crn#crn).</dd>
 </dl>
 
 ## Access management
+{: #am}
 
 The concept of access management in {{site.data.keyword.Bluemix_notm}} consists of a few interrelated components, including users, resources, policies, roles, actions, and the Cloud IAM control system, which allow users to take actions on resources within an account. 
 

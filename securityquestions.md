@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2018-11-30"
 # Enabling MFA security questions for a user
 {: #questions}
 
-As an administrator with the correct access, you can enable the option for a user to be prompted for security questions and answers at login. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled unlike ID-based MFA. For more information, see [Types of multifactor authentication](/docs/iam/mfatypes.html#types).
+As an administrator with the correct access, you can enable the option for a user to be prompted for security questions and answers at login. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled unlike ID-based MFA. For more information, see [Types of multifactor authentication](/docs/iam?topic=iam-types#types). 
 {:shortdesc}
 
 If you have any of the following access, you can update this setting for other users in your account:
@@ -27,7 +27,7 @@ If you have any of the following access, you can update this setting for other u
 * You are an ancestor in the classic infrastructure hierarchy for the user and you have the Manage users classic infrastructure permission assigned
 
 
-To turn on this MFA option for a user, he or she must first [set up security questions](/docs/account/login_settings.html#security-questions) and answers from the profile Login settings page.
+To turn on this MFA option for a user, he or she must first [set up security questions](/docs/account?topic=account-security-questions#security-questions) and answers from the profile Login settings page. 
 {: note}
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Users**.

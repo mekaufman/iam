@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-30"
 
 
 
@@ -27,13 +27,13 @@ lastupdated: "2018-11-30"
 {: #whatisiam}
 {: faq}
 
-Identity and Access Management (IAM) enables you to securely authenticate users for platform services and control access to resources across the {{site.data.keyword.cloud_notm}} platform. A set of IBM Cloud services are enabled to use Cloud IAM for access control. They are organized into resource groups within your account to enable giving users quick and easy access to more than one resource at a time. Cloud IAM access policies are used to assign users and service IDs access to the resources within your account. For more information, see [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam/index.html#iamoverview).
+Identity and Access Management (IAM) enables you to securely authenticate users for platform services and control access to resources across the {{site.data.keyword.cloud_notm}} platform. A set of IBM Cloud services are enabled to use Cloud IAM for access control. They are organized into resource groups within your account to enable giving users quick and easy access to more than one resource at a time. Cloud IAM access policies are used to assign users and service IDs access to the resources within your account. For more information, see [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam?topic=iam-iamoverview#iamoverview).
 
 ## What is an IAM-enabled service?
 {: #iam-enabled}
 {: faq}
 
-An IAM-enabled service must be in a resource group and access to the service is given by using IAM access policies. When you create an IAM-enabled service from the catalog, you must assign it to a resource group. For more information, see [What is a resource?](/docs/resources/acct_resources.html#resource)
+An IAM-enabled service must be in a resource group and access to the service is given by using IAM access policies. When you create an IAM-enabled service from the catalog, you must assign it to a resource group. For more information, see [What is a resource?](/docs/resources?topic=resources-resource#resource)
 
 {{site.data.keyword.containerlong_notm}} is the only exception; it’s IAM-access controlled, but it's always assigned to the default resource group. Therefore, you aren’t given the option to choose one when you create it from the catalog. And, it can’t be assigned to any other resource group
 
@@ -73,7 +73,7 @@ An access group is used to easily organize a set of users and service IDs into a
 
 By using both resource groups and access groups, you can streamline the access assignment policy by assigning a limited number of policies. You can organize all the resources a specific group of users and service IDs needs access to in a single resource group, group all the users or service IDs into an access group, and then assign a single policy giving access to all resources in the resource group.
 
-For more information, see [Best practices for assigning access](/docs/iam/bp_access.html#account_setup).
+For more information, see [Best practices for assigning access](/docs/iam?topic=iam-account_setup#account_setup).
 
 ## How do I ensure that my users can create resources within a resource group?
 {: #resources}
@@ -105,7 +105,7 @@ When you have access to manage a resource group, you can view, edit the name, an
 
 When you have access to resources within a resource group, you can edit, delete, and create instances, or have all management actions for the specified services within the resource group depending on the assigned role.
 
-For example, platform management roles and actions for account management services, see [Platform roles table](/docs/iam/users_roles.html#platformrolestable2).
+For example, platform management roles and actions for account management services, see [Platform roles table](/docs/iam?topic=iam-userroles#platformrolestable2).
 
 ## Who can remove users?
 {: #remove-users}
@@ -121,7 +121,7 @@ The account owner can remove any users from the account, and any user with the f
 {: faq}
 
 1. Go to **Manage** &gt; **Access (IAM)**, and select **Settings**.
-2. Choose **Multi-factor authentication**, and then click **Yes, I'm sure**. For more information, see [Requiring MFA for users in your account](/docs/iam/mfa.html#enablemfa).
+2. Choose **Multi-factor authentication**, and then click **Yes, I'm sure**. For more information, see [Requiring MFA for users in your account](/docs/iam?topic=iam-enablemfa#enablemfa).
 
 ## What is the difference between service and platform roles?
 {: #service-platform-roles}
@@ -182,7 +182,7 @@ Even with the previously described access assigned, an account administrator can
 {: #users}
 {: faq}
 
-An account owner can view all users in the account and choose how users can view other users in the account on the Users page. An account owner can adjust the [user list visibility setting](/docs/iam/userlist.html#userlistview) on the Settings page by selecting one of the following options:
+An account owner can view all users in the account and choose how users can view other users in the account on the Users page. An account owner can adjust the [user list visibility setting](/docs/iam?topic=iam-userlistview#userlistview) on the Settings page by selecting one of the following options:
 
 * **Unrestricted view**: All users in your account can view everyone else in the account.
 * **Restricted view**: Limits the ability to view users on the Users page to only those who have been granted explicit access, along with those who have visibility of other users through a shared Cloud Foundry org or a classic infrastructure user hierarchy relationship.
@@ -203,4 +203,4 @@ Yes. You must assign a user access within one of the three access management sys
 {: #appid}
 {: faq}
 
-IAM is used to manage access to your {{site.data.keyword.cloud_notm}} services and resources. With {{site.data.keyword.appid_full_notm}}, you can take cloud security one step further by adding authentication into your web and mobile apps. With just a few lines of code, you can easily secure your Cloud-native apps and services that run on {{site.data.keyword.cloud_notm}}. Ready to get started? [Check out the docs](/docs/services/appid/index.html).
+IAM is used to manage access to your {{site.data.keyword.cloud_notm}} services and resources. With {{site.data.keyword.appid_full_notm}}, you can take cloud security one step further by adding authentication into your web and mobile apps. With just a few lines of code, you can easily secure your Cloud-native apps and services that run on {{site.data.keyword.cloud_notm}}. Ready to get started? [Check out the docs](/docs/services/appid?topic=appid-gettingstarted#gettingstarted).

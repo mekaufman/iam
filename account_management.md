@@ -23,7 +23,7 @@ As the account owner or the administrator of an account management service, you 
 ## Creating policies for account management service access
 {: #account-management-access}
 
-To assign access to one or all account management services, complete the following steps: 
+To assign access to one or all account management services, complete the following steps:
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and then click **Assign access**.
@@ -37,7 +37,7 @@ To grant another user full access to the account for the purposes of managing us
 ## Action to role mappings for account management services
 {: #account-management-actions-roles}
 
-The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users. 
+The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users.
 
 | Roles | Actions |
 |:-------|----------|
@@ -97,5 +97,3 @@ For the IAM Identity Service, these actions apply to service IDs within the acco
 | Editor |  All editor role actions for the account management services     |
 | Administrator |  All administrator role actions for the account management services   |
 {: caption="Table 7. Roles and example actions for a policy on all identity and access services" caption-side="top"}
-
-

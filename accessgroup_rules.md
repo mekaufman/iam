@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -21,12 +21,13 @@ lastupdated: "2018-11-12"
 You can create dynamic rules to automatically add federated users to access groups based on specific identity attributes. When your users log in with a federated ID, the data from the identity provider dynamically maps your users to an access group based on the rules that you set.
 {:shortdesc}
 
-Users already have specific identity information within your company's domain, and when they log in with a federated ID, this data can be passed through by using SAML assertions. The SAML assertions or attribute statements that are configured within the identity provider provide the data that is used to create each rule. For example, there might be a true or false attribute statement that defines users as a manager. This information can be used to add all users who are managers to a specific access group for managers that you created in your {{site.data.keyword.Bluemix_notm}} account. For more information, see the [Example rule](accessgroup_rules.html#example).
+Users already have specific identity information within your company's domain, and when they log in with a federated ID, this data can be passed through by using SAML assertions. The SAML assertions or attribute statements that are configured within the identity provider provide the data that is used to create each rule. For example, there might be a true or false attribute statement that defines users as a manager. This information can be used to add all users who are managers to a specific access group for managers that you created in your {{site.data.keyword.Bluemix_notm}} account. For more information, see the [Example rule](/docs/iam?topic=iam-rules#example).
 
 Only users who are already invited to the account can be mapped to access groups by using dynamic rules.
 {: note}
 
 ## Setting up rules
+{: #setup_rules}
 
 Dynamic rules are created by setting conditions that must be matched by the data that is configured within the identity provider and passed in with a user's federated ID during login. To create a rule, follow these steps:
 
