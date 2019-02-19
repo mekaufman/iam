@@ -23,8 +23,8 @@ Para efetuar login em uma nuvem dedicada na qual o serviço IAM público está d
 {:shortdesc}
 
 ```
-  $ ibmcloud login -a https://api.{dedicated_env}.bluemix.net
-  Terminal da API: https://api.{dedicated_env}.bluemix.net
+  $ ibmcloud login -a https://api.{dedicated_env}.cloud.ibm.com
+  API endpoint: https://api.{dedicated_env}.cloud.ibm.com
 
   O serviço de token público do IAM está disponível no ambiente dedicado.
   Efetue login com seu IBMid público ou use '--no-iam' para efetuar login somente como um usuário dedicado.
@@ -49,7 +49,7 @@ No entanto, se seu ID dedicado não foi conectado ao IBMid público, você será
 
   Escolha um tipo de credencial:
   1. Nome do usuário e senha
-  2. Um código de tempo (obtenha um em https://login.{dedicated_env}.bluemix.net.com/passcode)
+  2. Um código de tempo (obtenha um em https://login.{dedicated_env}.cloud.ibm.com/passcode)
   Enter a number>
 ```
 

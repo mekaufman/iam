@@ -23,8 +23,8 @@ Bei der Anmeldung bei einer dedizierten Cloud, bei der der öffentliche IAM-Serv
 {:shortdesc}
 
 ```
-  $ ibmcloud login -a https://api.{dedicated_env}.bluemix.net
-  API-Endpunkt: https://api.{dedicated_env}.bluemix.net
+  $ ibmcloud login -a https://api.{dedicated_env}.cloud.ibm.com
+  API-Endpunkt: https://api.{dedicated_env}.cloud.ibm.com
 
   Der öffentliche IAM-Token-Service ist in der dedizierten Umgebung verfügbar.
   Melden Sie sich mit Ihrer öffentlichen IBMid an oder verwenden Sie '--no-iam', wenn Sie sich nur als dedizierter Benutzer anmelden wollen.
@@ -49,7 +49,7 @@ Wenn Ihre dedizierte ID jedoch noch nicht mit der öffentlichen IBMid verbunden 
 
   Wählen Sie einen Berechtigungsnachweistyp aus:
   1. Benutzername und Kennwort
-  2. Einmaliger Code (Abruf unter https://login.{dedicated_env}.bluemix.net.com/passcode)
+  2. Einmaliger Code (Abruf unter https://login.{dedicated_env}.cloud.ibm.com/passcode)
   Geben Sie eine Zahl ein. >
 ```
 

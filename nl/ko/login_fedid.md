@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2015，2018
+  years: 2015，2019
 
-lastupdated: "2018-07-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -19,11 +19,11 @@ lastupdated: "2018-07-30"
 # 연합 ID로 로그인
 {: #federated_id}
 
-일회성 패스코드 또는 API 키를 사용하여 연합 사용자로 명령행 인터페이스(CLI)에서 {{site.data.keyword.Bluemix}}에 로그인할 수 있습니다. 
+일회성 패스코드 또는 API 키를 사용하여, 기업 또는 엔터프라이즈 싱글 사인온 ID를 사용하는 연합 사용자로 명령행 인터페이스(CLI)에서 {{site.data.keyword.Bluemix}}에 로그인할 수 있습니다.
 {: shortdesc}
 
 ## 일회성 패스코드 사용
-{:onetime_passcode}
+{: #onetime_passcode}
 
 연합 ID로 로그인하기 위해 일회성 패스코드 옵션을 사용할 때는 싱글 사인온(SSO) 매개변수를 지정하여 일회성 패스코드를 가져와서 로그인 시에 입력합니다. 
 
@@ -31,37 +31,43 @@ lastupdated: "2018-07-30"
 {: tip}
 
 ### {{site.data.keyword.Bluemix_notm}} CLI에서
+{: #login_cli}
 1. `--sso` 옵션을 `ibmcloud login` 명령과 함께 지정하십시오.
 2. 일회성 패스코드를 확보하려면 프롬프트에서 URL을 따르십시오
 3. CLI에서 패스코드 값을 입력으로 복사해서 붙여넣으십시오.
     
   ``` 
   ibmcloud login --sso
-  API endpoint: https://api.ng.bluemix.net
+  API endpoint: https://cloud.ibm.com
       
-  One Time Code (Get one at https://iam.ng.bluemix.net/oidc/passcode)> 
+  Get One Time Code from https://identity-2.us-south.iam.cloud.ibm.com/identity/passcode to proceed.
+  Open the URL in the default browser? [Y/n]>
+  One Time Code >
   Authenticating...
   OK
       
   ```
   
 ### Cloud Foundry CLI에서
+{: #login_cf_cli}
+
 1. `--sso` 옵션을 `cf login` 명령과 함께 지정하십시오. 
 2. 일회성 패스코드를 확보하려면 프롬프트에서 URL을 따르십시오 
 3. CLI에서 패스코드 값을 입력으로 복사해서 붙여넣으십시오. 
     
   ```
-  cf login --sso
-  API endpoint: https://api.ng.bluemix.net
+  cf login -a  https://api.us-south.cf.cloud.ibm.com --sso
+  
+  API endpoint: https://api.us-south.cf.cloud.ibm.com
       
-  One Time Code (Get one at https://login.ng.bluemix.net/UAALoginServerWAR/passcode)>
+  One Time Code (Get one at https://login.us-south.cf.cloud.ibm.com/UAALoginServerWAR/passcode)>
   Authenticating...
   OK
       
   ```
 
 ## API 키 사용
-{:api_key}
+{: #api_key}
 
 필요한 API 키는 클래식 인프라 API 키 또는 {{site.data.keyword.Bluemix_notm}} 서비스 API 키가 아니라 {{site.data.keyword.Bluemix_notm}} 플랫폼에서 인증하는 데 사용된 {{site.data.keyword.Bluemix_notm}} API 키입니다.
 
@@ -95,8 +101,9 @@ ibmcloud login --apikey <api_key_string>
   Cloud Foundry CLI를 사용하여 로그인하려면 `apikey`를 사용자 이름으로, API 키 문자열을 비밀번호로 지정하십시오.
 
     ```
-    cf login
-    API endpoint: https://api.ng.bluemix.net
+    cf login -a https://api.us-south.cf.cloud.ibm.com
+    
+    API endpoint: https://api.us-south.cf.cloud.ibm.com
   
     Email> apikey
   

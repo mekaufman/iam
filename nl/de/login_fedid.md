@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2015，2018
+  years: 2015，2019
 
-lastupdated: "2018-07-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -19,11 +19,11 @@ lastupdated: "2018-07-30"
 # Mit föderierter ID anmelden
 {: #federated_id}
 
-Als föderierter Benutzer können Sie sich bei {{site.data.keyword.Bluemix}} über die Befehlszeilenschnittstelle (CLI) anmelden, indem Sie entweder einen einmaligen Kenncode oder einen API-Schlüssel verwenden. 
+Als föderierter Benutzer, der eine unternehmensweite oder Unternehmens-Single Sign-on-ID verwendet, können Sie sich bei {{site.data.keyword.Bluemix}} über die Befehlszeilenschnittstelle (CLI) anmelden, indem Sie entweder einen einmaligen Kenncode oder einen API-Schlüssel verwenden.
 {: shortdesc}
 
 ## Einmaligen Kenncode verwenden
-{:onetime_passcode}
+{: #onetime_passcode}
 
 Wenn Sie die Option für den einmaligen Kenncode verwenden, um sich mit einer föderierten ID anzumelden, geben Sie den Single-Sign-on-Parameter (SSO) an, um einen einmaligen Kenncode anzufordern, den Sie dann bei der Anmeldung eingeben. 
 
@@ -31,37 +31,43 @@ Ein einmaliger Kenncode ruft Code über die {{site.data.keyword.Bluemix_notm}}-K
 {: tip}
 
 ### Über die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle
+{: #login_cli}
 1. Geben Sie die Option `--sso` mit dem Befehl `ibmcloud login` an.
 2. Folgen Sie der URL in der Eingabeaufforderung, um den einmaligen Kenncode abzurufen.
 3. Verwenden den Kenncodewert in der Befehlszeilenschnittstelle per Cut-and-paste als Ihre Eingabe.
     
   ``` 
   ibmcloud login --sso
-  API endpoint: https://api.ng.bluemix.net
-      
-  One Time Code (Get one at https://iam.ng.bluemix.net/oidc/passcode)> 
-  Authenticating...
+  API-Endpunkt: https://cloud.ibm.com
+
+  Zum Fortfahren einen einmaligen Code über https://identity-2.us-south.iam.cloud.ibm.com/identity/passcode anfordern.
+  URL im Standardbrowser öffnen? [J/N]>
+  Einmaliger Code >
+  Authentifizieren...
   OK
-      
+
   ```
   
 ### Über die Cloud Foundry-Befehlszeilenschnittstelle
+{: #login_cf_cli}
+
 1. Geben sie die Option `--sso` mit dem Befehl `cf login` an. 
 2. Folgen Sie der URL in der Eingabeaufforderung, um den einmaligen Kenncode abzurufen. 
 3. Verwenden den Kenncodewert in der Befehlszeilenschnittstelle per Cut-and-paste als Ihre Eingabe. 
     
   ```
-  cf login --sso
-  API endpoint: https://api.ng.bluemix.net
-      
-  One Time Code (Get one at https://login.ng.bluemix.net/UAALoginServerWAR/passcode)>
-  Authenticating...
+  cf login -a  https://api.us-south.cf.cloud.ibm.com --sso
+  
+  API-Endpunkt: https://api.us-south.cf.cloud.ibm.com
+
+  Einmaliger Code (Abruf unter https://login.us-south.cf.cloud.ibm.com/UAALoginServerWAR/passcode)>
+  Authentifizieren...
   OK
-      
+
   ```
 
 ## API-Schlüssel verwenden
-{:api_key}
+{: #api_key}
 
 Der erforderliche API-Schlüssel ist der {{site.data.keyword.Bluemix_notm}}-API-Schlüssel, der für die Authentifizierung bei der {{site.data.keyword.Bluemix_notm}}-Plattform verwendet wird, und nicht der API-Schlüssel für die klassische Infrastruktur oder der {{site.data.keyword.Bluemix_notm}}-Service-API-Schlüssel.
 
@@ -95,8 +101,9 @@ Der erforderliche API-Schlüssel ist der {{site.data.keyword.Bluemix_notm}}-API-
   Um sich über die Cloud Foundry-Befehlszeilenschnittstelle anzumelden, geben Sie `apikey` als Benutzernamen und die API-Schlüsselzeichenfolge als Kennwort an:
 
     ```
-    cf login
-    API endpoint: https://api.ng.bluemix.net
+    cf login -a https://api.us-south.cf.cloud.ibm.com
+    
+    API-Endpunkt: https://api.us-south.cf.cloud.ibm.com
   
     Email> apikey
   

@@ -23,8 +23,8 @@ Per accedere a un cloud dedicato in cui è disponibile il servizio IAM pubblico,
 {:shortdesc}
 
 ```
-  $ ibmcloud login -a https://api.{dedicated_env}.bluemix.net
-  Endpoint API: https://api.{dedicated_env}.bluemix.net
+  $ ibmcloud login -a https://api.{dedicated_env}.cloud.ibm.com
+  API endpoint: https://api.{dedicated_env}.cloud.ibm.com
 
   Il servizio del token IAM pubblico è disponibile nell'ambiente dedicato.
   Accedi con il tuo ID IBM pubblico o utilizza '--no-iam' per accedere soltanto come un utente dedicato.
@@ -49,8 +49,8 @@ Tuttavia, se il tuo ID dedicato non è stato connesso all'ID IBM pubblico, ti ve
 
   Scegli un tipo di credenziale:
   1. Nome utente e password
-  2. Codice monouso (Ottienine uno in https://login.{dedicated_env}.bluemix.net.com/passcode)
-  Immetti un numero>
+  2. Codice monouso (Ottienine uno in https://login.{dedicated_env}.cloud.ibm.com/passcode)
+  Enter a number>
 ```
 
 Seleziona un'opzione per immettere le credenziali per l'ID dedicato. Dopo aver eseguito correttamente l'autenticazione, il tuo ID dedicato verrà connesso al tuo ID IBM pubblico.

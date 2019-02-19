@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2015，2018
+  years: 2015，2019
 
-lastupdated: "2018-07-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -19,11 +19,11 @@ lastupdated: "2018-07-30"
 # Accesso con un ID federato
 {: #federated_id}
 
-Come utente federato, puoi accedere a {{site.data.keyword.Bluemix}} dalla CLI (command-line interface) utilizzando un passcode monouso o una chiave API. 
+Come utente federato che utilizza un ID SSO (single sign-on) sociale o aziendale, puoi accedere a {{site.data.keyword.Bluemix}} dall'interfaccia riga di comando (o CLI, command-line interface) utilizzando un passcode monouso oppure una chiave API.
 {: shortdesc}
 
 ## Utilizzo di un passcode monouso
-{:onetime_passcode}
+{: #onetime_passcode}
 
 Se utilizzi l'opzione di passcode monouso per accedere con un ID federato, devi specificare il parametro SSO (single-sign on) per ottenere un passcode monouso da immettere durante la fase di accesso. 
 
@@ -31,37 +31,43 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
 {: tip}
 
 ### Dalla CLI {{site.data.keyword.Bluemix_notm}}
+{: #login_cli}
 1. Specifica l'opzione `--sso` con il comando `ibmcloud login`.
 2. Segui l'URL nel prompt per ottenere il passcode monouso.
 3. Copia e incolla il valore del passcode nella CLI.
     
   ``` 
   ibmcloud login --sso
-  Endpoint API: https://api.ng.bluemix.net
-      
-  Codice monouso (Ottienine uno in https://iam.ng.bluemix.net/oidc/passcode)>
+  Endpoint API: https://cloud.ibm.com
+
+  Ottieni un codice monouso da https://identity-2.us-south.iam.cloud.ibm.com/identity/passcode per procedere.
+  Aprire l'URL nel browser predefinito? [S/n]>
+  Codice monouso >
   Autenticazione in corso...
   OK
-      
+
   ```
   
 ### Dalla CLI Cloud Foundry
+{: #login_cf_cli}
+
 1. Specifica l'opzione `--sso` con il comando `cf login`. 
 2. Segui l'URL nel prompt per ottenere il passcode monouso. 
 3. Copia e incolla il valore del passcode nella CLI. 
     
   ```
-  cf login --sso
-  Endpoint API: https://api.ng.bluemix.net
-      
-  Codice monouso (Ottienine uno in https://login.ng.bluemix.net/UAALoginServerWAR/passcode)>
+  cf login -a  https://api.us-south.cf.cloud.ibm.com --sso
+
+  Endpoint API: https://api.us-south.cf.cloud.ibm.com
+
+  Codice monouso (Ottienine uno a https://login.us-south.cf.cloud.ibm.com/UAALoginServerWAR/passcode)>
   Autenticazione in corso...
   OK
-      
+
   ```
 
 ## Utilizzo di una chiave API
-{:api_key}
+{: #api_key}
 
 La chiave API richiesta è la chiave API {{site.data.keyword.Bluemix_notm}} utilizzata per l'autenticazione con la piattaforma {{site.data.keyword.Bluemix_notm}} e non la chiave API dell'infrastruttura classica o la chiave API del servizio {{site.data.keyword.Bluemix_notm}}.
 
@@ -95,8 +101,9 @@ La chiave API richiesta è la chiave API {{site.data.keyword.Bluemix_notm}} util
   Per accedere utilizzando la CLI Cloud Foundry, specifica `apikey` come nome utente e la stringa della chiave API come password:
 
     ```
-    cf login
-    Endpoint API: https://api.ng.bluemix.net
+    cf login -a https://api.us-south.cf.cloud.ibm.com
+    
+    Endpoint API: https://api.us-south.cf.cloud.ibm.com
   
     Email> apikey
   
