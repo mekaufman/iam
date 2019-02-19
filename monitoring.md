@@ -27,4 +27,4 @@ You can track the following events:
 * Creating, updating, or deleting access policies
 * Logging in to {{site.data.keyword.Bluemix_notm}} by using an API key, authorization code, passcode, password, or an API key associated with a service ID
 
-To get started monitoring your user's actions, see [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla). For more information about each of the event areas that you can track, see [IAM events](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events#at_events).
+To get started monitoring your user's actions, see [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla). For more information about each of the event areas that you can track, see [IAM events](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_iam#at_events_iam).
