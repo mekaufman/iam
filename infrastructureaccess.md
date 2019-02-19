@@ -30,7 +30,7 @@ When you invite someone to the account, only you, the account owner, or a user w
 
 A set of classic infrastructure permissions for viewing and managing billing information and working with support cases are now migrated to access groups. The users in your account who were previously assigned these permissions are now assigned to the respective migrated permission access group. As a result, the classic infrastructure permissions can be directly managed by using IAM access policies.
 
-These special access groups include all the appropriate IAM policies to preserve the original behavior of the classic infrastructure permissions. For example, for a user to continue to see all updates from all users on a support case, the migrated permission access groups for the ticketing classic infrastructure permissions include an extra IAM policy on the User management service with Viewer role assigned. For more information, see [User access for working with support cases](/docs/get-support/support_access.html#access).
+These special access groups include all the appropriate IAM policies to preserve the original behavior of the classic infrastructure permissions. For example, for a user to continue to see all updates from all users on a support case, the migrated permission access groups for the ticketing classic infrastructure permissions include an extra IAM policy on the User management service with Viewer role assigned. For more information, see [Assigning user access for working with support cases](/docs/get-support/support_access.html#access).
 
 You can continue to manage these migrated classic infrastructure permissions for users directly through IAM by adding and removing them from the migrated permission access groups. The policies that these access groups have are locked to preserve the access behavior for their members. To maintain ease of use for newer IAM users, avoid deleting these access groups.
 
@@ -51,4 +51,4 @@ After your classic infrastructure permissions are migrated, you must discontinue
 | View cases | View all support cases |
 {: caption="Table 1. Predefined access groups" caption-side="top"}
 
-You can continue to manage users for the access groups. However, you might find it helpful to create new access groups that include a combination of access policies for the [IAM account management services](/docs/iam/users_roles.html#platformrolestable2) to make it easier to assign access for account management tasks and work with support cases.
+You can continue to manage users for the access groups. However, you might find it helpful to create new access groups that include a combination of access policies for the [IAM account management services](/docs/iam?topic=iam-account-services#account-services) to make it easier to assign access for account management tasks and work with support cases.
