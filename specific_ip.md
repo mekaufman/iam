@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -29,20 +33,17 @@ If you have the following assigned access, you can update the restricted IP addr
 
   * An IAM policy with the Editor or higher role on the User management service.
   * You are an ancestor in the classic infrastructure hierarchy for the user and you have the Manage users classic infrastructure permission assigned
-  
+
 You can manage this setting for yourself if you have the User-managed login setting enabled on your User details page.
 {: tip}
 
-To restrict a user to using only specific IP addresses, complete the following steps: 
+To restrict a user to using only specific IP addresses, complete the following steps:
 
-1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Users**. 
+1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Users**.
 2. Select a user from the list.
-3. From the User details page, go to the **IP address restrictions** section. 
+3. From the User details page, go to the **IP address restrictions** section.
 4. For **Cloud platform**, enter the IP addresses. The IP addresses listed are the only ones from which this user can log in to {{site.data.keyword.Bluemix}}.
-5. For **Classic infrastructure**, enter the IP addresses. The IP addresses listed are the only ones from which the user can call a classic infrastructure API. 
-  
+5. For **Classic infrastructure**, enter the IP addresses. The IP addresses listed are the only ones from which the user can call a classic infrastructure API.
+
   To enter a classic infrastructure IP address, the user must already have a classic infrastructure API key created.
   {: note}
- 
-
-

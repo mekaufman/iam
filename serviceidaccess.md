@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: service ID, service ID access, managing access for service IDs
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -95,7 +99,7 @@ To remove an existing policy:
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Service IDs**.
 2. Select the service ID from the table that you want to delete a service policy for.
-3. Click **Access policies**. 
+3. Click **Access policies**.
 4. Identify the row of the policy that you want to delete, and select **Remove** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.
 5. Review the details of the policy that you're about to remove, and then click **Remove** to confirm.
 

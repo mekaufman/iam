@@ -4,6 +4,10 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-30"
 
+keywords: maximum limits, IBM Cloud IAM, limits, maximum policies
+
+subcollection: iam
+
 ---
 
 
@@ -21,10 +25,10 @@ The following table lists the maximum limits for {{site.data.keyword.Bluemix_not
 | Resource | Max |
 |----------|---------|
 | Access groups per account | 500 |
-| Access groups per user | 50 | 
-| Service IDs per account | 2000 | 
+| Access groups per user | 50 |
+| Service IDs per account | 2000 |
 | API Keys per identity | 20 |
 {:caption="Table 1. IAM Account Limits" caption-side="top"}
 
-A maximum of 1,000 policies and service to service authorizations within one account is recommended to ensure optimal performance within your account. 
+A maximum of 1,000 policies and service to service authorizations within one account is recommended to ensure optimal performance within your account.
 {: tip}

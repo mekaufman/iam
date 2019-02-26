@@ -4,6 +4,10 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-28"
 
+keywords: user state, user status, change user status, update user status
+
+subcollection: iam
+
 ---
 
 
@@ -17,7 +21,7 @@ lastupdated: "2019-01-28"
 # Updating a user's status
 {: #status}
 
-A user's assigned status depends on if the user accepted their invitation to join the account, they're a VPN-only user, or if the user administrator set the user as a disabled classic infrastructure user. 
+A user's assigned status depends on if the user accepted their invitation to join the account, they're a VPN-only user, or if the user administrator set the user as a disabled classic infrastructure user.
 {:shortdesc}
 
 If you have the following access, you can update the status of another user:
@@ -49,9 +53,7 @@ When you update a user from from VPN-only status to Active status, the user must
 
 To change a user's status, complete the following steps:
 
-1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Users**. 
+1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Users**.
 2. Select a user from the list.
 3. From the User details page, select an option from the **User status** menu.  
 4. Click **Apply**.
-
-

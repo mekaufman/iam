@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: get started with IAM, IAM tutorial, IAM quick start
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -18,10 +22,10 @@ lastupdated: "2019-01-28"
 # Getting started tutorial
 {: #getstarted}
 
-This tutorial is intended to help you get up and running quickly with IBM Cloud Identity and Access Management (IAM) by inviting users to your account and assigning Cloud IAM access to those users. 
+This tutorial is intended to help you get up and running quickly with IBM Cloud Identity and Access Management (IAM) by inviting users to your account and assigning Cloud IAM access to those users.
 {:shortdesc}
 
-This tutorial is for IAM-enabled resources. For services that don't support creating Cloud IAM policies for managing access, you can use [Cloud Foundry access](/docs/iam?topic=iam-cfaccess#cfaccess) or [classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission). 
+This tutorial is for IAM-enabled resources. For services that don't support creating Cloud IAM policies for managing access, you can use [Cloud Foundry access](/docs/iam?topic=iam-cfaccess#cfaccess) or [classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission).
 {: note}
 
 
@@ -69,7 +73,7 @@ Next, continue to set up your group by adding users or service IDs:
 ### Assign access to your groups
 {: #group_access}
 
-After you create your groups, you can assign access to all entities within the group with a single policy or multiple policies. 
+After you create your groups, you can assign access to all entities within the group with a single policy or multiple policies.
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
 2. Select the name of the group that you want to assign access for.
@@ -93,10 +97,10 @@ To assign a new access policy, complete the following steps:
 2. Select the name of the user that you want to assign access.
 3. Click **Access policies**.
 4. Click **Assign access**.
-5. Choose how you want to assign access: 
+5. Choose how you want to assign access:
     * Select **Assign access within a resource group** to assign access to all resources within a group or to just resources for a specific service within a group. You can also provide the user with access to view, edit, or manage access to the resource group by selecting a role for access to the resource group. Select **No access** if you want the user to have only access to the specified resource and not the group that it's organized in.
-    * Select **Assign access to resources** to assign access to all Identity and Access enabled resources across the account, all resources of a specific service across the account, a single instance, or a single resource within a specific service instance. 
-    * Select **Assign access to Account management services** to assign access to all account management services or just one account management service. 
+    * Select **Assign access to resources** to assign access to all Identity and Access enabled resources across the account, all resources of a specific service across the account, a single instance, or a single resource within a specific service instance.
+    * Select **Assign access to Account management services** to assign access to all account management services or just one account management service.
 5. Select any combination of roles to define the scope of access. For more information, see [Cloud IAM roles](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
 6. Click **Assign**.
 
@@ -109,9 +113,9 @@ You can update existing access by editing the assigned roles for a user.
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Users**.
 2. Select the name of the user that you want to edit access for.
 3. Click **Access policies**.
-4. Click **Edit** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu on the row for the policy that you want to edit. 
+4. Click **Edit** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu on the row for the policy that you want to edit.
 4. Edit the policy by updating the assigned roles.
-5. Click **Save**. 
+5. Click **Save**.
 
 You can remove access from a user by clicking the **Remove** option from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu for the policy that you want to remove.
 

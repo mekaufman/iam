@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,7 +23,7 @@ lastupdated: "2019-01-30"
 An application programming interface key (API key) is a unique code that is passed in to an API to identify the calling application or user. API keys are used to track and control how the API is being used, for example to prevent malicious use or abuse of the API. The API key often acts as both a unique identifier and a secret token for authentication, and generally has a set of access that is specific to the identity associated with it.
 {:shortdesc}
 
-To view your API keys, go to **Manage** > **Access (IAM)**, and select **Users**. Then, select a user to navigate to the API keys section that's included on the User details page. 
+To view your API keys, go to **Manage** > **Access (IAM)**, and select **Users**. Then, select a user to navigate to the API keys section that's included on the User details page.
 
 ## {{site.data.keyword.cloud_notm}} API keys
 {: #ibm-cloud-api-keys}
@@ -42,5 +46,3 @@ Classic infrastructure API keys are used to call the APIs for classic infrastruc
 {: tip}
 
 Some services in {{site.data.keyword.Bluemix_notm}} might also provide an API key for you to use when you work with the service. For example, if you are viewing the offering details of a Watson service from your resource list, you can create a credential, which includes an API key and secret that is specific to just that service on the Service credentials page.
-
-

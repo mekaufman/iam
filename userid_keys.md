@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,7 +46,7 @@ To create an API key by using the CLI, use the following command:
 
 ```
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
-``` 
+```
 
 
 ## Updating an API key
@@ -140,7 +144,7 @@ ibmcloud iam api-key-unlock test-api-key
 
 If you are using a key rotation strategy, you might want to delete an older key and replace it with a new key.
 
-To delete an API key, complete the following steps: 
+To delete an API key, complete the following steps:
 
 1. Go to **Manage** &gt; **Access (IAM)**, and select **Users**. Then, click your name from the list and select the **User details** option.
 2. Identify the row of the API key that you want to delete, and select **Delete** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.

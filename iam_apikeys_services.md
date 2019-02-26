@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -17,15 +21,15 @@ lastupdated: "2019-01-30"
 # Invoking {{site.data.keyword.cloud_notm}} service APIs
 {: #iamapikeysforservices}
 
-To invoke an {{site.data.keyword.Bluemix}} service through an API, pass your credentials to the service's API to authenticate your user identity and your access to perform actions within the context of the service. 
+To invoke an {{site.data.keyword.Bluemix}} service through an API, pass your credentials to the service's API to authenticate your user identity and your access to perform actions within the context of the service.
 {:shortdesc}
 
-You can identify the caller in one of the following ways: 
+You can identify the caller in one of the following ways:
 
 * {{site.data.keyword.Bluemix_notm}} API key or service ID API key
 * {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) token
 
-[{{site.data.keyword.Bluemix_notm}} API keys](/docs/iam?topic=iam-userapikey#userapikey), [service ID API keys](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys), and IAM tokens uniquely identify the caller’s identity.  The caller identity is either an {{site.data.keyword.Bluemix_notm}} user or a service ID that was created in an {{site.data.keyword.Bluemix_notm}} account. 
+[{{site.data.keyword.Bluemix_notm}} API keys](/docs/iam?topic=iam-userapikey#userapikey), [service ID API keys](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys), and IAM tokens uniquely identify the caller’s identity.  The caller identity is either an {{site.data.keyword.Bluemix_notm}} user or a service ID that was created in an {{site.data.keyword.Bluemix_notm}} account.
 
 The API keys are credentials that consist of a long series of random characters or numbers. An {{site.data.keyword.Bluemix_notm}} identity can have multiple API keys. Each of these API keys can be managed independently, meaning if this API key is used by your service only, you can delete the API key without disrupting some other component.
 
@@ -42,7 +46,7 @@ The target service API must introspect the {{site.data.keyword.Bluemix_notm}} AP
 
 Using an {{site.data.keyword.Bluemix_notm}} API key is convenient, and it makes it easy to discover new APIs and quickly try out prototypes. This method requires you to send the {{site.data.keyword.Bluemix_notm}} API key to the target service‘s API in a readable format, which unnecessarily compromises the API key. Additionally, as the target service’s API must always introspect the API key, this method is less performant and therefore not recommended for production work loads.
 
-To authenticate with a service's API by using an API key, complete the following steps: 
+To authenticate with a service's API by using an API key, complete the following steps:
 
   1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/iam?topic=iam-userapikey#creating-an-api-key) if you have not already.
   2. Send the {{site.data.keyword.Bluemix_notm}} API key as defined in [RFC 7617](https://tools.ietf.org/html/rfc7617){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") as HTTP header “Authorization”. Use `apikey` as the user name, and the API key value as the password.
@@ -69,11 +73,11 @@ To retrieve an IAM access token, the API client must first invoke an {{site.data
 
 To authenticate with a service's API by using an access token, complete the following steps:
 
-  1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/iam?topic=iam-userapikey#creating-an-api-key) if you have not already. 
+  1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/iam?topic=iam-userapikey#creating-an-api-key) if you have not already.
   2. The next step for the API client is the retrieval of an IAM access token, as described in [Getting an IAM token from an API key](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey).
-  3. From the response, extract the property `access_token` to get the IAM access token. `expires_in` indicates the seconds until the IAM access token `access_token` expires. Either use this relative value or the absolute time stamp `expiration` based in [UNIX time](https://en.wikipedia.org/wiki/Unix_time){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"). 
+  3. From the response, extract the property `access_token` to get the IAM access token. `expires_in` indicates the seconds until the IAM access token `access_token` expires. Either use this relative value or the absolute time stamp `expiration` based in [UNIX time](https://en.wikipedia.org/wiki/Unix_time){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
   4. Send the IAM access token as described in [RFC 6750, section 2.1. Authorization Request Header Field](https://tools.ietf.org/html/rfc6750#page-5){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"):
-   
+
 Review the following example:
 
   1.	Use the HTTP header Authorization
@@ -83,9 +87,6 @@ Review the following example:
     ```
     curl -H "Authorization: Bearer eyJhbGciOiJSUzI1Ng..."
     ```
-        
+
   Use the same IAM access token for subsequent IBM Cloud service API calls to achieve the best performance and scalability.
   {: tip}
-
-
-

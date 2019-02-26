@@ -6,6 +6,11 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: IBM Cloud IAM, user identities, service ID, policies, access management, roles, actions
+
+subcollection: iam
+
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -35,7 +40,7 @@ The identity concept in {{site.data.keyword.Bluemix_notm}} IAM consists of the f
 ## Access management
 {: #am}
 
-The concept of access management in {{site.data.keyword.Bluemix_notm}} consists of a few interrelated components, including users, resources, policies, roles, actions, and the Cloud IAM control system, which allow users to take actions on resources within an account. 
+The concept of access management in {{site.data.keyword.Bluemix_notm}} consists of a few interrelated components, including users, resources, policies, roles, actions, and the Cloud IAM control system, which allow users to take actions on resources within an account.
 
 You can review the following list to learn more about these Cloud IAM components:
 
@@ -55,8 +60,3 @@ You can review the following list to learn more about these Cloud IAM components
 <dt>Access management system</dt>
 <dd>The Cloud IAM control system allows or denies actions by users within the context of a service based on the assigned policy. When a user tries to complete a specific action, the control system uses the attributes that are defined in the policy to determine whether the user has permission to perform that task.</dd>
 </dl>
-
-
-
-
-

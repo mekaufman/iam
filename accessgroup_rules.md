@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: dynamic rules, access groups, specific identity attributes
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}

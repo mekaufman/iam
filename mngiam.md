@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,7 +23,7 @@ lastupdated: "2019-01-28"
 {: #iammanidaccser}
 
 To manage access or assign new access for users by using IAM policies, you must be the account owner, administrator on all services in the account, or the assigned administrator for the particular service or service instance. For more information about access policies and roles, see [IAM access](/docs/iam?topic=iam-userroles#userroles).
-{:shortdesc} 
+{:shortdesc}
 
 ## Editing existing access
 {: #edit_existing}
@@ -42,7 +46,7 @@ When you edit access for a user or group, you might receive a message about not 
 ## Assigning new access
 {: #assign_new_access}
 
-You can assign access to resource by using two types of policies: 
+You can assign access to resource by using two types of policies:
 
 * Access to resources within a resource group including the option for just one or all
 * Access to resources in the account including the option for just one type or all types
@@ -50,7 +54,7 @@ You can assign access to resource by using two types of policies:
 If you want to enable a user full administrator access to complete [account management](/docs/iam?topic=iam-account-services#account-services) tasks such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must create two policies: one on **All Identity and Access enabled services** with the role administrator and one on **All Account Management Services** with the role administrator.
 {: tip}
 
-### Access to resources within a resource group 
+### Access to resources within a resource group
 {: #access_to_resources}
 
 To assign access to all resources in a resource group or to just one service within a resource group, complete the following steps:
@@ -67,15 +71,15 @@ To assign access to all resources in a resource group or to just one service wit
 ### Access to resources
 {: #resourceaccess}
 
-To assign access to an individual resource in the account or access to all resources in the account, complete the following steps: 
+To assign access to an individual resource in the account or access to all resources in the account, complete the following steps:
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu, and then click **Assign access**.
 3. Select to **Assign access to resources**.
 4. Select a service or select **All Identity and Access enabled services**.
-5. Select **All current regions** or a specific region, if your are prompted. 
+5. Select **All current regions** or a specific region, if your are prompted.
 6. Select **All current service instances** or select a specific service instance.
-7. Depending on the service that you selected, you might see the following fields. If you don't enter values for these fields, the policy is assigned at the service instance level instead of the bucket level. 
+7. Depending on the service that you selected, you might see the following fields. If you don't enter values for these fields, the policy is assigned at the service instance level instead of the bucket level.
     * **Resource type**: Enter **bucket**.
     * **Resource ID**: Enter the name of your bucket.
 8. Choose any combination of roles to assign the wanted access for the user.

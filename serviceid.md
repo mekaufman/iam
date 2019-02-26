@@ -3,8 +3,12 @@
 copyright:
 
   years: 2017, 2019
-  
+
 lastupdated: "2019-01-30"
+
+keywords: service ID, create service ID, lock service ID, service ID example
+
+subcollection: iam
 
 ---
 
@@ -20,7 +24,7 @@ lastupdated: "2019-01-30"
 
 A service ID identifies a service or application similar to how a user ID identifies a user. A service ID that you create can be used to enable an application outside of {{site.data.keyword.Bluemix_notm}} access to your {{site.data.keyword.Bluemix_notm}} services. You can assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. Since service IDs are not tied to a specific user, if a user happens to leave an organization and is deleted from the account, the service ID remains ensuring that your application or service stays up and running.
 
-When you create a service ID, you create a unique name and description that is easy for you to identify and work with in the UI. Once you have created your service ID, you can create API keys specific to each service ID that your application can use to authenticate with your {{site.data.keyword.Bluemix_notm}} services. To ensure that your application has the appropriate access for authenticating with your {{site.data.keyword.Bluemix_notm}} services, you use access policies assigned to each service ID that you create. 
+When you create a service ID, you create a unique name and description that is easy for you to identify and work with in the UI. Once you have created your service ID, you can create API keys specific to each service ID that your application can use to authenticate with your {{site.data.keyword.Bluemix_notm}} services. To ensure that your application has the appropriate access for authenticating with your {{site.data.keyword.Bluemix_notm}} services, you use access policies assigned to each service ID that you create.
 
 The access policies associated with a service ID enable specific actions that can be taken when that service ID is used to access a specific service. A single service ID can have multiple policies assigned that define the level of access allowed when accessing multiple Identity and access-enabled services, and even different instances of a single service. For example, you have two services with two service instances each. For example, you might assign the Viewer role for all available instances of one service and assign the Editor role for only one instance of a second service. This way you can customize access to multiple services, but use a single API key for authentication to all.
 
@@ -30,12 +34,12 @@ The access policies associated with a service ID enable specific actions that ca
 
 To create a service ID, complete the following steps:
 
-1. Go to **Manage** &gt; **Access (IAM)**, and select **Service IDs**. 
+1. Go to **Manage** &gt; **Access (IAM)**, and select **Service IDs**.
 2. Click **Create**.
-3. Follow the process to create a name and description for your service ID. 
-4. Click **Create**. 
+3. Follow the process to create a name and description for your service ID.
+4. Click **Create**.
 
-Then, hover on the row of a service ID to use the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu to manage your service ID. You can start by assigning a policy and creating API keys. For more information about working with API keys, see [Managing service ID API keys](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys). 
+Then, hover on the row of a service ID to use the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu to manage your service ID. You can start by assigning a policy and creating API keys. For more information about working with API keys, see [Managing service ID API keys](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys).
 
 ## Updating a service ID
 {: #update_serviceid}
@@ -47,7 +51,7 @@ Any changes that you make to an existing service ID, such as changing the assign
 ## Locking a service ID
 {: #lock_serviceid}
 
-To avoid a situation where your service ID is deleted causing an outage or disruption for the users of your service, you have the option to lock your service ID using the UI or CLI. Locking a service ID also prevents any policies from being changed, deleted, or assigned. In addition to the ability to lock a service ID, you can [lock individual API keys](/docs/iam?topic=iam-lockkey#lockkey) that are associated with each service ID that you create in your account. 
+To avoid a situation where your service ID is deleted causing an outage or disruption for the users of your service, you have the option to lock your service ID using the UI or CLI. Locking a service ID also prevents any policies from being changed, deleted, or assigned. In addition to the ability to lock a service ID, you can [lock individual API keys](/docs/iam?topic=iam-lockkey#lockkey) that are associated with each service ID that you create in your account.
 
 While locked service IDs cannot be deleted from the account and the access policies can't be updated, locked service IDs can still be removed from any access group that they are added to. This means that any access that is assigned to the ID by its membership in an access group is removed when the service ID is removed from the access group.
 {: note}
@@ -59,14 +63,14 @@ In order for a user to have access to lock and unlock service IDs and API keys t
 
 To assign access to all service IDs in the account, set an access policy for account management services with the following details:
 
-* Editor or Administrator role 
+* Editor or Administrator role
 * IAM Identity Service
 
 To assign access to a specific service ID in the account, set an access policy for account management services with the following details:
 
 * Editor or Administrator role
 * IAM Identity Service
-* Specify "serviceid" in the Resource type field 
+* Specify "serviceid" in the Resource type field
 * Specify the service ID identifier in the Resource ID field
 
 To get the identifier of a specific service ID, go to **Manage** > **Access (IAM)**, and select **Service IDs**. Select the service ID that you want to view details for, and copy the ID value.
@@ -157,5 +161,3 @@ The following are examples of how a Service ID is used with the {{site.data.keyw
 
 - {{site.data.keyword.objectstorageshort}} - [Getting Started](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started-cli-#getting-started-cli-).
 - Cloud SQL Query - [How to use the SQL Query REST API ![External link icon](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}.
-
-

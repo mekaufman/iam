@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: parent user, change parent user, classic infrastructure hierarchy
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -20,7 +24,7 @@ lastupdated: "2019-01-28"
 If you have the correct access, you can update the parent for a user. Updating the parent user affects how a user sees other users in the account when the user list visibility setting is set to restricted. Users see only other users for which they are a parent and any other users invited by those descendants of the parent user.
 {:shortdesc}
 
-See [user list visibility setting](/docs/iam?topic=iam-userlistview#userlistview) for more details about the setting. 
+See [user list visibility setting](/docs/iam?topic=iam-userlistview#userlistview) for more details about the setting.
 
 If you have the following access, you can update the parent for another user:
 

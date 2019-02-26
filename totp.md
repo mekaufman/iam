@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -37,4 +41,3 @@ To turn on this MFA option for a user, he or she must first [set up TOTP](/docs/
 
 You can manage this setting for yourself if you have the User-managed login setting enabled on your User details page.
 {: tip}
-

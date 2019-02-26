@@ -5,6 +5,10 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-28"
 
+keywords: advantage of access groups, access assignment process, assign access, best practice, access management, strategy
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -39,7 +43,7 @@ Though these suggestions are designed for a hypothetical scenario, you can confi
 ## Creating access groups
 {: #access-group-setup}
 
-To create an access group, complete the following steps: 
+To create an access group, complete the following steps:
 
 1. In the {{site.data.keyword.Bluemix}} console, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
 2. Click **Create**.
@@ -53,7 +57,7 @@ After you create an access group, you can add users and service IDs to the group
 
 A policy consists of a subject, target, and role. The subject in this case is the access group. The target is what you want the subject to access, such as a set of resources, a service instance, all services in the account, or all instances of a service. The role defines the level of access that is granted to a user.
 
-The most commonly used roles are viewer, editor, and administrator. The viewer role provides the least amount of access for viewing instances and resource groups in an account. The editor role has more access for creating, editing, deleting, and binding service instances. The administrator role includes everything for working with a service instance and can assign access to others. However, there are two different categories of roles that you should consider: platform and service. For more information about the roles that can be assigned, see the [IAM Cloud roles](/docs/iam?topic=iam-iamusermanrol#iamusermanrol). 
+The most commonly used roles are viewer, editor, and administrator. The viewer role provides the least amount of access for viewing instances and resource groups in an account. The editor role has more access for creating, editing, deleting, and binding service instances. The administrator role includes everything for working with a service instance and can assign access to others. However, there are two different categories of roles that you should consider: platform and service. For more information about the roles that can be assigned, see the [IAM Cloud roles](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
 
 ## Assigning access to access groups
 {: #assigning-access}
@@ -70,5 +74,3 @@ You can organize resources in a resource group and users and service IDs into an
 
 Easily give multiple users administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, use the **Assign access to resources** option, and select **All Identity and Access enabled services** with the administrator role assigned. To create the second policy, use the **Assign access to Account Management Services** option, and select **All Account Management Services** with the administrator role assigned.
 {: tip}
-
-
