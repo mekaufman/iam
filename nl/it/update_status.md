@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-30"
+  years: 2018, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-11-30"
 # Aggiornamento dello stato di un utente
 {: #status}
 
-Lo stato assegnato di un utente dipende da se l'utente ha accettato l'invito a unirsi all'account, è un utente solo VPN o se l'amministratore utente imposta l'utente come utente dell'infrastruttura classica disabilitata.
+Lo stato assegnato di un utente dipende da se l'utente ha accettato l'invito a unirsi all'account, se è un utente solo VPN o se l'amministratore utente imposta l'utente come utente dell'infrastruttura classica disabilitata.
 {:shortdesc}
 
 Se disponi del seguente accesso, puoi aggiornare lo stato di un altro utente:
@@ -25,9 +25,10 @@ Se disponi del seguente accesso, puoi aggiornare lo stato di un altro utente:
   * Una politica IAM con ruolo Editor o superiore nel servizio di gestione utenti.
   * Sei un predecessore nella gerarchia dell'infrastruttura classica per l'utente e ti è stata assegnata l'autorizzazione di gestione utenti dell'infrastruttura classica
 
-Per ulteriori informazioni sui tipi di stato utente, vedi [Stati utente](/docs/iam/userstatus.html#status).
+Per ulteriori informazioni sui tipi di stato utente, vedi [Stati utente](/docs/iam?topic=iam-user_status#user_status).
 
 ## Opzioni per modificare lo stato di un utente
+{: #status_options}
 
 Per aggiornare lo stato di un utente, puoi scegliere tra le seguenti opzioni:
 
@@ -44,10 +45,13 @@ Quando aggiorni un utente dallo stato Solo VPN allo stato Attivo, l'utente deve 
 {: note}
 
 ## Aggiornamento dello stato di un utente
+{: #update_user_status}
 
 Per modificare lo stato di un utente, completa la seguente procedura:
 
-1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Utenti**.
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Utenti**. 
 2. Seleziona un utente dall'elenco.
 3. Dalla pagina Dettagli utente, seleziona un'opzione dal menu **Stato utente**.  
 4. Fai clic su **Applica**.
+
+

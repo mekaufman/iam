@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-10-29"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -17,6 +17,7 @@ lastupdated: "2018-10-29"
 {: #iamconcepts}
 
 ## Identità
+{: #identity}
 
 Il concetto di identità in {{site.data.keyword.Bluemix_notm}} IAM è costituito dai seguenti componenti:
 
@@ -26,12 +27,13 @@ Il concetto di identità in {{site.data.keyword.Bluemix_notm}} IAM è costituito
 <dt>Identità di servizi e di applicazioni</dt>
 <dd>Gli ID servizio rappresentano la funzione di Cloud IAM utilizzata per fornire un'identità separata per i servizi e le applicazioni. Puoi creare un ID servizio che venga utilizzato da un'applicazione che deve accedere ai tuoi servizi {{site.data.keyword.Bluemix_notm}} in modo che non sia necessario utilizzare le credenziali dei singoli utenti.</dd>
 <dt>Chiavi API</dt>
-<dd>Le chiavi API {{site.data.keyword.cloud_notm}} sono disponibili tramite Cloud IAM per l'autenticazione mediante API o CLI come utente o ID servizio. Queste chiavi API vengono fornite tramite Cloud IAM e pertanto non possono essere utilizzate generalmente per l'autenticazione con l'ID IBM all'esterno di IBM Cloud. Un utente può anche avere una singola chiave API dell'infrastruttura classica che può essere utilizzata per accedere alle API dell'infrastruttura classica; tuttavia, questa non è necessaria perché puoi utilizzare le chiavi API {{site.data.keyword.cloud_notm}} per accedere alle stesse API.</dd>
+<dd>Le chiavi API {{site.data.keyword.cloud_notm}} sono disponibili tramite Cloud IAM per l'autenticazione mediante API o CLI come utente o ID servizio. Queste chiavi API vengono fornite tramite Cloud IAM e pertanto non possono essere utilizzate generalmente per l'autenticazione con l'ID IBM all'esterno di IBM Cloud. Un utente può anche avere una singola chiave API dell'infrastruttura classica che può essere utilizzata per accedere alle API dell'infrastruttura classica; tuttavia, questa non è necessaria perché puoi utilizzare le chiavi API {{site.data.keyword.cloud_notm}} per accedere alle stesse API. </dd>
 <dt>Risorse</dt>
-<dd>Le risorse {{site.data.keyword.Bluemix_notm}} sono identificate dai loro nomi di risorsa cloud (CRN). Per ulteriori informazioni, vedi [Nomi delle risorse cloud](/docs/overview/crn.html#crn).</dd>
+<dd>Le risorse {{site.data.keyword.Bluemix_notm}} sono identificate dai loro nomi di risorsa cloud (CRN). Per ulteriori informazioni, vedi [Nomi delle risorse cloud](/docs/overview?topic=overview-crn#crn).</dd>
 </dl>
 
 ## Gestione accesso
+{: #am}
 
 Il concetto di gestione dell'accesso in {{site.data.keyword.Bluemix_notm}} è costituito da alcuni componenti correlati, inclusi utenti, risorse, politiche, ruoli, azioni e il sistema di controllo Cloud IAM, che consentono agli utenti di intraprendere azioni sulle risorse all'interno di un account. 
 

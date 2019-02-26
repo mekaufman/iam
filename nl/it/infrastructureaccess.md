@@ -11,6 +11,7 @@ lastupdated: "2018-11-30"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:important: .important}
 {:new_window: target="_blank"}
 
 # Autorizzazioni dell'infrastruttura classica
@@ -29,11 +30,12 @@ Quando inviti qualcuno all'account, solo tu in qualità di proprietario dell'acc
 
 Una serie di autorizzazioni dell'infrastruttura classica per visualizzare e gestire le informazioni di fatturazione e lavorare con i casi di supporto vengono ora migrate ai gruppi di accesso. Agli utenti del tuo account a cui sono state precedentemente assegnate queste autorizzazioni viene ora assegnato il rispettivo gruppo di accesso delle autorizzazioni migrate. Di conseguenza, le autorizzazioni dell'infrastruttura classica possono essere gestite direttamente utilizzando le politiche di accesso IAM.
 
-Questi gruppi di accesso speciali includono tutte le politiche IAM appropriate per preservare il comportamento originale delle autorizzazioni dell'infrastruttura classica. Ad esempio, perché un utente continui a vedere tutti gli aggiornamenti di tutti gli utenti su un caso di supporto, i gruppi di accesso delle autorizzazioni migrate per le autorizzazioni di gestione dei ticket dell'infrastruttura classica includono una politica IAM aggiuntiva sul servizio di gestione utenti con il ruolo di visualizzatore assegnato. Per ulteriori informazioni, vedi [Accesso utente per lavorare con casi di supporto](/docs/get-support/support_access.html#access).
+Questi gruppi di accesso speciali includono tutte le politiche IAM appropriate per preservare il comportamento originale delle autorizzazioni dell'infrastruttura classica. Ad esempio, perché un utente continui a vedere tutti gli aggiornamenti di tutti gli utenti su un caso di supporto, i gruppi di accesso delle autorizzazioni migrate per le autorizzazioni di gestione dei ticket dell'infrastruttura classica includono una politica IAM aggiuntiva sul servizio di gestione utenti con il ruolo di visualizzatore assegnato. Per ulteriori informazioni, vedi [Assegnazione dell'accesso utente per lavorare con i casi di supporto](/docs/get-support/support_access.html#access).
 
 Puoi continuare a gestire queste autorizzazioni dell'infrastruttura classica migrate per gli utenti direttamente tramite IAM aggiungendole e rimuovendole dai gruppi di accesso delle autorizzazioni migrate. Le politiche di questi gruppi di accesso sono bloccate per preservare il comportamento di accesso per i loro membri. Per mantenere la facilità d'uso per i nuovi utenti IAM, evita di eliminare questi gruppi di accesso.
 
-La seguente tabella illustra tutte le autorizzazioni dell'infrastruttura classica migrate che sono ora disponibili utilizzando i gruppi di accesso.
+Dopo la migrazione delle autorizzazioni della tua infrastruttura classica, devi sospendere l'utilizzo di tali autorizzazioni. Vedi la seguente tabella per tutte le autorizzazioni dell'infrastruttura classica migrate che fanno ora parte dei gruppi di accesso IAM.
+{: important}
 
 | Nome gruppo di accesso delle autorizzazioni migrate | Azioni consentite |
 |----------|---------|
@@ -45,9 +47,8 @@ La seguente tabella illustra tutte le autorizzazioni dell'infrastruttura classic
 | Limita restrizione casi UE | Abilitare o disabilitare l'opzione Supportato UE che limita i dati dei casi di supporto all'Unione Europea  |
 | Aggiungi casi e visualizza ordini | Creare casi di supporto e visualizzare tutti gli ordini.  |
 | Modifica casi | Modificare qualsiasi caso di supporto |
-| Cerca casi | Cercare tutti i casi di supporto finché non viene assegnata anche l'autorizzazione per visualizzare i casi  |
+| Cerca casi | Cercare tutti i casi di supporto finché non viene assegnata anche l'autorizzazione per visualizzare i casi |
 | Visualizza casi | Visualizzare tutti i casi di supporto |
 {: caption="Tabella 1. Gruppi di accesso predefiniti" caption-side="top"}
 
-Puoi continuare a gestire gli utenti per i gruppi di accesso. Tuttavia, potrebbe essere utile creare nuovi gruppi di accesso che includano una combinazione di politiche di accesso per i [servizi di gestione dell'account IAM](/docs/iam/users_roles.html#platformrolestable2) per facilitare l'assegnazione dell'accesso per le attività di gestione degli account e il lavoro con i casi di supporto.
-{: tip}
+Puoi continuare a gestire gli utenti per i gruppi di accesso. Tuttavia, potrebbe essere utile creare nuovi gruppi di accesso che includano una combinazione di politiche di accesso per i [servizi di gestione dell'account IAM](/docs/iam?topic=iam-account-services#account-services) per facilitare l'assegnazione dell'accesso per le attività di gestione degli account e il lavoro con i casi di supporto.

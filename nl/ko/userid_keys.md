@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-30"
+  years: 2015, 2019
+lastupdated: "2019-01-30"
 
 ---
 
@@ -15,12 +15,13 @@ lastupdated: "2018-11-30"
 # 사용자 API 키 관리
 {: #userapikey}
 
-연합 또는 비연합 사용자는 CLI에서 또는 자동화의 일부로 사용하여 사용자 ID로 로그인하기 위해 API 키를 작성할 수 있습니다. UI 또는 CLI를 사용하여 키 나열, 키 작성, 키 업데이트 또는 키 삭제를 수행하여 API 키를 관리할 수 있습니다. 사용자 ID와 연관된 {{site.data.keyword.Bluemix_notm}} API 키를 관리하려면 **관리** &gt; **액세스(IAM)**로 이동하고 **사용자**를 선택하십시오. 그런 다음 목록에서 이름을 클릭하고 **사용자 세부사항** 옵션을 선택하여 설명 및 날짜가 포함된 API 키 목록을 보십시오. 그런 다음 API 키를 작성, 편집 또는 삭제할 수 있습니다. 또한 사용 가능한 CLI 명령의 전체 목록은 [`ibmcloud iam api-keys`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_keys)를 참조하십시오.
+연합 또는 비연합 사용자는 CLI에서 또는 자동화의 일부로 사용하여 사용자 ID로 로그인하기 위해 API 키를 작성할 수 있습니다. UI 또는 CLI를 사용하여 키 나열, 키 작성, 키 업데이트 또는 키 삭제를 수행하여 API 키를 관리할 수 있습니다. 사용자 ID와 연관된 {{site.data.keyword.Bluemix_notm}} API 키를 관리하려면 **관리** &gt; **액세스(IAM)**로 이동하고 **사용자**를 선택하십시오. 그런 다음 목록에서 이름을 클릭하고 **사용자 세부사항** 옵션을 선택하여 설명 및 날짜가 포함된 API 키 목록을 보십시오. 그런 다음 API 키를 작성, 편집 또는 삭제할 수 있습니다. 또한 사용 가능한 CLI 명령의 전체 목록은 [`ibmcloud iam api-keys`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_keys)를 참조하십시오.
 
-[연합 사용자](/docs/account/adminpublic.html#federatedid)는 `IBMCLOUD_API_KEY` 환경 변수를 사용하여 로그인하는 데 API 키를 사용할 수 있습니다. 로그인을 위한 API 키 사용에 대한 자세한 정보는 [연합 ID로 로그인](/docs/cli/login_federated_id.html#federated_id)을 참조하십시오.
+[연합 사용자](/docs/account?topic=account-signup#signup)는 `IBMCLOUD_API_KEY` 환경 변수를 사용하여 로그인하는 데 API 키를 사용할 수 있습니다. 로그인을 위한 API 키 사용에 대한 자세한 정보는 [연합 ID로 로그인](/docs/iam?topic=iam-federated_id#federated_id)을 참조하십시오.
 {:shortdesc}
 
 ## API 키 작성
+{: #create_user_key}
 
 {{site.data.keyword.Bluemix_notm}} 사용자는 스크립트에 비밀번호를 제공하지 않고 API 키를 사용하여 프로그램 또는 스크립트를 사용할 수 있습니다. API 키를 사용하면 사용자나 조직이 다양한 프로그램에 대해 여러 API 키를 작성할 수 있으며, 문제가 발생할 경우 다른 API 또는 사용자에게 영향을 주지 않고 개별적으로 API 키를 삭제할 수 있습니다. 최대 20개의 API 키를 작성할 수 있습니다.
 
@@ -41,10 +42,11 @@ CLI를 사용하여 API 키를 작성하려면 다음 명령을 사용하십시�
 
 ```
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
-```
+``` 
 
 
 ## API 키 업데이트
+{: #update_user_key}
 
 API 키의 설명 또는 이름을 변경하려는 경우, UI 또는 CLI에서 다음 단계를 완료하십시오.
 
@@ -64,10 +66,12 @@ ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description o
 ```
 
 ## API 키 잠금
+{: #lock_user_key}
 
 사용자 ID를 나타내는 플랫폼 API 키에 대해 API 키를 잠그는 방법을 사용하여 삭제되지 않도록 방지할 수 있습니다. 잠긴 API 키는 ![잠김 아이콘](images/locked.svg "잠김") 아이콘으로 표시됩니다. UI 또는 CLI를 사용하여 API 키를 잠그거나 잠금 해제할 수 있습니다.
 
 ### UI에서 API 키 잠금 및 잠금 해제
+{: #lockui}
 
 1. **관리** &gt; **액세스(IAM)**로 이동하고 **사용자**를 선택하십시오. 그런 다음, 목록에서 이름을 클릭하고 **사용자 세부사항** 옵션을 선택하십시오.
 2. 잠그려는 API 키의 행을 식별하고 **조치** ![조치 목록 아이콘](../icons/action-menu-icon.svg) 메뉴에서 **잠금**을 선택하십시오.
@@ -76,6 +80,7 @@ ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description o
 {: tip}
 
 ### CLI를 사용하여 API 키 잠금 및 잠금 해제
+{: #lockcli}
 
 API 키를 잠그려면 다음 명령을 사용하십시오.
 
@@ -131,10 +136,11 @@ ibmcloud iam api-key-unlock test-api-key
 
 
 ## API 키 삭제
+{: #delete_user_key}
 
 키 회전 전략을 사용하는 경우, 이전 키를 삭제하고 새 키로 바꾸려고 할 수 있습니다.
 
-API 키를 삭제하려면 다음 단계를 완료하십시오.
+API 키를 삭제하려면 다음 단계를 완료하십시오. 
 
 1. **관리** &gt; **액세스(IAM)**로 이동하고 **사용자**를 선택하십시오. 그런 다음, 목록에서 이름을 클릭하고 **사용자 세부사항** 옵션을 선택하십시오.
 2. 삭제할 API 키의 행을 식별하고 **조치** ![조치 목록 아이콘](../icons/action-menu-icon.svg) 메뉴에서 **삭제**를 선택하십시오.

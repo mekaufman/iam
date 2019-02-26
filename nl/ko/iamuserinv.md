@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-30"
+  years: 2015, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -36,11 +36,11 @@ lastupdated: "2018-11-30"
   * **Cloud Foundry 액세스**
   * **클래식 인프라 액세스**.
 
-  자세한 정보는 [사용자 액세스 지정](/docs/iam/iamuserinv.html#assignaccess)을 참조하십시오.
+  자세한 정보는 [사용자 액세스 지정](/docs/iam?topic=iam-assignaccess#assignaccess)을 참조하십시오.
 
 사용자에게 액세스 권한이 필요 없다고 판단되면 **상태** 열에서 **처리 중** 또는 **보류 중** 상태로 표시된 사용자에 대한 초대를 취소할 수 있습니다. 초대된 사용자가 초대장을 받지 못한 경우에는 **보류 중** 상태인 사용자에게 초대를 재전송할 수 있습니다.
 
-명령행 인터페이스(CLI)를 사용하여 사용자를 초대하려는 경우 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite) 명령을 참조하십시오.
+명령행 인터페이스(CLI)를 사용하여 사용자를 초대하려는 경우 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite) 명령을 참조하십시오.
 {: tip}
 
 ## 초대에서 사용자 액세스 지정
@@ -49,15 +49,17 @@ lastupdated: "2018-11-30"
 {{site.data.keyword.Bluemix}} IAM 정책, Cloud Foundry 액세스 및 클래식 인프라 권한을 지정하여 사용자를 초대할 때 사용자에 대한 액세스를 지정합니다. 관리할 권한이 부여된 액세스 옵션에 따라, 사용자를 초대하고 계정, 리소스 그룹, 조직, 영역, 서비스 인스턴스 및 클래식 인프라에서 사용자에 대한 액세스를 제공할 수 있습니다. 다음 절에서는 초대된 사용자에게 지정할 수 있는 세 가지 유형의 액세스를 설명합니다.
 
 ### 서비스
+{: #invite_services}
 
 새 사용자를 초대할 때 초기 {{site.data.keyword.Bluemix_notm}} IAM 액세스 정책을 작성하여 액세스를 지정할 수 있습니다. 서비스 섹션에서 계정 관리 서비스, 리소스 그룹을 관리하는 액세스를 가진 리소스 그룹의 서비스 또는 계정의 개별 리소스에 대한 액세스를 사용자에게 제공할 수 있습니다.
 
-사용자가 초대를 수락한 후에 추가 액세스를 지정할 수 있습니다. 역할을 추가하기 위해 정책 편집, 추가 액세스 지정 또는 사용자를 위한 정책 제거에 대한 세부사항은 [리소스에 대한 액세스 관리](/docs/iam/mngiam.html#iammanidaccser)를 참조하십시오.
+사용자가 초대를 수락한 후에 추가 액세스를 지정할 수 있습니다. 역할을 추가하기 위해 정책 편집, 추가 액세스 지정 또는 사용자를 위한 정책 제거에 대한 세부사항은 [리소스에 대한 액세스 관리](/docs/iam?topic=iam-iammanidaccser#iammanidaccser)를 참조하십시오.
 
 정책을 지정할 때 선택하는 서비스에 따라, 다음 프로시저에서 설명된 필드 중 일부가 표시되지 않을 수 있습니다.
 {: note}
 
 #### 계정 관리 서비스 액세스
+{: #invite_acct_mgmt}
 
 계정 소유자로서 일부 책임을 위임하기 위해 계정 관리 서비스에 대한 액세스를 사용자에게 제공할 수 있습니다. 예를 들어, 청구 및 사용량을 보거나, 사용자를 초대 및 제거하거나, 액세스 그룹을 관리하거나 서비스 ID를 관리하는 기능을 위임할 수 있습니다. 모든 계정 관리 서비스 또는 하나의 계정 관리 서비스에 대한 액세스를 제공할 수 있습니다.
 
@@ -67,6 +69,7 @@ lastupdated: "2018-11-30"
 4. 원하는 액세스를 지정하기 위한 역할의 임의의 조합을 선택하십시오.
 
 #### 리소스 그룹 액세스
+{: #invite_rgs}
 
 리소스 그룹 내의 모든 서비스 또는 리소스 그룹의 단일 서비스 유형에 대한 액세스를 지정할 수 있습니다.
 
@@ -78,6 +81,7 @@ lastupdated: "2018-11-30"
 6. 원하는 액세스를 지정하기 위한 역할의 임의의 조합을 선택하십시오. 이 액세스는 정책에 대해 선택된 리소스에만 적용됩니다. 이는 리소스 그룹인 실제 컨테이너에 대한 액세스는 제공하지 않습니다.
 
 #### 리소스 액세스
+{: #invite_resources}
 
 인스턴스까지 계정 내의 단일 리소스에 대한 액세스를 지정할 수 있습니다.
 
@@ -91,9 +95,10 @@ lastupdated: "2018-11-30"
     * **리소스 ID**: 버킷의 이름을 입력하십시오.
 7. 원하는 액세스를 지정하기 위한 역할의 임의의 조합을 선택하십시오.
 
-액세스를 지정할 때 사용되는 역할에 대한 자세한 정보는 [IAM 액세스](/docs/iam/users_roles.html#iamusermanrol)를 참조하십시오.
+액세스를 지정할 때 사용되는 역할에 대한 자세한 정보는 [IAM 액세스](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)를 참조하십시오.
 
 ### Cloud Foundry 액세스
+{: #invite_cf}
 
 새 사용자를 초대할 때는 해당 사용자를 계정 내 조직에 추가하도록 선택할 수 있습니다. 사용자를 조직에 추가하는 경우, 사용자에게 조직 역할을 지정할 수 있습니다. 그리고 지정된 영역 역할로 초대한 사용자에게 선택한 조직에서 임의의 또는 모든 영역에 대한 액세스 권한을 부여하도록 선택합니다.
 
@@ -106,12 +111,13 @@ lastupdated: "2018-11-30"
 7. 영역 역할을 선택하여 선택된 영역에 대한 액세스 레벨을 정의하십시오.
 8. 선택사항: **영역 역할 추가**를 선택하여 추가 역할을 지정하십시오.
 
-액세스를 지정할 때 사용되는 역할에 대한 자세한 정보는 [Cloud Foundry 역할](/docs/iam/cfaccess.html#cfroles)을 참조하십시오.
+액세스를 지정할 때 사용되는 역할에 대한 자세한 정보는 [Cloud Foundry 역할](/docs/iam?topic=iam-cfroles#cfroles)을 참조하십시오.
 
-[ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 다른 액세스 또는 권한을 지정하려면 콘솔을 사용해야 합니다.
+[ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 다른 액세스 또는 권한을 지정하려면 콘솔을 사용해야 합니다.
 {: tip}
 
 ### 클래식 인프라 액세스
+{: #invite_classicinfra}
 
 지정되는 권한은 보유한 권한의 서브세트로 자동으로 제한됩니다. 사용자는 초대하는 사용자의 상위 사용자가 됩니다.
 
@@ -121,7 +127,7 @@ lastupdated: "2018-11-30"
 디바이스에 대한 액세스는 사용자가 추가된 후 개별적으로 부여됩니다. 콘솔의 사용자에 대한 **클래식 인프라** 액세스 옵션으로 이동하십시오.
 {: note}
 
-사용자가 계정에 추가된 후 사용자의 액세스 구성에 대한 정보는 [클래식 인프라 액세스 관리](/docs/iam/mnginfra.html#managing-infrastructure-access)를 참조하십시오.
+사용자가 계정에 추가된 후 사용자의 액세스 구성에 대한 정보는 [클래식 인프라 액세스 관리](/docs/iam?topic=iam-mngclassicinfra#mngclassicinfra)를 참조하십시오.
 
 ## VPN 전용 사용자 추가
 {: #add-vpn-only}
@@ -129,5 +135,5 @@ lastupdated: "2018-11-30"
 계정 소유자 또는 사용자 클래식 인프라 관리 권한을 가진 사용자는 VPN 전용 사용자를 추가할 수 있습니다.
 
 1. **사용자** 페이지에서 **VPN 전용 사용자 추가**를 클릭하십시오.
-3. 사용자의 개인 정보 세부사항을 입력하십시오.
-4. **저장**을 클릭하십시오.
+2. 사용자의 개인 정보 세부사항을 입력하십시오.
+3. **저장**을 클릭하십시오.

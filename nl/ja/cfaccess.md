@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-04-12"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -12,11 +12,14 @@ lastupdated: "2018-04-12"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
 
 # Cloud Foundry アクセス権限
 {: #cfaccess}
 
 現在、Cloud IAM を使用してすべてのサービスを管理できるわけではありません。 これらのサービス・インスタンスにアクセスするために、引き続き Cloud Foundry 役割を使用できます。 ユーザーは、Cloud Foundry 役割が割り当てられた、インスタンスが属する組織とスペースに追加されます。 
+{:shortdesc}
 
 
 ![アカウントで Cloud Foundry の組織とスペースを使用したアクセス](images/cf-diagram.svg "Cloud Foundry の組織、スペース、および役割を使用してアカウントでアクセス権限が機能する方法")
@@ -45,4 +48,5 @@ Cloud Foundry の役割は、アカウント内の組織およびスペースへ
 |監査員 | スペース監査員は、スペース内の各アプリケーションのインスタンスの数、サービス・バインディング、およびリソース使用に関する情報など、スペースに関するすべての情報に対する読み取り専用権限を備えています。 |
 {:caption="表 2. スペースの役割と許可" caption-side="top"}
 
-**注**: 管理者または開発者のスペース役割が割り当てられたユーザーは、VCAP_SERVICES 環境変数にアクセスできます。 しかし、監査員の役割が割り当てられたユーザーは、VCAP_SERVICES にアクセスできません。
+管理者または開発者のスペース役割が割り当てられたユーザーは、VCAP_SERVICES 環境変数にアクセスできます。 しかし、監査員の役割が割り当てられたユーザーは、VCAP_SERVICES にアクセスできません。
+{: note}

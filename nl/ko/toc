@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam/quickstart.html" path="iam"}
+{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam?topic=getstarted" path="iam"}
 ID 및 액세스 관리
 
     {: .navgroup id="learn"}
@@ -17,7 +17,7 @@ ID 및 액세스 관리
         users_roles.md
         cfaccess.md
         infrastructureaccess.md
-    
+
     bp_access.md
     {: .navgroup-end}
 
@@ -29,31 +29,32 @@ ID 및 액세스 관리
     계정에 사용자 추가
         iamuserinv.md
         remove-users.md
-        
+
     {: .topicgroup}
-    사용자 관리        
+    사용자 관리
         parentuser.md
         update_status.md
         specific_ip.md
         vpn_password.md
         user_login.md
-     
+
     {: .topicgroup}
     액세스 관리
         mngiam.md
+        account_management.md
         mngcf.md
-        mnginfra.md        
+        mnginfra.md
         groups.md
         accessgroup_rules.md
         userlist.md
-        
+
     {: .topicgroup}
-    다단계 인증    
+    다중 인증
         mfatypes.md
         mfa.md
         totp.md
         external_mfa.md
-        securityquestions.md        
+        securityquestions.md
 
     {: .topicgroup}
     서비스 작업

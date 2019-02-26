@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-30"
+  years: 2018, 2019
+lastupdated: "2019-01-30"
 
 ---
 
@@ -16,20 +16,23 @@ lastupdated: "2018-11-30"
 # Ottenimento di un token IAM {{site.data.keyword.Bluemix_notm}} utilizzando una chiave API
 {: #iamtoken_from_apikey}
 
-Alle API {{site.data.keyword.Bluemix}} possono accedere solo gli utenti autorizzati da un ruolo IAM assegnato. Pertanto, l'utente che richiama l'API deve passare le credenziali per l'autenticazione da parte dell'API. Puoi generare un token IAM utilizzando la tua [chiave API {{site.data.keyword.Bluemix_notm}}](/docs/iam/userid_keys.html#userapikey) o una [chiave API dell'ID servizio](/docs/iam/serviceid_keys.html#serviceidapikeys). Questo processo è utilizzato anche se stai sviluppando un'applicazione che deve lavorare con altri servizi {{site.data.keyword.Bluemix_notm}}. Devi utilizzare una chiave API dell'ID servizio per ottenere un token di accesso da passare a ciascuno dei servizi {{site.data.keyword.Bluemix_notm}}.
+Alle API {{site.data.keyword.Bluemix}} possono accedere solo gli utenti autorizzati da un ruolo IAM assegnato. Pertanto, l'utente che richiama l'API deve passare le credenziali per l'autenticazione da parte dell'API. Puoi generare un token IAM utilizzando la tua [chiave API {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#userapikey) oppure una [chiave API dell'ID servizio](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys). Questo processo è utilizzato anche se stai sviluppando un'applicazione che deve lavorare con altri servizi {{site.data.keyword.Bluemix_notm}}. Devi utilizzare una chiave API dell'ID servizio per ottenere un token di accesso da passare a ciascuno dei servizi {{site.data.keyword.Bluemix_notm}}.
 {:shortdesc}
 
 1. Utilizza il seguente comando `curl` per generare un token IAM utilizzando una chiave API.
 
 ### POST /identity/token
+{: #post_id_token}
 
 ### Intestazioni
+{: #header}
   - Content-Type: application/x-www-form-urlencoded
   - Accept: application/json
 
 ### Parametri
+{: #parameters}
   - grant_type=urn:ibm:params:oauth:grant-type:apikey
-  - apikey=*[Api key]*
+  - apikey=*[Chiave api]*
 
 ```
 curl -k -X POST \
@@ -37,13 +40,14 @@ curl -k -X POST \
   --header "Accept: application/json" \
   --data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" \
   --data-urlencode "apikey=<apikey>" \
-  "https://iam.bluemix.net/identity/token"
+  "https://iam.cloud.ibm.com/identity/token"
 ```
 {: codeblock}
 
 Il seguente esempio è la risposta prevista:
 
 ### Risposta
+{: #response}
 
 ```
 {

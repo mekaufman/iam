@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-07-23"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -27,4 +27,4 @@ Puoi tracciare i seguenti eventi:
 * Creazione, aggiornamento o eliminazione di politiche di accesso
 * Accesso a {{site.data.keyword.Bluemix_notm}} utilizzando una chiave API, un codice di autorizzazione, un passcode, una password oppure una chiave API associata a un ID servizio
 
-Per iniziare a monitorare le azioni del tuo utente, vedi [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla). Per ulteriori informazioni su ciascuna delle aree di evento che puoi tracciare, vedi [Eventi IAM](/docs/services/cloud-activity-tracker/services/at_events_iam.html).
+Per iniziare a monitorare le azioni del tuo utente, vedi [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla). Per ulteriori informazioni su ciascuna delle aree di evento che puoi tracciare, vedi [Eventi IAM](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_iam#at_events_iam).

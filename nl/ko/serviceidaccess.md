@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-30"
+  years: 2015, 2019
+lastupdated: "2019-01-30"
 
 ---
 
@@ -24,6 +24,7 @@ lastupdated: "2018-11-30"
 {: note}
 
 ## 새 액세스 지정
+{: #access_new}
 
 리소스 그룹의 모든 리소스에 대해 또는 리소스 그룹 내의 하나의 서비스에 대해서만 액세스를 지정하려면 다음 단계를 완료하십시오.
 
@@ -68,6 +69,7 @@ lastupdated: "2018-11-30"
 {: tip}
 
 ## 기존 액세스 권한 편집
+{: #access_edit}
 
 기존 정책을 편집하려면 다음을 수행하십시오.
 
@@ -77,7 +79,7 @@ lastupdated: "2018-11-30"
 4. 편집할 정책의 행을 식별하고 **조치** ![조치 목록 아이콘](../icons/action-menu-icon.svg) 메뉴에서 **정책 편집**을 선택하십시오.
 5. 변경사항을 작성한 다음 정책을 저장하십시오.
 
-CLI를 사용하여 서비스 정책을 업데이트하기 위해 [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update) 명령을 사용할 수 있습니다.
+CLI를 사용하여 서비스 정책을 업데이트하기 위해 [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_update#ibmcloud_iam_service_policy_update) 명령을 사용할 수 있습니다.
 ```
 ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] {--file JSON_FILE | [-r, --roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]} [-f, --force]",
 ```
@@ -87,16 +89,17 @@ ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] 
 {: tip}
 
 ## 액세스 제거
+{: #access_remove}
 
 기존 정책을 제거하려면 다음을 수행하십시오.
 
 1. 메뉴 표시줄에서 **관리** &gt; **액세스(IAM)**를 클릭하고 **서비스 ID**를 선택하십시오.
 2. 테이블에서 서비스 정책을 삭제할 서비스 ID를 선택하십시오.
-3. **액세스 정책**을 클릭하십시오.
+3. **액세스 정책**을 클릭하십시오. 
 4. 삭제할 정책의 행을 식별하고 **조치** ![조치 목록 아이콘](../icons/action-menu-icon.svg) 메뉴에서 **제거**를 선택하십시오.
 5. 제거할 정책의 세부사항을 검토한 후에 **제거**를 클릭하여 확인하십시오.
 
-CLI를 사용하여 서비스 정책을 삭제하기 위해 [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_delete) 명령을 사용할 수 있습니다.
+CLI를 사용하여 서비스 정책을 삭제하기 위해 [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_update#ibmcloud_iam_service_policy_delete) 명령을 사용할 수 있습니다.
 ```
 ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
 ```

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-10-29"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -17,6 +17,7 @@ lastupdated: "2018-10-29"
 {: #iamconcepts}
 
 ## ID
+{: #identity}
 
 {{site.data.keyword.Bluemix_notm}} IAM에서 ID 개념은 다음과 같은 컴포넌트로 구성되어 있습니다.
 
@@ -26,12 +27,13 @@ lastupdated: "2018-10-29"
 <dt>서비스 및 앱 ID</dt>
 <dd>서비스 ID는 서비스와 애플리케이션에 대해 별도의 ID를 제공하기 위해 사용되는 Cloud IAM 기능입니다. 개별 사용자 인증 정보의 사용이 필요 없도록 {{site.data.keyword.Bluemix_notm}} 서비스에 액세스해야 하는 애플리케이션이 사용할 서비스 ID를 작성할 수 있습니다.</dd>
 <dt>API 키</dt>
-<dd>{{site.data.keyword.cloud_notm}} API 키는 사용자 또는 서비스 ID로 API 또는 CLI를 사용하여 인증하는 데 이용할 수 있도록 Cloud IAM을 통해 사용 가능합니다. 이러한 API 키는 Cloud IAM을 통해 제공됩니다. 따라서 이는 일반적으로 IBM Cloud 외부에서 IBM ID를 인증하는 데는 사용될 수 없습니다. 또한 사용자는 클래식 인프라 API 액세스에 사용할 수 있는 단일 클래식 인프라 API 키를 가질 수 있습니다. 하지만 {{site.data.keyword.cloud_notm}} API 키를 사용하여 동일한 API에 액세스할 수 있으므로 이는 필수가 아닙니다.</dd>
+<dd>{{site.data.keyword.cloud_notm}} API 키는 사용자 또는 서비스 ID로 API 또는 CLI를 사용하여 인증하는 데 이용할 수 있도록 Cloud IAM을 통해 사용 가능합니다. 이러한 API 키는 Cloud IAM을 통해 제공됩니다. 따라서 이는 일반적으로 IBM Cloud 외부에서 IBM ID를 인증하는 데는 사용될 수 없습니다. 또한 사용자는 클래식 인프라 API 액세스에 사용할 수 있는 단일 클래식 인프라 API 키를 가질 수 있습니다. 하지만 {{site.data.keyword.cloud_notm}} API 키를 사용하여 동일한 API에 액세스할 수 있으므로 이는 필수가 아닙니다. </dd>
 <dt>리소스</dt>
-<dd>{{site.data.keyword.Bluemix_notm}} 리소스는 클라우드 리소스 이름(CRN)으로 식별됩니다. 자세한 정보는 [클라우드 리소스 이름](/docs/overview/crn.html#crn)을 참조하십시오.</dd>
+<dd>{{site.data.keyword.Bluemix_notm}} 리소스는 클라우드 리소스 이름(CRN)으로 식별됩니다. 자세한 정보는 [클라우드 리소스 이름](/docs/overview?topic=overview-crn#crn)을 참조하십시오.</dd>
 </dl>
 
 ## 액세스 관리
+{: #am}
 
 {{site.data.keyword.Bluemix_notm}}에서 액세스 관리의 개념은 사용자, 리소스, 정책, 역할, 조치 및 Cloud IAM 제어 시스템을 포함하여 일부 상호 관련된 컴포넌트로 구성되어 있으며, 이를 통해 사용자는 계정 내에서 리소스에 대한 조치를 취할 수 있습니다. 
 

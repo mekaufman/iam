@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam/quickstart.html" path="iam"}
+{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam?topic=getstarted" path="iam"}
 Gestione di identità e accesso
 
     {: .navgroup id="learn"}
@@ -17,7 +17,7 @@ Gestione di identità e accesso
         users_roles.md
         cfaccess.md
         infrastructureaccess.md
-    
+
     bp_access.md
     {: .navgroup-end}
 
@@ -29,31 +29,32 @@ Gestione di identità e accesso
     Aggiunta di utenti al tuo account
         iamuserinv.md
         remove-users.md
-        
+
     {: .topicgroup}
-    Gestione degli utenti        
+    Amministrazione degli utenti
         parentuser.md
         update_status.md
         specific_ip.md
         vpn_password.md
         user_login.md
-     
+
     {: .topicgroup}
     Gestione dell'accesso
         mngiam.md
+        account_management.md
         mngcf.md
-        mnginfra.md        
+        mnginfra.md
         groups.md
         accessgroup_rules.md
         userlist.md
-        
+
     {: .topicgroup}
-    Autenticazione multifattore    
+    Autenticazione multifattore
         mfatypes.md
         mfa.md
         totp.md
         external_mfa.md
-        securityquestions.md        
+        securityquestions.md
 
     {: .topicgroup}
     Gestione dei servizi

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-30"
+  years: 2018, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -18,14 +18,15 @@ lastupdated: "2018-11-30"
 Per semplificare il processo di assegnazione dell'accesso, puoi approfittare dei gruppi di accesso per assegnare un numero minimo di politiche fornendo lo stesso accesso a tutti gli utenti e ID servizio che appartengono allo stesso gruppo di accesso. Utilizza queste procedure consigliate per imparare come fornire agli utenti l'accesso alle risorse, ai gruppi di risorse e ai servizi di gestione dell'account.
 {:shortdesc}
 
-Per assicurati che il tuo account sia correttamente configurato, verifica le [Procedure consigliate per la configurazione del tuo account](/docs/account/bp_account.html#account_setup) e le [Procedure consigliate per l'organizzazione delle risorse nei gruppi di risorse](/docs/resources/bestpractice_rgs.html).
+Per assicurati che il tuo account sia correttamente configurato, verifica le [Procedure consigliate per la configurazione del tuo account](/docs/account?topic=account-account_setup#account_setup) e le [Procedure consigliate per l'organizzazione delle risorse nei gruppi di risorse](/docs/resources?topic=resources-bp_resourcegroups#bp_resourcegroups).
 {: tip}
 
 ## Che cosa è una buona strategia del gruppo di accesso?
+{: #rg_strategy}
 
 Un gruppo di accesso è un raggruppamento di ID servizio e utente a cui può essere concesso lo stesso accesso IAM. Puoi assegnare una sola politica al gruppo invece di assegnare lo stesso accesso più volte per ogni utente o ID del servizio individuale.
 
-Assumendo che hai seguito le [procedure consigliate per la configurazione del tuo account](/docs/account/bp_account.html#account_setup), un modo logico per assegnare l'accesso è creando un gruppo di accesso al livello di accesso desiderato. Quindi, puoi associare ogni gruppo di accesso ai gruppi di risorse creati precedentemente. Ad esempio, per controllare l'accesso al progetto `CustApp`, puoi creare i seguenti gruppi di accesso:
+Assumendo che hai seguito le [procedure consigliate per la configurazione del tuo account](/docs/account?topic=account-account_setup#account_setup), un modo logico per assegnare l'accesso è creando un gruppo di accesso al livello di accesso desiderato. Quindi, puoi associare ogni gruppo di accesso ai gruppi di risorse creati precedentemente. Ad esempio, per controllare l'accesso al progetto `CustApp`, puoi creare i seguenti gruppi di accesso:
 
 * Auditor-Group
 * Developer-Group
@@ -38,20 +39,21 @@ Anche se questi suggerimenti sono progettati per uno scenario ipotetico, puoi co
 ## Creazione dei gruppi di accesso
 {: #access-group-setup}
 
-Per creare un gruppo di accesso, completa la seguente procedura:
+Per creare un gruppo di accesso, completa la seguente procedura: 
 
 1. Nella console {{site.data.keyword.Bluemix}}, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Gruppi di accesso**.
-2. Fai clic su **Crea**.
+2. Fai clic su **Create**.
 3. Immetti il nome e la descrizione per il gruppo.
-4. Fai clic su **Crea**.
+4. Fai clic su **Create**.
 
 Dopo aver creato un gruppo di accesso, puoi aggiungere gli utenti e gli ID servizio al gruppo.
 
 ## Come le politiche di accesso IAM forniscono l'accesso
+{: #how_access}
 
 Una politica include un oggetto, una destinazione e un ruolo. L'oggetto in questo caso è il gruppo di accesso. La destinazione è quello a cui desideri l'oggetto abbia accesso, come ad esempio un insieme di risorse, un'istanza del servizio, tutti i servizi nell'account o tutte le istanze di un servizio. Il ruolo definisce il livello di accesso concesso a un utente.
 
-I ruoli più comunemente utilizzati sono visualizzatore, editor e amministratore. Il ruolo di visualizzatore fornisce la quantità minima di accesso per la visualizzazione delle istanze e dei gruppi di risorse in un account. Il ruolo di editor ha maggior accesso per la creazione, la modifica, l'eliminazione e l'associazione delle istanze del servizio. Il ruolo di amministratore include tutto il necessario ad utilizzare un'istanza del servizio e può assegnare l'accesso ad altri. Tuttavia, ci sono due diverse categorie di ruoli che dovresti considerare: piattaforma e servizio. Per ulteriori informazioni sui ruoli che possono essere assegnati, consulta i [Ruoli IAM Cloud](/docs/iam/users_roles.html#iamusermanrol).
+I ruoli più comunemente utilizzati sono visualizzatore, editor e amministratore. Il ruolo di visualizzatore fornisce la quantità minima di accesso per la visualizzazione delle istanze e dei gruppi di risorse in un account. Il ruolo di editor ha maggior accesso per la creazione, la modifica, l'eliminazione e l'associazione delle istanze del servizio. Il ruolo di amministratore include tutto il necessario ad utilizzare un'istanza del servizio e può assegnare l'accesso ad altri. Tuttavia, ci sono due diverse categorie di ruoli che dovresti considerare: piattaforma e servizio. Per ulteriori informazioni sui ruoli che possono essere assegnati, consulta i [Ruoli IAM Cloud](/docs/iam?topic=iam-iamusermanrol#iamusermanrol). 
 
 ## Assegnazione dell'accesso ai gruppi di accesso
 {: #assigning-access}
@@ -68,3 +70,5 @@ Puoi organizzare le risorse in un gruppo di risorse e gli utenti e gli ID serviz
 
 Concedi facilmente a più utenti l'accesso da amministratore a tutto nell'account creando un gruppo di accesso e assegnando due politiche a esso. Per creare la prima politica, utilizza l'opzione **Assegna l'accesso alle risorse** e seleziona **Tutti i servizi abilitati di identità e di accesso** con il ruolo di amministratore assegnato. Per creare la seconda politica, utilizza l'opzione **Assegna l'accesso ai servizi di gestione dell'account** e seleziona **Tutti i servizi di gestione dell'account** con il ruolo di amministratore assegnato.
 {: tip}
+
+

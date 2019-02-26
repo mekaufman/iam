@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-30"
 
 
 
@@ -27,13 +27,13 @@ lastupdated: "2018-11-30"
 {: #whatisiam}
 {: faq}
 
-IAM (Identity and Access Management) ti consente di autenticare in modo protetto gli utenti per i servizi di piattaforma e di controllare l'accesso alle risorse nella piattaforma {{site.data.keyword.cloud_notm}}. Un insieme di servizi IBM Cloud è abilitato ad utilizzare Cloud IAM per il controllo dell'accesso. Tali servizi sono organizzati in gruppi di risorse all'interno del tuo account per abilitare la concessione agli utenti di un accesso rapido e facile e più di una risorsa per volta. Le politiche di accesso Cloud IAM vengono utilizzate per assegnare agli utenti e agli ID servizio l'accesso alle risorse all'interno del tuo account. Per ulteriori informazioni, vedi [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam/index.html#iamoverview).
+IAM (Identity and Access Management) ti consente di autenticare in modo protetto gli utenti per i servizi di piattaforma e di controllare l'accesso alle risorse nella piattaforma {{site.data.keyword.cloud_notm}}. Un insieme di servizi IBM Cloud è abilitato ad utilizzare Cloud IAM per il controllo dell'accesso. Tali servizi sono organizzati in gruppi di risorse all'interno del tuo account per abilitare la concessione agli utenti di un accesso rapido e facile e più di una risorsa per volta. Le politiche di accesso Cloud IAM vengono utilizzate per assegnare agli utenti e agli ID servizio l'accesso alle risorse all'interno del tuo account. Per ulteriori informazioni, vedi [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam?topic=iam-iamoverview#iamoverview).
 
 ## Cos'è un servizio abilitato a IAM?
 {: #iam-enabled}
 {: faq}
 
-Un servizio abilitato a IAM deve trovarsi in un gruppo di risorse e l'accesso al servizio viene concesso utilizzando le politiche di accesso IAM. Quando crei un servizio abilitato a IAM dal catalogo,devi assegnarlo ad un gruppo di risorse. Per ulteriori informazioni, vedi [Che cosa è una risorsa?](/docs/resources/acct_resources.html#resource)
+Un servizio abilitato a IAM deve trovarsi in un gruppo di risorse e l'accesso al servizio viene concesso utilizzando le politiche di accesso IAM. Quando crei un servizio abilitato a IAM dal catalogo,devi assegnarlo ad un gruppo di risorse. Per ulteriori informazioni, vedi [Che cosa è una risorsa?](/docs/resources?topic=resources-resource#resource)
 
 {{site.data.keyword.containerlong_notm}} è l'unica eccezione; è controllato dall'accesso IAM ma è sempre assegnato al gruppo di risorse predefinito. Pertanto non ti viene offerta l'opzione di sceglierne uno quando lo crei dal catalogo. Non può inoltre essere assegnato a un altro gruppo di risorse
 
@@ -73,7 +73,7 @@ Un gruppo di accesso viene utilizzato per organizzare facilmente un insieme di u
 
 Utilizzando sia gruppi di risorse che gruppi di accesso, puoi ottimizzare la politica di assegnazione dell'accesso assegnando un numero limitato di politiche. Puoi organizzare tutte le risorse a cui uno specifico gruppo di utenti e ID servizio ha bisogno di accedere in un singolo gruppo di risorse, raggruppare tutti gli utenti o gli ID servizio in un gruppo di accesso e assegnare quindi una singola politica concedendo l'accesso a tutte le risorse nel gruppo di risorse.
 
-Per ulteriori informazioni, consulta [Procedure consigliate per l'assegnazione dell'accesso](/docs/iam/bp_access.html#account_setup).
+Per ulteriori informazioni, consulta [Procedure consigliate per l'assegnazione dell'accesso](/docs/iam?topic=iam-account_setup#account_setup).
 
 ## Come faccio a garantire che i miei utenti possano creare risorse all'interno di un gruppo di risorse?
 {: #resources}
@@ -105,7 +105,7 @@ Quando disponi dell'accesso per gestire un gruppo di risorse, puoi visualizzare,
 
 Quando disponi dell'accesso alle risorse all'interno di un gruppo di risorse, puoi modificare, eliminare e creare istanze oppure disporre di tutte le azioni di gestione per i servizi specificati all'interno del gruppo di risorse a seconda del ruolo assegnato.
 
-Per un esempio sui ruoli e sulle azioni di gestione della piattaforma per i servizi di gestione dell'account, vedi [Tabella dei ruoli della piattaforma](/docs/iam/users_roles.html#platformrolestable2).
+Per un esempio sui ruoli e sulle azioni di gestione della piattaforma per i servizi di gestione dell'account, vedi [Tabella dei ruoli della piattaforma](/docs/iam?topic=iam-userroles#platformrolestable2).
 
 ## Chi può rimuovere gli utenti?
 {: #remove-users}
@@ -121,7 +121,7 @@ Il proprietario dell'account può rimuovere tutti gli utenti dall'account e qual
 {: faq}
 
 1. Vai a **Gestisci** &gt; **Accesso (IAM)** e seleziona **Impostazioni**.
-2. Scegli **Autenticazione multifattore** e fai clic su **Sì, sono sicuro**. Per ulteriori informazioni, vedi [Richiesta di MFA per gli utenti nel tuo account](/docs/iam/mfa.html#enablemfa).
+2. Scegli **Autenticazione multifattore** e fai clic su **Sì, sono sicuro**. Per ulteriori informazioni, vedi [Richiesta di MFA per gli utenti nel tuo account](/docs/iam?topic=iam-enablemfa#enablemfa).
 
 ## Qual è la differenza tra i ruoli del servizio e della piattaforma?
 {: #service-platform-roles}
@@ -182,7 +182,7 @@ Anche con l'accesso precedentemente descritto assegnato, un amministratore dell'
 {: #users}
 {: faq}
 
-Un proprietario di account può visualizzare tutti gli utenti nell'account e scegliere il modo in cui gli utenti possono visualizzare altri utenti nell'account nella pagina Utenti. Un proprietario di account può modificare l'[impostazione di visibilità dell'elenco utenti](/docs/iam/userlist.html#userlistview) nella pagina Impostazioni selezionando una delle seguenti opzioni:
+Un proprietario di account può visualizzare tutti gli utenti nell'account e scegliere il modo in cui gli utenti possono visualizzare altri utenti nell'account nella pagina Utenti. Un proprietario di account può modificare l'[impostazione di visibilità dell'elenco utenti](/docs/iam?topic=iam-userlistview#userlistview) nella pagina Impostazioni selezionando una delle seguenti opzioni:
 
 * **Visualizzazione non limitata**: tutti gli utenti nel tuo account possono visualizzare tutti gli altri nell'account.
 * **Visualizzazione limitata**: limita la possibilità di visualizzare gli utenti nella pagina Utenti solo a coloro ai quali è stato concesso l'accesso esplicito, insieme a coloro che hanno visibilità di altri utenti tramite un'organizzazione Cloud Foundry condivisa o una relazione di gerarchia dell'utente dell'infrastruttura classica.
@@ -203,4 +203,4 @@ Sì. Devi assegnare un accesso utente all'interno di uno dei tre sistemi di gest
 {: #appid}
 {: faq}
 
-IAM viene utilizzato per gestire l'accesso ai tuoi servizi e alle tue risorse {{site.data.keyword.cloud_notm}}. Con {{site.data.keyword.appid_full_notm}}, puoi portare la sicurezza cloud a un livello superiore aggiungendo l'autenticazione nelle tue applicazioni web e mobili. Con solo poche righe di codice, puoi proteggere facilmente le applicazioni e i servizi nativi cloud che vengono eseguiti su {{site.data.keyword.cloud_notm}}. Pronto per iniziare? [Consulta le documentazioni](/docs/services/appid/index.html).
+IAM viene utilizzato per gestire l'accesso ai tuoi servizi e alle tue risorse {{site.data.keyword.cloud_notm}}. Con {{site.data.keyword.appid_full_notm}}, puoi portare la sicurezza cloud a un livello superiore aggiungendo l'autenticazione nelle tue applicazioni web e mobili. Con solo poche righe di codice, puoi proteggere facilmente le applicazioni e i servizi nativi cloud che vengono eseguiti su {{site.data.keyword.cloud_notm}}. Pronto per iniziare? [Consulta le documentazioni](/docs/services/appid?topic=appid-gettingstarted#gettingstarted).

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-11-30"
 # Ordinazione dell'autenticazione esterna MFA per un utente
 {: #external}
 
-Come amministratore con l'accesso corretto, puoi ordinare l'autenticazione esterna e abilitare l'opzione di autenticazione multifattore (MFA) per l'accesso di un utente. Per le opzioni di autenticazione esterne ti viene addebitata una tariffa mensile. Questo tipo di autenticazione multifattore (MFA) è richiesto solo per l'account in cui l'impostazione è abilitata diversamente dalla MFA basata sull'ID. Per ulteriori informazioni, vedi [Tipi di autenticazione multifattore](/docs/iam/mfatypes.html#types).
+Come amministratore con l'accesso corretto, puoi ordinare l'autenticazione esterna e abilitare l'opzione di autenticazione multifattore (MFA) per l'accesso di un utente. Per le opzioni di autenticazione esterne ti viene addebitata una tariffa mensile. Questo tipo di autenticazione multifattore (MFA) è richiesto solo per l'account in cui l'impostazione è abilitata diversamente dalla MFA basata sull'ID. Per ulteriori informazioni, vedi [Tipi di autenticazione multifattore](/docs/iam?topic=iam-types#types).
 {:shortdesc}
 
 ## Ordinazione dell'autenticazione esterna
@@ -32,10 +32,10 @@ Per ordinare l'autenticazione esterna, completa la seguente procedura:
 
 1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Utenti**.
 2. Seleziona un utente dall'elenco.
-3. Dalla pagina **Dettagli utente** nella sezione **Gestisci l'accesso dell'utente**, seleziona **Ordina autenticazione esterna**.
+3. Dalla pagina **Dettagli utente**, seleziona **Ordina autenticazione esterna** nella sezione Gestisci l'accesso dell'utente.
 4. Seleziona **Protezione identità Symantec** o **Protezione identità basata sul telefono**.
     * Per l'autenticazione Symantec, l'utente deve scaricare l'applicazione [Symantec VIP](https://vip.symantec.com/){: new_window} ![Icona link esterno](../icons/launch-glyph.svg) e ottenere un ID credenziale per continuare con il processo di ordinazione.
-    * Per l'autenticazione basata sul telefono, puoi procedere con l'ordine, ma il tuo utente deve [impostare la propria configurazione](/docs/account/login_settings.html#third-party-MFA) prima che tu possa abilitare l'opzione.
+    * Per l'autenticazione basata sul telefono, puoi procedere con l'ordine, ma il tuo utente deve [impostare la propria configurazione](/docs/account?topic=account-third-party-MFA#third-party-MFA) prima che tu possa abilitare l'opzione.
 5. In base alla tua selezione, segui le istruzioni per rivedere il prezzo e i termini prima di effettuare l'ordine.
 6. Fai clic su **Ordina** per finalizzare la tua selezione.
 
@@ -48,7 +48,7 @@ Puoi disabilitare la MFA Symantec o basata sul telefono per un utente in qualsia
 
 1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Utenti**.
 2. Seleziona un utente dall'elenco.
-3. Dalla pagina **Dettagli utente** nella sezione **Gestisci l'accesso dell'utente**, imposta l'opzione **Autenticazione Symantec** o **Autenticazione basata sul telefono** su disattivo.
+3. Dalla pagina **Dettagli utente**, imposta l'opzione **Autenticazione Symantec** o quella **Autenticazione basata sul telefono** su Disattivo.
 
 ## Annullamento delle opzioni di autenticazione esterne
 {: #cancel}
@@ -59,14 +59,12 @@ Per annullare un ordine per l'autenticazione esterna, devi essere un proprietari
 
 * Autorizzazione di gestione utenti dell'infrastruttura classica
 * Autorizzazione di annullamento servizi dell'infrastruttura classica
-* Amministratore per il servizio di gestione account Centro di supporto o autorizzazioni dell'infrastruttura classica migrate per la visualizzazione, modifica e aggiunta di ticket che non sono disponibili nei [gruppi di accesso delle autorizzazioni migrate](/docs/iam/infrastructureaccess.html#predefined).
-
-
+* Amministratore per il servizio di gestione account Centro di supporto o autorizzazioni dell'infrastruttura classica migrate per la visualizzazione, modifica e aggiunta di ticket che non sono disponibili nei [gruppi di accesso delle autorizzazioni migrate](/docs/iam?topic=iam-predefined#predefined).
 
 Per annullare l'ordine dell'autenticazione esterna, completa la seguente procedura:
 
 1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona Utenti.
 2. Seleziona un utente dall'elenco.
-3. Dalla pagina **Dettagli utente** nella sezione **Gestisci l'accesso dell'utente**, fai clic su **Elimina** ![Icona Elimina](../icons/icon_trash.svg) per la riga di **Autenticazione Symantec** o **Autenticazione basata sul telefono** a seconda di quella che hai ordinato.
+3. Dalla pagina **Dettagli utente**, fai clic su **Elimina** ![Icona Elimina](../icons/icon_trash.svg) per la riga **Autenticazione Symantec** o **Autenticazione basata sul telefono**, a seconda di quale hai ordinato.
 4. Seleziona quando rimuoverla.
 5. Fai clic su **Rimuovi**.

@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam/quickstart.html" path="iam"}
+{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam?topic=getstarted" path="iam"}
 ID およびアクセス権限の管理
 
     {: .navgroup id="learn"}
@@ -17,25 +17,44 @@ ID およびアクセス権限の管理
         users_roles.md
         cfaccess.md
         infrastructureaccess.md
-        
+
     bp_access.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     login_fedid.md
     connect_dedicated_id.md
-    mfa.md
-    iamuserinv.md
 
     {: .topicgroup}
-    ユーザーおよびアクセス権限の管理
-        iamusermanage.md
-        groups.md
-        accessgroup_rules.md
+    アカウントへのユーザーの追加
+        iamuserinv.md
+        remove-users.md
+
+    {: .topicgroup}
+    ユーザーの管理
+        parentuser.md
+        update_status.md
+        specific_ip.md
+        vpn_password.md
+        user_login.md
+
+    {: .topicgroup}
+    アクセス権限の管理
         mngiam.md
+        account_management.md
         mngcf.md
         mnginfra.md
+        groups.md
+        accessgroup_rules.md
+        userlist.md
 
+    {: .topicgroup}
+    多要素認証
+        mfatypes.md
+        mfa.md
+        totp.md
+        external_mfa.md
+        securityquestions.md
 
     {: .topicgroup}
     サービスの処理
@@ -44,18 +63,21 @@ ID およびアクセス権限の管理
         authorizations.md
 
     {: .topicgroup}
-    API キー
+    API キーおよびトークン
         apikeys.md
         userid_keys.md
         serviceid_keys.md
+        classic_infra_keys.md
         apikey_iamtoken.md
+        iam_apikeys_services.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     iam_limits.md
     monitoring.md
+    userstatus.md
     {: .navgroup-end}
-    
+
     {: .navgroup id="help"}
     faqs.md
     {: .navgroup-end}

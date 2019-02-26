@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -21,12 +21,13 @@ lastupdated: "2018-11-12"
 Puoi creare delle regole dinamiche per aggiungere automaticamente gli utenti federati ai gruppi di accesso in base a specifici attributi di identità. Quando i tuoi utenti eseguono l'accesso con un ID federato, i dati dal provider di identità associano dinamicamente i tuoi utenti a un gruppo di accesso in base alle regole da te impostate.
 {:shortdesc}
 
-Gli utenti dispongono già di informazioni di identità specifiche all'interno del dominio della tua azienda e, quando accedono con un ID federato, questi dati possono essere passati utilizzando le asserzioni SAML. Le asserzioni SAML o le istruzioni di attributo configurate all'interno del provider di identità forniscono i dati utilizzati per creare ciascuna regola. Ad esempio, ci potrebbe essere un'istruzione di attributo true o false che definisce gli utenti come gestori. Queste informazioni possono essere utilizzate per aggiungere tutti gli utenti che sono gestori a un gruppo di accesso specifico per i gestori da te creato nel tuo account {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni, vedi la [Regola di esempio](accessgroup_rules.html#example).
+Gli utenti dispongono già di informazioni di identità specifiche all'interno del dominio della tua azienda e, quando accedono con un ID federato, questi dati possono essere passati utilizzando le asserzioni SAML. Le asserzioni SAML o le istruzioni di attributo configurate all'interno del provider di identità forniscono i dati utilizzati per creare ciascuna regola. Ad esempio, ci potrebbe essere un'istruzione di attributo true o false che definisce gli utenti come gestori. Queste informazioni possono essere utilizzate per aggiungere tutti gli utenti che sono gestori a un gruppo di accesso specifico per i gestori da te creato nel tuo account {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni, vedi la [Regola di esempio](/docs/iam?topic=iam-rules#example).
 
 Solo gli utenti che sono già invitati all'account possono essere associati ai gruppi di accesso utilizzando le regole dinamiche.
 {: note}
 
 ## Configurazione delle regole
+{: #setup_rules}
 
 Le regole dinamiche vengono create impostando le condizioni che devono essere soddisfatte dai dati configurati all'interno del provider di identità e passati con un ID federato dell'utente durante l'accesso. Per creare una regola, attieniti alla seguente procedura:
 

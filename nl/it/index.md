@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -17,15 +17,16 @@ lastupdated: "2018-11-30"
 {: #iamoverview}
 
 ## Cos'è Cloud IAM?
+{: #what_is_IAM}
 
-{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) ti consente di autenticare in modo sicuro gli utenti per i servizi di piattaforma e di controllare l'accesso alle risorse in modo coerente su {{site.data.keyword.Bluemix_notm}}. Un insieme di servizi {{site.data.keyword.Bluemix_notm}} è abilitato per utilizzare Cloud IAM per il controllo dell'accesso e questi servizi sono organizzati in [gruppi di risorse](/docs/account/resourcegroups.html) all'interno del tuo account per consentire agli utenti un accesso rapido e semplice a più di una risorsa alla volta. Le politiche di accesso Cloud IAM vengono utilizzate per assegnare agli utenti e agli ID servizio l'accesso alle risorse all'interno del tuo account. Puoi raggruppare utenti e ID servizio in un [gruppo di accesso](/docs/iam/groups.html) per fornire facilmente a tutte le entità nel gruppo lo stesso livello di accesso.
+{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) ti consente di autenticare in modo sicuro gli utenti per i servizi di piattaforma e di controllare l'accesso alle risorse in modo coerente su {{site.data.keyword.Bluemix_notm}}. Un insieme di servizi {{site.data.keyword.Bluemix_notm}} è abilitato per utilizzare Cloud IAM per il controllo dell'accesso e questi servizi sono organizzati in [gruppi di risorse](/docs/resources?topic=resources-rgs#rgs) all'interno del tuo account per consentire agli utenti un accesso rapido e semplice a più di una risorsa alla volta. Le politiche di accesso Cloud IAM vengono utilizzate per assegnare agli utenti e agli ID servizio l'accesso alle risorse all'interno del tuo account. Puoi raggruppare utenti e ID servizio in un [gruppo di accesso](/docs/iam?topic=iam-getstarted#getstarted) per fornire facilmente a tutte le entità nel gruppo lo stesso livello di accesso.
 
-Una politica assegna a un oggetto, che è un utente, un [ID servizio](/docs/iam/serviceid.html#serviceids) o un gruppo di accesso, uno o più ruoli con una combinazione di attributi che definiscono l'ambito di accesso a una destinazione. La politica può fornire l'accesso a un singolo servizio fino al livello di istanza, a una serie di risorse organizzate tra loro in un gruppo di risorse o ai servizi di gestione dell'account. A seconda dei [ruoli IAM](/docs/iam/users_roles.html#iamusermanrol) che assegni, all'oggetto sono consentiti diversi livelli di accesso per completare le attività di gestione dell'account, utilizzando le istanze del servizio o accedendo a un servizio utilizzando l'IU o completando le chiamate API.
+Una politica assegna a un oggetto, che è un utente, un [ID servizio](/docs/iam?topic=iam-serviceids#serviceids) o un gruppo di accesso, uno o più ruoli con una combinazione di attributi che definiscono l'ambito di accesso a una destinazione. La politica può fornire l'accesso a un singolo servizio fino al livello di istanza, a una serie di risorse organizzate tra loro in un gruppo di risorse o ai servizi di gestione dell'account. A seconda dei [ruoli IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol) che assegni, all'oggetto sono consentiti diversi livelli di accesso per completare le attività di gestione dell'account, utilizzando le istanze del servizio o accedendo a un servizio utilizzando l'IU o completando le chiamate API.
 
 
 ![IAM per il controllo dell'accesso in un account](images/iam-diagram.svg "Come funziona la gestione dell'accesso in un account utilizzando IAM")
 
-Per i servizi che non supportano la creazione di politiche Cloud IAM per la gestione dell'accesso, puoi utilizzare [Accesso Cloud Foundry](/docs/iam/cfaccess.html#cfaccess) o [Autorizzazioni dell'infrastruttura classica](/docs/iam/infrastructureaccess.html#infrapermission).
+Per i servizi che non supportano la creazione di politiche Cloud IAM per la gestione dell'accesso, puoi utilizzare [Accesso Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfaccess) o [Autorizzazioni dell'infrastruttura classica](/docs/iam?topic=iam-infrapermission#infrapermission).
 
 
 ## Quali funzioni sono fornite da Cloud IAM?
@@ -44,12 +45,13 @@ Per i servizi che non supportano la creazione di politiche Cloud IAM per la gest
 
 
 ## Come posso utilizzare Cloud IAM?
+{: #howto}
 
-Puoi accedere e utilizzare Cloud IAM attraverso l'interfaccia utente, la CLI o l'API di Accesso (IAM).
+Puoi accedere e utilizzare Cloud IAM attraverso l'interfaccia utente, la CLI o l'API di Accesso (IAM). 
 
-* Per accedere a Cloud IAM utilizzando l'interfaccia utente, vai a **Gestisci** &gt; **Accesso (IAM)**.
+* Per accedere a Cloud IAM utilizzando l'interfaccia utente, vai a **Gestisci** &gt; **Accesso (IAM)**. 
 * Vai a [Gestione dell'accesso IAM, delle chiavi API, degli ID servizio e dei gruppi di accesso](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam) per esaminare i comandi della CLI disponibili.
-* Vai ai seguenti documenti API per esaminare le API disponibili:
+* Vai ai seguenti documenti API per esaminare le API disponibili: 
     * [IAM Identity Services API](https://{DomainName}/apidocs/iam-identity-token-api){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")
     * [IAM Access Groups API](https://{DomainName}/apidocs/iam-access-groups){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")
     * [IAM Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: new_window} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")

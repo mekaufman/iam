@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-30"
 
 
 
@@ -27,13 +27,13 @@ lastupdated: "2018-11-30"
 {: #whatisiam}
 {: faq}
 
-IAM(Identity and Access Management)을 사용하면 플랫폼 서비스에 대해 안전하게 사용자를 인증하고 {{site.data.keyword.cloud_notm}} 플랫폼에서 리소스에 대한 액세스를 제어할 수 있습니다. IBM Cloud 서비스 세트는 액세스 제어를 위해 Cloud IAM을 사용할 수 있습니다. 또한 한 번에 둘 이상의 리소스에 대한 빠르고 손쉬운 액세스를 사용자에게 제공할 수 있도록 계정 내에서 리소스 그룹으로 구성됩니다. Cloud IAM 액세스 정책을 사용하면 계정 내에서 리소스에 대한 사용자 및 서비스 ID 액세스를 지정할 수 있습니다. 자세한 정보는 [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam/index.html#iamoverview)를 참조하십시오.
+IAM(Identity and Access Management)을 사용하면 플랫폼 서비스에 대해 안전하게 사용자를 인증하고 {{site.data.keyword.cloud_notm}} 플랫폼에서 리소스에 대한 액세스를 제어할 수 있습니다. IBM Cloud 서비스 세트는 액세스 제어를 위해 Cloud IAM을 사용할 수 있습니다. 또한 한 번에 둘 이상의 리소스에 대한 빠르고 손쉬운 액세스를 사용자에게 제공할 수 있도록 계정 내에서 리소스 그룹으로 구성됩니다. Cloud IAM 액세스 정책을 사용하면 계정 내에서 리소스에 대한 사용자 및 서비스 ID 액세스를 지정할 수 있습니다. 자세한 정보는 [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam?topic=iam-iamoverview#iamoverview)를 참조하십시오.
 
 ## IAM 사용 서비스란 무엇입니까?
 {: #iam-enabled}
 {: faq}
 
-IAM 사용 서비스는 리소스 그룹에 있어야 하며 IAM 액세스 정책을 사용하여 서비스에 대한 액세스가 제공됩니다. 카탈로그에서 IAM 사용 서비스를 작성할 때 해당 서비스를 리소스 그룹에 지정해야 합니다. 자세한 정보는 [리소스의 개념](/docs/resources/acct_resources.html#resource)을 참조하십시오.
+IAM 사용 서비스는 리소스 그룹에 있어야 하며 IAM 액세스 정책을 사용하여 서비스에 대한 액세스가 제공됩니다. 카탈로그에서 IAM 사용 서비스를 작성할 때 해당 서비스를 리소스 그룹에 지정해야 합니다. 자세한 정보는 [리소스의 개념](/docs/resources?topic=resources-resource#resource)을 참조하십시오.
 
 {{site.data.keyword.containerlong_notm}}가 유일한 예외입니다. IAM 액세스로 제어되지만 항상 기본 리소스 그룹에 지정됩니다. 따라서 카탈로그에서 작성할 때 리소스 그룹을 선택하는 옵션이 제공되지 않습니다. 또한 다른 리소스 그룹에 지정될 수 없습니다.
 
@@ -73,7 +73,7 @@ IAM 사용 서비스는 리소스 그룹에 있어야 하며 IAM 액세스 정�
 
 리소스 그룹과 액세스 그룹을 모두 사용하면 제한된 수의 정책을 지정하여 액세스 지정 정책을 간소화할 수 있습니다. 사용자 및 서비스 ID의 특정 그룹이 액세스해야 하는 모든 리소스를 단일 리소스 그룹으로 구성하고 모든 사용자 또는 서비스 ID를 액세스 그룹으로 그룹화한 후 리소스 그룹의 모든 리소스에 대한 액세스를 부여하는 단일 정책을 지정할 수 있습니다.
 
-자세한 정보는 [액세스 지정 우수 사례](/docs/iam/bp_access.html#account_setup)를 참조하십시오.
+자세한 정보는 [액세스 지정 우수 사례](/docs/iam?topic=iam-account_setup#account_setup)를 참조하십시오.
 
 ## 내 사용자가 리소스 그룹 내에 리소스를 작성할 수 있도록 하려면 어떻게 합니까?
 {: #resources}
@@ -105,7 +105,7 @@ Cloud Foundry 서비스의 경우 Cloud Foundry 리소스에 대한 액세스를
 
 리소스 그룹 내의 리소스에 대한 액세스 권한이 있으면 지정된 역할에 따라 인스턴스를 편집, 삭제 및 작성하거나 리소스 그룹 내의 지정된 서비스에 대한 모든 관리 조치를 수행할 수 있습니다.
 
-예를 들어, 계정 관리 서비스의 플랫폼 관리 역할 및 조치는 [플랫폼 역할 테이블](/docs/iam/users_roles.html#platformrolestable2)을 참조하십시오.
+예를 들어, 계정 관리 서비스의 플랫폼 관리 역할 및 조치는 [플랫폼 역할 테이블](/docs/iam?topic=iam-userroles#platformrolestable2)을 참조하십시오.
 
 ## 누가 사용자를 제거할 수 있습니까?
 {: #remove-users}
@@ -121,7 +121,7 @@ Cloud Foundry 서비스의 경우 Cloud Foundry 리소스에 대한 액세스를
 {: faq}
 
 1. **관리** &gt; **액세스(IAM)**로 이동한 후 **설정**을 선택하십시오.
-2. **다단계 인증**을 선택한 후에 **예, 확실합니다.**를 클릭하십시오. 자세한 정보는 [계정에서 사용자에 대한 MFA 요구](/docs/iam/mfa.html#enablemfa)를 참조하십시오.
+2. **다단계 인증**을 선택한 후에 **예, 확실합니다.**를 클릭하십시오. 자세한 정보는 [계정에서 사용자에 대한 MFA 요구](/docs/iam?topic=iam-enablemfa#enablemfa)를 참조하십시오.
 
 ## 서비스 및 플랫폼 역할의 차이점은 무엇입니까?
 {: #service-platform-roles}
@@ -182,7 +182,7 @@ Cloud Foundry 서비스의 경우 Cloud Foundry 리소스에 대한 액세스를
 {: #users}
 {: faq}
 
-계정 소유자는 계정의 모든 사용자를 보고 사용자가 사용자 페이지에서 계정의 다른 사용자를 보는 방법을 선택할 수 있습니다. 계정 소유자는 다음 옵션 중 하나를 선택하여 설정 페이지에서 [사용자 목록 가시성 설정](/docs/iam/userlist.html#userlistview)을 조정할 수 있습니다.
+계정 소유자는 계정의 모든 사용자를 보고 사용자가 사용자 페이지에서 계정의 다른 사용자를 보는 방법을 선택할 수 있습니다. 계정 소유자는 다음 옵션 중 하나를 선택하여 설정 페이지에서 [사용자 목록 가시성 설정](/docs/iam?topic=iam-userlistview#userlistview)을 조정할 수 있습니다.
 
 * **무제한 보기**: 계정의 모든 사용자는 계정의 모든 사용자를 볼 수 있습니다.
 * **제한된 보기**: 사용자 페이지의 사용자를 보는 기능을 공유 Cloud Foundry 조직 또는 클래식 인프라 사용자 계층 관계를 통해 다른 사용자를 볼 수 있는 사용자와 함께 명시적 액세스가 부여된 사용자로만 제한합니다.
@@ -203,4 +203,4 @@ Cloud Foundry 서비스의 경우 Cloud Foundry 리소스에 대한 액세스를
 {: #appid}
 {: faq}
 
-IAM은 {{site.data.keyword.cloud_notm}} 서비스 및 리소스에 대한 액세스를 관리하는 데 사용됩니다. {{site.data.keyword.appid_full_notm}}의 경우 인증을 웹 및 모바일 앱에 추가하여 클라우드 보안을 개선할 수 있습니다. 몇 개의 코드 행으로 {{site.data.keyword.cloud_notm}}에서 실행되는 클라우드 기본 앱과 서비스를 쉽게 보안할 수 있습니다. 시작할 준비가 되셨습니까? [문서를 확인](/docs/services/appid/index.html)하십시오.
+IAM은 {{site.data.keyword.cloud_notm}} 서비스 및 리소스에 대한 액세스를 관리하는 데 사용됩니다. {{site.data.keyword.appid_full_notm}}의 경우 인증을 웹 및 모바일 앱에 추가하여 클라우드 보안을 개선할 수 있습니다. 몇 개의 코드 행으로 {{site.data.keyword.cloud_notm}}에서 실행되는 클라우드 기본 앱과 서비스를 쉽게 보안할 수 있습니다. 시작할 준비가 되셨습니까? [문서를 확인](/docs/services/appid?topic=appid-gettingstarted#gettingstarted)하십시오.
