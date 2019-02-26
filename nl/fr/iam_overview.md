@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-10-29"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -17,6 +17,7 @@ lastupdated: "2018-10-29"
 {: #iamconcepts}
 
 ## Identité
+{: #identity}
 
 Dans {{site.data.keyword.Bluemix_notm}} IAM, le concept d'identité recouvre les éléments suivants :
 
@@ -28,10 +29,11 @@ Dans {{site.data.keyword.Bluemix_notm}} IAM, le concept d'identité recouvre les
 <dt>Clés d'API</dt>
 <dd>Cloud IAM fournit des clés d'API {{site.data.keyword.cloud_notm}} que vous pouvez utiliser pour vous authentifier comme ID utilisateur ou de service via l'API ou l'interface de ligne de commande. Etant donné que ces clés d'API sont fournies par le biais de Cloud IAM, elle ne peuvent pas être utilisées de façon générale pour s'authentifier avec un IBMid en dehors d'IBM Cloud. Un utilisateur peut également avoir une clé d'API d'infrastructure classique unique pouvant être utilisée pour accéder aux API d'infrastructure classique. Toutefois, elle n'est pas requise car vous pouvez utiliser des clés d'API {{site.data.keyword.cloud_notm}} pour accéder aux mêmes API. </dd>
 <dt>Ressources</dt>
-<dd>Les ressources {{site.data.keyword.Bluemix_notm}} sont identifiées par leur nom de ressource de cloud. Pour plus d'informations, voir [Noms de ressource de cloud](/docs/overview/crn.html#crn).</dd>
+<dd>Les ressources {{site.data.keyword.Bluemix_notm}} sont identifiées par leur nom de ressource de cloud. Pour plus d'informations, voir [Noms de ressource de cloud](/docs/overview?topic=overview-crn#crn).</dd>
 </dl>
 
 ## Gestion des accès
+{: #am}
 
 Dans {{site.data.keyword.Bluemix_notm}}, le concept de gestion des accès concerne un petit nombre de composants interdépendants, incluant les utilisateurs, les ressources, les règles, les rôles, les actions et le système de contrôle Cloud IAM, qui autorise des utilisateurs à effectuer des actions sur des ressources au sein d'un compte. 
 

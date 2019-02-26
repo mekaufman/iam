@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-30"
+  years: 2015, 2019
+lastupdated: "2019-01-30"
 
 ---
 
@@ -15,12 +15,13 @@ lastupdated: "2018-11-30"
 # API-Schlüssel für Benutzer verwalten
 {: #userapikey}
 
-Ein föderierter oder nicht föderierter Benutzer kann einen API-Schlüssel erstellen, der in der Befehlszeilenschnittstelle (CLI = Command-Line Interface) oder im Rahmen der automatisierten Anmeldung als Benutzeridentität verwendet wird. Sie können die Benutzerschnittstelle oder die Befehlszeilenschnittstelle verwenden, um Ihre API-Schlüssel zu verwalten, indem Sie Schlüssel auflisten, erstellen, aktualisieren oder löschen. Wenn Sie die {{site.data.keyword.Bluemix_notm}}-API-Schlüssel, die Ihrer Benutzeridentität zugeordnet sind, verwalten möchten, rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie **Benutzer** aus. Klicken Sie dann in der Liste auf Ihren Namen und wählen Sie die Option **Benutzerdetails** aus, damit eine Liste Ihrer API-Schlüssel mit Beschreibungen und Daten angezeigt wird. Dann können Sie API-Schlüssel erstellen, bearbeiten oder löschen. Eine vollständige Liste der verfügbaren CLI-Befehle finden Sie im Abschnitt [`ibmcloud iam api-keys`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_keys).
+Ein föderierter oder nicht föderierter Benutzer kann einen API-Schlüssel erstellen, der in der Befehlszeilenschnittstelle (CLI = Command-Line Interface) oder im Rahmen der automatisierten Anmeldung als Benutzeridentität verwendet wird. Sie können die Benutzerschnittstelle oder die Befehlszeilenschnittstelle verwenden, um Ihre API-Schlüssel zu verwalten, indem Sie Schlüssel auflisten, erstellen, aktualisieren oder löschen. Wenn Sie die {{site.data.keyword.Bluemix_notm}}-API-Schlüssel, die Ihrer Benutzeridentität zugeordnet sind, verwalten möchten, rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie **Benutzer** aus. Klicken Sie dann in der Liste auf Ihren Namen und wählen Sie die Option **Benutzerdetails** aus, damit eine Liste Ihrer API-Schlüssel mit Beschreibungen und Daten angezeigt wird. Dann können Sie API-Schlüssel erstellen, bearbeiten oder löschen. Eine vollständige Liste der verfügbaren CLI-Befehle finden Sie im Abschnitt [`ibmcloud iam api-keys`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_keys).
 
-Als [föderierter Benutzer](/docs/account/adminpublic.html#federatedid) können Sie sich mit einem API-Schlüssel anmelden, indem Sie die Umgebungsvariable `IBMCLOUD_API_KEY` verwenden. Weitere Informationen zur Verwendung eines API-Schlüssels für die Anmeldung finden Sie in [Mit föderierter ID anmelden](/docs/cli/login_federated_id.html#federated_id).
+Als [föderierter Benutzer](/docs/account?topic=account-signup#signup) können Sie sich mit einem API-Schlüssel anmelden, indem Sie die Umgebungsvariable `IBMCLOUD_API_KEY` verwenden. Weitere Informationen zur Verwendung eines API-Schlüssels für die Anmeldung finden Sie in [Mit föderierter ID anmelden](/docs/iam?topic=iam-federated_id#federated_id).
 {:shortdesc}
 
 ## API-Schlüssel erstellen
+{: #create_user_key}
 
 Als {{site.data.keyword.Bluemix_notm}}-Benutzer können Sie einen API-Schlüssel verwenden, wenn Sie ein Programm oder Script aktivieren, ohne Ihr Kennwort an das Script weiterzugeben. Ein Vorteil bei der Verwendung eines API-Schlüssels kann sein, dass ein Benutzer oder eine Organisation mehrere API-Schlüssel für verschiedene Programme erstellen kann und die API-Schlüssel können einzeln gelöscht werden, wenn diese kompromittiert wurden, ohne dass sich dies auf andere API-Schlüssel oder gar den Benutzer auswirkt. Sie können bis zu 20 API-Schlüssel erstellen.
 
@@ -41,10 +42,11 @@ Verwenden Sie den folgenden Befehl, um einen API-Schlüssel über die Befehlszei
 
 ```
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
-```
+``` 
 
 
 ## API-Schlüssel aktualisieren
+{: #update_user_key}
 
 Wenn Sie den Namen oder die Beschreibung eines API-Schlüssels ändern möchten, führen Sie die folgenden Schritte in der Benutzerschnittstelle oder der Befehlszeilenschnittstelle aus.
 
@@ -64,10 +66,12 @@ ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "neue Beschreibung des
 ```
 
 ## API-Schlüssel sperren
+{: #lock_user_key}
 
 Sie können das Löschen von API-Schlüsseln der Plattform, die Ihre Benutzeridentität darstellen, verhindern, indem Sie sie sperren. Ein gesperrter API-Schlüssel ist durch das Symbol ![Sperrsymbol](images/locked.svg "Gesperrt") gekennzeichnet. Das Sperren und Entsperren von API-Schlüsseln ist über die Benutzerschnittstelle oder die Befehlszeilenschnittstelle möglich.
 
 ### API-Schlüssel über die Benutzerschnittstelle sperren bzw. entsperren
+{: #lockui}
 
 1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie dann **Benutzer** aus. Klicken Sie dann in der Liste auf Ihren Namen und wählen Sie die Option **Benutzerdetails** aus.
 2. Ermitteln Sie die Zeile mit dem API-Schlüssel, der gesperrt werden soll, und wählen Sie dann im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) die Option **Sperren** aus.
@@ -76,6 +80,7 @@ Sie können den API-Schlüssel zu jedem beliebigen Zeitpunkt entsperren, um ihn 
 {: tip}
 
 ### API-Schlüssel über die Befehlszeilenschnittstelle sperren bzw. entsperren
+{: #lockcli}
 
 Verwenden Sie den folgenden Befehl, um einen API-Schlüssel zu sperren:
 
@@ -131,10 +136,11 @@ ibmcloud iam api-key-unlock test-api-key
 
 
 ## API-Schlüssel löschen
+{: #delete_user_key}
 
 Wenn Sie ein Schlüsselrotationsverfahren nutzen, können Sie einen älteren Schlüssel löschen und durch einen neuen ersetzen.
 
-Führen Sie die folgenden Schritte aus, um einen API-Schlüssel zu löschen:
+Führen Sie die folgenden Schritte aus, um einen API-Schlüssel zu löschen: 
 
 1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie dann **Benutzer** aus. Klicken Sie dann in der Liste auf Ihren Namen und wählen Sie die Option **Benutzerdetails** aus.
 2. Ermitteln Sie die Zeile für den API-Schlüssel, der gelöscht werden soll, und wählen Sie dann im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) die Option **Sperren** aus.

@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam/quickstart.html" path="iam"}
+{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam?topic=getstarted" path="iam"}
 Identität und Zugriff verwalten
 
     {: .navgroup id="learn"}
@@ -17,7 +17,7 @@ Identität und Zugriff verwalten
         users_roles.md
         cfaccess.md
         infrastructureaccess.md
-    
+
     bp_access.md
     {: .navgroup-end}
 
@@ -29,31 +29,32 @@ Identität und Zugriff verwalten
     Benutzer zu Ihrem Konto hinzufügen
         iamuserinv.md
         remove-users.md
-        
+
     {: .topicgroup}
-    Benutzer verwalten        
+    Benutzer verwalten
         parentuser.md
         update_status.md
         specific_ip.md
         vpn_password.md
         user_login.md
-     
+
     {: .topicgroup}
     Zugriff verwalten
         mngiam.md
+        account_management.md
         mngcf.md
-        mnginfra.md        
+        mnginfra.md
         groups.md
         accessgroup_rules.md
         userlist.md
-        
+
     {: .topicgroup}
-    Mehrfaktorauthentifizierung (MFA)    
+    Mehrfaktorauthentifizierung
         mfatypes.md
         mfa.md
         totp.md
         external_mfa.md
-        securityquestions.md        
+        securityquestions.md
 
     {: .topicgroup}
     Mit Services arbeiten

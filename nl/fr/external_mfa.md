@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-11-30"
 # Commande d'authentification multi-facteur externe pour un utilisateur
 {: #external}
 
-En tant qu'administrateur disposant de l'accès approprié, vous pouvez commander l'authentification externe et activer l'option d'authentification multi-facteur pour la connexion d'un utilisateur. Un forfait mensuel vous est alors facturé pour les options d'authentification externe. Ce type d'authentification multi-facteur est requis uniquement pour le compte dans lequel le paramètre est activé, contrairement à l'authentification multi-facteur avec ID. Pour plus d'informations, voir [Types d'authentification multi-facteur](/docs/iam/mfatypes.html#types).
+En tant qu'administrateur disposant de l'accès approprié, vous pouvez commander l'authentification externe et activer l'option d'authentification multi-facteur pour la connexion d'un utilisateur. Un forfait mensuel vous est alors facturé pour les options d'authentification externe. Ce type d'authentification multi-facteur est requis uniquement pour le compte dans lequel le paramètre est activé, contrairement à l'authentification multi-facteur avec ID. Pour plus d'informations, voir [Types d'authentification multi-facteur](/docs/iam?topic=iam-types#types).
 {:shortdesc}
 
 ## Commande d'authentification externe
@@ -32,10 +32,10 @@ Pour commander l'authentification externe, procédez comme suit :
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**.
 2. Sélectionnez un utilisateur dans la liste.
-3. Sur la page **Détails de l'utilisateur** de la section **Gérer la connexion de l'utilisateur**, sélectionnez **Commander une authentification externe**.
+3. Sur la page **Détails de l'utilisateur**, sélectionnez **Commander une authentification externe** dans la section Gérer la connexion de l'utilisateur.
 4. Sélectionnez **Protection de l'identité Symantec** ou **Protection de l'identité par téléphone**.
     * Pour l'authentification Symantec, l'utilisateur doit télécharger l'application [Symantec VIP](https://vip.symantec.com/){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg) et obtenir un ID de données d'identification pour poursuivre le processus de commande.
-    * Pour l'authentification par téléphone, vous pouvez effectuer la commande mais votre utilisateur doit [effectuer la configuration](/docs/account/login_settings.html#third-party-MFA) avant que vous ne puissiez activer l'option.
+    * Pour l'authentification par téléphone, vous pouvez effectuer la commande mais votre utilisateur doit [effectuer la configuration](/docs/account?topic=account-third-party-MFA#third-party-MFA) avant que vous ne puissiez activer l'option.
 5. En fonction de votre sélection, suivez les invites pour consulter le prix et les conditions avant de valider la commande.
 6. Cliquez sur **Commande** pour finaliser votre sélection.
 
@@ -48,7 +48,7 @@ Vous pouvez désactiver l'authentification multi-facteur par téléphone ou Syma
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**.
 2. Sélectionnez un utilisateur dans la liste.
-3. Sur la page **Détails de l'utilisateur** de la section **Gérer la connexion de l'utilisateur**, désactivez l'option **Authentification Symantec** ou **Authentification par téléphone**.
+3. Sur la page **Détails de l'utilisateur**, désactivez l'option **Authentification Symantec** ou **Authentification par téléphone**.
 
 ## Annulation des options d'authentification externe
 {: #cancel}
@@ -59,14 +59,12 @@ Pour annuler une commande d'authentification externe, vous devez être propriét
 
 * Gestion du droit d'infrastructure classique des utilisateurs
 * Annulation du droit d'infrastructure classique des services
-* Administration du service de gestion de compte Centre de support ou droits d'infrastructure classique migrés d'affichage, d'édition et d'ajout de ticket non disponibles dans les [groupes d'accès des droits migrés](/docs/iam/infrastructureaccess.html#predefined).
-
-
+* Administration du service de gestion de compte Centre de support ou droits d'infrastructure classique migrés d'affichage, d'édition et d'ajout de ticket non disponibles dans les [groupes d'accès des droits migrés](/docs/iam?topic=iam-predefined#predefined).
 
 Pour annuler la commande d'authentification externe, procédez comme suit :
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez Utilisateurs.
 2. Sélectionnez un utilisateur dans la liste.
-3. Sur la page **Détails de l'utilisateur** de la section **Gérer la connexion de l'utilisateur**, cliquez sur **Supprimer** ![Icône Supprimer](../icons/icon_trash.svg) pour la ligne **Authentification Symantec** ou **Authentification par téléphone** en fonction de l'élément commandé.
+3. Sur la page **Détails de l'utilisateur**, cliquez sur **Supprimer** ![Icône Supprimer](../icons/icon_trash.svg) pour la ligne **Authentification Symantec** ou **Authentification par téléphone** en fonction de la méthode commandée.
 4. Sélectionnez quand vous souhaitez que le retrait ait lieu.
 5. Cliquez sur **Retirer**.

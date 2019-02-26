@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-30"
+  years: 2018,2019
+lastupdated: "2019-01-30"
 
 ---
 
@@ -17,7 +17,8 @@ lastupdated: "2018-11-30"
 # Typen der Mehrfaktorauthentifizierung
 {: #types}
 
-Durch die Mehrfaktorauthentifizierung (MFA) wird eine zusätzliche Sicherheitsebene zu Ihrem Konto hinzugefügt, denn alle Benutzer müssen sich neben der Angabe einer ID mit Kennwort mit einer zusätzlichen Authentifizierungsmethode authentifizieren. Dieser Mechanismus wird gängigerweise auch als Zwei-Faktor-Authentifizierung (2FA) bezeichnet.{:shortdesc}
+Durch die Mehrfaktorauthentifizierung (MFA) wird eine zusätzliche Sicherheitsebene zu Ihrem Konto hinzugefügt, denn alle Benutzer müssen sich neben der Angabe einer ID mit Kennwort mit einer zusätzlichen Authentifizierungsmethode authentifizieren. Dieser Mechanismus wird gängigerweise auch als Zwei-Faktor-Authentifizierung (2FA) bezeichnet.
+{:shortdesc}
 
 Für Ihr Konto können die folgenden zwei Typen von MFA-Optionen aktiviert werden:
 
@@ -36,12 +37,12 @@ IBMid MFA erfüllt die Authentifizierungsanforderung. Daher werden Sie nicht zu 
 
 Die Mehrfaktorauthentifizierung mit IBMid (IBMid MFA) für ein Konto macht bei der Anmeldung zusätzlich zur standardmäßigen IBMid mit dem zugehörigen Kennwort die Eingabe eines zeitbasierten einmaligen Kenncodes erforderlich. Dieser Typ von MFA wird vom Kontoeigner auf Kontoebene aktiviert. Wenn dieses Feature aktiviert ist, müssen Sie den zusätzlichen Sicherheitsstandard bei der Anmeldung verwenden. Alle Benutzer, die zu Ihrem Konto hinzugefügt werden, sind ebenfalls zu seiner Verwendung verpflichtet. Dieser Typ von MFA gilt für alle Kontoressourcen. Sie können ihn in der {{site.data.keyword.Bluemix}}-Konsole auf der Seite **Verwalten** > **Zugriff (IAM)** > **Einstellungen** nur dann aktivieren bzw. inaktivieren, wenn Sie der Kontoeigner sind.
 
-Einer der Vorteile der Mehrfaktorauthentifizierung mit IBMid (IBMid MFA) besteht darin, dass sie kostenlos ist und an Ihre ID und nicht einfach nur an das jeweilige Konto gebunden ist, dem Sie angehören. Wenn Sie zahlreichen Konten als Mitglied angehören, müssen Sie sich nur einmal authentifizieren, wenn Sie sich an der Konsole anmelden. Weitere Informationen zur Mehrfaktorauthentifizierung mit IBMid (IBMid MFA), zu den Aspekten, die Sie überprüfen müssen, bevor Sie IBMid MFA für Ihr Konto als erforderlich festlegen, und zur Vorgehensweise zum Einrichten der IBMid MFA für sich selbst finden Sie im Abschnitt [MFA für Benutzer in Ihrem Konto verlangen](/docs/iam/mfa.html#setting-up-ibmid-mfa).
+Einer der Vorteile der Mehrfaktorauthentifizierung mit IBMid (IBMid MFA) besteht darin, dass sie kostenlos ist und an Ihre ID und nicht einfach nur an das jeweilige Konto gebunden ist, dem Sie angehören. Wenn Sie zahlreichen Konten als Mitglied angehören, müssen Sie sich nur einmal authentifizieren, wenn Sie sich an der Konsole anmelden. Weitere Informationen zur Mehrfaktorauthentifizierung mit IBMid (IBMid MFA), zu den Aspekten, die Sie überprüfen müssen, bevor Sie IBMid MFA für Ihr Konto als erforderlich festlegen, und zur Vorgehensweise zum Einrichten der IBMid MFA für sich selbst finden Sie im Abschnitt [MFA für Benutzer in Ihrem Konto verlangen](/docs/iam?topic=iam-enablemfa#enablemfa).
 
 ## Optionen der kontobasierten MFA
-{: #id-based}
+{: #account-based}
 
-Ein Kontoadministrator muss beliebige der folgenden MFA-Optionen so aktivieren, dass diese von einem Benutzer des Kontos konfiguriert und verwendet werden können. Dieser Typ von Mehrfaktorauthentifizierung (MFA) ist an das aktuelle Konto eines Benutzers gebunden. Wenn ein Administrator für jedes Konto, dem ein Benutzer als Mitglied angehört, eine andere dieser MFA-Optionen aktiviert, wird der Benutzer daher bei jedem Wechsel des Kontos dazu aufgefordert, sich auf eine andere Art zu authentifizieren.
+Ein Kontoadministrator muss beliebige der folgenden MFA-Optionen so aktivieren, dass diese von einem Benutzer des Kontos konfiguriert und verwendet werden können. Dieser Typ von Mehrfaktorauthentifizierung (MFA) ist an das aktuelle Konto eines Benutzers gebunden. Wenn ein Administrator für jedes Konto, dem ein Benutzer als Mitglied angehört, eine andere dieser MFA-Optionen aktiviert, wird der Benutzer daher bei jedem Wechsel des Kontos dazu aufgefordert, sich auf eine andere Art zu authentifizieren. 
 
 Wenn ein Kontoeigner für alle Benutzer im Konto die Mehrfaktorauthentifizierung mit IBMid (IBMid MFA) als erforderlich festlegt, so setzt diese MFA-Methode mit IBMid alle anderen MFA-Optionen, die im Konto eines Benutzers aktiviert und eingerichtet sind, außer Kraft. Selbst wenn für einen Benutzer andere MFA-Optionen festgelegt sind, wie etwa in der nachfolgenden Konfiguration, wird der Benutzer bei der Anmeldung nicht zu ihrer Durchführung aufgefordert.
 
@@ -51,9 +52,11 @@ Die folgenden traditionellen MFA-Optionen sind nur in Verbindung mit früheren K
 <dt>Zeitbasierte einmalige Authentifizierung mit Kenncode (TOTP)</dt>
 <dd>Die zeitbasierte einmalige Authentifizierung mit Kenncode (TOTP) kann mithilfe einer Authentifizierungsapp eingerichtet werden. Ein Kontoeigner oder -administrator kann diese Einstellung nur dann für einen Benutzer auf der Seite 'Benutzerdetails' aktivieren, wenn der Benutzer die Authentifizierung auf der Seite 'Anmeldeeinstellungen' für das Profil konfiguriert hat. Wenn diese Einstellung für einen Benutzer aktiviert ist, wird er bei der Anmeldung zur Eingabe des Kenncodes aufgefordert. Benutzer, für die die Einstellung 'Benutzerverwaltete Anmeldung' aktiviert ist und die daher Zugriff auf die Verwaltung ihrer eigenen Anmeldeeinstellungen haben, können diese Art der Authentifizierung aktivieren bzw. inaktivieren.</dd>
 <dt>Sicherheitsfragen</dt>
-<dd>Benutzer können Antworten auf die Sicherheitsfragen konfigurieren, die auf der Seite 'Anmeldeeinstellungen' für das Profil zur Verfügung stehen. Der Benutzer muss die Sicherheitsfragen mit den zugehörigen Antworten einrichten, bevor ein Kontoeigner oder -administrator diese Einstellung auf der Seite 'Benutzerdetails' aktivieren kann. Benutzer, für die die Einstellung 'Benutzerverwaltete Anmeldung' aktiviert ist und die daher Zugriff auf die Verwaltung ihrer eigenen Anmeldeeinstellungen haben, können diese Art der Authentifizierung aktivieren bzw. inaktivieren.</dd>
+<dd>Benutzer können Antworten auf die Sicherheitsfragen konfigurieren, die auf der Seite 'Anmeldeeinstellungen' für das Profil zur Verfügung stehen. Der Benutzer muss die Sicherheitsfragen mit den zugehörigen Antworten einrichten, bevor ein Kontoeigner oder -administrator diese Einstellung auf der Seite 'Benutzerdetails' aktivieren kann. Benutzer, für die die Einstellung 'Benutzerverwaltete Anmeldung' aktiviert ist und die daher Zugriff auf die Verwaltung ihrer eigenen Anmeldeeinstellungen haben, können diese Art der Authentifizierung aktivieren bzw. inaktivieren. </dd>
 <dt>Externe Authentifizierung</dt>
 <dd>Es gibt zwei externe Authentifizierungsoptionen von Drittanbietern, die für eine monatliche Gebühr bestellt werden können: die Symantec-Authentifizierung und die telefongestützte Authentifizierung. Diese Optionen muss ein Kontoeigner oder -administrator für den Benutzer bestellen und auf der Seite 'Benutzerdetails' für den Benutzer zur Verwendung aktivieren. Für Symantec muss sich der Administrator an den Benutzer wenden, um die Berechtigungsnachweis-ID dieses Benutzers zu erhalten und die Bestellung abschließen zu können. Zur Einrichtung der telefongestützten Authentifizierung muss zuerst der Administrator die entsprechende Bestellung aufgeben. Danach muss der Benutzer diese Art der Authentifizierung auf seiner Seite 'Benutzerdetails' einrichten, bevor der Administrator sie schließlich für die Verwendung aktivieren kann. Benutzer, für die die Einstellung 'Benutzerverwaltete Anmeldung' aktiviert ist und die daher Zugriff auf die Verwaltung ihrer eigenen Anmeldeeinstellungen haben, können diese Art der Authentifizierung aktivieren bzw. inaktivieren.</dd>
 </dl>
 
-Weitere Informationen zum Einrichten von MFA-Optionen enthält der Abschnitt [Anmeldesicherheit einrichten](/docs/account/login_settings.html#login-settings). Wenn Sie ein Kontoeigner oder ein Administrator sind, der die Anmeldeeinstellungen für andere Benutzer verwaltet oder wenn Sie befähigt sind, Ihre eigenen Anmeldeeinstellungen zu verwalten, lesen Sie die Informationen im Abschnitt [Anmeldeeinstellungen eines Benutzers verwalten](/docs/iam/user_login.html#loginsettings).
+Weitere Informationen zum Einrichten von MFA-Optionen enthält der Abschnitt [Anmeldesicherheit einrichten](/docs/account?topic=account-login-settings#login-settings). Wenn Sie ein Kontoeigner oder ein Administrator sind, der die Anmeldeeinstellungen für andere Benutzer verwaltet oder wenn Sie befähigt sind, Ihre eigenen Anmeldeeinstellungen zu verwalten, lesen Sie die Informationen im Abschnitt [Anmeldeeinstellungen eines Benutzers verwalten](/docs/iam?topic=iam-loginsettings#loginsettings).
+
+

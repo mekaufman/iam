@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -21,12 +21,13 @@ lastupdated: "2018-11-12"
 Vous pouvez créer des règles dynamiques pour ajouter dynamiquement des utilisateurs fédérés à des groupes d'accès en fonction d'attributs d'identité spécifiques. Lorsque vos utilisateurs se connectent avec un ID fédéré, les données du fournisseur d'identité mappent dynamiquement vos utilisateurs à un groupe d'accès en fonction des règles définies.
 {:shortdesc}
 
-Les utilisateurs disposent déjà d'informations d'identité spécifiques liées au domaine de votre entreprise. Lorsqu'ils se connectent avec un ID fédéré, ces données peuvent être transmises en utilisant des assertions SAML. Ces dernières ou les instructions d'attribut configurées dans le fournisseur d'identité mettent à disposition les données utilisées pour la création des règles. Par exemple, il peut exister une instruction d'attribut true ou false qui définit les utilisateurs comme étant responsables. Ces informations peuvent être utilisées pour ajouter les responsables créés dans votre compte {{site.data.keyword.Bluemix_notm}} à un groupe d'accès spécifique. Pour plus d'informations, voir l'[exemple de règle](accessgroup_rules.html#example).
+Les utilisateurs disposent déjà d'informations d'identité spécifiques liées au domaine de votre entreprise. Lorsqu'ils se connectent avec un ID fédéré, ces données peuvent être transmises en utilisant des assertions SAML. Ces dernières ou les instructions d'attribut configurées dans le fournisseur d'identité mettent à disposition les données utilisées pour la création des règles. Par exemple, il peut exister une instruction d'attribut true ou false qui définit les utilisateurs comme étant responsables. Ces informations peuvent être utilisées pour ajouter les responsables créés dans votre compte {{site.data.keyword.Bluemix_notm}} à un groupe d'accès spécifique. Pour plus d'informations, voir l'[exemple de règle](/docs/iam?topic=iam-rules#example).
 
 Seuls les utilisateurs déjà invités au compte peuvent être mappés aux groupes d'accès en utilisant des règles dynamiques.
 {: note}
 
 ## Configuration de règles
+{: #setup_rules}
 
 Les règles dynamiques sont créées en définissant des conditions devant être respectées par les données configurées dans le fournisseur d'identité et transmises avec un ID fédéré d'utilisateur lors de la connexion. Pour créer une règle, procédez comme suit :
 

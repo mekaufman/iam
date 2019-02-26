@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2015，2018
+  years: 2015，2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-02-13"
 
 ---
 
@@ -23,11 +23,11 @@ Pour vous connecter à un cloud dédié où le service IAM public est disponible
 {:shortdesc}
 
 ```
-  $ ibmcloud login -a https://api.{dedicated_env}.bluemix.net
-  Noeud final d'API : https://api.{dedicated_env}.bluemix.net
+  $ ibmcloud login -a https://api.{dedicated_env}.cloud.ibm.com
+  API endpoint: https://api.{dedicated_env}.cloud.ibm.com
 
-  Le service de jeton IAM public est disponible dans l'environnement dédié.
-  Connectez-vous avec votre IBMid public ou utilisez '--no-iam' pour vous connecter en tant qu'utilisateur dédié uniquement.
+  Public IAM token service is available in the dedicated environment.
+  Login with your public IBMid, or use '--no-iam' to login as a dedicated user only.
 
   E-mail>
 ```
@@ -44,18 +44,19 @@ Si votre ID dédié est déjà connecté à l'IBMid public, il s'authentifie et 
 Toutefois, si votre ID dédié n'a pas été connecté à l'IBMid public, vous êtes invité à vous connecter manuellement à l'IBMid public :
 
 ```
-  Vous vous connectez avec un IBMid qui n'est associé à aucun utilisateur dédié.
-  Pour configurer la connexion, entrez les données d'identification de l'utilisateur dédié.
+  You are logging with an IBMid that does not associated with any dedicated user.
+  To set up the connection, input the credentials of the dedicated user.
 
-  Choisissez un type de données d'identification :
-  1. Nom d'utilisateur et mot de passe
-  2. Code temporel unique (En obtenir un à l'adresse https://login.{dedicated_env}.bluemix.net.com/passcode)
-  Entrez un nombre>
+  Choose a credential type:
+  1. Username and password
+  2. One Time Code (Get one at https://login.{dedicated_env}.cloud.ibm.com/passcode)
+  Enter a number>
 ```
 
 Sélectionnez une option pour l'entrée des données d'identification pour l'ID dédié. Après une authentification réussie, votre ID dédié est connecté à votre ID public.
 
 ## Comment forcer une connexion au serveur UAA local ?
+{: #force_login}
 
 Pour forcer une connexion au serveur UAA avec un ID dédié, spécifiez l'option `--no-iam` dans la commande `ibmcloud login` :
 
@@ -64,6 +65,7 @@ Pour forcer une connexion au serveur UAA avec un ID dédié, spécifiez l'option
 ```
 
 ## Déconnexion de votre ID dédié depuis l'IBMid public 
+{: #disconnect_id}
 
 Vous pouvez utiliser la commande `ibmcloud iam dedicated-id-disconnect` pour déconnecter l'IBMid public avec l'ID dédié connecté.
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -21,12 +21,13 @@ lastupdated: "2018-11-12"
 Sie können dynamische Regeln erstellen, um föderierte Benutzer auf der Basis bestimmter Identitätsattribute automatisch zu Zugriffsgruppen hinzuzufügen. Wenn sich Benutzer mit einer föderierten IUD anmelden, werden die vom Identitätsprovider bereitgestellten Daten dazu verwendet, die Benutzer auf der Basis der von Ihnen festgelegten Regeln dynamisch einer Zugriffsgruppe zuzuordnen.
 {:shortdesc}
 
-Benutzer verfügen bereits über bestimmte Identitätsinformationen innerhalb Ihrer Unternehmensdomäne und wenn sich diese Benutzer mit einer föderierten ID anmelden, können diese Daten mithilfe von SAML-Zusicherungen weitergeleitet werden. Die SAML-Zusicherungen oder Attributanweisungen, die im Identitätsprovider konfiguriert sind, liefern die Daten, die zur Erstellung der einzelnen Regeln verwendet werden. Beispielsweise kann anhand einer Attributanweisung mit dem Wert 'true' oder 'false' ein Benutzer als Manager definiert werden. Diese Informationen können dazu verwendet werden, alle Benutzer, die als Manager definiert sind, zu einer bestimmten Zugriffsgruppe für Manager hinzuzufügen, die Sie in Ihrem {{site.data.keyword.Bluemix_notm}}-Konto erstellt haben. Weitere Informationen hierzu finden Sie in [Beispielregel](accessgroup_rules.html#example).
+Benutzer verfügen bereits über bestimmte Identitätsinformationen innerhalb Ihrer Unternehmensdomäne und wenn sich diese Benutzer mit einer föderierten ID anmelden, können diese Daten mithilfe von SAML-Zusicherungen weitergeleitet werden. Die SAML-Zusicherungen oder Attributanweisungen, die im Identitätsprovider konfiguriert sind, liefern die Daten, die zur Erstellung der einzelnen Regeln verwendet werden. Beispielsweise kann anhand einer Attributanweisung mit dem Wert 'true' oder 'false' ein Benutzer als Manager definiert werden. Diese Informationen können dazu verwendet werden, alle Benutzer, die als Manager definiert sind, zu einer bestimmten Zugriffsgruppe für Manager hinzuzufügen, die Sie in Ihrem {{site.data.keyword.Bluemix_notm}}-Konto erstellt haben. Weitere Informationen hierzu finden Sie in [Beispielregel](/docs/iam?topic=iam-rules#example).
 
 Nur Benutzer, die bereits zum Konto eingeladen wurden, können mithilfe dynamischer Regeln Zugriffsgruppen zugeordnet werden.
 {: note}
 
 ## Regeln festlegen
+{: #setup_rules}
 
 Dynamische Regeln werden erstellt, indem Bedingungen festgelegt werden. Diese Bedingungen müssen von den Daten erfüllt werden, die im Identitätsprovider konfiguriert sind und während der Anmeldung mit der föderierten ID eines Benutzers übergeben werden. Führen Sie die folgenden Schritte aus, um eine Regel zu erstellen:
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-30"
+  years: 2018, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -25,9 +25,10 @@ Si vous disposez de l'accès suivant, vous pouvez mettre à jour le statut d'un 
   * Règle IAM avec un rôle Editeur ou supérieur dans le service Gestion des utilisateurs.
   * Vous êtes un ancêtre dans la hiérarchie d'infrastructure classique pour l'utilisateur. Vous disposez également du droit de gestion d'infrastructure classique d'utilisateurs.
 
-Pour plus d'informations sur les différents types de statut utilisateur, voir [Statut de l’utilisateur](/docs/iam/userstatus.html#status).
+Pour plus d'informations sur les différents types de statut utilisateur, voir [Statut de l’utilisateur](/docs/iam?topic=iam-user_status#user_status).
 
 ## Options de modification du statut d'un utilisateur
+{: #status_options}
 
 Pour mettre à jour le statut d'un utilisateur, vous pouvez choisir une des options suivantes :
 
@@ -44,10 +45,13 @@ Lorsque vous mettez à jour un utilisateur ayant le statut VPN uniquement afin q
 {: note}
 
 ## Mise à jour du statut d'un utilisateur
+{: #update_user_status}
 
 Pour changer le statut d'un utilisateur, procédez comme suit :
 
-1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**.
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**. 
 2. Sélectionnez un utilisateur dans la liste.
 3. Sur la page Détails de l'utilisateur, sélectionnez une option dans le menu **Statut de l'utilisateur**.  
 4. Cliquez sur **Appliquer**.
+
+

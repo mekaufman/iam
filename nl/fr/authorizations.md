@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -19,10 +19,11 @@ lastupdated: "2018-11-12"
 # Octroi d'accès entre services
 {: #serviceauth}
 
-La plupart des fonctionnalités du système IAM (Identity and Access Management) {{site.data.keyword.Bluemix_notm}} se concentrent sur la gestion et l'application de l'accès aux ressources {{site.data.keyword.Bluemix_notm}} par les utilisateurs et leurs applications. Il existe toutefois d'autres scénarios dans lesquels vous pouvoir avoir besoin de fournir un service avec accès à une ressource d'un utilisateur dans un autre service. Tous les utilisateurs de votre compte peuvent créer une autorisation, mais seul un utilisateur disposant du rôle Administrateur peut supprimer une autorisation. Vous pouvez configurer et afficher des autorisations ayant été accordées dans votre compte sur la page **Autorisations**.
+La plupart des fonctionnalités du système IAM (Identity and Access Management) {{site.data.keyword.Bluemix_notm}} se concentrent sur la gestion et l'application de l'accès aux ressources {{site.data.keyword.Bluemix_notm}} par les utilisateurs et leurs applications. Il existe toutefois d'autres scénarios dans lesquels vous pouvoir avoir besoin de fournir un service avec accès à une ressource d'un utilisateur dans un autre service. Tous les utilisateurs de votre compte peuvent créer une autorisation, mais seul un utilisateur disposant du rôle Administrateur peut supprimer une autorisation. Vous pouvez configurer et afficher des autorisations ayant été accordées dans votre compte sur la page **Autorisations**. 
 {:shortdesc}
 
 ## Création d'une autorisation
+{: #create-auth}
 
 Vous pouvez accorder uniquement le niveau d'accès dont vous disposez en tant qu'utilisateur du service cible. Ainsi, si vous n'avez qu'un accès Afficheur pour le service qui va être utilisé, vous ne pouvez accorder que le rôle Afficheur pour l'autorisation.
 
@@ -36,6 +37,7 @@ Seuls les services qui autorisent l'octroi de ce type d'accès sont disponibles 
 {: note}
 
 ## Retrait d'une autorisation
+{: #remove-auth}
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Autorisations**. 
 2. Identifiez la ligne contenant l'autorisation que vous voulez retirer du compte.

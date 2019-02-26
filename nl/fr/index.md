@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -17,15 +17,16 @@ lastupdated: "2018-11-30"
 {: #iamoverview}
 
 ## Qu'est-ce que Cloud IAM ?
+{: #what_is_IAM}
 
-{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) vous permet d'authentifier de manière sécurisée les utilisateurs des services de plateforme et de contrôler de façon cohérente l'accès aux ressources dans {{site.data.keyword.Bluemix_notm}}. Un ensemble de services {{site.data.keyword.Bluemix_notm}} sont activés pour utiliser Cloud IAM afin de contrôler les accès. Ils sont organisés en [groupes de ressources](/docs/account/resourcegroups.html) dans votre compte pour offrir à des utilisateurs sélectionnés un accès rapide et facile à plusieurs ressources à la fois. Des règles d'accès Cloud IAM permettent d'affecter à des ID utilisateur et de service un accès aux ressources de votre compte. Vous pouvez regrouper des utilisateurs et des ID de service dans un [groupe d'accès](/docs/iam/groups.html) pour accorder facilement le même niveau d'accès à toutes les entités du groupe.
+{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) vous permet d'authentifier de manière sécurisée les utilisateurs des services de plateforme et de contrôler de façon cohérente l'accès aux ressources dans {{site.data.keyword.Bluemix_notm}}. Un ensemble de services {{site.data.keyword.Bluemix_notm}} sont activés pour utiliser Cloud IAM afin de contrôler les accès. Ils sont organisés en [groupes de ressources](/docs/resources?topic=resources-rgs#rgs) dans votre compte pour offrir à des utilisateurs sélectionnés un accès rapide et facile à plusieurs ressources à la fois. Des règles d'accès Cloud IAM permettent d'affecter à des ID utilisateur et de service un accès aux ressources de votre compte. Vous pouvez regrouper des utilisateurs et des ID de service dans un [groupe d'accès](/docs/iam?topic=iam-getstarted#getstarted) pour accorder facilement le même niveau d'accès à toutes les entités du groupe.
 
-Une règle affecte à un objet (à savoir un utilisateur, un [ID de service](/docs/iam/serviceid.html#serviceids) ou un groupe d'accès), un ou plusieurs rôles avec une combinaison d'attributs qui définissent la portée de l'accès sur une cible. La règle peut fournir un accès à un seul service, jusqu'au niveau instance, à un ensemble de ressources organisées dans un groupe de ressources, ou encore à des services de gestion de compte. Selon les [rôles IAM](/docs/iam/users_roles.html#iamusermanrol) que vous affectez, différents niveaux d'accès sont octroyés à l'objet pour lui permettre de réaliser diverses tâches de gestion de compte, d'utiliser des instances de service ou d'accéder à un service via l'interface utilisateur ou des appels d'API.
+Une règle affecte à un objet (à savoir un utilisateur, un [ID de service](/docs/iam?topic=iam-serviceids#serviceids) ou un groupe d'accès), un ou plusieurs rôles avec une combinaison d'attributs qui définissent la portée de l'accès sur une cible. La règle peut fournir un accès à un seul service, jusqu'au niveau instance, à un ensemble de ressources organisées dans un groupe de ressources, ou encore à des services de gestion de compte. Selon les [rôles IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol) que vous affectez, différents niveaux d'accès sont octroyés à l'objet pour lui permettre de réaliser diverses tâches de gestion de compte, d'utiliser des instances de service ou d'accéder à un service via l'interface utilisateur ou des appels d'API.
 
 
 ![IAM pour le contrôle d'accès dans un compte](images/iam-diagram.svg "Fonctionnement de la gestion des accès dans un compte à l'aide d'IAM")
 
-Concernant les services qui ne prennent pas en charge la création de règles Cloud IAM pour la gestion de l'accès, vous pouvez utiliser l'[accès Cloud Foundry](/docs/iam/cfaccess.html#cfaccess) ou les [droits d'infrastructure classique](/docs/iam/infrastructureaccess.html#infrapermission).
+Concernant les services qui ne prennent pas en charge la création de règles Cloud IAM pour la gestion de l'accès, vous pouvez utiliser l'[accès Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfaccess) ou les [droits d'infrastructure classique](/docs/iam?topic=iam-infrapermission#infrapermission).
 
 
 ## Fonctions fournies par Cloud IAM
@@ -44,12 +45,13 @@ Concernant les services qui ne prennent pas en charge la création de règles Cl
 
 
 ## Comment utiliser Cloud IAM ?
+{: #howto}
 
-Vous pouvez accéder à Cloud IAM via l'API, l'interface CLI ou l'interface utilisateur Access (IAM).
+Vous pouvez accéder à Cloud IAM via l'API, l'interface CLI ou l'interface utilisateur Access (IAM). 
 
-* Pour accéder à Cloud IAM en utilisant l'interface utilisateur, sélectionnez **Gérer** &gt; **Accès (IAM)**.
-* Pour consulter les commandes de l'interface CLI disponibles, voir [Identité, accès et clés d'API IAM](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam).
-* Pour consulter les API disponibles, voir les pages de documentation suivantes concernant les API :
+* Pour accéder à Cloud IAM en utilisant l'interface utilisateur, sélectionnez **Gérer** &gt; **Accès (IAM)**. 
+* Pour consulter les commandes de l'interface CLI disponibles, voir [Gestion de l'accès IAM, des clés d'API, des ID de service et des groupes d'accès](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam).
+* Pour consulter les API disponibles, voir les pages de documentation suivantes concernant les API : 
     * [IAM Identity Services API](https://{DomainName}/apidocs/iam-identity-token-api){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")
     * [IAM Access Groups API](https://{DomainName}/apidocs/iam-access-groups){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")
     * [IAM Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")

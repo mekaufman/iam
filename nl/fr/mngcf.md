@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -20,6 +20,7 @@ Pour pouvoir gérer l'accès à des organisations et des espaces de compte, vous
 {:shortdesc}
 
 ## Mise à jour de l'accès Cloud Foundry
+{: #update_cf_access}
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**.
 2. Sur la ligne de l'utilisateur auquel vous souhaitez affecter un accès, sélectionnez le menu **Actions** ![Icône Liste des actions](../icons/action-menu-icon.svg) puis cliquez sur **Affecter un accès**.
@@ -32,6 +33,7 @@ Pour pouvoir gérer l'accès à des organisations et des espaces de compte, vous
   * Editer le rôle d'espace
 
 ## Ajout d'un utilisateur à une organisation
+{: #add_to_org}
 
 Si vous êtes le responsable d'une organisation dont l'utilisateur n'est pas encore membre, vous affectez l'utilisateur à cette organisation.
 
@@ -48,6 +50,7 @@ Si vous êtes le responsable d'une organisation dont l'utilisateur n'est pas enc
 7. Cliquez sur **Affecter**.
 
 ## Révision des accès affectés
+{: #review_my_access}
 
 Si vous devez vérifier l'accès qui vous a été affecté sur un compte auquel vous avez ajouté, procédez comme suit :
 
@@ -57,3 +60,4 @@ Si vous devez vérifier l'accès qui vous a été affecté sur un compte auquel 
 3. Développez la ligne de l'organisation puis consultez les rôles affectés.
 
 Si vous avez besoin d'accès supplémentaires, vous devez contacter le responsable de votre organisation ou le propriétaire du compte afin de mettre à jour le rôle Cloud Foundry affecté.
+

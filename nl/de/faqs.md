@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-30"
 
 
 
@@ -27,13 +27,13 @@ lastupdated: "2018-11-30"
 {: #whatisiam}
 {: faq}
 
-IAM (Identity and Access Management, Identitäts- und Zugriffsmanagement) ermöglicht Ihnen, Benutzer sicher für Plattformservices zu authentifizieren und den Zugriff auf Ressourcen innerhalb der {{site.data.keyword.cloud_notm}}-Plattform zu steuern. Eine Reihe von IBM Cloud-Services kann Cloud IAM für die Zugriffssteuerung verwenden. Diese Services sind in Ressourcengruppen innerhalb Ihres Kontos organisiert, um Benutzern einen schnellen und bequemen Zugriff auf mehrere Ressourcen gleichzeitig zu ermöglichen. Die Cloud IAM-Zugriffsrichtlinien werden verwendet, um Benutzern und Service-IDs die Zugriffsberechtigungen für die Ressourcen innerhalb Ihres Kontos zuzuweisen. Weitere Informationen finden Sie in [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam/index.html#iamoverview).
+IAM (Identity and Access Management, Identitäts- und Zugriffsmanagement) ermöglicht Ihnen, Benutzer sicher für Plattformservices zu authentifizieren und den Zugriff auf Ressourcen innerhalb der {{site.data.keyword.cloud_notm}}-Plattform zu steuern. Eine Reihe von IBM Cloud-Services kann Cloud IAM für die Zugriffssteuerung verwenden. Diese Services sind in Ressourcengruppen innerhalb Ihres Kontos organisiert, um Benutzern einen schnellen und bequemen Zugriff auf mehrere Ressourcen gleichzeitig zu ermöglichen. Die Cloud IAM-Zugriffsrichtlinien werden verwendet, um Benutzern und Service-IDs die Zugriffsberechtigungen für die Ressourcen innerhalb Ihres Kontos zuzuweisen. Weitere Informationen finden Sie in [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam?topic=iam-iamoverview#iamoverview).
 
 ## Was ist ein IAM-fähiger Service?
 {: #iam-enabled}
 {: faq}
 
-Ein IAM-fähiger Service muss in einer Ressourcengruppe enthalten sein und der Zugriff auf den Service erfolgt über die Verwendung von IAM-Zugriffsrichtlinien. Wenn Sie einen IAM-fähigen Service aus dem Katalog erstellen, müssen Sie ihn einer Ressourcengruppe zuordnen. Weitere Informationen finden Sie in [Was ist eine Ressource?](/docs/resources/acct_resources.html#resource)
+Ein IAM-fähiger Service muss in einer Ressourcengruppe enthalten sein und der Zugriff auf den Service erfolgt über die Verwendung von IAM-Zugriffsrichtlinien. Wenn Sie einen IAM-fähigen Service aus dem Katalog erstellen, müssen Sie ihn einer Ressourcengruppe zuordnen. Weitere Informationen finden Sie in [Was ist eine Ressource?](/docs/resources?topic=resources-resource#resource)
 
 {{site.data.keyword.containerlong_notm}} ist die einzige Ausnahme. Der Zugriff wird über IAM gesteuert, doch der Service ist stets der Standardressourcengruppe zugewiesen. Daher können Sie bei der Erstellung aus dem Katalog keine Ressourcengruppe auswählen, denn es werden keine entsprechenden Auswahloptionen angezeigt. Darüber hinaus ist die Zuordnung des Service zu einer beliebigen anderen Ressourcengruppe nicht möglich.
 
@@ -73,7 +73,7 @@ Eine Zugriffsgruppe wird verwendet, um eine Gruppe von Benutzern und Service-IDs
 
 Durch die Verwendung sowohl von Ressourcengruppen als auch von Zugriffsgruppen können Sie die Zugriffszuordnungsrichtlinie optimieren, indem Sie eine begrenzte Anzahl von Richtlinien zuordnen. Sie können alle Ressourcen, auf die eine bestimmte Gruppe von Benutzern und Service-IDs Zugriff benötigt, in einer einzigen Ressourcengruppe organisieren, alle Benutzer oder Service-IDs in einer Zugriffsgruppe gruppieren und dann eine einzige Richtlinie zuordnen, die Zugriff auf alle Ressourcen in der Ressourcengruppe gewährt.
 
-Weitere Informationen enthält [Bewährte Verfahren für die Zuweisung von Zugriff](/docs/iam/bp_access.html#account_setup).
+Weitere Informationen enthält [Bewährte Verfahren für die Zuweisung von Zugriff](/docs/iam?topic=iam-account_setup#account_setup).
 
 ## Wie stelle ich sicher, dass meine Benutzer Ressourcen in einer Ressourcengruppe erstellen können?
 {: #resources}
@@ -105,7 +105,7 @@ Wenn Sie über Zugriff zur Verwaltung einer Ressourcengruppe verfügen, können 
 
 Wenn Sie über Zugriff auf die Ressourcen innerhalb einer Ressourcengruppe haben, können Sie Instanzen bearbeiten, löschen und erstellen oder abhängig von der zugeordneten Rolle über alle Verwaltungsaktionen für die angegebenen Services innerhalb der Ressourcengruppe verfügen.
 
-Informationen zu Plattformmanagementrollen und Aktionen für die Kontoverwaltungsservices finden Sie zum Beispiel in den Tabellen der Plattformrollen unter [Platform roles table](/docs/iam/users_roles.html#platformrolestable2).
+Informationen zu Plattformmanagementrollen und Aktionen für die Kontoverwaltungsservices finden Sie zum Beispiel in den Tabellen der Plattformrollen unter [Platform roles table](/docs/iam?topic=iam-userroles#platformrolestable2).
 
 ## Wer kann Benutzer entfernen?
 {: #remove-users}
@@ -121,7 +121,7 @@ Der Kontoeigner kann beliebige Benutzer aus dem Konto entfernen. Ferner können 
 {: faq}
 
 1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie **Einstellungen** aus.
-2. Wählen Sie **Mehrfaktorauthentifizierung** aus und klicken Sie dann auf **Ja, ich bin sicher**. Weitere Informationen hierzu finden Sie in [MFA für Benutzer in Ihrem Konto verlangen](/docs/iam/mfa.html#enablemfa).
+2. Wählen Sie **Mehrfaktorauthentifizierung** aus und klicken Sie dann auf **Ja, ich bin sicher**. Weitere Informationen hierzu finden Sie in [MFA für Benutzer in Ihrem Konto verlangen](/docs/iam?topic=iam-enablemfa#enablemfa).
 
 ## Was ist der Unterschied zwischen Service- und Plattformrollen?
 {: #service-platform-roles}
@@ -129,9 +129,9 @@ Der Kontoeigner kann beliebige Benutzer aus dem Konto entfernen. Ferner können 
 
 Service- und Plattformrollen sind zwei verschiedene Typen von Rollen:
 
-* Plattformrollen sind die Art und Weise, wie Sie mit einem Service in einem Konto arbeiten, z. B. Instanzen erstellen, Instanzen binden und den Benutzerzugriff auf den Service verwalten. Für Plattformservices ermöglichen diese Rollen den Benutzern beispielsweise, Ressourcengruppen zu erstellen und Service-IDs zu verwalten. Plattformrollen sind: Administrator, Editor (Bearbeiter), Operator (Bediener) und Viewer (Anzeigeberechtigter).
+* Plattformrollen sind die Art und Weise, wie Sie mit einem Service in einem Konto arbeiten, z. B. Instanzen erstellen, Instanzen binden und den Benutzerzugriff auf den Service verwalten. Für Plattformservices ermöglichen diese Rollen den Benutzern beispielsweise, Ressourcengruppen zu erstellen und Service-IDs zu verwalten. Plattformrollen sind: Administrator, Bearbeiter, Bediener und Anzeigeberechtigter.
 
-* Servicerollen definieren die Möglichkeit, Aktionen für einen Service auszuführen und sind für jeden Service spezifisch. Zu den Aktionen zählen das Ausführen von API-Aufrufen oder das Zugreifen auf die Benutzerschnittstelle. Servicerollen sind: Manager, Schreibberechtigter (Writer) und Leseberechtigter (Reader). Weitere Informationen darüber, wie diese Rollen angewendet werden, finden Sie in der Dokumentation des jeweiligen Service.
+* Servicerollen definieren die Möglichkeit, Aktionen für einen Service auszuführen und sind für jeden Service spezifisch. Zu den Aktionen zählen das Ausführen von API-Aufrufen oder das Zugreifen auf die Benutzerschnittstelle. Servicerollen sind: Manager, Schreibberechtigter und Leseberechtigter. Weitere Informationen darüber, wie diese Rollen angewendet werden, finden Sie in der Dokumentation des jeweiligen Service.
 
 ## Was ist der Unterschied zwischen einer Ressourcengruppe und Cloud Foundry-Organisationen und -Bereichen?
 {: #groups-organizations}
@@ -182,7 +182,7 @@ Ein Kontoadministrator kann jedoch selbst mit dem zuvor beschriebenen Zugriff di
 {: #users}
 {: faq}
 
-Ein Kontoeigner kann all anderen Benutzer im Konto anzeigen und auf der Seite 'Benutzer' auswählen, wie Benutzern andere Benutzer im Konto angezeigt werden. Auf der Seite 'Einstellungen' kann ein Kontoeigner die Einstellung für die [Sichtbarkeit der Benutzerliste](/docs/iam/userlist.html#userlistview) durch die Auswahl einer der folgenden Optionen anpassen:
+Ein Kontoeigner kann all anderen Benutzer im Konto anzeigen und auf der Seite 'Benutzer' auswählen, wie Benutzern andere Benutzer im Konto angezeigt werden. Auf der Seite 'Einstellungen' kann ein Kontoeigner die Einstellung für die [Sichtbarkeit der Benutzerliste](/docs/iam?topic=iam-userlistview#userlistview) durch die Auswahl einer der folgenden Optionen anpassen:
 
 * **Ansicht ohne Einschränkung**: Alle Benutzer in Ihrem Konto können alle anderen Benutzer im Konto anzeigen.
 * **Eingeschränkte Ansicht**: Beschränkt die Sichtbarkeit von Benutzern auf der Seite 'Benutzer' auf diejenigen Benutzer, denen explizit Zugriff gewährt wurde, sowie auf solche Benutzer, für die andere Benutzer über eine gemeinsam genutzte Cloud Foundry-Organisation oder eine Beziehung in der Benutzerhierarchie der klassischen Infrastruktur sichtbar sind.
@@ -203,4 +203,4 @@ Ja. Sie müssen einem Benutzer im Rahmen der folgenden drei Systeme für das Zug
 {: #appid}
 {: faq}
 
-IAM wird für die Verwaltung des Zugriffs auf Ihre {{site.data.keyword.cloud_notm}}-Services und -Ressourcen verwendet. Mit {{site.data.keyword.appid_full_notm}} können Sie die Cloudsicherheit noch weiter steigern, indem Sie Authentifizierungsmechanismen in Ihre Webanwendungen und mobilen Apps einbinden. Mit nur wenigen Zeilen Code können Sie Ihre cloud-nativen Apps und Services, deren Ausführung auf {{site.data.keyword.cloud_notm}} erfolgt, ohne großen Aufwand schützen. Sind Sie bereit, loszulegen? [Informieren Sie sich anhand der Dokumentation](/docs/services/appid/index.html).
+IAM wird für die Verwaltung des Zugriffs auf Ihre {{site.data.keyword.cloud_notm}}-Services und -Ressourcen verwendet. Mit {{site.data.keyword.appid_full_notm}} können Sie die Cloudsicherheit noch weiter steigern, indem Sie Authentifizierungsmechanismen in Ihre Webanwendungen und mobilen Apps einbinden. Mit nur wenigen Zeilen Code können Sie Ihre cloud-nativen Apps und Services, deren Ausführung auf {{site.data.keyword.cloud_notm}} erfolgt, ohne großen Aufwand schützen. Sind Sie bereit, loszulegen? [Informieren Sie sich anhand der Dokumentation](/docs/services/appid?topic=appid-gettingstarted#gettingstarted).

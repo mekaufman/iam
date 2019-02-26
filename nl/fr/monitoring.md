@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-07-23"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -27,4 +27,4 @@ Vous pouvez effectuer le suivi des événements suivants :
 * Création, mise à jour ou suppression de règles d'accès
 * Connexion à {{site.data.keyword.Bluemix_notm}} en utilisant une clé d'API, un code d'autorisation, un code d'accès, une clé d'API ou un mot de passe associé à un ID de service.
 
-Pour commencer à surveiller les actions utilisateur, voir [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla). Pour plus d'informations sur les différentes zones d'événement dont vous pouvez effectuer le suivi, voir [Evénements IAM](/docs/services/cloud-activity-tracker/services/at_events_iam.html).
+Pour commencer à surveiller les actions utilisateur, voir [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla). Pour plus d'informations sur les différentes zones d'événement dont vous pouvez effectuer le suivi, voir [Evénements IAM](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_iam#at_events_iam).

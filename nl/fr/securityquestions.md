@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2018-11-30"
 # Activation des questions de sécurité d'authentification multi-facteur pour un utilisateur
 {: #questions}
 
-En tant qu'administrateur disposant de l'accès approprié, vous pouvez activer l'option pour qu'un utilisateur soit invité à indiquer des questions et des réponses de sécurité lors de la connexion. Ce type d'authentification multi-facteur (MFA) est requis uniquement pour le compte sur lequel le paramètre est activé. Ce type d'authentification multi-facteur est requis uniquement pour le compte dans lequel le paramètre est activé, contrairement à l'authentification multi-facteur utilisant un ID. Pour plus d'informations, voir [Types d'authentification multi-facteur](/docs/iam/mfatypes.html#types).
+En tant qu'administrateur disposant de l'accès approprié, vous pouvez activer l'option pour qu'un utilisateur soit invité à indiquer des questions et des réponses de sécurité lors de la connexion. Ce type d'authentification multi-facteur (MFA) est requis uniquement pour le compte sur lequel le paramètre est activé. Ce type d'authentification multi-facteur est requis uniquement pour le compte dans lequel le paramètre est activé, contrairement à l'authentification multi-facteur utilisant un ID. Pour plus d'informations, voir [Types d'authentification multi-facteur](/docs/iam?topic=iam-types#types).
 {:shortdesc}
 
 Si vous disposez d'un des accès suivants, vous pouvez mettre à jour ce paramètre pour d'autres utilisateurs de votre compte :
@@ -27,7 +27,7 @@ Si vous disposez d'un des accès suivants, vous pouvez mettre à jour ce paramè
 * Vous êtes un ancêtre dans la hiérarchie d'infrastructure classique pour l'utilisateur. Vous disposez également du droit de gestion d'infrastructure classique d'utilisateurs.
 
 
-Pour activer cette option d'authentification multi-facteur pour un utilisateur, ce dernier doit tout d'abord [configurer des questions de sécurité](/docs/account/login_settings.html#security-questions) ainsi que des réponses sur la page Paramètres de connexion du profil.
+Pour activer cette option d'authentification multi-facteur pour un utilisateur, ce dernier doit tout d'abord [configurer des questions de sécurité](/docs/account?topic=account-security-questions#security-questions) ainsi que des réponses sur la page Paramètres de connexion du profil. 
 {: note}
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**.

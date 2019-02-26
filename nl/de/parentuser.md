@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -20,13 +20,12 @@ lastupdated: "2018-11-30"
 Wenn Sie über den entsprechenden Zugriff verfügen, können Sie den übergeordneten Benutzer eines Benutzers aktualisieren. Die Aktualisierung des übergeordneten Benutzers wirkt sich darauf aus, wie die Anzeige anderer Benutzer in dem Konto erfolgt, wenn für die Sichtbarkeit der Benutzerliste die Einstellung 'Eingeschränkte Ansicht' festgelegt ist. Benutzer können nur solche Benutzer sehen, denen sie selbst übergeordnet sind, sowie alle weiteren Benutzer, die von den Nachkommen des übergeordneten Benutzers eingeladen wurden.
 {:shortdesc}
 
-Weitere Informationen zu dieser Einstellung finden Sie in [Sichtbarkeit der Benutzerliste](/docs/iam/userlist.html#userlistview).
+Weitere Informationen zu dieser Einstellung finden Sie in [Sichtbarkeit der Benutzerliste](/docs/iam?topic=iam-userlistview#userlistview). 
 
 Wenn Sie über die folgenden Zugriffsrechte verfügen, können Sie den übergeordneten Benutzer für einen anderen Benutzer aktualisieren:
 
 * Ihnen ist über eine IAM-Richtlinie die Rolle des Editors oder höher für den Benutzermanagementservice zugewiesen
 * Sie gelten in der Hierarchie der klassischen Infrastruktur als 'Vorfahre' eines Benutzers und Ihnen ist für die klassische Infrastruktur die Berechtigung zum Verwalten von Benutzern zugewiesen
-
 
 
 Führen Sie die folgenden Schritte aus, um den übergeordneten Benutzer eines Benutzers zu aktualisieren:

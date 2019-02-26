@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-30"
+  years: 2018, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -25,10 +25,10 @@ Wenn Sie über die folgenden Zugriffsrechte verfügen, können Sie den Status an
   * Ihnen ist über eine IAM-Richtlinie die Rolle des Editors oder höher für den Benutzermanagementservice zugewiesen
   * Sie gelten in der Hierarchie der klassischen Infrastruktur als 'Vorfahre' eines Benutzers und Ihnen ist für die klassische Infrastruktur die Berechtigung zum Verwalten von Benutzern zugewiesen
 
-
-Weitere Informationen zu den Typen von Benutzerstatus enthält der Abschnitt [Benutzerstatus](/docs/iam/userstatus.html#status).
+Weitere Informationen zu den Typen von Benutzerstatus enthält der Abschnitt [Benutzerstatus](/docs/iam?topic=iam-user_status#user_status).
 
 ## Optionen zum Ändern des Status eines Benutzers
+{: #status_options}
 
 Zum Aktualisieren des Status eines Benutzers stehen die folgenden Optionen zur Auswahl:
 
@@ -45,10 +45,13 @@ Wenn Sie einen Benutzer mit dem Status 'Nur VPN' zum Status 'Aktiv' aktualisiere
 {: note}
 
 ## Status eines Benutzers aktualisieren
+{: #update_user_status}
 
 Führen Sie die folgenden Schritte aus, um den Status eines Benutzers zu ändern:
 
-1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Benutzer** aus.
+1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Benutzer** aus. 
 2. Wählen Sie einen Benutzer aus der Liste aus.
 3. Wählen Sie auf der Seite 'Benutzerdetails' im Menü **Benutzerstatus** eine Option aus.  
 4. Klicken Sie auf **Anwenden**.
+
+

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-10-29"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -17,6 +17,7 @@ lastupdated: "2018-10-29"
 {: #iamconcepts}
 
 ## Identität
+{: #identity}
 
 Das Konzept der Identität in {{site.data.keyword.Bluemix_notm}} IAM basiert auf den folgenden Komponenten:
 
@@ -26,12 +27,13 @@ Das Konzept der Identität in {{site.data.keyword.Bluemix_notm}} IAM basiert auf
 <dt>Service- und App-Identitäten</dt>
 <dd>Bei den Service-IDs handelt es sich um die Funktion von Cloud IAM, die zur Bereitstellung einer separaten Identität für Services und Anwendungen benutzt wird. Sie können eine Service-ID erstellen, die von einer Anwendung benutzt wird, die Zugriff auf Ihre {{site.data.keyword.Bluemix_notm}}-Services benötigt, damit die individuellen Benutzerberechtigungsnachweise nicht verwendet werden müssen.</dd>
 <dt>API-Schlüssel</dt>
-<dd>{{site.data.keyword.cloud_notm}}-API-Schlüssel stehen Ihnen über Cloud IAM zur Verfügung und können zur Authentifizierung mithilfe der API oder CLI als Benutzer- oder Service-ID verwendet werden. Diese API-Schlüssel werden über Cloud IAM bereitgestellt und können aus diesem Grund nicht allgemein für die Authentifizierung mit einer IBMid außerhalb von IBM Cloud eingesetzt werden. Ein Benutzer kann auch über einen einzigen API-Schlüssel für die klassische Infrastruktur verfügen, der für den Zugriff auf APIs der klassischen Infrastruktur verwendet werden kann. Dies ist jedoch nicht erforderlich, da Sie mit den {{site.data.keyword.cloud_notm}}-API-Schlüsseln auf dieselben APIs zugreifen können.</dd>
+<dd>{{site.data.keyword.cloud_notm}}-API-Schlüssel stehen Ihnen über Cloud IAM zur Verfügung und können zur Authentifizierung mithilfe der API oder CLI als Benutzer- oder Service-ID verwendet werden. Diese API-Schlüssel werden über Cloud IAM bereitgestellt und können aus diesem Grund nicht allgemein für die Authentifizierung mit einer IBMid außerhalb von IBM Cloud eingesetzt werden. Ein Benutzer kann auch über einen einzigen API-Schlüssel für die klassische Infrastruktur verfügen, der für den Zugriff auf APIs der klassischen Infrastruktur verwendet werden kann. Dies ist jedoch nicht erforderlich, da Sie mit den {{site.data.keyword.cloud_notm}}-API-Schlüsseln auf dieselben APIs zugreifen können. </dd>
 <dt>Ressourcen</dt>
-<dd>{{site.data.keyword.Bluemix_notm}}-Ressourcen werden durch ihre Cloud-Ressourcennamen (CRNs) identifiziert. Weitere Informationen hierzu finden Sie in [Cloudressourcennamen](/docs/overview/crn.html#crn).</dd>
+<dd>{{site.data.keyword.Bluemix_notm}}-Ressourcen werden durch ihre Cloud-Ressourcennamen (CRNs) identifiziert. Weitere Informationen hierzu finden Sie in [Cloudressourcennamen](/docs/overview?topic=overview-crn#crn).</dd>
 </dl>
 
 ## Zugriffsmanagement
+{: #am}
 
 Das Konzept des Zugriffsmanagements in {{site.data.keyword.Bluemix_notm}} basiert auf einer Reihe von Komponenten, die zueinander in Beziehung stehen. Dazu gehören Benutzer, Ressourcen, Richtlinien, Rollen, Aktionen und das Cloud IAM-Steuersystem, die es Benutzern erlauben, Aktionen für die Ressourcen innerhalb eines Kontos auszuführen. 
 

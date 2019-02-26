@@ -11,6 +11,7 @@ lastupdated: "2018-11-30"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:important: .important}
 {:new_window: target="_blank"}
 
 # Droits d'infrastructure classique
@@ -29,11 +30,12 @@ Lorsque vous invitez une personne à rejoindre le compte, seul vous, le proprié
 
 Un ensemble de droits d'infrastructure classique pour l'affichage et la gestion des informations de facturation et l'utilisation des cas de support est désormais migré vers des groupes d'accès. Les utilisateurs de votre compte auxquels ces droits ont été précédemment affectés sont désormais affectés au groupe d'accès des droits migrés respectifs. Par conséquent, les droits d'infrastructure classique peuvent être directement gérés en utilisant des règles d'accès IAM.
 
-Ces groupes d'accès spéciaux incluent toutes les règles IAM appropriées pour conserver le comportement d'origine des droits d'infrastructure classique. Par exemple, pour qu'un utilisateur continue de voir toutes les mises à jour apportées à un cas de support par tous les utilisateurs, les groupes d'accès de droits migrés pour les droits d'infrastructure classique de demande de service incluent une règle IAM supplémentaire concernant le service Gestion des utilisateurs avec le rôle Afficheur affecté. Pour plus d'informations, voir [Accès utilisateur pour l'utilisation de cas de support](/docs/get-support/support_access.html#access).
+Ces groupes d'accès spéciaux incluent toutes les règles IAM appropriées pour conserver le comportement d'origine des droits d'infrastructure classique. Par exemple, pour qu'un utilisateur continue de voir toutes les mises à jour apportées à un cas de support par tous les utilisateurs, les groupes d'accès de droits migrés pour les droits d'infrastructure classique de demande de service incluent une règle IAM supplémentaire concernant le service Gestion des utilisateurs avec le rôle Afficheur affecté. Pour plus d'informations, voir [Attribution d'accès utilisateur pour l'utilisation de cas de support](/docs/get-support/support_access.html#access).
 
 Vous pouvez continuer à gérer ces droits d'infrastructure classique migrés pour les utilisateurs directement via IAM en les ajoutant et en les retirant dans des groupes d'accès de droits migrés. Les droits dont disposent ces groupes d'accès sont verrouillés afin de conserver le comportement d'accès pour leurs membres. Pour que les nouveaux utilisateurs IAM puissent bénéficier de cette facilité d'utilisation, évitez de supprimer ces groupes d'accès.
 
-Le tableau suivant présente tous les droits d'infrastructure classique migrés désormais disponibles en utilisant les groupes d'accès.
+Une fois que les droits d'infrastructure classique sont migrés, vous devez arrêter de les utiliser. Consultez le tableau suivant présentant tous les droits d'infrastructure classique faisant désormais partie des groupes d'accès IAM.
+{: important}
 
 | Nom du groupe d'accès de droits migrés | Actions autorisées |
 |----------|---------|
@@ -49,5 +51,4 @@ Le tableau suivant présente tous les droits d'infrastructure classique migrés 
 | Afficher les cas de support | Afficher tous les cas de support |
 {: caption="Tableau 1. Groupes d'accès prédéfinis" caption-side="top"}
 
-Vous pouvez continuer de gérer des utilisateurs pour les groupes d'accès. Toutefois, il peut être utile de créer des groupes d'accès qui incluent un ensemble de règles pour les [services de gestion de compte IAM](/docs/iam/users_roles.html#platformrolestable2) afin de faciliter l'affectation d'accès aux tâches de gestion de compte et l'utilisation de cas de support.
-{: tip}
+Vous pouvez continuer de gérer des utilisateurs pour les groupes d'accès. Toutefois, il peut être utile de créer des groupes d'accès qui incluent un ensemble de règles pour les [services de gestion de compte IAM](/docs/iam?topic=iam-account-services#account-services) afin de faciliter l'affectation d'accès aux tâches de gestion de compte et l'utilisation de cas de support.

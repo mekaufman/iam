@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-30"
+  years: 2018, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -15,17 +15,18 @@ lastupdated: "2018-11-30"
 # Meilleures pratiques pour l'affectation d'accès
 {: #account_setup}
 
-Pour rationaliser le processus d'affectation d'accès, vous pouvez tirer partir des groupes d'accès pour affecter un nombre minimal de règles en affectant le même accès à tous les utilisateurs et ID de service qui appartiennent à un même groupe d'accès. Utilisez ces meilleures pratiques pour en apprendre davantage sur les moyens de fournir aux utilisateurs un accès aux ressources, groupes de ressources et services de gestion des comptes.
+Pour rationaliser le processus d'affectation d'accès, vous pouvez tirer parti des groupes d'accès pour affecter un nombre minimal de règles en octroyant le même accès à tous les utilisateurs et ID de service qui appartiennent à un même groupe d'accès. Utilisez ces meilleures pratiques pour en apprendre davantage sur les moyens de fournir aux utilisateurs un accès aux ressources, groupes de ressources et services de gestion des comptes.
 {:shortdesc}
 
-Pour être certain de réussir avec un compte correctement configuré, voir [Meilleures pratiques pour la configuration de votre compte](/docs/account/bp_account.html#account_setup) et [Meilleures pratiques pour l'organisation des ressources dans un groupe de ressources](/docs/resources/bestpractice_rgs.html).
+Pour être certain de réussir avec un compte correctement configuré, voir [Meilleures pratiques pour la configuration de votre compte](/docs/account?topic=account-account_setup#account_setup) et [Meilleures pratiques pour l'organisation des ressources dans un groupe de ressources](/docs/resources?topic=resources-bp_resourcegroups#bp_resourcegroups).
 {: tip}
 
 ## Qu'est-ce qu'une bonne stratégie de groupe d'accès ?
+{: #rg_strategy}
 
 Un groupe d'accès est un regroupement d'utilisateurs et d'ID de service auquel le même accès IAM peut être accordé. Vous pouvez affecter une seule règle au groupe au lieu d'affecter individuellement le même accès plusieurs fois pour chaque utilisateur ou ID de service.
 
-En partant du principe que vous avez suivi les instructions décrites dans la rubrique [Meilleures pratiques pour la configuration de votre compte](/docs/account/bp_account.html#account_setup), vous pouvez logiquement affecter un accès en créant un groupe d'accès par niveau d'accès souhaité. Ensuite, vous pouvez mapper chaque groupe d'accès aux groupes de ressources précédemment créés. Par exemple, pour contrôler l'accès au projet `CustApp`, vous pouvez créer les groupes d'accès suivants :
+En partant du principe que vous avez suivi les instructions décrites dans la rubrique [Meilleures pratiques pour la configuration de votre compte](/docs/account?topic=account-account_setup#account_setup), vous pouvez logiquement affecter un accès en créant un groupe d'accès par niveau d'accès souhaité. Ensuite, vous pouvez mapper chaque groupe d'accès aux groupes de ressources précédemment créés. Par exemple, pour contrôler l'accès au projet `CustApp`, vous pouvez créer les groupes d'accès suivants :
 
 * Auditor-Group
 * Developer-Group
@@ -38,7 +39,7 @@ Bien que ces suggestions soient conçues pour un scénario hypothétique, vous p
 ## Création de groupes d'accès
 {: #access-group-setup}
 
-Pour créer un groupe d'accès, procédez comme suit :
+Pour créer un groupe d'accès, procédez comme suit : 
 
 1. Dans la console {{site.data.keyword.Bluemix}}, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Groupes d'accès**.
 2. Cliquez sur **Créer**.
@@ -48,10 +49,11 @@ Pour créer un groupe d'accès, procédez comme suit :
 Après avoir créé un groupe d'accès, vous pouvez y ajouter des utilisateurs et des ID de service.
 
 ## De quelle façon les règles d'accès IAM fournissent-elles un accès ?
+{: #how_access}
 
 Une règle est composée d'un objet, d'une cible et d'un rôle. L'objet de ce scénario est le groupe d'accès La cible est ce à quoi l'objet doit pouvoir accéder, par exemple, un ensemble de ressources, une instance de service, tous les services du compte ou toutes les instances d'un service. Le rôle définit le niveau d'accès qui est octroyé à un utilisateur.
 
-Les rôles les plus fréquemment utilisés sont Afficheur, Editeur et Administrateur. Le rôle Afficheur fournit l'accès minimum et permet d'afficher des instances et des groupes de ressources dans un compte. Le rôle Editeur dispose de davantage d'accès et permet de créer, d'éditer, de supprimer et de lier des instances de service. Le rôle Administrateur comprend tout ce qui permet de gérer une instance de service et peut affecter un accès aux autres utilisateurs. Cependant, il convient de prendre en compte deux catégories de rôles distinctes, Plateforme et Catégorie. Pour plus d'informations sur les rôles qui peuvent être affectés, voir [Rôles cloud IAM](/docs/iam/users_roles.html#iamusermanrol).
+Les rôles les plus fréquemment utilisés sont Afficheur, Editeur et Administrateur. Le rôle Afficheur fournit l'accès minimum et permet d'afficher des instances et des groupes de ressources dans un compte. Le rôle Editeur dispose de davantage d'accès et permet de créer, d'éditer, de supprimer et de lier des instances de service. Le rôle Administrateur comprend tout ce qui permet de gérer une instance de service et peut affecter un accès aux autres utilisateurs. Cependant, il convient de prendre en compte deux catégories de rôles distinctes, Plateforme et Catégorie. Pour plus d'informations sur les rôles qui peuvent être affectés, voir [Rôles cloud IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol). 
 
 ## Affectation d'accès à des groupes d'accès
 {: #assigning-access}
@@ -68,3 +70,5 @@ Vous pouvez organiser des ressources dans un groupe de ressources et des utilisa
 
 Accordez facilement à plusieurs utilisateurs les droits d'accès Administrateur sur tout ce que contient un compte en créant un groupe d'accès et en lui affectant deux règles. Pour créer la première règle, utilisez l'option **Affecter l'accès aux ressources** et sélectionnez **Tous les services avec l'offre Identity and Access activée** avec le rôle Administrateur affecté. Pour créer la seconde règle, utilisez l'option **Affecter l'accès aux services de gestion des comptes** et sélectionnez **Tous les services de gestion des comptes** avec le rôle Administrateur affecté.
 {: tip}
+
+

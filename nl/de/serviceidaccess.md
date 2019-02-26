@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-30"
+  years: 2015, 2019
+lastupdated: "2019-01-30"
 
 ---
 
@@ -24,6 +24,7 @@ Wenn Sie eine vorhandene Richtlinie für eine momentan verwendete Service-ID lö
 {: note}
 
 ## Neue Zugriffsberechtigungen zuweisen
+{: #access_new}
 
 Um Zugriffsberechtigungen für alle Ressourcen einer Ressourcengruppe oder für einen einzelnen Service in einer Ressourcengruppe zuzuweisen, müssen Sie die folgenden Schritte ausführen:
 
@@ -68,6 +69,7 @@ Möglicherweise erhalten Sie eine Nachricht mit dem Inhalt, dass für die von Ih
 {: tip}
 
 ## Vorhandene Zugriffsberechtigungen bearbeiten
+{: #access_edit}
 
 Gehen Sie wie folgt vor, um eine vorhandene Richtlinie zu bearbeiten:
 
@@ -77,7 +79,7 @@ Gehen Sie wie folgt vor, um eine vorhandene Richtlinie zu bearbeiten:
 4. Ermitteln Sie die Zeile für die Richtlinie, die bearbeitet werden soll, und wählen Sie im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) die Option **Richtlinie bearbeiten** aus.
 5. Nehmen Sie die gewünschten Änderungen vor und speichern Sie dann die Richtlinie.
 
-Wenn Sie eine Servicerichtlinie über die Befehlszeilenschnittstelle (CLI) aktualisieren möchten, können Sie den Befehl [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update) verwenden.
+Wenn Sie eine Servicerichtlinie über die Befehlszeilenschnittstelle (CLI) aktualisieren möchten, können Sie den Befehl [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_update#ibmcloud_iam_service_policy_update) verwenden.
 ```
 ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] {--file JSON_FILE | [-r, --roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]} [-f, --force]",
 ```
@@ -87,16 +89,17 @@ Bei der Bearbeitung des Zugriffs für eine Service-ID erhalten Sie möglicherwei
 {: tip}
 
 ## Zugriffsberechtigungen entfernen
+{: #access_remove}
 
 Gehen Sie wie folgt vor, um eine vorhandene Richtlinie zu entfernen:
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Service-IDs** aus.
 2. Wählen Sie die Service-ID, für die eine Servicerichtlinie gelöscht werden soll, in der Tabelle aus.
-3. Klicken Sie auf **Zugriffsrichtlinien**.
+3. Klicken Sie auf **Zugriffsrichtlinien**. 
 4. Ermitteln Sie die Zeile für die Richtlinie, die gelöscht werden soll, und wählen Sie im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) die Option **Entfernen** aus.
 5. Überprüfen Sie die Details zu der Richtlinie, die entfernt werden soll, und klicken Sie dann zur Bestätigung des Vorgangs auf **Entfernen**.
 
-Wenn Sie eine Servicerichtlinie über die Befehlszeilenschnittstelle (CLI) löschen möchten, können Sie den Befehl [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_delete) verwenden.
+Wenn Sie eine Servicerichtlinie über die Befehlszeilenschnittstelle (CLI) löschen möchten, können Sie den Befehl [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_update#ibmcloud_iam_service_policy_delete) verwenden.
 ```
 ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
 ```

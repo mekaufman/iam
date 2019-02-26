@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -17,15 +17,16 @@ lastupdated: "2018-11-30"
 {: #iamoverview}
 
 ## Was ist Cloud IAM?
+{: #what_is_IAM}
 
-{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) ermöglicht Ihnen die sichere Authentifizierung von Benutzern für beide Plattformservices und die einheitliche Steuerung des Zugriffs auf Ressourcen innerhalb von {{site.data.keyword.Bluemix_notm}}. Ein Set von {{site.data.keyword.Bluemix_notm}}-Services sind für die Nutzung von Cloud IAM zur Zugriffssteuerung aktiviert und in [Ressourcengruppen](/docs/account/resourcegroups.html) innerhalb Ihres Kontos organisiert. Auf diese Weise erhalten Benutzer den schnellen und einfachen Zugriff auf mehrere Ressourcen gleichzeitig. Die Cloud IAM-Zugriffsrichtlinien werden verwendet, um Benutzern und Service-IDs die Zugriffsberechtigungen für die Ressourcen innerhalb Ihres Kontos zuzuweisen. Sie können Benutzer und Service-IDs in einer [Zugriffsgruppe](/docs/iam/groups.html) zusammenfassen, um allen Entitäten in der Gruppe ohne großen Aufwand dieselbe Zugriffsebene zu erteilen.
+{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) ermöglicht Ihnen die sichere Authentifizierung von Benutzern für beide Plattformservices und die einheitliche Steuerung des Zugriffs auf Ressourcen innerhalb von {{site.data.keyword.Bluemix_notm}}. Ein Set von {{site.data.keyword.Bluemix_notm}}-Services sind für die Nutzung von Cloud IAM zur Zugriffssteuerung aktiviert und in [Ressourcengruppen](/docs/resources?topic=resources-rgs#rgs) innerhalb Ihres Kontos organisiert. Auf diese Weise erhalten Benutzer den schnellen und einfachen Zugriff auf mehrere Ressourcen gleichzeitig. Die Cloud IAM-Zugriffsrichtlinien werden verwendet, um Benutzern und Service-IDs die Zugriffsberechtigungen für die Ressourcen innerhalb Ihres Kontos zuzuweisen. Sie können Benutzer und Service-IDs in einer [Zugriffsgruppe](/docs/iam?topic=iam-getstarted#getstarted) zusammenfassen, um allen Entitäten in der Gruppe ohne großen Aufwand dieselbe Zugriffsebene zu erteilen.
 
-Eine Richtlinie weist ein Subjekt (das ein Benutzer, eine [Service-ID](/docs/iam/serviceid.html#serviceids) oder Zugriffsgruppe sein kann) einer oder mehreren Rollen zu, zusammen mit einer Kombination von Attributen, die den Geltungsbereich für die Zugriffsberechtigung auf ein Ziel definieren. Die Richtlinie kann Zugriff auf einen einzelnen Service bis hinunter zur Instanzebene erteilen, auf ein Set von Ressourcen, die in einer Ressourcengruppe organisiert sind, oder auf Kontoverwaltungsservices. Abhängig von den [IAM-Rollen](/docs/iam/users_roles.html#iamusermanrol), die Sie zuweisen, werden dem Subjekt unterschiedliche Zugriffsebenen für die Durchführung von Kontoverwaltungstasks, die Arbeit mit Serviceinstanzen, den Zugriff auf einen Service über die Benutzerschnittstelle oder die Ausführung von API-Aufrufen erteilt.
+Eine Richtlinie weist ein Subjekt (das ein Benutzer, eine [Service-ID](/docs/iam?topic=iam-serviceids#serviceids) oder Zugriffsgruppe sein kann) einer oder mehreren Rollen zu, zusammen mit einer Kombination von Attributen, die den Geltungsbereich für die Zugriffsberechtigung auf ein Ziel definieren. Die Richtlinie kann Zugriff auf einen einzelnen Service bis hinunter zur Instanzebene erteilen, auf ein Set von Ressourcen, die in einer Ressourcengruppe organisiert sind, oder auf Kontoverwaltungsservices. Abhängig von den [IAM-Rollen](/docs/iam?topic=iam-iamusermanrol#iamusermanrol), die Sie zuweisen, werden dem Subjekt unterschiedliche Zugriffsebenen für die Durchführung von Kontoverwaltungstasks, die Arbeit mit Serviceinstanzen, den Zugriff auf einen Service über die Benutzerschnittstelle oder die Ausführung von API-Aufrufen erteilt.
 
 
 ![IAM zur Zugriffssteuerung in einem Konto](images/iam-diagram.svg "Informationen zum Zugriffsmanagement in einem Konto mit IAM")
 
-Für Services, die die Erstellung von Cloud IAM-Richtlinien zur Verwaltung des Zugriffs nicht unterstützen, können Sie [Cloud Foundry-Zugriff](/docs/iam/cfaccess.html#cfaccess) oder [Berechtigungen für die klassische Infrastruktur](/docs/iam/infrastructureaccess.html#infrapermission) verwenden.
+Für Services, die die Erstellung von Cloud IAM-Richtlinien zur Verwaltung des Zugriffs nicht unterstützen, können Sie [Cloud Foundry-Zugriff](/docs/iam?topic=iam-cfaccess#cfaccess) oder [Berechtigungen für die klassische Infrastruktur](/docs/iam?topic=iam-infrapermission#infrapermission) verwenden.
 
 
 ## Welche Funktionen bietet Cloud IAM?
@@ -44,12 +45,13 @@ Für Services, die die Erstellung von Cloud IAM-Richtlinien zur Verwaltung des Z
 
 
 ## Wie nutze ich Cloud IAM?
+{: #howto}
 
-Der Zugriff auf und die Verwendung von Cloud IAM ist über die Benutzerschnittstelle (UI), die Befehlszeilenschnittstelle (CLI) oder die Anwendungsprogrammierschnittstelle (API) für Identity and Access Management (IAM) möglich.
+Der Zugriff auf und die Verwendung von Cloud IAM ist über die Benutzerschnittstelle (UI), die Befehlszeilenschnittstelle (CLI) oder die Anwendungsprogrammierschnittstelle (API) für Identity and Access Management (IAM) möglich. 
 
-* Wenn Sie über die Benutzerschnittstelle (UI) auf Cloud IAM zugreifen wollen, rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf.
+* Wenn Sie über die Benutzerschnittstelle (UI) auf Cloud IAM zugreifen wollen, rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf. 
 * Lesen Sie den Abschnitt [IAM-Zugriff, API-Schlüssel, Service-IDs und Zugriffsgruppen verwalten](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam), um mehr zu den verfügbaren CLI-Befehlen zu erfahren.
-* Konsultieren Sie die folgenden API-Dokumente, um mehr zu den verfügbaren APIs zu erfahren:
+* Konsultieren Sie die folgenden API-Dokumente, um mehr zu den verfügbaren APIs zu erfahren: 
     * [API für IAM-Identitätsservices](https://{DomainName}/apidocs/iam-identity-token-api){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")
     * [API für IAM-Zugriffsgruppen](https://{DomainName}/apidocs/iam-access-groups){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")
     * [API für IAM-Richtlinienmanagement](https://{DomainName}/apidocs/iam-policy-management){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")
