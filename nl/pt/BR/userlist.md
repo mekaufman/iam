@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-11-30"
 # Configurando o acesso de visualização do usuário
 {: #userlistview}
 
-Como um proprietário da conta do {{site.data.keyword.Bluemix}}, é possível visualizar todos os usuários em sua conta e definir como os usuários podem visualizar outros usuários na conta.
+Como um proprietário da conta do {{site.data.keyword.Bluemix}}, é possível visualizar todos os usuários em sua conta e definir como os usuários podem visualizar outros usuários na conta. 
 {:shortdesc}
 
 Quando a opção **Visualização sem restrição** é selecionada, qualquer usuário na conta pode visualizar outros usuários da página Usuários no console do {{site.data.keyword.Bluemix_notm}}. Quando a opção **Visualização restrita** é selecionada, os usuários ficam restritos a visualizar somente os usuários na conta que eles convidaram, com os quais compartilham uma organização do Cloud Foundry, ou os usuários que são seus descendentes na hierarquia do usuário de infraestrutura clássica, significando os usuários que eles convidaram ou que um de seus descendentes convidou.

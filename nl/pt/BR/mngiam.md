@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -18,10 +18,11 @@ lastupdated: "2018-11-30"
 # Gerenciando o acesso aos recursos
 {: #iammanidaccser}
 
-Para gerenciar o acesso ou designar um novo acesso para usuários usando políticas do IAM, deve-se ser o proprietário da conta, o administrador em todos os serviços na conta ou o administrador designado para o serviço ou a instância de serviço específica. Para obter mais informações sobre funções e políticas de acesso, veja [Acesso ao IAM](/docs/iam/users_roles.html).
-{:shortdesc}
+Para gerenciar o acesso ou designar um novo acesso para usuários usando políticas do IAM, deve-se ser o proprietário da conta, o administrador em todos os serviços na conta ou o administrador designado para o serviço ou a instância de serviço específica. Para obter mais informações sobre funções e políticas de acesso, veja [Acesso ao IAM](/docs/iam?topic=iam-userroles#userroles).
+{:shortdesc} 
 
 ## Editando acesso existente
+{: #edit_existing}
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**.
 2. Selecione o nome do usuário para o qual você deseja designar acesso.
@@ -29,7 +30,7 @@ Para gerenciar o acesso ou designar um novo acesso para usuários usando políti
 4. Edite a política.
 5. Clique em **Salvar**.
 
-Para atualizar uma política do usuário usando a CLI, é possível usar o comando [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update).
+Para atualizar uma política do usuário usando a CLI, é possível usar o comando [ibmcloud iam user-policy-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_update).
 ```
 ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f, --file JSON_FILE | [--roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```
@@ -39,22 +40,18 @@ Ao editar o acesso para um usuário ou um grupo, você pode receber uma mensagem
 {: note}
 
 ## Designando novo acesso
-{: #assignaccess}
+{: #assign_new_access}
 
-É possível designar acesso usando qualquer um dos três tipos de políticas:
+É possível designar acesso ao recurso usando dois tipos de políticas: 
 
 * Acesso aos recursos dentro de um grupo de recursos, incluindo a opção para apenas um ou todos
 * Acesso aos recursos na conta, incluindo a opção para apenas um tipo ou todos os tipos
-* Acesso aos serviços de gerenciamento de conta, incluindo a opção para apenas um ou todos os serviços
 
-Se você deseja ativar um acesso total de administrador para concluir as tarefas de gerenciamento de conta, como
-convidar e remover usuários, visualizar o faturamento e o uso, gerenciar os IDs de serviço, gerenciar os grupos de acesso,
-gerenciar o acesso do usuário e o acesso a todos os recursos da conta, deve-se criar duas políticas: uma em
-**Todos os serviços ativados para o Identity and Access** com o administrador da
-função e uma em **Todos os serviços de gerenciamento de conta** com o administrador da função.
+Se você deseja permitir que um usuário tenha acesso total de administrador para concluir tarefas de [gerenciamento de conta](/docs/iam?topic=iam-account-services#account-services), como convidar e remover usuários, visualizar faturamento e uso, gerenciar IDs de serviço, gerenciar grupos de acesso, gerenciar acesso de usuário e acesso a todos os recursos da conta, deve-se criar duas políticas: uma em **Todos os serviços ativados pelo Identity and Access** com o administrador de função e outra em **Todos os serviços de gerenciamento de conta** com o administrador de função.
 {: tip}
 
-### Acesso aos recursos dentro de um grupo de recursos
+### Acesso aos recursos dentro de um grupo de recursos 
+{: #access_to_resources}
 
 Para designar acesso a todos os recursos em um grupo de recursos ou a apenas um serviço em um grupo de recursos, conclua as etapas a seguir:
 
@@ -70,46 +67,36 @@ Para designar acesso a todos os recursos em um grupo de recursos ou a apenas um 
 ### Acesso a recursos
 {: #resourceaccess}
 
-Para designar acesso a um recurso individual na conta ou acesso a todos os recursos na conta, conclua as etapas a seguir:
+Para designar acesso a um recurso individual na conta ou acesso a todos os recursos na conta, conclua as etapas a seguir: 
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**.
 2. Na linha para o usuário que você deseja designar acesso, selecione o menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg) e, em seguida, clique em **Designar acesso**.
 3. Selecione **Designar acesso a recursos**.
 4. Selecione um serviço ou selecione **Todos os serviços ativados pelo Identity and Access**.
-5. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado.
+5. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado. 
 6. Selecione **Todas as instâncias de serviço atuais** ou selecione uma instância de serviço específica.
-7. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não inserir valores para esses campos, a política será designada no nível da instância de serviço em vez de no nível do depósito.
+7. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não inserir valores para esses campos, a política será designada no nível da instância de serviço em vez de no nível do depósito. 
     * **Tipo de recurso**: insira **depósito**.
     * **ID do recurso**: Insira o nome do bucket.
 8. Escolha qualquer combinação de funções para designar o acesso desejado ao usuário.
 9. Clique em **Designar**.
 
-
-### Acesso aos serviços de gerenciamento de conta
-{: #acctmgmt}
-
-Para designar acesso a um ou todos os serviços de gerenciamento de conta, conclua as etapas a seguir:
-
-1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e, em seguida, selecione **Usuários**.
-2. Na linha para o usuário que você deseja designar acesso, selecione o menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg) e, em seguida, clique em **Designar acesso**.
-3. Selecione para designar acesso aos **Serviços de gerenciamento de conta**
-4. Selecione **Todos os serviços de gerenciamento de conta** ou selecione um serviço de gerenciamento de conta específico.
-5. Selecione qualquer combinação de funções para designar o acesso desejado.
-
 ## Removendo o acesso
+{: #removing_access}
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**.
 2. Selecione o nome do usuário para o qual você deseja remover o acesso.
 3. Na guia **Políticas de acesso**, selecione o menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg) na linha para a política que você deseja remover e clique em **Remover**.  
 4. Revise os detalhes da política do usuário que você está prestes a remover e, em seguida, confirme clicando em **Remover**.
 
-Para remover uma política do usuário usando a CLI, é possível usar o comando [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_delete).
+Para remover uma política do usuário usando a CLI, é possível usar o comando [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_delete#ibmcloud_iam_user_policy_delete).
 ```
 ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
 ```
 {: codeblock}
 
 ## Revisando seu acesso designado
+{: #review_your_access}
 
 Se for necessário revisar o acesso designado em uma conta à qual você foi incluído, conclua as etapas a seguir:
 

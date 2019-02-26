@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -20,6 +20,7 @@ Para gerenciar o acesso a organizações e espaços da conta, deve-se ser o prop
 {:shortdesc}
 
 ## Atualizando o acesso ao Cloud Foundry
+{: #update_cf_access}
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**.
 2. Na linha para o usuário que você deseja designar acesso, selecione o menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg) e, em seguida, clique em **Designar acesso**.
@@ -32,6 +33,7 @@ Para gerenciar o acesso a organizações e espaços da conta, deve-se ser o prop
   * Editar a função de espaço
 
 ## Incluindo um usuário em uma organização
+{: #add_to_org}
 
 Caso seja o gerenciador de uma organização da qual o usuário ainda não é um membro, você designará o usuário a essa organização.
 
@@ -48,6 +50,7 @@ Caso seja o gerenciador de uma organização da qual o usuário ainda não é um
 7. Clique em **Designar**.
 
 ## Revisando seu acesso designado
+{: #review_my_access}
 
 Se for necessário revisar seu acesso designado em uma conta à qual tenha sido incluído, conclua as etapas a seguir:
 
@@ -57,3 +60,4 @@ Se for necessário revisar seu acesso designado em uma conta à qual tenha sido 
 3. Expanda a linha da organização e revise suas funções designadas.
 
 Se você precisa de acesso adicional, deve-se entrar em contato com o gerenciador de organização ou proprietário da conta para atualizar sua função designada do Cloud Foundry.
+

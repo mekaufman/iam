@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-30"
+  years: 2018, 2019
+lastupdated: "2019-01-30"
 
 ---
 
@@ -29,11 +29,11 @@ Revise as considerações a seguir antes de ativar a MFA do IBMid para sua conta
 * As chaves de API para usuários e IDs de serviço continuam a funcionar após a MFA ser ativada.
 * Se você requer o uso de login de CLI ou UI do CF nativo no Cloud Foundry, deve-se usar as chaves API ou a conexão única (SSO) após a MFA ser ativada para a conta.
 * A MFA para sua conta se aplica ao login de um usuário, mas não se aplica a chamadas API. Se um usuário tem permissão para fazer chamadas API para recursos em sua conta, o usuário pode fazer isso sem concluir a MFA. Se o usuário pertence a outras contas, o usuário pode fazer chamadas API para recursos em sua conta usando uma chave de API por meio de uma conta que não requereu a MFA.
-* Se você é um usuário federado, a MFA não é suportada.
-* Se você requer MFA para sua conta e tem usuários em sua conta que não têm um IBMid, deve-se ativar uma das outras opções de MFA para esse usuário na página Detalhes do usuário no console do {{site.data.keyword.Bluemix_notm}}. Para obter mais informações, veja [Tipos de autenticação de diversos fatores](/docs/iam/mfatypes.html#types).
+* Se você é um usuário federado, a MFA não é suportada. 
+* Se você requer MFA para sua conta e tem usuários em sua conta que não têm um IBMid, deve-se ativar uma das outras opções de MFA para esse usuário na página Detalhes do usuário no console do {{site.data.keyword.Bluemix_notm}}. Para obter mais informações, veja [Tipos de autenticação de diversos fatores](/docs/iam?topic=iam-types#types).
 * Planeje uma estratégia de comunicação e suporte para usuários em sua conta:
   * Escolha uma data e hora que você planeja ativar a MFA que resulte no menor impacto para seus negócios.
-  * Notifique seus usuários da conta depois de ativar a MFA com informações sobre como [configurar](mfa.html#setupapp).
+  * Notifique seus usuários da conta depois de ativar a MFA com informações sobre como [configurar](/docs/iam?topic=iam-enablemfa#setupapp).
 
 Quando a configuração da conta de autenticação de diversos fatores estiver ativada, a autenticação de MFA do IBMid será solicitada a todos os usuários de IBMid em sua conta após o login. Se você tiver outros métodos de MFA configurados para quaisquer usuários de IBMid em sua conta, esses métodos de MFA não serão mais solicitados a eles.
 {: tip}
@@ -41,7 +41,7 @@ Quando a configuração da conta de autenticação de diversos fatores estiver a
 ## Ativando a MFA para todos os usuários em sua conta
 {: #enabling}
 
-Para ativar a MFA, deve-se ser o proprietário da conta. A ativação da MFA não afeta usuários que já estão com login efetuado, pois o cumprimento de MFA na conta entra em vigor somente em novos logins. Certifique-se de notificar seus usuários da conta de que a MFA está ativada e descreva o impacto para os usuários em seu próximo login.
+Para ativar a MFA, deve-se ser o proprietário da conta. A ativação da MFA não afeta usuários que já estão com login efetuado, pois o cumprimento de MFA na conta entra em vigor somente em novos logins. Certifique-se de notificar seus usuários da conta de que a MFA está ativada e descreva o impacto para os usuários em seu próximo login. 
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e, em seguida, selecione **Configurações**.
 2. Selecione **Autenticação de diversos fatores**.
@@ -50,11 +50,11 @@ Para ativar a MFA, deve-se ser o proprietário da conta. A ativação da MFA nã
 ## Configurando seu TOTP
 {: #setupapp}
 
-Depois de ativar a MFA para sua conta, deve-se configurar a senha descartável com um aplicativo autenticador no próxima login. Todos os usuários em sua conta também devem configurar a senha descartável em seu próximo login.
+Depois de ativar a MFA para sua conta, deve-se configurar a senha descartável com um aplicativo autenticador no próxima login. Todos os usuários em sua conta também devem configurar a senha descartável em seu próximo login. 
 
 Conclua as etapas a seguir para configurar sua senha descartável com um aplicativo autenticador pela primeira vez:
 
-1. Efetue login com seu IBMid e senha.
+1. Efetue login com seu IBMid e senha. 
 
   Pode levar até 5 minutos para ser capaz de efetuar login novamente com a MFA.
   {: note}
@@ -62,9 +62,9 @@ Conclua as etapas a seguir para configurar sua senha descartável com um aplicat
 2. Selecione **Verificar** na tela **Verificação é necessária** para configurar a MFA com um aplicativo autenticador.
 3. Selecione **Configurar seu aplicativo autenticador** para ter um código descartável enviado para seu e-mail para continuar a configurar o aplicativo autenticador.
 4. Selecione **Verificar**.
-5. Varra o código de barras com seu app ou clique em **Não é possível varrer o código de barras?** para inserir uma chave fornecida.
+5. Varra o código de barras com seu app ou clique em **Não é possível varrer o código de barras?** para inserir uma chave fornecida. 
 6. Clique em **Continuar** para inserir seu código.
-7. Insira seu código e selecione **Verificar**.
+7. Insira seu código e selecione **Verificar**. 
 
 Se encontrar uma mensagem de erro que declara que você já configurou a autenticação, mas seu código de verificação não está funcionando ou você não tem seu código de verificação para inserir, deve-se entrar em contato com o [Help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo") para reconfigurar sua inscrição de MFA.
 {: note}

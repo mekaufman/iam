@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-30"
+  years: 2015, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -39,11 +39,11 @@ das opções que você estiver autorizado a gerenciar:
   * **Acesso ao Cloud Foundry**
   * **Acesso de infraestrutura clássica**.
 
-  Para obter mais informações, veja [Designando acesso de usuário](/docs/iam/iamuserinv.html#assignaccess).
+  Para obter mais informações, veja [Designando acesso de usuário](/docs/iam?topic=iam-assignaccess#assignaccess).
 
 Se você determinar que um usuário não precisa de acesso, será possível cancelar um convite de quaisquer usuários que forem mostrados em um estado **Processando** ou **Pendente** na coluna **Status**. Se um usuário convidado não tiver recebido um convite, será possível reenviar o convite para qualquer usuário em um estado **Pendente**.
 
-Se você deseja convidar usuários usando a interface da linha de comandos (CLI), veja o comando [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite).
+Se você deseja convidar usuários usando a interface da linha de comandos (CLI), veja o comando [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite).
 {: tip}
 
 ## Designando acesso de usuário por meio de um convite
@@ -52,15 +52,17 @@ Se você deseja convidar usuários usando a interface da linha de comandos (CLI)
 Você designa acesso para usuários à medida que os convida, designando as políticas do {{site.data.keyword.Bluemix}} IAM, o acesso do Cloud Foundry e as permissões de infraestrutura clássica. Dependendo das opções de acesso que você está autorizado a gerenciar, é possível convidar e fornecer acesso para usuários na conta, grupos de recursos, organizações, espaços, instâncias de serviço e infraestrutura clássica. As seções a seguir descrevem os três tipos de acesso que podem ser designados a um usuário convidado.
 
 ### Serviços
+{: #invite_services}
 
 É possível designar acesso criando uma política de acesso inicial do {{site.data.keyword.Bluemix_notm}} IAM quando você convida um novo usuário. Na seção Serviços, é possível fornecer a um usuário acesso a serviços de gerenciamento de conta, serviços em um grupo de recursos com acesso para gerenciar o grupo de recursos ou a um recurso individual na conta.
 
-Depois que o usuário aceita o convite, é possível designar acesso adicional. Veja [Gerenciando o acesso a recursos](/docs/iam/mngiam.html#iammanidaccser) para obter detalhes sobre a edição de políticas para incluir funções extras, a designação de mais acesso ou a remoção de uma política para um usuário.
+Depois que o usuário aceita o convite, é possível designar acesso adicional. Veja [Gerenciando o acesso a recursos](/docs/iam?topic=iam-iammanidaccser#iammanidaccser) para obter detalhes sobre a edição de políticas para incluir funções extras, a designação de mais acesso ou a remoção de uma política para um usuário.
 
 Dependendo de qual serviço você seleciona ao designar a política, talvez não veja todos os campos que são descritos nos procedimentos a seguir.
 {: note}
 
 #### Acesso aos serviços de gerenciamento de conta
+{: #invite_acct_mgmt}
 
 Para delegar algumas de suas responsabilidades como um proprietário da conta, é possível fornecer a um usuário acesso aos serviços de gerenciamento de conta. Por exemplo, é possível delegar a capacidade para visualizar o faturamento e o uso,
 convidar e remover usuários, gerenciar os grupos de acesso ou gerenciar os IDs de serviço. É possível fornecer acesso a
@@ -73,6 +75,7 @@ gerenciamento de conta específico.
 4. Selecione qualquer combinação de funções para designar o acesso desejado.
 
 #### Acesso ao grupo de recursos
+{: #invite_rgs}
 
 É possível designar acesso a todos os serviços em um grupo de recursos ou a um único tipo de serviço em um grupo de recursos.
 
@@ -84,6 +87,7 @@ gerenciamento de conta específico.
 6. Selecione qualquer combinação de funções para designar o acesso desejado. Este acesso só se aplica aos recursos que você selecionou para a política. Ela não fornece acesso ao contêiner real que é o grupo de recursos.
 
 #### Acesso ao recurso
+{: #invite_resources}
 
 É possível designar acesso a um único recurso em sua conta para a instância.
 
@@ -97,9 +101,10 @@ gerenciamento de conta específico.
     * **ID do recurso**: Insira o nome do bucket.
 7. Selecione qualquer combinação de funções para designar o acesso desejado.
 
-Para obter mais informações sobre as funções que são usadas quando você designa acesso, veja [Acesso do IAM](/docs/iam/users_roles.html#iamusermanrol).
+Para obter mais informações sobre as funções que são usadas quando você designa acesso, veja [Acesso do IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
 
 ### Acesso ao Cloud Foundry
+{: #invite_cf}
 
 Ao convidar novos usuários, é possível escolher incluir o usuário em uma organização na conta. Se você incluir o usuário em uma organização, será possível designar a ele uma função de organização. Em seguida, você optará por fornecer ao usuário convidado acesso a qualquer um ou a todos os espaços na organização selecionada com uma função de espaço designada.
 
@@ -112,12 +117,13 @@ Ao convidar novos usuários, é possível escolher incluir o usuário em uma org
 7. Selecione uma função de espaço para definir o nível de acesso para os espaços selecionados.
 8. Opcional: selecione **Incluir função de espaço** para especificar uma função extra.
 
-Para obter mais informações sobre as funções que são usadas quando você designa acesso, veja [Funções do Cloud Foundry](/docs/iam/cfaccess.html#cfroles).
+Para obter mais informações sobre as funções que são usadas quando você designa acesso, veja [Funções do Cloud Foundry](/docs/iam?topic=iam-cfroles#cfroles).
 
-É possível incluir uma função do Cloud Foundry usando o comando da CLI [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite), mas o console deve ser usado para designar outro acesso ou permissões.
+É possível incluir uma função do Cloud Foundry usando o comando da CLI [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite), mas o console deve ser usado para designar outro acesso ou permissões.
 {: tip}
 
 ### Acesso à infraestrutura clássica
+{: #invite_classicinfra}
 
 As permissões designadas são limitadas automaticamente ao subconjunto de permissões que você tem. Você se torna o usuário pai de qualquer usuário que é convidado.
 
@@ -127,7 +133,7 @@ As permissões designadas são limitadas automaticamente ao subconjunto de permi
 O acesso a dispositivos é concedido separadamente após o usuário ser incluído. Acesse a opção de acesso **Infraestrutura clássica** para um usuário no console.
 {: note}
 
-Para obter informações sobre como configurar o acesso para usuários após eles serem incluídos em sua conta, veja [Gerenciando o acesso de infraestrutura clássica](/docs/iam/mnginfra.html#managing-infrastructure-access).
+Para obter informações sobre como configurar o acesso para usuários após eles serem incluídos em sua conta, veja [Gerenciando o acesso de infraestrutura clássica](/docs/iam?topic=iam-mngclassicinfra#mngclassicinfra).
 
 ## Incluindo usuários somente VPN
 {: #add-vpn-only}
@@ -135,5 +141,5 @@ Para obter informações sobre como configurar o acesso para usuários após ele
 Como o proprietário da conta ou um usuário com a permissão Gerenciar a infraestrutura clássica de usuários, é possível incluir um usuário somente VPN.
 
 1. Na página **Usuários**, clique em **Incluir usuário somente VPN**.
-3. Insira os detalhes de informações pessoais para o usuário.
-4. Clique em **Salvar**.
+2. Insira os detalhes de informações pessoais para o usuário.
+3. Clique em **Salvar**.

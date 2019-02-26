@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-30"
+  years: 2018, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -19,14 +19,15 @@ Para simplificar o processo de designação de acesso, é possível aproveitar o
 {:shortdesc}
 
 Para assegurar que sua conta esteja totalmente configurada para o sucesso, consulte [Melhores
-práticas para configurar sua conta](/docs/account/bp_account.html#account_setup) e [Melhores práticas para organizar recursos em grupos de recursos](/docs/resources/bestpractice_rgs.html).
+práticas para configurar sua conta](/docs/account?topic=account-account_setup#account_setup) e [Melhores práticas para organizar recursos em grupos de recursos](/docs/resources?topic=resources-bp_resourcegroups#bp_resourcegroups).
 {: tip}
 
 ## O que é uma boa estratégia de grupo de acesso?
+{: #rg_strategy}
 
 Um grupo de acesso é um agrupamento de IDs de usuário e de serviço aos quais o mesmo acesso do IAM pode ser concedido. É possível designar uma política única ao grupo em vez de designar o mesmo acesso múltiplas vezes por usuário ou ID de serviço individual.
 
-Supondo que você tenha seguido as [melhores práticas para configurar sua conta](/docs/account/bp_account.html#account_setup), uma maneira lógica de designar acesso é criando um grupo de acesso por nível desejado de acesso. Em seguida, é possível mapear cada grupo de acesso para os grupos de recursos criados anteriormente. Por exemplo, para controlar o acesso ao projeto `CustApp`, é possível criar os grupos de acesso a seguir:
+Supondo que você tenha seguido as [melhores práticas para configurar sua conta](/docs/account?topic=account-account_setup#account_setup), uma maneira lógica de designar acesso é criando um grupo de acesso por nível desejado de acesso. Em seguida, é possível mapear cada grupo de acesso para os grupos de recursos criados anteriormente. Por exemplo, para controlar o acesso ao projeto `CustApp`, é possível criar os grupos de acesso a seguir:
 
 * Auditor-Grupo
 * Desenvolvedor-Grupo
@@ -39,7 +40,7 @@ Embora essas sugestões sejam projetadas para um cenário hipotético, é possí
 ## Criando grupos de acesso
 {: #access-group-setup}
 
-Para criar um grupo de acesso, conclua as etapas a seguir:
+Para criar um grupo de acesso, conclua as etapas a seguir: 
 
 1. No console do {{site.data.keyword.Bluemix}}, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Grupos de acesso**.
 2. Clique em **Criar**.
@@ -49,10 +50,11 @@ Para criar um grupo de acesso, conclua as etapas a seguir:
 Depois de criar um grupo de acesso, é possível incluir usuários e IDs de serviço no grupo.
 
 ## Como as políticas de acesso do IAM fornecem acesso
+{: #how_access}
 
 Uma política consiste em um assunto, um destino e uma função. O assunto nesse caso é o grupo de acesso. O destino é o que você deseja que o assunto acesse, como um conjunto de recursos, uma instância de serviço, todos os serviços na conta ou todas as instâncias de um serviço. A função define o nível de acesso que é concedido a um usuário.
 
-As funções mais comumente usadas são visualizador, editor e administrador. A função de visualizador fornece a menor quantidade de acesso para visualizar instâncias e grupos de recursos em uma conta. A função de editor possui mais acesso para criar, editar, excluir e ligar instâncias de serviço. A função de administrador inclui tudo para trabalhar com uma instância de serviço e pode designar acesso a outros. No entanto, há duas categorias diferentes de funções que devem ser consideradas: plataforma e serviço. Para obter mais informações sobre as funções que podem ser designadas, consulte as [funções do IAM Cloud](/docs/iam/users_roles.html#iamusermanrol).
+As funções mais comumente usadas são visualizador, editor e administrador. A função de visualizador fornece a menor quantidade de acesso para visualizar instâncias e grupos de recursos em uma conta. A função de editor possui mais acesso para criar, editar, excluir e ligar instâncias de serviço. A função de administrador inclui tudo para trabalhar com uma instância de serviço e pode designar acesso a outros. No entanto, há duas categorias diferentes de funções que devem ser consideradas: plataforma e serviço. Para obter mais informações sobre as funções que podem ser designadas, consulte as [funções do IAM Cloud](/docs/iam?topic=iam-iamusermanrol#iamusermanrol). 
 
 ## Designando acesso a grupos de acesso
 {: #assigning-access}
@@ -71,3 +73,5 @@ todos os serviços de gerenciamento de conta ou a apenas um.
 Forneça facilmente a vários usuários acesso de administrador a tudo em uma conta, criando um grupo de acesso e designando duas políticas a ele. Para criar a primeira política, use a opção **Designar acesso aos recursos** e selecione **Todos os serviços ativados por identidade e
 acesso** com a função de administrador designada. Para criar a segunda política, use a opção **Designar acesso a serviços de gerenciamento de conta** e selecione **Todos os serviços de gerenciamento de conta** com a função de administrador designada.
 {: tip}
+
+

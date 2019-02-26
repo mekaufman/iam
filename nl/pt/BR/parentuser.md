@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -20,7 +20,7 @@ lastupdated: "2018-11-30"
 Se você tiver o acesso correto, será possível atualizar o pai para um usuário. A atualização do usuário pai afeta como um usuário vê outros usuários na conta quando a configuração de visibilidade da lista de usuários é configurada como restrita. Os usuários veem apenas outros usuários para os quais são pais e quaisquer outros usuários convidados por esses descendentes do usuário pai.
 {:shortdesc}
 
-Veja [configuração de visibilidade da lista de usuários](/docs/iam/userlist.html#userlistview) para obter mais detalhes sobre a configuração.
+Veja [configuração de visibilidade da lista de usuários](/docs/iam?topic=iam-userlistview#userlistview) para obter mais detalhes sobre a configuração. 
 
 Se você tiver o acesso a seguir, será possível atualizar o pai para outro usuário:
 

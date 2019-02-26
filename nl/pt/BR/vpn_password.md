@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-11-30"
 # Atualizando a senha de VPN da infraestrutura clássica
 {: #vpnpassword}
 
-É possível atualizar sua própria senha de VPN ou, no caso em que um usuário esquece sua senha e não consegue reconfigurá-la, outro usuário com acesso correto pode atualizar a senha de VPN desse usuário.
+É possível atualizar sua própria senha de VPN ou, no caso em que um usuário esquece sua senha e não consegue reconfigurá-la, outro usuário com acesso correto pode atualizar a senha de VPN desse usuário. 
 {:shortdesc}
 
 Se você tiver o acesso a seguir, será possível atualizar a senha de VPN para outro usuário:
@@ -27,8 +27,8 @@ Se você tiver o acesso a seguir, será possível atualizar a senha de VPN para 
 
 Para atualizar a senha de VPN, conclua as etapas a seguir:
 
-1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**.
+1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**. 
 2. Selecione um usuário da lista.
 3. Na página Detalhes do usuário, acesse a seção **Senha de VPN**.
-4. Clique no ícone **Editar** ![Ícone Editar](../icons/icon_write.svg) para inserir uma nova senha de VPN.
-5. Clique em **Atualizar senha**.
+4. Clique no ícone **Editar** ![Ícone Editar](../icons/icon_write.svg) para inserir uma nova senha de VPN. 
+5. Clique em **Atualizar senha**. 

@@ -19,7 +19,7 @@ lastupdated: "2019-01-28"
 # Efetuando login com um ID federado
 {: #federated_id}
 
-Como um usuário federado que usa um ID de conexão única corporativa, é possível efetuar login no {{site.data.keyword.Bluemix}} por meio da interface da linha de comandos (CLI) usando uma senha descartável ou uma chave de API.
+Como um usuário federado que usa um ID de conexão única corporativa, é possível efetuar login no {{site.data.keyword.Bluemix}} por meio da interface da linha de comandos (CLI) usando uma senha descartável ou uma chave de API. 
 {: shortdesc}
 
 ## Usando uma senha única
@@ -71,7 +71,7 @@ Como uma senha única recupera código do console do {{site.data.keyword.Bluemix
 
 A chave de API necessária é a chave de API do {{site.data.keyword.Bluemix_notm}} que é usada para autenticar com a plataforma {{site.data.keyword.Bluemix_notm}}, não a chave de API de infraestrutura clássica ou a chave de API de serviço do {{site.data.keyword.Bluemix_notm}}.
 
-1. Crie uma chave API com o comando [`ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create). Use a opção `-f` para gerar um arquivo de chave API, em vez de mostrar a chave na janela de comando:
+1. Crie uma chave de API com o comando [`ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_api_key_create). Use a opção `-f` para gerar um arquivo de chave API, em vez de mostrar a chave na janela de comando:
 
    ```
    ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]
