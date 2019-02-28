@@ -19,7 +19,7 @@ lastupdated: "2019-01-28"
 # Accesso con un ID federato
 {: #federated_id}
 
-Come utente federato che utilizza un ID SSO (single sign-on) sociale o aziendale, puoi accedere a {{site.data.keyword.Bluemix}} dall'interfaccia riga di comando (o CLI, command-line interface) utilizzando un passcode monouso oppure una chiave API. 
+Come utente federato che utilizza un ID SSO (single sign-on) sociale o aziendale, puoi accedere a {{site.data.keyword.Bluemix}} dall'interfaccia riga di comando (o CLI, command-line interface) utilizzando un passcode monouso oppure una chiave API.
 {: shortdesc}
 
 ## Utilizzo di un passcode monouso
@@ -39,13 +39,13 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
   ``` 
   ibmcloud login --sso
   Endpoint API: https://cloud.ibm.com
-      
+
   Ottieni un codice monouso da https://identity-2.us-south.iam.cloud.ibm.com/identity/passcode per procedere.
   Aprire l'URL nel browser predefinito? [S/n]>
   Codice monouso >
   Autenticazione in corso...
   OK
-      
+
   ```
   
 ### Dalla CLI Cloud Foundry
@@ -57,13 +57,13 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
     
   ```
   cf login -a  https://api.us-south.cf.cloud.ibm.com --sso
-  
+
   Endpoint API: https://api.us-south.cf.cloud.ibm.com
-      
+
   Codice monouso (Ottienine uno a https://login.us-south.cf.cloud.ibm.com/UAALoginServerWAR/passcode)>
   Autenticazione in corso...
   OK
-      
+
   ```
 
 ## Utilizzo di una chiave API
@@ -71,7 +71,7 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
 
 La chiave API richiesta è la chiave API {{site.data.keyword.Bluemix_notm}} utilizzata per l'autenticazione con la piattaforma {{site.data.keyword.Bluemix_notm}} e non la chiave API dell'infrastruttura classica o la chiave API del servizio {{site.data.keyword.Bluemix_notm}}.
 
-1. Crea una chiave API con il [comando `ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_api_key_create). Utilizza l'opzione `-f` per generare un file della chiave API invece di mostrare la chiave nella finestra di comando:
+1. Crea una chiave API con il [comando `ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create). Utilizza l'opzione `-f` per generare un file della chiave API invece di mostrare la chiave nella finestra di comando:
 
    ```
    ibmcloud iam api-key-create NOME [-d DESCRIZIONE] [-f, --file FILE]

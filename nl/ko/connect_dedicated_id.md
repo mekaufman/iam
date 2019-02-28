@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2015，2019
+  years: 2015，2018
 
-lastupdated: "2019-02-13"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -56,7 +56,6 @@ lastupdated: "2019-02-13"
 데디케이티드 ID의 인증 정보를 입력하는 옵션을 선택하십시오. 인증 성공 후 데디케이티드 ID가 공용 IBM ID에 연결됩니다.
 
 ## 로컬 UAA 서버에 강제 로그인
-{: #force_login}
 
 UAA 서버에 대한, 데디케이티드 ID를 사용한 로그인을 강제하려면 `ibmcloud login` 명령에 `--no-iam` 옵션을 지정하십시오.
 
@@ -65,7 +64,6 @@ UAA 서버에 대한, 데디케이티드 ID를 사용한 로그인을 강제하�
 ```
 
 ## 공용 IBM ID에서 데디케이티드 ID 연결 끊기 
-{: #disconnect_id}
 
 `ibmcloud iam dedicated-id-disconnect`를 사용하여 공용 IBM ID와 연결된 데디케이티드 ID의 연결을 끊을 수 있습니다.
 

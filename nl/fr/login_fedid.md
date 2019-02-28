@@ -19,7 +19,7 @@ lastupdated: "2019-01-28"
 # Connexion à l'aide d'un ID fédéré
 {: #federated_id}
 
-En tant qu'utilisateur fédéré utilisant un ID de connexion d'entreprise, vous pouvez vous connecter à {{site.data.keyword.Bluemix}} à partir de l'interface de ligne de commande en utilisant un code d'accès à utilisation unique ou une clé d'API. 
+En tant qu'utilisateur fédéré utilisant un ID de connexion d'entreprise, vous pouvez vous connecter à {{site.data.keyword.Bluemix}} à partir de l'interface de ligne de commande en utilisant un code d'accès à utilisation unique ou une clé d'API.
 {: shortdesc}
 
 ## Utilisation d'un code d'accès à utilisation unique
@@ -71,7 +71,7 @@ Etant donné qu'un code d'accès à utilisation unique extrait du code de la con
 
 La clé d'API requise est la clé d'API {{site.data.keyword.Bluemix_notm}} utilisée pour l'authentification auprès de la plateforme {{site.data.keyword.Bluemix_notm}} et non la clé d'API de l'infrastructure classique ou la clé d'API de service {{site.data.keyword.Bluemix_notm}}.
 
-1. Créez une clé d'API à l'aide de la commande [`ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_api_key_create). Utilisez l'option `-f` pour générer un fichier de clés d'API au lieu d'afficher la clé dans la fenêtre de commande :
+1. Créez une clé d'API à l'aide de la commande [`ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create). Utilisez l'option `-f` pour générer un fichier de clés d'API au lieu d'afficher la clé dans la fenêtre de commande :
 
    ```
    ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]
