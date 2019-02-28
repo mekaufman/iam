@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -20,7 +20,7 @@ lastupdated: "2018-11-30"
 Si tiene el acceso correcto, puede actualizar el padre de un usuario. La actualización del usuario padre afecta a la forma en que un usuario ve a otros usuarios en la cuenta cuando el valor de visibilidad de la lista de usuarios está establecido en restringido. Los usuarios solo ven a otros usuarios de los que son padres y a cualquier otro usuario invitado por dichos descendientes del usuario padre.
 {:shortdesc}
 
-Consulte [valor de visibilidad de lista de usuarios](/docs/iam/userlist.html#userlistview) para obtener más información sobre el valor.
+Consulte [valor de visibilidad de lista de usuarios](/docs/iam?topic=iam-userlistview#userlistview) para obtener más información sobre el valor. 
 
 Si tiene el acceso siguiente, puede actualizar el padre de otro usuario:
 

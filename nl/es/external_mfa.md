@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-11-30"
 # Solicitud de MFA de autenticación externa para un usuario
 {: #external}
 
-Como administrador con el acceso correcto, puede solicitar autenticación externa y habilitar la opción de autenticación de multifactores (MFA) para el inicio de sesión de un usuario. Se le facturará una tarifa mensual por las opciones de autenticación externa. Este tipo de autenticación de multifactores (MFA) solo es necesario para la cuenta en la que el valor está habilitado a diferencia de MFA basada en ID. Para obtener más información, consulte [Tipos de autenticación de multifactores.](/docs/iam/mfatypes.html#types).
+Como administrador con el acceso correcto, puede solicitar autenticación externa y habilitar la opción de autenticación de multifactores (MFA) para el inicio de sesión de un usuario. Se le facturará una tarifa mensual por las opciones de autenticación externa. Este tipo de autenticación de multifactores (MFA) solo es necesario para la cuenta en la que el valor está habilitado a diferencia de MFA basada en ID. Para obtener más información, consulte [Tipos de autenticación de multifactores.](/docs/iam?topic=iam-types#types).
 {:shortdesc}
 
 ## Solicitud de autenticación externa
@@ -32,10 +32,10 @@ Para solicitar la autenticación externa, siga los pasos siguientes:
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**.
 2. Seleccione un usuario de la lista.
-3. En la página **Detalles de usuario** de la sección **Gestionar inicio de sesión de usuario**, seleccione **Pedir autenticación externa**.
+3. En la página **Detalles de usuario**, seleccione **Pedir autenticación externa** en la sección Gestionar inicio de sesión de usuario.
 4. Seleccione **Protección de identidad Symantec** o **Protección de identidad por teléfono**.
     * Para la autenticación de Symantec, el usuario debe descargar la aplicación [VIP de Symantec](https://vip.symantec.com/){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg) y obtener un ID de credencial para continuar con el proceso de solicitud.
-    * Para la autenticación por teléfono, puede continuar con la solicitud, pero el usuario debe [configurar su configuración](/docs/account/login_settings.html#third-party-MFA) para que pueda habilitar la opción.
+    * Para la autenticación por teléfono, puede continuar con la solicitud, pero el usuario debe [configurar su configuración](/docs/account?topic=account-third-party-MFA#third-party-MFA) para que pueda habilitar la opción.
 5. En función de su selección, siga las indicaciones para revisar el precio y los términos antes de realizar el pedido.
 6. Pulse **Pedido** para finalizar la selección.
 
@@ -48,7 +48,7 @@ Puede inhabilitar MFA de Symantec o por teléfono para un usuario en cualquier m
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**.
 2. Seleccione un usuario de la lista.
-3. Desde la página **Detalles de usuario** de la sección **Gestionar inicio de sesión de usuario**, desactive la opción **Autenticación de Symantec** o **Autenticación por teléfono**.
+3. Desde la página **Detalles de usuario**, desactive la opción **Autenticación de Symantec** o **Autenticación por teléfono**.
 
 ## Cancelación de las opciones de autenticación externa
 {: #cancel}
@@ -59,14 +59,12 @@ Para cancelar un pedido de autenticación externa, debe ser el propietario de la
 
 * Permiso de la infraestructura clásica para gestionar usuarios
 * Permiso de la infraestructura clásica para cancelar servicios
-* Administrador del servicio de gestión de cuentas del centro de soporte o permisos migrados de la infraestructura clásica para ver, editar y añadir incidencias que no están disponibles en los [grupos de acceso de permisos migrados](/docs/iam/infrastructureaccess.html#predefined).
-
-
+* Administrador del servicio de gestión de cuentas del centro de soporte o permisos migrados de la infraestructura clásica para ver, editar y añadir incidencias que no están disponibles en los [grupos de acceso de permisos migrados](/docs/iam?topic=iam-predefined#predefined).
 
 Para cancelar el pedido de autenticación externa, siga los pasos siguientes:
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione Usuarios.
 2. Seleccione un usuario de la lista.
-3. En la página **Detalles de usuario** de la sección **Gestionar inicio de sesión de usuario**, pulse **Suprimir** ![Icono Suprimir](../icons/icon_trash.svg) para la fila **Autenticación de Symantec** o **Autenticación por teléfono** según la opción que haya solicitado.
+3. En la página **Detalles de usuario**, pulse **Suprimir** ![Icono Suprimir](../icons/icon_trash.svg) para la fila **Autenticación de Symantec** o **Autenticación por teléfono** según la opción que haya solicitado.
 4. Seleccione cuándo desea eliminarla.
 5. Pulse **Eliminar**.

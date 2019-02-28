@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -23,6 +23,7 @@ Muchas de las prestaciones del sistema {{site.data.keyword.Bluemix_notm}} Identi
 {:shortdesc}
 
 ## Crear una autorización
+{: #create-auth}
 
 Solo puede otorgar el nivel de acceso que tenga como un usuario del servicio de destino. Por ejemplo, si solo tiene acceso de visor en el servicio al que se va a acceder, solo puede asignar el rol de visor para la autorización.
 
@@ -36,6 +37,7 @@ Solo están disponibles como opciones los servicios que permiten otorgar este ti
 {: note}
 
 ## Eliminar una autorización
+{: #remove-auth}
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Autorizaciones**. 
 2. Identifique la fila de la autorización que desea eliminar de la cuenta.

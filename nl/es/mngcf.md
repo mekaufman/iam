@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -20,6 +20,7 @@ Para gestionar el acceso a espacios y organizaciones de la cuenta, debe ser el p
 {:shortdesc}
 
 ## Actualización del acceso de Cloud Foundry
+{: #update_cf_access}
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**.
 2. En la fila correspondiente al usuario al que desea asignar acceso, seleccione el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg) y pulse **Asignar acceso**.
@@ -32,6 +33,7 @@ Para gestionar el acceso a espacios y organizaciones de la cuenta, debe ser el p
   * Editar el rol de espacio
 
 ## Adición de un usuario a una organización
+{: #add_to_org}
 
 Si es el gestor de una organización de la que el usuario aún no es miembro, puede asignar al usuario a esa organización.
 
@@ -48,6 +50,7 @@ Si es el gestor de una organización de la que el usuario aún no es miembro, pu
 7. Pulse **Asignar**.
 
 ## Revisión de su acceso asignado
+{: #review_my_access}
 
 Si necesita revisar su acceso asignado en una cuenta a la que ha sido añadido, complete los siguientes pasos:
 
@@ -57,3 +60,4 @@ Si necesita revisar su acceso asignado en una cuenta a la que ha sido añadido, 
 3. Expanda la fila de la organización y revise los roles asignados.
 
 Si necesita acceso adicional, debe ponerse en contacto con el gestor de la organización o el propietario de la cuenta para actualizar el rol de Cloud Foundry que tiene asignado.
+

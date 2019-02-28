@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-07-23"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -27,4 +27,4 @@ Puede realizar un seguimiento de los siguientes sucesos:
 * Creación, actualización o supresión de políticas de acceso
 * Inicio de sesión en {{site.data.keyword.Bluemix_notm}} utilizando una clave de API, un código de autorización, un código de acceso, una contraseña o una clave de API asociada con un ID de servicio
 
-Para empezar a supervisar las acciones del usuario, consulte [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla). Para obtener más información sobre cada una de las áreas de sucesos de las que puede realizar un seguimiento, consulte [Sucesos de IAM](/docs/services/cloud-activity-tracker/services/at_events_iam.html).
+Para empezar a supervisar las acciones del usuario, consulte [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla). Para obtener más información sobre cada una de las áreas de sucesos de las que puede realizar un seguimiento, consulte [Sucesos de IAM](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_iam#at_events_iam).

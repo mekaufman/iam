@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-30"
+  years: 2018,2019
+lastupdated: "2019-01-30"
 
 ---
 
@@ -37,12 +37,12 @@ MFA de IBMid satisface el requisito de autenticación, de modo que no se le soli
 
 MFA de IBMid para una cuenta requiere un código de acceso de un solo uso basado en el tiempo, además de un IBMid estándar y una contraseña durante el inicio de sesión. El propietario de la cuenta habilita este tipo de MFA a nivel de cuenta. Cuando esta característica está habilitada, debe utilizar el estándar de seguridad adicional al iniciar una sesión, y también deben hacerlo todos los usuarios que se añadan a su cuenta. Este tipo de MFA se aplica a todos los recursos de la cuenta. Puede activarlo o desactivarlo desde la página **Gestionar** > **Acceso (IAM)** > **Valores** en la consola de {{site.data.keyword.Bluemix}} solo si es el propietario de la cuenta.
 
-Una de las ventajas de MFA de IBMid es que es gratuita y está vinculada a su ID, en lugar de estarlo solo a la cuenta específica en la que se encuentra. Si pertenece a varias cuentas, solo se tiene que autenticar una vez cuando inicie una sesión en la consola. Para obtener más información sobre MFA de IBMid, sobre las consideraciones que se deben revisar antes de requerir MFA de IBMid para su cuenta y sobre cómo configurar MFA de IBMid para usted mismo, consulte [Requerimiento de MFA para usuarios de su cuenta](/docs/iam/mfa.html#setting-up-ibmid-mfa).
+Una de las ventajas de MFA de IBMid es que es gratuita y está vinculada a su ID, en lugar de estarlo solo a la cuenta específica en la que se encuentra. Si pertenece a varias cuentas, solo se tiene que autenticar una vez cuando inicie una sesión en la consola. Para obtener más información sobre MFA de IBMid, sobre las consideraciones que se deben revisar antes de requerir MFA de IBMid para su cuenta y sobre cómo configurar MFA de IBMid para usted mismo, consulte [Requerimiento de MFA para usuarios de su cuenta](/docs/iam?topic=iam-enablemfa#enablemfa).
 
 ## Opciones de MFA basada en cuenta
-{: #id-based}
+{: #account-based}
 
-Un administrador de la cuenta debe habilitar cualquiera de las siguientes opciones de MFA para que un usuario las pueda configurar y utilizar en la cuenta. Este tipo de MFA está vinculado a la cuenta actual de un usuario. Si un administrador habilita una opción de MFA diferente para cada cuenta de la que un usuario es miembro, el usuario debe autenticarse de una forma distinta cada vez que cambie de cuenta.
+Un administrador de la cuenta debe habilitar cualquiera de las siguientes opciones de MFA para que un usuario las pueda configurar y utilizar en la cuenta. Este tipo de MFA está vinculado a la cuenta actual de un usuario. Si un administrador habilita una opción de MFA diferente para cada cuenta de la que un usuario es miembro, el usuario debe autenticarse de una forma distinta cada vez que cambie de cuenta. 
 
 Si un propietario de cuenta requiere MFA de IBMid para todos los usuarios de la cuenta, este método MFA de IBMid sustituye cualquier otra opción de MFA que esté habilitada y establecida en la cuenta de un usuario. Por lo tanto, aunque un usuario tenga otras opciones de MFA, como por ejemplo la siguiente configuración, no se le solicitarán durante el inicio de sesión.
 
@@ -57,4 +57,6 @@ Las siguientes opciones antiguas de MFA solo están disponibles con cuentas ante
 <dd>Hay dos opciones de autenticación externa de terceros que se pueden solicitar con un coste mensual: autenticación de Symantec y autenticación por teléfono. Un propietario de cuenta o administrador debe solicitar estas opciones para un usuario y habilitarlas para que se puedan utilizar desde la página de detalles de usuario para el usuario. En el caso de Symantec, el administrador debe trabajar con el usuario para obtener el ID de credencial de dicho usuario para realizar el pedido. Para configurar la autenticación por teléfono, el administrador debe solicitarla y luego el usuario debe configurarla en su página de detalles de usuario para que el administrador pueda habilitarla para su uso. Los usuarios que tienen acceso para gestionar sus propios valores de inicio de sesión porque tienen activado el valor de inicio de sesión gestionado por el usuario en la página de detalles de usuario pueden activarlo y desactivarlo.</dd>
 </dl>
 
-Para obtener más información sobre cómo configurar las opciones de MFA, consulte [Configuración de la seguridad de inicio de sesión](/docs/account/login_settings.html#login-settings). Si es un propietario de cuenta o administrador que gestiona los valores de inicio de sesión de otros usuarios o si tiene capacidad para gestionar sus propios valores de inicio de sesión, consulte [Gestión de los valores de inicio de sesión de un usuario](/docs/iam/user_login.html#loginsettings).
+Para obtener más información sobre cómo configurar las opciones de MFA, consulte [Configuración de la seguridad de inicio de sesión](/docs/account?topic=account-login-settings#login-settings). Si es un propietario de cuenta o administrador que gestiona los valores de inicio de sesión de otros usuarios o si tiene capacidad para gestionar sus propios valores de inicio de sesión, consulte [Gestión de los valores de inicio de sesión de un usuario](/docs/iam?topic=iam-loginsettings#loginsettings).
+
+

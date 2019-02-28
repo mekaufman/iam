@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-30"
+  years: 2015, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -36,11 +36,11 @@ Complete los siguientes pasos para invitar a usuarios o para gestionar invitacio
   * **Acceso de Cloud Foundry**
   * **Acceso de la infraestructura clásica**.
 
-  Para obtener más información, consulte [Asignación de acceso de usuario](/docs/iam/iamuserinv.html#assignaccess).
+  Para obtener más información, consulte [Asignación de acceso de usuario](/docs/iam?topic=iam-assignaccess#assignaccess).
 
 Si determina que un usuario no necesita acceso, puede cancelar una invitación para cualquier usuario que se muestre en estado **Procesando** o **Pendiente** en la columna **Estado**. Si un usuario invitado no ha recibido una invitación, puede volver a enviar la invitación a cualquier usuario en estado **Pendiente**.
 
-Si desea invitar a usuarios utilizando la interfaz de línea de mandatos (CLI), consulte el mandato [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite).
+Si desea invitar a usuarios utilizando la interfaz de línea de mandatos (CLI), consulte el mandato [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite).
 {: tip}
 
 ## Asignación de acceso de usuario desde una invitación
@@ -49,15 +49,17 @@ Si desea invitar a usuarios utilizando la interfaz de línea de mandatos (CLI), 
 Puede asignar acceso a los usuarios a medida que los invita asignando políticas de IAM de {{site.data.keyword.Bluemix}}, acceso de Cloud Foundry y permisos de la infraestructura clásica. Según las opciones de acceso que esté autorizado a gestionar, puede invitar y proporcionar acceso a usuarios de la cuenta, grupos de recursos, organizaciones, espacios, instancias de servicio e infraestructura clásica. En las secciones siguientes se describen los tres tipos de acceso que se pueden asignar a un usuario invitado.
 
 ### Servicios
+{: #invite_services}
 
 Puede asignar acceso creando una política de acceso de IAM de {{site.data.keyword.Bluemix_notm}} inicial cuando invite a un nuevo usuario. En la sección Servicios, puede proporcionar a un usuario acceso a servicios de gestión de la cuenta, servicios en un grupo de recursos con acceso para gestionar el grupo de recursos o a un recurso individual en la cuenta.
 
-Cuando el usuario acepte la invitación, puede asignarle acceso adicional. Consulte [Gestión del acceso a recursos](/docs/iam/mngiam.html#iammanidaccser) para obtener detalles sobre la edición de políticas para añadir roles extra, asignar más acceso o eliminar una política para un usuario.
+Cuando el usuario acepte la invitación, puede asignarle acceso adicional. Consulte [Gestión del acceso a recursos](/docs/iam?topic=iam-iammanidaccser#iammanidaccser) para obtener detalles sobre la edición de políticas para añadir roles extra, asignar más acceso o eliminar una política para un usuario.
 
 En función del servicio que seleccione al asignar la política, es posible que no vea todos los campos descritos en los procedimientos siguientes.
 {: note}
 
 #### Acceso a servicios de gestión de cuentas
+{: #invite_acct_mgmt}
 
 Para delegar algunas de sus responsabilidades como propietario de cuenta, puede proporcionar un acceso de usuario a los servicios de gestión de la cuenta. Por ejemplo, puede delegar la capacidad de ver información de facturación y uso, de invitar y eliminar usuarios, de gestionar grupos de acceso o de gestionar ID de servicio. Puede proporcionar acceso a todos los servicios de gestión de cuentas o solo a uno.
 
@@ -67,6 +69,7 @@ Para delegar algunas de sus responsabilidades como propietario de cuenta, puede 
 4. Seleccione cualquier combinación de roles para asignar el acceso deseado.
 
 #### Acceso a grupo de recursos
+{: #invite_rgs}
 
 Puede asignar acceso a todos los servicios dentro de un grupo de recursos o a un único tipo de servicio en un grupo de recursos.
 
@@ -78,6 +81,7 @@ Puede asignar acceso a todos los servicios dentro de un grupo de recursos o a un
 6. Seleccione cualquier combinación de roles para asignar el acceso deseado. Este acceso solo se aplica a los recursos que ha seleccionado para la política. No proporciona acceso al contenedor actual que es el grupo de recursos.
 
 #### Acceso de recurso
+{: #invite_resources}
 
 Puede asignar acceso a un único recurso dentro de su cuenta en la instancia.
 
@@ -91,9 +95,10 @@ Puede asignar acceso a un único recurso dentro de su cuenta en la instancia.
     * **ID de recurso**: Especifique el nombre de su grupo.
 7. Seleccione cualquier combinación de roles para asignar el acceso deseado.
 
-Para obtener más información específica sobre los roles que se utilizan al asignar acceso, consulte [Acceso de IAM](/docs/iam/users_roles.html#iamusermanrol).
+Para obtener más información específica sobre los roles que se utilizan al asignar acceso, consulte [Acceso de IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
 
 ### Acceso de Cloud Foundry
+{: #invite_cf}
 
 Cuando invita a nuevos usuarios, puede elegir añadirlos a una organización en la cuenta. Si añade el usuario a una organización, puede asignarle un rol de la organización. A continuación, seleccione proporcionar acceso al usuario invitado a uno o a todos los espacios de la organización seleccionada con un rol de espacio asignado.
 
@@ -106,12 +111,13 @@ Cuando invita a nuevos usuarios, puede elegir añadirlos a una organización en 
 7. Seleccione un rol de espacio para definir el nivel de acceso para los espacios seleccionados.
 8. Opcional: Seleccione **Añadir rol de espacio** para especificar un rol extra.
 
-Para obtener más información sobre los roles que se utilizan al asignar acceso, consulte [Roles de Cloud Foundry](/docs/iam/cfaccess.html#cfroles).
+Para obtener más información sobre los roles que se utilizan al asignar acceso, consulte [Roles de Cloud Foundry](/docs/iam?topic=iam-cfroles#cfroles).
 
-Es posible añadir un rol de Cloud Foundry utilizando el mandato de CLI [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite), pero se debe utilizar la consola para asignar otros permisos o accesos.
+Es posible añadir un rol de Cloud Foundry utilizando el mandato de CLI [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite), pero se debe utilizar la consola para asignar otros permisos o accesos.
 {: tip}
 
 ### Acceso de infraestructura clásica
+{: #invite_classicinfra}
 
 Los permisos que se asignan se limitan automáticamente al subconjunto de permisos que posee. Se convierte en usuario padre de cualquier usuario que invite.
 
@@ -121,7 +127,7 @@ Los permisos que se asignan se limitan automáticamente al subconjunto de permis
 El acceso a dispositivos se otorga de forma separada después de añadir el usuario. Vaya a la opción de acceso **Infraestructura clásica** para un usuario en la consola.
 {: note}
 
-Para obtener información sobre la configuración del acceso para los usuarios después de que se añadan a su cuenta, consulte [Gestión del acceso de la infraestructura clásica](/docs/iam/mnginfra.html#managing-infrastructure-access).
+Para obtener información sobre la configuración del acceso para los usuarios después de que se añadan a su cuenta, consulte [Gestión del acceso de la infraestructura clásica](/docs/iam?topic=iam-mngclassicinfra#mngclassicinfra).
 
 ## Adición de usuarios de solo VPN
 {: #add-vpn-only}
@@ -129,5 +135,5 @@ Para obtener información sobre la configuración del acceso para los usuarios d
 Como propietario de la cuenta o como usuario con permiso para gestionar la infraestructura clásica de usuario, puede añadir un usuario de solo VPN.
 
 1. En la página **Usuarios**, pulse **Añadir usuario de solo VPN**.
-3. Especifique los detalles de la información personal del usuario.
-4. Pulse **Guardar**.
+2. Especifique los detalles de la información personal del usuario.
+3. Pulse **Guardar**.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-30"
+  years: 2018, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-11-30"
 # Actualización del estado de un usuario
 {: #status}
 
-El estado asignado de un usuario depende de si el usuario ha aceptado su invitación para unirse a la cuenta, si es un usuario de solo VPN o de si el administrador del usuario ha establecido el usuario como un usuario inhabilitado de la infraestructura clásica.
+El estado asignado de un usuario depende de si el usuario ha aceptado su invitación para unirse a la cuenta, si es un usuario de solo VPN o de si el administrador del usuario ha establecido el usuario como un usuario inhabilitado de la infraestructura clásica. 
 {:shortdesc}
 
 Si tiene el acceso siguiente, puede actualizar el estado de otro usuario:
@@ -25,9 +25,10 @@ Si tiene el acceso siguiente, puede actualizar el estado de otro usuario:
   * Una política de IAM con el rol de editor o superior en el servicio de gestión de usuarios.
   * Es un antecesor en la jerarquía de la infraestructura clásica para el usuario y tiene asignado el permiso de la infraestructura clásica de gestión de usuarios
 
-Para obtener más información sobre los tipos de estados de usuario, consulte [Estados de usuario](/docs/iam/userstatus.html#status).
+Para obtener más información sobre los tipos de estados de usuario, consulte [Estados de usuario](/docs/iam?topic=iam-user_status#user_status).
 
 ## Opciones para cambiar el estado de un usuario
+{: #status_options}
 
 Puede elegir entre las opciones siguientes para actualizar el estado de un usuario:
 
@@ -44,10 +45,13 @@ Cuando se actualiza un usuario con el estado Solo VPN al estado Activo, el usuar
 {: note}
 
 ## Actualización del estado de un usuario
+{: #update_user_status}
 
 Para cambiar el estado de un usuario, siga los pasos siguientes:
 
-1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**.
+1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**. 
 2. Seleccione un usuario de la lista.
 3. En la página de detalles de usuario, seleccione una opción en el menú **Estado de usuario**.  
 4. Pulse **Aplicar**.
+
+
