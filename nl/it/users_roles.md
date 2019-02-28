@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-02-12"
+lastupdated: "2019-01-29"
 
 ---
 
@@ -69,7 +69,7 @@ Con Cloud IAM, puoi gestire e definire l'accesso per gli utenti e le risorse nel
 
 <dl>
 <dt>Ruoli di gestione della piattaforma</dt> 
-<dd>I ruoli di gestione della piattaforma coprono una gamma di azioni, inclusa la capacità di creare ed eliminare le istanze, gestire gli alias, i bind e le credenziali e gestire l'accesso. I ruoli della piattaforma sono amministratore, editor, operatore, visualizzatore. I ruoli di gestione della piattaforma si applicano anche ai [servizi di gestione dell'account](/docs/iam?topic=iam-account-services#account-services) che consentono agli utenti di invitare utenti, gestire ID di servizio, politiche di accesso, voci di catalogo e tenere traccia della fatturazione e dell'utilizzo in base al proprio ruolo assegnato in un servizio di gestione dell'account.</dd>
+<dd>I ruoli di gestione della piattaforma coprono una gamma di azioni, inclusa la capacità di creare ed eliminare le istanze, gestire gli alias, i bind e le credenziali e gestire l'accesso. I ruoli della piattaforma sono amministratore, editor, operatore, visualizzatore. I ruoli di gestione della piattaforma si applicano anche ai servizi di gestione dell'account che consentono agli utenti di invitare utenti, gestire ID di servizio, politiche di accesso, voci di catalogo e tenere traccia della fatturazione e dell'utilizzo in base al proprio ruolo assegnato in un servizio di gestione dell'account.</dd>
 <dt>Ruoli di accesso al servizio</dt>
 <dd>I ruoli di accesso al servizio definiscono la capacità di un utente o un servizio di eseguire azioni su un'istanza del servizio, come l'accesso alla console o l'esecuzione di chiamate API. I ruoli di accesso al servizio sono gestore, scrittore e lettore. </dd>
 </dl> 
@@ -80,7 +80,7 @@ Potresti non vedere tutti i ruoli qui elencati come opzioni quando assegni le po
 ### Ruoli di gestione della piattaforma
 {: #platformroles}
 
-Con i ruoli di gestione della piattaforma è possibile assegnare agli utenti diversi livelli di autorizzazione per l'esecuzione di azioni della piattaforma all'interno dell'account o su un servizio. Ad esempio, i ruoli di gestione della piattaforma assegnati alle risorse di catalogo, consentono agli utenti di completare azioni come la creazione, l'eliminazione, la modifica e la visualizzazione delle istanze del servizio. Mentre i ruoli di gestione della piattaforma assegnati ai servizi di gestione dell'account consentono agli utenti di completare azioni come l'invito e la rimozione degli utenti, l'utilizzo dei gruppi di risorse e la visualizzazione delle informazioni di fatturazione. Per ulteriori informazioni sui servizi di gestione dell'account, vedi [Assegnazione dell'accesso ai servizi di gestione dell'account](/docs/iam?topic=iam-account-services#account-services).
+Con i ruoli di gestione della piattaforma è possibile assegnare agli utenti diversi livelli di autorizzazione per l'esecuzione di azioni della piattaforma all'interno dell'account o su un servizio. Ad esempio, i ruoli di gestione della piattaforma assegnati alle risorse di catalogo, consentono agli utenti di completare azioni come la creazione, l'eliminazione, la modifica e la visualizzazione delle istanze del servizio. Mentre i ruoli di gestione della piattaforma assegnati ai servizi di gestione dell'account consentono agli utenti di completare azioni come l'invito e la rimozione degli utenti, l'utilizzo dei gruppi di risorse e la visualizzazione delle informazioni di fatturazione. Per ulteriori informazioni sui servizi di gestione dell'account, consulta [Tabella 3. Ruoli e azioni di gestione di esempio per i servizi di gestione dell'account](#platformrolestable2).
 
 Le seguenti tabelle forniscono esempi di alcune delle azioni di gestione della piattaforma che gli utenti possono effettuare nel contesto delle risorse del catalogo, dei gruppi di risorse e dei servizi di gestione dell'account. Consulta la documentazione di ogni offerta del catalogo per comprendere in che modo i ruoli vengano applicati agli utenti nel contesto del servizio utilizzato.
 
@@ -98,6 +98,9 @@ La prima riga della tabella descrive le distinte opzioni da cui puoi scegliere q
 
 La seguente tabella descrive le azioni comuni che puoi eseguire in base al ruolo che ti viene assegnato per ogni servizio di gestione dell'account. Scorri orizzontalmente per visualizzare tutte le voci nella tabella.
 {: #acctmgmt}
+
+Se assegni una politica di accesso a **Tutti i servizi di gestione account**, a seconda del ruolo che selezioni, l'utente può completare le seguenti azioni per ogni servizio di tale ruolo. Inoltre, questo tipo di politica fornisce l'accesso utente alle informazioni di fatturazione e la capacità di tenere traccia dell'utilizzo in base al proprio ruolo assegnato. Per dettagli, consulta la seguente tabella.
+{: note}
 
 La prima riga della tabella descrive gli specifici servizi da cui puoi scegliere quando crei una politica e la prima colonna descrive il tipo di ruolo selezionato per la politica. Le restanti celle associano il ruolo selezionato dalle opzioni nella prima colonna al tipo di politica selezionato dalle opzioni nella prima riga.
 
@@ -125,7 +128,6 @@ Alcuni servizi potrebbero associare specifiche azioni ai ruoli di gestione della
 {: caption="Tabella 4. Ruoli e azioni di esempio per la gestione della piattaforma per il servizio {{site.data.keyword.containershort_notm}}" caption-side="top"}
 
 ### Ruoli di accesso al servizio
-{: #service_access_roles}
 
 I ruoli di accesso al servizio consentono di assegnare agli utenti diversi livelli di autorizzazione per richiamare l'API del servizio e accedere all'interfaccia utente del servizio. La seguente tabella fornisce le azioni di esempio che è possibile eseguire a seconda dei ruoli assegnati in base all'utilizzo del servizio {{site.data.keyword.objectstorageshort}}.
 
@@ -138,5 +140,6 @@ Le azioni che possono essere eseguite in base a ciascun ruolo assegnato variano 
 | Scrittore | Autorizzazioni al di sopra del ruolo di lettore, incluse la creazione e la modifica di risorse specifiche del servizio | Creare ed eliminare bucket e oggetti |
 | Gestore | Autorizzazioni al di sopra del ruolo di scrittore per completare le azioni privilegiate definite dal servizio, più le risorse specifiche del servizio di creazione e modifica | Gestire tutti gli aspetti dell'archiviazione dati, creare ed eliminare bucket e oggetti |
 {: caption="Tabella 5. Ruoli utente e azioni di esempio per l'accesso al servizio" caption-side="top"}
+
 
 
