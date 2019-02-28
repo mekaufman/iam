@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018,2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-01-02"
 
 ---
 
@@ -37,7 +37,7 @@ La MFA dell'ID IBM soddisfa i requisiti di autenticazione, pertanto non ti vengo
 
 La MFA dell'ID IBM per un account richiede un passcode monouso basato sul tempo oltre a un ID IBM e password standard durante l'accesso. Questo tipo di MFA viene abilitato a livello di account dal proprietario dell'account. Quando questa funzione è abilitata, a te e a tutti gli utenti aggiunti al tuo account viene richiesto di utilizzare lo standard di sicurezza aggiuntivo durante l'accesso. Questo tipo di MFA si applica a tutte le risorse dell'account. Puoi attivare o disattivare questa opzione dalla pagina **Gestisci** > **Accesso (IAM)** > **Impostazioni** nella console {{site.data.keyword.Bluemix}} solo se sei il proprietario dell'account.
 
-Uno dei vantaggi della MFA dell'ID IBM è che è gratuita e legata al tuo ID invece del solo account specifico in cui ti trovi. Se appartieni a molti account, devi autenticarti solo una volta quando accedi alla console. Per ulteriori informazioni sulla MFA dell'ID IBM, le considerazioni che devono essere esaminate prima di richiedere MFA dell'ID IBM per il tuo account e come configurare MFA dell'ID IBM per conto proprio, vedi [Richiesta di MFA per gli utenti nel tuo account](/docs/iam?topic=iam-enablemfa#enablemfa).
+Uno dei vantaggi della MFA dell'ID IBM è che è gratuita e legata al tuo ID invece del solo account specifico in cui ti trovi. Se appartieni a molti account, devi autenticarti solo una volta quando accedi alla console. Per ulteriori informazioni sulla MFA dell'ID IBM, le considerazioni che devono essere esaminate prima di richiedere MFA dell'ID IBM per il tuo account e come configurare MFA dell'ID IBM per conto proprio, vedi [Richiesta di MFA per gli utenti nel tuo account](/docs/iam/mfa.html#setting-up-ibmid-mfa).
 
 ## Opzioni MFA basata sull'account
 {: #account-based}
@@ -57,6 +57,5 @@ Le seguenti opzioni MFA legacy sono disponibili solo con i precedenti account de
 <dd>Esistono due opzioni di autenticazione esterne di terze parti che possono essere ordinate a un costo mensile: autenticazione Symantec e basata sul telefono. Un proprietario o amministratore dell'account deve ordinare queste opzioni per un utente e abilitarne l'utilizzo dalla pagina Dettagli utente per l'utente. Per Symantec, l'amministratore deve collaborare con l'utente per ottenere l'ID credenziale dell'utente per completare l'ordine. Per configurare l'autenticazione basata sul telefono, l'amministratore deve ordinarla e quindi l'utente deve configurarla nella pagina Dettagli utente affinché l'amministratore possa abilitarla per l'uso. Gli utenti con accesso per gestire le proprie impostazioni di accesso, in quanto hanno l'impostazione di Accesso gestito dall'utente abilitata dalla loro pagina Dettagli utente, possono attivare e disattivare questa opzione.</dd>
 </dl>
 
-Per ulteriori informazioni sulla configurazione delle opzioni MFA, vedi [Impostazione della protezione dell'accesso](/docs/account?topic=account-login-settings#login-settings). E, se sei proprietario o amministratore di un account che gestisce le impostazioni di accesso di altri utenti o hai la possibilità di gestire le tue proprie impostazioni di accesso, vedi [Gestione delle impostazioni di accesso di un utente](/docs/iam?topic=iam-loginsettings#loginsettings).
-
+Per ulteriori informazioni sulla configurazione delle opzioni MFA, vedi [Impostazione della protezione dell'accesso](/docs/account/login_settings.html#login-settings). E, se sei proprietario o amministratore di un account che gestisce le impostazioni di accesso di altri utenti o hai la possibilità di gestire le tue proprie impostazioni di accesso, vedi [Gestione delle impostazioni di accesso di un utente](/docs/iam/user_login.html#loginsettings).
 
