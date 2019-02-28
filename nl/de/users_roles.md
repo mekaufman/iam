@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-02-12"
+lastupdated: "2019-01-29"
 
 ---
 
@@ -69,9 +69,9 @@ Mit Cloud IAM können Sie die Zugriffsberechtigungen für Benutzer und Ressource
 
 <dl>
 <dt>Plattformmanagementrollen</dt> 
-<dd>Plattformmanagementrollen umfassen eine Reihe von Aktionen, darunter die Möglichkeit, Instanzen zu erstellen und zu löschen, Aliasnamen zu verwalten sowie Bindungen, Berechtigungsnachweise und Zugriffsberechtigungen zu verwalten. Die Plattformrollen sind: Administrator, Bearbeiter (Editor), Bediener (Operator) und Anzeigeberechtigter (Viewer). Plattformmanagementrollen werden auch auf [Kontoverwaltungsservices](/docs/iam?topic=iam-account-services#account-services) angewendet, die Benutzern je nach ihrer zugewiesenen Rolle für einen Kontoverwaltungsservice das Einladen von Benutzern, Verwalten von Service-IDs, Zugriffsrichtlinien und Katalogeinträgen sowie das Verfolgen von Abrechnungen und der Nutzung ermöglichen. </dd>
+<dd>Plattformmanagementrollen umfassen eine Reihe von Aktionen, darunter die Möglichkeit, Instanzen zu erstellen und zu löschen, Aliasnamen zu verwalten sowie Bindungen, Berechtigungsnachweise und Zugriffsberechtigungen zu verwalten. Die Plattformrollen sind: Administrator, Bearbeiter (Editor), Bediener (Operator) und Anzeigeberechtigter (Viewer). Plattformmanagementrollen werden auch auf Kontoverwaltungsservices angewendet, die Benutzern je nach ihrer zugewiesenen Rolle für einen Kontoverwaltungsservice das Einladen von Benutzern, Verwalten von Service-IDs, Zugriffsrichtlinien und Katalogeinträgen sowie das Verfolgen von Abrechnungen und der Nutzung ermöglichen.</dd>
 <dt>Servicezugriffsrollen</dt>
-<dd>Servicezugriffsrollen definieren die Möglichkeit eines Benutzers oder eines Service, bestimmte Aktionen für eine Serviceinstanz auszuführen. Hierzu zählen beispielsweise der Zugriff auf die Konsole oder das Ausführen von API-Aufrufen. Die Servicezugriffsrollen sind Manager, Schreibberechtigter und Leseberechtigter. </dd>
+<dd>Servicezugriffsrollen definieren die Möglichkeit eines Benutzers oder eines Service, bestimmte Aktionen für eine Serviceinstanz auszuführen. Hierzu zählen beispielsweise der Zugriff auf die Konsole oder das Ausführen von API-Aufrufen. Die Servicezugriffsrollen sind Manager, Schreibberechtigter (Writer) und Leseberechtigter (Reader). </dd>
 </dl> 
 
 Möglicherweise werden nicht alle hier als Optionen aufgeführten Rollen angezeigt, wenn Sie Richtlinien in der Benutzerschnittstelle zuweisen, da nur die Rollen angezeigt werden, die für den von Ihnen ausgewählten Service verfügbar sind. Weitere Informationen zu den aktivierten Rollen und zu den Aktionen, die die einzelnen Zugriffsrollen für den jeweiligen Service ermöglichen, sind in der Dokumentation für den betreffenden Service beschrieben.
@@ -80,7 +80,7 @@ Möglicherweise werden nicht alle hier als Optionen aufgeführten Rollen angezei
 ### Plattformmanagementrollen
 {: #platformroles}
 
-Mit Plattformmanagementrollen können Benutzern unterschiedliche Berechtigungsstufen für die Durchführung von Plattformaktionen innerhalb des Kontos und für einen Service zugewiesen werden. Zum Beispiel ermöglichen die Plattformmanagementrollen, die für Katalogressourcen zugewiesen sind, dem Benutzer solche Aktionen wie das Erstellen, Löschen, Bearbeiten und Anzeigen von Serviceinstanzen. Zudem ermöglichen die Plattformmanagementrollen, die für Kontoverwaltungsservices zugewiesen sind, dem Benutzer Aktionen wie das Einladen und Entfernen von Benutzern, das Arbeiten mit Ressourcengruppen und das Anzeigen von Abrechnungsinformationen. Weitere Informationen zu Kontoverwaltungsservices finden Sie in [Zugriff auf Kontoverwaltungsservices zuweisen](/docs/iam?topic=iam-account-services#account-services). 
+Mit Plattformmanagementrollen können Benutzern unterschiedliche Berechtigungsstufen für die Durchführung von Plattformaktionen innerhalb des Kontos und für einen Service zugewiesen werden. Zum Beispiel ermöglichen die Plattformmanagementrollen, die für Katalogressourcen zugewiesen sind, dem Benutzer solche Aktionen wie das Erstellen, Löschen, Bearbeiten und Anzeigen von Serviceinstanzen. Zudem ermöglichen die Plattformmanagementrollen, die für Kontoverwaltungsservices zugewiesen sind, dem Benutzer Aktionen wie das Einladen und Entfernen von Benutzern, das Arbeiten mit Ressourcengruppen und das Anzeigen von Abrechnungsinformationen. Weitere Informationen zu Kontoverwaltungsservices enthält [Tabelle 3. Beispiele für Plattformmanagementrollen und -aktionen für Kontoverwaltungsservices](#platformrolestable2).
 
 Die folgenden Tabellen enthalten Beispiele für einige der Plattformmanagementaktionen, die Benutzer im Kontext von Katalogressourcen, Ressourcengruppen und Kontoverwaltungsservices durchführen können. In der Dokumentation zu den verschiedenen Katalogen finden Sie Informationen dazu, wie die Rollen im Kontext des aktuell verwendeten Service auf den Benutzer angewendet werden.
 
@@ -98,6 +98,9 @@ In der ersten Zeile der Tabelle werden separate Optionen beschrieben, die Sie f�
 
 Die folgende Tabelle enthält die allgemeinen Aktionen, die Sie je nach zugewiesener Rolle für den jeweiligen Kontoverwaltungsservice ausführen können. Blättern Sie nach unten bzw. oben, um alle Einträge in der nachstehenden Tabelle anzuzeigen.
 {: #acctmgmt}
+
+Wenn Sie eine Zugriffsrichtlinie für **Alle Kontoverwaltungsservices** zuweisen, kann der Benutzer je nach ausgewählter Rolle die folgenden Aktionen für jeden Service in dieser Rolle auszuführen. Darüber hinaus bietet dieser Richtlinientyp dem Benutzer je nach zugewiesener Rolle den Zugriff auf Informationen zur Rechnungsstellung und die Möglichkeit, die Nutzung zu verfolgen. Details finden Sie in der folgenden Tabelle.
+{: note}
 
 In der ersten Zeile der Tabelle werden bestimmte Services beschrieben, die Sie für die Erstellung einer Richtlinie auswählen können; in der ersten Spalte wird der ausgewählte Typ von Rolle für die Richtlinie beschrieben. Die verbliebenen Zellen werden der in den Optionen der ersten Spalte ausgewählten Rolle sowie dem in den Optionen in der ersten Zeile ausgewählten Typ von Richtlinie zugeordnet.
 
@@ -118,14 +121,13 @@ Einige Services ordnen möglicherweise bestimmte Aktionen den Plattformmanagemen
 
 | Plattformmanagementrolle | Aktionen | Beispielaktionen für {{site.data.keyword.containershort_notm}} |
 |:-----------------|:-----------------|:-----------------|
-| Anzeigeberechtigter | Serviceinstanzen anzeigen, nicht jedoch ändern  | <ul><li>Cluster auflisten</li><li>Details für einen Cluster anzeigen</li></ul>|
-| Bearbeiter | Alle Plattformaktionen ausführen mit Ausnahme der Kontoverwaltung und der Zuweisung von Zugriffsrichtlinien |<ul><li>Service an einen Cluster binden</li><li>Webhook erstellen</li></ul> |
-| Bediener | Plattformaktionen ausführen, die für die Konfiguration und den Betrieb von Serviceinstanzen erforderlich sind, z. B. Anzeigen eines Service-Dashboards | <ul><li>Workerknoten hinzufügen oder entfernen</li><li>Workerknoten erneut starten oder erneut laden</li><li>Service an einen Cluster binden</li></ul> |
+| Viewer (Anzeigeberechtigter) | Serviceinstanzen anzeigen, nicht jedoch ändern  | <ul><li>Cluster auflisten</li><li>Details für einen Cluster anzeigen</li></ul>|
+| Editor (Bearbeiter) | Alle Plattformaktionen ausführen mit Ausnahme der Kontoverwaltung und der Zuweisung von Zugriffsrichtlinien |<ul><li>Service an einen Cluster binden</li><li>Webhook erstellen</li></ul> |
+| Operator (Bediener) | Plattformaktionen ausführen, die für die Konfiguration und den Betrieb von Serviceinstanzen erforderlich sind, z. B. Anzeigen eines Service-Dashboards | <ul><li>Workerknoten hinzufügen oder entfernen</li><li>Workerknoten erneut starten oder erneut laden</li><li>Service an einen Cluster binden</li></ul> |
 | Administrator | Alle Plattformaktionen basierend auf der Ressource ausführen, der diese Rolle zugewiesen ist, einschließlich dem Zuweisen von Zugriffsrichtlinien zu anderen Benutzern |<ul><li>Cluster entfernen</li><li>Cluster erstellen</li><li>Benutzerzugriffsrichtlinien aktualisieren</li><li>Alle Aktionen, die ein Anzeigeberechtigter, Bearbeiter und Bediener ausführen kann</li></ul>|
 {: caption="Tabelle 4. Beispiele zu Plattformmanagementrollen und -aktionen für den {{site.data.keyword.containershort_notm}}-Service" caption-side="top"}
 
 ### Servicezugriffsrollen
-{: #service_access_roles}
 
 Mit Servicezugriffsrollen können Benutzern unterschiedliche Berechtigungsstufen für das Aufrufen der Service-APIs und den Zugriff auf die Benutzerschnittstelle des Service zugewiesen werden. Die folgende Tabelle enthält Beispiele für Aktionen, die abhängig von den zugewiesenen Rollen auf Basis der Verwendung des {{site.data.keyword.objectstorageshort}}-Service ausgeführt werden können.
 
@@ -134,9 +136,10 @@ Welche Aktionen, die je nach zugewiesener Rolle ausgeführt werden können, hän
 
 | Servicezugriffsrolle | Aktionen | Beispielaktionen für den {{site.data.keyword.objectstorageshort}}-Service |
 |:-----------------|:-----------------|:-----------------|
-| Leseberechtigter | Aktionen mit Lesezugriff innerhalb eines Service durchführen, z. B. servicespezifische Ressourcen anzeigen | Objekte auflisten und herunterladen |
-| Schreibberechtigter | Berechtigungen, die über die Rolle der Leseberechtigten hinausgehen, einschließlich Erstellen und Bearbeiten servicespezifischer Ressourcen | Buckets und Objekte erstellen und löschen |
+|  Reader (Leseberechtigter) | Aktionen mit Lesezugriff innerhalb eines Service durchführen, z. B. servicespezifische Ressourcen anzeigen | Objekte auflisten und herunterladen |
+| Writer (Schreibberechtigter) | Berechtigungen, die über die Rolle der Leseberechtigten hinausgehen, einschließlich Erstellen und Bearbeiten servicespezifischer Ressourcen | Buckets und Objekte erstellen und löschen |
 | Manager | Berechtigungen, die über die Rolle der Schreibberechtigten hinausgehen, um Aktionen durchzuführen, für die vom Service definierte spezielle Berechtigungen erforderlich sind, sowie das Erstellen und Bearbeiten servicespezifischer Ressourcen | Alle Aspekte der Datenspeicherung verwalten, Buckets und Objekte erstellen und löschen |
 {: caption="Tabelle 5. Beispiele für Servicezugriffsbenutzerrollen und Aktionen" caption-side="top"}
+
 
 
