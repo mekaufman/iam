@@ -19,7 +19,7 @@ lastupdated: "2019-01-28"
 # Mit föderierter ID anmelden
 {: #federated_id}
 
-Als föderierter Benutzer, der eine unternehmensweite oder Unternehmens-Single Sign-on-ID verwendet, können Sie sich bei {{site.data.keyword.Bluemix}} über die Befehlszeilenschnittstelle (CLI) anmelden, indem Sie entweder einen einmaligen Kenncode oder einen API-Schlüssel verwenden.
+Als föderierter Benutzer, der eine unternehmensweite oder Unternehmens-Single Sign-on-ID verwendet, können Sie sich bei {{site.data.keyword.Bluemix}} über die Befehlszeilenschnittstelle (CLI) anmelden, indem Sie entweder einen einmaligen Kenncode oder einen API-Schlüssel verwenden. 
 {: shortdesc}
 
 ## Einmaligen Kenncode verwenden
@@ -39,13 +39,13 @@ Ein einmaliger Kenncode ruft Code über die {{site.data.keyword.Bluemix_notm}}-K
   ``` 
   ibmcloud login --sso
   API-Endpunkt: https://cloud.ibm.com
-
+      
   Zum Fortfahren einen einmaligen Code über https://identity-2.us-south.iam.cloud.ibm.com/identity/passcode anfordern.
   URL im Standardbrowser öffnen? [J/N]>
   Einmaliger Code >
   Authentifizieren...
   OK
-
+      
   ```
   
 ### Über die Cloud Foundry-Befehlszeilenschnittstelle
@@ -59,11 +59,11 @@ Ein einmaliger Kenncode ruft Code über die {{site.data.keyword.Bluemix_notm}}-K
   cf login -a  https://api.us-south.cf.cloud.ibm.com --sso
   
   API-Endpunkt: https://api.us-south.cf.cloud.ibm.com
-
+      
   Einmaliger Code (Abruf unter https://login.us-south.cf.cloud.ibm.com/UAALoginServerWAR/passcode)>
   Authentifizieren...
   OK
-
+      
   ```
 
 ## API-Schlüssel verwenden
@@ -71,7 +71,7 @@ Ein einmaliger Kenncode ruft Code über die {{site.data.keyword.Bluemix_notm}}-K
 
 Der erforderliche API-Schlüssel ist der {{site.data.keyword.Bluemix_notm}}-API-Schlüssel, der für die Authentifizierung bei der {{site.data.keyword.Bluemix_notm}}-Plattform verwendet wird, und nicht der API-Schlüssel für die klassische Infrastruktur oder der {{site.data.keyword.Bluemix_notm}}-Service-API-Schlüssel.
 
-1. Erstellen Sie einen API-Schlüssel mit dem Befehl [`ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create). Verwenden Sie die Option `-f`, um eine API-Schlüsseldatei zu erstellen, anstatt den Schlüssel im Befehlsfenster anzuzeigen:
+1. Erstellen Sie einen API-Schlüssel mit dem [Befehl `ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_api_key_create). Verwenden Sie die Option `-f`, um eine API-Schlüsseldatei zu erstellen, anstatt den Schlüssel im Befehlsfenster anzuzeigen:
 
    ```
    ibmcloud iam api-key-create NAME [-d BESCHREIBUNG] [-f, --file DATEI]
