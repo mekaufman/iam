@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-05"
 
 keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
 
@@ -23,12 +23,12 @@ subcollection: iam
 An application programming interface key (API key) is a unique code that is passed in to an API to identify the calling application or user. API keys are used to track and control how the API is being used, for example to prevent malicious use or abuse of the API. The API key often acts as both a unique identifier and a secret token for authentication, and generally has a set of access that is specific to the identity associated with it.
 {:shortdesc}
 
-To view your API keys, go to **Manage** > **Access (IAM)**, and select **Users**. Then, select a user to navigate to the API keys section that's included on the User details page.
+To view your API keys, go to **Manage** > **Access (IAM)** > **IBM Cloud API keys**.
 
 ## {{site.data.keyword.cloud_notm}} API keys
 {: #ibm-cloud-api-keys}
 
-{{site.data.keyword.cloud}} API keys are created from the User details page in the {{site.data.keyword.cloud_notm}} console for a user and are associated with the user's identity. Only the user for which the API key is associated with can create and delete it. You can use the {{site.data.keyword.cloud_notm}} API keys in the command-line interface (CLI) or as part of automation to log in as your user identity. You can also use {{site.data.keyword.cloud_notm}} API keys to access classic infrastructure APIs. For more information about using an API key associated with your user identity, see [Managing user API keys](/docs/iam?topic=iam-userapikey#userapikey).
+{{site.data.keyword.cloud}} API keys are associated with the user's identity. Only the user for which the API key is associated with can create and delete it. You can use the {{site.data.keyword.cloud_notm}} API keys in the command-line interface (CLI) or as part of automation to log in as your user identity. You can also use {{site.data.keyword.cloud_notm}} API keys to access classic infrastructure APIs. For more information about using an API key associated with your user identity, see [Managing user API keys](/docs/iam?topic=iam-userapikey#userapikey).
 
 You can also use API keys that are associated with service IDs that you create. Service IDs are used to connect an application inside or outside of {{site.data.keyword.Bluemix_notm}} to an {{site.data.keyword.Bluemix_notm}} service. For more information about creating API keys associated with a service ID, see [Managing service ID API keys](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys).
 
