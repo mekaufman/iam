@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2015，2018
+  years: 2015，2019
 
-lastupdated: "2018-07-30"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -19,11 +19,11 @@ lastupdated: "2018-07-30"
 # 使用联合标识登录
 {: #federated_id}
 
-作为联合用户，您可以使用一次性密码或使用 API 密钥通过命令行界面 (CLI) 登录到 {{site.data.keyword.Bluemix}}。
+作为使用公司或企业单点登录标识的联合用户，您可以使用一次性密码或使用 API 密钥通过命令行界面 (CLI) 登录到 {{site.data.keyword.Bluemix}}。
 {: shortdesc}
 
 ## 使用一次性密码
-{:onetime_passcode}
+{: #onetime_passcode}
 
 如果使用一次性密码选项通过联合标识登录，请指定单点登录 (SSO) 参数以获取一次性密码，然后在登录时输入该密码。 
 
@@ -31,37 +31,43 @@ lastupdated: "2018-07-30"
 {: tip}
 
 ### 在 {{site.data.keyword.Bluemix_notm}} CLI 中
+{: #login_cli}
 1. 为 `ibmcloud login` 命令指定 `--sso` 选项。
 2. 访问提示中的 URL 以获取一次性密码。
 3. 复制密码值并将其作为输入粘贴到 CLI 中。
     
   ``` 
   ibmcloud login --sso
-  API endpoint: https://api.ng.bluemix.net
-
-  One Time Code (Get one at https://iam.ng.bluemix.net/oidc/passcode)> 
+  API endpoint: https://cloud.ibm.com
+      
+  Get One Time Code from https://identity-2.us-south.iam.cloud.ibm.com/identity/passcode to proceed.
+  Open the URL in the default browser? [Y/n]>
+  One Time Code >
   Authenticating...
   OK
       
   ```
   
 ### 在 Cloud Foundry CLI 中
+{: #login_cf_cli}
+
 1. 为 `cf login` 命令指定 `--sso` 选项。 
 2. 访问提示中的 URL 以获取一次性密码。 
 3. 复制密码值并将其作为输入粘贴到 CLI 中。 
     
   ```
-  cf login --sso
-  API endpoint: https://api.ng.bluemix.net
+  cf login -a  https://api.us-south.cf.cloud.ibm.com --sso
+  
+  API endpoint: https://api.us-south.cf.cloud.ibm.com
       
-  One Time Code (Get one at https://login.ng.bluemix.net/UAALoginServerWAR/passcode)>
+  One Time Code (Get one at https://login.us-south.cf.cloud.ibm.com/UAALoginServerWAR/passcode)>
   Authenticating...
   OK
       
   ```
 
 ## 使用 API 密钥
-{:api_key}
+{: #api_key}
 
 所需的 API 密钥是用于向 {{site.data.keyword.Bluemix_notm}} 平台认证的 {{site.data.keyword.Bluemix_notm}} API 密钥，而不是经典基础架构 API 密钥或 {{site.data.keyword.Bluemix_notm}} 服务 API 密钥。
 
@@ -95,10 +101,9 @@ ibmcloud login --apikey @key_file_name
   要使用 Cloud Foundry CLI 登录，请指定 `apikey` 作为用户名，并指定 API 密钥字符串作为密码：
 
     ```
-    cf login
-    API endpoint: https://api.ng.bluemix.net
-  
+    cf login -a https://api.us-south.cf.cloud.ibm.com
     
+    API endpoint: https://api.us-south.cf.cloud.ibm.com
   
     Email> apikey
   

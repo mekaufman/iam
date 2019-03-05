@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2015，2019
+  years: 2015，2018
 
-lastupdated: "2019-02-13"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -56,7 +56,6 @@ No entanto, se seu ID dedicado não foi conectado ao IBMid público, você será
 Selecione uma opção para inserir as credenciais para o ID dedicado. Após a autenticação bem-sucedida, seu ID dedicado será conectado a seu IBMid público.
 
 ## Forçar o login no servidor UAA local
-{: #force_login}
 
 Para forçar a criação de log para o servidor do UAA com um ID dedicado, especifique a opção `--no-iam` no comando `ibmcloud login`:
 
@@ -65,7 +64,6 @@ Para forçar a criação de log para o servidor do UAA com um ID dedicado, espec
 ```
 
 ## Desconectar seu ID dedicado do IBMid público 
-{: #disconnect_id}
 
 É possível usar `ibmcloud iam dedicated-id-disconnect` para desconectar o IBMid público com o ID dedicado conectado.
 

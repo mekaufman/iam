@@ -19,7 +19,7 @@ lastupdated: "2019-01-28"
 # 연합 ID로 로그인
 {: #federated_id}
 
-일회성 패스코드 또는 API 키를 사용하여, 기업 또는 엔터프라이즈 싱글 사인온 ID를 사용하는 연합 사용자로 명령행 인터페이스(CLI)에서 {{site.data.keyword.Bluemix}}에 로그인할 수 있습니다. 
+일회성 패스코드 또는 API 키를 사용하여, 기업 또는 엔터프라이즈 싱글 사인온 ID를 사용하는 연합 사용자로 명령행 인터페이스(CLI)에서 {{site.data.keyword.Bluemix}}에 로그인할 수 있습니다.
 {: shortdesc}
 
 ## 일회성 패스코드 사용
@@ -71,7 +71,7 @@ lastupdated: "2019-01-28"
 
 필요한 API 키는 클래식 인프라 API 키 또는 {{site.data.keyword.Bluemix_notm}} 서비스 API 키가 아니라 {{site.data.keyword.Bluemix_notm}} 플랫폼에서 인증하는 데 사용된 {{site.data.keyword.Bluemix_notm}} API 키입니다.
 
-1. [`ibmcloud iam api-key-create` 명령](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_api_key_create)으로 API 키를 작성하십시오. `-f` 옵션을 사용하여 명령 창에서 키를 표시하는 대신에 API 키 파일을 생성하십시오.
+1. [`ibmcloud iam api-key-create` 명령](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create)으로 API 키를 작성하십시오. `-f` 옵션을 사용하여 명령 창에서 키를 표시하는 대신에 API 키 파일을 생성하십시오.
 
    ```
    ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]

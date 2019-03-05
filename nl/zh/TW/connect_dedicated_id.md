@@ -23,8 +23,8 @@ lastupdated: "2018-11-12"
 {:shortdesc}
 
 ```
-  $ ibmcloud login -a https://api.{dedicated_env}.bluemix.net
-  API endpoint: https://api.{dedicated_env}.bluemix.net
+  $ ibmcloud login -a https://api.{dedicated_env}.cloud.ibm.com
+  API endpoint: https://api.{dedicated_env}.cloud.ibm.com
 
   Public IAM token service is available in the dedicated environment.
   Login with your public IBMid, or use '--no-iam' to login as a dedicated user only.
@@ -49,7 +49,7 @@ Authenticating...
 
   Choose a credential type:
   1. Username and password
-  2. One Time Code (Get one at https://login.{dedicated_env}.bluemix.net.com/passcode)
+  2. One Time Code (Get one at https://login.{dedicated_env}.cloud.ibm.com/passcode)
   Enter a number>
 ```
 
