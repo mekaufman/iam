@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-30"
 
 
 
@@ -27,13 +27,13 @@ lastupdated: "2018-11-30"
 {: #whatisiam}
 {: faq}
 
-利用 Identity and Access Management (IAM)，您可以在整个 {{site.data.keyword.cloud_notm}} 平台上安全地对平台服务的用户进行认证并控制对资源的访问权。启用了一组 IBM Cloud 服务以便使用 Cloud IAM 进行访问控制。这些服务在您的帐户中组织成资源组，让用户能够快速、轻松地一次访问多个资源。Cloud IAM 访问策略用于为用户和服务标识分配对帐户中资源的访问权。有关更多信息，请参阅 [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam/index.html#iamoverview)。
+利用 Identity and Access Management (IAM)，您可以在整个 {{site.data.keyword.cloud_notm}} 平台上安全地对平台服务的用户进行认证并控制对资源的访问权。启用了一组 IBM Cloud 服务以便使用 Cloud IAM 进行访问控制。这些服务在您的帐户中组织成资源组，让用户能够快速、轻松地一次访问多个资源。Cloud IAM 访问策略用于为用户和服务标识分配对帐户中资源的访问权。有关更多信息，请参阅 [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam?topic=iam-iamoverview#iamoverview)。
 
 ## 什么是支持 IAM 的服务？
 {: #iam-enabled}
 {: faq}
 
-支持 IAM 的服务必须位于资源组中，并且必须使用 IAM 访问策略为其授予对该服务的访问权。从目录创建支持 IAM 的服务时，必须将其分配给某个资源组。有关更多信息，请参阅[什么是资源？](/docs/resources/acct_resources.html#resource)
+支持 IAM 的服务必须位于资源组中，并且必须使用 IAM 访问策略为其授予对该服务的访问权。从目录创建支持 IAM 的服务时，必须将其分配给某个资源组。有关更多信息，请参阅[什么是资源？](/docs/resources?topic=resources-resource#resource)
 
 {{site.data.keyword.containerlong_notm}} 是唯一的例外；其 IAM 访问受控制，但它始终分配给缺省资源组。因此，在从目录创建服务时，没有选项让您进行选择。而且也不能将其分配给其他任何资源组
 
@@ -73,7 +73,7 @@ lastupdated: "2018-11-30"
 
 通过同时使用资源组和访问组，可以通过分配有限数量的策略来优化访问权分配策略。您可以将特定用户组或服务标识组需要访问的所有资源都组织到一个资源组中，将所有用户和服务标识分组到一个访问组中，然后再分配一个授权访问资源组中所有资源的策略。
 
-有关更多信息，请参阅[分配访问权的最佳实践](/docs/iam/bp_access.html#account_setup)。
+有关更多信息，请参阅[分配访问权的最佳实践](/docs/iam?topic=iam-account_setup#account_setup)。
 
 ## 如何确保我的用户可以在资源组中创建资源？
 {: #resources}
@@ -105,7 +105,7 @@ lastupdated: "2018-11-30"
 
 如果具有对资源组中资源的访问权，就可以编辑、删除和创建实例，或者根据分配的角色具有资源组中指定服务的所有管理操作。
 
-例如，帐户管理服务的平台管理角色和操作；请参阅[平台角色表](/docs/iam/users_roles.html#platformrolestable2)。
+例如，帐户管理服务的平台管理角色和操作；请参阅[平台角色表](/docs/iam?topic=iam-userroles#platformrolestable2)。
 
 ## 谁可以除去用户？
 {: #remove-users}
@@ -113,15 +113,15 @@ lastupdated: "2018-11-30"
 
 帐户所有者可以从帐户中除去任何用户，并且任何具有以下访问权的用户都可以从帐户中除去用户：
 
-* 具有分配了对用户管理帐户管理服务的管理员角色的 IAM 策略，并且是 Cloud Foundry 组织管理者（如果用户属于 Cloud Foundry 组织）。
-* 如果您的帐户中具有经典基础架构，那么用户必须具有分配了对用户管理帐户管理服务的管理员角色的 IAM 策略，必须是 Cloud Foundry 组织管理者（如果该用户属于 Cloud Foundry 组织），并且必须是经典基础架构用户层次结构中分配了“管理用户”经典基础架构许可权的用户的祖代。
+* 必须有一个 IAM 策略来分配对用户管理帐户管理服务的“管理员”角色，并且必须是 Cloud Foundry 组织管理者（如果用户属于 Cloud Foundry 组织）。
+* 如果您的帐户中具有经典基础架构，那么用户必须有一个 IAM 策略来分配对用户管理帐户管理服务的“管理员”角色，必须是 Cloud Foundry 组织管理者（如果用户属于 Cloud Foundry 组织），并且必须是经典基础架构用户层次结构中具有“管理用户”经典基础架构许可权分配的用户的祖代。
 
 ## 如何要求对我自己的帐户进行 IBM 标识多因子认证？
 {: #multi-factor}
 {: faq}
 
 1. 转至**管理** &gt; **访问权 (IAM)**，然后选择**设置**。
-2. 选择**多因子认证**，然后单击**是，我确定**。有关更多信息，请参阅[需要对您帐户中的用户进行 MFA](/docs/iam/mfa.html#enablemfa)。
+2. 选择**多因子认证**，然后单击**是，我确定**。有关更多信息，请参阅[需要对您帐户中的用户进行 MFA](/docs/iam?topic=iam-enablemfa#enablemfa)。
 
 ## 服务和平台角色有什么差别？
 {: #service-platform-roles}
@@ -131,7 +131,7 @@ lastupdated: "2018-11-30"
 
 * 平台角色是您如何使用帐户中的服务，如创建实例、绑定实例、管理用户对服务的访问权。例如，对于平台服务，这些角色支持用户创建资源组并管理服务标识。平台角色包括：管理员、编辑者、操作员和查看者。
 
-* 服务角色定义能否对服务执行操作，并且是特定于每个服务的，如执行 API 调用或访问 UI。服务角色包括：管理员、作者和读者。有关如何应用这些角色的更多信息，请参阅特定服务的文档。
+* 服务角色定义能否对服务执行操作，并且是特定于每个服务的，如执行 API 调用或访问 UI。服务角色包括：管理者、写入者和读取者。有关如何应用这些角色的更多信息，请参阅特定服务的文档。
 
 ## 资源组与 Cloud Foundry 组织和空间有什么差别？
 {: #groups-organizations}
@@ -182,7 +182,7 @@ lastupdated: "2018-11-30"
 {: #users}
 {: faq}
 
-帐户所有者可以查看帐户中的所有用户，并选择用户可以如何在“用户”页面上查看帐户中的其他用户。帐户所有者可以通过选择以下其中一个选项来调整“设置”页面上的[用户列表可视性设置](/docs/iam/userlist.html#userlistview)：
+帐户所有者可以查看帐户中的所有用户，并选择用户可以如何在“用户”页面上查看帐户中的其他用户。帐户所有者可以通过选择以下其中一个选项来调整“设置”页面上的[用户列表可视性设置](/docs/iam?topic=iam-userlistview#userlistview)：
 
 * **不受限制的视图**：帐户中的所有用户都可以查看帐户中的其他所有用户。
 * **受限视图**：只允许被授予显式访问权的用户以及通过共享 Cloud Foundry 组织或经典基础架构用户层次结构关系而有能力查看其他用户的用户在“用户”页面上查看用户。
@@ -203,4 +203,4 @@ lastupdated: "2018-11-30"
 {: #appid}
 {: faq}
 
-IAM 用于管理对 {{site.data.keyword.cloud_notm}} 服务和资源的访问权。借助 {{site.data.keyword.appid_full_notm}}，您可以通过向 Web 和移动应用程序中添加认证来使云安全性向前迈进一大步。只需要少数代码行，您就可以轻松地保护在 {{site.data.keyword.cloud_notm}} 上运行的云本机应用程序和服务。准备好开始了吗？[查看文档](/docs/services/appid/index.html)。
+IAM 用于管理对 {{site.data.keyword.cloud_notm}} 服务和资源的访问权。借助 {{site.data.keyword.appid_full_notm}}，您可以通过向 Web 和移动应用程序中添加认证来使云安全性向前迈进一大步。只需要少数代码行，您就可以轻松地保护在 {{site.data.keyword.cloud_notm}} 上运行的云本机应用程序和服务。准备好开始了吗？[查看文档](/docs/services/appid?topic=appid-gettingstarted#gettingstarted)。

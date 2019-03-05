@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-30"
+  years: 2015, 2019
+lastupdated: "2019-01-28"
 
 ---
 
@@ -36,11 +36,11 @@ lastupdated: "2018-11-30"
   * **Cloud Foundry 访问权**
   * **经典基础架构访问权**。
 
-  有关更多信息，请参阅[分配用户访问权](/docs/iam/iamuserinv.html#assignaccess)。
+  有关更多信息，请参阅[分配用户访问权](/docs/iam?topic=iam-assignaccess#assignaccess)。
 
 如果确定某个用户不需要访问权，那么可以对**状态**列中显示为**正在处理**或**暂挂**状态的任何用户取消邀请。如果被邀请用户未收到邀请，那么可以向处于**暂挂**状态的任何用户重新发送邀请。
 
-如果要使用命令行界面 (CLI) 来邀请用户，请参阅 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite) 命令。
+如果要使用命令行界面 (CLI) 来邀请用户，请参阅 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite) 命令。
 {: tip}
 
 ## 通过邀请分配用户访问权
@@ -49,15 +49,17 @@ lastupdated: "2018-11-30"
 在邀请用户时，可通过分配 {{site.data.keyword.Bluemix}} IAM 策略、Cloud Foundry 访问权和经典基础架构许可权来为用户分配访问权。根据您有权管理的访问权选项，可以邀请整个帐户、资源组、组织、空间、服务实例和经典基础架构中的用户并为其提供访问权。以下各部分描述了可以分配给受邀用户的三种类型访问权。
 
 ### 服务
+{: #invite_services}
 
 邀请新用户时，可以通过创建初始 {{site.data.keyword.Bluemix_notm}} IAM 访问策略来分配访问权。在“服务”部分中，可以向用户提供对帐户管理服务的访问权、对资源组中服务的访问权以管理资源组，或对帐户中单个资源的访问权。
 
-用户接受邀请后，可以为其分配其他访问权。有关编辑策略以添加额外角色、分配更多访问权或除去用户策略的详细信息，请参阅[管理对资源的访问权](/docs/iam/mngiam.html#iammanidaccser)。
+用户接受邀请后，可以为其分配其他访问权。有关编辑策略以添加额外角色、分配更多访问权或除去用户策略的详细信息，请参阅[管理对资源的访问权](/docs/iam?topic=iam-iammanidaccser#iammanidaccser)。
 
 根据您在分配策略时选择的服务，可能不会看到以下过程中描述的所有字段。
 {: note}
 
 #### 帐户管理服务访问
+{: #invite_acct_mgmt}
 
 要委派您作为帐户所有者的一些职责，您可以向用户提供对帐户管理服务的访问权。例如，您可以委派查看计费和使用情况，邀请和除去用户，管理访问组或管理服务标识的功能。您可以向所有帐户管理服务或仅一个帐户管理服务提供访问权。
 
@@ -67,6 +69,7 @@ lastupdated: "2018-11-30"
 4. 选择任意角色组合来分配所需的访问权。
 
 #### 资源组访问权
+{: #invite_rgs}
 
 可以分配对资源组中所有服务的访问权，也可以分配对资源组中单个服务类型的访问权。
 
@@ -78,6 +81,7 @@ lastupdated: "2018-11-30"
 6. 选择任意角色组合来分配所需的访问权。此访问权仅适用于为策略选择的资源。它并不授予对实际容器（即资源组）的访问权。
 
 #### 资源访问权
+{: #invite_resources}
 
 可以分配对帐户中单个资源下至实例的访问权。
 
@@ -91,9 +95,10 @@ lastupdated: "2018-11-30"
     * **资源标识**：输入存储区的名称。
 7. 选择任意角色组合来分配所需的访问权。
 
-有关分配访问权时使用的角色的更多信息，请参阅 [IAM 访问权](/docs/iam/users_roles.html#iamusermanrol)。
+有关分配访问权时使用的角色的更多信息，请参阅 [IAM 访问权](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)。
 
 ### Cloud Foundry 访问权
+{: #invite_cf}
 
 当您邀请新用户时，您可以选择将用户添加到帐户中的组织。如果您向组织添加用户，那么可以向该用户分配组织角色。然后，选择通过分配的空间角色为受邀的用户提供所选组织中任何或所有空间的访问权。
 
@@ -106,12 +111,13 @@ lastupdated: "2018-11-30"
 7. 选择空间角色，以定义所选空间的访问级别。
 8. 可选：选择**添加空间角色**以指定额外角色。
 
-有关分配访问权时使用的角色的更多信息，请参阅 [Cloud Foundry 角色](/docs/iam/cfaccess.html#cfroles)。
+有关分配访问权时使用的角色的更多信息，请参阅 [Cloud Foundry 角色](/docs/iam?topic=iam-cfroles#cfroles)。
 
-您可以使用 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud/cli_acct_org_role.html#ibmcloud_account_user_invite) CLI 命令来添加 Cloud Foundry 角色，但必须使用控制台来分配其他访问权或许可权。
+您可以使用 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite) CLI 命令来添加 Cloud Foundry 角色，但必须使用控制台来分配其他访问权或许可权。
 {: tip}
 
 ### 经典基础架构访问权
+{: #invite_classicinfra}
 
 所分配的许可权会自动限制为您所拥有的许可权的子集。您将成为您邀请的任何用户的父用户。
 
@@ -121,7 +127,7 @@ lastupdated: "2018-11-30"
 对设备的访问权将在添加用户后单独授予。请转至控制台中用户的**经典基础架构**访问权选项。
 {: note}
 
-有关将用户添加到帐户后为用户配置访问权的信息，请参阅[管理经典基础架构访问权](/docs/iam/mnginfra.html#managing-infrastructure-access)。
+有关将用户添加到帐户后为用户配置访问权的信息，请参阅[管理经典基础架构访问权](/docs/iam?topic=iam-mngclassicinfra#mngclassicinfra)。
 
 ## 添加仅使用 VPN 的用户
 {: #add-vpn-only}
@@ -129,5 +135,5 @@ lastupdated: "2018-11-30"
 作为帐户所有者或具有“管理用户”经典基础架构许可权的用户，您可以添加仅使用 VPN 的用户。
 
 1. 在**用户**页面中，单击**添加仅使用 VPN 的用户**。
-3. 输入用户的个人详细信息。
-4. 单击**保存**。
+2. 输入用户的个人详细信息。
+3. 单击**保存**。

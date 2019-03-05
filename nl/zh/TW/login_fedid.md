@@ -71,7 +71,7 @@ lastupdated: "2019-01-28"
 
 必要 API 金鑰是用來向 {{site.data.keyword.Bluemix_notm}} 平台進行鑑別的 {{site.data.keyword.Bluemix_notm}} API 金鑰，而不是標準基礎架構 API 金鑰或 {{site.data.keyword.Bluemix_notm}} 服務 API 金鑰。
 
-1. 使用 [`ibmcloud iam api-key-create` 指令](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create)，建立 API 金鑰。在指令視窗中，使用 `-f` 選項以產生 API 金鑰檔，而不是顯示金鑰：
+1. 使用 [`ibmcloud iam api-key-create` 指令](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_api_key_create)，建立 API 金鑰。在指令視窗中，使用 `-f` 選項以產生 API 金鑰檔，而不是顯示金鑰：
 
    ```
    ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]

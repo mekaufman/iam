@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-30"
+  years: 2015, 2019
+lastupdated: "2019-01-30"
 
 ---
 
@@ -24,10 +24,11 @@ lastupdated: "2018-11-30"
 {: note}
 
 ## 指派新存取權
+{: #access_new}
 
 若要指派資源群組中所有資源的存取權，或只指派資源群組內一項服務的存取權，請完成下列步驟：
 
-1. 從功能表列中，按一下**管理** &gt; **存取 (IAM)**，然後選取**服務 ID**。
+1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**服務 ID**。
 2. 從表格中，選取您要指派服務原則的服務 ID。
 3. 按一下**存取原則**。
 4. 按一下**指派存取權**。
@@ -40,7 +41,7 @@ lastupdated: "2018-11-30"
 
 若要指派帳戶中個別資源的存取權，請完成下列步驟：
 
-1. 從功能表列中，按一下**管理** &gt; **存取 (IAM)**，然後選取**服務 ID**。
+1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**服務 ID**。
 2. 從表格中，選取您要指派服務原則的服務 ID。
 3. 按一下**存取原則**。
 4. 按一下**指派存取權**。
@@ -57,7 +58,7 @@ lastupdated: "2018-11-30"
 
 若要指派對個別帳戶管理服務或所有帳戶管理服務的存取權，請完成下列步驟：
 
-1. 從功能表列中，按一下**管理** &gt; **存取 (IAM)**，然後選取**服務 ID**。
+1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**服務 ID**。
 2. 從表格中，選取您要指派服務原則的服務 ID。
 3. 按一下**存取原則**。
 4. 按一下**指派存取權**。
@@ -69,16 +70,17 @@ lastupdated: "2018-11-30"
 {: tip}
 
 ## 編輯現有存取權
+{: #access_edit}
 
 若要編輯現有原則，請執行下列動作：
 
-1. 從功能表列中，按一下**管理** &gt; **存取 (IAM)**，然後選取**服務 ID**。
+1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**服務 ID**。
 2. 從表格中，選取您要編輯服務原則的服務 ID。
 3. 按一下**存取原則**。
 4. 識別您要編輯的原則列，然後從**動作** ![「動作清單」圖示](../icons/action-menu-icon.svg) 功能表中選取**編輯原則**。
 5. 進行變更，然後儲存原則。
 
-若要使用 CLI 更新服務原則，您可以使用 [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_user_policy_update) 指令。
+若要使用 CLI 更新服務原則，您可以使用 [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_update#ibmcloud_iam_service_policy_update) 指令。
 ```
 ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] {--file JSON_FILE | [-r, --roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]} [-f, --force]",
 ```
@@ -88,16 +90,17 @@ ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] 
 {: tip}
 
 ## 移除存取權
+{: #access_remove}
 
 若要移除現有原則，請執行下列動作
 
-1. 從功能表列中，按一下**管理** &gt; **存取 (IAM)**，然後選取**服務 ID**。
+1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**服務 ID**。
 2. 從表格中，選取您要刪除服務原則的服務 ID。
-3. 按一下**存取原則**。
+3. 按一下**存取原則**。 
 4. 識別您要刪除的原則列，然後從**動作** ![「動作清單」圖示](../icons/action-menu-icon.svg) 功能表中選取**移除**。
 5. 檢閱您即將移除之原則的詳細資料，然後按一下**移除**進行確認。
 
-若要使用 CLI 刪除服務原則，您可以使用 [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_service_policy_delete) 指令。
+若要使用 CLI 刪除服務原則，您可以使用 [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_update#ibmcloud_iam_service_policy_delete) 指令。
 ```
 ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
 ```

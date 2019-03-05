@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2018
+  years: 2018, 2019
 
-lastupdated: "2018-11-30"
+lastupdated: "2019-01-30"
 
 
 
@@ -27,13 +27,13 @@ lastupdated: "2018-11-30"
 {: #whatisiam}
 {: faq}
 
-Identity and Access Management (IAM) 可讓您安全地鑑別平台服務的使用者，並跨 {{site.data.keyword.cloud_notm}} 平台控制資源的存取。已啟用一組 IBM Cloud 服務以使用 Cloud IAM 來進行存取控制。那些服務已在您的帳戶內組織成資源群組，可讓使用者同時快速且輕鬆地存取多個資源。Cloud IAM 存取原則是用來指派使用者及服務 ID 對帳戶內資源的存取權。如需相關資訊，請參閱 [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam/index.html#iamoverview)。
+Identity and Access Management (IAM) 可讓您針對平台服務安全地鑑別使用者，並跨 {{site.data.keyword.cloud_notm}} 平台控制對資源的存取權。已啟用一組 IBM Cloud 服務以使用 Cloud IAM 來進行存取控制。那些服務已在您的帳戶內組織成資源群組，可讓使用者同時快速且輕鬆地存取多個資源。Cloud IAM 存取原則是用來指派使用者及服務 ID 對帳戶內資源的存取權。如需相關資訊，請參閱 [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam?topic=iam-iamoverview#iamoverview)。
 
 ## 何謂啟用 IAM 的服務？
 {: #iam-enabled}
 {: faq}
 
-啟用 IAM 的服務必須位於資源群組內，並透過使用 IAM 存取原則來提供服務的存取權。當您從型錄建立啟用 IAM 的服務時，您必須將它指派給資源群組。如需相關資訊，請參閱[何謂資源？](/docs/resources/acct_resources.html#resource)
+啟用 IAM 的服務必須位於資源群組內，並透過使用 IAM 存取原則來提供服務的存取權。當您從型錄建立啟用 IAM 的服務時，您必須將它指派給資源群組。如需相關資訊，請參閱[何謂資源？](/docs/resources?topic=resources-resource#resource)
 
 {{site.data.keyword.containerlong_notm}} 是唯一的例外；它由 IAM 存取控制，但一律會指派給 default 資源群組。因此，當您從型錄進行建立時，將不會提供您選項來進行選擇。而且，它不可以指派給任何其他資源群組。
 
@@ -73,7 +73,7 @@ Identity and Access Management (IAM) 可讓您安全地鑑別平台服務的使�
 
 藉由同時使用資源群組及存取群組，您可以透過指派數目有限的原則來簡化存取權指派。您可以將特定使用者及服務 ID 群組所需求的所有資源組織為單一資源群組，將所有使用者或服務 ID 分組成一個存取群組，然後指派可以提供資源群組中所有資源存取權的單一原則。
 
-如需相關資訊，請參閱[指派存取權的最佳作法](/docs/iam/bp_access.html#account_setup)。
+如需相關資訊，請參閱[指派存取權的最佳作法](/docs/iam?topic=iam-account_setup#account_setup)。
 
 ## 如何確定我的使用者可以在資源群組內建立資源？
 {: #resources}
@@ -105,7 +105,7 @@ Identity and Access Management (IAM) 可讓您安全地鑑別平台服務的使�
 
 當您對資源群組內資源具有存取權時，您可以編輯、刪除及建立實例，或者根據指派的角色而擁有資源群組內指定服務的所有管理動作。
 
-例如，帳戶管理服務的平台管理角色及動作，請參閱[平台角色表](/docs/iam/users_roles.html#platformrolestable2)。
+例如，帳戶管理服務的平台管理角色及動作，請參閱[平台角色表](/docs/iam?topic=iam-userroles#platformrolestable2)。
 
 ## 誰可以移除使用者？
 {: #remove-users}
@@ -121,7 +121,7 @@ Identity and Access Management (IAM) 可讓您安全地鑑別平台服務的使�
 {: faq}
 
 1. 移至**管理** &gt; **存取 (IAM)**，然後選取**設定**。
-2. 選擇**多因子鑑別**，然後按一下**是，我確定**。如需相關資訊，請參閱[針對帳戶中的使用者要求 MFA](/docs/iam/mfa.html#enablemfa)。
+2. 選擇**多因子鑑別**，然後按一下**是，我確定**。如需相關資訊，請參閱[針對帳戶中的使用者要求 MFA](/docs/iam?topic=iam-enablemfa#enablemfa)。
 
 ## 服務角色與平台角色之間有何差異？
 {: #service-platform-roles}
@@ -182,7 +182,7 @@ Identity and Access Management (IAM) 可讓您安全地鑑別平台服務的使�
 {: #users}
 {: faq}
 
-帳戶擁有者可以檢視帳戶中的所有使用者，並選擇使用者如何在「使用者」頁面上檢視帳戶中的其他使用者。帳戶擁有者可以在「設定」頁面上選取下列其中一個選項，來調整[使用者清單可見性設定](/docs/iam/userlist.html#userlistview)：
+帳戶擁有者可以檢視帳戶中的所有使用者，並選擇使用者如何在「使用者」頁面上檢視帳戶中的其他使用者。帳戶擁有者可以在「設定」頁面上選取下列其中一個選項，來調整[使用者清單可見性設定](/docs/iam?topic=iam-userlistview#userlistview)：
 
 * **未限定視圖**：您帳戶中的所有使用者都可以檢視帳戶中的其他每個人。
 * **受限視圖**：將在「使用者」頁面上檢視使用者的能力限制為僅檢視已獲授與明確存取權的使用者，以及可以透過共用 Cloud Foundry 組織或標準基礎架構使用者階層關係來檢視其他使用者的使用者。
@@ -203,4 +203,4 @@ Identity and Access Management (IAM) 可讓您安全地鑑別平台服務的使�
 {: #appid}
 {: faq}
 
-IAM 用來管理您 {{site.data.keyword.cloud_notm}} 服務及資源的存取權。使用 {{site.data.keyword.appid_full_notm}}，您可以將鑑別新增至 Web 及行動應用程式，進一步執行雲端安全。只要幾行程式碼，就可以輕鬆地保護 {{site.data.keyword.cloud_notm}} 上所執行的雲端原生應用程式及服務。準備好要開始了嗎？[請參閱文件](/docs/services/appid/index.html)。
+IAM 用來管理您 {{site.data.keyword.cloud_notm}} 服務及資源的存取權。使用 {{site.data.keyword.appid_full_notm}}，您可以將鑑別新增至 Web 及行動應用程式，進一步執行雲端安全。只要幾行程式碼，就可以輕鬆地保護 {{site.data.keyword.cloud_notm}} 上所執行的雲端原生應用程式及服務。準備好要開始了嗎？[請參閱文件](/docs/services/appid?topic=appid-gettingstarted#gettingstarted)。

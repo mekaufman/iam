@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:note: .note}
 
-# Cloud Foundry 存取
+# Cloud Foundry 存取權
 {: #cfaccess}
 
 目前，並非所有服務都可以使用 Cloud IAM 來管理。您可以繼續使用 Cloud Foundry 角色來存取這些服務實例。使用者會新增至實例所屬的組織及空間，並獲得指派 Cloud Foundry 角色。
@@ -28,7 +28,7 @@ lastupdated: "2018-11-12"
 ## Cloud Foundry 角色
 {: #cfroles}
 
-Cloud Foundry 角色會授與帳戶內組織及空間的存取權。Cloud Foundry 角色不會啟用使用者許可權，以在帳戶中的服務環境定義內完成動作。
+Cloud Foundry 角色會授與對帳戶內組織及空間的存取權。Cloud Foundry 角色不會啟用使用者許可權，以在帳戶中的服務環境定義內完成動作。
 
 您可以在組織層次指派下列角色：
 

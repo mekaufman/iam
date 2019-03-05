@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-10-29"
+lastupdated: "2019-01-28"
 
 ---
 
@@ -17,6 +17,7 @@ lastupdated: "2018-10-29"
 {: #iamconcepts}
 
 ## 身分
+{: #identity}
 
 {{site.data.keyword.Bluemix_notm}} IAM 中的身分概念包含下列元件：
 
@@ -28,10 +29,11 @@ lastupdated: "2018-10-29"
 <dt>API 金鑰</dt>
 <dd>{{site.data.keyword.cloud_notm}} API 金鑰是透過 Cloud IAM 提供，可讓您使用 API 或 CLI 作為使用者或服務 ID 來進行鑑別。這些 API 金鑰是透過 Cloud IAM 所提供，因此，通常無法在 IBM Cloud 外部使用 IBM ID 進行鑑別。使用者也可以有可用來存取標準基礎架構 API 的單一標準基礎架構 API 金鑰；不過，您可以使用 {{site.data.keyword.cloud_notm}} API 金鑰來存取相同的 API 時，不需要這樣做。</dd>
 <dt>資源</dt>
-<dd>{{site.data.keyword.Bluemix_notm}} 資源是依其雲端資源名稱 (CRN) 進行識別。如需相關資訊，請參閱[雲端資源名稱](/docs/overview/crn.html#crn)。</dd>
+<dd>{{site.data.keyword.Bluemix_notm}} 資源是依其雲端資源名稱 (CRN) 進行識別。如需相關資訊，請參閱[雲端資源名稱](/docs/overview?topic=overview-crn#crn)。</dd>
 </dl>
 
 ## 存取管理
+{: #am}
 
 {{site.data.keyword.Bluemix_notm}} 中存取管理的概念包含一些相互關聯的元件，其中包括使用者、資源、原則、角色、動作及 Cloud IAM 控制系統，容許使用者對帳戶內的資源採取動作。 
 

@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2017, 2018
+  years: 2017, 2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -19,10 +19,11 @@ lastupdated: "2018-11-12"
 # 授予服务之间的访问权
 {: #serviceauth}
 
-{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 系统的许多功能都专注于按用户及其应用程序来管理和强制实施对 {{site.data.keyword.Bluemix_notm}} 资源的访问权。但是，在另一些情况下，您可能需要为一个服务提供对另一服务中用户资源的访问权。帐户中的所有用户都可以创建授权，但只有具有管理员角色的用户才能删除授权。您可以在**授权**页面上设置和查看已在您的帐户中授予的权限。
+{{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 系统的许多功能都专注于按用户及其应用程序来管理和强制实施对 {{site.data.keyword.Bluemix_notm}} 资源的访问权。但是，在另一些情况下，您可能需要为一个服务提供对另一个服务中用户资源的访问权。帐户中的所有用户都可以创建授权，但只有具有管理员角色的用户才能删除授权。您可以在**授权**页面上设置和查看已在您的帐户中授予的权限。
 {:shortdesc}
 
 ## 创建授权
+{: #create-auth}
 
 作为目标服务的用户，您只能授予自己拥有的访问级别。例如，如果您对要访问的服务仅具有查看者访问权，那么只能为授权分配查看者角色。
 
@@ -36,6 +37,7 @@ lastupdated: "2018-11-12"
 {: note}
 
 ## 除去授权
+{: #remove-auth}
 
 1. 在菜单栏中，单击**管理** &gt; **访问权 (IAM)**，然后选择**授权**。 
 2. 确定要从帐户中除去的授权所在的行。

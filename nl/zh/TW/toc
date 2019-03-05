@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam/quickstart.html" path="iam"}
+{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam?topic=getstarted" path="iam"}
 管理身分及存取
 
     {: .navgroup id="learn"}
@@ -17,7 +17,7 @@
         users_roles.md
         cfaccess.md
         infrastructureaccess.md
-    
+
     bp_access.md
     {: .navgroup-end}
 
@@ -29,31 +29,32 @@
     將使用者新增至帳戶
         iamuserinv.md
         remove-users.md
-        
+
     {: .topicgroup}
-    管理使用者        
+    管理使用者
         parentuser.md
         update_status.md
         specific_ip.md
         vpn_password.md
         user_login.md
-     
+
     {: .topicgroup}
     管理存取權
         mngiam.md
+        account_management.md
         mngcf.md
-        mnginfra.md        
+        mnginfra.md
         groups.md
         accessgroup_rules.md
         userlist.md
-        
+
     {: .topicgroup}
-    多因子鑑別    
+    多因子鑑別
         mfatypes.md
         mfa.md
         totp.md
         external_mfa.md
-        securityquestions.md        
+        securityquestions.md
 
     {: .topicgroup}
     使用服務

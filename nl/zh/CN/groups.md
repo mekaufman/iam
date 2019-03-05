@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018
-lastupdated: "2018-11-14"
+  years: 2018, 2019
+lastupdated: "2019-01-30"
 
 ---
 
@@ -21,12 +21,13 @@ lastupdated: "2018-11-14"
 可以创建一个访问组，用于将一组用户和服务标识组织成单个实体，供您轻松分配访问权。您可以将单个策略分配给该组，而不用对每个用户或服务标识多次指定相同的访问权。
 {:shortdesc}
 
-要管理访问组或创建新的访问组，您必须是帐户所有者，帐户中 IAM 访问组服务的管理员或编辑者，或者是为所有帐户管理服务分配的管理员或编辑者。此外，可以通过创建访问策略（其中的资源是访问组标识），向管理员或编辑者分配管理单个组的访问权。有关 IAM 访问组服务的访问策略和角色的更多信息，请参阅 [IAM 访问权](/docs/iam/users_roles.html#userroles)。
+要管理访问组或创建新的访问组，您必须是帐户所有者，帐户中 IAM 访问组服务的管理员或编辑者，或者是为所有帐户管理服务分配的管理员或编辑者。此外，可以通过创建访问策略（其中的资源是访问组标识），向管理员或编辑者分配管理单个组的访问权。有关 IAM 访问组服务的访问策略和角色的更多信息，请参阅 [IAM 访问权](/docs/iam?topic=iam-userroles#userroles)。
 
 要更轻松地分配和管理访问权，可以设置资源组来组织希望用户组有权访问的一组资源。设置资源组后，可以为其分配策略，用于授予对该组内所有资源的访问权，而不用为帐户内的各个服务实例分别创建访问策略。
 {: tip}
 
 ## 创建访问组
+{: #create_ag}
 
 要创建访问组，请完成以下步骤：
 
@@ -45,7 +46,7 @@ lastupdated: "2018-11-14"
 可以通过选择**除去组**选项来删除组。从帐户中除去组时，将除去该组中的所有用户和服务标识以及分配给该组的所有访问权。
 {: note}
 
-要使用 CLI 创建访问组，可以使用 [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_create) 命令。
+要使用 CLI 创建访问组，可以使用 [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_create) 命令。
 ```
 ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```
@@ -53,6 +54,7 @@ ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 
 
 ## 为组分配访问权
+{: #access_ag}
 
 使用用户和服务标识设置组后，可以为该组分配公共访问策略。请记住，您为该组设置的任何策略都将应用于该组内的所有实体。
 
@@ -62,7 +64,7 @@ ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 4. 单击**分配访问权**。 
 5. 选择是按资源组中的资源、按帐户中可用的单个资源还是按帐户管理服务分配访问权。
 
-要使用 CLI 创建访问组策略，可以使用 [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_access_group_policy_create) 命令。
+要使用 CLI 创建访问组策略，可以使用 [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_policy_create) 命令。
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2018
-lastupdated: "2018-11-30"
+  years: 2015, 2019
+lastupdated: "2019-01-30"
 
 ---
 
@@ -20,13 +20,14 @@ lastupdated: "2018-11-30"
 
 创建服务标识是为了支持通过在 {{site.data.keyword.Bluemix_notm}} 内部和外部托管的应用程序访问 {{site.data.keyword.Bluemix_notm}} 服务。应用程序使用 API 密钥作为特定服务标识进行认证，并被授予与该服务标识关联的访问权。
 
-一旦创建了服务标识后，就可以开始创建 API 密钥并分配服务策略。每个策略都会指定在使用 API 密钥向服务进行认证时所允许的访问级别。有关创建服务标识和分配策略的更多信息，请参阅[创建和使用服务标识](/docs/iam/serviceid.html#serviceids)。有关用于管理服务标识 API 密钥的 CLI 命令的详细信息，请参阅[管理 IAM 访问权、API 密钥、服务标识和访问组](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam)。
+一旦创建了服务标识后，就可以开始创建 API 密钥并分配服务策略。每个策略都会指定在使用 API 密钥向服务进行认证时所允许的访问级别。有关创建服务标识和分配策略的更多信息，请参阅[创建和使用服务标识](/docs/iam?topic=iam-serviceids#serviceids)。有关用于管理服务标识 API 密钥的 CLI 命令的详细信息，请参阅[管理 IAM 访问权、API 密钥、服务标识和访问组](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_commands_iam)。
 
 与服务标识关联的每个 API 密钥都将继承已分配给该服务标识的策略。例如，如果希望一个应用程序只能查看某个服务中的资源，那么就要为某个服务标识分配具有查看者角色的策略，然后使用与该服务标识关联的 API 密钥。如果希望另一个应用程序能够具有对服务的完全访问权，那么就要为另一个服务标识分配具有管理员角色的策略，然后使用与该服务标识关联的 API 密钥。
 
-有关更多信息，请参阅[如何使用服务标识的示例](/docs/iam/serviceid.html#examples-of-how-to-use-a-service-id)。
+有关更多信息，请参阅[如何使用服务标识的示例](/docs/iam?topic=iam-serviceids#examples_serviceid)。
 
 ## 为服务标识创建 API 密钥
+{: #create_service_key}
 
 创建与服务标识关联的 API 密钥。
 
@@ -42,13 +43,14 @@ lastupdated: "2018-11-30"
 出于安全原因，API 密钥仅在创建时才可复制或下载。如果 API 密钥丢失，必须创建新的 API 密钥。
 {: note}
 
-要使用 CLI 为服务标识创建 API 密钥，可以使用 [ibmcloud iam service-api-key-create](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create) 命令。
+要使用 CLI 为服务标识创建 API 密钥，可以使用 [ibmcloud iam service-api-key-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_create) 命令。
 ```
 ibmcloud iam service-api-key-create NAME SERVICE_ID [-d, --description DESCRIPTION] [--file FILE] [-f, --force]
 ```
 {: codeblock}
 
 ## 更新服务标识的 API 密钥
+{: #update_service_key}
 
 可以在 UI 中通过编辑用于标识密钥的名称或描述来更新 API 密钥。
 
@@ -57,7 +59,7 @@ ibmcloud iam service-api-key-create NAME SERVICE_ID [-d, --description DESCRIPTI
 3. 单击 **API 密钥**。
 4. 在**操作** ![“操作列表”图标](../icons/action-menu-icon.svg) 菜单中，单击**编辑名称和描述**。
 
-要使用 CLI 更新服务标识的 API 密钥，可以使用 [ibmcloud iam service-api-key-update](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_update) 命令。
+要使用 CLI 更新服务标识的 API 密钥，可以使用 [ibmcloud iam service-api-key-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_update) 命令。
 ```
 ibmcloud iam service-api-key-update NAME SERVICE_ID  [-n, --name NEW_sNAME] [-d, --description DESCRIPTION] [-v, --version VERSION] [-f, --force]
 ```
@@ -78,6 +80,7 @@ ibmcloud iam service-api-key-update NAME SERVICE_ID  [-n, --name NEW_sNAME] [-d,
 {: tip}
 
 ### 使用 CLI 锁定或解锁服务标识的 API 密钥
+{: #lock_unlock_cli}
 
 要锁定服务标识的 API 密钥，请使用以下命令：
 
@@ -117,6 +120,7 @@ ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|S
 
 
 ## 删除服务标识的 API 密钥
+{: #delete_service_key}
 
 可以删除与服务标识关联的 API 密钥。但是，删除应用程序当前正在使用的 API 密钥会让该应用程序不能再向服务进行认证。
 
@@ -126,7 +130,7 @@ ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|S
 4. 单击 **API 密钥**。
 5. 在**操作** ![“操作列表”图标](../icons/action-menu-icon.svg) 菜单中，单击**删除**。
 
-要使用 CLI 删除服务标识的 API 密钥，可以使用 [ibmcloud iam service-api-key-delete](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_delete) 命令。
+要使用 CLI 删除服务标识的 API 密钥，可以使用 [ibmcloud iam service-api-key-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_delete) 命令。
 ```
 ibmcloud iam service-api-key-delete NAME SERVICE_ID [-f, --force]
 ```

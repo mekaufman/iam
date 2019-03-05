@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018,2019
-lastupdated: "2019-01-02"
+lastupdated: "2019-01-30"
 
 ---
 
@@ -37,7 +37,7 @@ IBM ID MFA 可滿足鑑別需求，因此系統不會提示您輸入任何其他
 
 在登入期間，除了標準 IBM ID 及密碼之外，帳戶的 IBM ID MFA 還需要時間型一次性密碼。這類型的 MFA 是由帳戶擁有者在帳戶層次上啟用。啟用此特性時，您需要在登入時使用額外安全標準，也需要新增至您帳戶的所有使用者。這類型的 MFA 適用於所有帳戶資源。只有在您是帳戶擁有者時，才能在 {{site.data.keyword.Bluemix}} 主控台中，從**管理** > **存取 (IAM)** > **設定**頁面，將它開啟或關閉。
 
-IBM ID MFA 的其中一個好處是它是免費的，而且關聯至您的 ID，而不只是您所在的特定帳戶。如果您屬於多個帳戶，則在登入主控台時，您只需要鑑別一次。如需 IBM ID MFA、需要您帳戶之 IBM ID MFA 前必須檢閱的考量，以及如何設定您自己之 IBM ID MFA 的相關資訊，請參閱[針對帳戶中的使用者要求 MFA](/docs/iam/mfa.html#setting-up-ibmid-mfa)。
+IBM ID MFA 的其中一個好處是它是免費的，而且關聯至您的 ID，而不只是您所在的特定帳戶。如果您屬於多個帳戶，則在登入主控台時，您只需要鑑別一次。如需 IBM ID MFA、需要您帳戶之 IBM ID MFA 前必須檢閱的考量，以及如何設定您自己之 IBM ID MFA 的相關資訊，請參閱[針對帳戶中的使用者要求 MFA](/docs/iam?topic=iam-enablemfa#enablemfa)。
 
 ## 帳戶型 MFA 選項
 {: #account-based}
@@ -57,5 +57,6 @@ IBM ID MFA 的其中一個好處是它是免費的，而且關聯至您的 ID，
 <dd>有兩個可訂購並計入每月成本的外部協力廠商鑑別選項：Symantec 及電話型鑑別。帳戶擁有者或管理者必須針對使用者訂購這些選項，並從使用者的「使用者詳細資料」頁面使用它們。對於 Symantec，管理者必須與使用者一起工作，才能取得該使用者的認證 ID 來完成訂單。而且，若要設定電話型鑑別，管理者必須訂購它，然後，使用者必須在其「使用者詳細資料」頁面上設定它，讓管理者能夠啟用它。如果使用者具有從「使用者詳細資料」頁面開啟「使用者管理的登入設定」來管理其專屬登入設定的存取權，則可以將它開啟或關閉。</dd>
 </dl>
 
-如需設定 MFA 選項的相關資訊，請參閱[設定登入安全](/docs/account/login_settings.html#login-settings)。而且，如果您是管理其他使用者登入設定的帳戶擁有者或管理者，或您可以管理自己的登入設定，請參閱[管理使用者的登入設定](/docs/iam/user_login.html#loginsettings)。
+如需設定 MFA 選項的相關資訊，請參閱[設定登入安全](/docs/account?topic=account-login-settings#login-settings)。而且，如果您是管理其他使用者登入設定的帳戶擁有者或管理者，或您可以管理自己的登入設定，請參閱[管理使用者的登入設定](/docs/iam?topic=iam-loginsettings#loginsettings)。
+
 
