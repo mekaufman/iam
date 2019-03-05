@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-05"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP
 
@@ -21,7 +21,7 @@ subcollection: iam
 # Requiring MFA for users in your account
 {: #enablemfa}
 
-As an {{site.data.keyword.Bluemix}} account owner, you can choose to require multifactor authentication (MFA) for every user in your account. All users with an IBMid use a time-based one-time passcode (TOTP) MFA method, and any users with a different type of ID must be enabled to use the TOTP, security questions, or external authentication method separate.  
+As an {{site.data.keyword.Bluemix}} account owner or administrator for the billing service, you can choose to require multifactor authentication (MFA) for every user in the account. All users with an IBMid use a time-based one-time passcode (TOTP) MFA method, and any users with a different type of ID must be enabled to use the TOTP, security questions, or external authentication method separately.  
 {:shortdesc}
 
 ## Before you begin
@@ -29,7 +29,7 @@ As an {{site.data.keyword.Bluemix}} account owner, you can choose to require mul
 
 Review the following considerations before you enable IBMid MFA for your account to ensure that you know how it affects all users in your account:
 
-* When you enable MFA for your account, all users that are added to your account must complete the MFA process the next time they log in.
+* When you enable MFA for your account, users must complete the MFA process the next time they log in.
 * API keys for users and service IDs continue to work after MFA is enabled.
 * If you require the use of native CF CLI or UI login into Cloud Foundry, you must use API keys or single sign-on (SSO) after MFA is enabled for the account.
 * MFA for your account applies to a user's login, but does not apply to API calls. If a user has permission to make API calls to resources in your account, the user can do so without completing MFA. If the user belongs to other accounts, the user can make API calls to resources in your account by using an API key from an account that did not require MFA.
@@ -45,11 +45,13 @@ When the multifactor authentication account setting is enabled, all IBMid users 
 ## Enabling MFA for all users in your account
 {: #enabling}
 
-To enable MFA, you must be the account owner. Enabling MFA does not affect users that are already logged in, as the enforcement of MFA on the account takes effect only at new logins. Make sure you notify your account users that MFA is enabled, and describe the impact to users at their next login.
+To enable MFA, you must be the account owner or an administrator for the billing account management service. Enabling MFA does not affect users that are already logged in, as the enforcement of MFA on the account takes effect only at new logins. Make sure you notify your account users that MFA is enabled, and describe the impact to users at their next login.
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Settings**.
-2. Select **Multifactor authentication**.
-3. In the confirmation window, click **Yes, I'm Sure**.
+2. Select **Update** for the Account login setting.
+3. Select **None** or **Non-federated users only** depending on which type of authentication you want to require.
+4. Select the check box to confirm that you understand the impact of requiring MFA for users in your account, if you select the non-federated users only option.
+5. Click **Save**.
 
 ## Setting up your TOTP
 {: #setupapp}
@@ -77,8 +79,10 @@ If you encounter an error message that states that you've already set up authent
 ## Disabling required MFA for all users in your account
 {: #disablemfa}
 
-To disable MFA, you must be the account owner. Disabling MFA does not affect users that are already logged in, and the action takes effect at all new logins.
+To disable MFA, you must be the account owner or an administrator for the account management billing service. Disabling MFA does not affect users that are already logged in. The action takes effect at all new logins.
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Settings**.
-2. Select **Standard**.
-3. In the confirmation window, click **Yes, I'm sure**.
+2. Select **Edit** for the Account login setting.
+3. Select **None**.
+4. Click **Save**.
+
