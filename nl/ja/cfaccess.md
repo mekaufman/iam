@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: Cloud Foundry roles, Cloud Foundry access, auditor, manager, developer, billing manager
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -18,7 +22,7 @@ lastupdated: "2019-01-28"
 # Cloud Foundry アクセス権限
 {: #cfaccess}
 
-現在、Cloud IAM を使用してすべてのサービスを管理できるわけではありません。 これらのサービス・インスタンスにアクセスするために、引き続き Cloud Foundry 役割を使用できます。 ユーザーは、Cloud Foundry 役割が割り当てられた、インスタンスが属する組織とスペースに追加されます。 
+現在、Cloud IAM を使用してすべてのサービスを管理できるわけではありません。 これらのサービス・インスタンスにアクセスするために、引き続き Cloud Foundry 役割を使用できます。 ユーザーは、Cloud Foundry 役割が割り当てられた、インスタンスが属する組織とスペースに追加されます。
 {:shortdesc}
 
 

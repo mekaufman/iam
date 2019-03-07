@@ -8,6 +8,10 @@ copyright:
 
 lastupdated: "2019-02-13"
 
+keywords: dedicated ID, public IBMid, IBMid, public IAM service
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -64,7 +68,7 @@ Erzwingen Sie eine Anmeldung bei dem UAA-Server unter einer dedizierten ID, inde
   $ ibmcloud login --no-iam
 ```
 
-## Verbindung zwischen dedizierter ID und öffentlicher IBMid aufheben 
+## Verbindung zwischen dedizierter ID und öffentlicher IBMid aufheben
 {: #disconnect_id}
 
 Mit dem Befehl `ibmcloud iam dedicated-id-disconnect` können Sie die Verbindung zwischen der öffentlichen IBMid und der dedizierten ID aufheben.

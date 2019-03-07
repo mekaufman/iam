@@ -6,6 +6,11 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: VPN password, update VPN password, classic infrastructure VPN
+
+subcollection: iam
+
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -27,8 +32,8 @@ lastupdated: "2019-01-28"
 
 要更新 VPN 密码，请完成以下步骤：
 
-1. 在菜单栏中，单击**管理** &gt; **访问权 (IAM)**，然后选择**用户**。 
+1. 在菜单栏中，单击**管理** &gt; **访问权 (IAM)**，然后选择**用户**。
 2. 从列表中选择用户。
 3. 在“用户详细信息”页面上，转至 **VPN 密码**部分。
-4. 单击**编辑**图标 ![“编辑”图标](../icons/icon_write.svg) 以输入新的 VPN 密码。 
-5. 单击**更新密码**。 
+4. 单击**编辑**图标 ![“编辑”图标](../icons/icon_write.svg) 以输入新的 VPN 密码。
+5. 单击**更新密码**。

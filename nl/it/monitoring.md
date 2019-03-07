@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: event tracking, IAM events, monitoring
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -17,7 +21,7 @@ lastupdated: "2019-01-30"
 # Traccia degli eventi IAM
 {: #tracking}
 
-In qualità di responsabile della sicurezza, revisore o gestore, puoi utilizzare il servizio {{site.data.keyword.cloudaccesstrailfull}} per tracciare come gli utenti e le applicazioni interagiscono con {{site.data.keyword.Bluemix_notm}} IAM (Identity and Access Management). 
+In qualità di responsabile della sicurezza, revisore o gestore, puoi utilizzare il servizio {{site.data.keyword.cloudaccesstrailfull}} per tracciare come gli utenti e le applicazioni interagiscono con {{site.data.keyword.Bluemix_notm}} IAM (Identity and Access Management).
 
 Puoi tracciare i seguenti eventi:
 

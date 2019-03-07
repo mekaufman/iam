@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,7 +23,7 @@ lastupdated: "2019-01-28"
 {: #iammanidaccser}
 
 Per gestire l'accesso o assegnare un nuovo accesso per gli utenti utilizzando le politiche IAM, devi essere il proprietario dell'account, l'amministratore su tutti i servizi nell'account o l'amministratore assegnato per il servizio o l'istanza del servizio particolare. Per ulteriori informazioni sulle politiche di accesso e sui ruoli, vedi [Accesso IAM](/docs/iam?topic=iam-userroles#userroles).
-{:shortdesc} 
+{:shortdesc}
 
 ## Modifica dell'accesso esistente
 {: #edit_existing}
@@ -42,7 +46,7 @@ Quando modifichi l'accesso per un utente o gruppo, potresti ricevere un messaggi
 ## Assegnazione del nuovo accesso
 {: #assign_new_access}
 
-Puoi assegnare l'accesso alla risorsa utilizzando due tipi di politiche: 
+Puoi assegnare l'accesso alla risorsa utilizzando due tipi di politiche:
 
 * Accesso alle risorse all'interno di un gruppo di risorse inclusa l'opzione per una sola o per tutte
 * Accesso alle risorse nell'account inclusa l'opzione per un solo tipo o per tutti i tipi
@@ -50,7 +54,7 @@ Puoi assegnare l'accesso alla risorsa utilizzando due tipi di politiche:
 Se vuoi abilitare un accesso da amministratore completo di un utente per completare le attività di [gestione dell'account](/docs/iam?topic=iam-account-services#account-services) come l'invito e la rimozione degli utenti, la visualizzazione della fatturazione e dell'utilizzo, la gestione degli ID servizio, la gestione dei gruppi di accesso, la gestione dell'accesso utente e l'accesso a tutte le risorse dell'account, devi creare due politiche: una su **Tutti i servizi abilitati per l'accesso e l'identità** con il ruolo di amministratore e una su **Tutti i servizi di gestione account** con il ruolo di amministratore.
 {: tip}
 
-### Accesso alle risorse all'interno di un gruppo di risorse 
+### Accesso alle risorse all'interno di un gruppo di risorse
 {: #access_to_resources}
 
 Per assegnare l'accesso a tutte le risorse in un gruppo di risorse o a un solo servizio all'interno di un gruppo di risorse, completa la seguente procedura:
@@ -67,15 +71,15 @@ Per assegnare l'accesso a tutte le risorse in un gruppo di risorse o a un solo s
 ### Accesso alle risorse
 {: #resourceaccess}
 
-Per assegnare l'accesso a una singola risorsa o a tutte le risorse nell'account, completa la seguente procedura: 
+Per assegnare l'accesso a una singola risorsa o a tutte le risorse nell'account, completa la seguente procedura:
 
 1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Utenti**.
 2. Dalla riga per l'utente a cui desideri assegnare l'accesso, seleziona il menu **Azioni** ![Icona Elenco di azioni](../icons/action-menu-icon.svg) e fai clic su **Assegna accesso**.
 3. Seleziona **Assegna l'accesso alle risorse**.
 4. Seleziona un servizio o seleziona **Tutti i servizi abilitati per l'accesso e l'identità**.
-5. Seleziona **Tutte le regioni correnti** su una specifica regione, se ti viene richiesto. 
+5. Seleziona **Tutte le regioni correnti** su una specifica regione, se ti viene richiesto.
 6. Seleziona **Tutte le istanze del servizio correnti** o una specifica istanza del servizio.
-7. A seconda del servizio che hai selezionato, potresti visualizzare i seguente campi. Se non immetti valori per questi campi, la politica viene assegnata a livello dell'istanza del servizio anziché a livello del bucket. 
+7. A seconda del servizio che hai selezionato, potresti visualizzare i seguente campi. Se non immetti valori per questi campi, la politica viene assegnata a livello dell'istanza del servizio anziché a livello del bucket.
     * **Tipo di risorsa**: immetti **bucket**.
     * **ID risorsa**: immetti il nome del tuo bucket.
 8. Scegli qualsiasi combinazione di ruoli per assegnare l'accesso desiderato per l'utente.

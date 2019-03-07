@@ -8,6 +8,10 @@ copyright:
 
 lastupdated: "2019-02-13"
 
+keywords: dedicated ID, public IBMid, IBMid, public IAM service
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -64,7 +68,7 @@ Authenticating...
   $ ibmcloud login --no-iam
 ```
 
-## 中斷專用 ID 與公用 IBM ID 的連線 
+## 中斷專用 ID 與公用 IBM ID 的連線
 {: #disconnect_id}
 
 您可以使用 `ibmcloud iam dedicated-id-disconnect` 來中斷公用 IBM ID 與已連接之專用 ID 的連線。

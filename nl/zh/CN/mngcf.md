@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -60,4 +64,3 @@ lastupdated: "2019-01-28"
 3. 展开组织行，然后复查分配的角色。
 
 如果需要其他访问权，您必须联系组织管理者或帐户所有者来更新分配的 Cloud Foundry 角色。
-

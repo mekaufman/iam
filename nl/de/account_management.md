@@ -6,6 +6,11 @@ copyright:
 
 lastupdated: "2019-02-11"
 
+keywords: account management, access, access policy, account administrator
+
+subcollection: iam
+
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -37,7 +42,7 @@ Um einem weiteren Benutzer uneingeschränkten Zugriff auf das Konto zum Zweck de
 ## Zuordnungen von Aktionen zu Rollen für Kontoverwaltungsservices
 {: #account-management-actions-roles}
 
-Die folgenden Tabellen umreißen die Aktionen, die Benutzer ausführen können, wenn ihnen eine bestimmte Rolle für jeden Kontoverwaltungsservices zugewiesen ist. Überprüfen Sie die Informationen, um sicherzustellen, dass Sie Ihren Benutzern die richtige Zugriffsebene zuweisen. 
+Die folgenden Tabellen umreißen die Aktionen, die Benutzer ausführen können, wenn ihnen eine bestimmte Rolle für jeden Kontoverwaltungsservices zugewiesen ist. Überprüfen Sie die Informationen, um sicherzustellen, dass Sie Ihren Benutzern die richtige Zugriffsebene zuweisen.
 
 | Rollen | Aktionen |
 |:-------|----------|
@@ -86,8 +91,8 @@ Für den IAM Identity Service können diese Aktionen auf Service-IDs innerhalb d
 |:-------|----------|
 | Anzeigeberechtigter |   Private Services anzeigen    |
 | Bediener | Nicht zutreffend    |
-| Bearbeiter | Objektmetadaten ändern, nicht jedoch die Sichtbarkeit privater Services |
-| Administrator | Objektmetadaten oder Sichtbarkeit privater Services ändern, Sichtbarkeit eines öffentlichen Service einschränken |
+| Bearbeiter |   Objektmetadaten ändern, nicht jedoch die Sichtbarkeit privater Services     |
+| Administrator |  Objektmetadaten oder Sichtbarkeit privater Services ändern, Sichtbarkeit eines öffentlichen Service einschränken   |
 {: caption="Tabelle 6. Rollen und Beispielaktionen für den Global Catalog-Service" caption-side="top"}
 
 | Rollen | Aktionen |

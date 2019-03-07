@@ -5,6 +5,10 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-30"
 
+keywords: access groups, access group, create group, assign access to group
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -38,7 +42,7 @@ lastupdated: "2019-01-30"
 接下來，藉由新增使用者或服務 ID 繼續設定群組：
 
 1. 選取您要新增到的群組名稱。
-2. 按一下**使用者**標籤上的**新增使用者**。 
+2. 按一下**使用者**標籤上的**新增使用者**。
 3. 從清單選取您要新增的使用者，然後按一下**新增至群組**。
 4. 若要將服務 ID 新增至群組，請按一下**服務 ID** 標籤，然後按一下**新增服務 ID**。
 5. 從清單選取您要新增的 ID，然後按一下**新增至群組**。
@@ -59,9 +63,9 @@ ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 在您以使用者和服務 ID 設定群組之後，可以將一般存取原則指派給群組。請記住，為群組設定的任何原則都會適用於群組內的所有實體。
 
 1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**存取群組**。
-2. 選取您要指派存取權的群組名稱。 
+2. 選取您要指派存取權的群組名稱。
 3. 按一下**存取原則**。
-4. 按一下**指派存取權**。 
+4. 按一下**指派存取權**。
 5. 選擇依資源群組內的資源指派存取權、依帳戶內可用的個別資源指派存取權，還是依帳戶管理服務指派存取權。
 
 若要使用 CLI 建立存取群組原則，您可以使用 [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_policy_create) 指令。
@@ -69,5 +73,3 @@ ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```
 {: codeblock}
-
-

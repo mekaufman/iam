@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -37,4 +41,3 @@ lastupdated: "2019-01-30"
 
 사용자 세부사항 페이지에서 사용자 관리 로그인 설정을 사용하는 경우 스스로 이 설정을 관리할 수 있습니다.
 {: tip}
-

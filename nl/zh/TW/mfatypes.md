@@ -5,6 +5,10 @@ copyright:
   years: 2018,2019
 lastupdated: "2019-01-30"
 
+keywords: MFA, multifactor authentication, two-factor authentication
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,7 +46,7 @@ IBM ID MFA 的其中一個好處是它是免費的，而且關聯至您的 ID，
 ## 帳戶型 MFA 選項
 {: #account-based}
 
-帳戶管理者必須啟用下列任何 MFA 選項，才能供帳戶中的使用者配置及使用。這類型的 MFA 關聯至使用者的現行帳戶。如果管理者對使用者所屬的每一個帳戶啟用其中一個不同的 MFA 選項，則每次使用者切換帳戶時，都會提示使用不同的方式鑑別。 
+帳戶管理者必須啟用下列任何 MFA 選項，才能供帳戶中的使用者配置及使用。這類型的 MFA 關聯至使用者的現行帳戶。如果管理者對使用者所屬的每一個帳戶啟用其中一個不同的 MFA 選項，則每次使用者切換帳戶時，都會提示使用不同的方式鑑別。
 
 如果帳戶擁有者需要帳戶中所有使用者的 IBM ID MFA，則該 IBM ID MFA 方法會置換使用者帳戶中所啟用及設定的任何其他 MFA 選項。因此，即使使用者具有其他 MFA 選項（例如已設定下列項目），在登入時還是不會提示使用者輸入它們。
 
@@ -58,5 +62,3 @@ IBM ID MFA 的其中一個好處是它是免費的，而且關聯至您的 ID，
 </dl>
 
 如需設定 MFA 選項的相關資訊，請參閱[設定登入安全](/docs/account?topic=account-login-settings#login-settings)。而且，如果您是管理其他使用者登入設定的帳戶擁有者或管理者，或您可以管理自己的登入設定，請參閱[管理使用者的登入設定](/docs/iam?topic=iam-loginsettings#loginsettings)。
-
-

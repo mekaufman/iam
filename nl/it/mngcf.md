@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -60,4 +64,3 @@ Se devi controllare il tuo accesso assegnato in un account a cui sei stato aggiu
 3. Espandi la riga dell'organizzazione e rivedi i tuoi ruoli assegnati.
 
 Se hai bisogno di ulteriore accesso, devi contattare il gestore dell'organizzazione o il proprietario dell'account per aggiornare il tuo ruolo Cloud Foundry assegnato.
-

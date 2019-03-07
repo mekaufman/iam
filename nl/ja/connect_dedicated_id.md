@@ -8,6 +8,10 @@ copyright:
 
 lastupdated: "2019-02-13"
 
+keywords: dedicated ID, public IBMid, IBMid, public IAM service
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -64,7 +68,7 @@ lastupdated: "2019-02-13"
   $ ibmcloud login --no-iam
 ```
 
-## 専用 ID のパブリック IBM ID からの切断 
+## 専用 ID のパブリック IBM ID からの切断
 {: #disconnect_id}
 
 `ibmcloud iam dedicated-id-disconnect` を使用して、パブリック IBM ID と接続された専用 ID を切断できます。

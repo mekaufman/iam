@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: event tracking, IAM events, monitoring
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -17,7 +21,7 @@ lastupdated: "2019-01-30"
 # IAM 이벤트 추적
 {: #tracking}
 
-보안 담당자, 감사자 또는 관리자는 {{site.data.keyword.cloudaccesstrailfull}} 서비스를 사용하여 사용자 및 애플리케이션이 {{site.data.keyword.Bluemix_notm}} Identity and Access Management(IAM)와 어떻게 상호작용하는지 추적할 수 있습니다. 
+보안 담당자, 감사자 또는 관리자는 {{site.data.keyword.cloudaccesstrailfull}} 서비스를 사용하여 사용자 및 애플리케이션이 {{site.data.keyword.Bluemix_notm}} Identity and Access Management(IAM)와 어떻게 상호작용하는지 추적할 수 있습니다.
 
 다음 이벤트를 추적할 수 있습니다.
 

@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: service ID, service ID access, managing access for service IDs
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -95,7 +99,7 @@ ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] 
 
 1. 在菜单栏中，单击**管理** &gt; **访问权 (IAM)**，然后选择**服务标识**。
 2. 从表中选择要删除其服务策略的服务标识。
-3. 单击**访问策略**。 
+3. 单击**访问策略**。
 4. 确定要删除的策略所在的行，然后从**操作** ![“操作列表”图标](../icons/action-menu-icon.svg) 菜单中，选择**除去**。
 5. 复查即将除去的策略的详细信息，然后通过单击**除去**进行确认。
 

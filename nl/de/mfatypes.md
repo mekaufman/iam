@@ -5,6 +5,10 @@ copyright:
   years: 2018,2019
 lastupdated: "2019-01-30"
 
+keywords: MFA, multifactor authentication, two-factor authentication
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,7 +46,7 @@ Einer der Vorteile der Mehrfaktorauthentifizierung mit IBMid (IBMid MFA) besteht
 ## Optionen der kontobasierten MFA
 {: #account-based}
 
-Ein Kontoadministrator muss beliebige der folgenden MFA-Optionen so aktivieren, dass diese von einem Benutzer des Kontos konfiguriert und verwendet werden können. Dieser Typ von Mehrfaktorauthentifizierung (MFA) ist an das aktuelle Konto eines Benutzers gebunden. Wenn ein Administrator für jedes Konto, dem ein Benutzer als Mitglied angehört, eine andere dieser MFA-Optionen aktiviert, wird der Benutzer daher bei jedem Wechsel des Kontos dazu aufgefordert, sich auf eine andere Art zu authentifizieren. 
+Ein Kontoadministrator muss beliebige der folgenden MFA-Optionen so aktivieren, dass diese von einem Benutzer des Kontos konfiguriert und verwendet werden können. Dieser Typ von Mehrfaktorauthentifizierung (MFA) ist an das aktuelle Konto eines Benutzers gebunden. Wenn ein Administrator für jedes Konto, dem ein Benutzer als Mitglied angehört, eine andere dieser MFA-Optionen aktiviert, wird der Benutzer daher bei jedem Wechsel des Kontos dazu aufgefordert, sich auf eine andere Art zu authentifizieren.
 
 Wenn ein Kontoeigner für alle Benutzer im Konto die Mehrfaktorauthentifizierung mit IBMid (IBMid MFA) als erforderlich festlegt, so setzt diese MFA-Methode mit IBMid alle anderen MFA-Optionen, die im Konto eines Benutzers aktiviert und eingerichtet sind, außer Kraft. Selbst wenn für einen Benutzer andere MFA-Optionen festgelegt sind, wie etwa in der nachfolgenden Konfiguration, wird der Benutzer bei der Anmeldung nicht zu ihrer Durchführung aufgefordert.
 
@@ -58,5 +62,3 @@ Die folgenden traditionellen MFA-Optionen sind nur in Verbindung mit früheren K
 </dl>
 
 Weitere Informationen zum Einrichten von MFA-Optionen enthält der Abschnitt [Anmeldesicherheit einrichten](/docs/account?topic=account-login-settings#login-settings). Wenn Sie ein Kontoeigner oder ein Administrator sind, der die Anmeldeeinstellungen für andere Benutzer verwaltet oder wenn Sie befähigt sind, Ihre eigenen Anmeldeeinstellungen zu verwalten, lesen Sie die Informationen im Abschnitt [Anmeldeeinstellungen eines Benutzers verwalten](/docs/iam?topic=iam-loginsettings#loginsettings).
-
-

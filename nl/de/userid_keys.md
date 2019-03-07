@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,7 +46,7 @@ Verwenden Sie den folgenden Befehl, um einen API-Schlüssel über die Befehlszei
 
 ```
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
-``` 
+```
 
 
 ## API-Schlüssel aktualisieren
@@ -140,7 +144,7 @@ ibmcloud iam api-key-unlock test-api-key
 
 Wenn Sie ein Schlüsselrotationsverfahren nutzen, können Sie einen älteren Schlüssel löschen und durch einen neuen ersetzen.
 
-Führen Sie die folgenden Schritte aus, um einen API-Schlüssel zu löschen: 
+Führen Sie die folgenden Schritte aus, um einen API-Schlüssel zu löschen:
 
 1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie dann **Benutzer** aus. Klicken Sie dann in der Liste auf Ihren Namen und wählen Sie die Option **Benutzerdetails** aus.
 2. Ermitteln Sie die Zeile für den API-Schlüssel, der gelöscht werden soll, und wählen Sie dann im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) die Option **Sperren** aus.

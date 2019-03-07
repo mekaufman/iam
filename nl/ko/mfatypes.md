@@ -5,6 +5,10 @@ copyright:
   years: 2018,2019
 lastupdated: "2019-01-30"
 
+keywords: MFA, multifactor authentication, two-factor authentication
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,7 +46,7 @@ IBM ID MFA의 이점 중 하나는 무료이며 사용자가 속한 특정 계�
 ## 계정 기반 MFA 옵션
 {: #account-based}
 
-계정 관리자는 다음 MFA 옵션을 계정의 사용자가 구성하고 사용할 수 있게 해야 합니다. 이 유형의 MFA는 사용자의 현재 계정에 연결됩니다. 관리자가 사용자가 구성원인 각 계정에 대해 이러한 MFA 옵션 중 다른 하나를 사용하는 경우 계정을 전환할 때마다 다른 방법으로 인증하도록 사용자에게 프롬프트가 표시됩니다. 
+계정 관리자는 다음 MFA 옵션을 계정의 사용자가 구성하고 사용할 수 있게 해야 합니다. 이 유형의 MFA는 사용자의 현재 계정에 연결됩니다. 관리자가 사용자가 구성원인 각 계정에 대해 이러한 MFA 옵션 중 다른 하나를 사용하는 경우 계정을 전환할 때마다 다른 방법으로 인증하도록 사용자에게 프롬프트가 표시됩니다.
 
 계정 소유자가 계정의 모든 사용자에 대해 IBM ID MFA를 요구하는 경우 IBM ID MFA 방법은 사용 가능하고 사용자 계정에 설정된 다른 MFA 옵션을 대체합니다. 따라서 사용자에게 다음 설정과 같은 다른 MFA 옵션이 있는 경우에도 로그인 시 사용자에게 이 옵션에 대한 프롬프트가 표시되지 않습니다.
 
@@ -58,5 +62,3 @@ IBM ID MFA의 이점 중 하나는 무료이며 사용자가 속한 특정 계�
 </dl>
 
 MFA 옵션 설정에 대한 자세한 정보는 [로그인 보안 설정](/docs/account?topic=account-login-settings#login-settings)을 참조하십시오. 그리고 다른 사용자 로그인 설정을 관리하는 계정 소유자 또는 관리자이거나 고유 로그인 설정을 관리할 수 있는 경우, [사용자 로그인 설정 관리](/docs/iam?topic=iam-loginsettings#loginsettings)를 참조하십시오.
-
-

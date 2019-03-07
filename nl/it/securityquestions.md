@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: security questions, MFA, multifactor authentication, login security
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -18,7 +22,7 @@ lastupdated: "2019-01-30"
 # Abilitazione delle domande di sicurezza MFA per un utente
 {: #questions}
 
-Come amministratore con l'accesso corretto, puoi abilitare l'opzione per richiedere a un utente di immettere domande e risposte di sicurezza al momento dell'accesso. Questo tipo di autenticazione multifattore (MFA) è richiesto solo per l'account in cui l'impostazione è abilitata. Questo tipo di autenticazione multifattore (MFA) è richiesto solo per l'account in cui l'impostazione è abilitata diversamente dalla MFA basata sull'ID. Per ulteriori informazioni, vedi [Tipi di autenticazione multifattore](/docs/iam?topic=iam-types#types). 
+Come amministratore con l'accesso corretto, puoi abilitare l'opzione per richiedere a un utente di immettere domande e risposte di sicurezza al momento dell'accesso. Questo tipo di autenticazione multifattore (MFA) è richiesto solo per l'account in cui l'impostazione è abilitata. Questo tipo di autenticazione multifattore (MFA) è richiesto solo per l'account in cui l'impostazione è abilitata diversamente dalla MFA basata sull'ID. Per ulteriori informazioni, vedi [Tipi di autenticazione multifattore](/docs/iam?topic=iam-types#types).
 {:shortdesc}
 
 Se disponi di uno dei seguenti accessi, puoi aggiornare questa impostazione per altri utenti nel tuo account:
@@ -27,7 +31,7 @@ Se disponi di uno dei seguenti accessi, puoi aggiornare questa impostazione per 
 * Sei un predecessore nella gerarchia dell'infrastruttura classica per l'utente e ti è stata assegnata l'autorizzazione di gestione utenti dell'infrastruttura classica
 
 
-Per attivare questa opzione MFA per un utente, l'utente deve prima [configurare le domande di sicurezza](/docs/account?topic=account-security-questions#security-questions) dalla pagina Impostazioni di accesso del profilo. 
+Per attivare questa opzione MFA per un utente, l'utente deve prima [configurare le domande di sicurezza](/docs/account?topic=account-security-questions#security-questions) dalla pagina Impostazioni di accesso del profilo.
 {: note}
 
 1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Utenti**.

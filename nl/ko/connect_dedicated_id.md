@@ -8,6 +8,10 @@ copyright:
 
 lastupdated: "2019-02-13"
 
+keywords: dedicated ID, public IBMid, IBMid, public IAM service
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -64,7 +68,7 @@ UAA 서버에 대한, 데디케이티드 ID를 사용한 로그인을 강제하�
   $ ibmcloud login --no-iam
 ```
 
-## 공용 IBM ID에서 데디케이티드 ID 연결 끊기 
+## 공용 IBM ID에서 데디케이티드 ID 연결 끊기
 {: #disconnect_id}
 
 `ibmcloud iam dedicated-id-disconnect`를 사용하여 공용 IBM ID와 연결된 데디케이티드 ID의 연결을 끊을 수 있습니다.

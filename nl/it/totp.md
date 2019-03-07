@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -37,4 +41,3 @@ Per attivare questa opzione MFA per un utente, l'utente deve prima [configurare 
 
 Puoi gestire autonomamente questa impostazione se l'impostazione di Accesso gestito dall'utente è abilitata nella tua pagina Dettagli utente.
 {: tip}
-

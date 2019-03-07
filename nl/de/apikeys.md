@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,7 +23,7 @@ lastupdated: "2019-01-30"
 Bei einem Schlüssel einer Anwendungsprogrammierschnittstelle (API-Schlüssel) handelt es sich um einen eindeutigen Code, der an eine API übergeben wird, um die aufrufende Anwendung oder den aufrufenden Benutzer zu identifizieren. API-Schlüssel werden verwendet, um zu verfolgen und zu steuern, wie die API verwendet wird, um so z. B. Verwendung in böswilliger Absicht oder Missbrauch der API zu verhindern. Der API-Schlüssel dient oft als eindeutige Kennung und zugleich als geheimes Token für die Authentifizierung. Normalerweise ist ihm eine Gruppe von Zugriffsrechten zugeordnet, die speziell für die ihm zugeordnete Identität gelten.
 {:shortdesc}
 
-Wenn Sie Ihre API-Schlüssel anzeigen möchten, rufen Sie **Verwalten** > **Zugriff (IAM)** auf und wählen Sie **Benutzer** aus. Wählen Sie dann einen Benutzer aus, um zu dem auf der Seite 'Benutzerdetails' enthaltenen Abschnitt für API-Schlüssel zu navigieren. 
+Wenn Sie Ihre API-Schlüssel anzeigen möchten, rufen Sie **Verwalten** > **Zugriff (IAM)** auf und wählen Sie **Benutzer** aus. Wählen Sie dann einen Benutzer aus, um zu dem auf der Seite 'Benutzerdetails' enthaltenen Abschnitt für API-Schlüssel zu navigieren.
 
 ## {{site.data.keyword.cloud_notm}}-API-Schlüssel
 {: #ibm-cloud-api-keys}
@@ -42,5 +46,3 @@ API-Schlüssel für die klassische Infrastruktur sind API-Schlüssel, die zum Au
 {: tip}
 
 Einige Services in {{site.data.keyword.Bluemix_notm}} stellen möglicherweise auch einen API-Schlüssel bereit, den Sie beim Arbeiten mit dem Service verwenden können. Wenn Sie beispielsweise über Ihre Ressourcenliste die Angebotsdetails eines Watson-Service anzeigen, können Sie auf der Registerkarte 'Serviceberechtigungsnachweise' einen Berechtigungsnachweis erstellen, der einen API-Schlüssel sowie einen geheimen Schlüssel enthält und für genau diesen Service bestimmt ist.
-
-

@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,7 +46,7 @@ lastupdated: "2019-01-30"
 
 ```
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
-``` 
+```
 
 
 ## 更新 API 金鑰
@@ -140,7 +144,7 @@ ibmcloud iam api-key-unlock test-api-key
 
 如果您使用金鑰旋轉策略，則可能會想要刪除舊的金鑰，並取代為新的金鑰。
 
-若要刪除 API 金鑰，請完成下列步驟： 
+若要刪除 API 金鑰，請完成下列步驟：
 
 1. 移至**管理** &gt; **存取 (IAM)**，然後選取**使用者**。接著，從清單中按一下您的名稱，然後選取**使用者詳細資料**選項。
 2. 識別您要刪除的 API 金鑰列，然後從**動作** ![「動作清單」圖示](../icons/action-menu-icon.svg) 功能表中選取**刪除**。

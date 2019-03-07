@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,7 +23,7 @@ lastupdated: "2019-01-30"
 應用程式設計介面金鑰（API 金鑰）是傳入 API 的唯一代碼，可識別呼叫端應用程式或使用者。API 金鑰用來追蹤及控制 API 的使用方式，例如，防止惡意使用或濫用 API。API 金鑰通常作為進行鑑別的唯一 ID 及密碼記號，而且一般具有其相關聯身分特有的一組存取權。
 {:shortdesc}
 
-若要檢視 API 金鑰，請移至**管理** > **存取 (IAM)**，然後選取**使用者**。然後，選取使用者以導覽至「使用者詳細資料」頁面上所包含的「API 金鑰」區段。 
+若要檢視 API 金鑰，請移至**管理** > **存取 (IAM)**，然後選取**使用者**。然後，選取使用者以導覽至「使用者詳細資料」頁面上所包含的「API 金鑰」區段。
 
 ## {{site.data.keyword.cloud_notm}} API 金鑰
 {: #ibm-cloud-api-keys}
@@ -42,5 +46,3 @@ lastupdated: "2019-01-30"
 {: tip}
 
 {{site.data.keyword.Bluemix_notm}} 中的某些服務可能也會提供 API 金鑰，供您在使用服務時使用。例如，如果您從資源清單中檢視 Watson 服務的供應項目詳細資料，則您可以在「服務認證」頁面上建立包括 API 金鑰及密碼的認證，而此認證僅專屬於該服務。
-
-

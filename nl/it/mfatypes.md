@@ -5,6 +5,10 @@ copyright:
   years: 2018,2019
 lastupdated: "2019-01-30"
 
+keywords: MFA, multifactor authentication, two-factor authentication
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,7 +46,7 @@ Uno dei vantaggi della MFA dell'ID IBM è che è gratuita e legata al tuo ID inv
 ## Opzioni MFA basata sull'account
 {: #account-based}
 
-Un amministratore account deve abilitare una delle seguenti opzioni MFA per essere configurate e utilizzate da un utente nell'account. Questo tipo di MFA è legato all'account corrente di un utente. Se un amministratore abilita un'opzione MFA diversa per ciascun account di cui è membro un utente, all'utente viene richiesto di autenticarsi in modo diverso ogni volta che cambia account. 
+Un amministratore account deve abilitare una delle seguenti opzioni MFA per essere configurate e utilizzate da un utente nell'account. Questo tipo di MFA è legato all'account corrente di un utente. Se un amministratore abilita un'opzione MFA diversa per ciascun account di cui è membro un utente, all'utente viene richiesto di autenticarsi in modo diverso ogni volta che cambia account.
 
 Se il proprietario dell'account richiede la MFA dell'ID IBM per tutti gli utenti nell'account, il metodo MFA dell'ID IBM sovrascrive qualsiasi altra opzione MFA abilitata e configurata nell'account di un utente. Pertanto, anche se un utente ha altre opzioni MFA, come ad esempio la seguente configurazione, non vengono richieste all'utente durante l'accesso.
 
@@ -58,5 +62,3 @@ Le seguenti opzioni MFA legacy sono disponibili solo con i precedenti account de
 </dl>
 
 Per ulteriori informazioni sulla configurazione delle opzioni MFA, vedi [Impostazione della protezione dell'accesso](/docs/account?topic=account-login-settings#login-settings). E, se sei proprietario o amministratore di un account che gestisce le impostazioni di accesso di altri utenti o hai la possibilità di gestire le tue proprie impostazioni di accesso, vedi [Gestione delle impostazioni di accesso di un utente](/docs/iam?topic=iam-loginsettings#loginsettings).
-
-
