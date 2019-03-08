@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,7 +23,7 @@ lastupdated: "2019-01-28"
 {: #iammanidaccser}
 
 Para gerenciar o acesso ou designar um novo acesso para usuários usando políticas do IAM, deve-se ser o proprietário da conta, o administrador em todos os serviços na conta ou o administrador designado para o serviço ou a instância de serviço específica. Para obter mais informações sobre funções e políticas de acesso, veja [Acesso ao IAM](/docs/iam?topic=iam-userroles#userroles).
-{:shortdesc} 
+{:shortdesc}
 
 ## Editando acesso existente
 {: #edit_existing}
@@ -42,7 +46,7 @@ Ao editar o acesso para um usuário ou um grupo, você pode receber uma mensagem
 ## Designando novo acesso
 {: #assign_new_access}
 
-É possível designar acesso ao recurso usando dois tipos de políticas: 
+É possível designar acesso ao recurso usando dois tipos de políticas:
 
 * Acesso aos recursos dentro de um grupo de recursos, incluindo a opção para apenas um ou todos
 * Acesso aos recursos na conta, incluindo a opção para apenas um tipo ou todos os tipos
@@ -50,7 +54,7 @@ Ao editar o acesso para um usuário ou um grupo, você pode receber uma mensagem
 Se você deseja permitir que um usuário tenha acesso total de administrador para concluir tarefas de [gerenciamento de conta](/docs/iam?topic=iam-account-services#account-services), como convidar e remover usuários, visualizar faturamento e uso, gerenciar IDs de serviço, gerenciar grupos de acesso, gerenciar acesso de usuário e acesso a todos os recursos da conta, deve-se criar duas políticas: uma em **Todos os serviços ativados pelo Identity and Access** com o administrador de função e outra em **Todos os serviços de gerenciamento de conta** com o administrador de função.
 {: tip}
 
-### Acesso aos recursos dentro de um grupo de recursos 
+### Acesso aos recursos dentro de um grupo de recursos
 {: #access_to_resources}
 
 Para designar acesso a todos os recursos em um grupo de recursos ou a apenas um serviço em um grupo de recursos, conclua as etapas a seguir:
@@ -67,15 +71,15 @@ Para designar acesso a todos os recursos em um grupo de recursos ou a apenas um 
 ### Acesso a recursos
 {: #resourceaccess}
 
-Para designar acesso a um recurso individual na conta ou acesso a todos os recursos na conta, conclua as etapas a seguir: 
+Para designar acesso a um recurso individual na conta ou acesso a todos os recursos na conta, conclua as etapas a seguir:
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**.
 2. Na linha para o usuário que você deseja designar acesso, selecione o menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg) e, em seguida, clique em **Designar acesso**.
 3. Selecione **Designar acesso a recursos**.
 4. Selecione um serviço ou selecione **Todos os serviços ativados pelo Identity and Access**.
-5. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado. 
+5. Selecione **Todas as regiões atuais** ou uma região específica, se solicitado.
 6. Selecione **Todas as instâncias de serviço atuais** ou selecione uma instância de serviço específica.
-7. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não inserir valores para esses campos, a política será designada no nível da instância de serviço em vez de no nível do depósito. 
+7. Dependendo do serviço que você selecionou, será possível ver os campos a seguir. Se você não inserir valores para esses campos, a política será designada no nível da instância de serviço em vez de no nível do depósito.
     * **Tipo de recurso**: insira **depósito**.
     * **ID do recurso**: Insira o nome do bucket.
 8. Escolha qualquer combinação de funções para designar o acesso desejado ao usuário.

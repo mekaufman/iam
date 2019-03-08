@@ -5,6 +5,10 @@ copyright:
   years: 2018,2019
 lastupdated: "2019-01-30"
 
+keywords: MFA, multifactor authentication, two-factor authentication
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,7 +46,7 @@ Una de las ventajas de MFA de IBMid es que es gratuita y está vinculada a su ID
 ## Opciones de MFA basada en cuenta
 {: #account-based}
 
-Un administrador de la cuenta debe habilitar cualquiera de las siguientes opciones de MFA para que un usuario las pueda configurar y utilizar en la cuenta. Este tipo de MFA está vinculado a la cuenta actual de un usuario. Si un administrador habilita una opción de MFA diferente para cada cuenta de la que un usuario es miembro, el usuario debe autenticarse de una forma distinta cada vez que cambie de cuenta. 
+Un administrador de la cuenta debe habilitar cualquiera de las siguientes opciones de MFA para que un usuario las pueda configurar y utilizar en la cuenta. Este tipo de MFA está vinculado a la cuenta actual de un usuario. Si un administrador habilita una opción de MFA diferente para cada cuenta de la que un usuario es miembro, el usuario debe autenticarse de una forma distinta cada vez que cambie de cuenta.
 
 Si un propietario de cuenta requiere MFA de IBMid para todos los usuarios de la cuenta, este método MFA de IBMid sustituye cualquier otra opción de MFA que esté habilitada y establecida en la cuenta de un usuario. Por lo tanto, aunque un usuario tenga otras opciones de MFA, como por ejemplo la siguiente configuración, no se le solicitarán durante el inicio de sesión.
 
@@ -58,5 +62,3 @@ Las siguientes opciones antiguas de MFA solo están disponibles con cuentas ante
 </dl>
 
 Para obtener más información sobre cómo configurar las opciones de MFA, consulte [Configuración de la seguridad de inicio de sesión](/docs/account?topic=account-login-settings#login-settings). Si es un propietario de cuenta o administrador que gestiona los valores de inicio de sesión de otros usuarios o si tiene capacidad para gestionar sus propios valores de inicio de sesión, consulte [Gestión de los valores de inicio de sesión de un usuario](/docs/iam?topic=iam-loginsettings#loginsettings).
-
-

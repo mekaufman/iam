@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -29,20 +33,17 @@ Si vous disposez de l'accès affecté suivant, vous pouvez mettre à jour les ad
 
   * Règle IAM avec un rôle Editeur ou supérieur dans le service Gestion des utilisateurs.
   * Vous êtes un ancêtre dans la hiérarchie d'infrastructure classique pour l'utilisateur. Vous disposez également du droit de gestion d'infrastructure classique d'utilisateurs.
-  
+
 Vous pouvez gérer ce paramètre pour votre compte si l'option Connexion gérée par l'utilisateur est activée sur votre page Détails de l'utilisateur.
 {: tip}
 
-Pour faire en sorte qu'un utilisateur utilise uniquement des adresses IP spécifiques, procédez comme suit : 
+Pour faire en sorte qu'un utilisateur utilise uniquement des adresses IP spécifiques, procédez comme suit :
 
-1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**. 
+1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**.
 2. Sélectionnez un utilisateur dans la liste.
-3. Sur la page Détails de l'utilisateur, accédez à la section **Restrictions d'adresse IP**. 
+3. Sur la page Détails de l'utilisateur, accédez à la section **Restrictions d'adresse IP**.
 4. Dans la zone **Plateforme Cloud**, entrez les adresses IP. Les adresses IP répertoriées sont les seules à partir desquelles cet utilisateur peut se connecter à {{site.data.keyword.Bluemix}}.
-5. Dans la zone **Infrastructure classique**, entrez les adresses IP. Les adresses IP répertoriées sont les seules à partir desquelles l'utilisateur peut appeler une API d'infrastructure classique. 
-  
+5. Dans la zone **Infrastructure classique**, entrez les adresses IP. Les adresses IP répertoriées sont les seules à partir desquelles l'utilisateur peut appeler une API d'infrastructure classique.
+
   Pour entrer une adresse IP d'infrastructure classique, une clé d'API d'infrastructure classique doit déjà être créée pour l'utilisateur.
   {: note}
- 
-
-

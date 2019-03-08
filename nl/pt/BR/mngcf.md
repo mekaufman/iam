@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -60,4 +64,3 @@ Se for necessário revisar seu acesso designado em uma conta à qual tenha sido 
 3. Expanda a linha da organização e revise suas funções designadas.
 
 Se você precisa de acesso adicional, deve-se entrar em contato com o gerenciador de organização ou proprietário da conta para atualizar sua função designada do Cloud Foundry.
-

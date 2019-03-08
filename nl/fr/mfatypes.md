@@ -5,6 +5,10 @@ copyright:
   years: 2018,2019
 lastupdated: "2019-01-30"
 
+keywords: MFA, multifactor authentication, two-factor authentication
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,7 +46,7 @@ L'authentification multi-facteur avec IBMid est gratuite et est liée à votre I
 ## Options d'authentification multi-facteur dépendant du compte
 {: #account-based}
 
-Un administrateur de compte doit autoriser la configuration d'une des options d'authentification multi-facteur suivante et son utilisation par un utilisateur de votre compte. Ce type d'authentification est lié à un compte actuel d'un utilisateur. Si un administrateur active une autre des options d'authentification multi-facteur pour chaque compte dont un utilisateur est membre, l'utilisateur est invité à s'authentifier différemment chaque fois qu'il change de compte. 
+Un administrateur de compte doit autoriser la configuration d'une des options d'authentification multi-facteur suivante et son utilisation par un utilisateur de votre compte. Ce type d'authentification est lié à un compte actuel d'un utilisateur. Si un administrateur active une autre des options d'authentification multi-facteur pour chaque compte dont un utilisateur est membre, l'utilisateur est invité à s'authentifier différemment chaque fois qu'il change de compte.
 
 Si un propriétaire de compte exige l'authentification multi-facteur avec IBMid pour tous les utilisateurs du compte, cette méthode remplace toute autre option d'authentification multi-facteur activée et configurée dans un compte d'utilisateur. C'est pourquoi, même si un utilisateur a d'autres options d'authentification multi-facteur (comme la configuration suivante), l'utilisateur n'est pas invité à les appliquer lors de la connexion.
 
@@ -58,5 +62,3 @@ Les options d'authentification multi-facteur suivantes sont disponibles uniqueme
 </dl>
 
 Pour plus d'informations sur la configuration des options d'authentification multi-facteur, voir [Configuration de la sécurité de connexion](/docs/account?topic=account-login-settings#login-settings). Si vous êtes propriétaire ou administrateur de compte et que vous gérez les paramètres de connexion d'autres utilisateurs ou si vous avez la possibilité de gérer vos propres paramètres de connexion, voir [Gestion des paramètres de connexion d'un utilisateur](/docs/iam?topic=iam-loginsettings#loginsettings).
-
-

@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-02-12"
 
+keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -28,22 +32,22 @@ Une règle accorde à un objet un ou plusieurs rôles sur un ensemble de ressour
 
 | Action | Rôle requis |
 |----------|---------|
-| Créer une règle dans un compte pour tous les services et instances | Propriétaire de compte ou administrateur de tous les services de gestion de compte et de tous les services activés pour IAM | 
+| Créer une règle dans un compte pour tous les services et instances | Propriétaire de compte ou administrateur de tous les services de gestion de compte et de tous les services activés pour IAM |
 | Créer une règle sur un service dans un compte | Propriétaire du compte, administrateur de tous les services activés pour IAM, ou administrateur du service dans le compte |
 | Créer une règle sur une instance de service | Propriétaire du compte, administrateur de tous les services activés pour IAM, ou administrateur du service dans le compte, administrateur de tous les services dans le groupe de ressources pertinent, ou administrateur de l'instance de service |
-{: caption="Tableau 1. Utilisateurs autorisés à créer des règles d'accès" caption-side="top"} 
+{: caption="Tableau 1. Utilisateurs autorisés à créer des règles d'accès" caption-side="top"}
 
-Lorsque vous affectez une règle, vous commencez avec l'objet. Une fois que vous avez sélectionné l'objet de la règle, vous pouvez choisir de la définir pour un groupe de ressources, une ressource individuelle ou un service de gestion des comptes. 
+Lorsque vous affectez une règle, vous commencez avec l'objet. Une fois que vous avez sélectionné l'objet de la règle, vous pouvez choisir de la définir pour un groupe de ressources, une ressource individuelle ou un service de gestion des comptes.
 
 Ensuite, selon votre sélection initiale, vous pouvez choisir l'une des options suivantes :
-  
+
   * Un service dans un groupe de ressources
   * Toutes les ressources d'un groupe de ressources
   * Toutes les instances ou une instance pour la ressource sélectionnée
   * Tous les services activés par IAM dans le compte
-  * Un service de gestion des comptes 
+  * Un service de gestion des comptes
 
-D'autres options de configuration peuvent être disponibles, selon le service que vous sélectionnez. Enfin, vous sélectionnez les rôles à affecter. 
+D'autres options de configuration peuvent être disponibles, selon le service que vous sélectionnez. Enfin, vous sélectionnez les rôles à affecter.
 
 ## Types de règles d'accès courantes
 {: #policytypes}
@@ -68,11 +72,11 @@ Pour accorder à un autre utilisateur l'accès complet au compte à des fins de 
 Cloud IAM vous permet de gérer et de définir les droits d'accès des utilisateurs et des ressources dans votre compte. Types de rôles pouvant être affectés : rôles de gestion de la plateforme et rôles d'accès aux services.
 
 <dl>
-<dt>Rôles de gestion de plateforme</dt> 
+<dt>Rôles de gestion de plateforme</dt>
 <dd>Les rôles de gestion de plateforme couvrent une gamme d'actions, notamment la possibilité de créer et de supprimer des instances, de gérer des alias, des liaisons, des données d'identification et de gérer les accès. Les rôles de plateforme sont les suivants : administrateur, éditeur, opérateur, afficheur. Les rôles de gestion de plateforme s'appliquent également aux [services de gestion de compte](/docs/iam?topic=iam-account-services#account-services) qui permettent aux utilisateurs d'inviter des utilisateurs, de gérer les ID de service, les règles d'accès, les entrées de catalogue et d'effectuer le suivi de la facturation et de l'utilisation en fonction du rôle qui leur est affecté dans un compte de gestion de service.</dd>
 <dt>Rôles Accès au service</dt>
 <dd>Les rôles d'accès au service définissent la capacité qu'a un utilisateur ou un service d'exécuter des actions sur une instance de service, par exemple, accéder à la console ou effectuer des appels API. Les rôles d'accès au service sont les suivants : responsable, auteur et lecteur. </dd>
-</dl> 
+</dl>
 
 Tous les rôles listés ici ne seront pas forcément affichés lorsque vous affectez des règles dans l'interface utilisateur vu que seuls sont affichés les rôles disponibles pour le service choisi. Pour plus d'informations sur les rôles qui sont activés et sur les actions que chaque rôle d'accès autorise pour chaque service, reportez-vous à la documentation du service concerné.
 {: note}
@@ -101,7 +105,7 @@ Le tableau suivant décrit les actions courantes que vous pouvez effectuer en fo
 
 La première ligne du tableau décrit des services spécifiques que vous pouvez sélectionner lors de la création d'une règle, et la première colonne décrit le type de rôle sélectionné pour la règle. Les cellules restantes sont associées au rôle sélectionné dans les options de la première colonne et au type de règle sélectionné dans les options de la première ligne.
 
-| Détails de la règle d'accès |  Actions pour les ID de service  | Actions pour la gestion des groupes d'accès | Actions pour la gestion d'accès au catalogue | Actions pour l'accès afin de gérer les utilisateurs | Actions de support | Actions de facturation | Actions pour tous les services de gestion de compte | 
+| Détails de la règle d'accès |  Actions pour les ID de service  | Actions pour la gestion des groupes d'accès | Actions pour la gestion d'accès au catalogue | Actions pour l'accès afin de gérer les utilisateurs | Actions de support | Actions de facturation | Actions pour tous les services de gestion de compte |
 |:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|:--------------|
 |  |  Service d'identité IAM |  Groupes d'accès IAM |  Catalogue de ressources globales |  Gestion des utilisateurs  | Centre de support | Facturation et utilisation | Tous les services de gestion des comptes |
 | Rôle Afficheur |  <ul><li>Afficher les ID</li></ul> |  <ul><li>Afficher des groupes d'accès et des membres</li></ul> | <ul><li>Afficher les services privés</li></ul>  |  <ul><li>Afficher les utilisateurs du compte</li><li>Afficher les paramètres du profil utilisateur</li></ul> | <ul><li>Afficher les cas</li><li>Rechercher des cas</li></ul> | <ul><li>Afficher les paramètres des fonctions du compte</li><li>Afficher les abonnements dans le compte</li><li>Afficher le nom du compte</li><li>Afficher les groupes de ressources</li></ul> | Toutes les actions du rôle Afficheur pour les services de gestion de compte |
@@ -138,5 +142,3 @@ Les actions qui peuvent être exécutées en fonction de chaque rôle affecté v
 | Auteur | Droits en plus du rôle de lecteur, notamment, créer et éditer des ressources pour un service. | Créer et détruire des compartiments et des objets |
 | Responsable | Droits en plus du rôle d'auteur pour effectuer des actions privilégiées définies par le service, plus créer et éditer des ressources spécifiques des services. | Gérer tous les aspects de stockage de données. Créer et détruire des compartiments et des objets. |
 {: caption="Tableau 5. Exemples d'actions et de rôles utilisateur d'accès au service" caption-side="top"}
-
-

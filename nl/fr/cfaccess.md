@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: Cloud Foundry roles, Cloud Foundry access, auditor, manager, developer, billing manager
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -18,7 +22,7 @@ lastupdated: "2019-01-28"
 # Accès Cloud Foundry
 {: #cfaccess}
 
-Actuellement, les services ne peuvent pas tous être gérés à l'aide de Cloud IAM. Vous pouvez continuer à utiliser des rôles Cloud Foundry permettant d'accéder à ces instances de service. Les utilisateurs sont ajoutés à l'organisation et à l'espace auxquels l'instance appartient avec un rôle Cloud Foundry affecté. 
+Actuellement, les services ne peuvent pas tous être gérés à l'aide de Cloud IAM. Vous pouvez continuer à utiliser des rôles Cloud Foundry permettant d'accéder à ces instances de service. Les utilisateurs sont ajoutés à l'organisation et à l'espace auxquels l'instance appartient avec un rôle Cloud Foundry affecté.
 {:shortdesc}
 
 

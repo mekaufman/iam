@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -37,4 +41,3 @@ Para activar esta opción de MFA para un usuario, este debe [configurar TOTP](/d
 
 Puede gestionar este valor usted mismo si tiene habilitado el valor de inicio de sesión gestionado por el usuario en la página de detalles de usuario.
 {: tip}
-

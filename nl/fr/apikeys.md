@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,7 +23,7 @@ lastupdated: "2019-01-30"
 Une clé d'interface de programmation (clé d'API) est un code unique transmis à une interface de programmation (API) afin d'identifier l'application ou l'utilisateur appelant. Les clés d'API permettent de suivre et contrôler la façon dont l'API est utilisée, par exemple pour empêcher toute utilisation malveillante ou abusive de l'API. La clé d'API fait souvent office à la fois d'identificateur unique et de jeton confidentiel pour l'authentification. Elle dispose généralement de droits d'accès spécifiques à l'identité qui lui est associée.
 {:shortdesc}
 
-Pour voir vos clés d'API, accédez à **Gérer** > **Accès (IAM)** puis sélectionnez **Utilisateurs**. Sélectionnez ensuite un utilisateur pour accéder à la section des clés d'API incluse sur la page Détails de l'utilisateur. 
+Pour voir vos clés d'API, accédez à **Gérer** > **Accès (IAM)** puis sélectionnez **Utilisateurs**. Sélectionnez ensuite un utilisateur pour accéder à la section des clés d'API incluse sur la page Détails de l'utilisateur.
 
 ## {{site.data.keyword.cloud_notm}}Clés d'API
 {: #ibm-cloud-api-keys}
@@ -42,5 +46,3 @@ Les clés d'API {{site.data.keyword.cloud_notm}} permettent également d'accéde
 {: tip}
 
 Certains services d'{{site.data.keyword.Bluemix_notm}} peuvent également fournir une clé d'API à utiliser avec le service. Par exemple, si vous affichez les détails d'une offre d'un service Watson à partir de votre liste de ressources, vous pouvez créer des données d'identification, qui incluent une clé d'API et une valeur confidentielle, spécifiques à ce service sur la page Données d'identification pour le service.
-
-

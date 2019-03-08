@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: parent user, change parent user, classic infrastructure hierarchy
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -20,7 +24,7 @@ lastupdated: "2019-01-28"
 Se você tiver o acesso correto, será possível atualizar o pai para um usuário. A atualização do usuário pai afeta como um usuário vê outros usuários na conta quando a configuração de visibilidade da lista de usuários é configurada como restrita. Os usuários veem apenas outros usuários para os quais são pais e quaisquer outros usuários convidados por esses descendentes do usuário pai.
 {:shortdesc}
 
-Veja [configuração de visibilidade da lista de usuários](/docs/iam?topic=iam-userlistview#userlistview) para obter mais detalhes sobre a configuração. 
+Veja [configuração de visibilidade da lista de usuários](/docs/iam?topic=iam-userlistview#userlistview) para obter mais detalhes sobre a configuração.
 
 Se você tiver o acesso a seguir, será possível atualizar o pai para outro usuário:
 

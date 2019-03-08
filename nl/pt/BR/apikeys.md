@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,7 +23,7 @@ lastupdated: "2019-01-30"
 Uma chave de interface de programação de aplicativos (chave de API) é um código exclusivo passado para uma API para identificar o aplicativo de chamada ou o usuário. As chaves API são usadas para rastrear e controlar como a API está sendo usada, por exemplo, para evitar uso malicioso ou abuso da API. A chave de API geralmente age como um identificador exclusivo e um token secreto para autenticação e geralmente tem um conjunto de acesso que é específico para a identidade associada a ele.
 {:shortdesc}
 
-Para visualizar suas chaves de API, acesse **Gerenciar** > **Acesso (IAM)** e selecione **Usuários**. Em seguida, selecione um usuário para navegar para a seção de chaves de API que está incluída na página Detalhes do usuário. 
+Para visualizar suas chaves de API, acesse **Gerenciar** > **Acesso (IAM)** e selecione **Usuários**. Em seguida, selecione um usuário para navegar para a seção de chaves de API que está incluída na página Detalhes do usuário.
 
 ## {{site.data.keyword.cloud_notm}}Chaves API
 {: #ibm-cloud-api-keys}
@@ -42,5 +46,3 @@ As chaves de API do {{site.data.keyword.cloud_notm}} também podem ser usadas pa
 {: tip}
 
 Alguns serviços no {{site.data.keyword.Bluemix_notm}} também podem fornecer uma chave de API para você usar ao trabalhar com o serviço. Por exemplo, se você estiver visualizando os detalhes da oferta de um serviço do Watson por meio de sua lista de recursos, será possível criar uma credencial, que inclui uma chave de API e um segredo que é específico apenas para esse serviço na página Credenciais de serviço.
-
-

@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-02-12"
 
+keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -31,26 +35,26 @@ Uma política concede a um sujeito uma ou múltiplas funções a um conjunto de 
 | Ações | Função necessária |
 |----------|---------|
 | Criar uma política em uma conta para todos os serviços e instâncias | Proprietário da conta ou administrador em todos
-os serviços de gerenciamento de conta e todos os serviços ativados para o Identity and Access | 
+os serviços de gerenciamento de conta e todos os serviços ativados para o Identity and Access |
 | Criar uma política em um serviço em uma conta | Proprietário da conta, administrador em todos os serviços ativados para
 o Identity and Access ou administrador no serviço na conta |
 | Criar uma política em uma instância de serviço | Proprietário da conta, administrador em todos os serviços ativados
 para o Identity and Access, administrador no serviço na conta, administrador em todos os serviços no grupo de
 recursos relevantes ou administrador na instância de serviço |
-{: caption="Tabela 1. Usuários que têm permissão para criar políticas de acesso" caption-side="top"} 
+{: caption="Tabela 1. Usuários que têm permissão para criar políticas de acesso" caption-side="top"}
 
 Ao designar uma política, você
-inicia com o assunto. Depois de selecionar o assunto da política, é possível optar por configurar a política para um grupo de recursos, um recurso individual ou um serviço de gerenciamento de conta. 
+inicia com o assunto. Depois de selecionar o assunto da política, é possível optar por configurar a política para um grupo de recursos, um recurso individual ou um serviço de gerenciamento de conta.
 
 Em seguida, dependendo de sua seleção inicial, é possível selecionar dentre as opções:
-  
+
   * Um serviço dentro de um grupo de recursos
   * Todos os recursos em um grupo de recursos
   * Todas as instâncias ou uma única instância para o recurso selecionado
   * Todos os serviços ativados para IAM na conta
-  * Um serviço de gerenciamento de conta 
+  * Um serviço de gerenciamento de conta
 
-Mais opções de configuração podem estar disponíveis, dependendo do serviço selecionado. Finalmente, você seleciona as funções a serem designadas. 
+Mais opções de configuração podem estar disponíveis, dependendo do serviço selecionado. Finalmente, você seleciona as funções a serem designadas.
 
 ## Tipos de política de acesso comum
 {: #policytypes}
@@ -81,13 +85,13 @@ Com o Cloud IAM, é possível gerenciar e definir acesso para usuários e recurs
 funções podem ser designadas: funções de gerenciamento de plataforma e funções de acesso de serviço.
 
 <dl>
-<dt>Funções de gerenciamento de plataforma</dt> 
+<dt>Funções de gerenciamento de plataforma</dt>
 <dd>As funções de gerenciamento da plataforma abrangem uma gama de ações, incluindo a capacidade de criar e
 excluir instâncias, gerenciar aliases, ligações, credenciais e acesso. As funções da plataforma são administrador,
 editor, operador, visualizador. As funções de gerenciamento de plataforma também se aplicam aos [serviços de gerenciamento de conta](/docs/iam?topic=iam-account-services#account-services) que permitem que os usuários convidem usuários, gerenciem IDs de serviço, políticas de acesso, entradas do catálogo e rastreiem o faturamento e o uso, dependendo da atribuição designada em um serviço de gerenciamento de conta.</dd>
 <dt>Funções de acesso de serviço</dt>
 <dd>As funções de acesso de serviço definem a capacidade de um usuário ou serviço executar ações em uma instância de serviço, como acessar o console ou executar chamadas API. As funções de acesso de serviço são gerenciador, gravador e leitor. </dd>
-</dl> 
+</dl>
 
 Você pode não ver todas as funções que estão listadas aqui como opções ao designar as políticas na UI, pois
 somente as funções disponíveis para o serviço escolhido serão exibidas. Para obter mais informações sobre quais funções estão ativadas e quais ações cada função de acesso permite para cada serviço, veja a documentação para esse serviço.
@@ -125,7 +129,7 @@ A primeira linha da tabela descreve serviços específicos que podem ser escolhi
 coluna descreve o tipo selecionado de função para a política. As células restantes mapeiam qual função
 é selecionada nas opções da primeira coluna e o tipo de política selecionado nas opções da primeira linha.
 
-| Detalhes da política de acesso |  Ações para IDs de serviço  | Ações para gerenciar grupos de acesso | Ações para gerenciar o acesso ao catálogo | Ações para acesso para gerenciar usuários | Ações para Suporte | Ações para faturamento | Ações para todos os serviços de gerenciamento de conta | 
+| Detalhes da política de acesso |  Ações para IDs de serviço  | Ações para gerenciar grupos de acesso | Ações para gerenciar o acesso ao catálogo | Ações para acesso para gerenciar usuários | Ações para Suporte | Ações para faturamento | Ações para todos os serviços de gerenciamento de conta |
 |:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|:--------------|
 |  |  Serviço de identidade do IAM |  Grupos de acesso ao IAM |  Catálogo de recursos global |  Gerenciamento de usuários  | Centro de suporte | Faturamento e uso | Todos os serviços de gerenciamento de conta |
 | Função de visualizador |  <ul><li>Visualizar IDs</li></ul> |  <ul><li>Visualizar grupos de acesso e membros</li></ul> | <ul><li>Visualizar serviços privados</li></ul>  |  <ul><li>Visualizar usuários na conta</li><li>Visualizar configurações do perfil do usuário</li></ul> | <ul><li>Visualizar casos</li><li>Procurar casos</li></ul> | <ul><li>Visualizar configurações de recursos da conta</li><li>Visualizar assinaturas na conta</li><li>Visualizar o nome da conta</li><li>Visualizar grupos de recursos</li></ul> | Todas as ações da função de visualizador para os serviços de gerenciamento de conta |
@@ -164,5 +168,3 @@ As ações que podem ser executadas com base em cada função designada variam c
 | Gravador | Permissões além da função de leitor, incluindo criar e editar recursos específicos do serviço | Criar e destruir depósitos e objetos |
 | Gerente | Permissões além da função de gravador para concluir ações privilegiadas, conforme definido pelo serviço, além de criar e editar recursos específicos do serviço | Gerenciar todos os aspectos de armazenamento de dados, criar e destruir depósitos e objetos |
 {: caption="Tabela 5. Exemplo de funções e ações de usuário de acesso de serviço" caption-side="top"}
-
-
