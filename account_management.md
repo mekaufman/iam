@@ -68,6 +68,8 @@ The following tables outline the actions that users can take when they are assig
 | Administrator |  View cases <br><br> Search cases <br><br> Update cases <br><br> Create cases    |
 {: caption="Table 3. Roles and example actions for the Support Center service" caption-side="top"}
 
+{: #billing-acct-mgmt}
+
 | Roles | Actions |
 |:-------|----------|
 | Viewer | View account feature settings <br><br> View subscriptions in account <br><br> View account name <br><br> View resource groups   |
