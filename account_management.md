@@ -4,12 +4,11 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-02-11"
+lastupdated: "2019-02-21"
 
 keywords: account management, access, access policy, account administrator
 
 subcollection: iam
-
 
 ---
 
@@ -69,7 +68,6 @@ The following tables outline the actions that users can take when they are assig
 {: caption="Table 3. Roles and example actions for the Support Center service" caption-side="top"}
 
 {: #billing-acct-mgmt}
-
 | Roles | Actions |
 |:-------|----------|
 | Viewer | View account feature settings <br><br> View subscriptions in account <br><br> View account name <br><br> View resource groups   |
@@ -85,6 +83,7 @@ The following tables outline the actions that users can take when they are assig
 | Editor |  Create, update, and delete IDs and API keys  |
 | Administrator |  Create, update, and delete IDs and API keys <br><br> Assign access policies to IDs  |
 {: caption="Table 5. Roles and example actions for the IAM Identity service" caption-side="top"}
+{: #identity-service-acct-mgmt}
 
 For the IAM Identity Service, these actions apply to service IDs within the account that the user didn't create. All users can create service IDs. They're the administrator for those IDs, and they can create the associated API key and access policies. However, this account management service applies to the ability to view, delete, and assign access to service IDs in the account created by other users.
 {: note}
