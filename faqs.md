@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-11"
 
 keywords: frequently asked question, faq
 
@@ -118,12 +118,14 @@ The account owner can remove any users from the account, and any user with the f
 * An IAM policy for the User management account management service with the Administrator role assigned and be the Cloud Foundry org manager if the user belongs to a Cloud Foundry org.
 * If you have classic infrastructure in your account, then a user must have an IAM policy for the User management account management service with the Administrator role assigned, be the Cloud Foundry org manager if the user belongs to a Cloud Foundry org, and be an ancestor of the user in the classic infrastructure user hierarchy with the Manage user classic infrastructure permission assigned.
 
-## How do I require IBMid multi-factor authentication for my account?
+## How do I require IBMid multifactor authentication for my account?
 {: #multi-factor}
 {: faq}
 
 1. Go to **Manage** &gt; **Access (IAM)**, and select **Settings**.
-2. Choose **Multi-factor authentication**, and then click **Yes, I'm sure**. For more information, see [Requiring MFA for users in your account](/docs/iam?topic=iam-enablemfa#enablemfa).
+2. From the Accout login section, select **Update** to select MFA for all users or just non-federated users.
+
+For more information, see [Requiring MFA for users in your account](/docs/iam?topic=iam-enablemfa#enablemfa).
 
 ## What is the difference between service and platform roles?
 {: #service-platform-roles}
@@ -154,8 +156,6 @@ To delegate the account administrator capabilities, assign the following access:
 * The Super user permission set for classic infrastructure
 * Cloud Foundry manager for all orgs
 
-Even with the previously described access assigned, an account administrator can't change the MFA setting for the account. Only the account owner can change this setting.
-{: note}
 
 ## What is the difference between an account administrator and account owner?
 {: #owner-administrator}
@@ -167,9 +167,6 @@ Account owners are automatically assigned as the account administrator for {{sit
 * An IAM policy with Administrator on All account management services, which enables a user to complete tasks like inviting users, managing access groups, managing service IDs, managing private catalog offerings, and track billing and usage.
 * The Super user permission set for classic infrastructure
 * Cloud Foundry manager for all orgs
-
-Even with the previously described access assigned, an account administrator can't change the MFA setting for the account. Only the account owner can change this setting.
-{: note}
 
 ## How do I assign access to infrastructure and devices?
 {: #infrastructure-devices}
