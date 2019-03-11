@@ -21,7 +21,7 @@ subcollection: iam
 # Requiring MFA for users in your account
 {: #enablemfa}
 
-As an {{site.data.keyword.Bluemix}} account owner or administrator for the billing service, you can choose to require multifactor authentication (MFA) for every user in the account. All users with an IBMid use a time-based one-time passcode (TOTP) MFA method, and any users with a different type of ID must be enabled to use the TOTP, security questions, or external authentication method separately.  
+As an {{site.data.keyword.Bluemix}} account owner or administrator for the billing service, you can choose to require multifactor authentication (MFA) for every user in the account or just users with non-federated IDs who do not use SSO. All users with an IBMid use a time-based one-time passcode (TOTP) MFA method, and any users with a different type of ID must be enabled to use the TOTP, security questions, or external authentication method separately.  
 {:shortdesc}
 
 ## Before you begin
@@ -31,9 +31,8 @@ Review the following considerations before you enable IBMid MFA for your account
 
 * When you enable MFA for your account, users must complete the MFA process the next time they log in.
 * API keys for users and service IDs continue to work after MFA is enabled.
-* If you require the use of native CF CLI or UI login into Cloud Foundry, you must use API keys or single sign-on (SSO) after MFA is enabled for the account.
+* If you require the use of CLI or UI login into Cloud Foundry, you must use API keys or single sign-on (SSO) after MFA is enabled for the account.
 * MFA for your account applies to a user's login, but does not apply to API calls. If a user has permission to make API calls to resources in your account, the user can do so without completing MFA. If the user belongs to other accounts, the user can make API calls to resources in your account by using an API key from an account that did not require MFA.
-* If you are a federated user, MFA is not supported.
 * If you require MFA for your account and you have users in your account that do not have an IBMid, you must enable one of the other MFA options for that user from the User details page in the {{site.data.keyword.Bluemix_notm}} console. For more information, see [Types of multifactor authentication](/docs/iam?topic=iam-types#types).
 * Plan a communication and support strategy for users in your account:
   * Choose a date and time that you plan to enable MFA that results in the least impact to your business.
@@ -49,7 +48,7 @@ To enable MFA, you must be the account owner or an administrator for the billing
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Settings**.
 2. Select **Update** for the Account login setting.
-3. Select **None** or **Non-federated users only** depending on which type of authentication you want to require.
+3. Select **None**, **Non-federated users only**, or **All users** depending on which type of authentication you want to require.
 4. Select the check box to confirm that you understand the impact of requiring MFA for users in your account, if you select the non-federated users only option.
 5. Click **Save**.
 
