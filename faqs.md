@@ -123,7 +123,7 @@ The account owner can remove any users from the account, and any user with the f
 {: faq}
 
 1. Go to **Manage** &gt; **Access (IAM)**, and select **Settings**.
-2. From the Accout login section, select **Update** to select MFA for all users or just non-federated users.
+2. From the Account login section, select **Update** to select MFA for all users or just non-federated users.
 
 For more information, see [Requiring MFA for users in your account](/docs/iam?topic=iam-enablemfa#enablemfa).
 
