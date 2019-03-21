@@ -58,7 +58,7 @@ Como ejemplo, en los siguientes pasos se utiliza la clave de API 0a1A2b3B4c5C6d7
   3.	Establezca la cabecera HTTP Authorization con el esquema Basic, por ejemplo `Authorization: Basic YXBpa2V5OjBhMUEyYjNCNGM1QzZkN0Q4ZTlF`. Si utiliza el mandato curl, puede pasar esto con el parámetro -u:
 
     ```
-    curl -u "apikey:<valor clave API de IBM Cloud>"
+    curl -u "apikey:<valor de clave de API de IBM Cloud>"
     ```
 
   Si utiliza otras herramientas, es posible que tenga que especificar estas credenciales de forma distinta.

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018,2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-05"
 
 keywords: MFA, multifactor authentication, two-factor authentication
 
@@ -28,18 +28,18 @@ Les deux types d'option d'authentification multi-facteur peuvent être activés 
 
 <dl>
 <dt>Authentification multi-facteur avec ID</dt>
-<dd>Option activée par un propriétaire de compte dans un des comptes dont vous êtes membre. Ce type d'authentification multi-facteur est associé à votre IBMid et vous authentifie dans tous les comptes dont vous êtes membre. Par conséquent, il vous suffit de vous identifier une seule fois.</dd>
+<dd>Option activée par un administrateur ou un propriétaire de compte pour le service de facturation dans un des comptes dont vous êtes membre. Ce type d'authentification multi-facteur est associé à votre IBMid et vous authentifie dans tous les comptes dont vous êtes membre. Par conséquent, il vous suffit de vous identifier une seule fois.</dd>
 <dt>Options dépendant du compte</dt>
 <dd>Options, telles que des questions de sécurité, l'utilisation d'un code d'accès à usage unique à durée limitée et des options d'authentification externe, telles que l'authentification Symantec et l'authentification par téléphone. Ces types d'authentification multi-facteur sont spécifiques à chaque compte. Ce qui signifie que si pour chaque compte auquel vous appartenez, le type d'authentification configuré est différent, vous devez vous authentifier chaque fois que vous changez de compte. Les options d'authentification multi-facteur existantes sont disponibles uniquement avec les anciens comptes d'infrastructure classique.</dd>
 </dl>
 
-L'authentification multi-facteur avec IBMid répond aux exigences d'authentification. Par conséquent, aucune invite ne s'affiche vous demandant d'autres types d'authentification multi-facteur même si ces derniers sont activés. Ainsi, si un propriétaire d'un compte dont vous êtes membre active cette option, il s'agit du seul type d'authentification multi-facteur qui vous est demandé lors de la connexion. Si vous êtes un nouvel utilisateur, utilisez l'option d'authentification multi-facteur avec IBMid pour une connexion simple et sécurisée.
+L'authentification multi-facteur avec IBMid répond aux exigences d'authentification. Par conséquent, aucune invite ne s'affiche vous demandant d'autres types d'authentification multi-facteur même si ces derniers sont activés. De plus, si cette option est activée dans un compte dont vous êtes membre, il s'agit du seul type d'authentification multi-facteur qui vous est demandé lors de la connexion. Si vous êtes un nouvel utilisateur, utilisez l'option d'authentification multi-facteur avec IBMid pour une connexion simple et sécurisée.
 {: tip}
 
 ## Option d'authentification multi-facteur avec ID
 {: #id-based}
 
-L'authentification multi-facteur avec IBMid pour un compte exige un code d'accès à usage unique à durée limitée en complément d'un IBMid standard et d'un mot de passe lors de la connexion. Ce type d'authentification multi-facteur est activé au niveau du compte par le propriétaire du compte. Lorsque cette fonction est activée, vous devez utiliser la norme de sécurité supplémentaire lors de la connexion et tous les utilisateurs ajoutés à votre compte sont également requis. Ce type d'authentification multi-facteur s'applique à toutes les ressources de compte. Vous pouvez l'activer ou le désactiver à partir de la page **Gérer** > **Accès (IAM)** > **Paramètres** de la console {{site.data.keyword.Bluemix}} uniquement si vous êtes propriétaire du compte.
+L'authentification multi-facteur avec IBMid pour un compte exige un code d'accès à usage unique à durée limitée en complément d'un IBMid standard et d'un mot de passe lors de la connexion. Ce type d'authentification multi-facteur est activé au niveau du compte par un administrateur ou le propriétaire du compte pour le service de facturation. Lorsque cette fonction est activée, vous devez utiliser la norme de sécurité supplémentaire lors de la connexion et tous les utilisateurs ajoutés à votre compte sont également requis. Ce type d'authentification multi-facteur s'applique à toutes les ressources de compte. Vous pouvez l'activer ou le désactiver à partir de la page **Gérer** > **Accès (IAM)** > **Paramètres** de la console {{site.data.keyword.Bluemix}} uniquement si vous êtes administrateur ou propriétaire du compte pour le service de facturation.
 
 L'authentification multi-facteur avec IBMid est gratuite et est liée à votre ID et non uniquement au compte spécifique dans lequel vous vous trouvez, ce qui constitue un avantage. Si vous êtes membre de plusieurs comptes, il vous est demandé de vous authentifier une seule fois lorsque vous vous connectez à la console. Pour plus d'informations sur l'authentification multi-facteur avec IBMid, pour connaître les points à vérifier avant de demander une authentification multi-facteur avec IBMid pour votre compte et pour savoir comment configurer l'authentification multi-facteur avec IBMid, voir [Exigence de l'authentification multi-facteur pour les utilisateurs de votre compte](/docs/iam?topic=iam-enablemfa#enablemfa).
 
@@ -48,7 +48,7 @@ L'authentification multi-facteur avec IBMid est gratuite et est liée à votre I
 
 Un administrateur de compte doit autoriser la configuration d'une des options d'authentification multi-facteur suivante et son utilisation par un utilisateur de votre compte. Ce type d'authentification est lié à un compte actuel d'un utilisateur. Si un administrateur active une autre des options d'authentification multi-facteur pour chaque compte dont un utilisateur est membre, l'utilisateur est invité à s'authentifier différemment chaque fois qu'il change de compte.
 
-Si un propriétaire de compte exige l'authentification multi-facteur avec IBMid pour tous les utilisateurs du compte, cette méthode remplace toute autre option d'authentification multi-facteur activée et configurée dans un compte d'utilisateur. C'est pourquoi, même si un utilisateur a d'autres options d'authentification multi-facteur (comme la configuration suivante), l'utilisateur n'est pas invité à les appliquer lors de la connexion.
+Si un compte exige l'authentification multi-facteur avec IBMid pour tous les utilisateurs du compte, cette méthode remplace toute autre option d'authentification multi-facteur activée et configurée dans un compte d'utilisateur. C'est pourquoi, même si un utilisateur a d'autres options d'authentification multi-facteur (comme la configuration suivante), l'utilisateur n'est pas invité à les appliquer lors de la connexion.
 
 Les options d'authentification multi-facteur suivantes sont disponibles uniquement avec les anciens comptes d'infrastructure classique.
 

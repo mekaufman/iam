@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018,2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-05"
 
 keywords: MFA, multifactor authentication, two-factor authentication
 
@@ -28,18 +28,18 @@ Se pueden habilitar los dos tipos siguientes de opciones de MFA para su cuenta:
 
 <dl>
 <dt>MFA basada en ID</dt>
-<dd>Opción que habilita el propietario de una cuenta en una de las cuentas de las que es miembro. Este tipo de MFA está asociado con el IBMid y le autentica en todas las cuentas a las que es miembro, por lo que solo tiene que autenticarse una vez.</dd>
+<dd>Opción que habilita el propietario de una cuenta o un administrador del servicio de facturación en una de las cuentas de las que es miembro. Este tipo de MFA está asociado con el IBMid y le autentica en todas las cuentas a las que es miembro, por lo que solo tiene que autenticarse una vez.</dd>
 <dt>Opciones basadas en cuenta</dt>
 <dd>Opciones como preguntas de seguridad, uso de un código de acceso de un solo uso y opciones de autenticación externa, como la autenticación Symantec y por teléfono. Estos tipos de MFA son específicos de la cuenta, lo que significa que, si tiene un tipo distinto configurado para cada cuenta a la que pertenece, debe autenticarse de distintas formas cada vez que cambie de cuenta. Estas opciones antiguas de MFA solo están disponibles con cuentas anteriores de la infraestructura clásica.</dd>
 </dl>
 
-MFA de IBMid satisface el requisito de autenticación, de modo que no se le solicitan otros tipos de MFA aunque estén habilitados. Por lo tanto, si alguno de los propietarios de una cuenta en la que es miembro activa esta opción, este es el único tipo de MFA que se le solicitará cuando inicie una sesión. Si es un usuario nuevo, utilice la opción MFA de IBMid basada en ID para asegurarse de que su inicio de sesión sea fácil y seguro.
+MFA de IBMid satisface el requisito de autenticación, de modo que no se le solicitan otros tipos de MFA aunque estén habilitados. Por lo tanto, si una cuenta de la que es miembro tiene esta opción activada, este será el único tipo de MFA que se le solicitará al iniciar sesión. Si es un usuario nuevo, utilice la opción MFA de IBMid basada en ID para asegurarse de que su inicio de sesión sea fácil y seguro.
 {: tip}
 
 ## Opción MFA basada en ID
 {: #id-based}
 
-MFA de IBMid para una cuenta requiere un código de acceso de un solo uso basado en el tiempo, además de un IBMid estándar y una contraseña durante el inicio de sesión. El propietario de la cuenta habilita este tipo de MFA a nivel de cuenta. Cuando esta característica está habilitada, debe utilizar el estándar de seguridad adicional al iniciar una sesión, y también deben hacerlo todos los usuarios que se añadan a su cuenta. Este tipo de MFA se aplica a todos los recursos de la cuenta. Puede activarlo o desactivarlo desde la página **Gestionar** > **Acceso (IAM)** > **Valores** en la consola de {{site.data.keyword.Bluemix}} solo si es el propietario de la cuenta.
+MFA de IBMid para una cuenta requiere un código de acceso de un solo uso basado en el tiempo, además de un IBMid estándar y una contraseña durante el inicio de sesión. El propietario de la cuenta o un administrador del servicio de facturación habilita este tipo de MFA a nivel de cuenta. Cuando esta característica está habilitada, debe utilizar el estándar de seguridad adicional al iniciar una sesión, y también deben hacerlo todos los usuarios que se añadan a su cuenta. Este tipo de MFA se aplica a todos los recursos de la cuenta. Puede activarlo o desactivarlo desde la página **Gestionar** > **Acceso (IAM)** > **Valores** en la consola de {{site.data.keyword.Bluemix}} solo si es el propietario de la cuenta o un administrador del servicio de facturación.
 
 Una de las ventajas de MFA de IBMid es que es gratuita y está vinculada a su ID, en lugar de estarlo solo a la cuenta específica en la que se encuentra. Si pertenece a varias cuentas, solo se tiene que autenticar una vez cuando inicie una sesión en la consola. Para obtener más información sobre MFA de IBMid, sobre las consideraciones que se deben revisar antes de requerir MFA de IBMid para su cuenta y sobre cómo configurar MFA de IBMid para usted mismo, consulte [Requerimiento de MFA para usuarios de su cuenta](/docs/iam?topic=iam-enablemfa#enablemfa).
 
@@ -48,7 +48,7 @@ Una de las ventajas de MFA de IBMid es que es gratuita y está vinculada a su ID
 
 Un administrador de la cuenta debe habilitar cualquiera de las siguientes opciones de MFA para que un usuario las pueda configurar y utilizar en la cuenta. Este tipo de MFA está vinculado a la cuenta actual de un usuario. Si un administrador habilita una opción de MFA diferente para cada cuenta de la que un usuario es miembro, el usuario debe autenticarse de una forma distinta cada vez que cambie de cuenta.
 
-Si un propietario de cuenta requiere MFA de IBMid para todos los usuarios de la cuenta, este método MFA de IBMid sustituye cualquier otra opción de MFA que esté habilitada y establecida en la cuenta de un usuario. Por lo tanto, aunque un usuario tenga otras opciones de MFA, como por ejemplo la siguiente configuración, no se le solicitarán durante el inicio de sesión.
+Si una cuenta requiere MFA de IBMid para todos los usuarios de la cuenta, este método MFA de IBMid sustituye cualquier otra opción de MFA que esté habilitada y establecida en la cuenta de un usuario. Por lo tanto, aunque un usuario tenga otras opciones de MFA, como por ejemplo la siguiente configuración, no se le solicitarán durante el inicio de sesión.
 
 Las siguientes opciones antiguas de MFA solo están disponibles con cuentas anteriores de la infraestructura clásica.
 

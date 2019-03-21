@@ -32,7 +32,7 @@ Molte delle funzionalità del sistema {{site.data.keyword.Bluemix_notm}} Identit
 Puoi concedere solo il livello di accesso di cui disponi come utente del servizio di destinazione. Ad esempio, se disponi solo dell'accesso di visualizzatore sul servizio a cui si accederà, potrai assegnare solo il ruolo di visualizzatore per l'autorizzazione.
 
 1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Autorizzazioni**.
-2. Fai clic su **Create**.
+2. Fai clic su **Crea**.
 3. Seleziona un servizio di origine e di destinazione per l'autorizzazione. Al servizio di origine viene fornito accesso al servizio di destinazione selezionato.
 4. Seleziona un ruolo per assegnare l'accesso al servizio di origine quando si accede al servizio di destinazione.
 5. Fai clic su **Autorizza**.

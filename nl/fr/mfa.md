@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-05"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP
 
@@ -21,7 +21,7 @@ subcollection: iam
 # Exigence de l'authentification multi-facteur pour les utilisateurs de votre compte
 {: #enablemfa}
 
-En tant que propriétaire de compte {{site.data.keyword.Bluemix}}, vous pouvez choisir que l'authentification multi-facteur (MFA) soit exigée pour chaque utilisateur de votre compte. Tous les utilisateurs ayant un IBMid utilisent une méthode d'authentification multi-facteur avec un code d'accès à usage unique à durée limitée (TOTP). Tout utilisateur ayant un autre type d'ID doit pouvoir utiliser séparément la méthode d'authentification externe, la méthode utilisant des questions de sécurité ou la méthode TOTP.  
+En tant qu'administrateur ou propriétaire de compte {{site.data.keyword.Bluemix}} pour le service de facturation, vous pouvez choisir que l'authentification multi-facteur (MFA) soit exigée pour chaque utilisateur du compte. Tous les utilisateurs ayant un IBMid utilisent une méthode d'authentification multi-facteur avec un code d'accès à usage unique à durée limitée (TOTP). Tout utilisateur ayant un autre type d'ID doit pouvoir utiliser séparément la méthode d'authentification externe, la méthode utilisant des questions de sécurité ou la méthode TOTP.  
 {:shortdesc}
 
 ## Avant de commencer
@@ -29,7 +29,7 @@ En tant que propriétaire de compte {{site.data.keyword.Bluemix}}, vous pouvez c
 
 Consultez les remarques suivantes avant d'activer l'authentification multi-facteur avec IBMid pour votre compte afin de savoir comment elle affecte tous les utilisateurs de votre compte :
 
-* Lorsque vous activez l'authentification multi-facteur (MFA) pour votre compte, tous les utilisateurs ajoutés à votre compte doivent se soumettre au processus d'authentification multi-facteur (MFA) lors de leur prochaine connexion.
+* Lorsque vous activez l'authentification multi-facteur (MFA) pour votre compte, les utilisateurs doivent se soumettre au processus d'authentification multi-facteur lors de la connexion.
 * Les clés d'API pour vos utilisateurs et les ID de service continuent de fonctionner après l'activation de l'authentification multi-facteur.
 * Si la connexion par interface de ligne de commande CF ou interface utilisateur dans Cloud Foundry est nécessaire, vous devez utiliser des clés d'API ou un code d'accès unique une fois que l'authentification multi-facteur est activée pour le compte.
 * L'authentification multi-facteur pour votre compte s'applique à la connexion d'un utilisateur mais ne s'applique pas aux appels d'API. Si un utilisateur dispose des droits lui permettant d'effectuer des appels d'API vers des ressources de votre compte, il peut effectuer cette même action sans procéder à l'authentification multi-facteur. Si l'utilisateur appartient à d'autres comptes, il peut effectuer des appels d'API vers des ressources de votre compte en utilisant une clé d'API d'un compte pour lequel l'authentification multi-facteur n'est pas requise.
@@ -45,11 +45,13 @@ Lorsque le paramètre de compte d'authentification multi-facteur est activé, to
 ## Activation de l'authentification multi-facteur pour tous les utilisateurs de votre compte
 {: #enabling}
 
-Pour activer l'authentification multi-facteur (MFA), vous devez être propriétaire du compte. Cette activation n'a pas d'incidence sur les utilisateurs déjà connectés, vu que l'application de l'authentification multi-facteur sur le compte ne prend effet que lors des nouvelles connexions. Pensez à notifier vos utilisateurs de compte que l'authentification multi-facteur est activée et indiquez-leur les conséquences de cette authentification lors de la prochaine connexion.
+Pour activer l'authentification multi-facteur (MFA), vous devez être administrateur ou propriétaire du compte pour le service de gestion de compte de facturation. Cette activation n'a pas d'incidence sur les utilisateurs déjà connectés, vu que l'application de l'authentification multi-facteur sur le compte ne prend effet que lors des nouvelles connexions. Pensez à notifier vos utilisateurs de compte que l'authentification multi-facteur est activée et indiquez-leur les conséquences de cette authentification lors de la prochaine connexion.
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Paramètres**.
-2. Sélectionnez **Authentification multi-facteur**.
-3. Dans la fenêtre de confirmation, cliquez sur **Oui, je suis sûr**.
+2. Sélectionnez **Mettre à jour** pour le paramètre Connexion au compte.
+3. Sélectionnez **Aucun(e)** ou **Utilisateurs non fédérés uniquement** en fonction du type d'authentification devant être exigé.
+4. si vous avez sélectionné l'option Utilisateurs non fédérés uniquement, sélectionnez la case à cocher pour confirmer que vous avez bien compris les conséquences liées à l'authentification multi-facteur pour les utilisateurs de votre compte. 
+5. Cliquez sur **Sauvegarder**.
 
 ## Configuration de votre authentification TOTP
 {: #setupapp}
@@ -77,8 +79,10 @@ Si un message d'erreur s'affiche vous indiquant que vous avez déjà configuré 
 ## Désactivation de l'authentification multi-facteur requise pour tous les utilisateurs de votre compte
 {: #disablemfa}
 
-Pour désactiver l'authentification multi-facteur (MFA), vous devez être propriétaire du compte. La désactivation de l'authentification multi-facteur n'a aucune incidence sur les utilisateurs déjà connectés, car cette action ne prend effet que lors des nouvelles connexions.
+Pour désactiver l'authentification multi-facteur, vous devez être administrateur ou propriétaire du compte pour le service de facturation de gestion de compte. La désactivation de l'authentification multi-facteur n'a aucune incidence sur les utilisateurs déjà connectés. Cette action prend effet lors de toute nouvelle connexion.
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Paramètres**.
-2. Sélectionnez **Standard**.
-3. Dans la fenêtre de confirmation, cliquez sur **Oui, je suis sûr**.
+2. Sélectionnez **Editer** pour le paramètre Connexion au compte.
+3. Sélectionnez **Aucun(e)**.
+4. Cliquez sur **Sauvegarder**.
+

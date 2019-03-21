@@ -21,7 +21,7 @@ subcollection: iam
 # Inicio de sesión con un ID federado
 {: #federated_id}
 
-Como usuario federado que utiliza un ID de inicio de sesión único corporativo o de empresa, puede iniciar una sesión en {{site.data.keyword.Bluemix}} desde la interfaz de línea de mandatos (CLI) mediante un código de acceso de un solo uso o una API clave.
+Como usuario federado que utiliza un ID de inicio de sesión único corporativo o de empresa, puede iniciar una sesión en {{site.data.keyword.Bluemix}} desde la interfaz de línea de mandatos (CLI) mediante un código de acceso de un solo uso o una clave de API.
 {: shortdesc}
 
 ## Utilización de un código de acceso de un solo uso

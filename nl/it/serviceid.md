@@ -35,9 +35,9 @@ Le politiche di accesso associate a un ID servizio abilitano delle specifiche az
 Per creare un ID servizio, completa la seguente procedura:
 
 1. Vai a **Gestisci** &gt; **Accesso (IAM)** e seleziona **ID servizio**.
-2. Fai clic su **Create**.
+2. Fai clic su **Crea**.
 3. Attieniti alla procedura per creare un nome e una descrizione per il tuo ID servizio.
-4. Fai clic su **Create**.
+4. Fai clic su **Crea**.
 
 Quindi, passa con il mouse sulla riga di un ID servizio per utilizzare il menu **Azioni** ![Icona Elenco di azioni](../icons/action-menu-icon.svg) e gestire il tuo ID servizio. Puoi iniziare assegnando una politica e creando le chiavi API. Per ulteriori informazioni sulla gestione delle chiavi API, consulta [Gestione delle chiavi API di un ID servizio](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys).
 
