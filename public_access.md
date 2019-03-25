@@ -22,7 +22,7 @@ subcollection: iam
 # Enabling public access to resources
 {: #public}
 
-Public access to resources is the ability for all users and service IDs to be able to access a specific resource in your account. This means that a user or service ID does not need to authenticate with {{site.data.keyword.Bluemix}} to access information in an {{site.data.keyword.cos_full_notm}} bucket, for example. Only certain services support the ability to provide public access to specific resource types for the service. Therefore, you are limited to creating policies only for services that support this feature.
+Public access to resources enables all users and service IDs to be able to access a specific resource in your account. This means that a user or service ID does not need to authenticate with {{site.data.keyword.Bluemix}} to access information in an {{site.data.keyword.cos_full_notm}} bucket, for example. Only certain services support the ability to provide public access to specific resource types for the service. Therefore, you are limited to creating policies only for services that support this feature.
 {:shortdesc}
 
 To enable public access for resources, you must use the **Public Access** access group that is provided for you in your account. This access group includes all users and service IDs by default. You can't delete the group or change the membership of the group, but you can add, edit, and delete access policies for the group.
