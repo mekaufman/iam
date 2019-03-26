@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-19"
 
 keywords: frequently asked question, faq
 
@@ -123,7 +123,9 @@ Cloud Foundry サービスの場合、Cloud Foundry リソースへのアクセ�
 {: faq}
 
 1. **「管理」** &gt; **「アクセス (IAM)」**に移動して、**「設定」**を選択します。
-2. **「多要素認証」**を選択し、**「はい、そうします」**をクリックします。 詳しくは、[アカウントのユーザーに MFA が必要](/docs/iam?topic=iam-enablemfa#enablemfa)を参照してください。
+2. 「アカウント・ログイン」セクションで**「更新」**を選択して、すべてのユーザーに対して、または非フェデレーテッド・ユーザーだけに対して MFA を選択します。
+
+詳しくは、[アカウントのユーザーに MFA が必要](/docs/iam?topic=iam-enablemfa#enablemfa)を参照してください。
 
 ## サービスの役割とプラットフォームの役割の違いは何ですか?
 {: #service-platform-roles}
@@ -154,8 +156,6 @@ Cloud Foundry サービスの場合、Cloud Foundry リソースへのアクセ�
 * クラシック・インフラストラクチャーのスーパーユーザー許可セット
 * すべての組織の Cloud Foundry 管理者
 
-前述のアクセス権限が割り当てられていても、アカウント管理者はアカウントの MFA 設定を変更できません。 この設定を変更できるのはアカウント所有者のみです。
-{: note}
 
 ## アカウント管理者とアカウント所有者の違いは何ですか?
 {: #owner-administrator}
@@ -167,9 +167,6 @@ Cloud Foundry サービスの場合、Cloud Foundry リソースへのアクセ�
 * すべてのアカウント管理サービスに対する管理者が設定された IAM ポリシー。これにより、ユーザーは、ユーザーの招待、アクセス・グループの管理、サービス ID の管理、プライベート・カタログ・オファリングの管理、請求および使用量の追跡などのタスクを実行できます。
 * クラシック・インフラストラクチャーのスーパーユーザー許可セット
 * すべての組織の Cloud Foundry 管理者
-
-前述のアクセス権限が割り当てられていても、アカウント管理者はアカウントの MFA 設定を変更できません。 この設定を変更できるのはアカウント所有者のみです。
-{: note}
 
 ## インフラストラクチャーおよびデバイスへのアクセス権限を割り当てるには、どのようにすればいいですか?
 {: #infrastructure-devices}
@@ -205,4 +202,4 @@ Cloud Foundry サービスの場合、Cloud Foundry リソースへのアクセ�
 {: #appid}
 {: faq}
 
-{{site.data.keyword.cloud_notm}} サービスおよびリソースへのアクセス権限を管理するために、IAM が使用されます。 {{site.data.keyword.appid_full_notm}} を使用すると共に、Web アプリおよびモバイル・アプリに認証を追加することによって、クラウド・セキュリティーを一歩前進させることができます。 数行のコードだけで、{{site.data.keyword.cloud_notm}} 上で実行されるクラウド・ネイティブなアプリおよびサービスを簡単に保護できます。 さあ始めましょう。 [資料を参照してください](/docs/services/appid?topic=appid-gettingstarted#gettingstarted)。
+{{site.data.keyword.cloud_notm}} サービスおよびリソースへのアクセス権限を管理するために、IAM が使用されます。 {{site.data.keyword.appid_full_notm}} を使用すると共に、Web アプリおよびモバイル・アプリに認証を追加することによって、クラウド・セキュリティーを一歩前進させることができます。 数行のコードだけで、{{site.data.keyword.cloud_notm}} 上で実行されるクラウド・ネイティブなアプリおよびサービスを簡単に保護できます。 さあ始めましょう。 [資料を参照してください](/docs/services/appid?topic=appid-getting-started#getting-started)。 
