@@ -4,7 +4,7 @@ copyright:
 
   years: 2015，2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-03-27"
 
 keywords: federated ID, enterprise SSO, single sign-on ID, API key login, one-time passcode login
 
@@ -99,6 +99,9 @@ The required API key is the {{site.data.keyword.Bluemix_notm}} API key that's us
       ```
 
     * Set an environment variable. Additionally, you can also set an environment variable on your system. For example, IBMCLOUD_API_KEY=api_key_string, where `api_key_string` is the custom value of the API key. After the environment variable is set, you can simply specify `ibmcloud login` from the CLI.
+
+   For Windows 10 PowerShell, you want to use `'@key_file_name'` with single quotes around the key file name.
+   {: tip}
 
   To log in by using the Cloud Foundry CLI, specify `apikey` as the user name and the API key string as the password:
 
