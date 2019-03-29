@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-02-12"
+lastupdated: "2019-03-21"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -85,6 +85,9 @@ subcollection: iam
 {: #platformroles}
 
 利用平台管理角色，可以指派各種層次的許可權給使用者，以便在帳戶內以及對服務執行平台動作。例如，針對型錄資源指派的平台管理角色可讓使用者完成建立、刪除、編輯及檢視服務實例等動作。而且，針對帳戶管理服務指派的平台管理角色可讓使用者完成邀請及移除使用者、使用資源群組，以及檢視計費資訊等動作。如需帳戶管理服務的相關資訊，請參閱[指派帳戶管理服務的存取權](/docs/iam?topic=iam-account-services#account-services)。
+
+建立原則時請選取適用的所有角色。每個角色容許完成不同的動作，且不會繼承較低角色的動作。
+{: tip}
 
 下表提供使用者可在型錄資源、資源群組以及帳戶管理服務等的環境定義內執行的一部分平台管理動作範例。請參閱每個型錄供應項目的文件，以瞭解如何將角色套用至所使用服務之環境定義內的使用者。
 
