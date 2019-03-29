@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-19"
 
 keywords: frequently asked question, faq
 
@@ -123,7 +123,9 @@ Cloud Foundry 서비스의 경우 Cloud Foundry 리소스에 대한 액세스를
 {: faq}
 
 1. **관리** &gt; **액세스(IAM)**로 이동한 후 **설정**을 선택하십시오.
-2. **다단계 인증**을 선택한 후에 **예, 확실합니다.**를 클릭하십시오. 자세한 정보는 [계정에서 사용자에 대한 MFA 요구](/docs/iam?topic=iam-enablemfa#enablemfa)를 참조하십시오.
+2. 계정 로그인 섹션에서 **업데이트**를 선택하여 모든 사용자 또는 비연방 사용자에 대한 MFA를 선택하십시오. 
+
+자세한 정보는 [계정에서 사용자에 대한 MFA 요구](/docs/iam?topic=iam-enablemfa#enablemfa)를 참조하십시오.
 
 ## 서비스 및 플랫폼 역할의 차이점은 무엇입니까?
 {: #service-platform-roles}
@@ -154,8 +156,6 @@ Cloud Foundry 서비스의 경우 Cloud Foundry 리소스에 대한 액세스를
 * 클래식 인프라에 대한 수퍼유저 사용자 권한 세트
 * 모든 조직에 대한 Cloud Foundry 관리자
 
-이전에 설명된 액세스가 지정되었음에도 계정 관리자는 계정에 대한 MFA 설정을 변경할 수 없습니다. 계정 소유자만 이 설정을 변경할 수 있습니다.
-{: note}
 
 ## 계정 관리자와 계정 소유자 사이의 차이는 무엇입니까?
 {: #owner-administrator}
@@ -167,9 +167,6 @@ Cloud Foundry 서비스의 경우 Cloud Foundry 리소스에 대한 액세스를
 * 모든 계정 관리 서비스의 관리자(이를 통해 사용자는 사용자 초대, 액세스 그룹 관리, 서비스 ID 관리, 개인용 카탈로그 오퍼링 관리, 청구 및 사용량 추적과 같은 태스크를 완료할 수 있음)를 포함한 IAM 정책.
 * 클래식 인프라에 대한 수퍼유저 사용자 권한 세트
 * 모든 조직에 대한 Cloud Foundry 관리자
-
-이전에 설명된 액세스가 지정되었음에도 계정 관리자는 계정에 대한 MFA 설정을 변경할 수 없습니다. 계정 소유자만 이 설정을 변경할 수 있습니다.
-{: note}
 
 ## 어떻게 인프라 및 디바이스에 대한 액세스를 지정합니까?
 {: #infrastructure-devices}
@@ -205,4 +202,4 @@ Cloud Foundry 서비스의 경우 Cloud Foundry 리소스에 대한 액세스를
 {: #appid}
 {: faq}
 
-IAM은 {{site.data.keyword.cloud_notm}} 서비스 및 리소스에 대한 액세스를 관리하는 데 사용됩니다. {{site.data.keyword.appid_full_notm}}의 경우 인증을 웹 및 모바일 앱에 추가하여 클라우드 보안을 개선할 수 있습니다. 몇 개의 코드 행으로 {{site.data.keyword.cloud_notm}}에서 실행되는 클라우드 기본 앱과 서비스를 쉽게 보안할 수 있습니다. 시작할 준비가 되셨습니까? [문서를 확인](/docs/services/appid?topic=appid-gettingstarted#gettingstarted)하십시오.
+IAM은 {{site.data.keyword.cloud_notm}} 서비스 및 리소스에 대한 액세스를 관리하는 데 사용됩니다. {{site.data.keyword.appid_full_notm}}의 경우 인증을 웹 및 모바일 앱에 추가하여 클라우드 보안을 개선할 수 있습니다. 몇 개의 코드 행으로 {{site.data.keyword.cloud_notm}}에서 실행되는 클라우드 기본 앱과 서비스를 쉽게 보안할 수 있습니다. 시작할 준비가 되셨습니까? [문서를 확인](/docs/services/appid?topic=appid-getting-started#getting-started)하십시오. 

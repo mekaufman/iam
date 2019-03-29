@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-19"
 
 keywords: frequently asked question, faq
 
@@ -123,7 +123,9 @@ Identity and Access Management (IAM) 可讓您針對平台服務安全地鑑別�
 {: faq}
 
 1. 移至**管理** &gt; **存取 (IAM)**，然後選取**設定**。
-2. 選擇**多因子鑑別**，然後按一下**是，我確定**。如需相關資訊，請參閱[針對帳戶中的使用者要求 MFA](/docs/iam?topic=iam-enablemfa#enablemfa)。
+2. 從帳戶登入區段，選取**更新**以為所有使用者選取 MFA，或是只為非聯合使用者選取 MFA。
+
+如需相關資訊，請參閱[針對帳戶中的使用者要求 MFA](/docs/iam?topic=iam-enablemfa#enablemfa)。
 
 ## 服務角色與平台角色之間有何差異？
 {: #service-platform-roles}
@@ -154,8 +156,6 @@ Identity and Access Management (IAM) 可讓您針對平台服務安全地鑑別�
 * 標準基礎架構的「超級使用者」許可權集
 * 所有組織的 Cloud Foundry 管理員
 
-即使已指派先前說明的存取權，帳戶管理者還是無法變更帳戶的 MFA 設定。只有帳戶擁有者才能變更此設定。
-{: note}
 
 ## 帳戶管理者與帳戶擁有者之間的差異為何？
 {: #owner-administrator}
@@ -167,9 +167,6 @@ Identity and Access Management (IAM) 可讓您針對平台服務安全地鑑別�
 * 具有「所有」帳戶管理服務的「管理者」角色的 IAM 原則，這可讓使用者完成邀請使用者、管理存取群組、管理服務 ID、管理專用型錄供應項目以及追蹤計費與用量這類作業。
 * 標準基礎架構的「超級使用者」許可權集
 * 所有組織的 Cloud Foundry 管理員
-
-即使已指派先前說明的存取權，帳戶管理者還是無法變更帳戶的 MFA 設定。只有帳戶擁有者才能變更此設定。
-{: note}
 
 ## 如何指派基礎架構及裝置的存取權？
 {: #infrastructure-devices}
@@ -205,4 +202,4 @@ Identity and Access Management (IAM) 可讓您針對平台服務安全地鑑別�
 {: #appid}
 {: faq}
 
-IAM 用來管理您 {{site.data.keyword.cloud_notm}} 服務及資源的存取權。使用 {{site.data.keyword.appid_full_notm}}，您可以將鑑別新增至 Web 及行動應用程式，進一步執行雲端安全。只要幾行程式碼，就可以輕鬆地保護 {{site.data.keyword.cloud_notm}} 上所執行的雲端原生應用程式及服務。準備好要開始了嗎？[請參閱文件](/docs/services/appid?topic=appid-gettingstarted#gettingstarted)。
+IAM 用來管理您 {{site.data.keyword.cloud_notm}} 服務及資源的存取權。使用 {{site.data.keyword.appid_full_notm}}，您可以將鑑別新增至 Web 及行動應用程式，進一步執行雲端安全。只要幾行程式碼，就可以輕鬆地保護 {{site.data.keyword.cloud_notm}} 上所執行的雲端原生應用程式及服務。準備好要開始了嗎？[請參閱文件](/docs/services/appid?topic=appid-getting-started#getting-started)。 
