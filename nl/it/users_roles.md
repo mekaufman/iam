@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-02-12"
+lastupdated: "2019-03-21"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -85,6 +85,9 @@ Potresti non vedere tutti i ruoli qui elencati come opzioni quando assegni le po
 {: #platformroles}
 
 Con i ruoli di gestione della piattaforma è possibile assegnare agli utenti diversi livelli di autorizzazione per l'esecuzione di azioni della piattaforma all'interno dell'account o su un servizio. Ad esempio, i ruoli di gestione della piattaforma assegnati alle risorse di catalogo, consentono agli utenti di completare azioni come la creazione, l'eliminazione, la modifica e la visualizzazione delle istanze del servizio. Mentre i ruoli di gestione della piattaforma assegnati ai servizi di gestione dell'account consentono agli utenti di completare azioni come l'invito e la rimozione degli utenti, l'utilizzo dei gruppi di risorse e la visualizzazione delle informazioni di fatturazione. Per ulteriori informazioni sui servizi di gestione dell'account, vedi [Assegnazione dell'accesso ai servizi di gestione dell'account](/docs/iam?topic=iam-account-services#account-services).
+
+Seleziona tutti i ruoli da applicare durante la creazione di una politica. Ogni ruolo consente di completare azioni separate e non eredita le azioni dei ruoli minori.
+{: tip}
 
 Le seguenti tabelle forniscono esempi di alcune delle azioni di gestione della piattaforma che gli utenti possono effettuare nel contesto delle risorse del catalogo, dei gruppi di risorse e dei servizi di gestione dell'account. Consulta la documentazione di ogni offerta del catalogo per comprendere in che modo i ruoli vengano applicati agli utenti nel contesto del servizio utilizzato.
 

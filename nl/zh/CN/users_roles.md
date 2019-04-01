@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-02-12"
+lastupdated: "2019-03-21"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -86,6 +86,9 @@ subcollection: iam
 {: #platformroles}
 
 通过平台管理角色，可以为用户分配各种不同级别的许可权，以在帐户中和服务上执行平台操作。例如，为目录资源分配的平台管理角色使用户能够完成诸如创建、删除、编辑和查看服务实例之类的操作。此外，为帐户管理服务分配的平台管理角色使用户能够完成诸如邀请和除去用户、使用资源组以及查看计费信息之类的操作。有关帐户管理服务的更多信息，请参阅[分配对帐户管理服务的访问权](/docs/iam?topic=iam-account-services#account-services)。
+
+选择创建策略时应用的所有角色。每个角色允许完成不同的操作，并且不会继承较低角色的操作。
+{: tip}
 
 以下各表提供了用户可以在目录资源、资源组以及帐户管理服务上下文中执行的一些平台管理操作示例。请参阅每个目录产品的文档，以了解这些角色如何在所使用的服务上下文中应用于用户。
 

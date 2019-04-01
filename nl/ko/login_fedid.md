@@ -4,7 +4,7 @@ copyright:
 
   years: 2015，2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-03-27"
 
 keywords: federated ID, enterprise SSO, single sign-on ID, API key login, one-time passcode login
 
@@ -99,6 +99,9 @@ ibmcloud login --apikey <api_key_string>
       ```
 
     * 환경 변수를 설정합니다. 사용자가 시스템에서 환경 변수를 설정할 수도 있습니다. 예를 들어, IBMCLOUD_API_KEY=api_key_string이며, 여기서 `api_key_string`은 API 키의 사용자 정의 값입니다. 환경 변수가 설정된 후에는 CLI에서 `ibmcloud login`만 지정하면 됩니다.
+
+   Windows 10 PowerShell의 경우, 키 파일 이름 중심으로 작은따옴표가 있는 `'@key_file_name'`을 사용하고자 합니다.
+   {: tip}
 
   Cloud Foundry CLI를 사용하여 로그인하려면 `apikey`를 사용자 이름으로, API 키 문자열을 비밀번호로 지정하십시오.
 

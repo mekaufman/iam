@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-02-12"
+lastupdated: "2019-03-21"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -85,6 +85,9 @@ Möglicherweise werden nicht alle hier als Optionen aufgeführten Rollen angezei
 {: #platformroles}
 
 Mit Plattformmanagementrollen können Benutzern unterschiedliche Berechtigungsstufen für die Durchführung von Plattformaktionen innerhalb des Kontos und für einen Service zugewiesen werden. Zum Beispiel ermöglichen die Plattformmanagementrollen, die für Katalogressourcen zugewiesen sind, dem Benutzer solche Aktionen wie das Erstellen, Löschen, Bearbeiten und Anzeigen von Serviceinstanzen. Zudem ermöglichen die Plattformmanagementrollen, die für Kontoverwaltungsservices zugewiesen sind, dem Benutzer Aktionen wie das Einladen und Entfernen von Benutzern, das Arbeiten mit Ressourcengruppen und das Anzeigen von Abrechnungsinformationen. Weitere Informationen zu Kontoverwaltungsservices finden Sie in [Zugriff auf Kontoverwaltungsservices zuweisen](/docs/iam?topic=iam-account-services#account-services).
+
+Wählen Sie alle gültigen Rollen beim Erstellen einer Richtlinie aus. Jede Rolle ermöglicht die Ausführung separater Aktionen und übernimmt nicht die Aktionen untergeordneter Rollen.
+{: tip}
 
 Die folgenden Tabellen enthalten Beispiele für einige der Plattformmanagementaktionen, die Benutzer im Kontext von Katalogressourcen, Ressourcengruppen und Kontoverwaltungsservices durchführen können. In der Dokumentation zu den verschiedenen Katalogen finden Sie Informationen dazu, wie die Rollen im Kontext des aktuell verwendeten Service auf den Benutzer angewendet werden.
 

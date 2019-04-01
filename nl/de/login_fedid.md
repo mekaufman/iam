@@ -4,7 +4,7 @@ copyright:
 
   years: 2015，2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-03-27"
 
 keywords: federated ID, enterprise SSO, single sign-on ID, API key login, one-time passcode login
 
@@ -99,6 +99,9 @@ Der erforderliche API-Schlüssel ist der {{site.data.keyword.Bluemix_notm}}-API-
       ```
 
     * Legen Sie eine Umgebungsvariable fest. Darüber hinaus können Sie auf Ihrem System auch eine Umgebungsvariable definieren. Beispiel: 'IBMCLOUD_API_KEY=api-schlüsselzeichenfolge', wobei `api-schlüsselzeichenfolge` der angepasste Wert des API-Schlüssels ist. Nachdem die Umgebungsvariable definiert worden ist, können Sie einfach `ibmcloud login` in der Befehlszeilenschnittstelle angeben.
+
+   Verwenden Sie für Windows 10 PowerShell `'@key_file_name'`, wobei der Schlüsseldateiname in einfache Anführungszeichen eingeschlossen ist.
+   {: tip}
 
   Um sich über die Cloud Foundry-Befehlszeilenschnittstelle anzumelden, geben Sie `apikey` als Benutzernamen und die API-Schlüsselzeichenfolge als Kennwort an:
 
