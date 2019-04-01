@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-02-12"
+lastupdated: "2019-03-21"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -22,7 +22,7 @@ subcollection: iam
 # Acceso de IAM
 {: #userroles}
 
-Todos los servicios que están organizados en un grupo de recursos en su cuenta se gestionan utilizando la Gestión de identidad y acceso de {{site.data.keyword.Bluemix_notm}} (IAM). A los propietarios de las cuentas se les asigna automáticamente el rol de administrador de la cuenta para Cloud IAM. Como administrador de la cuenta, puede asignar y gestionar el acceso para los usuarios, crear grupos de recursos, crear grupos de acceso, ver detalles de facturación y realizar un seguimiento del uso, y crear instancias de servicio. Puede proporcionar acceso a usuarios, a ID de servicio y a grupos de acceso mediante la creación de políticas que establezcan un destino para el sujeto de la política de acceso y un rol que defina el tipo de acceso permitido.
+Todos los servicios que están organizados en un grupo de recursos en su cuenta se gestionan utilizando {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). A los propietarios de las cuentas se les asigna automáticamente el rol de administrador de la cuenta para Cloud IAM. Como administrador de la cuenta, puede asignar y gestionar el acceso para los usuarios, crear grupos de recursos, crear grupos de acceso, ver detalles de facturación y realizar un seguimiento del uso, y crear instancias de servicio. Puede proporcionar acceso a usuarios, a ID de servicio y a grupos de acceso mediante la creación de políticas que establezcan un destino para el sujeto de la política de acceso y un rol que defina el tipo de acceso permitido.
 {: shortdesc}
 
 ## ¿Qué son las políticas de Cloud IAM y quien las puede asignar?
@@ -69,13 +69,13 @@ Para otorgar acceso completo a la cuenta a otro usuario con el fin de gestionar 
 ## Roles de Cloud IAM
 {: #iamusermanrol}
 
-Con Cloud IAM, puede gestionar y definir el acceso para usuarios y recursos en su cuenta. Se pueden asignar dos tipos de roles: roles de gestión de plataforma y roles de acceso de servicio.
+Con Cloud IAM, puede gestionar y definir el acceso para usuarios y recursos en su cuenta. Se pueden asignar dos tipos de roles: roles de gestión de plataforma y roles de acceso al servicio.
 
 <dl>
 <dt>Roles de gestión de plataforma</dt>
 <dd>Los roles de gestión de plataforma cubren un rango de acciones, que incluyen la capacidad de crear y suprimir instancias, gestionar alias, enlaces y credenciales y gestionar el acceso. Los roles de plataforma son: administrador, editor, operador y visor. Los roles de gestión de plataforma también se aplican a los [servicios de gestión de cuentas](/docs/iam?topic=iam-account-services#account-services) que permiten a los usuarios invitar a usuarios, gestionar ID de servicio, acceder a políticas, catalogar entradas y realizar un seguimiento de la facturación y del uso, en función de su rol asignado en un servicio de gestión de cuentas.</dd>
-<dt>Roles de acceso de servicio</dt>
-<dd>Los roles de acceso de servicio definen la capacidad de un usuario o servicio de realizar acciones en una instancia de servicio, como acceder a la consola o realizar llamadas de API. Los roles de acceso de servicio son el gestor, escritor y lector. </dd>
+<dt>Roles de acceso al servicio</dt>
+<dd>Los roles de acceso al servicio definen la capacidad de un usuario o servicio de realizar acciones en una instancia de servicio, como acceder a la consola o realizar llamadas de API. Los roles de acceso al servicio son el gestor, escritor y lector. </dd>
 </dl>
 
 Puede que no vea todos los roles mostrados en esta lista como opciones cuando asigna políticas en la IU porque solo se muestran los roles disponibles para el servicio que ha seleccionado. Para obtener información específica sobre qué roles están habilitados y qué acciones permite cada rol de acceso para cada servicio, consulte la documentación para dicho servicio.
@@ -85,6 +85,9 @@ Puede que no vea todos los roles mostrados en esta lista como opciones cuando as
 {: #platformroles}
 
 Con roles de gestión de plataforma, se puede asignar a los usuarios distintos niveles de permiso para realizar acciones de plataforma en la cuenta y en un servicio. Por ejemplo, los roles de gestión de plataforma que se asignan para los recursos de catálogo permiten a los usuarios realizar acciones como crear, suprimir, editar y ver instancias de servicio. Además, los roles de gestión de plataforma que se asignan para los servicios de gestión de cuentas permiten a los usuarios realizar acciones tales como invitar y eliminar usuarios, trabajar con grupos de recursos y ver información de facturación. Para obtener más información sobre los servicios de gestión de cuentas, consulte [Asignación de acceso a los servicios de gestión de cuentas](/docs/iam?topic=iam-account-services#account-services).
+
+Seleccione todos los roles que se aplican al crear una política. Cada rol permite completar acciones separadas y no hereda las acciones de los roles inferiores. 
+{: tip}
 
 En las siguientes tablas se proporcionan ejemplos de algunas de acciones de gestión de plataforma que los usuarios pueden realizar dentro del contexto de recursos de catálogo, grupos de recursos y servicios de gestión de cuentas. Consulte la documentación de cada oferta del catálogo para saber cómo se aplican los roles a los usuarios en el contexto del servicio que está utilizando.
 
@@ -128,15 +131,15 @@ Algunos servicios pueden correlacionar acciones específicas con los roles de ge
 | Administrador | Realizar todas las acciones de plataforma basadas en el recurso al que se está asignando este rol, incluida la asignación de políticas de acceso a otros usuarios |<ul><li>Eliminar un clúster</li><li>Crear un clúster</li><li>Actualizar políticas de acceso de usuarios</li><li>Todas las acciones que puede realizar un visor, un editor, y un operador</li></ul>|
 {: caption="Tabla 4. Roles y acciones de gestión de plataforma de ejemplo para el servicio {{site.data.keyword.containershort_notm}}" caption-side="top"}
 
-### Roles de acceso de servicio
+### Roles de acceso al servicio
 {: #service_access_roles}
 
-Los roles de acceso de servicio permiten asignar a los usuarios diferentes niveles de permiso para llamar a la API del servicio y acceder a la IU para el servicio. La tabla siguiente proporciona acciones de ejemplo que se pueden realizar en los roles asignados en función del uso del servicio {{site.data.keyword.objectstorageshort}}.
+Los roles de acceso al servicio permiten asignar a los usuarios diferentes niveles de permiso para llamar a la API del servicio y acceder a la IU para el servicio. La tabla siguiente proporciona acciones de ejemplo que se pueden realizar en los roles asignados en función del uso del servicio {{site.data.keyword.objectstorageshort}}.
 
 Las acciones que se pueden llevar a cabo en cada rol asignado varían en función de servicio seleccionado para la política. No todos los servicios utilizan estos tipos de roles. Consulte la documentación del servicio para obtener más detalles.
 {: note}
 
-| Rol de acceso a servicio | Acciones | Acciones de ejemplo para el servicio {{site.data.keyword.objectstorageshort}} |
+| Rol de acceso al servicio | Acciones | Acciones de ejemplo para el servicio {{site.data.keyword.objectstorageshort}} |
 |:-----------------|:-----------------|:-----------------|
 |  Lector | Realizar acciones de solo lectura dentro de un servicio, como la visualización de recursos específicos del servicio | Listar y descargar objetos |
 | Escritor | Permisos que van más allá del rol de lector, incluida la creación y la edición de recursos específicos del servicio | Crear y destruir grupos y objetos |
