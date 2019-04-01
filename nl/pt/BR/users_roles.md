@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-02-12"
+lastupdated: "2019-03-21"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -105,6 +105,9 @@ da plataforma que são designadas para os recursos do catálogo permitem que os 
 excluir, editar e visualizar instâncias de serviço. Além disso, as funções de gerenciamento da plataforma que são
 designadas para os serviços de gerenciamento de conta permitem que os usuários concluam ações como, convidar e remover
 usuários, trabalhar com grupos de recursos e visualizar as informações de faturamento. Para obter mais informações sobre os serviços de gerenciamento de conta, consulte [Designando acesso a serviços de gerenciamento de conta](/docs/iam?topic=iam-account-services#account-services).
+
+Selecione todas as funções que se aplicam ao criar uma política. Cada função permite que ações separadas sejam concluídas e não herdam as ações das funções menores.
+{: tip}
 
 As tabelas a seguir fornecem exemplos para algumas das ações de gerenciamento de plataforma que os usuários podem executar dentro do contexto de recursos de catálogo, grupos de recursos e serviços de gerenciamento de conta. Consulte a documentação para cada oferta de catálogo para entender como as funções se aplicam aos usuários dentro do contexto do serviço que está sendo usado.
 

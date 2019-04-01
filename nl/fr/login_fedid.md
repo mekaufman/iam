@@ -4,7 +4,7 @@ copyright:
 
   years: 2015，2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-03-27"
 
 keywords: federated ID, enterprise SSO, single sign-on ID, API key login, one-time passcode login
 
@@ -99,6 +99,9 @@ La clé d'API requise est la clé d'API {{site.data.keyword.Bluemix_notm}} utili
       ```
 
     * Configurez une variable d'environnement. Vous pouvez également définir une variable d'environnement sur votre système. Par exemple, IBMCLOUD_API_KEY=api_key_string, où `api_key_string` est la valeur personnalisée de la clé d'API. Une fois la variable d'environnement définie, il vous suffit de spécifier `ibmcloud login` depuis l'interface de ligne de commande.
+
+   Pour Windows 10 PowerShell, vous devez utiliser `'@key_file_name'` avec des apostrophes autour du nom du fichier de clés.
+   {: tip}
 
   Pour vous connecter à l'aide de l'interface de ligne de commande de Cloud Foundry, spécifiez `apikey` comme nom d'utilisateur et la chaîne de clé d'API comme mot de passe :
 

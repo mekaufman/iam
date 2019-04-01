@@ -39,12 +39,13 @@ Gerenciando a identidade e o acesso
         user_login.md
 
     {: .topicgroup}
-    Gerenciando o acesso
+    Gerenciando acesso
         mngiam.md
         account_management.md
         mngcf.md
         mnginfra.md
         groups.md
+        public_access.md
         accessgroup_rules.md
         userlist.md
 
