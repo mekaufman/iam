@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-04-02"
 
 keywords: Cloud Foundry roles, Cloud Foundry access, auditor, manager, developer, billing manager
 
@@ -25,14 +25,21 @@ subcollection: iam
 Currently, not all services can be managed by using Cloud IAM. You can continue to use Cloud Foundry roles for access to these service instances. Users are added to the org and space to which the instance belongs with a Cloud Foundry role assigned.
 {:shortdesc}
 
+The following graphic outlines how Cloud Foundry orgs, spaces, and roles relate within an account. An account can have many users, orgs, and spaces. Each user can be assigned to as many orgs and spaces as necessary, and when they are assigned to an org and space, you can set the level of access to work within each by assigning a Cloud Foundry role.
+
 
 ![Access by using Cloud Foundry orgs and spaces in an account](images/cf-diagram.svg "How access in an account works by using Cloud Foundry orgs, spaces, and roles")
+
 
 
 ## Cloud Foundry roles
 {: #cfroles}
 
 Cloud Foundry roles grant access to organizations and spaces within the account. Cloud Foundry roles do not enable user permissions for completing actions within the context of a service across the account.
+
+Cloud Foundry access is assigned by adding a user to an org and space, and then assigning an org role and space role. Depending on the type of role that is assigned, that user can complete specific actions for service instances that are added to a particular space.
+
+![Cloud Foundry access](images/CF.svg "Assigning a user access to a Cloud Foundry org and space")
 
 The following roles can be assigned at the organization level:
 

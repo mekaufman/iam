@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-03-21"
+lastupdated: "2019-04-02"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -28,7 +28,13 @@ All services that are organized in a resource group in your account are managed 
 ## What are Cloud IAM policies and who can assign them?
 {: #iamusermanpol}
 
-A policy grants a subject one or multiple roles to a set of resources so that specific actions can be taken within the context of the specified target resources. You can assign and manage policies if you have the proper role. The following table shows policy management tasks and the role that is required for each.
+A policy grants a subject one or multiple roles to a set of resources so that specific actions can be taken within the context of the specified target resources.
+
+The following graphic helps to explain how the IAM policy is created. Policies are always created by specifying the subject first. The subject is a specific user, service ID, or an access group. Next, the target of the policy is selected which is what you are allowing the user to access, for example: all services in a resource group, all IAM-enabled services in the account, account management services, or a particular service instance. Finally, you complete your access policy by selecting from the available roles. These roles define exactly what actions a user can complete. More configuration options might be available, depending on the service you select.
+
+![Creating IAM policies](images/IAM.svg "How IAM access policies are created by using a subject, target, and role")
+
+You can assign and manage policies if you have the proper role. The following table shows policy management tasks and the role that is required for each.
 
 | Action | Required Role |
 |----------|---------|
@@ -37,17 +43,6 @@ A policy grants a subject one or multiple roles to a set of resources so that sp
 | Create a policy on a service instance | Account owner, administrator on all Identity and Access enabled services, administrator on the service in the account, administrator on all services in the relevant resource group, or administrator on the service instance |
 {: caption="Table 1. Users allowed to create access policies" caption-side="top"}
 
-When you assign a policy, you start with the subject. After you select the subject of the policy, you can choose from setting the policy for a resource group, an individual resource, or an account management service.
-
-Then, depending on your initial selection, you can select from the options:
-
-  * A service within a resource group
-  * All resources in a resource group
-  * All instances or a single instance for the selected resource
-  * All IAM-enabled services in the account
-  * An account management service
-
-More configuration options might be available, depending on the service you select. Finally, you select the roles to assign.
 
 ## Common access policy types
 {: #policytypes}
@@ -86,7 +81,7 @@ You might not see all of the roles that are listed here as options when you assi
 
 With platform management roles, users can be assigned varying levels of permission for performing platform actions within the account and on a service. For example, platform management roles that are assigned for catalog resources enable users to complete actions such as creating, deleting, editing, and viewing service instances. And, the platform management roles that are assigned for account management services enable users to complete actions such as inviting and removing users, working with resource groups, and viewing billing information. For more information about the account management services, see [Assigning access to account management services](/docs/iam?topic=iam-account-services#account-services).
 
-Select all roles that apply when creating a policy. Each role allows separate actions to be completed and doesn't inherit the actions of the lesser roles. 
+Select all roles that apply when creating a policy. Each role allows separate actions to be completed and doesn't inherit the actions of the lesser roles.
 {: tip}
 
 The following tables provide examples for some of the platform management actions that users can take within the context of catalog resources, resource groups, and account management services. See the documentation for each catalog offering to understand how the roles apply to users within the context of the service that is being used.
