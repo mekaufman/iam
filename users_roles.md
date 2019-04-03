@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-04-02"
+lastupdated: "2019-04-03"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -58,7 +58,7 @@ You can provide fine-grained access for users, service IDs, or access groups by 
 * Resources in an individual instance
 * A single resource type within an instance, for example, a bucket in an {{site.data.keyword.objectstorageshort}} instance
 
-To grant another user full access to the account for the purposes of managing user access and managing all account resources, you must assign two policies. One policy that gives the user access to all resources in the account by selecting **All Identity and Access enabled services** with the **Administrator** role assigned. And, one policy that gives the user access to all account management services in the account by selecting **All account management services** with the **Administrator** role assigned.
+To grant another user full access to the account for the purposes of managing user access and managing all account resources, you must assign two policies. One policy that gives the user access to all resources in the account by selecting **All Identity and Access enabled services** with the **Administrator** and **Manager** roles assigned. And, one policy that gives the user access to all account management services in the account by selecting **All account management services** with the **Administrator** role assigned.
 {: tip}
 
 ## Cloud IAM roles
