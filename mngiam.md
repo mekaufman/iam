@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-04-03"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -51,7 +51,7 @@ You can assign access to resource by using two types of policies:
 * Access to resources within a resource group including the option for just one or all
 * Access to resources in the account including the option for just one type or all types
 
-If you want to enable a user full administrator access to complete [account management](/docs/iam?topic=iam-account-services#account-services) tasks such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must create two policies: one on **All Identity and Access enabled services** with the role administrator and one on **All Account Management Services** with the role administrator.
+If you want to enable a user full administrator access to all [account management](/docs/iam?topic=iam-account-services#account-services) tasks such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must create two policies: one on **All Identity and Access enabled services** with the roles Administrator and Manager and one on **All Account Management Services** with the role Administrator.
 {: tip}
 
 ### Access to resources within a resource group
