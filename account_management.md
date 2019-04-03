@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-02-21"
+lastupdated: "2019-04-03"
 
 keywords: account management, access, access policy, account administrator
 
@@ -35,7 +35,7 @@ To assign access to one or all account management services, complete the followi
 4. Select **All Account Management Services** or select a specific account management service.
 5. Select any combination of roles to assign the wanted access.
 
-To grant another user full access to the account for the purposes of managing user access and all account resources, you must assign two policies. One policy that gives the user access to all resources in the account by selecting **All Identity and Access enabled services** with the **Administrator** role assigned. And, one policy that gives the user access to all account management services in the account by selecting **All account management services** with the **Administrator** role assigned.
+To grant another user full access to the account for the purposes of managing user access and all account resources, you must assign two policies. One policy that gives the user access to all resources in the account by selecting **All Identity and Access enabled services** with the **Administrator** and **Manager** roles assigned. And, one policy that gives the user access to all account management services in the account by selecting **All account management services** with the **Administrator** role assigned.
 {: tip}
 
 ## Action to role mappings for account management services
