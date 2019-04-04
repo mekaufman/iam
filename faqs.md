@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-03-19"
+lastupdated: "2019-04-04"
 
 keywords: frequently asked question, faq
 
@@ -95,11 +95,11 @@ So, minimally the user must have the following access:
 
 For IAM-enabled services, you must have Administrator role on the service or resource that you want to assign users access to. If you want to assign access to all services or resources in the account, you need a policy on all Identity and Access enabled services with the Administrator role. And, to assign users access to account management services, you must be assigned the Administrator role on the specific service or all account management services.
 
-For Cloud Foundry services, you must have Cloud Foundry org and space manager roles to give access to Cloud Foundry resources.
+For Cloud Foundry services, you must have Cloud Foundry org and space manager roles to give access to Cloud Foundry resources.
 
 For classic infrastructure, you must have the Manage user classic infrastructure permission and the service and device category permissions for the resources that you want to give the user access to.
 
-## What's the difference between providing access to manage a resource group versus access to resources within a resource group?
+## What's the difference between access to manage a resource group and access to resources within a resource group?
 {: #providing-access}
 {: faq}
 
@@ -151,20 +151,8 @@ Access control and account resource organization are the major differences betwe
 
 To delegate the account administrator capabilities, assign the following access:
 
-* An IAM policy with Administrator role on All Identity and Access enabled services, which enables a user to create service instances and assign users access to all resources in the account.
+* An IAM policy with Administrator and Manager roles on All Identity and Access enabled services, which enables a user to create service instances and assign users access to all resources in the account.
 * An IAM policy with Administrator role on All account management services, which enables a user to complete tasks like inviting and removing users, managing access groups, managing service IDs, managing private catalog offerings, and track billing and usage.
-* The Super user permission set for classic infrastructure
-* Cloud Foundry manager for all orgs
-
-
-## What is the difference between an account administrator and account owner?
-{: #owner-administrator}
-{: faq}
-
-Account owners are automatically assigned as the account administrator for {{site.data.keyword.Bluemix_notm}} IAM. As the account administrator you can invite users, assign and manage access for users, create resource groups, require MFA for the all users in the account, and create service instances. If you want to make other users in your account an account administrator, assign them the following access:
-
-* An IAM policy with Administrator on All Identity and Access enabled services, which enables a user to create service instances and assign users access to all resources in the account.
-* An IAM policy with Administrator on All account management services, which enables a user to complete tasks like inviting users, managing access groups, managing service IDs, managing private catalog offerings, and track billing and usage.
 * The Super user permission set for classic infrastructure
 * Cloud Foundry manager for all orgs
 
@@ -202,4 +190,5 @@ Yes. You must assign a user access within one of the three access management sys
 {: #appid}
 {: faq}
 
-IAM is used to manage access to your {{site.data.keyword.cloud_notm}} services and resources. With {{site.data.keyword.appid_full_notm}}, you can take cloud security one step further by adding authentication into your web and mobile apps. With just a few lines of code, you can easily secure your Cloud-native apps and services that run on {{site.data.keyword.cloud_notm}}. Ready to get started? [Check out the docs](/docs/services/appid?topic=appid-getting-started#getting-started). 
+IAM is used to manage access to your {{site.data.keyword.cloud_notm}} services and resources. With {{site.data.keyword.appid_full_notm}}, you can take cloud security one step further by adding authentication into your web and mobile apps. With just a few lines of code, you can easily secure your Cloud-native apps and services that run on {{site.data.keyword.cloud_notm}}. Ready to get started? [Check out the docs](/docs/services/appid?topic=appid-getting-started#getting-started).
+
