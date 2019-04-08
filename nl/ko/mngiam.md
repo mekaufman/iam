@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-04-03"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -51,7 +51,7 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 * 하나 또는 모두에 대한 옵션을 포함하여 리소스 그룹 내 리소스에 액세스
 * 하나의 유형만 또는 모든 유형에 대한 옵션을 포함하여 계정의 리소스에 액세스
 
-사용자 초대 및 제거, 청구 및 사용량 보기, 서비스 ID 관리, 액세스 그룹 관리, 사용자 액세스 권한 관리, 모든 계정 서비스에 대한 액세스와 같은 [계정 관리](/docs/iam?topic=iam-account-services#account-services) 태스크를 완료할 수 있도록 사용자에게 전체 관리자 액세스를 허용하려면 두 개의 정책(관리자 역할을 통한 **모든 ID 및 액세스 사용 서비스**에 대한 정책과 관리자 역할을 통한 **모든 계정 관리 서비스**에 대한 정책)을 작성해야 합니다.
+사용자 초대 및 제거, 청구 및 사용량 보기, 서비스 ID 관리, 액세스 그룹 관리, 사용자 액세스 권한 관리, 모든 계정 서비스에 대한 액세스와 같은 모든 [계정 관리](/docs/iam?topic=iam-account-services#account-services) 태스크에 대한 전체 관리자 액세스를 허용하려면 두 개의 정책(관리자 역할을 통한 **모든 ID 및 액세스 사용 서비스**에 대한 정책과 관리자 역할을 통한 **모든 계정 관리 서비스**에 대한 정책)을 작성해야 합니다.
 {: tip}
 
 ### 리소스 그룹 내의 리소스에 액세스

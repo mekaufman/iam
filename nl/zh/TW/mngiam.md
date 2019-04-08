@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-04-03"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -51,7 +51,7 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 * 存取資源群組內的資源，您可以選擇僅一個或全部
 * 存取帳戶中的資源，您可以選擇僅一種類型或全部類型
 
-如果您要讓使用者具有完整管理者存取權，以完成[帳戶管理](/docs/iam?topic=iam-account-services#account-services) 作業（例如邀請及移除使用者、檢視計費及用量、管理服務 ID、管理存取群組、管理使用者存取，以及存取所有帳戶資源），您必須建立以下兩個原則：一個含有管理者角色的**所有已啟用身分及存取的服務**，以及一個含有管理者角色的**所有帳戶管理服務**。
+如果您要讓使用者具有對所有[帳戶管理](/docs/iam?topic=iam-account-services#account-services) 作業（例如邀請及移除使用者、檢視計費及用量、管理服務 ID、管理存取群組、管理使用者存取，以及存取所有帳戶資源）的完整管理者存取權，您必須建立以下兩個原則：一個是對**所有已啟用身分及存取的服務**的原則且具有「管理者」和「管理員」角色，以及一個對**所有帳戶管理服務**的原則且具有「管理者」角色。
 {: tip}
 
 ### 資源群組內的資源存取權

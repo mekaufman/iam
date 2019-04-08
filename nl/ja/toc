@@ -81,4 +81,5 @@ ID およびアクセス権限の管理
 
     {: .navgroup id="help"}
     faqs.md
+    troubleshoot-iam.md
     {: .navgroup-end}

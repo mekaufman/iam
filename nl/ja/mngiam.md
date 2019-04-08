@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-04-03"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -51,7 +51,7 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 * リソース・グループ内のリソースへのアクセス権限 (1 つのみまたはすべてのオプションを含む)
 * アカウント内のリソースへのアクセス権限 (1 つのタイプのみまたはすべてのタイプのオプションを含む)
 
-ユーザーの招待と削除、請求情報と使用状況の表示、サービス ID の管理、アクセス・グループの管理、ユーザー・アクセス権限の管理、およびすべてのアカウント・リソースへのアクセスなどの[アカウント管理](/docs/iam?topic=iam-account-services#account-services)タスクを実行するための完全な管理者権限をユーザーに付与する場合、管理者の役割を持つ**「すべての ID およびアクセス対応サービス」**のポリシーと、管理者の役割を持つ**「すべてのアカウント管理サービス」**のポリシーの 2 つのポリシーを作成する必要があります。
+ユーザーの招待と削除、請求情報と使用状況の表示、サービス ID の管理、アクセス・グループの管理、ユーザー・アクセスの管理、およびすべてのアカウント・リソースへのアクセスなどのすべての[アカウント管理](/docs/iam?topic=iam-account-services#account-services)タスクに対する完全な管理者権限をユーザーに付与する場合、管理者 (Administrator) 役割と管理者 (Manager) 役割を持つ**「すべての ID およびアクセス対応サービス」**のポリシーと、管理者役割を持つ**「すべてのアカウント管理サービス」**のポリシーの 2 つのポリシーを作成する必要があります。
 {: tip}
 
 ### リソース・グループ内のリソースへのアクセス権限
