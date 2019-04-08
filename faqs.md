@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-04"
+lastupdated: "2019-04-08"
 
 keywords: frequently asked question, faq
 
@@ -29,7 +29,7 @@ subcollection: iam
 {: #whatisiam}
 {: faq}
 
-Identity and Access Management (IAM) enables you to securely authenticate users for platform services and control access to resources across the {{site.data.keyword.cloud_notm}} platform. A set of IBM Cloud services are enabled to use Cloud IAM for access control. They are organized into resource groups within your account to enable giving users quick and easy access to more than one resource at a time. Cloud IAM access policies are used to assign users and service IDs access to the resources within your account. For more information, see [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam?topic=iam-iamoverview#iamoverview).
+Identity and Access Management (IAM) enables you to securely authenticate users for platform services and control access to resources across the {{site.data.keyword.cloud_notm}} platform. A set of IBM Cloud services is enabled to use Cloud IAM for access control. They are organized into resource groups within your account to enable giving users quick and easy access to more than one resource at a time. Cloud IAM access policies are used to assign users and service IDs access to the resources within your account. For more information, see [{{site.data.keyword.cloud_notm}} Identity and Access Management](/docs/iam?topic=iam-iamoverview#iamoverview).
 
 ## What is an IAM-enabled service?
 {: #iam-enabled}
@@ -37,8 +37,17 @@ Identity and Access Management (IAM) enables you to securely authenticate users 
 
 An IAM-enabled service must be in a resource group and access to the service is given by using IAM access policies. When you create an IAM-enabled service from the catalog, you must assign it to a resource group. For more information, see [What is a resource?](/docs/resources?topic=resources-resource#resource)
 
-{{site.data.keyword.containerlong_notm}} is the only exception; it’s IAM-access controlled, but it's always assigned to the default resource group. Therefore, you aren’t given the option to choose one when you create it from the catalog. And, it can’t be assigned to any other resource group
+{{site.data.keyword.containerlong_notm}} is the only exception; it’s IAM-access controlled, but it's always assigned to the default resource group. Therefore, you aren’t given the option to choose one when you create it from the catalog. And, it can’t be assigned to any other resource group.
 
+## What is an IAM access policy?
+{: #iam-policies}
+{: faq}
+
+An IAM access policy is how users, services IDs, and access groups in an account are given permission to work with a specific IAM-enabled service or resource instance, manage a resource group, or complete account management tasks. Each IAM access policy is made of a subject, target, and role. A subject is the who has the access. The target is what the subject can have access to. And, the role, whether it is a platform or service role depending on the context of the selected target, defines what level of access the subject has on the target. 
+
+A subject is a user, service ID, or access group. A target can be a service in the account, a resource group in the account, a specific resource instance or type, or an account management service. And, the roles that are provided as choices depend on your selected target. Some services have service-specific roles that are defined, and some use platform roles only. To understand this concept visually, check out the following graphic with an outline of the options for creating an IAM policy:
+
+![Creating IAM policies](images/IAM.svg "How IAM access policies are created by using a subject, target, and role")
 
 ## Are IAM and Cloud Foundry related?
 {: #iam-cloudfoundry}
@@ -123,7 +132,7 @@ The account owner can remove any users from the account, and any user with the f
 {: faq}
 
 1. Go to **Manage** &gt; **Access (IAM)**, and select **Settings**.
-2. From the Account login section, select **Update** to select MFA for all users or just non-federated users.
+2. From the Account login section, select **Update** to select MFA for all users or non-federated users only.
 
 For more information, see [Requiring MFA for users in your account](/docs/iam?topic=iam-enablemfa#enablemfa).
 
@@ -175,7 +184,7 @@ An account owner can view all users in the account and choose how users can view
 * **Restricted view**: Limits the ability to view users on the Users page to only those who have been granted explicit access, along with those who have visibility of other users through a shared Cloud Foundry org or a classic infrastructure user hierarchy relationship.
 
 
-## Do I have to assign access to a user when I invite them to the account?
+## Do I need to assign access to a user when I invite them to the account?
 {: #account-invite}
 {: faq}
 
@@ -191,4 +200,3 @@ Yes. You must assign a user access within one of the three access management sys
 {: faq}
 
 IAM is used to manage access to your {{site.data.keyword.cloud_notm}} services and resources. With {{site.data.keyword.appid_full_notm}}, you can take cloud security one step further by adding authentication into your web and mobile apps. With just a few lines of code, you can easily secure your Cloud-native apps and services that run on {{site.data.keyword.cloud_notm}}. Ready to get started? [Check out the docs](/docs/services/appid?topic=appid-getting-started#getting-started).
-
