@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-04-03"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -51,7 +51,7 @@ Puede asignar acceso a recursos mediante dos tipos de política:
 * Acceso a recursos dentro de un grupo de recursos, incluida la opción de seleccionar uno o todos
 * Acceso a recursos de la cuenta, incluida la opción de seleccionar un tipo o todos ellos
 
-Si desea habilitar el acceso completo de administrador para un usuario para que realice tareas de [gestión de la cuenta](/docs/iam?topic=iam-account-services#account-services), como invitar y eliminar usuarios, ver información de facturación y de uso, gestionar ID de servicio, gestionar grupos de acceso, gestionar acceso de usuarios y acceder a todos los recursos de la cuenta, debe crear dos políticas: una sobre **Todos los servicios habilitados para Identity and Access** con el rol de administrador y una sobre **Todos los servicios de gestión de cuentas** con el rol de administrador.
+Si desea habilitar el acceso completo de administrador a un usuario para que realice todas las tareas de [gestión de cuentas](/docs/iam?topic=iam-account-services#account-services), como invitar y eliminar usuarios, ver información de facturación y de uso, gestionar ID de servicio, gestionar grupos de acceso, gestionar acceso de usuarios y acceder a todos los recursos de la cuenta, debe crear dos políticas: una sobre **Todos los servicios habilitados para Identity and Access** con los roles de Administrador y Gestor y una sobre **Todos los servicios de gestión de cuentas** con el rol de Administrador.
 {: tip}
 
 ### Acceso a recursos dentro de un grupo de recursos

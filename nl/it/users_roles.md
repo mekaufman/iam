@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-03-21"
+lastupdated: "2019-04-03"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -28,7 +28,13 @@ Tutti i servizi che sono organizzati in un gruppo di risorse nel tuo account ven
 ## Cosa sono le politiche Cloud IAM e chi può assegnarle?
 {: #iamusermanpol}
 
-Una politica concede a un oggetto uno o più ruoli per un insieme di risorse per effettuare azioni specifiche all'interno del contesto delle risorse di destinazione specificate. Puoi assegnare e gestire le politiche se hai il ruolo appropriato. La seguente tabella mostra le attività di gestione delle politiche e il ruolo richiesto per ciascuna.
+Una politica concede a un oggetto uno o più ruoli per un insieme di risorse per effettuare azioni specifiche all'interno del contesto delle risorse di destinazione specificate.
+
+Il seguente grafico spiega come viene creata la politica IAM. Le politiche vengono sempre create specificando prima l'oggetto. L'oggetto è un gruppo di accesso, un ID servizio o un utente specifico. Successivamente, viene selezionata la destinazione che è ciò a cui stai consentendo all'utente di accedere, ad esempio: tutti i servizi in un gruppo di risorse, tutti i servizi abilitati IAM nell'account, i servizi di gestione dell'account o una particolare istanza del servizio. Infine, completa la tua politica di accesso effettuando una selezione dai ruoli disponibili. Questi ruoli definiscono esattamente quali azioni un utente può completare. Potrebbero essere disponibili altre opzioni di configurazione, a seconda del servizio che selezioni.
+
+![Creazione delle politiche IAM](images/IAM.svg "Come vengono create le politiche di accesso IAM utilizzando un oggetto, una destinazione e un ruolo")
+
+Puoi assegnare e gestire le politiche se hai il ruolo appropriato. La seguente tabella mostra le attività di gestione delle politiche e il ruolo richiesto per ciascuna.
 
 | Azione | Ruolo richiesto |
 |----------|---------|
@@ -37,17 +43,6 @@ Una politica concede a un oggetto uno o più ruoli per un insieme di risorse per
 | Creare una politica su un'istanza del servizio | Proprietario dell'account, amministratore su tutti i servizi abilitati per l'accesso e l'identità, amministratore sul servizio nell'account, amministratore su tutti i servizi nel gruppo di risorse relativo o amministratore sull'istanza del servizio |
 {: caption="Tabella 1. Utenti autorizzati a creare politiche di accesso" caption-side="top"}
 
-Quando assegni una politica, inizi con l'oggetto. Dopo aver selezionato l'oggetto della politica, puoi scegliere di impostare la politica per un gruppo di risorse, una risorsa individuale o un servizio di gestione dell'account.
-
-Quindi, a seconda della tua selezione iniziale, puoi selezionare dalle opzioni:
-
-  * Un servizio all'interno di un gruppo di risorse
-  * Tutte le risorse in un gruppo di risorse
-  * Tutte le istanze o una sola istanza per la risorsa selezionata
-  * Tutti i servizi abilitati IAM nell'account
-  * Un servizio di gestione dell'account
-
-Potrebbero essere disponibili altre opzioni di configurazione, a seconda del servizio che selezioni. Infine, seleziona i ruoli da assegnare.
 
 ## Tipi di politica di accesso comuni
 {: #policytypes}
@@ -63,7 +58,7 @@ Puoi fornire l'accesso dettagliato per gli utenti, gli ID servizio o i gruppi di
 * Le risorse in una singola istanza
 * Un singolo tipo di risorsa all'interno di un'istanza, ad esempio un bucket in un'istanza {{site.data.keyword.objectstorageshort}}
 
-Per concedere a un altro utente l'accesso completo all'account ai fini della gestione dell'accesso degli utenti e della gestione di tutte le risorse dell'account, devi assegnare due politiche. Una politica che consenta all'utente di accedere a tutte le risorse dell'account selezionando **Tutti i sevizi abilitati per l'accesso e l'identità** con il ruolo **Amministratore** assegnato. E una politica che fornisce l'accesso utente a tutti i servizi di gestione dell'account nell'account selezionando **Tutti i servizi di gestione account** con il ruolo assegnato **Amministratore**.
+Per concedere a un altro utente l'accesso completo all'account ai fini della gestione dell'accesso degli utenti e della gestione di tutte le risorse dell'account, devi assegnare due politiche. Una politica che consenta all'utente di accedere a tutte le risorse dell'account selezionando **Tutti i sevizi abilitati per l'accesso e l'identità** con i ruoli **Amministratore** e **Gestore** assegnati. E una politica che fornisce l'accesso utente a tutti i servizi di gestione dell'account nell'account selezionando **Tutti i servizi di gestione account** con il ruolo assegnato **Amministratore**.
 {: tip}
 
 ## Ruoli Cloud IAM

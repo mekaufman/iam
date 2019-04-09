@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-03-21"
+lastupdated: "2019-04-03"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -30,7 +30,13 @@ assunto da política a ser acessada e uma função que defina qual tipo de acess
 ## O que são políticas do Cloud IAM e quem pode designá-las?
 {: #iamusermanpol}
 
-Uma política concede a um sujeito uma ou múltiplas funções a um conjunto de recursos para que ações específicas possam ser executadas dentro do contexto dos recursos de destino especificados. Será possível designar e gerenciar políticas se você possuir a função adequada. A tabela a seguir mostra as tarefas de gerenciamento de política e a função que é necessária para cada uma.
+Uma política concede a um sujeito uma ou múltiplas funções a um conjunto de recursos para que ações específicas possam ser executadas dentro do contexto dos recursos de destino especificados.
+
+O gráfico a seguir ajuda a explicar como a política do IAM é criada. As políticas são sempre criadas especificando primeiro o sujeito. O sujeito é um usuário específico, o ID do serviço ou um grupo de acesso. Em seguida, o destino da política é selecionado, que representa o que você está permitindo que o usuário acesse, por exemplo: todos os serviços em um grupo de recursos, todos os serviços ativados pelo IAM na conta, os serviços de gerenciamento de conta ou uma instância de serviço específica. Por fim, você conclui sua política de acesso selecionando entre as funções disponíveis. Essas funções definem exatamente quais ações um usuário pode concluir. Mais opções de configuração podem estar disponíveis, dependendo do serviço selecionado.
+
+![Criando políticas do IAM](images/IAM.svg "Como as políticas de acesso do IAM são criadas usando um sujeito, um destino e uma função")
+
+Será possível designar e gerenciar políticas se você possuir a função adequada. A tabela a seguir mostra as tarefas de gerenciamento de política e a função que é necessária para cada uma.
 
 | Ações | Função necessária |
 |----------|---------|
@@ -43,18 +49,6 @@ para o Identity and Access, administrador no serviço na conta, administrador em
 recursos relevantes ou administrador na instância de serviço |
 {: caption="Tabela 1. Usuários que têm permissão para criar políticas de acesso" caption-side="top"}
 
-Ao designar uma política, você
-inicia com o assunto. Depois de selecionar o assunto da política, é possível optar por configurar a política para um grupo de recursos, um recurso individual ou um serviço de gerenciamento de conta.
-
-Em seguida, dependendo de sua seleção inicial, é possível selecionar dentre as opções:
-
-  * Um serviço dentro de um grupo de recursos
-  * Todos os recursos em um grupo de recursos
-  * Todas as instâncias ou uma única instância para o recurso selecionado
-  * Todos os serviços ativados para IAM na conta
-  * Um serviço de gerenciamento de conta
-
-Mais opções de configuração podem estar disponíveis, dependendo do serviço selecionado. Finalmente, você seleciona as funções a serem designadas.
 
 ## Tipos de política de acesso comum
 {: #policytypes}
@@ -73,8 +67,7 @@ recursos
 * Recursos em uma instância individual
 * Um tipo de recurso único dentro de uma instância, por exemplo, um depósito em uma instância do {{site.data.keyword.objectstorageshort}}
 
-Para conceder a outro usuário acesso total à conta para os propósitos de gerenciamento de acesso de usuário e gerenciamento de todos os recursos de conta, deve-se designar duas políticas. Uma política que conceda ao usuário
-acesso a todos os recursos na conta selecionando **Todos os serviços ativados para Identity and Access** com a função **Administrador** designada. Uma política que conceda ao usuário acesso a todos os serviços de gerenciamento de conta na conta selecionando
+Para conceder a outro usuário acesso total à conta para os propósitos de gerenciamento de acesso de usuário e gerenciamento de todos os recursos de conta, deve-se designar duas políticas. Uma política que fornece ao usuário acesso a todos os recursos na conta selecionando **Todos os serviços ativados de identidade e acesso** com as funções **Administrador** e **Gerenciador** designadas. Uma política que conceda ao usuário acesso a todos os serviços de gerenciamento de conta na conta selecionando
 **Todos os serviços de gerenciamento de conta** com a função **Administrador** designada.
 {: tip}
 
@@ -151,7 +144,7 @@ Alguns serviços podem mapear ações específicas para as funções de gerencia
 | Função de gerenciamento da plataforma | Ações | Exemplo de ações para o {{site.data.keyword.containershort_notm}} |
 |:-----------------|:-----------------|:-----------------|
 | Visualizador | Pode visualizar instâncias de serviço, mas não pode modificá-las  | <ul><li>Listar clusters</li><li>Visualizar detalhes para um cluster</li></ul>|
-| Aplicativos | Executar todas as ações da plataforma, exceto para gerenciar a conta e designar políticas de acesso |<ul><li>Ligar um serviço a um cluster</li><li>Criar um webhook</li></ul> |
+| Editor | Executar todas as ações da plataforma, exceto para gerenciar a conta e designar políticas de acesso |<ul><li>Ligar um serviço a um cluster</li><li>Criar um webhook</li></ul> |
 | Operador | Executar ações de plataforma necessárias para configurar e operar instâncias de serviço, como visualizar o painel de um serviço | <ul><li>Incluir ou remover nós do trabalhador</li><li>Reiniciar ou recarregar nós do trabalhador</li><li>Ligar um serviço a um cluster</li></ul> |
 | Administrador | Executar todas as ações da plataforma com base no recurso para o qual essa função está sendo designada, incluindo a designação de políticas de acesso a outros usuários |<ul><li>Remover um cluster</li><li>Criar um cluster</li><li>Atualizar políticas de acesso de usuário</li><li>Todas as ações que um visualizador, um editor e um operador podem executar</li></ul>|
 {: caption="Tabela 4. Exemplo de funções de gerenciamento da plataforma e as ações para o serviço do{{site.data.keyword.containershort_notm}}" caption-side="top"}
@@ -169,5 +162,5 @@ As ações que podem ser executadas com base em cada função designada variam c
 |:-----------------|:-----------------|:-----------------|
 |  Leitor | Executar ações somente leitura em um serviço, como visualizar recursos específicos do serviço | Listar e fazer download de objetos |
 | Gravador | Permissões além da função de leitor, incluindo criar e editar recursos específicos do serviço | Criar e destruir depósitos e objetos |
-| Gerente | Permissões além da função de gravador para concluir ações privilegiadas, conforme definido pelo serviço, além de criar e editar recursos específicos do serviço | Gerenciar todos os aspectos de armazenamento de dados, criar e destruir depósitos e objetos |
+| Gerenciador | Permissões além da função de gravador para concluir ações privilegiadas, conforme definido pelo serviço, além de criar e editar recursos específicos do serviço | Gerenciar todos os aspectos de armazenamento de dados, criar e destruir depósitos e objetos |
 {: caption="Tabela 5. Exemplo de funções e ações de usuário de acesso de serviço" caption-side="top"}

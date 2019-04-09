@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-04-03"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -51,7 +51,7 @@ Puoi assegnare l'accesso alla risorsa utilizzando due tipi di politiche:
 * Accesso alle risorse all'interno di un gruppo di risorse inclusa l'opzione per una sola o per tutte
 * Accesso alle risorse nell'account inclusa l'opzione per un solo tipo o per tutti i tipi
 
-Se vuoi abilitare un accesso da amministratore completo di un utente per completare le attività di [gestione dell'account](/docs/iam?topic=iam-account-services#account-services) come l'invito e la rimozione degli utenti, la visualizzazione della fatturazione e dell'utilizzo, la gestione degli ID servizio, la gestione dei gruppi di accesso, la gestione dell'accesso utente e l'accesso a tutte le risorse dell'account, devi creare due politiche: una su **Tutti i servizi abilitati per l'accesso e l'identità** con il ruolo di amministratore e una su **Tutti i servizi di gestione account** con il ruolo di amministratore.
+Se vuoi abilitare un accesso da amministratore completo per tutte le attività di [gestione dell'account](/docs/iam?topic=iam-account-services#account-services) come l'invito e la rimozione degli utenti, la visualizzazione della fatturazione e dell'utilizzo, la gestione degli ID servizio, la gestione dei gruppi di accesso, la gestione dell'accesso utente e l'accesso a tutte le risorse dell'account, devi creare due politiche: una su **Tutti i servizi abilitati per l'accesso e l'identità** con il ruolo di amministratore e di gestore e una su **Tutti i servizi di gestione account** con il ruolo di amministratore.
 {: tip}
 
 ### Accesso alle risorse all'interno di un gruppo di risorse

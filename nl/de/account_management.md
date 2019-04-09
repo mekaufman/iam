@@ -4,12 +4,11 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-02-11"
+lastupdated: "2019-04-03"
 
 keywords: account management, access, access policy, account administrator
 
 subcollection: iam
-
 
 ---
 
@@ -36,7 +35,7 @@ Führen Sie die folgenden Schritte aus, um Zugriff auf einen oder alle Kontoverw
 4. Wählen Sie **Alle Kontoverwaltungsservices** oder einen bestimmten Kontoverwaltungsservice aus.
 5. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um die gewünschten Zugriffsberechtigungen zuzuweisen.
 
-Um einem weiteren Benutzer uneingeschränkten Zugriff auf das Konto zum Zweck der Verwaltung des Benutzerzugriffs und der Verwaltung aller Kontoressourcen zu erteilen, müssen Sie zwei Richtlinien zuweisen. Eine Richtlinie, die dem Benutzer Zugriff auf alle Ressourcen im Konto gibt, indem Sie **Alle Services mit aktiviertem Identity and Access Management** mit zugewiesener Rolle **Administrator** auswählen. Zusätzlich eine Richtlinie, die dem Benutzer Zugriff auf alle Kontoverwaltungsservices im Konto gibt, indem Sie **Alle Kontoverwaltungsservices** mit zugewiesener Rolle **Administrator** auswählen.
+Um einem weiteren Benutzer uneingeschränkten Zugriff auf das Konto zum Zweck der Verwaltung des Benutzerzugriffs und der Verwaltung aller Kontoressourcen zu erteilen, müssen Sie zwei Richtlinien zuweisen. Eine Richtlinie, die dem Benutzer Zugriff auf alle Ressourcen im Konto gibt, indem Sie **Alle Services mit aktiviertem Identity and Access Management** mit zugewiesenen Rollen **Manager** auswählen. Zusätzlich eine Richtlinie, die dem Benutzer Zugriff auf alle Kontoverwaltungsservices im Konto gibt, indem Sie **Alle Kontoverwaltungsservices** mit zugewiesener Rolle **Administrator** auswählen.
 {: tip}
 
 ## Zuordnungen von Aktionen zu Rollen für Kontoverwaltungsservices
@@ -68,6 +67,7 @@ Die folgenden Tabellen umreißen die Aktionen, die Benutzer ausführen können, 
 | Administrator |  Fälle anzeigen <br><br> Fälle durchsuchen <br><br> Fälle aktualisieren <br><br> Fälle erstellen    |
 {: caption="Tabelle 3. Rollen und Beispielaktionen für den Support Center-Service" caption-side="top"}
 
+{: #billing-acct-mgmt}
 | Rollen | Aktionen |
 |:-------|----------|
 | Anzeigeberechtigter | Funktionseinstellungen für das Konto anzeigen <br><br> Abonnements im Konto anzeigen <br><br> Kontonamen anzeigen <br><br> Ressourcengruppen anzeigen   |
@@ -83,6 +83,7 @@ Die folgenden Tabellen umreißen die Aktionen, die Benutzer ausführen können, 
 | Bearbeiter |  IDs und API-Schlüssel erstellen, aktualisieren und löschen  |
 | Administrator |  IDs und API-Schlüssel erstellen, aktualisieren und löschen <br><br> Zugriffsrichtlinien zu IDs zuweisen  |
 {: caption="Tabelle 5. Rollen und Beispielaktionen für den IAM Identity Service" caption-side="top"}
+{: #identity-service-acct-mgmt}
 
 Für den IAM Identity Service können diese Aktionen auf Service-IDs innerhalb des Kontos angewendet werden, die nicht vom Benutzer erstellt wurden. Alle Benutzer können Service-IDs erstellen. Sie fungieren als Administratoren für diese IDs und können den zugehörigen API-Schlüssel und Zugriffsrichtlinien erstellen. Dieser Kontoverwaltungsservice bezieht sich jedoch auf die Fähigkeit zum Anzeigen, Löschen und Zuweisen von Zugriff auf Service-IDs im Konto, die von anderen Benutzern erstellt wurden.
 {: note}

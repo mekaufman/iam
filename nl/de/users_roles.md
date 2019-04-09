@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-03-21"
+lastupdated: "2019-04-03"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -28,7 +28,13 @@ Alle Services, die in einer Ressourcengruppe in Ihrem Konto zusammengefasst sind
 ## Was sind Cloud IAM-Richtlinien und wer kann sie zuweisen?
 {: #iamusermanpol}
 
-Eine Richtlinie weist einem Subjekt eine oder mehrere Rollen für eine Gruppe von Ressourcen zu, sodass im Kontext der angegebenen Zielressourcen bestimmte Aktionen ausgeführt werden können. Sie können Richtlinien zuweisen und verwalten, wenn Sie die entsprechende Rolle haben. In der folgenden Tabelle werden die Richtlinienmanagementtasks und die jeweils erforderliche Rolle aufgeführt.
+Eine Richtlinie weist einem Subjekt eine oder mehrere Rollen für eine Gruppe von Ressourcen zu, sodass im Kontext der angegebenen Zielressourcen bestimmte Aktionen ausgeführt werden können.
+
+Mit der folgenden Abbildung wird Ihnen erläutert, wie die IAM-Richtlinie erstellt wird. Richtlinien werden immer erstellt, indem zunächst das Subjekt angegeben wird. Das Subjekt ist eine bestimmte Benutzer- oder Service-ID oder eine Benutzergruppe. Als Nächstes wird das Ziel der Richtlinie ausgewählt, das dem Benutzer Zugriff gewährt, z. B. auf alle Services in einer Ressourcengruppe, auf alle IAM-fähigen Services im Konto, auf Kontenverwaltungsservices oder auf eine bestimmte Serviceinstanz. Zum Schluss vervollständigen Sie Ihre Zugriffsrichtlinie, indem Sie aus den verfügbaren Rollen eine Auswahl treffen. Diese Rollen definieren genau, welche Aktionen ein Benutzer ausführen kann. Abhängig von dem Service, den Sie auswählen, können weitere Konfigurationsoptionen verfügbar sein.
+
+![IAM-Richtlinien erstellen](images/IAM.svg "Wie IAM-Zugriffsrichtlinien mit Subjekt, Ziel und Rolle erstellt werden")
+
+Sie können Richtlinien zuweisen und verwalten, wenn Sie die entsprechende Rolle haben. In der folgenden Tabelle werden die Richtlinienmanagementtasks und die jeweils erforderliche Rolle aufgeführt.
 
 | Aktion | Erforderliche Rolle |
 |----------|---------|
@@ -37,17 +43,6 @@ Eine Richtlinie weist einem Subjekt eine oder mehrere Rollen für eine Gruppe vo
 | Richtlinie für eine Serviceinstanz erstellen | Kontoeigner, Administrator für alle Services mit aktiviertem Identity and Access Management, Administrator für den Service im Konto, Administrator für alle Services in der betreffenden Ressourcengruppe oder Administrator für die Serviceinstanz |
 {: caption="Tabelle 1. Benutzer, die Zugriffsrichtlinien erstellen dürfen" caption-side="top"}
 
-Wenn Sie eine Richtlinie zuweisen, beginnen Sie mit dem Subjekt. Nachdem Sie das Subjekt der Richtlinie ausgewählt haben, können Sie wählen, ob eine Richtlinie für eine Ressourcengruppe, für eine einzelne Ressource oder für einen Kontoverwaltungsservice definiert werden soll.
-
-Anschließend können Sie abhängig von Ihrer zuerst getroffenen Auswahl eine Auswahl innerhalb der folgenden Optionen treffen:
-
-  * Ein Service innerhalb einer Ressourcengruppe
-  * Alle Ressourcen in einer Ressourcengruppe
-  * Alle Instanzen oder eine einzelne Instanz für die ausgewählte Ressource
-  * Alle IAM-fähigen Services im Konto
-  * Ein Kontoverwaltungsservice
-
-Abhängig von dem Service, den Sie auswählen, können weitere Konfigurationsoptionen verfügbar sein. Abschließend wählen Sie die Rollen aus, die zugewiesen werden sollen.
 
 ## Allgemeine Typen von Zugriffsrichtlinien
 {: #policytypes}
@@ -63,7 +58,7 @@ Sie können differenzierten Zugriff für Benutzer, Service-IDs oder Zugriffsgrup
 * Ressourcen in einer einzelnen Instanz.
 * Ein einzelner Ressourcentyp in einer Instanz, z. B. ein Bucket in einer {{site.data.keyword.objectstorageshort}}-Instanz.
 
-Um einem weiteren Benutzer uneingeschränkten Zugriff auf das Konto zum Zweck der Verwaltung des Benutzerzugriffs und der Verwaltung aller Kontoressourcen zu erteilen, müssen Sie zwei Richtlinien zuweisen. Eine Richtlinie, die dem Benutzer Zugriff auf alle Ressourcen im Konto gibt, indem Sie **Alle Services mit aktiviertem Identity and Access Management** mit zugewiesener Rolle **Administrator** auswählen. Zusätzlich eine Richtlinie, die dem Benutzer Zugriff auf alle Kontoverwaltungsservices im Konto gibt, indem Sie **Alle Kontoverwaltungsservices** mit zugewiesener Rolle **Administrator** auswählen.
+Um einem weiteren Benutzer uneingeschränkten Zugriff auf das Konto zum Zweck der Verwaltung des Benutzerzugriffs und der Verwaltung aller Kontoressourcen zu erteilen, müssen Sie zwei Richtlinien zuweisen. Eine Richtlinie, die dem Benutzer Zugriff auf alle Ressourcen im Konto gibt, indem Sie **Alle Services mit aktiviertem Identity and Access Management** mit zugewiesenen Rollen **Manager** auswählen. Zusätzlich eine Richtlinie, die dem Benutzer Zugriff auf alle Kontoverwaltungsservices im Konto gibt, indem Sie **Alle Kontoverwaltungsservices** mit zugewiesener Rolle **Administrator** auswählen.
 {: tip}
 
 ## Cloud IAM-Rollen

@@ -81,4 +81,5 @@ Gestion de l'identité et de l'accès
 
     {: .navgroup id="help"}
     faqs.md
+    troubleshoot-iam.md
     {: .navgroup-end}
