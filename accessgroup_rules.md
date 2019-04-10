@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-04-10"
 
 keywords: dynamic rules, access groups, specific identity attributes
 
@@ -33,17 +33,17 @@ Only users who are already invited to the account can be mapped to access groups
 ## Setting up rules
 {: #setup_rules}
 
-Dynamic rules are created by setting conditions that must be matched by the data that is configured within the identity provider and passed in with a user's federated ID during login. To create a rule, follow these steps:
+Dynamic rules are created by setting conditions that must be matched by the data that is configured within the identity provider and passed in with a user's federated ID during login. You can add more than one condition for a rule. All conditions set in the rule must be met for a user to be added to an access group. To create a rule, follow these steps:
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
 2. Select the name of the access group that you want to create a rule for to open the group details page.
 3. Select the **Dynamic rules** tab.
 4. Click **Add rule**.
-5. Enter the information from your identity provider. The following list provides details for each required field.
+5. Enter the information from your identity provider which is dynamically provided for you on the Add rule page. The following list provides details for each required field.
 
 <dl>
 <dt>Name</dt>
-<dd>Enter a custom name for your rule that helps you remember what type of users you are adding to an access group.</dd>
+<dd>Enter a custom name for your rule that helps you remember what type of users that you are adding to an access group.</dd>
 <dt>Identity provider</dt>
 <dd>Enter the URI for your identity provider. This is the SAML "entityId" field, which is sometimes referred to as the issuer ID, for the identity provider as part of the federation configuration for onboarding with IBMid.</dd>
 <dt>Expiration (in hours)</dt>
@@ -56,7 +56,7 @@ Dynamic rules are created by setting conditions that must be matched by the data
 <dd>Enter the attribute value for the attribute statement that the rule is comparing against.</dd>
 </dl>
 
-You can add more than one condition for a rule. All conditions set in the rule must be met for a user to be added to an access group.
+You can think of the rule as a key:value pair where the key is what you add in the `Add users when` field, and the value is what you enter in the `Value` field for what the rule must compare against based on the comparator that is selected.
 {: tip}
 
 ## Example rule
