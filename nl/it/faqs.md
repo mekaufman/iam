@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-19"
 
 keywords: frequently asked question, faq
 
@@ -123,7 +123,9 @@ Il proprietario dell'account può rimuovere tutti gli utenti dall'account e qual
 {: faq}
 
 1. Vai a **Gestisci** &gt; **Accesso (IAM)** e seleziona **Impostazioni**.
-2. Scegli **Autenticazione multifattore** e fai clic su **Sì, sono sicuro**. Per ulteriori informazioni, vedi [Richiesta di MFA per gli utenti nel tuo account](/docs/iam?topic=iam-enablemfa#enablemfa).
+2. Dalla sezione Accesso account, seleziona **Aggiorna** per selezionare MFA per tutti gli utenti o solo per gli utenti non federati.
+
+Per ulteriori informazioni, vedi [Richiesta di MFA per gli utenti nel tuo account](/docs/iam?topic=iam-enablemfa#enablemfa).
 
 ## Qual è la differenza tra i ruoli del servizio e della piattaforma?
 {: #service-platform-roles}
@@ -154,8 +156,6 @@ Per delegare le capacità di amministratore dell'account, assegna il seguente ac
 * La serie di autorizzazioni Super utente per l'infrastruttura classica
 * Gestore di Cloud Foundry per tutte le organizzazioni
 
-Anche con l'accesso precedentemente descritto assegnato, un amministratore dell'account non può modificare l'impostazione MFA per l'account. Solo il proprietario dell'account può modificare questa impostazione.
-{: note}
 
 ## Qual è la differenza tra un amministratore dell'account e un proprietario dell'account?
 {: #owner-administrator}
@@ -167,9 +167,6 @@ I proprietari dell'account vengono assegnati automaticamente come amministratore
 * Una politica IAM con il ruolo Amministratore su tutti i servizi di gestione dell'account, che consente a un utente di completare attività come l'invito di utenti, la gestione dei gruppi di accesso, la gestione degli ID servizio, la gestione delle offerte del catalogo privato e la traccia della fatturazione e dell'utilizzo.
 * La serie di autorizzazioni Super utente per l'infrastruttura classica
 * Gestore di Cloud Foundry per tutte le organizzazioni
-
-Anche con l'accesso precedentemente descritto assegnato, un amministratore dell'account non può modificare l'impostazione MFA per l'account. Solo il proprietario dell'account può modificare questa impostazione.
-{: note}
 
 ## Come assegno l'accesso alle infrastrutture e ai dispositivi?
 {: #infrastructure-devices}
@@ -205,4 +202,4 @@ Sì. Devi assegnare un accesso utente all'interno di uno dei tre sistemi di gest
 {: #appid}
 {: faq}
 
-IAM viene utilizzato per gestire l'accesso ai tuoi servizi e alle tue risorse {{site.data.keyword.cloud_notm}}. Con {{site.data.keyword.appid_full_notm}}, puoi portare la sicurezza cloud a un livello superiore aggiungendo l'autenticazione nelle tue applicazioni web e mobili. Con solo poche righe di codice, puoi proteggere facilmente le applicazioni e i servizi nativi cloud che vengono eseguiti su {{site.data.keyword.cloud_notm}}. Pronto per iniziare? [Consulta le documentazioni](/docs/services/appid?topic=appid-gettingstarted#gettingstarted).
+IAM viene utilizzato per gestire l'accesso ai tuoi servizi e alle tue risorse {{site.data.keyword.cloud_notm}}. Con {{site.data.keyword.appid_full_notm}}, puoi portare la sicurezza cloud a un livello superiore aggiungendo l'autenticazione nelle tue applicazioni web e mobili. Con solo poche righe di codice, puoi proteggere facilmente le applicazioni e i servizi nativi cloud che vengono eseguiti su {{site.data.keyword.cloud_notm}}. Pronto per iniziare? [Consulta le documentazioni](/docs/services/appid?topic=appid-getting-started#getting-started). 
