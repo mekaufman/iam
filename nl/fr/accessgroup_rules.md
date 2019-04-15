@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-04-10"
 
 keywords: dynamic rules, access groups, specific identity attributes
 
@@ -33,13 +33,13 @@ Seuls les utilisateurs déjà invités au compte peuvent être mappés aux group
 ## Configuration de règles
 {: #setup_rules}
 
-Les règles dynamiques sont créées en définissant des conditions devant être respectées par les données configurées dans le fournisseur d'identité et transmises avec un ID fédéré d'utilisateur lors de la connexion. Pour créer une règle, procédez comme suit :
+Les règles dynamiques sont créées en définissant des conditions devant être respectées par les données configurées dans le fournisseur d'identité et transmises avec un ID fédéré d'utilisateur lors de la connexion. Vous pouvez ajouter plusieurs conditions pour une règle. Toutes les conditions définies dans la règle doivent être respectées pour qu'un utilisateur soit ajouté à un groupe d'accès. Pour créer une règle, procédez comme suit :
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Groupes d'accès**.
 2. Sélectionnez le nom du groupe d'accès pour lequel vous souhaitez créer une règle afin d'ouvrir la page de détails du groupe.
 3. Sélectionnez l'onglet **Règles dynamiques**.
 4. Cliquez sur **Ajouter une règle**.
-5. Entrez les informations de votre fournisseur d'identité. La liste suivante inclut les détails de chaque zone requise.
+5. Entrez les informations de votre fournisseur d'identité automatiquement fournies sur la page Ajouter une règle. La liste suivante inclut les détails de chaque zone requise.
 
 <dl>
 <dt>Nom</dt>
@@ -56,7 +56,7 @@ Les règles dynamiques sont créées en définissant des conditions devant être
 <dd>Entrez la valeur d'attribut correspondant à l'instruction utilisée pour la comparaison de la règle.</dd>
 </dl>
 
-Vous pouvez ajouter plusieurs conditions pour une règle. Toutes les conditions définies dans la règle doivent être respectées pour qu'un utilisateur soit ajouté à un groupe d'accès.
+Vous pouvez considérer la règle comme une paire clé:valeur où la clé est l'information que vous avez ajouté dans la zone `Ajouter des utilisateurs lorsque` et la valeur celle que vous avez entrée dans la zone `Valeur` sur lesquelles la règle doit s'appuyer pour la comparaison en fonction du comparateur sélectionné.
 {: tip}
 
 ## Exemple de règle
