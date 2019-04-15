@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-04-10"
 
 keywords: dynamic rules, access groups, specific identity attributes
 
@@ -33,13 +33,13 @@ Los usuarios ya tienen información de identidad específica dentro del dominio 
 ## Configuración de reglas
 {: #setup_rules}
 
-Las reglas dinámicas se crean estableciendo condiciones que deben coincidir con los datos configurados dentro del proveedor de identidad y que se pasan con el ID federado de un usuario durante el inicio de sesión. Para crear una regla, siga estos pasos:
+Las reglas dinámicas se crean estableciendo condiciones que deben coincidir con los datos configurados dentro del proveedor de identidad y que se pasan con el ID federado de un usuario durante el inicio de sesión. Puede añadir más de una condición para una regla. Todas las condiciones establecidas en la regla deben cumplirse para que un usuario se pueda añadir a un grupo de acceso. Para crear una regla, siga estos pasos:
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Grupos de acceso**.
 2. Seleccione el nombre del grupo de acceso para el que desea crear una regla para abrir la página de detalles de grupo.
 3. Seleccione el separador **Reglas dinámicas**.
 4. Pulse **Añadir regla**.
-5. Especifique la información del proveedor de identidad. En la lista siguiente se proporcionan detalles para cada campo necesario.
+5. Especifique la información del proveedor de identidad que se suministra de forma dinámica en la página Añadir regla. En la lista siguiente se proporcionan detalles para cada campo necesario.
 
 <dl>
 <dt>Nombre</dt>
@@ -56,7 +56,7 @@ Las reglas dinámicas se crean estableciendo condiciones que deben coincidir con
 <dd>Especifique el valor de atributo para la sentencia de atributo en la que se compara la regla.</dd>
 </dl>
 
-Puede añadir más de una condición para una regla. Todas las condiciones establecidas en la regla deben cumplirse para que un usuario se pueda añadir a un grupo de acceso.
+Puede considerar la regla como un par clave:valor, donde la clave es lo que añade en el campo `Añadir usuarios cuando` y el valor es lo que especifica en el campo `Valor` y que especifica con qué debe comparar la regla en función del comparador que se seleccione.
 {: tip}
 
 ## Regla de ejemplo
