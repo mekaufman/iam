@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-03-19"
+lastupdated: "2019-04-08"
 
 keywords: frequently asked question, faq
 
@@ -37,8 +37,17 @@ IAM (Identity and Access Management, Identitäts- und Zugriffsmanagement) ermög
 
 Ein IAM-fähiger Service muss in einer Ressourcengruppe enthalten sein und der Zugriff auf den Service erfolgt über die Verwendung von IAM-Zugriffsrichtlinien. Wenn Sie einen IAM-fähigen Service aus dem Katalog erstellen, müssen Sie ihn einer Ressourcengruppe zuordnen. Weitere Informationen finden Sie in [Was ist eine Ressource?](/docs/resources?topic=resources-resource#resource)
 
-{{site.data.keyword.containerlong_notm}} ist die einzige Ausnahme. Der Zugriff wird über IAM gesteuert, doch der Service ist stets der Standardressourcengruppe zugewiesen. Daher können Sie bei der Erstellung aus dem Katalog keine Ressourcengruppe auswählen, denn es werden keine entsprechenden Auswahloptionen angezeigt. Darüber hinaus ist die Zuordnung des Service zu einer beliebigen anderen Ressourcengruppe nicht möglich.
+{{site.data.keyword.containerlong_notm}} ist die einzige Ausnahme. Der Zugriff wird über IAM gesteuert, doch der Service ist stets der Standardressourcengruppe zugewiesen. Daher können Sie bei der Erstellung aus dem Katalog keine Ressourcengruppe auswählen, denn es werden keine entsprechenden Auswahloptionen angezeigt. Auch ist eine Zuordnung zu einer anderen Ressourcengruppe nicht möglich.
 
+## Was ist eine IAM-Zugriffsrichtlinie?
+{: #iam-policies}
+{: faq}
+
+Eine IAM-Zugriffsrichtlinie ist die Art und Weise, wie Benutzern, Service-IDs und Zugriffsgruppen in einem Konto die Berechtigung erteilt wird, mit einem bestimmten IAM-fähigen Service oder einer IAM-fähigen Ressourceninstanz zu arbeiten, eine Ressourcengruppe zu verwalten oder Tasks für die Kontoverwaltung auszuführen. Jede IAM-Zugriffsrichtlinie besteht aus einem Subjekt, einem Ziel und einer Rolle. Subjekt ist derjenige, der den Zugriff hat. Das Ziel ist das, auf das das Subjekt Zugriff haben kann. Die Rolle (dabei kann es sich je nach Kontext des ausgewählten Ziels um eine Plattform- oder Servicerolle handeln) definiert die Zugriffsebene, mit der das Subjekt auf das Ziel zugreift. 
+
+Bei einem Subjekt handelt es sich um einen Benutzer, eine Service-ID oder Zugriffsgruppe. Ein Ziel kann ein Service oder eine Ressourcengruppe im Konto, eine bestimmte Ressourceninstanz bzw. ein bestimmer Ressourcentyp oder ein Service für die Kontoverwaltung sein. Auch hängen die als Auswahlmöglichkeiten bereitgestellten Rollen von dem von Ihnen gewählten Ziel ab. Einige Services haben definierte, servicespezifische Rollen, einige verwenden nur Plattformrollen. Sehen Sie sich für ein visuelles Verständnis dieses Konzepts die folgende Grafik an, die eine Gliederung der für die Erstellung von IAM-Richtlinien verfügbaren Optionen enthält:
+
+![IAM-Richtlinien erstellen](images/IAM.svg "Wie IAM-Zugriffsrichtlinien mit Subjekt, Ziel und Rolle erstellt werden")
 
 ## Sind IAM und Cloud Foundry verwandt?
 {: #iam-cloudfoundry}
@@ -99,7 +108,7 @@ Für Cloud Foundry-Services müssen Sie über die Cloud Foundry-Rollen des Organ
 
 Für die klassische Infrastruktur müssen Sie über die Berechtigung der klassischen Infrastruktur zum Verwalten von Benutzern verfügen und für diejenigen Service- und Gerätekategorien Berechtigungen für die Ressourcen besitzen, für die Sie dem Benutzer Zugriff erteilen möchten.
 
-## Was ist der Unterschied zwischen der Bereitstellung eines Zugriffs zur Verwaltung einer Ressourcengruppe und dem Zugriff auf Ressourcen innerhalb einer Ressourcengruppe?
+## Was ist der Unterschied zwischen dem Zugriff auf die Verwaltung einer Ressourcengruppe und dem Zugriff auf Ressourcen innerhalb einer Ressourcengruppe?
 {: #providing-access}
 {: faq}
 
@@ -123,7 +132,7 @@ Der Kontoeigner kann beliebige Benutzer aus dem Konto entfernen. Ferner können 
 {: faq}
 
 1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie **Einstellungen** aus.
-2. Wählen Sie im Abschnitt für die Kontoanmeldung **Aktualisieren** aus, um MFA für alle Benutzer oder ausschließlich für nicht föderierte Benutzer auszuwählen. 
+2. Wählen Sie im Abschnitt für die Kontoanmeldung **Aktualisieren** aus, um MFA für alle Benutzer oder nur für nicht föderierte Benutzer auszuwählen.
 
 Weitere Informationen finden Sie in [MFA für Benutzer in Ihrem Konto verlangen](/docs/iam?topic=iam-enablemfa#enablemfa).
 
@@ -151,20 +160,8 @@ Die Zugriffssteuerung und die Ressourcenorganisation des Kontos sind die wesentl
 
 Um die Funktionen des Kontoadministrators zu delegieren, müssen Sie folgenden Zugriff zuordnen:
 
-* Eine IAM-Richtlinie, über die die Rolle des Administrators für alle Services mit aktiviertem Identity and Access Management zugewiesen ist, wodurch der Benutzer die Möglichkeit erhält, Serviceinstanzen zu erstellen und Benutzern Zugriff auf alle Ressourcen im Konto zu erteilen.
+* Eine IAM-Richtlinie mit den Rollen Administrator und Manager für alle für IAM aktivierten Services; dadurch kann ein Benutzer Serviceinstanzen erstellen und Benutzern Zugriff auf alle Ressourcen im Konto zuweisen.
 * Eine IAM-Richtlinie, über die die Rolle des Administrators für alle Kontoverwaltungsservices zugewiesen ist, wodurch der Benutzer die Möglichkeit erhält, Tasks wie das Einladen und Entfernen von Benutzern, Verwalten von Zugriffsgruppen, Service-IDs und privaten Katalogangeboten auszuführen sowie die Abrechnungs- und Nutzungsverfolgung zu verwenden.
-* Das Berechtigungsset des Superusers für die klassische Infrastruktur.
-* Die Rolle des Cloud Foundry-Managers für alle Organisationen.
-
-
-## Was ist der Unterschied zwischen einem Kontoadministrator und einem Kontoeigner?
-{: #owner-administrator}
-{: faq}
-
-Kontoeigner werden automatisch als Kontoadministrator für {{site.data.keyword.Bluemix_notm}} IAM zugewiesen. Als Kontoadministrator können Sie Benutzer einladen, den Zugriff für Benutzer zuweisen und verwalten, Ressourcengruppen erstellen, die Mehrfaktorauthentifizierung (MFA) für alle Benutzer im Konto verlangen und Serviceinstanzen erstellen. Wenn Sie anderen Benutzern in Ihrem Konto die Funktion des Kontoadministrators ermöglichen wollen, müssen Sie ihnen den folgenden Zugriff zuweisen:
-
-* Eine IAM-Richtlinie, über die die Rolle des Administrators für alle Services mit aktiviertem Identity and Access Management zugewiesen ist, wodurch der Benutzer die Möglichkeit erhält, Serviceinstanzen zu erstellen und Benutzern Zugriff auf alle Ressourcen im Konto zu erteilen.
-* Eine IAM-Richtlinie, über die die Rolle des Administrators für alle Kontoverwaltungsservices zugewiesen ist, wodurch der Benutzer die Möglichkeit erhält, Tasks wie das Einladen von Benutzern, Verwalten von Zugriffsgruppen, Service-IDs und privaten Katalogangeboten auszuführen sowie die Abrechnungs- und Nutzungsverfolgung zu verwenden.
 * Das Berechtigungsset des Superusers für die klassische Infrastruktur.
 * Die Rolle des Cloud Foundry-Managers für alle Organisationen.
 
@@ -187,11 +184,11 @@ Ein Kontoeigner kann all anderen Benutzer im Konto anzeigen und auf der Seite 'B
 * **Eingeschränkte Ansicht**: Beschränkt die Sichtbarkeit von Benutzern auf der Seite 'Benutzer' auf diejenigen Benutzer, denen explizit Zugriff gewährt wurde, sowie auf solche Benutzer, für die andere Benutzer über eine gemeinsam genutzte Cloud Foundry-Organisation oder eine Beziehung in der Benutzerhierarchie der klassischen Infrastruktur sichtbar sind.
 
 
-## Muss ich einem Benutzer Zugriff erteilen, wenn ich ihn zum Konto einlade?
+## Muss ich Benutzern, die ich zum Konto einlade, Zugriff zuweisen?
 {: #account-invite}
 {: faq}
 
-Ja. Sie müssen einem Benutzer im Rahmen der folgenden drei Systeme für das Zugriffsmanagement Zugriff erteilen:
+Ja. Sie müssen Benutzern Zugriff innerhalb eines der drei folgenden Systeme für das Zugriffsmanagement zuweisen:
 
 * IAM-Zugriffsrichtlinie für eine Ressource, eine Ressourcengruppe oder für Kontoverwaltungsservices
 * Cloud Foundry-Rolle für eine Organisation und einen Bereich
@@ -202,4 +199,4 @@ Ja. Sie müssen einem Benutzer im Rahmen der folgenden drei Systeme für das Zug
 {: #appid}
 {: faq}
 
-IAM wird für die Verwaltung des Zugriffs auf Ihre {{site.data.keyword.cloud_notm}}-Services und -Ressourcen verwendet. Mit {{site.data.keyword.appid_full_notm}} können Sie die Cloudsicherheit noch weiter steigern, indem Sie Authentifizierungsmechanismen in Ihre Webanwendungen und mobilen Apps einbinden. Mit nur wenigen Zeilen Code können Sie Ihre cloud-nativen Apps und Services, deren Ausführung auf {{site.data.keyword.cloud_notm}} erfolgt, ohne großen Aufwand schützen. Sind Sie bereit, loszulegen? [Informieren Sie sich anhand der Dokumentation](/docs/services/appid?topic=appid-getting-started#getting-started). 
+IAM wird für die Verwaltung des Zugriffs auf Ihre {{site.data.keyword.cloud_notm}}-Services und -Ressourcen verwendet. Mit {{site.data.keyword.appid_full_notm}} können Sie die Cloudsicherheit noch weiter steigern, indem Sie Authentifizierungsmechanismen in Ihre Webanwendungen und mobilen Apps einbinden. Mit nur wenigen Zeilen Code können Sie Ihre cloud-nativen Apps und Services, deren Ausführung auf {{site.data.keyword.cloud_notm}} erfolgt, ohne großen Aufwand schützen. Sind Sie bereit, loszulegen? [Informieren Sie sich anhand der Dokumentation](/docs/services/appid?topic=appid-getting-started#getting-started).
