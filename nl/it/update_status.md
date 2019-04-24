@@ -42,7 +42,7 @@ Per aggiornare lo stato di un utente, puoi scegliere tra le seguenti opzioni:
 <dt>Infrastruttura classica disabilitata</dt>
 <dd>L'utente non può accedere più alle risorse dell'infrastruttura classica, ma può continuare ad accedere alla console e alle risorse della piattaforma.</dd>
 <dt>Solo VPN</dt>
-<dd>L'utente non può accedere alla console, ma ha accesso a qualsiasi dispositivo e sottorete VPN che assegni per l'infrastruttura classica accedendo direttamente all'applicazione.</dd>
+<dd>L'utente non può accedere alla console, ma ha accesso a qualsiasi dispositivo e sottoreti VPN che assegni per l'infrastruttura classica accedendo direttamente all'applicazione.</dd>
 </dl>
 
 Quando aggiorni un utente dallo stato Solo VPN allo stato Attivo, l'utente deve conoscere la password per accedere alla console. Nella maggior parte dei casi, questa è la password dell'ID SoftLayer, che potresti dover reimpostare per poterla utilizzare. In rari casi in cui l'utente abbia già un ID IBM, deve accedere con ID IBM e password.

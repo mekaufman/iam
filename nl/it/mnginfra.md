@@ -43,7 +43,7 @@ Devi avere l'autorizzazione di gestione utenti dell'infrastruttura classica ed e
     Utilizza l'opzione **Assegnazione automatica** per impostare il modo in cui l'utente ottiene l'accesso alle sottoreti VPN in base al suo accesso al dispositivo. Se questa opzione è attivata, all'utente viene automaticamente assegnato l'accesso a tutte le sottoreti per i dispositivi a cui ha già accesso. Puoi disattivare questa opzione per selezionare manualmente le sottoreti dall'elenco.
     {: tip}
 
-    Per fornire l'accesso alle sottoreti VPN, all'utente deve essere già stato assegnato l'accesso a uno o più dispositivi. Se l'utente non accede ad alcun dispositivo, non sono disponibili sottoreti per la selezione. Puoi definire il tipo di sottoreti VPN a cui l'utente ha accesso utilizzando l'opzione **Tipo VPN**. Se selezioni **Nessuno**, non è possibile assegnare alcun accesso VPN.
+    Per fornire l'accesso alle sottoreti VPN, all'utente deve essere già stato assegnato l'accesso a uno o più dispositivi. Se l'utente non accede ad alcun dispositivo, non sono disponibili sottoreti per la selezione. Puoi definire il tipo di sottorete VPN a cui l'utente ha accesso utilizzando l'opzione **Tipo VPN**. Se selezioni **Nessuno**, non è possibile assegnare alcun accesso VPN.
 
     L'opzione PPTP è obsoleta, quindi se hai questa opzione e la cancelli, non è più disponibile.
     {: deprecated}

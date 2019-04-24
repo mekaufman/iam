@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-05"
 
 keywords: classic infrastructure API keys, classic infrastructure API, SoftLayer API key
 
@@ -22,9 +22,9 @@ subcollection: iam
 您可以使用经典基础架构 API 密钥来访问经典基础架构 API。每个用户只能有一个经典基础架构 API 密钥。其帐户使用 API 密钥的用户可以创建、删除和查看 API 密钥的详细信息。如果您在经典基础架构层次结构中是用户的祖代，并且分配有“管理用户”经典基础架构许可权，那么您可以查看、创建和删除仅使用 VPN 的用户的经典基础架构 API 密钥。
 {:shortdesc}
 
-要管理经典基础架构 API 密钥，请转至**管理** > **访问权 (IAM)**，然后选择**用户**。单击用户的名称，然后单击**用户详细信息**。
+要管理经典基础架构 API 密钥，请转至**管理** > **访问权 (IAM)** > **IBM Cloud API 密钥**。
 
-  * 要创建经典基础架构 API 密钥，请在“API 密钥”部分中，单击**添加经典基础架构密钥**。
+  * 要创建经典基础架构 API 密钥，请在“API 密钥”部分中单击**创建经典基础架构密钥**。
 
      复制或下载 API 密钥，并将其保存在安全的位置。要检索该 API 密钥的详细信息，可以使用**操作** ![“操作列表”图标](../icons/action-menu-icon.svg) 菜单中的**查看详细信息**选项。
 

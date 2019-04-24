@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-05"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP
 
@@ -21,7 +21,7 @@ subcollection: iam
 # Requerimiento de MFA para usuarios de la cuenta
 {: #enablemfa}
 
-Como propietario de una cuenta de {{site.data.keyword.Bluemix}}, puede decidir si quiere exigir la autenticación de multifactores (MFA) para cada usuario de la cuenta. Todos los usuarios con un IBMid utilizan un método de MFA de código de acceso de un solo uso basado en tiempo (TOTP), y cualquier usuario con otro tipo de ID se debe habilitar para que pueda utilizar TOTP, preguntas de seguridad u otro método de autenticación externa.  
+Como propietario de una cuenta de {{site.data.keyword.Bluemix}} o administrador del servicio de facturación, puede decidir si quiere exigir la autenticación de multifactores (MFA) para cada usuario de la cuenta. Todos los usuarios con un IBMid utilizan un método de MFA de código de acceso de un solo uso basado en tiempo (TOTP), y cualquier usuario con otro tipo de ID se debe habilitar para que pueda utilizar TOTP, preguntas de seguridad o un método de autenticación externa independiente.  
 {:shortdesc}
 
 ## Antes de empezar
@@ -29,7 +29,7 @@ Como propietario de una cuenta de {{site.data.keyword.Bluemix}}, puede decidir s
 
 Revise las siguientes consideraciones antes de habilitar MFA de IBMid para su cuenta para asegurarse de que sabe cómo afecta a todos los usuarios de su cuenta:
 
-* Cuando habilite la MFA en su cuenta, todos los usuarios agregados a su cuenta deben completar el proceso de MFA la próxima vez que inicien una sesión.
+* Cuando habilite la MFA en su cuenta, los usuarios deben completar el proceso de MFA la próxima vez que inicien una sesión.
 * Las claves de API para los usuarios y los ID de servicio seguirán funcionando cuando la MFA esté habilitada.
 * Si necesita utilizar una CLI CF nativa o un inicio de sesión de IU en Cloud Foundry, debe utilizar las claves de API o el inicio de sesión único (SSO) cuando la MFA esté habilitada en la cuenta.
 * MFA para su cuenta se aplica al inicio de sesión de un usuario, pero no se aplica a las llamadas de API. Si un usuario tiene permiso para realizar llamadas de API a los recursos de su cuenta, el usuario puede hacerlo sin completar la MFA. Si el usuario pertenece a otras cuentas, el usuario puede realizar llamadas de API a los recursos de su cuenta utilizando una clave de API de una cuenta que no requiera MFA.
@@ -45,11 +45,13 @@ Cuando se habilita el valor de cuenta de autenticación de multifactores, se sol
 ## Habilitación de MFA para todos los usuarios de su cuenta
 {: #enabling}
 
-Para habilitar la MFA, debe ser el propietario de la cuenta. La habilitación de la MFA no afecta a los usuarios que ya han iniciado sesión, ya que el cumplimiento de la MFA de la cuenta solo tiene vigencia en los inicios de sesión nuevos. Asegúrese de comunicar a los usuarios de su cuenta que se ha habilitado MFA y de describir el impacto sobre los usuarios en el siguiente inicio de sesión.
+Para habilitar la MFA, debe ser el propietario de la cuenta o un administrador del servicio de gestión de la cuenta de facturación. La habilitación de la MFA no afecta a los usuarios que ya han iniciado sesión, ya que el cumplimiento de la MFA de la cuenta solo tiene vigencia en los inicios de sesión nuevos. Asegúrese de comunicar a los usuarios de su cuenta que se ha habilitado MFA y de describir el impacto sobre los usuarios en el siguiente inicio de sesión.
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Valores**.
-2. Seleccione **Autenticación de multifactores**.
-3. En la ventana de confirmación, pulse **Sí, estoy seguro**.
+2. Seleccione **Actualizar** para el valor de Inicio de sesión de cuenta.
+3. Seleccione **Ninguno** o **Solo usuarios no federados** en función de qué tipo de autenticación desee que se requiera.
+4. Marque el recuadro de selección para confirmar que entiende el impacto de requerir MFA para los usuarios de la cuenta, si selecciona la opción de solo usuarios no federados.
+5. Pulse **Guardar**.
 
 ## Configuración de su TOTP
 {: #setupapp}
@@ -77,8 +79,10 @@ Si encuentra un mensaje de error que indica que ya ha configurado la autenticaci
 ## Inhabilitación de MFA necesaria para todos los usuarios de su cuenta
 {: #disablemfa}
 
-Para inhabilitar la MFA, debe ser el propietario de la cuenta. La inhabilitación de la MFA no afecta a los usuarios que ya han iniciado sesión y la acción será efectiva en todos los inicios de sesión nuevos.
+Para inhabilitar la MFA, debe ser el propietario de la cuenta o un administrador del servicio de facturación de gestión de la cuenta. La inhabilitación de la MFA no afecta a los usuarios que ya han iniciado sesión. La acción será efectiva en todos los inicios de sesión nuevos.
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Valores**.
-2. Seleccione **Estándar**.
-3. En la ventana de confirmación, pulse **Sí, estoy seguro**.
+2. Seleccione **Editar** para el valor de Inicio de sesión de cuenta.
+3. Seleccione **Ninguno**.
+4. Pulse **Guardar**.
+

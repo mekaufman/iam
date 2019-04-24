@@ -46,9 +46,9 @@ Anche se questi suggerimenti sono progettati per uno scenario ipotetico, puoi co
 Per creare un gruppo di accesso, completa la seguente procedura:
 
 1. Nella console {{site.data.keyword.Bluemix}}, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Gruppi di accesso**.
-2. Fai clic su **Create**.
+2. Fai clic su **Crea**.
 3. Immetti il nome e la descrizione per il gruppo.
-4. Fai clic su **Create**.
+4. Fai clic su **Crea**.
 
 Dopo aver creato un gruppo di accesso, puoi aggiungere gli utenti e gli ID servizio al gruppo.
 
