@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-04-10"
 
 keywords: dynamic rules, access groups, specific identity attributes
 
@@ -33,17 +33,17 @@ Solo gli utenti che sono già invitati all'account possono essere associati ai g
 ## Configurazione delle regole
 {: #setup_rules}
 
-Le regole dinamiche vengono create impostando le condizioni che devono essere soddisfatte dai dati configurati all'interno del provider di identità e passati con un ID federato dell'utente durante l'accesso. Per creare una regola, attieniti alla seguente procedura:
+Le regole dinamiche vengono create impostando le condizioni che devono essere soddisfatte dai dati configurati all'interno del provider di identità e passati con un ID federato dell'utente durante l'accesso. Puoi aggiungere più di una condizione per una regola. Tutte le condizioni impostate nella regola devono essere soddisfatte affinché un utente venga aggiunto a un gruppo di accesso. Per creare una regola, attieniti alla seguente procedura:
 
 1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Gruppi di accesso**.
 2. Seleziona il nome del gruppo di accesso per cui vuoi creare una regola per aprire la pagina dei dettagli del gruppo.
 3. Seleziona la scheda **Regole dinamiche**.
 4. Fai clic su **Aggiungi regola**.
-5. Immetti le informazioni dal tuo provider di identità. Il seguente elenco fornisce i dettagli per ogni campo obbligatorio.
+5. Immetti le informazioni dal tuo provider di identità che viene fornito dinamicamente per te nella pagina Aggiungi regola. Il seguente elenco fornisce i dettagli per ogni campo obbligatorio.
 
 <dl>
 <dt>Nome</dt>
-<dd>Immetti un nome personalizzato per la tua regola che ti aiuta a ricordare quale tipo di utenti stai aggiungendo a un gruppo di accesso.</dd>
+<dd>Immetti un nome personalizzato per la tua regola che ti aiuti a ricordare quale tipo di utenti stai aggiungendo a un gruppo di accesso. </dd>
 <dt>Provider di identità</dt>
 <dd>Immetti l'URI per il tuo provider di identità. Questo è il campo "entityId" di SAML, che è a volte indicato come ID emittente, per il provider di identità come parte della configurazione della federazione per l'onboarding con l'ID IBM.</dd>
 <dt>Scadenza (in ore)</dt>
@@ -56,7 +56,7 @@ Le regole dinamiche vengono create impostando le condizioni che devono essere so
 <dd>Immetti il valore di attributo per l'istruzione di attributo rispetto alla quale la regola sta eseguendo il confronto.</dd>
 </dl>
 
-Puoi aggiungere più di una condizione per una regola. Tutte le condizioni impostate nella regola devono essere soddisfatte affinché un utente venga aggiunto a un gruppo di accesso.
+Puoi considerare la regola come una coppia chiave/valore (key:value) in cui la chiave è l'elemento che aggiungi nel campo `Aggiungi utenti quando` e il valore è l'elemento che inserisci nel campo `Valore` per la regola con cui deve essere confrontato in base al criterio di controllo selezionato.
 {: tip}
 
 ## Regola di esempio

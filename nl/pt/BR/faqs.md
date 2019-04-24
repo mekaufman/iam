@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-03-19"
+lastupdated: "2019-04-08"
 
 keywords: frequently asked question, faq
 
@@ -30,8 +30,7 @@ subcollection: iam
 {: faq}
 
 O Identity and Access Management (IAM) permite que você autentique com segurança os usuários para os serviços da
-plataforma e controle o acesso aos recursos na plataforma {{site.data.keyword.cloud_notm}}. Um conjunto de
-serviços do IBM Cloud é ativado para usar o Cloud IAM para controle de acesso. Eles são organizados em grupos de
+plataforma e controle o acesso aos recursos na plataforma {{site.data.keyword.cloud_notm}}. Um conjunto de serviços do IBM Cloud é ativado para usar o Cloud IAM para controle de acesso. Eles são organizados em grupos de
 recursos dentro da conta para permitir que o acesso rápido e fácil a mais de um recurso de cada
 vez seja concedido aos usuários. As políticas de acesso ao Cloud IAM são usadas para designar aos usuários e IDs de serviço o acesso aos recursos em sua conta. Para obter mais informações, consulte [{{site.data.keyword.cloud_notm}}
 Identity and Access Management](/docs/iam?topic=iam-iamoverview#iamoverview).
@@ -44,9 +43,17 @@ Um serviço ativado para IAM deve estar em um grupo de recursos e o acesso ao se
 das políticas de acesso do IAM. Ao criar um serviço ativado para IAM por meio do catálogo, deve-se designá-lo a um grupo
 de recursos. Para obter mais informações, consulte [O que é um recurso?](/docs/resources?topic=resources-resource#resource)
 
-O {{site.data.keyword.containerlong_notm}} é a única exceção; ele é controlado pelo acesso do IAM, mas é sempre designado ao grupo de recursos padrão. Portanto, você não tem a opção de escolher um ao criá-lo por meio do catálogo. Além
-disso, ele não pode ser designado a nenhum outro grupo de recursos
+O {{site.data.keyword.containerlong_notm}} é a única exceção; ele é controlado pelo acesso do IAM, mas é sempre designado ao grupo de recursos padrão. Portanto, você não tem a opção de escolher um ao criá-lo por meio do catálogo. Ele não pode ser designado a nenhum outro grupo de recursos.
 
+## O que é uma política de acesso do IAM?
+{: #iam-policies}
+{: faq}
+
+Uma política de acesso do IAM é o modo como os usuários, os IDs de serviços e os grupos de acesso em uma conta recebem permissão para trabalhar com uma instância de recurso ou com um serviço específico ativado pelo IAM, gerenciam um grupo de recursos ou concluem tarefas de gerenciamento de conta. Cada política de acesso do IAM é composta por um sujeito, um destino e uma função. Um sujeito é quem tem o acesso. O destino é ao que o sujeito pode ter acesso. A função, se ela for uma função de plataforma ou de serviço, dependendo do contexto do destino selecionado, definirá qual nível de acesso o sujeito tem no destino. 
+
+Um sujeito é um usuário, um ID de serviço ou um grupo de acesso. Um destino pode ser um serviço na conta, um grupo de recursos na conta, um tipo ou uma instância de recurso específico ou um serviço de gerenciamento de conta. As funções fornecidas como opções dependem do destino selecionado. Alguns serviços têm funções específicas de serviço definidas e alguns usam somente as funções de plataforma. Pare entender esse conceito visualmente, veja o gráfico a seguir com um esboço das opções para a criação de uma política do IAM:
+
+![Criando políticas do IAM](images/IAM.svg "Como as políticas de acesso do IAM são criadas usando um sujeito, um destino e uma função")
 
 ## O IAM e o Cloud Foundry estão relacionados?
 {: #iam-cloudfoundry}
@@ -129,8 +136,7 @@ Para serviços do Cloud Foundry, deve-se ter as funções de gerenciador de orga
 
 Para a infraestrutura clássica, deve-se ter a permissão Gerenciar a infraestrutura clássica de usuários e as permissões de categoria de serviço e dispositivo para os recursos aos quais você deseja fornecer o acesso de usuário.
 
-## Qual é a diferença entre fornecer acesso para gerenciar um grupo de recursos e fornecer acesso a recursos
-dentro de um grupo de recursos?
+## Qual é a diferença entre o acesso para gerenciar um grupo de recursos e o acesso a recursos dentro de um grupo de recursos?
 {: #providing-access}
 {: faq}
 
@@ -158,7 +164,7 @@ O proprietário da conta pode remover quaisquer usuários da conta e qualquer us
 {: faq}
 
 1. Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **Configurações**.
-2. Na seção de login da Conta, selecione **Atualizar** para selecionar a MFA para todos os usuários ou apenas para os usuários não federados.
+2. Na seção Login de conta, selecione **Atualizar** para selecionar a MFA para todos os usuários ou somente para usuários não federados.
 
 Para obter mais informações, veja [Requerendo MFA para usuários em sua conta](/docs/iam?topic=iam-enablemfa#enablemfa).
 
@@ -197,20 +203,8 @@ Cloud Foundry, enquanto os grupos de recursos e o IAM podem ser usados para múl
 
 Para delegar os recursos do administrador de conta, designe o acesso a seguir:
 
-* Uma política do IAM com a função de Administrador em Todos os serviços ativados para o Identity and Access, que permite a um usuário criar instâncias de serviço e designar aos usuários acesso a todos os recursos na conta.
+* Uma política do IAM com as funções de Administrador e de Gerenciador em Todos os serviços ativados para o Identity and Access, o que permite que um usuário crie instâncias de serviço e designe aos usuários acesso a todos os recursos na conta.
 * Uma política do IAM com a função de Administrador em Todos os serviços de gerenciamento de conta, que permite que um usuário conclua tarefas como convidar e remover usuários, gerenciar grupos de acesso, gerenciar IDs de serviço, gerenciar ofertas do catálogo privado e rastrear faturamento e uso.
-* A permissão de Superusuário configurada para a infraestrutura clássica
-* Gerenciador do Cloud Foundry para todas as organizações
-
-
-## Qual é a diferença entre um administrador de conta e um proprietário da conta?
-{: #owner-administrator}
-{: faq}
-
-Os proprietários da conta são designados automaticamente como o administrador de conta para o {{site.data.keyword.Bluemix_notm}} IAM. Como o administrador de conta, é possível convidar usuários, designar e gerenciar o acesso para usuários, criar grupos de recursos, requerer a MFA para todos os usuários na conta e criar instâncias de serviço. Se você deseja tornar outros usuários em sua conta um administrador de conta, designe a eles o acesso a seguir:
-
-* Uma política do IAM com Administrador em Todos os serviços ativados para o Identity and Access, que permite a um usuário criar instâncias de serviço e designar aos usuários acesso a todos os recursos na conta.
-* Uma política do IAM com Administrador em Todos os serviços de gerenciamento de conta, que permite que um usuário conclua tarefas como convidar usuários, gerenciar grupos de acesso, gerenciar IDs de serviço, gerenciar ofertas do catálogo privado e controlar faturamento e uso.
 * A permissão de Superusuário configurada para a infraestrutura clássica
 * Gerenciador do Cloud Foundry para todas as organizações
 
@@ -233,7 +227,7 @@ Um proprietário da conta pode visualizar todos os usuários na conta e escolher
 * **Visualização restrita**: limita a capacidade de visualizar usuários na página Usuários para somente aqueles que tiveram acesso explícito concedido, juntamente com aqueles que têm visibilidade de outros usuários por meio de uma organização do Cloud Foundry compartilhada ou um relacionamento de hierarquia do usuário de infraestrutura clássica.
 
 
-## Eu tenho que designar acesso a um usuário quando o convido para a conta?
+## Eu preciso designar acesso a um usuário quando os convido para a conta?
 {: #account-invite}
 {: faq}
 
@@ -248,4 +242,4 @@ Sim. Deve-se designar um acesso de usuário dentro de um dos três sistemas de g
 {: #appid}
 {: faq}
 
-O IAM é usado para gerenciar o acesso a seus serviços e recursos do {{site.data.keyword.cloud_notm}}. Com o {{site.data.keyword.appid_full_notm}}, é possível levar a segurança de nuvem um passo adiante, incluindo a autenticação em seus apps móveis e da web. Com apenas algumas linhas de código, é possível proteger facilmente seus apps e serviços nativos da Nuvem que são executados no {{site.data.keyword.cloud_notm}}. Pronto para iniciar? [Verifique os docs](/docs/services/appid?topic=appid-getting-started#getting-started). 
+O IAM é usado para gerenciar o acesso a seus serviços e recursos do {{site.data.keyword.cloud_notm}}. Com o {{site.data.keyword.appid_full_notm}}, é possível levar a segurança de nuvem um passo adiante, incluindo a autenticação em seus apps móveis e da web. Com apenas algumas linhas de código, é possível proteger facilmente seus apps e serviços nativos da Nuvem que são executados no {{site.data.keyword.cloud_notm}}. Pronto para iniciar? [Verifique os docs](/docs/services/appid?topic=appid-getting-started#getting-started).
