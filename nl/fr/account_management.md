@@ -4,12 +4,11 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-02-11"
+lastupdated: "2019-04-03"
 
 keywords: account management, access, access policy, account administrator
 
 subcollection: iam
-
 
 ---
 
@@ -36,7 +35,7 @@ Pour attribuer l'accès à l'un ou à tous les services de gestion de compte, pr
 4. Sélectionnez **Tous les services de gestion des comptes** ou bien un service de gestion de compte spécifique.
 5. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu.
 
-Pour accorder à un autre utilisateur l'accès complet au compte à des fins de gestion des accès utilisateur et de gestion de toutes les ressources de compte, vous devez affecter deux règles. Une règle octroiera à l'utilisateur l'accès à toutes les ressources en sélectionnant **Tous les services avec l'offre Identity and Access activée** en lui affectant le rôle **Administrateur**. L'autre règle octroiera à l'utilisateur l'accès à tous les services de gestion des comptes du compte en sélectionnant **Tous les services de gestion des comptes** en lui affectant le rôle **Administrateur**.
+Pour accorder à un autre utilisateur l'accès complet au compte à des fins de gestion des accès utilisateur et de gestion de toutes les ressources de compte, vous devez affecter deux règles. La première octroie à l'utilisateur l'accès à toutes les ressources en sélectionnant **Tous les services avec l'offre Identity and Access activée** avec les rôles **Administrateur** et **Responsable** affectés. L'autre règle octroie à l'utilisateur l'accès à tous les services de gestion des comptes en sélectionnant **Tous les services de gestion des comptes** avec le rôle **Administrateur** affecté.
 {: tip}
 
 ## Mappages action/rôle pour les services de gestion des comptes
@@ -68,6 +67,7 @@ Le tableau suivant met en avant les actions pouvant être effectuées par les ut
 | Administrateur |  Afficher les cas de support <br><br> Rechercher des cas de support <br><br> Mettre à jour les cas <br><br> Créer des cas    |
 {: caption="Tableau 3. Rôles et actions pour le service Centre de support" caption-side="top"}
 
+{: #billing-acct-mgmt}
 | Rôles | Actions |
 |:-------|----------|
 | Afficheur | Afficher les paramètres des fonctions du compte <br><br> Afficher les abonnements dans le compte <br><br> Afficher le nom du compte <br><br> Afficher les groupes de ressources   |
@@ -83,6 +83,7 @@ Le tableau suivant met en avant les actions pouvant être effectuées par les ut
 | Editeur |  Créer, mettre à jour et supprimer des ID et clés d'API  |
 | Administrateur |  Créer, mettre à jour et supprimer des ID et clés d'API <br><br> Affecter des règles d'accès aux ID  |
 {: caption="Tableau 5. Rôles et actions pour le service d'identité IAM" caption-side="top"}
+{: #identity-service-acct-mgmt}
 
 Pour le service d'identité IAM, ces actions s'appliquent aux ID de service dans le compte que l'utilisateur n'a pas créés. Tous les utilisateurs peuvent créer des ID de service. Ils sont administrateurs de ces ID et ils peuvent créer la clé d'API et les règles d'accès associées. Toutefois, ce service de gestion des comptes s'applique à la possibilité d'afficher, de supprimer et d'affecter l'accès aux ID de service dans le compte créé par d'autres utilisateurs.
 {: note}

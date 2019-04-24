@@ -4,7 +4,7 @@ copyright:
 
   years: 2015，2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-03-27"
 
 keywords: federated ID, enterprise SSO, single sign-on ID, API key login, one-time passcode login
 
@@ -99,6 +99,8 @@ subcollection: iam
       ```
 
     * 環境変数を設定します。 さらに、ご使用のシステムにも環境変数を設定できます。 例えば、IBMCLOUD_API_KEY=api_key_string と指定します。ここで、`api_key_string` は、API キーのカスタム値です。 環境変数が設定された後は、CLI から単純に `ibmcloud login` を指定できます。
+
+   Windows 10 PowerShell の場合は、キー・ファイル名を単一引用符で囲んで `'@key_file_name'` を使用します。{: tip}
 
   Cloud Foundry CLI を使用してログインするには、以下のように、ユーザー名として `apikey` を指定し、パスワードとして API キー・ストリングを指定します。
 

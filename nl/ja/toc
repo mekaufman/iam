@@ -39,12 +39,13 @@ ID およびアクセス権限の管理
         user_login.md
 
     {: .topicgroup}
-    アクセス権限の管理
+    アクセス管理
         mngiam.md
         account_management.md
         mngcf.md
         mnginfra.md
         groups.md
+        public_access.md
         accessgroup_rules.md
         userlist.md
 

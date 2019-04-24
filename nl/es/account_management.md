@@ -4,12 +4,11 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-02-11"
+lastupdated: "2019-04-03"
 
 keywords: account management, access, access policy, account administrator
 
 subcollection: iam
-
 
 ---
 
@@ -36,7 +35,7 @@ Para asignar acceso a uno o a todos los servicios de gestión de cuentas, siga l
 4. Seleccione **Todos los servicios de gestión de cuentas** o seleccione un servicio de gestión de cuentas específico.
 5. Seleccione cualquier combinación de roles para asignar el acceso deseado.
 
-Para otorgar acceso completo a la cuenta a otro usuario con el fin de gestionar accesos de usuario y todos los recursos de la cuenta, debe asignar dos políticas. Una política que otorgue acceso al usuario a todos los recursos de la cuenta seleccionando **Todos los servicios habilitados de Identity and Access** con el rol de **Administrador** asignado. Y una política que otorgue acceso al usuario a todos los recursos de gestión de cuentas de la cuenta seleccionando **Todos los servicios de gestión de cuentas** con el rol de **Administrador** asignado.
+Para otorgar acceso completo a la cuenta a otro usuario con el fin de gestionar accesos de usuario y todos los recursos de la cuenta, debe asignar dos políticas. Una política que otorgue acceso al usuario a todos los recursos de la cuenta seleccionando **Todos los servicios habilitados de Identity and Access** con el rol de **Administrador** y **Gestor** asignado. Y una política que otorgue acceso al usuario a todos los recursos de gestión de cuentas de la cuenta seleccionando **Todos los servicios de gestión de cuentas** con el rol de **Administrador** asignado.
 {: tip}
 
 ## Correlaciones de acciones y roles en los servicios de gestión de cuentas
@@ -68,6 +67,7 @@ En las tablas siguientes se indican las acciones que pueden realizar los usuario
 | Administrador |  Ver casos <br><br> Buscar casos <br><br> Actualizar casos <br><br> Crear casos    |
 {: caption="Tabla 3. Roles y acciones de ejemplo para el servicio del centro de soporte" caption-side="top"}
 
+{: #billing-acct-mgmt}
 | Roles | Acciones |
 |:-------|----------|
 | Visor | Ver valores de características de la cuenta <br><br> Ver suscripciones en la cuenta <br><br> Ver nombre de la cuenta <br><br> Ver grupos de recursos   |
@@ -83,6 +83,7 @@ En las tablas siguientes se indican las acciones que pueden realizar los usuario
 | Editor |  Crear, actualizar y suprimir ID y claves de API  |
 | Administrador |  Crear, actualizar y suprimir ID y claves de API <br><br> Asignar políticas de acceso a ID  |
 {: caption="Tabla 5. Roles y acciones de ejemplo para el servicio de identidad IAM" caption-side="top"}
+{: #identity-service-acct-mgmt}
 
 Para el servicio IAM Identity Service, estas acciones se aplican a los ID de servicio dentro de la cuenta que el usuario no ha creado. Todos los usuarios pueden crear ID de servicio. Son los administradores de dichos ID y pueden crear la clave de API asociada y las políticas de acceso. Sin embargo, este servicio de gestión de cuentas se aplica a la capacidad de ver, suprimir y asignar acceso a los ID de servicio de la cuenta creada por otros usuarios.
 {: note}

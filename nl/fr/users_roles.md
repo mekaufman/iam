@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-02-12"
+lastupdated: "2019-04-03"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -28,7 +28,13 @@ Tous les services organisés en un groupe de ressources dans votre compte sont g
 ## Quelles sont les règles Cloud IAM et qui peut les affecter ?
 {: #iamusermanpol}
 
-Une règle accorde à un objet un ou plusieurs rôles sur un ensemble de ressources de sorte que des actions spécifiques puissent être engagées dans le contexte des ressources cible spécifiées. Vous pouvez affecter et gérer des règles si le rôle approprié vous a été attribué. Le tableau suivant décrit les tâches de gestion des règles et le rôle requis pour chacune.
+Une règle accorde à un objet un ou plusieurs rôles sur un ensemble de ressources de sorte que des actions spécifiques puissent être engagées dans le contexte des ressources cible spécifiées.
+
+Le graphique suivant présente comment la règle IAM est créée. Les règles sont toujours créées en spécifiant l'objet en premier. L'objet est un utilisateur spécifique, un ID de service ou un groupe d'accès. Ensuite, la cible de la règle est sélectionnée. Il s'agit des éléments auxquels l'utilisateur est autorisé à accéder, comme tous les services d'un groupe de ressources, tous les services activés par IAM dans le compte, les services de gestion des comptes ou une instance de service spécifique. Pour finir, terminez votre règle d'accès en effectuant une sélection parmi les rôles disponibles. Ces rôles définissent les actions pouvant être effectuées par un utilisateur. D'autres options de configuration peuvent être disponibles, selon le service que vous sélectionnez.
+
+![Création de règles IAM](images/IAM.svg "Mode de création des règles d'accès IAM en utilisant un objet, une cible et un rôle")
+
+Vous pouvez affecter et gérer des règles si le rôle approprié vous a été attribué. Le tableau suivant décrit les tâches de gestion des règles et le rôle requis pour chacune.
 
 | Action | Rôle requis |
 |----------|---------|
@@ -37,17 +43,6 @@ Une règle accorde à un objet un ou plusieurs rôles sur un ensemble de ressour
 | Créer une règle sur une instance de service | Propriétaire du compte, administrateur de tous les services activés pour IAM, ou administrateur du service dans le compte, administrateur de tous les services dans le groupe de ressources pertinent, ou administrateur de l'instance de service |
 {: caption="Tableau 1. Utilisateurs autorisés à créer des règles d'accès" caption-side="top"}
 
-Lorsque vous affectez une règle, vous commencez avec l'objet. Une fois que vous avez sélectionné l'objet de la règle, vous pouvez choisir de la définir pour un groupe de ressources, une ressource individuelle ou un service de gestion des comptes.
-
-Ensuite, selon votre sélection initiale, vous pouvez choisir l'une des options suivantes :
-
-  * Un service dans un groupe de ressources
-  * Toutes les ressources d'un groupe de ressources
-  * Toutes les instances ou une instance pour la ressource sélectionnée
-  * Tous les services activés par IAM dans le compte
-  * Un service de gestion des comptes
-
-D'autres options de configuration peuvent être disponibles, selon le service que vous sélectionnez. Enfin, vous sélectionnez les rôles à affecter.
 
 ## Types de règles d'accès courantes
 {: #policytypes}
@@ -63,7 +58,7 @@ Vous pouvez attribuer un accès à granularité fine aux utilisateurs, aux ID de
 * Les ressources d'une instance individuelle
 * Un seul type de ressource dans une instance, par exemple, un compartiment dans une instance {{site.data.keyword.objectstorageshort}}
 
-Pour accorder à un autre utilisateur l'accès complet au compte à des fins de gestion des accès utilisateur et de gestion de toutes les ressources de compte, vous devez affecter deux règles. Une règle octroiera à l'utilisateur l'accès à toutes les ressources en sélectionnant **Tous les services avec l'offre Identity and Access activée** en lui affectant le rôle **Administrateur**. L'autre règle octroiera à l'utilisateur l'accès à tous les services de gestion des comptes du compte en sélectionnant **Tous les services de gestion des comptes** en lui affectant le rôle **Administrateur**.
+Pour accorder à un autre utilisateur l'accès complet au compte à des fins de gestion des accès utilisateur et de gestion de toutes les ressources de compte, vous devez affecter deux règles. La première octroie à l'utilisateur l'accès à toutes les ressources en sélectionnant **Tous les services avec l'offre Identity and Access activée** avec les rôles **Administrateur** et **Responsable** affectés. L'autre règle octroie à l'utilisateur l'accès à tous les services de gestion des comptes du compte en sélectionnant **Tous les services de gestion des comptes** avec le rôle **Administrateur** affecté.
 {: tip}
 
 ## Rôles Cloud IAM
@@ -85,6 +80,9 @@ Tous les rôles listés ici ne seront pas forcément affichés lorsque vous affe
 {: #platformroles}
 
 Les rôles de gestion de plateforme permettent d'attribuer aux utilisateurs des degrés d'autorisation différents pour effectuer des actions de plateforme dans le compte et sur un service. Par exemple, les rôles de gestion de plateforme affectés pour les ressources de catalogue permettent aux utilisateurs d'effectuer des actions comme la création, la suppression, l'édition et l'affichage d'instances de service. Les services de gestion de plateforme affectés pour les services de gestion de service permettent aux utilisateurs d'effectuer des actions comme l'invitation et la suppression d'utilisateurs, l'utilisation de groupes de ressources et l'affichage des informations de facturation. Pour plus d'informations sur les services de gestion de compte, voir [Affectation de l'accès aux services de gestion de compte](/docs/iam?topic=iam-account-services#account-services).
+
+Sélectionnez tous les rôles qui s'appliquent lors de la création d'une règle. Chaque rôle permet d'effectuer des actions séparées et n'hérite pas des actions des rôles inférieurs.
+{: tip}
 
 Les tableaux suivants fournissent des exemples de certaines actions de gestion de plateforme que les utilisateurs peuvent effectuer dans le contexte de ressources de catalogue, de groupes de ressources et de services de gestion de compte. Pour comprendre comment les rôles s'appliquent aux utilisateurs dans le contexte du service que vous utilisez, reportez-vous à la documentation pour chaque offre de catalogue.
 

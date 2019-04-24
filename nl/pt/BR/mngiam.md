@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-04-03"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -51,7 +51,7 @@ Ao editar o acesso para um usuário ou um grupo, você pode receber uma mensagem
 * Acesso aos recursos dentro de um grupo de recursos, incluindo a opção para apenas um ou todos
 * Acesso aos recursos na conta, incluindo a opção para apenas um tipo ou todos os tipos
 
-Se você deseja permitir que um usuário tenha acesso total de administrador para concluir tarefas de [gerenciamento de conta](/docs/iam?topic=iam-account-services#account-services), como convidar e remover usuários, visualizar faturamento e uso, gerenciar IDs de serviço, gerenciar grupos de acesso, gerenciar acesso de usuário e acesso a todos os recursos da conta, deve-se criar duas políticas: uma em **Todos os serviços ativados pelo Identity and Access** com o administrador de função e outra em **Todos os serviços de gerenciamento de conta** com o administrador de função.
+Se você deseja permitir a um usuário acesso total de administrador a todas as tarefas de [gerenciamento de conta](/docs/iam?topic=iam-account-services#account-services), como convidar e remover usuários, visualizar faturamento e uso, gerenciar IDs de serviço, gerenciar grupos de acesso, gerenciar acesso de usuário e acessar todos os recursos da conta, deve-se criar duas políticas: uma em **Todos os serviços ativados de identidade e acesso** com as funções Administrador e Gerenciador e uma em **Todos os serviços de gerenciamento de conta** com a função Administrador.
 {: tip}
 
 ### Acesso aos recursos dentro de um grupo de recursos

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-04-03"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -51,7 +51,7 @@ Für das Zuweisen des Zugriffs auf Ressourcen stehen zwei Richtlinientypen zur V
 * Zugriff auf Ressourcen in einer Ressourcengruppe, einschließlich der Option für nur eine oder für alle Gruppen.
 * Zugriff auf Ressourcen im Konto, einschließlich der Option für nur einen oder für alle Typen.
 
-Wenn Sie einem Benutzer vollständigen Administratorzugriff für [Kontoverwaltungstasks](/docs/iam?topic=iam-account-services#account-services) wie das Einladen und Entfernen von Benutzern, die Ansicht von Abrechnung und Nutzung, die Verwaltung von Service-IDs, Zugriffsgruppen und Benutzerzugriff sowie Zugriff auf alle Kontoressourcen erteilen möchten, müssen Sie zwei Richtlinien erstellen: eine für **Alle Services mit aktiviertem Identity and Access Management** mit dem Rollenadministrator und eine für **Alle Kontoverwaltungsservices** mit dem Rollenadministrator.
+Wenn Sie einem Benutzer vollständigen Administratorzugriff für [Kontoverwaltungstasks](/docs/iam?topic=iam-account-services#account-services) wie das Einladen und Entfernen von Benutzern, die Ansicht von Abrechnung und Nutzung, die Verwaltung von Service-IDs, Zugriffsgruppen und Benutzerzugriff sowie Zugriff auf alle Kontoressourcen erteilen möchten, müssen Sie zwei Richtlinien erstellen: eine für **Alle Services mit aktiviertem Identity and Access Management** mit den Rollen Administrator und Manager und eine für **Alle Kontoverwaltungsservices** mit der Rolle Administrator.
 {: tip}
 
 ### Zugriff auf Ressourcen in einer Ressourcengruppe

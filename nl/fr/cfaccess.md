@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-04-02"
 
 keywords: Cloud Foundry roles, Cloud Foundry access, auditor, manager, developer, billing manager
 
@@ -25,8 +25,11 @@ subcollection: iam
 Actuellement, les services ne peuvent pas tous être gérés à l'aide de Cloud IAM. Vous pouvez continuer à utiliser des rôles Cloud Foundry permettant d'accéder à ces instances de service. Les utilisateurs sont ajoutés à l'organisation et à l'espace auxquels l'instance appartient avec un rôle Cloud Foundry affecté.
 {:shortdesc}
 
+Le graphique suivant présente comment les rôles, les espaces et les organisations Cloud Foundry sont liés à un compte qui peut avoir un grand nombre d'utilisateurs, d'organisations et d'espaces. Chaque utilisateur peut être affecté à autant d'organisations et d'espaces que nécessaire. De plus, lorsque des utilisateurs sont affectés à une organisation et à un espace, vous pouvez définir le niveau d'accès à utiliser en choisissant un rôle Cloud Foundry.
+
 
 ![Accès à l'aide d'organisations et d'espaces Cloud Foundry dans un compte](images/cf-diagram.svg "Fonctionnement des accès dans un compte à l'aide d'organisations, d'espaces et de rôles Cloud Foundry")
+
 
 
 ## Rôles Cloud Foundry
@@ -34,12 +37,16 @@ Actuellement, les services ne peuvent pas tous être gérés à l'aide de Cloud 
 
 Les rôles Cloud Foundry accordent l'accès à des organisations et des espaces d'un compte. Les rôles Cloud Foundry n'activent pas de droits utilisateur permettant de réaliser des actions dans le contexte d'un service du compte.
 
+L'accès Cloud Foundry est affecté en ajoutant un utilisateur à une organisation et à un espace puis en affectant un rôle d'organisation et un rôle d'espace. En fonction du type de rôle affecté, cet utilisateur peut effectuer des actions spécifiques pour les instances de service ajoutées à un espace.
+
+![Accès Cloud Foundry](images/CF.svg "Affectation d'un accès utilisateur à un espace et à une organisation Cloud Foundry")
+
 Les rôles suivants peuvent être affectés au niveau de l'organisation :
 
 | Rôle d'organisation | Droits |
 |-------------------|-------------|
 |Responsable | Les responsables de l'organisation peuvent créer, visualiser, éditer ou supprimer des espaces dans celle-ci, examiner l'utilisation et le quota de l'organisation, inviter des utilisateurs dans l'organisation, désigner les utilisateurs y ayant accès et leurs rôles, ainsi que les domaines personnalisés de l'organisation. |
-|Responsable de la facturation | Un responsable de la facturation peut afficher des informations sur l'utilisation des contextes d'exécution et des services pour l'organisation dans la page Tableau de bord de l'utilisation.  |
+|Responsable de la facturation | Un responsable de la facturation peut afficher des informations sur l'utilisation des contextes d'exécution et des services pour l'organisation dans la page Utilisation.  |
 |Auditeur | Un auditeur de l'organisation peut afficher le contenu des applications et des services dans l'organisation. Il peut également afficher les utilisateurs dans l'organisation et les rôles qui leur sont affectés, ainsi que le quota pour l'organisation. |
 {:caption="Tableau 1. Rôles d'organisation et droits" caption-side="top"}
 

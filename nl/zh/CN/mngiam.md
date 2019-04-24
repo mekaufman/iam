@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-04-03"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -51,7 +51,7 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 * 对资源组中资源（包括仅一个或所有资源的选项）的访问权
 * 对帐户中资源（包括仅一种类型或所有类型的选项）的访问权
 
-如果要授予用户完全管理员访问权，以完成[帐户管理](/docs/iam?topic=iam-account-services#account-services)任务（例如，邀请和除去用户，查看计费和使用情况，管理服务标识，管理访问组，管理用户访问权以及所有帐户资源的访问权），那么必须创建两个策略：一个用于具有管理员角色的**所有启用“身份和访问权”的服务**，另一个用于具有管理员角色的**所有帐户管理服务**。
+如果要授予用户完全管理员访问权，以执行[帐户管理](/docs/iam?topic=iam-account-services#account-services)任务（例如，邀请和除去用户，查看计费和使用情况，管理服务标识，管理访问组，管理用户访问权以及所有帐户资源的访问权），那么必须创建两个策略：一个用于具有管理员和管理者角色的**所有启用“身份和访问权”的服务**，另一个用于具有管理员角色的**所有帐户管理服务**。
 {: tip}
 
 ### 对资源组中资源的访问权
