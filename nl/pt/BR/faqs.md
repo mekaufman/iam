@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-19"
 
 keywords: frequently asked question, faq
 
@@ -158,7 +158,9 @@ O proprietário da conta pode remover quaisquer usuários da conta e qualquer us
 {: faq}
 
 1. Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **Configurações**.
-2. Escolha **Autenticação de diversos fatores** e, em seguida, clique em **Sim, tenho certeza**. Para obter mais informações, veja [Requerendo MFA para usuários em sua conta](/docs/iam?topic=iam-enablemfa#enablemfa).
+2. Na seção de login da Conta, selecione **Atualizar** para selecionar a MFA para todos os usuários ou apenas para os usuários não federados.
+
+Para obter mais informações, veja [Requerendo MFA para usuários em sua conta](/docs/iam?topic=iam-enablemfa#enablemfa).
 
 ## Qual é a diferença entre as funções do serviço e da plataforma?
 {: #service-platform-roles}
@@ -200,8 +202,6 @@ Para delegar os recursos do administrador de conta, designe o acesso a seguir:
 * A permissão de Superusuário configurada para a infraestrutura clássica
 * Gerenciador do Cloud Foundry para todas as organizações
 
-Mesmo com o acesso descrito anteriormente designado, um administrador de conta não pode mudar a configuração de MFA para a conta. Somente o proprietário da conta pode mudar essa configuração.
-{: note}
 
 ## Qual é a diferença entre um administrador de conta e um proprietário da conta?
 {: #owner-administrator}
@@ -213,9 +213,6 @@ Os proprietários da conta são designados automaticamente como o administrador 
 * Uma política do IAM com Administrador em Todos os serviços de gerenciamento de conta, que permite que um usuário conclua tarefas como convidar usuários, gerenciar grupos de acesso, gerenciar IDs de serviço, gerenciar ofertas do catálogo privado e controlar faturamento e uso.
 * A permissão de Superusuário configurada para a infraestrutura clássica
 * Gerenciador do Cloud Foundry para todas as organizações
-
-Mesmo com o acesso descrito anteriormente designado, um administrador de conta não pode mudar a configuração de MFA para a conta. Somente o proprietário da conta pode mudar essa configuração.
-{: note}
 
 ## Como designar acesso a infraestrutura e dispositivos?
 {: #infrastructure-devices}
@@ -251,4 +248,4 @@ Sim. Deve-se designar um acesso de usuário dentro de um dos três sistemas de g
 {: #appid}
 {: faq}
 
-O IAM é usado para gerenciar o acesso a seus serviços e recursos do {{site.data.keyword.cloud_notm}}. Com o {{site.data.keyword.appid_full_notm}}, é possível levar a segurança de nuvem um passo adiante, incluindo a autenticação em seus apps móveis e da web. Com apenas algumas linhas de código, é possível proteger facilmente seus apps e serviços nativos da Nuvem que são executados no {{site.data.keyword.cloud_notm}}. Pronto para iniciar? [Verifique os docs](/docs/services/appid?topic=appid-gettingstarted#gettingstarted).
+O IAM é usado para gerenciar o acesso a seus serviços e recursos do {{site.data.keyword.cloud_notm}}. Com o {{site.data.keyword.appid_full_notm}}, é possível levar a segurança de nuvem um passo adiante, incluindo a autenticação em seus apps móveis e da web. Com apenas algumas linhas de código, é possível proteger facilmente seus apps e serviços nativos da Nuvem que são executados no {{site.data.keyword.cloud_notm}}. Pronto para iniciar? [Verifique os docs](/docs/services/appid?topic=appid-getting-started#getting-started). 

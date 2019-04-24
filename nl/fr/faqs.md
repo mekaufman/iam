@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-19"
 
 keywords: frequently asked question, faq
 
@@ -118,12 +118,14 @@ Le propriétaire du compte peut retirer des utilisateurs du compte, et tout util
 * Règle IAM pour le service de gestion des comptes utilisateur avec le rôle Administrateur affecté. Vous devez être gestionnaire d'organisation Cloud Foundry si l'utilisateur appartient à une organisation Cloud Foundry.
 * Si vous avez une infrastructure classique dans votre compte, un utilisateur doit avoir une règle IAM pour le service de gestion de compte utilisateur avec le rôle Administrateur affecté. Vous devez être gestionnaire d'organisation Cloud Foundry si l'utilisateur appartient à une organisation Cloud Foundry et être un ancêtre de l'utilisateur dans la hiérarchie d'utilisateurs de l'infrastructure classique avec le droit de gestion correspondant affecté.
 
-## Comment puis-je me procurer l'authentification multi-facteur avec IBMid pour mon compte ?
+## Comment puis-je imposer l'authentification multi-facteur avec IBMid pour mon compte ?
 {: #multi-factor}
 {: faq}
 
 1. Accédez à **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Paramètres**.
-2. Choisissez **Authentification multi-facteur** puis cliquez sur **Oui, je suis sûr**. Pour plus d'informations, voir [Exigence de l'authentification multi-facteur pour les utilisateurs de votre compte](/docs/iam?topic=iam-enablemfa#enablemfa).
+2. Dans la section Connexion au compte, sélectionnez **Mettre à jour** afin de sélectionner l'authentification multi-facteur pour tous les utilisateurs ou uniquement pour les utilisateurs non fédérés.
+
+Pour plus d'informations, voir [Exigence de l'authentification multi-facteur pour les utilisateurs de votre compte](/docs/iam?topic=iam-enablemfa#enablemfa).
 
 ## Quelle est la différence entre rôles de service et de plateforme ?
 {: #service-platform-roles}
@@ -154,8 +156,6 @@ Pour déléguer les fonctions d'administrateur de compte, affectez l'accès suiv
 * Le droit Super-utilisateur défini pour l'infrastructure classique
 * Gestionnaire Cloud Foundry pour toutes les organisations
 
-Même avec l'accès précédemment décrit affecté, un administrateur de compte ne peut pas changer le paramètre d'authentification multi-facteur pour le compte. Seul le propriétaire de compte peut changer ce paramètre.
-{: note}
 
 ## Quelle est la différence entre un administrateur de compte et un propriétaire de compte ?
 {: #owner-administrator}
@@ -167,9 +167,6 @@ Le rôle d'administrateur de compte d'{{site.data.keyword.Bluemix_notm}} IAM est
 * Une règle IAM avec le rôle Administrateur pour Tous les services de gestion des comptes, ce qui autorise l'utilisateur à effectuer des tâches comme l'invitation d'utilisateurs, la gestion de groupes d'accès, d'ID de service, des offres de catalogue privé et le suivi des informations de facturation et d'utilisation.
 * Le droit Super-utilisateur défini pour l'infrastructure classique
 * Gestionnaire Cloud Foundry pour toutes les organisations
-
-Même avec l'accès précédemment décrit affecté, un administrateur de compte ne peut pas changer le paramètre d'authentification multi-facteur pour le compte. Seul le propriétaire de compte peut changer ce paramètre.
-{: note}
 
 ## Comment affecter l'accès à l'infrastructure et aux périphériques ?
 {: #infrastructure-devices}
@@ -205,4 +202,4 @@ Oui. Vous devez affecter un accès utilisateur dans un des trois systèmes de ge
 {: #appid}
 {: faq}
 
-IAM permet de gérer l'accès à vos ressources et à vos services {{site.data.keyword.cloud_notm}}. Avec {{site.data.keyword.appid_full_notm}}, vous pouvez améliorer la sécurité du cloud en ajoutant une étape d'authentification à vos applications Web et mobiles. Il suffit d'ajouter quelques lignes de code pour sécuriser facilement vos applications et vos services natifs Cloud qui s'exécutent sur {{site.data.keyword.cloud_notm}}. Prêt à commencer ? [Consultez la documentation](/docs/services/appid?topic=appid-gettingstarted#gettingstarted).
+IAM permet de gérer l'accès à vos ressources et à vos services {{site.data.keyword.cloud_notm}}. Avec {{site.data.keyword.appid_full_notm}}, vous pouvez améliorer la sécurité du cloud en ajoutant une étape d'authentification à vos applications Web et mobiles. Il suffit d'ajouter quelques lignes de code pour sécuriser facilement vos applications et vos services natifs Cloud qui s'exécutent sur {{site.data.keyword.cloud_notm}}. Prêt à commencer ? [Consultez la documentation](/docs/services/appid?topic=appid-getting-started#getting-started). 

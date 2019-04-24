@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-19"
 
 keywords: frequently asked question, faq
 
@@ -123,7 +123,9 @@ Der Kontoeigner kann beliebige Benutzer aus dem Konto entfernen. Ferner können 
 {: faq}
 
 1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie **Einstellungen** aus.
-2. Wählen Sie **Mehrfaktorauthentifizierung** aus und klicken Sie dann auf **Ja, ich bin sicher**. Weitere Informationen hierzu finden Sie in [MFA für Benutzer in Ihrem Konto verlangen](/docs/iam?topic=iam-enablemfa#enablemfa).
+2. Wählen Sie im Abschnitt für die Kontoanmeldung **Aktualisieren** aus, um MFA für alle Benutzer oder ausschließlich für nicht föderierte Benutzer auszuwählen. 
+
+Weitere Informationen finden Sie in [MFA für Benutzer in Ihrem Konto verlangen](/docs/iam?topic=iam-enablemfa#enablemfa).
 
 ## Was ist der Unterschied zwischen Service- und Plattformrollen?
 {: #service-platform-roles}
@@ -154,8 +156,6 @@ Um die Funktionen des Kontoadministrators zu delegieren, müssen Sie folgenden Z
 * Das Berechtigungsset des Superusers für die klassische Infrastruktur.
 * Die Rolle des Cloud Foundry-Managers für alle Organisationen.
 
-Ein Kontoadministrator kann jedoch selbst mit dem zuvor beschriebenen Zugriff die MFA-Einstellung für das Konto nicht ändern. Diese Einstellung kann nur vom Kontoeigner geändert werden.
-{: note}
 
 ## Was ist der Unterschied zwischen einem Kontoadministrator und einem Kontoeigner?
 {: #owner-administrator}
@@ -167,9 +167,6 @@ Kontoeigner werden automatisch als Kontoadministrator für {{site.data.keyword.B
 * Eine IAM-Richtlinie, über die die Rolle des Administrators für alle Kontoverwaltungsservices zugewiesen ist, wodurch der Benutzer die Möglichkeit erhält, Tasks wie das Einladen von Benutzern, Verwalten von Zugriffsgruppen, Service-IDs und privaten Katalogangeboten auszuführen sowie die Abrechnungs- und Nutzungsverfolgung zu verwenden.
 * Das Berechtigungsset des Superusers für die klassische Infrastruktur.
 * Die Rolle des Cloud Foundry-Managers für alle Organisationen.
-
-Ein Kontoadministrator kann jedoch selbst mit dem zuvor beschriebenen Zugriff die MFA-Einstellung für das Konto nicht ändern. Diese Einstellung kann nur vom Kontoeigner geändert werden.
-{: note}
 
 ## Wie kann ich Zugriff auf die Infrastruktur und auf Geräte zuweisen?
 {: #infrastructure-devices}
@@ -205,4 +202,4 @@ Ja. Sie müssen einem Benutzer im Rahmen der folgenden drei Systeme für das Zug
 {: #appid}
 {: faq}
 
-IAM wird für die Verwaltung des Zugriffs auf Ihre {{site.data.keyword.cloud_notm}}-Services und -Ressourcen verwendet. Mit {{site.data.keyword.appid_full_notm}} können Sie die Cloudsicherheit noch weiter steigern, indem Sie Authentifizierungsmechanismen in Ihre Webanwendungen und mobilen Apps einbinden. Mit nur wenigen Zeilen Code können Sie Ihre cloud-nativen Apps und Services, deren Ausführung auf {{site.data.keyword.cloud_notm}} erfolgt, ohne großen Aufwand schützen. Sind Sie bereit, loszulegen? [Informieren Sie sich anhand der Dokumentation](/docs/services/appid?topic=appid-gettingstarted#gettingstarted).
+IAM wird für die Verwaltung des Zugriffs auf Ihre {{site.data.keyword.cloud_notm}}-Services und -Ressourcen verwendet. Mit {{site.data.keyword.appid_full_notm}} können Sie die Cloudsicherheit noch weiter steigern, indem Sie Authentifizierungsmechanismen in Ihre Webanwendungen und mobilen Apps einbinden. Mit nur wenigen Zeilen Code können Sie Ihre cloud-nativen Apps und Services, deren Ausführung auf {{site.data.keyword.cloud_notm}} erfolgt, ohne großen Aufwand schützen. Sind Sie bereit, loszulegen? [Informieren Sie sich anhand der Dokumentation](/docs/services/appid?topic=appid-getting-started#getting-started). 

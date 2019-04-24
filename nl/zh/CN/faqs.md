@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-19"
 
 keywords: frequently asked question, faq
 
@@ -123,7 +123,9 @@ subcollection: iam
 {: faq}
 
 1. 转至**管理** &gt; **访问权 (IAM)**，然后选择**设置**。
-2. 选择**多因子认证**，然后单击**是，我确定**。有关更多信息，请参阅[需要对您帐户中的用户进行 MFA](/docs/iam?topic=iam-enablemfa#enablemfa)。
+2. 从“帐户登录”部分中，选择**更新**，以为所有用户或仅为非联合用户选择 MFA。
+
+有关更多信息，请参阅[需要对您帐户中的用户进行 MFA](/docs/iam?topic=iam-enablemfa#enablemfa)。
 
 ## 服务和平台角色有什么差别？
 {: #service-platform-roles}
@@ -154,8 +156,6 @@ subcollection: iam
 * 针对经典基础架构的超级用户许可权集
 * 所有组织的 Cloud Foundry 管理者
 
-即使分配了先前描述的访问权，帐户管理员也无法更改帐户的 MFA 设置。只有帐户所有者可以更改此设置。
-{: note}
 
 ## 帐户管理员和帐户所有者有何区别？
 {: #owner-administrator}
@@ -167,9 +167,6 @@ subcollection: iam
 * 具有对所有帐户管理服务的管理员角色的 IAM 策略，使用户能够完成邀请用户、管理访问组、管理服务标识、管理专用目录产品以及跟踪计费和使用情况等任务。
 * 针对经典基础架构的超级用户许可权集
 * 所有组织的 Cloud Foundry 管理者
-
-即使分配了先前描述的访问权，帐户管理员也无法更改帐户的 MFA 设置。只有帐户所有者可以更改此设置。
-{: note}
 
 ## 如何分配对基础架构和设备的访问权？
 {: #infrastructure-devices}
@@ -205,4 +202,4 @@ subcollection: iam
 {: #appid}
 {: faq}
 
-IAM 用于管理对 {{site.data.keyword.cloud_notm}} 服务和资源的访问权。借助 {{site.data.keyword.appid_full_notm}}，您可以通过向 Web 和移动应用程序中添加认证来使云安全性向前迈进一大步。只需要少数代码行，您就可以轻松地保护在 {{site.data.keyword.cloud_notm}} 上运行的云本机应用程序和服务。准备好开始了吗？[查看文档](/docs/services/appid?topic=appid-gettingstarted#gettingstarted)。
+IAM 用于管理对 {{site.data.keyword.cloud_notm}} 服务和资源的访问权。借助 {{site.data.keyword.appid_full_notm}}，您可以通过向 Web 和移动应用程序中添加认证来使云安全性向前迈进一大步。只需要少数代码行，您就可以轻松地保护在 {{site.data.keyword.cloud_notm}} 上运行的云本机应用程序和服务。准备好开始了吗？[查看文档](/docs/services/appid?topic=appid-getting-started#getting-started)。 

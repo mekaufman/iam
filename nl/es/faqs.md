@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-19"
 
 keywords: frequently asked question, faq
 
@@ -123,7 +123,9 @@ El propietario de la cuenta puede eliminar cualquier usuario de la cuenta, y cua
 {: faq}
 
 1. Vaya a **Gestionar** &gt; **Acceso (IAM)** y seleccione **Valores**.
-2. Seleccione **Autenticación de multifactores** y luego pulse **Sí, estoy seguro**. Para obtener más información, consulte [Requerimiento de MFA para los usuarios de la cuenta](/docs/iam?topic=iam-enablemfa#enablemfa).
+2. En la sección Inicio de sesión de cuenta, seleccione **Actualizar** para seleccionar MFA para todos los usuarios o solo para los usuarios no federados.
+
+Para obtener más información, consulte [Requerimiento de MFA para los usuarios de la cuenta](/docs/iam?topic=iam-enablemfa#enablemfa).
 
 ## ¿Qué diferencia hay entre los roles de servicio y de plataforma?
 {: #service-platform-roles}
@@ -154,8 +156,6 @@ Para delegar las funciones de administrador de la cuenta, asigne el siguiente ac
 * El conjunto de permisos de superusuario para la infraestructura clásica
 * Gestor de Cloud Foundry para todas las organizaciones
 
-Incluso con el acceso descrito anteriormente asignado, un administrador de la cuenta no puede cambiar el valor de MFA para la cuenta. Solo el propietario de la cuenta puede cambiar este valor.
-{: note}
 
 ## ¿Qué diferencia hay entre un administrador de la cuenta y el propietario de la cuenta?
 {: #owner-administrator}
@@ -167,9 +167,6 @@ Los propietarios de cuenta se asignan automáticamente como administrador de la 
 * Una política de IAM con el rol de administrador sobre todos los servicios de gestión de cuentas, lo que permite a un usuario realizar tareas como invitar a usuarios, gestionar grupos de acceso, gestionar ID de servicio, gestionar ofertas de catálogo privadas y realizar un seguimiento de la facturación y del uso.
 * El conjunto de permisos de superusuario para la infraestructura clásica
 * Gestor de Cloud Foundry para todas las organizaciones
-
-Incluso con el acceso descrito anteriormente asignado, un administrador de la cuenta no puede cambiar el valor de MFA para la cuenta. Solo el propietario de la cuenta puede cambiar este valor.
-{: note}
 
 ## ¿Cómo se asigna acceso a la infraestructura y a los dispositivos?
 {: #infrastructure-devices}
@@ -205,4 +202,4 @@ Sí. Debe signar acceso a un usuario mediante uno de estos tres sistemas de gest
 {: #appid}
 {: faq}
 
-Se utiliza IAM para gestionar el acceso a los servicios y recursos de {{site.data.keyword.cloud_notm}}. Con {{site.data.keyword.appid_full_notm}}, puede aumentar la seguridad de la nube añadiendo autenticación a sus apps web y móviles. Con unas pocas líneas de código puede proteger fácilmente sus apps y servicios nativos de la nube que se ejecutan en {{site.data.keyword.cloud_notm}}. ¿Está listo para empezar? [Consulte la documentación](/docs/services/appid?topic=appid-gettingstarted#gettingstarted).
+Se utiliza IAM para gestionar el acceso a los servicios y recursos de {{site.data.keyword.cloud_notm}}. Con {{site.data.keyword.appid_full_notm}}, puede aumentar la seguridad de la nube añadiendo autenticación a sus apps web y móviles. Con unas pocas líneas de código puede proteger fácilmente sus apps y servicios nativos de la nube que se ejecutan en {{site.data.keyword.cloud_notm}}. ¿Está listo para empezar? [Consulte la documentación](/docs/services/appid?topic=appid-getting-started#getting-started). 
