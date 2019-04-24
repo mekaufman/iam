@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,7 +23,7 @@ lastupdated: "2019-01-30"
 API(Application Programming Interface) 키는 호출 애플리케이션 또는 사용자를 식별하도록 API에 전달되는 고유 코드입니다. API 키를 사용하여 API의 사용을 추적 및 제어할 수 있습니다. 예를 들어, 악의적 사용 또는 남용을 방지하는 데 이 API 키를 사용할 수 있습니다. API 키는 종종 인증을 위한 시크릿 토큰 및 고유 ID 모두의 역할을 하며, 일반적으로 이와 연관된 ID에 대한 액세스 세트를 보유합니다.
 {:shortdesc}
 
-API 키를 보려면 **관리** > **액세스(IAM)**로 이동하고 **사용자**를 선택하십시오. 그런 다음 사용자 세부사항 페이지에 포함된 API 키 섹션으로 이동할 사용자를 선택하십시오. 
+API 키를 보려면 **관리** > **액세스(IAM)**로 이동하고 **사용자**를 선택하십시오. 그런 다음 사용자 세부사항 페이지에 포함된 API 키 섹션으로 이동할 사용자를 선택하십시오.
 
 ## {{site.data.keyword.cloud_notm}}API 키
 {: #ibm-cloud-api-keys}
@@ -42,5 +46,3 @@ API 키를 보려면 **관리** > **액세스(IAM)**로 이동하고 **사용자
 {: tip}
 
 {{site.data.keyword.Bluemix_notm}}의 일부 서비스는 서비스에 대한 작업을 수행할 때 사용할 API 키를 제공할 수도 있습니다. 예를 들어, 리소스 목록에서 Watson 서비스의 오퍼링 세부사항을 보는 경우 서비스 인증 정보 페이지에서 해당 서비스에만 특정한 API 키 및 시크릿이 포함된 인증 정보를 작성할 수 있습니다.
-
-

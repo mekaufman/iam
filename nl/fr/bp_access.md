@@ -5,6 +5,10 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-28"
 
+keywords: advantage of access groups, access assignment process, assign access, best practice, access management, strategy
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -39,7 +43,7 @@ Bien que ces suggestions soient conçues pour un scénario hypothétique, vous p
 ## Création de groupes d'accès
 {: #access-group-setup}
 
-Pour créer un groupe d'accès, procédez comme suit : 
+Pour créer un groupe d'accès, procédez comme suit :
 
 1. Dans la console {{site.data.keyword.Bluemix}}, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Groupes d'accès**.
 2. Cliquez sur **Créer**.
@@ -53,7 +57,7 @@ Après avoir créé un groupe d'accès, vous pouvez y ajouter des utilisateurs e
 
 Une règle est composée d'un objet, d'une cible et d'un rôle. L'objet de ce scénario est le groupe d'accès La cible est ce à quoi l'objet doit pouvoir accéder, par exemple, un ensemble de ressources, une instance de service, tous les services du compte ou toutes les instances d'un service. Le rôle définit le niveau d'accès qui est octroyé à un utilisateur.
 
-Les rôles les plus fréquemment utilisés sont Afficheur, Editeur et Administrateur. Le rôle Afficheur fournit l'accès minimum et permet d'afficher des instances et des groupes de ressources dans un compte. Le rôle Editeur dispose de davantage d'accès et permet de créer, d'éditer, de supprimer et de lier des instances de service. Le rôle Administrateur comprend tout ce qui permet de gérer une instance de service et peut affecter un accès aux autres utilisateurs. Cependant, il convient de prendre en compte deux catégories de rôles distinctes, Plateforme et Catégorie. Pour plus d'informations sur les rôles qui peuvent être affectés, voir [Rôles cloud IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol). 
+Les rôles les plus fréquemment utilisés sont Afficheur, Editeur et Administrateur. Le rôle Afficheur fournit l'accès minimum et permet d'afficher des instances et des groupes de ressources dans un compte. Le rôle Editeur dispose de davantage d'accès et permet de créer, d'éditer, de supprimer et de lier des instances de service. Le rôle Administrateur comprend tout ce qui permet de gérer une instance de service et peut affecter un accès aux autres utilisateurs. Cependant, il convient de prendre en compte deux catégories de rôles distinctes, Plateforme et Catégorie. Pour plus d'informations sur les rôles qui peuvent être affectés, voir [Rôles cloud IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
 
 ## Affectation d'accès à des groupes d'accès
 {: #assigning-access}
@@ -70,5 +74,3 @@ Vous pouvez organiser des ressources dans un groupe de ressources et des utilisa
 
 Accordez facilement à plusieurs utilisateurs les droits d'accès Administrateur sur tout ce que contient un compte en créant un groupe d'accès et en lui affectant deux règles. Pour créer la première règle, utilisez l'option **Affecter l'accès aux ressources** et sélectionnez **Tous les services avec l'offre Identity and Access activée** avec le rôle Administrateur affecté. Pour créer la seconde règle, utilisez l'option **Affecter l'accès aux services de gestion des comptes** et sélectionnez **Tous les services de gestion des comptes** avec le rôle Administrateur affecté.
 {: tip}
-
-

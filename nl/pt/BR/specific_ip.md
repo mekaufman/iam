@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -29,20 +33,17 @@ Se você tiver o acesso designado a seguir, será possível atualizar os endere�
 
   * Uma política do IAM com a função de Editor ou superior no serviço de gerenciamento de usuários.
   * Você é um antecessor na hierarquia de infraestrutura clássica para o usuário e tem a permissão Gerenciar a infraestrutura clássica de usuários designada
-  
+
 Será possível gerenciar essa configuração para si mesmo se você tiver a configuração Login gerenciado pelo usuário ativada na página Detalhes do usuário.
 {: tip}
 
-Para restringir um usuário para usar somente endereços IP específicos, conclua as etapas a seguir: 
+Para restringir um usuário para usar somente endereços IP específicos, conclua as etapas a seguir:
 
-1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**. 
+1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**.
 2. Selecione um usuário da lista.
-3. Na página Detalhes do usuário, acesse a seção **Restrições de endereço IP**. 
+3. Na página Detalhes do usuário, acesse a seção **Restrições de endereço IP**.
 4. Para **Plataforma de nuvem**, insira os endereços IP. Os endereços IP listados são os únicos por meio dos quais esse usuário pode efetuar login no {{site.data.keyword.Bluemix}}.
-5. Para **Infraestrutura clássica**, insira os endereços IP. Os endereços IP listados são os únicos por meio dos quais o usuário pode chamar uma API de infraestrutura clássica. 
-  
+5. Para **Infraestrutura clássica**, insira os endereços IP. Os endereços IP listados são os únicos por meio dos quais o usuário pode chamar uma API de infraestrutura clássica.
+
   Para inserir um endereço IP de infraestrutura clássica, o usuário já deve ter uma chave de API de infraestrutura clássica criada.
   {: note}
- 
-
-

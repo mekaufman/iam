@@ -6,6 +6,11 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: IBM Cloud IAM, user identities, service ID, policies, access management, roles, actions
+
+subcollection: iam
+
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -35,7 +40,7 @@ lastupdated: "2019-01-28"
 ## 액세스 관리
 {: #am}
 
-{{site.data.keyword.Bluemix_notm}}에서 액세스 관리의 개념은 사용자, 리소스, 정책, 역할, 조치 및 Cloud IAM 제어 시스템을 포함하여 일부 상호 관련된 컴포넌트로 구성되어 있으며, 이를 통해 사용자는 계정 내에서 리소스에 대한 조치를 취할 수 있습니다. 
+{{site.data.keyword.Bluemix_notm}}에서 액세스 관리의 개념은 사용자, 리소스, 정책, 역할, 조치 및 Cloud IAM 제어 시스템을 포함하여 일부 상호 관련된 컴포넌트로 구성되어 있으며, 이를 통해 사용자는 계정 내에서 리소스에 대한 조치를 취할 수 있습니다.
 
 다음 목록을 검토하면 이러한 Cloud IAM 컴포넌트에 대해 자세히 알아볼 수 있습니다.
 
@@ -55,9 +60,3 @@ lastupdated: "2019-01-28"
 <dt>액세스 관리 시스템</dt>
 <dd>Cloud IAM 제어 시스템은 지정된 정책을 기반으로 서비스의 컨텍스트 내에서 사용자에 의한 조치를 허용하거나 거부합니다. 사용자가 특정 조치를 완료하려고 시도할 때 제어 시스템은 정책에 정의된 속성을 사용하여 사용자에게 해당 태스크를 수행할 수 있는 권한이 있는지 여부를 판별합니다.</dd>
 </dl>
-
-
-
-
-
-

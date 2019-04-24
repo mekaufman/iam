@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: Cloud Foundry roles, Cloud Foundry access, auditor, manager, developer, billing manager
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}

@@ -8,6 +8,10 @@ copyright:
 
 lastupdated: "2019-02-13"
 
+keywords: dedicated ID, public IBMid, IBMid, public IAM service
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -64,7 +68,7 @@ Para forçar a criação de log para o servidor do UAA com um ID dedicado, espec
   $ ibmcloud login --no-iam
 ```
 
-## Desconectar seu ID dedicado do IBMid público 
+## Desconectar seu ID dedicado do IBMid público
 {: #disconnect_id}
 
 É possível usar `ibmcloud iam dedicated-id-disconnect` para desconectar o IBMid público com o ID dedicado conectado.

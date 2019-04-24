@@ -6,6 +6,11 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: IBM Cloud IAM, user identities, service ID, policies, access management, roles, actions
+
+subcollection: iam
+
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -35,7 +40,7 @@ lastupdated: "2019-01-28"
 ## 存取管理
 {: #am}
 
-{{site.data.keyword.Bluemix_notm}} 中存取管理的概念包含一些相互關聯的元件，其中包括使用者、資源、原則、角色、動作及 Cloud IAM 控制系統，容許使用者對帳戶內的資源採取動作。 
+{{site.data.keyword.Bluemix_notm}} 中存取管理的概念包含一些相互關聯的元件，其中包括使用者、資源、原則、角色、動作及 Cloud IAM 控制系統，容許使用者對帳戶內的資源採取動作。
 
 您可以檢閱下列清單，以進一步瞭解這些 Cloud IAM 元件：
 
@@ -55,9 +60,3 @@ lastupdated: "2019-01-28"
 <dt>存取管理系統</dt>
 <dd>根據指派的原則，Cloud IAM 控制系統會容許或拒絕使用者在服務環境定義內的動作。使用者嘗試完成特定動作時，控制系統會使用原則中所定義的屬性，來判定使用者是否有權執行該作業。</dd>
 </dl>
-
-
-
-
-
-

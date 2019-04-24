@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2018-11-30"
 
+keywords: SoftLayer permissions, classic infrastructure access, classic infrastructure permission, migrated SoftLayer permissions, migrated permission access group
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}

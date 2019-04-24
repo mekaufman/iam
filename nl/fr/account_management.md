@@ -6,6 +6,11 @@ copyright:
 
 lastupdated: "2019-02-11"
 
+keywords: account management, access, access policy, account administrator
+
+subcollection: iam
+
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -27,7 +32,7 @@ Pour attribuer l'accès à l'un ou à tous les services de gestion de compte, pr
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**.
 2. Sur la ligne de l'utilisateur auquel vous souhaitez affecter un accès, sélectionnez le menu **Actions** ![Icône Liste des actions](../icons/action-menu-icon.svg) puis cliquez sur **Affecter un accès**.
-3. Choisissez d'affecter l'accès aux **Services de gestion des comptes**. 
+3. Choisissez d'affecter l'accès aux **Services de gestion des comptes**.
 4. Sélectionnez **Tous les services de gestion des comptes** ou bien un service de gestion de compte spécifique.
 5. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu.
 
@@ -87,7 +92,7 @@ Pour le service d'identité IAM, ces actions s'appliquent aux ID de service dans
 | Afficheur |   Afficher les services privés    |
 | Opérateur | Non applicable    |
 | Editeur |   Peut changer les métadonnées d'objet mais ne peut pas changer la visibilité des services privés     |
-| Administrateur | Peut changer les métadonnées d'objet ou la visibilité des services privés et peut restreindre la visibilité d'un service public   |
+| Administrateur |  Peut changer les métadonnées d'objet ou la visibilité des services privés et peut restreindre la visibilité d'un service public   |
 {: caption="Tableau 6. Rôles et actions pour le service de catalogue global" caption-side="top"}
 
 | Rôles | Actions |

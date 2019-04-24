@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2018-11-30"
 
+keywords: SoftLayer permissions, classic infrastructure access, classic infrastructure permission, migrated SoftLayer permissions, migrated permission access group
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -30,7 +34,7 @@ Wenn Sie jemanden zum Konto einladen, können nur Sie, der Kontoeigner, oder ein
 
 Eine Reihe von Berechtigungen der klassischen Infrastruktur zum Anzeigen und Verwalten von Abrechnungsinformationen und zum Arbeiten mit Supportfällen wird jetzt zu Zugriffsgruppen migriert. Die Benutzer in Ihrem Konto, denen zuvor diese Berechtigungen zugewiesen waren, werden nun der jeweiligen Zugriffsgruppe für die migrierte Berechtigung zugewiesen. Demzufolge können Berechtigungen für die klassische Infrastruktur jetzt mithilfe von IAM-Zugriffsrichtlinien direkt verwaltet werden.
 
-Diese speziellen Zugriffsgruppe beziehen alle entsprechenden IAM-Richtlinien ein, damit das ursprüngliche Verhalten der Berechtigungen für die klassische Infrastruktur beibehalten wird. Damit zum Beispiel ein Benutzer für einen Supportfall auch weiterhin alle Aktualisierungen aller Benutzer sehen kann, beziehen die Zugriffsgruppen für migrierte Berechtigungen bei den Ticketing-Berechtigungen für die klassische Infrastruktur eine zusätzliche IAM-Richtlinie für den Benutzermanagementservice mit der zugeordneten Rolle als Anzeigeberechtigter (Viewer) ein. Weitere Informationen finden Sie in [Benutzerzugriff für die Arbeit mit Supportfällen zuweisen](/docs/get-support/support_access.html#access). 
+Diese speziellen Zugriffsgruppe beziehen alle entsprechenden IAM-Richtlinien ein, damit das ursprüngliche Verhalten der Berechtigungen für die klassische Infrastruktur beibehalten wird. Damit zum Beispiel ein Benutzer für einen Supportfall auch weiterhin alle Aktualisierungen aller Benutzer sehen kann, beziehen die Zugriffsgruppen für migrierte Berechtigungen bei den Ticketing-Berechtigungen für die klassische Infrastruktur eine zusätzliche IAM-Richtlinie für den Benutzermanagementservice mit der zugeordneten Rolle als Anzeigeberechtigter (Viewer) ein. Weitere Informationen finden Sie in [Benutzerzugriff für die Arbeit mit Supportfällen zuweisen](/docs/get-support/support_access.html#access).
 
 Sie können diese migrierten Berechtigungen für die klassische Infrastruktur für Benutzer direkt über IAM verwalten, indem Sie sie zu den Zugriffsgruppen für migrierte Berechtigungen hinzufügen bzw. aus ihnen entfernen. Die Richtlinien, die für diese Zugriffsgruppen gelten, sind gesperrt, damit das Zugriffsverhalten für die Gruppenmitglieder beibehalten wird. Sie sollten diese Zugriffsgruppen nicht löschen, damit der Bedienungskomfort auch gegenüber neueren IAM-Benutzern gewahrt bleibt.
 

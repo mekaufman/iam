@@ -6,6 +6,11 @@ copyright:
 
 lastupdated: "2019-02-11"
 
+keywords: account management, access, access policy, account administrator
+
+subcollection: iam
+
+
 ---
 
 {:shortdesc: .shortdesc}

@@ -8,6 +8,10 @@ copyright:
 
 lastupdated: "2019-02-13"
 
+keywords: dedicated ID, public IBMid, IBMid, public IAM service
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -64,7 +68,7 @@ Per forzare l'accesso al server UAA con un ID dedicato, specifica l'opzione `--n
   $ ibmcloud login --no-iam
 ```
 
-## Disconnetti il tuo ID dedicato dall'ID IBM pubblico 
+## Disconnetti il tuo ID dedicato dall'ID IBM pubblico
 {: #disconnect_id}
 
 Puoi utilizzare `ibmcloud iam dedicated-id-disconnect` per disconnettere l'ID IBM pubblico dall'ID dedicato.

@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,7 +46,7 @@ Para crear una clave de API mediante la CLI, utilice el mandato siguiente:
 
 ```
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
-``` 
+```
 
 
 ## Actualización de una clave de API
@@ -140,7 +144,7 @@ ibmcloud iam api-key-unlock test-api-key
 
 Si está utilizando una estrategia de rotación de clave, es posible que desee suprimir una clave más antigua y sustituirla por una clave nueva.
 
-Para suprimir una clave de API, siga estos pasos: 
+Para suprimir una clave de API, siga estos pasos:
 
 1. Vaya a **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**. Luego pulse el nombre en la lista y seleccione la opción **Detalles de usuario**.
 2. Identifique la fila de la clave de API que desea suprimir y seleccione **Suprimir** en el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg).

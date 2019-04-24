@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: event tracking, IAM events, monitoring
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -17,7 +21,7 @@ lastupdated: "2019-01-30"
 # IAM 事件追蹤
 {: #tracking}
 
-身為安全性管理者、審核員或管理員的您，可以使用 {{site.data.keyword.cloudaccesstrailfull}} 服務追蹤使用者和應用程式與 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 互動的情況。 
+身為安全性管理者、審核員或管理員的您，可以使用 {{site.data.keyword.cloudaccesstrailfull}} 服務追蹤使用者和應用程式與 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 互動的情況。
 
 您可以追蹤下列事件：
 

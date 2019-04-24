@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -37,7 +41,7 @@ Crea una chiave API da associare a un ID servizio.
 4. Fai clic su **Chiavi API**.
 5. Fai clic su **Crea**.
 6. Aggiungi un nome e una descrizione per identificare facilmente la chiave API.
-7. Fai clic su **Create**.
+7. Fai clic su **Crea**.
 8. Salva la tua chiave API copiandola o scaricandola in un'ubicazione sicura.
 
 Per motivi di sicurezza, la chiave API è disponibile per essere copiata o scaricata solo durante la fase di creazione. Se la chiave API viene persa, dovrai crearne una nuova.

@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,7 +23,7 @@ lastupdated: "2019-01-28"
 {: #iammanidaccser}
 
 要使用 IAM 策略来管理用户的访问权或分配新访问权，您必须是帐户所有者、帐户中所有服务的管理员，或者是为特定服务或服务实例分配的管理员。有关访问策略和角色的更多信息，请参阅 [IAM 访问权](/docs/iam?topic=iam-userroles#userroles)。
-{:shortdesc} 
+{:shortdesc}
 
 ## 编辑现有访问权
 {: #edit_existing}
@@ -42,7 +46,7 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 ## 分配新访问权
 {: #assign_new_access}
 
-可以使用以下两种类型的策略来分配对资源的访问权： 
+可以使用以下两种类型的策略来分配对资源的访问权：
 
 * 对资源组中资源（包括仅一个或所有资源的选项）的访问权
 * 对帐户中资源（包括仅一种类型或所有类型的选项）的访问权
@@ -50,7 +54,7 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 如果要授予用户完全管理员访问权，以完成[帐户管理](/docs/iam?topic=iam-account-services#account-services)任务（例如，邀请和除去用户，查看计费和使用情况，管理服务标识，管理访问组，管理用户访问权以及所有帐户资源的访问权），那么必须创建两个策略：一个用于具有管理员角色的**所有启用“身份和访问权”的服务**，另一个用于具有管理员角色的**所有帐户管理服务**。
 {: tip}
 
-### 对资源组中资源的访问权 
+### 对资源组中资源的访问权
 {: #access_to_resources}
 
 要分配对资源组中所有资源的访问权，或分配仅对资源组中一项服务的访问权，请完成以下步骤：
@@ -67,15 +71,15 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 ### 对资源的访问权
 {: #resourceaccess}
 
-要分配对帐户中单个资源的访问权或对帐户中所有资源的访问权，请完成以下步骤： 
+要分配对帐户中单个资源的访问权或对帐户中所有资源的访问权，请完成以下步骤：
 
 1. 在菜单栏中，单击**管理** &gt; **访问权 (IAM)**，然后选择**用户**。
 2. 在要为其分配访问权的用户所在的行中，选择**操作** ![“操作列表”图标](../icons/action-menu-icon.svg) 菜单，然后单击**分配访问权**。
 3. 选择**分配对资源的访问权**。
 4. 选择服务或选择**所有启用“身份和访问权”的服务**。
-5. 选择**所有当前区域**或特定区域（如果系统提示选择）。 
+5. 选择**所有当前区域**或特定区域（如果系统提示选择）。
 6. 选择**所有当前服务实例**或选择特定服务实例。
-7. 根据所选择的服务，可能会看到以下字段。如果您未输入这些字段的值，那么会在服务实例级别而非存储区级别来分配策略。 
+7. 根据所选择的服务，可能会看到以下字段。如果您未输入这些字段的值，那么会在服务实例级别而非存储区级别来分配策略。
     * **资源类型**：输入**存储区**。
     * **资源标识**：输入存储区的名称。
 8. 选择任意角色组合来为用户分配所需的访问权。

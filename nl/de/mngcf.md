@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -60,4 +64,3 @@ Wenn Sie Ihre zugewiesenen Zugriffsberechtigungen in einem Konto überprüfen m�
 3. Erweitern Sie die Zeile 'Organisation' und überprüfen Sie die Ihnen zugewiesenen Rollen.
 
 Wenn Sie weiterführende Zugriffsberechtigungen benötigen, müssen Sie sich an den Organisationsmanager oder den Kontoeigner wenden, um Ihre zugewiesene Cloud Foundry-Rolle zu aktualisieren.
-

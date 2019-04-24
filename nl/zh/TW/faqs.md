@@ -8,7 +8,9 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: frequently asked question, faq
 
+subcollection: iam
 
 ---
 

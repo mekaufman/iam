@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: classic infrastructure access, VPN subnet access, classic infrastructure permissions, device access
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -26,34 +30,20 @@ Ihnen muss die Berechtigung der klassischen Infrastruktur zum Verwalten von Benu
 {: note}
 
   1. Wählen Sie zum Aktualisieren der Berechtigungen für den Benutzer die Option **Berechtigungen** aus. Es stehen die folgenden vier Typen von Berechtigungen zur Auswahl: 'Konto', 'Geräte', 'Netz' und 'Services'. Wählen Sie einzeln aus jeder Kategorie Berechtigungen aus oder verwenden Sie eine Berechtigungssetoption, um eine Massenzuweisung des Zugriffs durchzuführen.
-  
+
     Die Berechtigungen für die Kontoverwaltung und den Support, die Sie Benutzern zuvor in Ihrem Konto zugewiesen haben, werden nun von Berechtigungen der klassischen Infrastruktur zu migrierten IAM-Zugriffsgruppen migriert. Weitere Informationen hierzu enthält der Abschnitt [Migrierte Berechtigungen der klassischen Infrastruktur](/docs/iam?topic=iam-predefined#predefined).
     {: tip}
-    
+
   2. Wenn Sie einem Benutzer Gerätezugriff erteilen wollen, wählen Sie **Geräte** aus und weisen Sie nach Bedarf den Zugriff für bestimmte Geräte und Gerätetypen zu.
-  
+
     Die Zuweisung von Zugriff für Geräte erfolgt, nachdem der Benutzer zu dem Konto eingeladen wurde. Die Geräteberechtigungen gelten für die jeweiligen Geräte, die dem Benutzer zugewiesen sind. Sie können bestimmte Geräte aus der Liste auswählen oder Sie können Zugriff nach Gerätetyp zuweisen. Wenn Sie Zugriff nach Gerätetyp zuweisen, ist es sinnvoll, die Option **Späteren Zugriff aktivieren** zu verwenden. Damit ist sichergestellt, dass dem Benutzer jedes Mal, wenn neue Geräte eines bestimmten Typs hinzugefügt werden, automatisch Zugriff auf diese Geräte zugewiesen wird.
 
-  3. Wenn Sie den Zugriff eines Benutzers auf VPN-Teilnetze aktualisieren wollen, wählen Sie **VPN-Teilnetze** aus. 
-  
+  3. Wenn Sie den Zugriff eines Benutzers auf VPN-Teilnetze aktualisieren wollen, wählen Sie **VPN-Teilnetze** aus.
+
     Verwenden Sie die Option **Automatische Zuweisung**, um festzulegen, wie der Benutzer auf der Grundlage seines Gerätezugriffs Zugriff auf VPN-Teilnetze erhält. Wenn diese Option mit 'Ein' aktiviert ist, wird dem Benutzer für die Geräte, auf die er bereits Zugriff hat, automatisch Zugriff auf alle Teilnetze zugewiesen. Wenn Sie Teilnetze lieber manuell aus der Liste auswählen wollen, können Sie diese Option mit 'Aus' inaktivieren.
     {: tip}
-  
-    Damit der Zugriff auf VPN-Teilnetze bereitgestellt werden kann, muss dem Benutzer bereits Zugriff auf ein oder mehrere Geräte zugewiesen sein. Wenn der Benutzer über keinerlei Zugriff auf Geräte verfügt, stehen keine Teilnetze für die Auswahl zur Verfügung. Mithilfe der Option **VPN-Typ** können definieren, auf welchen Typ von VPN-Teilnetzen der Benutzer Zugriff erhalten soll. Wenn Sie **Ohne** auswählen, kann kein VPN-Zugriff zugewiesen werden. 
-    
+
+    Damit der Zugriff auf VPN-Teilnetze bereitgestellt werden kann, muss dem Benutzer bereits Zugriff auf ein oder mehrere Geräte zugewiesen sein. Wenn der Benutzer über keinerlei Zugriff auf Geräte verfügt, stehen keine Teilnetze für die Auswahl zur Verfügung. Mithilfe der Option **VPN-Typ** können definieren, auf welchen Typ von VPN-Teilnetzen der Benutzer Zugriff erhalten soll. Wenn Sie **Ohne** auswählen, kann kein VPN-Zugriff zugewiesen werden.
+
     Die Option 'PPTP' ist veraltet. Wenn bei Ihnen diese Option festgelegt ist und Sie sie abwählen, ist sie daher nicht mehr verfügbar.
     {: deprecated}
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,7 +23,7 @@ lastupdated: "2019-01-28"
 {: #iammanidaccser}
 
 若要使用 IAM 原則來為使用者管理存取權或指派新的存取權，您必須是帳戶擁有者、帳戶中所有服務的管理者，或是針對特定服務或服務實例指派的管理者。如需存取原則及角色的相關資訊，請參閱 [IAM 存取](/docs/iam?topic=iam-userroles#userroles)。
-{:shortdesc} 
+{:shortdesc}
 
 ## 編輯現有存取權
 {: #edit_existing}
@@ -42,7 +46,7 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 ## 指派新存取權
 {: #assign_new_access}
 
-您可以使用兩種類型的原則來指派對資源的存取權： 
+您可以使用兩種類型的原則來指派對資源的存取權：
 
 * 存取資源群組內的資源，您可以選擇僅一個或全部
 * 存取帳戶中的資源，您可以選擇僅一種類型或全部類型
@@ -50,7 +54,7 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 如果您要讓使用者具有完整管理者存取權，以完成[帳戶管理](/docs/iam?topic=iam-account-services#account-services) 作業（例如邀請及移除使用者、檢視計費及用量、管理服務 ID、管理存取群組、管理使用者存取，以及存取所有帳戶資源），您必須建立以下兩個原則：一個含有管理者角色的**所有已啟用身分及存取的服務**，以及一個含有管理者角色的**所有帳戶管理服務**。
 {: tip}
 
-### 資源群組內的資源存取權 
+### 資源群組內的資源存取權
 {: #access_to_resources}
 
 若要指派資源群組中所有資源的存取權，或只指派資源群組內一項服務的存取權，請完成下列步驟：
@@ -67,16 +71,16 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 ### 資源存取權
 {: #resourceaccess}
 
-若要指派帳戶中個別資源的存取權，或帳戶中所有資源的存取權，請完成下列步驟： 
+若要指派帳戶中個別資源的存取權，或帳戶中所有資源的存取權，請完成下列步驟：
 
 1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**使用者**。
 2. 從您要指派存取權的使用者列中，選取**動作** ![「動作清單」圖示](../icons/action-menu-icon.svg) 功能表，然後按一下**指派存取權**。
 3. 選取以**指派對資源的存取權**。
 4. 選取服務，或選取**所有已啟用身分及存取的服務**。
 5. 當系統提示您時，請選取**所有現行地區**或特定地區。
- 
+
 6. 選取**所有現行服務實例**，或選取特定服務實例。
-7. 視您選取的服務而定，可能會看到下列欄位。如果您不輸入這些欄位的值，則會在服務實例層次指派原則，而非儲存區層次。 
+7. 視您選取的服務而定，可能會看到下列欄位。如果您不輸入這些欄位的值，則會在服務實例層次指派原則，而非儲存區層次。
     * **資源類型**：輸入 **bucket**。
     * **資源 ID**：輸入您的儲存區名稱。
 8. 選擇任何角色組合，以指派使用者想要的存取權。

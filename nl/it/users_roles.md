@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-02-12"
 
+keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -28,22 +32,22 @@ Una politica concede a un oggetto uno o più ruoli per un insieme di risorse per
 
 | Azione | Ruolo richiesto |
 |----------|---------|
-| Creare una politica in un account per tutti i servizi e le istanze | Proprietario o amministratore dell'account su tutti i servizi di gestione dell'account e tutti i servizi abilitati per l'accesso e l'identità | 
+| Creare una politica in un account per tutti i servizi e le istanze | Proprietario o amministratore dell'account su tutti i servizi di gestione dell'account e tutti i servizi abilitati per l'accesso e l'identità |
 | Creare una politica su un servizio in un account | Proprietario dell'account, amministratore su tutti i servizi abilitati per l'accesso e l'identità o amministratore sul servizio nell'account |
 | Creare una politica su un'istanza del servizio | Proprietario dell'account, amministratore su tutti i servizi abilitati per l'accesso e l'identità, amministratore sul servizio nell'account, amministratore su tutti i servizi nel gruppo di risorse relativo o amministratore sull'istanza del servizio |
-{: caption="Tabella 1. Utenti autorizzati a creare politiche di accesso" caption-side="top"} 
+{: caption="Tabella 1. Utenti autorizzati a creare politiche di accesso" caption-side="top"}
 
-Quando assegni una politica, inizi con l'oggetto. Dopo aver selezionato l'oggetto della politica, puoi scegliere di impostare la politica per un gruppo di risorse, una risorsa individuale o un servizio di gestione dell'account. 
+Quando assegni una politica, inizi con l'oggetto. Dopo aver selezionato l'oggetto della politica, puoi scegliere di impostare la politica per un gruppo di risorse, una risorsa individuale o un servizio di gestione dell'account.
 
 Quindi, a seconda della tua selezione iniziale, puoi selezionare dalle opzioni:
-  
+
   * Un servizio all'interno di un gruppo di risorse
   * Tutte le risorse in un gruppo di risorse
   * Tutte le istanze o una sola istanza per la risorsa selezionata
   * Tutti i servizi abilitati IAM nell'account
-  * Un servizio di gestione dell'account 
+  * Un servizio di gestione dell'account
 
-Potrebbero essere disponibili altre opzioni di configurazione, a seconda del servizio che selezioni. Infine, seleziona i ruoli da assegnare. 
+Potrebbero essere disponibili altre opzioni di configurazione, a seconda del servizio che selezioni. Infine, seleziona i ruoli da assegnare.
 
 ## Tipi di politica di accesso comuni
 {: #policytypes}
@@ -68,11 +72,11 @@ Per concedere a un altro utente l'accesso completo all'account ai fini della ges
 Con Cloud IAM, puoi gestire e definire l'accesso per gli utenti e le risorse nel tuo account. Possono essere assegnati due tipi di ruoli: i ruoli di gestione della piattaforma e i ruoli di accesso al servizio.
 
 <dl>
-<dt>Ruoli di gestione della piattaforma</dt> 
+<dt>Ruoli di gestione della piattaforma</dt>
 <dd>I ruoli di gestione della piattaforma coprono una gamma di azioni, inclusa la capacità di creare ed eliminare le istanze, gestire gli alias, i bind e le credenziali e gestire l'accesso. I ruoli della piattaforma sono amministratore, editor, operatore, visualizzatore. I ruoli di gestione della piattaforma si applicano anche ai [servizi di gestione dell'account](/docs/iam?topic=iam-account-services#account-services) che consentono agli utenti di invitare utenti, gestire ID di servizio, politiche di accesso, voci di catalogo e tenere traccia della fatturazione e dell'utilizzo in base al proprio ruolo assegnato in un servizio di gestione dell'account.</dd>
 <dt>Ruoli di accesso al servizio</dt>
 <dd>I ruoli di accesso al servizio definiscono la capacità di un utente o un servizio di eseguire azioni su un'istanza del servizio, come l'accesso alla console o l'esecuzione di chiamate API. I ruoli di accesso al servizio sono gestore, scrittore e lettore. </dd>
-</dl> 
+</dl>
 
 Potresti non vedere tutti i ruoli qui elencati come opzioni quando assegni le politiche nell'interfaccia utente perché vengono visualizzati solo i ruoli disponibili per il servizio che hai scelto. Per ulteriori informazioni su quali ruoli sono abilitati e quali azioni sono consentite da ciascun ruolo di accesso per ciascun servizio, consulta la documentazione relativa a tale servizio.
 {: note}
@@ -101,7 +105,7 @@ La seguente tabella descrive le azioni comuni che puoi eseguire in base al ruolo
 
 La prima riga della tabella descrive gli specifici servizi da cui puoi scegliere quando crei una politica e la prima colonna descrive il tipo di ruolo selezionato per la politica. Le restanti celle associano il ruolo selezionato dalle opzioni nella prima colonna al tipo di politica selezionato dalle opzioni nella prima riga.
 
-| Dettagli della politica di accesso |  Azioni per gli ID di servizio  | Azioni per la gestione dei gruppi di accesso | Azioni per la gestione dell'accesso al catalogo | Azioni per l'accesso alla gestione degli utenti | Azioni per il supporto | Azioni per la fatturazione | Azioni per tutti i servizi di gestione account | 
+| Dettagli della politica di accesso |  Azioni per gli ID di servizio  | Azioni per la gestione dei gruppi di accesso | Azioni per la gestione dell'accesso al catalogo | Azioni per l'accesso alla gestione degli utenti | Azioni per il supporto | Azioni per la fatturazione | Azioni per tutti i servizi di gestione account |
 |:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|:--------------|
 |  |  Servizio di identità IAM |  Gruppi di accesso IAM |  Catalogo risorse globali |  Gestione utenti  | Centro di supporto | Fatturazione e utilizzo | Tutti i servizi di gestione dell'account |
 | Ruolo visualizzatore |  <ul><li>Visualizza ID</li></ul> |  <ul><li>Visualizza i gruppi di accesso e i membri</li></ul> | <ul><li>Visualizza i servizi privati</li></ul>  |  <ul><li>Visualizza gli utenti nell'account</li><li>Visualizza le impostazioni del profilo utente</li></ul> | <ul><li>Visualizza casi</li><li>Cerca casi</li></ul> | <ul><li>Visualizza le impostazioni della funzione dell'account</li><li>Visualizza le sottoscrizioni nell'account</li><li>Visualizza il nome dell'account</li><li>Visualizza i gruppi di risorse</li></ul> | Tutte le azioni del ruolo visualizzatore per i servizi di gestione dell'account |
@@ -138,5 +142,3 @@ Le azioni che possono essere eseguite in base a ciascun ruolo assegnato variano 
 | Scrittore | Autorizzazioni al di sopra del ruolo di lettore, incluse la creazione e la modifica di risorse specifiche del servizio | Creare ed eliminare bucket e oggetti |
 | Gestore | Autorizzazioni al di sopra del ruolo di scrittore per completare le azioni privilegiate definite dal servizio, più le risorse specifiche del servizio di creazione e modifica | Gestire tutti gli aspetti dell'archiviazione dati, creare ed eliminare bucket e oggetti |
 {: caption="Tabella 5. Ruoli utente e azioni di esempio per l'accesso al servizio" caption-side="top"}
-
-

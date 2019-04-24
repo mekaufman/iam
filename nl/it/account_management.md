@@ -6,6 +6,11 @@ copyright:
 
 lastupdated: "2019-02-11"
 
+keywords: account management, access, access policy, account administrator
+
+subcollection: iam
+
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -86,8 +91,8 @@ Per il servizio di identità IAM, queste azioni si applicano agli ID servizio al
 |:-------|----------|
 | Visualizzatore |   Visualizza i servizi privati    |
 | Operatore | Non applicabile    |
-| Editor | Modifica i metadati dell'oggetto ma non può modificare la visibilità per i servizi privati   |
-| Amministratore |   Modifica i metadati dell'oggetto o la visibilità per i servizi privati e limita la visibilità di un servizio pubblico.   |
+| Editor |   Modifica i metadati dell'oggetto ma non può modificare la visibilità per i servizi privati     |
+| Amministratore |  Modifica i metadati dell'oggetto o la visibilità per i servizi privati e limita la visibilità di un servizio pubblico.   |
 {: caption="Tabella 6. Ruoli e azioni di esempio per il servizio Catalogo globale" caption-side="top"}
 
 | Ruoli | Azioni |

@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: security questions, MFA, multifactor authentication, login security
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -27,7 +31,7 @@ Si vous disposez d'un des accès suivants, vous pouvez mettre à jour ce paramè
 * Vous êtes un ancêtre dans la hiérarchie d'infrastructure classique pour l'utilisateur. Vous disposez également du droit de gestion d'infrastructure classique d'utilisateurs.
 
 
-Pour activer cette option d'authentification multi-facteur pour un utilisateur, ce dernier doit tout d'abord [configurer des questions de sécurité](/docs/account?topic=account-security-questions#security-questions) ainsi que des réponses sur la page Paramètres de connexion du profil. 
+Pour activer cette option d'authentification multi-facteur pour un utilisateur, ce dernier doit tout d'abord [configurer des questions de sécurité](/docs/account?topic=account-security-questions#security-questions) ainsi que des réponses sur la page Paramètres de connexion du profil.
 {: note}
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**.

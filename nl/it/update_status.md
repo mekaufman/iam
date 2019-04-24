@@ -4,6 +4,10 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-28"
 
+keywords: user state, user status, change user status, update user status
+
+subcollection: iam
+
 ---
 
 
@@ -49,9 +53,7 @@ Quando aggiorni un utente dallo stato Solo VPN allo stato Attivo, l'utente deve 
 
 Per modificare lo stato di un utente, completa la seguente procedura:
 
-1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Utenti**. 
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Utenti**.
 2. Seleziona un utente dall'elenco.
 3. Dalla pagina Dettagli utente, seleziona un'opzione dal menu **Stato utente**.  
 4. Fai clic su **Applica**.
-
-

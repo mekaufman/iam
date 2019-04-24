@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: service ID, service ID access, managing access for service IDs
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -96,7 +100,7 @@ ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] 
 
 1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**服務 ID**。
 2. 從表格中，選取您要刪除服務原則的服務 ID。
-3. 按一下**存取原則**。 
+3. 按一下**存取原則**。
 4. 識別您要刪除的原則列，然後從**動作** ![「動作清單」圖示](../icons/action-menu-icon.svg) 功能表中選取**移除**。
 5. 檢閱您即將移除之原則的詳細資料，然後按一下**移除**進行確認。
 

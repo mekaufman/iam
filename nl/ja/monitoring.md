@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: event tracking, IAM events, monitoring
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -17,7 +21,7 @@ lastupdated: "2019-01-30"
 # IAM イベントのトラッキング
 {: #tracking}
 
-セキュリティー担当者、監査員、または管理者として、お客様は {{site.data.keyword.cloudaccesstrailfull}} サービスを使用して、ユーザーおよびアプリケーションが {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) とどのように対話しているかをトラッキングすることができます。 
+セキュリティー担当者、監査員、または管理者として、お客様は {{site.data.keyword.cloudaccesstrailfull}} サービスを使用して、ユーザーおよびアプリケーションが {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) とどのように対話しているかをトラッキングすることができます。
 
 以下のイベントをトラッキングできます。
 

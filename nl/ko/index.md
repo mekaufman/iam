@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: what is IAM, IBM Cloud IAM, IAM features, IAM API
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -47,11 +51,11 @@ lastupdated: "2019-01-28"
 ## Cloud IAM 사용법
 {: #howto}
 
-액세스(IAM) UI, CLI 또는 API를 통해 Cloud IAM에 액세스하고 이를 사용할 수 있습니다. 
+액세스(IAM) UI, CLI 또는 API를 통해 Cloud IAM에 액세스하고 이를 사용할 수 있습니다.
 
-* UI를 사용하여 Cloud IAM에 액세스하려면 **관리** &gt; **액세스(IAM)**로 이동하십시오. 
+* UI를 사용하여 Cloud IAM에 액세스하려면 **관리** &gt; **액세스(IAM)**로 이동하십시오.
 * [IAM 액세스, API 키, 서비스 ID 및 액세스 그룹 관리](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam)로 이동하여 사용 가능한 CLI 명령을 검토하십시오.
-* 다음 API 문서로 이동하여 사용 가능한 API를 검토하십시오. 
+* 다음 API 문서로 이동하여 사용 가능한 API를 검토하십시오.
     * [IAM ID 서비스 API](https://{DomainName}/apidocs/iam-identity-token-api){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")
     * [IAM 액세스 그룹 API](https://{DomainName}/apidocs/iam-access-groups){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")
     * [IAM 정책 관리 API](https://{DomainName}/apidocs/iam-policy-management){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")

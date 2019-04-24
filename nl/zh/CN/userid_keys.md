@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,7 +46,7 @@ lastupdated: "2019-01-30"
 
 ```
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
-``` 
+```
 
 
 ## 更新 API 密钥
@@ -141,7 +145,7 @@ ibmcloud iam api-key-unlock test-api-key
 
 如果使用的是密钥轮替策略，那么您可能会希望删除较旧的密钥，而将其替换为新密钥。
 
-要删除 API 密钥，请完成以下步骤： 
+要删除 API 密钥，请完成以下步骤：
 
 1. 转至**管理** &gt; **访问权 (IAM)**，然后选择**用户**。接着，单击列表中您的名称，然后选择**用户详细信息**选项。
 2. 确定要删除的 API 密钥所在的行，然后从**操作** ![“操作列表”图标](../icons/action-menu-icon.svg) 菜单中，选择**删除**。

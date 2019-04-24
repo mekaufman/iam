@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,7 +46,7 @@ Para criar uma chave API usando a CLI, use o comando a seguir:
 
 ```
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
-``` 
+```
 
 
 ## Atualizando uma chave API
@@ -140,7 +144,7 @@ Ibmcloud iam api-key-unlock-api-chave de teste
 
 Se você está usando uma estratégia de rotação de chave, talvez queira excluir uma chave mais antiga e substituí-la por uma nova.
 
-Para excluir uma chave API, conclua as etapas a seguir: 
+Para excluir uma chave API, conclua as etapas a seguir:
 
 1. Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**. Em seguida, clique em seu nome na lista e selecione a opção **Detalhes do usuário**.
 2. Identifique a linha da chave de API que você deseja excluir e selecione **Excluir** no menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg).

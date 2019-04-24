@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: MFA, multifactor authentication, external authentication, order authentication, Symantec, phone-based authentication, cancel authentication order
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -32,7 +36,7 @@ lastupdated: "2019-01-30"
 
 1. 메뉴 표시줄에서 **관리** &gt; **액세스(IAM)**를 클릭하고 **사용자**를 선택하십시오.
 2. 목록에서 사용자를 선택하십시오.
-3. **사용자 세부사항** 페이지의 사용자 로그인 관리 섹션에서 **외부 인증 주문**을 선택하십시오. 
+3. **사용자 세부사항** 페이지의 사용자 로그인 관리 섹션에서 **외부 인증 주문**을 선택하십시오.
 4. **Symantec Identity Protection** 또는 **전화 기반 ID 보호**를 선택하십시오.
     * Symantec 인증의 경우 사용자는 [Symantec VIP](https://vip.symantec.com/){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg) 앱을 다운로드하고 인증 정보 ID를 확보하여 주문 프로세스를 계속해야 합니다.
     * 전화 기반 인증의 경우 주문을 진행할 수 있지만, 옵션을 사용하려면 먼저 사용자가 [해당 구성을 설정](/docs/account?topic=account-third-party-MFA#third-party-MFA)해야 합니다.
@@ -48,7 +52,7 @@ Symantec 인증을 주문한 후에 사용자 세부사항 페이지에서 사�
 
 1. 메뉴 표시줄에서 **관리** &gt; **액세스(IAM)**를 클릭하고 **사용자**를 선택하십시오.
 2. 목록에서 사용자를 선택하십시오.
-3. **사용자 세부사항** 페이지에서 **Symantec 인증** 또는 **전화 기반 인증** 옵션을 설정 해제하십시오. 
+3. **사용자 세부사항** 페이지에서 **Symantec 인증** 또는 **전화 기반 인증** 옵션을 설정 해제하십시오.
 
 ## 외부 인증 옵션 취소
 {: #cancel}
@@ -65,6 +69,6 @@ Symantec 인증을 주문한 후에 사용자 세부사항 페이지에서 사�
 
 1. 메뉴 표시줄에서 **관리** &gt; **액세스(IAM)**를 클릭하고 사용자를 선택하십시오.
 2. 목록에서 사용자를 선택하십시오.
-3. **사용자 세부사항** 페이지에서, 주문한 항목에 따라 **Symantec 인증** 또는 **전화 기반 인증** 행에 대해 **삭제** ![삭제 아이콘](../icons/icon_trash.svg)를 클릭하십시오. 
+3. **사용자 세부사항** 페이지에서, 주문한 항목에 따라 **Symantec 인증** 또는 **전화 기반 인증** 행에 대해 **삭제** ![삭제 아이콘](../icons/icon_trash.svg)를 클릭하십시오.
 4. 제거하는 경우 선택하십시오.
 5. **제거**를 클릭하십시오.

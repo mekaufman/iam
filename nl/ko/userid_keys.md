@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -42,7 +46,7 @@ CLI를 사용하여 API 키를 작성하려면 다음 명령을 사용하십시�
 
 ```
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
-``` 
+```
 
 
 ## API 키 업데이트
@@ -140,7 +144,7 @@ ibmcloud iam api-key-unlock test-api-key
 
 키 회전 전략을 사용하는 경우, 이전 키를 삭제하고 새 키로 바꾸려고 할 수 있습니다.
 
-API 키를 삭제하려면 다음 단계를 완료하십시오. 
+API 키를 삭제하려면 다음 단계를 완료하십시오.
 
 1. **관리** &gt; **액세스(IAM)**로 이동하고 **사용자**를 선택하십시오. 그런 다음, 목록에서 이름을 클릭하고 **사용자 세부사항** 옵션을 선택하십시오.
 2. 삭제할 API 키의 행을 식별하고 **조치** ![조치 목록 아이콘](../icons/action-menu-icon.svg) 메뉴에서 **삭제**를 선택하십시오.

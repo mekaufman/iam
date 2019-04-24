@@ -6,6 +6,10 @@ copyright:
 
 lastupdated: "2019-01-30"
 
+keywords: user list visibility, users page setting, user view access, limit access to users list, user list access
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}

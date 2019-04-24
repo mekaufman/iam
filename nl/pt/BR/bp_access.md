@@ -5,6 +5,10 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-28"
 
+keywords: advantage of access groups, access assignment process, assign access, best practice, access management, strategy
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -40,7 +44,7 @@ Embora essas sugestões sejam projetadas para um cenário hipotético, é possí
 ## Criando grupos de acesso
 {: #access-group-setup}
 
-Para criar um grupo de acesso, conclua as etapas a seguir: 
+Para criar um grupo de acesso, conclua as etapas a seguir:
 
 1. No console do {{site.data.keyword.Bluemix}}, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Grupos de acesso**.
 2. Clique em **Criar**.
@@ -54,7 +58,7 @@ Depois de criar um grupo de acesso, é possível incluir usuários e IDs de serv
 
 Uma política consiste em um assunto, um destino e uma função. O assunto nesse caso é o grupo de acesso. O destino é o que você deseja que o assunto acesse, como um conjunto de recursos, uma instância de serviço, todos os serviços na conta ou todas as instâncias de um serviço. A função define o nível de acesso que é concedido a um usuário.
 
-As funções mais comumente usadas são visualizador, editor e administrador. A função de visualizador fornece a menor quantidade de acesso para visualizar instâncias e grupos de recursos em uma conta. A função de editor possui mais acesso para criar, editar, excluir e ligar instâncias de serviço. A função de administrador inclui tudo para trabalhar com uma instância de serviço e pode designar acesso a outros. No entanto, há duas categorias diferentes de funções que devem ser consideradas: plataforma e serviço. Para obter mais informações sobre as funções que podem ser designadas, consulte as [funções do IAM Cloud](/docs/iam?topic=iam-iamusermanrol#iamusermanrol). 
+As funções mais comumente usadas são visualizador, editor e administrador. A função de visualizador fornece a menor quantidade de acesso para visualizar instâncias e grupos de recursos em uma conta. A função de editor possui mais acesso para criar, editar, excluir e ligar instâncias de serviço. A função de administrador inclui tudo para trabalhar com uma instância de serviço e pode designar acesso a outros. No entanto, há duas categorias diferentes de funções que devem ser consideradas: plataforma e serviço. Para obter mais informações sobre as funções que podem ser designadas, consulte as [funções do IAM Cloud](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
 
 ## Designando acesso a grupos de acesso
 {: #assigning-access}
@@ -73,5 +77,3 @@ todos os serviços de gerenciamento de conta ou a apenas um.
 Forneça facilmente a vários usuários acesso de administrador a tudo em uma conta, criando um grupo de acesso e designando duas políticas a ele. Para criar a primeira política, use a opção **Designar acesso aos recursos** e selecione **Todos os serviços ativados por identidade e
 acesso** com a função de administrador designada. Para criar a segunda política, use a opção **Designar acesso a serviços de gerenciamento de conta** e selecione **Todos os serviços de gerenciamento de conta** com a função de administrador designada.
 {: tip}
-
-

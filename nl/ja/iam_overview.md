@@ -6,6 +6,11 @@ copyright:
 
 lastupdated: "2019-01-28"
 
+keywords: IBM Cloud IAM, user identities, service ID, policies, access management, roles, actions
+
+subcollection: iam
+
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -35,7 +40,7 @@ lastupdated: "2019-01-28"
 ## アクセス管理
 {: #am}
 
-{{site.data.keyword.Bluemix_notm}} のアクセス管理の概念は、アカウント内のリソースへのアクション実行を可能にする、相互に関連したいくつかの要素から構成されます。それには、ユーザー、リソース、ポリシー、役割、アクション、および Cloud IAM 制御システムが含まれます。 
+{{site.data.keyword.Bluemix_notm}} のアクセス管理の概念は、アカウント内のリソースへのアクション実行を可能にする、相互に関連したいくつかの要素から構成されます。それには、ユーザー、リソース、ポリシー、役割、アクション、および Cloud IAM 制御システムが含まれます。
 
 これらの Cloud IAM 構成要素については詳しくは、以下のリストを確認してください。
 
@@ -55,9 +60,3 @@ lastupdated: "2019-01-28"
 <dt>アクセス管理システム</dt>
 <dd>Cloud IAM 制御システムは、割り当てられたポリシーに基づいて、サービスのコンテキスト内でユーザーによるアクションを許可または拒否します。 ユーザーが特定アクションを実行しようとすると、制御システムは、ポリシーで定義された属性を使用して、ユーザーにそのタスクの実行許可があるかどうかを判別します。</dd>
 </dl>
-
-
-
-
-
-

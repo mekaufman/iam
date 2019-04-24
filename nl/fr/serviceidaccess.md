@@ -5,6 +5,10 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
+keywords: service ID, service ID access, managing access for service IDs
+
+subcollection: iam
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -95,7 +99,7 @@ Pour retirer une règle existante :
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **ID de service**.
 2. Sélectionnez l'ID de service pour laquelle vous souhaitez supprimer une règle de service.
-3. Cliquez sur **Règles d'accès**. 
+3. Cliquez sur **Règles d'accès**.
 4. Identifiez la ligne contenant la règle à supprimer puis sélectionnez **Retirer** dans le menu **Actions** ![Icône Liste des actions](../icons/action-menu-icon.svg).
 5. Consultez les détails relatifs à la règle que vous êtes sur le point de retirer, puis cliquez sur **Retirer** pour confirmer.
 
