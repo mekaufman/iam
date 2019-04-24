@@ -4,13 +4,9 @@
 
 copyright:
 
-  years: 2015，2019
+  years: 2015，2018
 
-lastupdated: "2019-02-13"
-
-keywords: dedicated ID, public IBMid, IBMid, public IAM service
-
-subcollection: iam
+lastupdated: "2018-11-12"
 
 ---
 
@@ -60,7 +56,6 @@ Authenticating...
 選取可輸入專用 ID 認證的選項。成功鑑別之後，專用 ID 就會連接至公用 IBM ID。
 
 ## 強制登入本端 UAA 伺服器
-{: #force_login}
 
 若要使用專用 ID 強制登入 UAA 伺服器，請在 `ibmcloud login` 指令中指定 `--no-iam` 選項：
 
@@ -68,8 +63,7 @@ Authenticating...
   $ ibmcloud login --no-iam
 ```
 
-## 中斷專用 ID 與公用 IBM ID 的連線
-{: #disconnect_id}
+## 中斷專用 ID 與公用 IBM ID 的連線 
 
 您可以使用 `ibmcloud iam dedicated-id-disconnect` 來中斷公用 IBM ID 與已連接之專用 ID 的連線。
 

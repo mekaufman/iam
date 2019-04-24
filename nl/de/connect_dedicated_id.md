@@ -4,13 +4,9 @@
 
 copyright:
 
-  years: 2015，2019
+  years: 2015，2018
 
-lastupdated: "2019-02-13"
-
-keywords: dedicated ID, public IBMid, IBMid, public IAM service
-
-subcollection: iam
+lastupdated: "2018-11-12"
 
 ---
 
@@ -60,7 +56,6 @@ Wenn Ihre dedizierte ID jedoch noch nicht mit der öffentlichen IBMid verbunden 
 Wählen Sie eine Option aus, um die Berechtigungsnachweise für die dedizierte ID einzugeben. Nach der erfolgreichen Authentifizierung ist Ihre dedizierte ID nun mit Ihrer öffentlichen IBMid verbunden.
 
 ## Anmeldung bei einem lokalen UAA-Server erzwingen
-{: #force_login}
 
 Erzwingen Sie eine Anmeldung bei dem UAA-Server unter einer dedizierten ID, indem Sie die Option `--no-iam` beim Befehl `ibmcloud login` angeben:
 
@@ -68,8 +63,7 @@ Erzwingen Sie eine Anmeldung bei dem UAA-Server unter einer dedizierten ID, inde
   $ ibmcloud login --no-iam
 ```
 
-## Verbindung zwischen dedizierter ID und öffentlicher IBMid aufheben
-{: #disconnect_id}
+## Verbindung zwischen dedizierter ID und öffentlicher IBMid aufheben 
 
 Mit dem Befehl `ibmcloud iam dedicated-id-disconnect` können Sie die Verbindung zwischen der öffentlichen IBMid und der dedizierten ID aufheben.
 

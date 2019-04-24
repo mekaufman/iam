@@ -4,13 +4,9 @@
 
 copyright:
 
-  years: 2015，2019
+  years: 2015，2018
 
-lastupdated: "2019-02-13"
-
-keywords: dedicated ID, public IBMid, IBMid, public IAM service
-
-subcollection: iam
+lastupdated: "2018-11-12"
 
 ---
 
@@ -60,7 +56,6 @@ Authenticating...
 选择其中一个选项以输入专用标识的凭证。成功认证后，您的专用标识将连接到公共 IBM 标识。
 
 ## 强制登录到本地 UAA 服务器
-{: #force_login}
 
 要强制使用专用标识登录到 UAA 服务器，请在 `bluemix login` 命令中指定 `--no-iam` 选项：
 
@@ -68,8 +63,7 @@ Authenticating...
   $ ibmcloud login --no-iam
 ```
 
-## 断开专用标识与公共 IBM 标识的连接
-{: #disconnect_id}
+## 断开专用标识与公共 IBM 标识的连接 
 
 可以使用 `ibmcloud iam dedicated-id-disconnect` 来断开公共 IBM 标识与所连接专用标识的连接。
 

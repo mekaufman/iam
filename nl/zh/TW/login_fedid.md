@@ -1,14 +1,12 @@
 ---
 
+
+
 copyright:
 
   years: 2015，2019
 
-lastupdated: "2019-03-27"
-
-keywords: federated ID, enterprise SSO, single sign-on ID, API key login, one-time passcode login
-
-subcollection: iam
+lastupdated: "2019-01-28"
 
 ---
 
@@ -27,7 +25,7 @@ subcollection: iam
 ## 使用一次性密碼
 {: #onetime_passcode}
 
-當您使用一次性密碼選項以利用聯合 ID 進行登入時，會指定單一登入 (SSO) 參數來取得一次性密碼，您之後在登入時需要輸入它。
+當您使用一次性密碼選項以利用聯合 ID 進行登入時，會指定單一登入 (SSO) 參數來取得一次性密碼，您之後在登入時需要輸入它。 
 
 因為一次性密碼會從 {{site.data.keyword.Bluemix_notm}} 主控台擷取密碼，所以在自動化 Script 中使用聯合 ID 會失敗。搭配使用 API 金鑰選項與自動化 Script，即可避免麻煩。
 {: tip}
@@ -37,8 +35,8 @@ subcollection: iam
 1. 指定 `ibmcloud login` 指令並使用 `--sso` 選項。
 2. 遵循提示中的 URL，以取得一次性密碼。
 3. 複製並貼上 CLI 中的密碼值作為您的輸入。
-
-  ```
+    
+  ``` 
   ibmcloud login --sso
   API endpoint: https://cloud.ibm.com
       
@@ -47,25 +45,25 @@ subcollection: iam
   One Time Code >
   Authenticating...
   OK
-
+      
   ```
-
+  
 ### 從 Cloud Foundry CLI
 {: #login_cf_cli}
 
-1. 使用 `cf login` 指令指定 `--sso` 選項。
-2. 遵循提示中的 URL，以取得一次性密碼。
-3. 複製並貼上 CLI 中的密碼值作為您的輸入。
-
+1. 使用 `cf login` 指令指定 `--sso` 選項。 
+2. 遵循提示中的 URL，以取得一次性密碼。 
+3. 複製並貼上 CLI 中的密碼值作為您的輸入。 
+    
   ```
   cf login -a  https://api.us-south.cf.cloud.ibm.com --sso
-
+  
   API endpoint: https://api.us-south.cf.cloud.ibm.com
-
+      
   One Time Code (Get one at https://login.us-south.cf.cloud.ibm.com/UAALoginServerWAR/passcode)>
   Authenticating...
   OK
-
+      
   ```
 
 ## 使用 API 金鑰
@@ -73,46 +71,47 @@ subcollection: iam
 
 必要 API 金鑰是用來向 {{site.data.keyword.Bluemix_notm}} 平台進行鑑別的 {{site.data.keyword.Bluemix_notm}} API 金鑰，而不是標準基礎架構 API 金鑰或 {{site.data.keyword.Bluemix_notm}} 服務 API 金鑰。
 
-1. 使用 [`ibmcloud iam api-key-create` 指令](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_api_key_create)，建立 API 金鑰。在指令視窗中，使用 `-f` 選項以產生 API 金鑰檔，而不是顯示金鑰：
+1. 使用 [`ibmcloud iam api-key-create` 指令](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create)，建立 API 金鑰。在指令視窗中，使用 `-f` 選項以產生 API 金鑰檔，而不是顯示金鑰：
 
    ```
    ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]
+  
    ```
 
-2. 使用 API 金鑰登入。
+2. 使用 API 金鑰登入。 
 
   您可以使用下列任何方式，以搭配使用 API 金鑰與 {{site.data.keyword.Bluemix_notm}} CLI：
-
+    
     * 直接呼叫 API 金鑰：
-
+  
       ```
-      ibmcloud login --apikey <api_key_string>
-
+ibmcloud login --apikey <api_key_string>
+    
       ```
-
-    * 使用金鑰檔來呼叫 API 金鑰：
-
+    
+    * 使用金鑰檔來呼叫 API 金鑰： 
+  
       ```
-      ibmcloud login --apikey @key_file_name
-
+ibmcloud login --apikey @key_file_name
+    
       ```
-
-    * 設定環境變數。此外，您也可以在系統上設定環境變數。例如，IBMCLOUD_API_KEY=api_key_string，其中 `api_key_string` 是 API 金鑰的自訂值。設定環境變數之後，只需要從 CLI 指定 `ibmcloud login` 即可。
-
-   針對 Windows 10 PowerShell，您想要使用 `'@key_file_name'` 並在金鑰檔名稱週圍使用單引號。
-   {: tip}
-
+    
+    * 設定環境變數。此外，您也可以在系統上設定環境變數。例如，IBMCLOUD_API_KEY=api_key_string，其中 `api_key_string` 是 API 金鑰的自訂值。設定環境變數之後，只需要從 CLI 指定 `ibmcloud login` 即可。 
+  
   若要使用 Cloud Foundry CLI 登入，請指定 `apikey` 作為使用者名稱，並指定 API 金鑰字串作為密碼：
 
     ```
     cf login -a https://api.us-south.cf.cloud.ibm.com
-
+    
     API endpoint: https://api.us-south.cf.cloud.ibm.com
-
+  
     Email> apikey
-
+  
+    
+  
     Password>
-    Authenticating...
-    OK
+Authenticating...
+OK
 
+  
     ```
