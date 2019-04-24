@@ -4,10 +4,6 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-30"
 
-keywords: maximum limits, IBM Cloud IAM, limits, maximum policies
-
-subcollection: iam
-
 ---
 
 
@@ -24,9 +20,9 @@ subcollection: iam
 
 |資源|上限|
 |----------|---------|
-|每個帳戶的存取群組| 500 |
-|每個使用者的存取群組| 50 |
-|每個帳戶的服務 ID|2000 |
+|每個帳戶的存取群組|500|
+|每個使用者的存取群組| 50 | 
+|每個帳戶的服務 ID|2000 | 
 |每個身分的 API 金鑰|20 |
 {:caption="表 1. IAM 帳戶限制" caption-side="top"}
 

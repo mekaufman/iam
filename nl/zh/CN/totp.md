@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-30"
 
-keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -41,3 +37,4 @@ subcollection: iam
 
 如果您在“用户详细信息”页面上启用了“用户管理的登录设置”，那么您可以自行管理此设置。
 {: tip}
+

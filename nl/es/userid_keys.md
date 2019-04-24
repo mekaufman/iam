@@ -3,11 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-03-05"
-
-keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
-
-subcollection: iam
+lastupdated: "2019-01-30"
 
 ---
 
@@ -19,7 +15,7 @@ subcollection: iam
 # Gestión de claves de API de usuario
 {: #userapikey}
 
-Un usuario federado o un usuario no federado puede crear una clave de API para utilizarla en la CLI o como parte de la automatización para iniciar sesión con su identidad de usuario. Puede utilizar la IU o la CLI para gestionar sus claves de API listando sus claves, creando claves, actualizando claves o suprimiendo claves. Para gestionar las claves de API de {{site.data.keyword.Bluemix_notm}} asociadas a su identidad de usuario, vaya a **Gestionar** &gt; **Acceso (IAM)** &gt; **Claves de API de IBM Cloud**. A continuación, puede crear, editar o suprimir claves de API. Y, para obtener una lista completa de mandatos de CLI disponibles, consulte [`ibmcloud iam api-keys`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_keys).
+Un usuario federado o no federado puede crear una clave de API para utilizarla en la CLI o como parte de la automatización para iniciar sesión con su identidad de usuario. Puede utilizar la IU o la CLI para gestionar sus claves de API listando sus claves, creando claves, actualizando claves o suprimiendo claves. Para gestionar las claves de API de {{site.data.keyword.Bluemix_notm}} asociadas a su identidad de usuario, vaya a **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**. Luego pulse el nombre en la lista y seleccione la opción **Detalles de usuario** para ver una lista de sus claves de API con descripciones y fechas. A continuación, puede crear, editar o suprimir claves de API. Y, para obtener una lista completa de mandatos de CLI disponibles, consulte [`ibmcloud iam api-keys`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_keys).
 
 Como [usuario federado](/docs/account?topic=account-signup#signup), puede utilizar una clave de API para iniciar una sesión mediante la variable de entorno `IBMCLOUD_API_KEY`. Para obtener más información sobre el uso de una clave de API para iniciar sesión, consulte [Inicio de sesión con un ID federado](/docs/iam?topic=iam-federated_id#federated_id).
 {:shortdesc}
@@ -31,11 +27,11 @@ Como usuario de {{site.data.keyword.Bluemix_notm}}, podría desear utilizar una 
 
 Para crear una clave de API para la identidad de usuario en la IU, siga estos pasos:
 
-1. Vaya a **Gestionar** &gt; **Acceso (IAM)** &gt; **Claves de API de IBM Cloud**.
+1. Vaya a **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**. Luego pulse el nombre en la lista y seleccione la opción **Detalles de usuario**.
 2. Pulse **Crear una clave de API de {{site.data.keyword.Bluemix_notm}}**.
 3. Especifique un nombre y una descripción para su clave de API.
 4. Pulse **Crear**.
-5. A continuación, pulse **Mostrar** para visualizar la clave de API. O bien, pulse **Copiar** para copiarla y guardarla para más adelante, o pulse **Descargar**.
+5. A continuación, pulse **Mostrar** para visualizar, copiar y guardar la clave de API para más tarde, o pulse **Descargar**.
 
 Por motivos de seguridad, la clave de API sólo está disponible para copiarse o descargarse en el momento de la creación. Si se pierde la clave de API, deberá crear una nueva clave de API.
 {: tip}
@@ -46,7 +42,7 @@ Para crear una clave de API mediante la CLI, utilice el mandato siguiente:
 
 ```
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
-```
+``` 
 
 
 ## Actualización de una clave de API
@@ -56,7 +52,7 @@ Si desea cambiar el nombre o la descripción de una clave de API, lleve a cabo l
 
 Para editar una clave de API, siga estos pasos:
 
-1. Vaya a **Gestionar** &gt; **Acceso (IAM)** &gt; **Claves de API de IBM Cloud**.
+1. Vaya a **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**. Luego pulse el nombre en la lista y seleccione la opción **Detalles de usuario**.
 2. Identifique la fila de la clave de API que desea actualizar y seleccione **Editar** en el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg).
 3. Actualice la información de su clave de API.
 4. Pulse **Aplicar**.
@@ -77,7 +73,7 @@ Para las claves de API de plataforma que representan la identidad de usuario, pu
 ### Bloqueo y desbloqueo de una clave de API desde la IU
 {: #lockui}
 
-1. Vaya a **Gestionar** &gt; **Acceso (IAM)** &gt; **Claves de API de IBM Cloud**.
+1. Vaya a **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**. Luego pulse el nombre en la lista y seleccione la opción **Detalles de usuario**.
 2. Identifique la fila de la clave de API que desea bloquear y seleccione **Bloquear** en el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg).
 
 Puede desbloquear su clave de API en cualquier momento para actualizar o eliminar la clave de API de la cuenta. Seleccione en la tabla la clave de API que desea desbloquear y seleccione **Desbloquear** en el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg).
@@ -144,9 +140,9 @@ ibmcloud iam api-key-unlock test-api-key
 
 Si está utilizando una estrategia de rotación de clave, es posible que desee suprimir una clave más antigua y sustituirla por una clave nueva.
 
-Para suprimir una clave de API, siga estos pasos:
+Para suprimir una clave de API, siga estos pasos: 
 
-1. Vaya a **Gestionar** &gt; **Acceso (IAM)** &gt; **Claves de API de IBM Cloud**.
+1. Vaya a **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**. Luego pulse el nombre en la lista y seleccione la opción **Detalles de usuario**.
 2. Identifique la fila de la clave de API que desea suprimir y seleccione **Suprimir** en el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg).
 3. A continuación, confirme la supresión pulsando **Suprimir**.
 

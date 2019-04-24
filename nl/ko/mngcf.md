@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -64,3 +60,4 @@ subcollection: iam
 3. 조직 행을 펼치고 지정된 역할을 검토하십시오.
 
 추가 액세스가 필요한 경우에는 조직 관리자 또는 계정 소유자에게 문의하여 지정된 Cloud Foundry 역할을 업데이트해야 합니다.
+

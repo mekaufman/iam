@@ -6,11 +6,9 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-08"
+lastupdated: "2019-01-30"
 
-keywords: frequently asked question, faq
 
-subcollection: iam
 
 ---
 
@@ -37,17 +35,8 @@ Identity and Access Management (IAM) vous permet d'authentifier de manière séc
 
 Un service activé pour IAM doit résider dans un groupe de ressources et l'accès au service est accordé via les règles d'accès IAM. Lorsque vous créez un service activé pour IAM depuis le catalogue, vous devez l'affecter à un groupe de ressources. Pour plus d'informations, voir [Qu'est-ce qu'une ressource ?](/docs/resources?topic=resources-resource#resource)
 
-{{site.data.keyword.containerlong_notm}} est la seule exception ; il est contrôlé par IAM, mais est toujours affecté au groupe de ressources par défaut. Par conséquent, vous ne disposez pas d'une autre option lorsque vous le créez depuis le catalogue. De plus, il ne peut pas être affecté à un autre groupe de ressources.
+{{site.data.keyword.containerlong_notm}} est la seule exception ; il est contrôlé par IAM, mais est toujours affecté au groupe de ressources par défaut. Par conséquent, vous ne disposez pas d'une autre option lorsque vous le créez depuis le catalogue. D'autre part, il ne peut pas être affecté à un autre groupe de ressources.
 
-## Qu'est-ce qu'une règle d'accès IAM ?
-{: #iam-policies}
-{: faq}
-
-Une règle d'accès IAM détermine comment sont accordés aux utilisateurs, ID de service et groupes d'accès d'un compte les droits d'utiliser une instance de ressource ou de service spécifique activée pour IAM, de gérer un groupe de ressources ou d'effectuer des tâches de gestion des comptes. Chaque règle d'accès IAM est constituée d'un objet, d'une cible et d'un rôle. L'objet indique qui détient l'accès. La cible correspond à l'élément auquel l'objet peut accéder. Et le rôle, qu'il s'agisse d'un rôle de plateforme ou de service selon le contexte de la cible sélectionnée, définit le niveau d'accès à la cible dont bénéficie l'objet. 
-
-L'objet est un utilisateur, un ID de service ou un groupe d'accès. La cible peut être un service ou un groupe de ressources dans le compte, un type ou une instance de ressource spécifique ou un service de gestion des comptes. En outre, les rôles sont proposés sous forme de choix qui dépendent de la cible sélectionnée. Certains services disposent de rôles définis propres au service, tandis que d'autres utilisent uniquement des rôles de plateforme. Pour visualiser ce concept, examinez le graphique suivant qui donne un aperçu des options de création d'une règle IAM :
-
-![Création de règles IAM](images/IAM.svg "Mode de création des règles d'accès IAM en utilisant un objet, une cible et un rôle")
 
 ## IAM et Cloud Foundry sont-ils associés ?
 {: #iam-cloudfoundry}
@@ -108,7 +97,7 @@ Concernant les services Cloud Foundry, vous devez disposer des rôles de gestion
 
 Concernant l'infrastructure classique, vous devez disposer du droit de gestion d'infrastructure classique d'utilisateur ainsi que des droits de catégorie de service et d'unité pour les ressources auxquelles vous souhaitez que l'utilisateur ait accès.
 
-## Quelle est la différence entre l'accès pour gérer un groupe de ressources et l'accès aux ressources dans un groupe de ressources ?
+## Quelle est la différence entre l'octroi d'un accès pour gérer un groupe de ressources par rapport à l'accès aux ressources dans un groupe de ressources ?
 {: #providing-access}
 {: faq}
 
@@ -127,14 +116,12 @@ Le propriétaire du compte peut retirer des utilisateurs du compte, et tout util
 * Règle IAM pour le service de gestion des comptes utilisateur avec le rôle Administrateur affecté. Vous devez être gestionnaire d'organisation Cloud Foundry si l'utilisateur appartient à une organisation Cloud Foundry.
 * Si vous avez une infrastructure classique dans votre compte, un utilisateur doit avoir une règle IAM pour le service de gestion de compte utilisateur avec le rôle Administrateur affecté. Vous devez être gestionnaire d'organisation Cloud Foundry si l'utilisateur appartient à une organisation Cloud Foundry et être un ancêtre de l'utilisateur dans la hiérarchie d'utilisateurs de l'infrastructure classique avec le droit de gestion correspondant affecté.
 
-## Comment puis-je imposer l'authentification multi-facteur avec IBMid pour mon compte ?
+## Comment puis-je me procurer l'authentification multi-facteur avec IBMid pour mon compte ?
 {: #multi-factor}
 {: faq}
 
 1. Accédez à **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Paramètres**.
-2. Dans la section Connexion au compte, sélectionnez **Mettre à jour** afin de sélectionner l'authentification multi-facteur pour tous les utilisateurs ou uniquement pour les utilisateurs non fédérés. 
-
-Pour plus d'informations, voir [Exigence de l'authentification multi-facteur pour les utilisateurs de votre compte](/docs/iam?topic=iam-enablemfa#enablemfa).
+2. Choisissez **Authentification multi-facteur** puis cliquez sur **Oui, je suis sûr**. Pour plus d'informations, voir [Exigence de l'authentification multi-facteur pour les utilisateurs de votre compte](/docs/iam?topic=iam-enablemfa#enablemfa).
 
 ## Quelle est la différence entre rôles de service et de plateforme ?
 {: #service-platform-roles}
@@ -150,7 +137,7 @@ Les rôles de service et de plateforme sont deux types de rôles différents :
 {: #groups-organizations}
 {: faq}
 
-Au début d'{{site.data.keyword.Bluemix_notm}}, un service de plateforme open source pour le contrôle d'accès et l'organisation de ressources dénommée Cloud Foundry constituait l'unique méthode d'organisation et de contrôle d'accès aux ressources. Avec l'expansion d'{{site.data.keyword.Bluemix_notm}}, une nouvelle méthode pouvant être utilisée par tous les types de services et de ressources s'avérait nécessaire. Des groupes de ressources sont dorénavant utilisés pour regrouper et organiser de nombreux types de ressources et IAM est utilisé pour contrôle cohérent de l'accès aux services et aux ressources. Un certain nombre de services ont déjà adopté l'utilisation de groupes de ressources et d'IAM, d'autres passeront au fil du temps à la nouvelle méthode d'organisation des ressources et de contrôle d'accès.
+Au début de {{site.data.keyword.Bluemix_notm}}, un service de plateforme open source pour le contrôle d'accès et l'organisation de ressources dénommée Cloud Foundry constituait l'unique méthode d'organisation et de contrôle d'accès aux ressources. Avec l'expansion d'{{site.data.keyword.Bluemix_notm}}, une nouvelle méthode pouvant être utilisée par tous les types de services et de ressources s'avérait nécessaire. Des groupes de ressources sont dorénavant utilisés pour regrouper et organiser de nombreux types de ressources et IAM est utilisé pour contrôle cohérent de l'accès aux services et aux ressources. Un certain nombre de services ont déjà adopté l'utilisation de groupes de ressources et d'IAM, d'autres passeront au fil du temps à la nouvelle méthode d'organisation des ressources et de contrôle d'accès.
 
 Le contrôle d'accès et l'organisation des ressources du compte sont les principales différences entre les groupes de ressources et les organisations et espaces Cloud Foundry. Les groupes de ressources organisent les services activés pour IAM dans un compte dont l'accès est contrôlé via des règles IAM. Les organisations et les espaces sont gérés à l'aide de rôles Cloud Foundry pour le contrôle d'accès et les ressources Cloud Foundry sont affectées à des espaces. Vous ne pouvez utiliser des organisations et des espaces pour organiser et gérer l'accès aux ressources que dans le domaine Cloud Foundry, tandis que les groupes de ressources et IAM peuvent être utilisés pour de multiples types de ressources à travers {{site.data.keyword.Bluemix_notm}}.
 
@@ -160,10 +147,27 @@ Le contrôle d'accès et l'organisation des ressources du compte sont les princi
 
 Pour déléguer les fonctions d'administrateur de compte, affectez l'accès suivant :
 
-* Une règle IAM avec les rôles Administrateur et Responsable pour Tous les services avec l'offre Identity and Access activée, ce qui autorise l'utilisateur à créer des instances de service et à attribuer aux utilisateurs un accès à toutes les ressources du compte.
+* Une règle IAM avec le rôle Administrateur pour Tous les services avec l'offre Identity and Access activée, ce qui autorise l'utilisateur à créer des instances de service et à attribuer aux utilisateurs un accès à toutes les ressources du compte.
 * Une règle IAM avec le rôle Administrateur pour Tous les services de gestion des comptes, ce qui autorise l'utilisateur à effectuer des tâches comme l'invitation et la suppression d'utilisateurs, la gestion de groupes d'accès, d'ID de service, des offres de catalogue privé et le suivi des informations de facturation et d'utilisation.
 * Le droit Super-utilisateur défini pour l'infrastructure classique
 * Gestionnaire Cloud Foundry pour toutes les organisations
+
+Même avec l'accès précédemment décrit affecté, un administrateur de compte ne peut pas changer le paramètre d'authentification multi-facteur pour le compte. Seul le propriétaire de compte peut changer ce paramètre.
+{: note}
+
+## Quelle est la différence entre un administrateur de compte et un propriétaire de compte ?
+{: #owner-administrator}
+{: faq}
+
+Le rôle d'administrateur de compte d'{{site.data.keyword.Bluemix_notm}} IAM est automatiquement affecté aux propriétaires de compte. En tant qu'administrateur de compte, vous pouvez inviter des utilisateurs, affecter et gérer l'accès pour les utilisateurs, créer des groupes de ressources, demander l'authentification multi-facteur pour tous les utilisateurs du compte et créer des instances de service. Si vous souhaitez que les autres utilisateurs de votre compte soient également administrateur de compte, affectez-leur l'accès suivant :
+
+* Une règle IAM avec le rôle Administrateur pour Tous les services avec l'offre Identity and Access activée, ce qui autorise l'utilisateur à créer des instances de service et à attribuer aux utilisateurs un accès à toutes les ressources du compte.
+* Une règle IAM avec le rôle Administrateur pour Tous les services de gestion des comptes, ce qui autorise l'utilisateur à effectuer des tâches comme l'invitation d'utilisateurs, la gestion de groupes d'accès, d'ID de service, des offres de catalogue privé et le suivi des informations de facturation et d'utilisation.
+* Le droit Super-utilisateur défini pour l'infrastructure classique
+* Gestionnaire Cloud Foundry pour toutes les organisations
+
+Même avec l'accès précédemment décrit affecté, un administrateur de compte ne peut pas changer le paramètre d'authentification multi-facteur pour le compte. Seul le propriétaire de compte peut changer ce paramètre.
+{: note}
 
 ## Comment affecter l'accès à l'infrastructure et aux périphériques ?
 {: #infrastructure-devices}
@@ -199,4 +203,4 @@ Oui. Vous devez affecter un accès utilisateur dans un des trois systèmes de ge
 {: #appid}
 {: faq}
 
-IAM permet de gérer l'accès à vos ressources et à vos services {{site.data.keyword.cloud_notm}}. Avec {{site.data.keyword.appid_full_notm}}, vous pouvez améliorer la sécurité du cloud en ajoutant une étape d'authentification à vos applications Web et mobiles. Il suffit d'ajouter quelques lignes de code pour sécuriser facilement vos applications et vos services natifs Cloud qui s'exécutent sur {{site.data.keyword.cloud_notm}}. Prêt à commencer ? [Consultez la documentation](/docs/services/appid?topic=appid-getting-started#getting-started).
+IAM permet de gérer l'accès à vos ressources et à vos services {{site.data.keyword.cloud_notm}}. Avec {{site.data.keyword.appid_full_notm}}, vous pouvez améliorer la sécurité du cloud en ajoutant une étape d'authentification à vos applications Web et mobiles. Il suffit d'ajouter quelques lignes de code pour sécuriser facilement vos applications et vos services natifs Cloud qui s'exécutent sur {{site.data.keyword.cloud_notm}}. Prêt à commencer ? [Consultez la documentation](/docs/services/appid?topic=appid-gettingstarted#gettingstarted).

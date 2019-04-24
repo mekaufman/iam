@@ -3,12 +3,8 @@
 copyright:
 
   years: 2017, 2019
-
+  
 lastupdated: "2019-01-30"
-
-keywords: service ID, create service ID, lock service ID, service ID example
-
-subcollection: iam
 
 ---
 
@@ -24,7 +20,7 @@ subcollection: iam
 
 Eine Service-ID dient (ähnlich wie eine Benutzer-ID, die einen Benutzer identifiziert) zur Identifikation eines Service oder einer Anwendung. Eine von Ihnen erstellte Service-ID kann verwendet werden, um einer Anwendung außerhalb von {{site.data.keyword.Bluemix_notm}} den Zugriff auf Ihre {{site.data.keyword.Bluemix_notm}}-Services zu erteilen. Sie können der Service-ID spezielle Zugriffsrichtlinien zuweisen, die die Berechtigungen zur Verwendung bestimmter Services einschränken, oder auch die Berechtigungen für den Zugriff auf unterschiedliche Services kombinieren. Da Service-IDs nicht an bestimmte Benutzer gebunden sind, bleibt die Service-ID bestehen, wenn der zugehörige Benutzer Ihre Organisation verlässt und sein Konto deshalb gelöscht wird. Auf diese Weise wird sichergestellt, dass Ihre Anwendung oder Ihr Service weiterhin funktionsbereit bleibt.
 
-Bei der Erstellung einer Service-ID werden ein eindeutiger Name und eine eindeutige Beschreibung erstellt, die Sie einfach identifizieren und mit der Sie in der Benutzerschnittstelle problemlos arbeiten können. Nach der Erstellung Ihrer Service-ID können Sie API-Schlüssel speziell für die einzelnen Service-IDs erstellen, die von Ihrer Anwendung benutzt werden können, um die Authentifizierung bei Ihren {{site.data.keyword.Bluemix_notm}}-Services durchzuführen. Um sicherzustellen, dass Ihre Anwendung über die korrekten Zugriffsberechtigungen für die Authentifizierung bei Ihren {{site.data.keyword.Bluemix_notm}}-Services verfügt, können Sie die Zugriffsrichtlinien verwenden, die den von Ihnen erstellten Service-IDs zugewiesen werden.
+Bei der Erstellung einer Service-ID werden ein eindeutiger Name und eine eindeutige Beschreibung erstellt, die Sie einfach identifizieren und mit der Sie in der Benutzerschnittstelle problemlos arbeiten können. Nach der Erstellung Ihrer Service-ID können Sie API-Schlüssel speziell für die einzelnen Service-IDs erstellen, die von Ihrer Anwendung benutzt werden können, um die Authentifizierung bei Ihren {{site.data.keyword.Bluemix_notm}}-Services durchzuführen. Um sicherzustellen, dass Ihre Anwendung über die korrekten Zugriffsberechtigungen für die Authentifizierung bei Ihren {{site.data.keyword.Bluemix_notm}}-Services verfügt, können Sie die Zugriffsrichtlinien verwenden, die den von Ihnen erstellten Service-IDs zugewiesen werden. 
 
 Die Zugriffsrichtlinien, die einer Service-ID zugeordnet sind, ermöglichen bestimmte Aktionen, die ausgeführt werden können, wenn diese Service-ID für den Zugriff auf einen bestimmten Service verwendet wird. Einer einzelnen Service-ID können mehrere Richtlinien zugewiesen sein, die definieren, welche Zugriffsebene für den Zugriff auf mehrere Services mit aktiviertem Identity and Access Management oder sogar auf verschiedene Instanzen eines einzigen Service zulässig ist. Nehmen Sie als Beispiel an, dass Sie über zwei Services mit jeweils zwei Serviceinstanzen verfügen. Sie könnten nun allen verfügbaren Instanzen des einen Service die Rolle des Anzeigeberechtigen und nur einer Instanz des zweiten Service die Rolle des Editors zuweisen. Auf diese Weise können Sie den Zugriff auf mehrere Services bedarfsgerecht anpassen, und zwar unter Verwendung eines einzigen API-Schlüssels für die Authentifizierung bei allen Services.
 
@@ -34,12 +30,12 @@ Die Zugriffsrichtlinien, die einer Service-ID zugeordnet sind, ermöglichen best
 
 Führen Sie die folgenden Schritte aus, um eine Service-ID zu erstellen:
 
-1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie dann **Service-IDs** aus.
+1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie dann **Service-IDs** aus. 
 2. Klicken Sie auf **Erstellen**.
-3. Befolgen Sie die Vorgehensweise, um einen Namen und eine Beschreibung für Ihre Service-ID zu erstellen.
-4. Klicken Sie auf **Erstellen**.
+3. Befolgen Sie die Vorgehensweise, um einen Namen und eine Beschreibung für Ihre Service-ID zu erstellen. 
+4. Klicken Sie auf **Erstellen**. 
 
-Bewegen Sie dann den Mauszeiger über die Zeile für die Service-ID, um das Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) zum Verwalten Ihrer Service-ID zu verwenden. Als erstes können Sie eine Richtlinie zuweisen und API-Schlüssel erstellen. Weitere Informationen zum Arbeiten mit API-Schlüsseln finden Sie in [API-Schlüssel für Service-IDs verwalten](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys).
+Bewegen Sie dann den Mauszeiger über die Zeile für die Service-ID, um das Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) zum Verwalten Ihrer Service-ID zu verwenden. Als erstes können Sie eine Richtlinie zuweisen und API-Schlüssel erstellen. Weitere Informationen zum Arbeiten mit API-Schlüsseln finden Sie in [API-Schlüssel für Service-IDs verwalten](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys). 
 
 ## Service-ID aktualisieren
 {: #update_serviceid}
@@ -51,7 +47,7 @@ Alle Änderungen, die Sie an einer vorhandenen Service-ID durchführen, wie zum 
 ## Service-ID sperren
 {: #lock_serviceid}
 
-Damit eine Situation vermieden werden kann, in der die Service-ID gelöscht und so ein Ausfall oder eine Unterbrechung für die Benutzer des Service verursacht wird, können Sie Service-ID über die Benutzerschnittstelle oder die Befehlszeilenschnittstelle sperren. Das Sperren einer Service-ID verhindert darüber hinaus, dass Zugriffsrichtlinien geändert, gelöscht oder zugewiesen werden. Sie können eine Service-ID nicht nur sperren, sondern auch [einzelne API-Schlüssel sperren](/docs/iam?topic=iam-lockkey#lockkey), die jeder Service-ID zugeordnet sind, die Sie in Ihrem Konto erstellen.
+Damit eine Situation vermieden werden kann, in der die Service-ID gelöscht und so ein Ausfall oder eine Unterbrechung für die Benutzer des Service verursacht wird, können Sie Service-ID über die Benutzerschnittstelle oder die Befehlszeilenschnittstelle sperren. Das Sperren einer Service-ID verhindert darüber hinaus, dass Zugriffsrichtlinien geändert, gelöscht oder zugewiesen werden. Sie können eine Service-ID nicht nur sperren, sondern auch [einzelne API-Schlüssel sperren](/docs/iam?topic=iam-lockkey#lockkey), die jeder Service-ID zugeordnet sind, die Sie in Ihrem Konto erstellen. 
 
 Gesperrte Service-IDs können zwar nicht aus dem Konto gelöscht und die Zugriffsrichtlinien können nicht aktualisiert werden, doch sie können immer noch aus jeder Zugriffsgruppe entfernt werden, zu der sie hinzugefügt wurden. Das bedeutet, dass jeder Zugriff, der einer ID durch ihre Mitgliedschaft in einer Zugriffsgruppe zugeordnet wurde, entfernt wird, wenn die Service-ID aus der Zugriffsgruppe entfernt wird.
 {: note}
@@ -63,14 +59,14 @@ Damit ein Benutzer über Zugriff zum Sperren und Entsperren von Service-IDs und 
 
 Wenn Sie Zugriff auf alle Service-IDs in einem Konto zuweisen möchten, definieren Sie eine Zugriffsrichtlinie für Kontoverwaltungsservices mit den folgenden Details:
 
-* Bearbeiter- oder Administratorrolle
+* Bearbeiter- oder Administratorrolle 
 * IAM Identity Service
 
 Wenn Sie Zugriff auf eine bestimmte Service-ID in einem Konto zuordnen möchten, definieren Sie eine Zugriffsrichtlinie für Kontoverwaltungsservices mit den folgenden Details:
 
 * Bearbeiter- oder Administratorrolle
 * IAM Identity Service
-* Angabe des Werts 'serviceid' im Feld für den Ressourcentyp
+* Angabe des Werts 'serviceid' im Feld für den Ressourcentyp 
 * Angabe der Service-ID im Feld für die Ressourcen-ID
 
 Die können die Kennung einer bestimmten Service-ID abrufen, indem Sie **Verwalten** > **Zugriff (IAM)** aufrufen und **Service-IDs** aufrufen. Wählen Sie die Service-ID aus, zu der Sie die Details anzeigen möchten, und kopieren Sie den ID-Wert.
@@ -161,3 +157,5 @@ Die folgenden Beispiele zeigen, wie eine Service-ID mit den {{site.data.keyword.
 
 - {{site.data.keyword.objectstorageshort}} - [Einführung](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started-cli-#getting-started-cli-).
 - Cloud SQL Query - [Verwendung der SQL Query-REST-API ![Symbol für externen Link](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}.
+
+

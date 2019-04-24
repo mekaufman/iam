@@ -19,7 +19,7 @@ lastupdated: "2019-01-28"
 # フェデレーテッド ID を使用したログイン
 {: #federated_id}
 
-会社または企業のシングル・サインオン ID を使用するフェデレーテッド・ユーザーは、ワンタイム・パスコードまたは API 鍵を使用してコマンド・ライン・インターフェース (CLI) から {{site.data.keyword.Bluemix}} にログインすることができます。
+会社または企業のシングル・サインオン ID を使用するフェデレーテッド・ユーザーは、ワンタイム・パスコードまたは API 鍵を使用してコマンド・ライン・インターフェース (CLI) から {{site.data.keyword.Bluemix}} にログインすることができます。 
 {: shortdesc}
 
 ## ワンタイム・パスコードの使用
@@ -71,7 +71,7 @@ lastupdated: "2019-01-28"
 
 必要な API キーは、{{site.data.keyword.Bluemix_notm}} プラットフォームでの認証に使用される {{site.data.keyword.Bluemix_notm}} の API キーです。クラシック・インフラストラクチャー API キーまたは {{site.data.keyword.Bluemix_notm}} サービスの API キーではありません。
 
-1. [`ibmcloud iam api-key-create` コマンド](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_iam_api_key_create)を使用して API キーを作成します。 以下に示すように、コマンド・ウィンドウにキーを表示するのではなく API キー・ファイルを生成するには、`-f` オプションを使用します。
+1. [`ibmcloud iam api-key-create` コマンド](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_api_key_create)を使用して API キーを作成します。 以下に示すように、コマンド・ウィンドウにキーを表示するのではなく API キー・ファイルを生成するには、`-f` オプションを使用します。
 
    ```
    ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]

@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: parent user, change parent user, classic infrastructure hierarchy
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -24,7 +20,7 @@ subcollection: iam
 如果您具有正確的存取權，則可以更新使用者的母項。當使用者清單可見性設定設為受限時，更新母項使用者會影響使用者如何看到帳戶中的其他使用者。使用者只能看到其為母項的其他使用者，以及母項使用者的這些後代所邀請的任何其他使用者。
 {:shortdesc}
 
-請參閱[使用者清單可見性設定](/docs/iam?topic=iam-userlistview#userlistview)，以取得設定的詳細資料。
+請參閱[使用者清單可見性設定](/docs/iam?topic=iam-userlistview#userlistview)，以取得設定的詳細資料。 
 
 如果您具有下列存取權，則可以更新另一位使用者的母項：
 

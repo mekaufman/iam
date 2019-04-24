@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: what is IAM, IBM Cloud IAM, IAM features, IAM API
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -62,11 +58,11 @@ de serviço ou a conclusão de chamadas API.</dd>
 ## Como usar o Cloud IAM?
 {: #howto}
 
-É possível acessar e usar o Cloud IAM por meio da IU do Access (IAM), da CLI ou da API.
+É possível acessar e usar o Cloud IAM por meio da IU do Access (IAM), da CLI ou da API. 
 
-* Para acessar o Cloud IAM usando a UI, acesse **Gerenciar** &gt; **Acesso (IAM)**.
+* Para acessar o Cloud IAM usando a UI, acesse **Gerenciar** &gt; **Acesso (IAM)**. 
 * Acesse [Gerenciando o acesso do IAM, chaves de API, IDs de serviço e grupos de acesso](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam) para revisar os comandos da CLI disponíveis.
-* Acesse os docs de API a seguir para revisar as APIs disponíveis:
+* Acesse os docs de API a seguir para revisar as APIs disponíveis: 
     * [API de serviços de identidade do IAM](https://{DomainName}/apidocs/iam-identity-token-api){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")
     * [API de grupos de acesso do IAM](https://{DomainName}/apidocs/iam-access-groups){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")
     * [API de gerenciamento de política do IAM](https://{DomainName}/apidocs/iam-policy-management){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")

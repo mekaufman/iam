@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-30"
 
-keywords: MFA, multifactor authentication, external authentication, order authentication, Symantec, phone-based authentication, cancel authentication order
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}

@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -64,3 +60,4 @@ subcollection: iam
 3. 展開組織列，並檢閱指派的角色。
 
 如果您需要其他存取權，則必須與組織管理員或帳戶擁有者聯絡，以更新已指派的 Cloud Foundry 角色。
+

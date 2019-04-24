@@ -4,11 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-04-03"
-
-keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
-
-subcollection: iam
+lastupdated: "2019-01-28"
 
 ---
 
@@ -23,7 +19,7 @@ subcollection: iam
 {: #iammanidaccser}
 
 Para gestionar el acceso o asignar nuevos accesos a usuarios utilizando las políticas de IAM, debe ser el propietario de la cuenta, el administrador de todos los servicios de la cuenta o el administrador asignado para un servicio o instancia de servicio particular. Para obtener más información sobre las políticas de acceso y los roles, consulte [Acceso de IAM](/docs/iam?topic=iam-userroles#userroles).
-{:shortdesc}
+{:shortdesc} 
 
 ## Edición de accesos existentes
 {: #edit_existing}
@@ -46,15 +42,15 @@ Cuando edite el acceso de un usuario o grupo, es posible que reciba un mensaje a
 ## Asignación de nuevos accesos
 {: #assign_new_access}
 
-Puede asignar acceso a recursos mediante dos tipos de política:
+Puede asignar acceso a recursos mediante dos tipos de política: 
 
 * Acceso a recursos dentro de un grupo de recursos, incluida la opción de seleccionar uno o todos
 * Acceso a recursos de la cuenta, incluida la opción de seleccionar un tipo o todos ellos
 
-Si desea habilitar el acceso completo de administrador a un usuario para que realice todas las tareas de [gestión de cuentas](/docs/iam?topic=iam-account-services#account-services), como invitar y eliminar usuarios, ver información de facturación y de uso, gestionar ID de servicio, gestionar grupos de acceso, gestionar acceso de usuarios y acceder a todos los recursos de la cuenta, debe crear dos políticas: una sobre **Todos los servicios habilitados para Identity and Access** con los roles de Administrador y Gestor y una sobre **Todos los servicios de gestión de cuentas** con el rol de Administrador.
+Si desea habilitar el acceso completo de administrador para un usuario para que realice tareas de [gestión de la cuenta](/docs/iam?topic=iam-account-services#account-services), como invitar y eliminar usuarios, ver información de facturación y de uso, gestionar ID de servicio, gestionar grupos de acceso, gestionar acceso de usuarios y acceder a todos los recursos de la cuenta, debe crear dos políticas: una sobre **Todos los servicios habilitados para Identity and Access** con el rol de administrador y una sobre **Todos los servicios de gestión de cuentas** con el rol de administrador.
 {: tip}
 
-### Acceso a recursos dentro de un grupo de recursos
+### Acceso a recursos dentro de un grupo de recursos 
 {: #access_to_resources}
 
 Para asignar acceso a todos los recursos de un grupo de recursos o solo a un servicio del grupo, complete los siguientes pasos:
@@ -71,15 +67,15 @@ Para asignar acceso a todos los recursos de un grupo de recursos o solo a un ser
 ### Acceso a recursos
 {: #resourceaccess}
 
-Para asignar acceso a un recurso individual en la cuenta o acceso a todos los recursos de la cuenta, complete los siguientes pasos:
+Para asignar acceso a un recurso individual en la cuenta o acceso a todos los recursos de la cuenta, complete los siguientes pasos: 
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**.
 2. En la fila correspondiente al usuario al que desea asignar acceso, seleccione el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg) y pulse **Asignar acceso**.
 3. Seleccione **Asignar acceso a recursos**.
 4. Seleccione un servicio o seleccione **Todos los servicios habilitados para identidad y acceso**.
-5. Seleccione **Todas las regiones actuales** o una región específica, si se le solicita.
+5. Seleccione **Todas las regiones actuales** o una región específica, si se le solicita. 
 6. Seleccione **Todas las instancias de servicio actuales** o seleccione una instancia de servicio específica.
-7. En función del servicio seleccionado, puede que vea los campos siguientes. Si no indica ningún valor en ellos, la política se asigna a nivel de instancia de servicio en lugar de a nivel de grupo.
+7. En función del servicio seleccionado, puede que vea los campos siguientes. Si no indica ningún valor en ellos, la política se asigna a nivel de instancia de servicio en lugar de a nivel de grupo. 
     * **Tipo de recurso**: indique **grupo**.
     * **ID de recurso**: Especifique el nombre de su grupo.
 8. Elija cualquier combinación de roles para asignar el acceso deseado para el usuario.

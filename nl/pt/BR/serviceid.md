@@ -3,12 +3,8 @@
 copyright:
 
   years: 2017, 2019
-
+  
 lastupdated: "2019-01-30"
-
-keywords: service ID, create service ID, lock service ID, service ID example
-
-subcollection: iam
 
 ---
 
@@ -24,7 +20,7 @@ subcollection: iam
 
 Um ID de serviço identifica um serviço ou um aplicativo semelhante a como um ID de usuário identifica um usuário. Um ID de serviço criado pode ser usado para ativar um aplicativo fora do acesso do {{site.data.keyword.Bluemix_notm}} aos serviços do {{site.data.keyword.Bluemix_notm}}. É possível designar políticas de acesso específicas ao ID de serviço que restringem permissões para usar serviços específicos ou até mesmo combinar permissões para acessar serviços diferentes. Como os IDs de serviço não são ligados a um usuário específico, se acontecer de um usuário deixar uma organização e for excluído da conta, o ID de serviço continuará assegurando que seu aplicativo ou serviço permaneça funcionando.
 
-Ao criar um ID de serviço, você cria um nome exclusivo e uma descrição de fácil identificação e trabalho na UI. Depois de ter criado seu ID de serviço, será possível criar chaves API específicas para cada ID de serviço que o aplicativo poderá usar para autenticação nos serviços do {{site.data.keyword.Bluemix_notm}}. Para assegurar que seu aplicativo tenha o acesso apropriado para autenticação com os serviços do {{site.data.keyword.Bluemix_notm}}, você usa políticas de acesso designadas a cada ID de serviço criado.
+Ao criar um ID de serviço, você cria um nome exclusivo e uma descrição de fácil identificação e trabalho na UI. Depois de ter criado seu ID de serviço, será possível criar chaves API específicas para cada ID de serviço que o aplicativo poderá usar para autenticação nos serviços do {{site.data.keyword.Bluemix_notm}}. Para assegurar que seu aplicativo tenha o acesso apropriado para autenticação com os serviços do {{site.data.keyword.Bluemix_notm}}, você usa políticas de acesso designadas a cada ID de serviço criado. 
 
 As políticas de acesso associadas a um ID de serviço permitem ações específicas que podem ser tomadas quando o ID do serviço é usado para acessar um serviço específico. Um único ID de serviço pode ter múltiplas políticas designadas que definem o nível de acesso permitido ao acessar múltiplos serviços ativados por Identidade e por acesso e até mesmo diferentes instâncias de um único serviço. Por exemplo, você tem dois serviços com duas instâncias de serviço cada um. Por exemplo, você pode designar a função de Visualizador para todas as instâncias disponíveis de um serviço e designar a função de Editor para somente uma instância de um segundo serviço. Dessa maneira é possível customizar o acesso a múltiplos serviços, mas usar uma única chave API para autenticação em todos.
 
@@ -34,12 +30,12 @@ As políticas de acesso associadas a um ID de serviço permitem ações específ
 
 Para criar um ID do serviço, conclua as etapas a seguir:
 
-1. Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **IDs de serviço**.
+1. Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **IDs de serviço**. 
 2. Clique em **Criar**.
-3. Siga o processo para criar um nome e uma descrição para seu ID de serviço.
-4. Clique em **Criar**.
+3. Siga o processo para criar um nome e uma descrição para seu ID de serviço. 
+4. Clique em **Criar**. 
 
-Em seguida, passe o mouse sobre a linha de um ID do serviço para usar o menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg) para gerenciar seu ID do serviço. É possível iniciar designando uma política e criando chaves API. Para obter mais informações sobre como trabalhar com chaves API, veja [Gerenciando chaves API do ID de serviço](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys).
+Em seguida, passe o mouse sobre a linha de um ID do serviço para usar o menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg) para gerenciar seu ID do serviço. É possível iniciar designando uma política e criando chaves API. Para obter mais informações sobre como trabalhar com chaves API, veja [Gerenciando chaves API do ID de serviço](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys). 
 
 ## Atualizando um ID de serviço
 {: #update_serviceid}
@@ -51,7 +47,7 @@ Quaisquer mudanças feitas em um ID do serviço existente, como mudar as políti
 ## Bloqueando um ID de serviço
 {: #lock_serviceid}
 
-Para evitar uma situação em que seu ID de serviço é excluído causando uma indisponibilidade ou interrupção para os usuários de seu serviço, você tem a opção de bloquear seu ID de serviço usando a UI ou a CLI. Bloquear um ID do serviço também evita que quaisquer políticas sejam mudadas, excluídas ou designadas. Além da capacidade de bloquear um ID do serviço, é possível [bloquear chaves de API individuais](/docs/iam?topic=iam-lockkey#lockkey) que estão associadas a cada ID do serviço que você cria em sua conta.
+Para evitar uma situação em que seu ID de serviço é excluído causando uma indisponibilidade ou interrupção para os usuários de seu serviço, você tem a opção de bloquear seu ID de serviço usando a UI ou a CLI. Bloquear um ID do serviço também evita que quaisquer políticas sejam mudadas, excluídas ou designadas. Além da capacidade de bloquear um ID do serviço, é possível [bloquear chaves de API individuais](/docs/iam?topic=iam-lockkey#lockkey) que estão associadas a cada ID do serviço que você cria em sua conta. 
 
 Embora os IDs de serviço bloqueados não possam ser excluídos da conta e as políticas de acesso não possam ser atualizadas, os IDs de serviço bloqueados ainda podem ser removidos de qualquer grupo de acesso no qual eles estão incluídos. Isso significa que qualquer acesso designado ao ID de sua associação em um grupo de acesso é removido quando o ID do serviço é removido do grupo de acesso.
 {: note}
@@ -64,7 +60,7 @@ Para que um usuário tenha acesso para bloquear e desbloquear IDs de serviço e 
 Para designar acesso a todos os IDs de serviço na conta, configure uma política de acesso para os serviços de
 gerenciamento de conta com os detalhes a seguir:
 
-* Função Editor ou Administrador
+* Função Editor ou Administrador 
 * Serviço de identidade do IAM
 
 Para designar acesso a um ID de serviço específico na conta, configure uma política de acesso para os serviços de
@@ -72,7 +68,7 @@ gerenciamento de conta com os detalhes a seguir:
 
 * Função Editor ou Administrador
 * Serviço de identidade do IAM
-* Especifique "serviceid" no campo Tipo de recurso
+* Especifique "serviceid" no campo Tipo de recurso 
 * Especifique o identificador de ID do serviço no campo ID do recurso
 
 Para obter o identificador de um ID do serviço específico, acesse **Gerenciar** > **Acesso (IAM)** e selecione **IDs de serviço**. Selecione o ID do serviço para o qual você deseja visualizar detalhes e copie o valor do ID.
@@ -163,3 +159,5 @@ A seguir estão exemplos de como um ID de serviço é usado com os serviços {{s
 
 - {{site.data.keyword.objectstorageshort}} - [Introdução](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started-cli-#getting-started-cli-).
 - Consulta SQL de nuvem - [Como usar a API de REST da consulta SQL![Ícone de link externo](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}.
+
+

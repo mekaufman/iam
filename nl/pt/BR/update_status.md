@@ -4,10 +4,6 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-28"
 
-keywords: user state, user status, change user status, update user status
-
-subcollection: iam
-
 ---
 
 
@@ -53,7 +49,9 @@ Quando você atualiza um usuário do status Somente VPN para o status Ativo, o u
 
 Para mudar o status de um usuário, conclua as etapas a seguir:
 
-1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**.
+1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**. 
 2. Selecione um usuário da lista.
 3. Na página Detalhes do usuário, selecione uma opção no menu **Status do usuário**.  
 4. Clique em **Aplicar**.
+
+

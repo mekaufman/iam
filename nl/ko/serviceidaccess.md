@@ -5,10 +5,6 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
-keywords: service ID, service ID access, managing access for service IDs
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -99,7 +95,7 @@ ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] 
 
 1. 메뉴 표시줄에서 **관리** &gt; **액세스(IAM)**를 클릭하고 **서비스 ID**를 선택하십시오.
 2. 테이블에서 서비스 정책을 삭제할 서비스 ID를 선택하십시오.
-3. **액세스 정책**을 클릭하십시오.
+3. **액세스 정책**을 클릭하십시오. 
 4. 삭제할 정책의 행을 식별하고 **조치** ![조치 목록 아이콘](../icons/action-menu-icon.svg) 메뉴에서 **제거**를 선택하십시오.
 5. 제거할 정책의 세부사항을 검토한 후에 **제거**를 클릭하여 확인하십시오.
 

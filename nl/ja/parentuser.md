@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: parent user, change parent user, classic infrastructure hierarchy
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -24,7 +20,7 @@ subcollection: iam
 適切なアクセス権限がある場合、ユーザーの親を更新できます。 親ユーザーの更新は、ユーザー・リスト可視性設定が制限付きに設定されている場合に、ユーザーにアカウント内の他のユーザーがどのように表示されるのかに影響します。 ユーザーには、自分が親である他のユーザーと、自分が親であるそれらの子孫ユーザーが招待した他のユーザーのみが表示されます。
 {:shortdesc}
 
-この設定について詳しくは、『[ユーザー・リスト可視性設定](/docs/iam?topic=iam-userlistview#userlistview)』を参照してください。
+この設定について詳しくは、『[ユーザー・リスト可視性設定](/docs/iam?topic=iam-userlistview#userlistview)』を参照してください。 
 
 以下のアクセス権限を持っている場合、別のユーザーの親を更新できます。
 

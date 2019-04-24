@@ -6,11 +6,9 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-08"
+lastupdated: "2019-01-30"
 
-keywords: frequently asked question, faq
 
-subcollection: iam
 
 ---
 
@@ -37,17 +35,8 @@ IAM (Identity and Access Management) ti consente di autenticare in modo protetto
 
 Un servizio abilitato a IAM deve trovarsi in un gruppo di risorse e l'accesso al servizio viene concesso utilizzando le politiche di accesso IAM. Quando crei un servizio abilitato a IAM dal catalogo,devi assegnarlo ad un gruppo di risorse. Per ulteriori informazioni, vedi [Che cosa è una risorsa?](/docs/resources?topic=resources-resource#resource)
 
-{{site.data.keyword.containerlong_notm}} è l'unica eccezione; è controllato dall'accesso IAM ma è sempre assegnato al gruppo di risorse predefinito. Pertanto non ti viene offerta l'opzione di sceglierne uno quando lo crei dal catalogo. Non può inoltre essere assegnato a un altro gruppo di risorse.
+{{site.data.keyword.containerlong_notm}} è l'unica eccezione; è controllato dall'accesso IAM ma è sempre assegnato al gruppo di risorse predefinito. Pertanto non ti viene offerta l'opzione di sceglierne uno quando lo crei dal catalogo. Non può inoltre essere assegnato a un altro gruppo di risorse
 
-## Cos'è una politica di accesso IAM?
-{: #iam-policies}
-{: faq}
-
-Una politica di accesso IAM è il modo in cui a utenti, ID servizio e gruppi di accesso in un account viene concessa l'autorizzazione per utilizzare una specifica istanza della risorsa o uno specifico servizio abilitato a IAM, per gestire un gruppo di risorse o per completare le attività di gestione dell'account. Ciascuna politica di accesso IAM è composta da un soggetto, una destinazione e un ruolo. Un soggetto è colui che dispone dell'accesso. La destinazione è l'elemento a cui può avere accesso il soggetto. E il ruolo, a seconda del fatto che si tratti di una piattaforma o di un ruolo del servizio in base al contesto della destinazione selezionata, definisce quale livello di accesso avrà il soggetto nella destinazione. 
-
-Un soggetto è un utente, un ID servizio o un gruppo di accesso. Una destinazione può essere un servizio nell'account, un gruppo di risorse nell'account, uno specifico tipo o una specifica istanza della risorsa o un servizio di gestione account. E i ruoli che vengono forniti come scelte dipendono dalla tua destinazione selezionata. Alcuni servizi hanno ruoli specifici del servizio che sono definiti e alcuni utilizzano solo ruoli della piattaforma. Per comprendere visivamente questo concetto, controlla il seguente grafico che descrive le opzioni per la creazione di una politica IAM: 
-
-![Creazione delle politiche IAM](images/IAM.svg "Come vengono create le politiche di accesso IAM utilizzando un oggetto, una destinazione e un ruolo")
 
 ## IAM e Cloud Foundry sono correlati?
 {: #iam-cloudfoundry}
@@ -108,7 +97,7 @@ Per i servizi Cloud Foundry, devi disporre dei ruoli di gestore organizzazione o
 
 Per l'infrastruttura classica, devi disporre dell'autorizzazione di gestione utenti dell'infrastruttura classica e le autorizzazioni di categoria di servizio e dispositivo per le risorse a cui vuoi concedere l'accesso utente.
 
-## Qual è la differenza tra fornire l'accesso per gestire un gruppo di risorse e fornire l'accesso alle risorse all'interno di un gruppo di risorse? 
+## Qual è la differenza tra fornire l'accesso per gestire un gruppo di risorse rispetto all'accesso alle risorse all'interno di un gruppo di risorse?
 {: #providing-access}
 {: faq}
 
@@ -127,14 +116,12 @@ Il proprietario dell'account può rimuovere tutti gli utenti dall'account e qual
 * Una politica IAM per il servizio di gestione account Gestione utenti con il ruolo di amministratore assegnato ed essere il gestore organizzazione Cloud Foundry se l'utente appartiene a un'organizzazione Cloud Foundry.
 * Se hai l'infrastruttura classica nel tuo account, un utente deve avere una politica IAM per il servizio di gestione account Gestione utenti con il ruolo di amministratore assegnato, essere il gestore organizzazione Cloud Foundry se l'utente appartiene a un'organizzazione Cloud Foundry ed essere un predecessore dell'utente nella gerarchia di utenti dell'infrastruttura classica con assegnata l'autorizzazione di gestione utenti dell'infrastruttura classica.
 
-## Come posso richiedere l'autenticazione multifattore ID IBM per il mio account?
+## Come richiedo l'autenticazione multifattore dell'ID IBM per il mio account?
 {: #multi-factor}
 {: faq}
 
 1. Vai a **Gestisci** &gt; **Accesso (IAM)** e seleziona **Impostazioni**.
-2. Dalla sezione Accesso account, seleziona **Aggiorna** per selezionare la MFA per tutti gli utenti o solo per gli utenti non federati. 
-
-Per ulteriori informazioni, vedi [Richiesta di MFA per gli utenti nel tuo account](/docs/iam?topic=iam-enablemfa#enablemfa).
+2. Scegli **Autenticazione multifattore** e fai clic su **Sì, sono sicuro**. Per ulteriori informazioni, vedi [Richiesta di MFA per gli utenti nel tuo account](/docs/iam?topic=iam-enablemfa#enablemfa).
 
 ## Qual è la differenza tra i ruoli del servizio e della piattaforma?
 {: #service-platform-roles}
@@ -160,10 +147,27 @@ Il controllo dell'accesso e l'organizzazione delle risorse dell'account sono le 
 
 Per delegare le capacità di amministratore dell'account, assegna il seguente accesso:
 
-* Una politica IAM con i ruoli Amministratore e Gestore su tutti i servizi abilitati per l'accesso e l'identità, che consente a un utente di creare istanze del servizio e di assegnare agli utenti l'accesso a tutte le risorse nell'account. 
+* Una politica IAM con il ruolo di amministratore su tutti i servizi abilitati per l'accesso e l'identità, che consente a un utente di creare istanze del servizio e di assegnare agli utenti l'accesso a tutte le risorse nell'account.
 * Una politica IAM con il ruolo di amministratore su tutti i servizi di gestione dell'account, che consente a un utente di completare attività come invito e rimozione di utenti, gestione dei gruppi di accesso, gestione degli ID servizio, gestione delle offerte del catalogo privato e traccia della fatturazione e dell'utilizzo.
 * La serie di autorizzazioni Super utente per l'infrastruttura classica
 * Gestore di Cloud Foundry per tutte le organizzazioni
+
+Anche con l'accesso precedentemente descritto assegnato, un amministratore dell'account non può modificare l'impostazione MFA per l'account. Solo il proprietario dell'account può modificare questa impostazione.
+{: note}
+
+## Qual è la differenza tra un amministratore dell'account e un proprietario dell'account?
+{: #owner-administrator}
+{: faq}
+
+I proprietari dell'account vengono assegnati automaticamente come amministratore dell'account per {{site.data.keyword.Bluemix_notm}} IAM. Come amministratore dell'account, puoi invitare utenti, assegnare e gestire l'accesso per gli utenti, creare gruppi di risorse, richiedere MFA per tutti gli utenti nell'account e creare istanze del servizio. Se vuoi che altri utenti nel tuo account abbiano il ruolo di amministratore account, assegna loro il seguente accesso:
+
+* Una politica IAM con il ruolo Amministratore su tutti i servizi abilitati per l'accesso e l'identità, che consente a un utente di creare istanze del servizio e di assegnare agli utenti l'accesso a tutte le risorse nell'account.
+* Una politica IAM con il ruolo Amministratore su tutti i servizi di gestione dell'account, che consente a un utente di completare attività come l'invito di utenti, la gestione dei gruppi di accesso, la gestione degli ID servizio, la gestione delle offerte del catalogo privato e la traccia della fatturazione e dell'utilizzo.
+* La serie di autorizzazioni Super utente per l'infrastruttura classica
+* Gestore di Cloud Foundry per tutte le organizzazioni
+
+Anche con l'accesso precedentemente descritto assegnato, un amministratore dell'account non può modificare l'impostazione MFA per l'account. Solo il proprietario dell'account può modificare questa impostazione.
+{: note}
 
 ## Come assegno l'accesso alle infrastrutture e ai dispositivi?
 {: #infrastructure-devices}
@@ -184,7 +188,7 @@ Un proprietario di account può visualizzare tutti gli utenti nell'account e sce
 * **Visualizzazione limitata**: limita la possibilità di visualizzare gli utenti nella pagina Utenti solo a coloro ai quali è stato concesso l'accesso esplicito, insieme a coloro che hanno visibilità di altri utenti tramite un'organizzazione Cloud Foundry condivisa o una relazione di gerarchia dell'utente dell'infrastruttura classica.
 
 
-## Devo assegnare l'accesso a un utente quando lo invito all'account? 
+## Devo assegnare l'accesso a un utente quando lo invito all'account?
 {: #account-invite}
 {: faq}
 
@@ -199,4 +203,4 @@ Sì. Devi assegnare un accesso utente all'interno di uno dei tre sistemi di gest
 {: #appid}
 {: faq}
 
-IAM viene utilizzato per gestire l'accesso ai tuoi servizi e alle tue risorse {{site.data.keyword.cloud_notm}}. Con {{site.data.keyword.appid_full_notm}}, puoi portare la sicurezza cloud a un livello superiore aggiungendo l'autenticazione nelle tue applicazioni web e mobili. Con solo poche righe di codice, puoi proteggere facilmente le applicazioni e i servizi nativi cloud che vengono eseguiti su {{site.data.keyword.cloud_notm}}. Pronto per iniziare? [Consulta le documentazioni](/docs/services/appid?topic=appid-getting-started#getting-started).
+IAM viene utilizzato per gestire l'accesso ai tuoi servizi e alle tue risorse {{site.data.keyword.cloud_notm}}. Con {{site.data.keyword.appid_full_notm}}, puoi portare la sicurezza cloud a un livello superiore aggiungendo l'autenticazione nelle tue applicazioni web e mobili. Con solo poche righe di codice, puoi proteggere facilmente le applicazioni e i servizi nativi cloud che vengono eseguiti su {{site.data.keyword.cloud_notm}}. Pronto per iniziare? [Consulta le documentazioni](/docs/services/appid?topic=appid-gettingstarted#gettingstarted).

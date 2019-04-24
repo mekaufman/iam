@@ -6,11 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: IBM Cloud IAM, user identities, service ID, policies, access management, roles, actions
-
-subcollection: iam
-
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -40,7 +35,7 @@ subcollection: iam
 ## 访问权管理
 {: #am}
 
-{{site.data.keyword.Bluemix_notm}} 中的访问权管理概念由一些相互关联的部分组成，包括用户、资源、策略、角色、操作和 Cloud IAM 控制系统，这些组成部分允许用户对帐户中的资源执行操作。
+{{site.data.keyword.Bluemix_notm}} 中的访问权管理概念由一些相互关联的部分组成，包括用户、资源、策略、角色、操作和 Cloud IAM 控制系统，这些组成部分允许用户对帐户中的资源执行操作。 
 
 可以查看以下列表以了解有关这些 Cloud IAM 组成部分的更多信息：
 
@@ -60,3 +55,9 @@ subcollection: iam
 <dt>访问管理系统</dt>
 <dd>Cloud IAM 控制系统根据分配的策略，允许或拒绝用户在服务上下文中执行操作。用户尝试完成特定操作时，控制系统会使用策略中定义的属性来确定用户是否有权执行该任务。</dd>
 </dl>
+
+
+
+
+
+

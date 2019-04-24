@@ -4,11 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-04-02"
-
-keywords: Cloud Foundry roles, Cloud Foundry access, auditor, manager, developer, billing manager
-
-subcollection: iam
+lastupdated: "2019-01-28"
 
 ---
 
@@ -22,14 +18,11 @@ subcollection: iam
 # Acceso de Cloud Foundry
 {: #cfaccess}
 
-Actualmente, no todos los servicios se pueden gestionar utilizando Cloud IAM. Puede seguir utilizando los roles de Cloud Foundry para acceder a estas instancias de servicio. Los usuarios se añaden a la organización y el espacio a los que pertenece la instancia, con un rol de Cloud Foundry asignado.
+Actualmente, no todos los servicios se pueden gestionar utilizando Cloud IAM. Puede seguir utilizando los roles de Cloud Foundry para acceder a estas instancias de servicio. Los usuarios se añaden a la organización y el espacio a los que pertenece la instancia, con un rol de Cloud Foundry asignado. 
 {:shortdesc}
-
-En el siguiente gráfico se describe cómo se relacionan las organizaciones, los espacios y los roles de Cloud Foundry en una cuenta. Una cuenta puede tener varios usuarios, organizaciones y espacios. A cada usuario se le pueden asignar tantas organizaciones y espacios como sean necesarios, y cuando se asignan a una organización y espacio, puede establecer el nivel de acceso para trabajar en cada uno asignando un rol de Cloud Foundry.
 
 
 ![Acceso mediante espacios y organizaciones de Cloud Foundry en una cuenta](images/cf-diagram.svg "Cómo funciona el acceso de una cuenta utilizando roles, espacios y organizaciones de Cloud Foundry")
-
 
 
 ## Roles de Cloud Foundry
@@ -37,16 +30,12 @@ En el siguiente gráfico se describe cómo se relacionan las organizaciones, los
 
 Los roles de Cloud Foundry otorgan acceso a las organizaciones y espacios dentro de la cuenta. Los roles de Cloud Foundry no habilitan permisos de usuario para completar acciones dentro del contexto de un servicio en la cuenta.
 
-El acceso de Cloud Foundry se asigna añadiendo un usuario a una organización y espacio y, a continuación, asignando un rol de organización y un rol de espacio. En función del tipo de rol que se asigna, dicho usuario puede completar acciones específicas para las instancias de servicio que se añaden a un espacio determinado.
-
-![Acceso de Cloud Foundry](images/CF.svg "Asignación de acceso de usuario a una organización y espacio de Cloud Foundry")
-
 Los siguientes roles se pueden asignar a nivel de organización:
 
 | Rol de organización | Permisos |
 |-------------------|-------------|
 |Gestor | Los gestores de organización pueden crear, ver, editar o suprimir espacios dentro de la organización, ver la cuota y el uso de la organización, invitar a usuarios a la organización, gestionar quién tiene acceso a la organización y sus roles en la organización, y gestionar dominios personalizados para la organización. |
-|Gestor de facturación | Los gestores de facturación pueden ver la información de uso de tiempo de ejecución y servicio para la organización de la página Uso.  |
+|Gestor de facturación | Los gestores de facturación pueden ver la información de uso de tiempo de ejecución y servicio para la organización de la página Panel de control de uso.  |
 |Auditor | Los auditores de organización pueden ver el contenido de aplicación y servicio en la organización. Los auditores también pueden ver los usuarios de la organización y sus roles asignados, y la cuota para la organización. |
 {:caption="Tabla 1. Permisos y roles de organización" caption-side="top"}
 

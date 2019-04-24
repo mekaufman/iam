@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: get started with IAM, IAM tutorial, IAM quick start
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -22,10 +18,10 @@ subcollection: iam
 # Lernprogramm 'Einführung'
 {: #getstarted}
 
-Dieses Lernprogramm soll Sie dabei unterstützen, sich schnell mit IBM Cloud Identity and Access Management (IAM) vertraut zu machen. Dazu werden Benutzer zu Ihrem Konto eingeladen und Sie werden diesen Benutzern Cloud IAM-Zugriffsberechtigungen zuweisen.
+Dieses Lernprogramm soll Sie dabei unterstützen, sich schnell mit IBM Cloud Identity and Access Management (IAM) vertraut zu machen. Dazu werden Benutzer zu Ihrem Konto eingeladen und Sie werden diesen Benutzern Cloud IAM-Zugriffsberechtigungen zuweisen. 
 {:shortdesc}
 
-Dieses Lernprogramm behandelt IAM-fähige Ressourcen. Für Services, die die Erstellung von Cloud IAM-Richtlinien zur Verwaltung des Zugriffs nicht unterstützen, können Sie [Cloud Foundry-Zugriff](/docs/iam?topic=iam-cfaccess#cfaccess) oder [Berechtigungen für die klassische Infrastruktur](/docs/iam?topic=iam-infrapermission#infrapermission) verwenden.
+Dieses Lernprogramm behandelt IAM-fähige Ressourcen. Für Services, die die Erstellung von Cloud IAM-Richtlinien zur Verwaltung des Zugriffs nicht unterstützen, können Sie [Cloud Foundry-Zugriff](/docs/iam?topic=iam-cfaccess#cfaccess) oder [Berechtigungen für die klassische Infrastruktur](/docs/iam?topic=iam-infrapermission#infrapermission) verwenden. 
 {: note}
 
 
@@ -73,7 +69,7 @@ Fahren Sie danach mit der Einrichtung Ihrer Gruppe fort, indem Sie Benutzer oder
 ### Zugriff auf Ihre Gruppen zuweisen
 {: #group_access}
 
-Nachdem Sie Ihre Gruppen erstellt haben, können Sie allen Entitäten in der Gruppe mit einer einzigen Richtlinie oder mit mehreren Richtlinien Zugriff zuweisen.
+Nachdem Sie Ihre Gruppen erstellt haben, können Sie allen Entitäten in der Gruppe mit einer einzigen Richtlinie oder mit mehreren Richtlinien Zugriff zuweisen. 
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Zugriffsgruppen** aus.
 2. Wählen Sie den Namen der Gruppe aus, für die Sie Zugriff zuweisen wollen.
@@ -97,10 +93,10 @@ Führen Sie die folgenden Schritte aus, um eine neue Zugriffsrichtlinie zuzuweis
 2. Wählen Sie den Namen des Benutzers aus, dem Sie Zugriffsberechtigungen zuweisen möchten.
 3. Klicken Sie auf **Zugriffsrichtlinien**.
 4. Klicken Sie auf **Zugriff zuweisen**.
-5. Wählen Sie aus, wie der Zugriff zugewiesen werden soll:
+5. Wählen Sie aus, wie der Zugriff zugewiesen werden soll: 
     * Wählen Sie **Zugriff in einer Ressourcengruppe zuweisen** aus, um den Zugriff auf alle Ressourcen in einer Gruppe oder nur auf die Ressourcen für einen bestimmten Service in einer Gruppe zuzuweisen. Sie können dem Benutzer auch die Zugriffsberechtigungen zum Anzeigen, Bearbeiten oder Verwalten des Zugriffs auf die Ressourcengruppe erteilen, indem Sie eine Rolle für den Zugriff auf die Ressourcengruppe auswählen. Wählen Sie **Kein Zugriff** aus, wenn der Benutzer ausschließlich Zugriff auf die angegebene Ressource erhalten soll, nicht jedoch auf die Gruppe, in der sich die Ressource befindet.
-    * Wählen Sie **Zugriff auf Ressourcen zuweisen** aus, um den Zugriff auf alle Ressourcen mit aktiviertem Identity and Access Management innerhalb des Kontos, alle Ressourcen eines bestimmten Service innerhalb des Kontos, auf eine einzelne Instanz oder eine einzelne Ressource innerhalb einer bestimmten Serviceinstanz zuzuweisen.
-    * Wählen Sie **Zugriff auf Kontoverwaltungsservices zuweisen** aus, um Zugriff auf alle oder nur einen Kontoverwaltungsservice zu erteilen.
+    * Wählen Sie **Zugriff auf Ressourcen zuweisen** aus, um den Zugriff auf alle Ressourcen mit aktiviertem Identity and Access Management innerhalb des Kontos, alle Ressourcen eines bestimmten Service innerhalb des Kontos, auf eine einzelne Instanz oder eine einzelne Ressource innerhalb einer bestimmten Serviceinstanz zuzuweisen. 
+    * Wählen Sie **Zugriff auf Kontoverwaltungsservices zuweisen** aus, um Zugriff auf alle oder nur einen Kontoverwaltungsservice zu erteilen. 
 5. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um den Geltungsbereich der Zugriffsberechtigungen zu definieren. Weitere Informationen hierzu enthält [Cloud IAM-Rollen](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
 6. Klicken Sie auf **Zuweisen**.
 
@@ -113,9 +109,9 @@ Sie können die vorhandenen Zugriffsberechtigungen aktualisieren, indem Sie die 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Benutzer** aus.
 2. Wählen Sie den Namen des Benutzers aus, dessen Zugriffsberechtigungen bearbeitet werden sollen.
 3. Klicken Sie auf **Zugriffsrichtlinien**.
-4. Klicken Sie in der Zeile für die Richtlinie, die Sie bearbeiten möchten, im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) auf **Bearbeiten**.
+4. Klicken Sie in der Zeile für die Richtlinie, die Sie bearbeiten möchten, im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) auf **Bearbeiten**. 
 4. Bearbeiten Sie die Richtlinie, indem Sie die zugewiesenen Rollen aktualisieren.
-5. Klicken Sie auf **Speichern**.
+5. Klicken Sie auf **Speichern**. 
 
 Sie können die Zugriffsberechtigungen für einen Benutzer entfernen, indem Sie für die Richtlinie, die entfernt werden soll, im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) auf die Option **Entfernen** klicken.
 

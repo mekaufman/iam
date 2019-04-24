@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: what is IAM, IBM Cloud IAM, IAM features, IAM API
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -51,11 +47,11 @@ subcollection: iam
 ## 如何使用 Cloud IAM？
 {: #howto}
 
-您可以透過「存取 (IAM)」使用者介面、CLI 或 API 來存取及使用 Cloud IAM。
+您可以透過「存取 (IAM)」使用者介面、CLI 或 API 來存取及使用 Cloud IAM。 
 
-* 若要使用使用者介面來存取 Cloud IAM，請移至**管理** &gt; **存取 (IAM)**。
+* 若要使用使用者介面來存取 Cloud IAM，請移至**管理** &gt; **存取 (IAM)**。 
 * 移至[管理 IAM 存取權、API 金鑰、服務 ID 及存取群組](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam)，以檢閱可用的 CLI 指令。
-* 移至下列 API 文件，以檢閱可用的 API：
+* 移至下列 API 文件，以檢閱可用的 API： 
     * [IAM Identity Services API](https://{DomainName}/apidocs/iam-identity-token-api){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")
     * [IAM 存取群組 API](https://{DomainName}/apidocs/iam-access-groups){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")
     * [IAM 原則管理 API](https://{DomainName}/apidocs/iam-policy-management){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")

@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: get started with IAM, IAM tutorial, IAM quick start
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -22,10 +18,10 @@ subcollection: iam
 # Tutoriel d'initiation
 {: #getstarted}
 
-Ce tutoriel a pour objectif de vous aider à démarrer et à travailler rapidement avec IBM Cloud Identity and Access Management (IAM) en invitant les utilisateurs de votre compte et en affectant des droits d'accès Cloud IAM à ces utilisateurs.
+Ce tutoriel a pour objectif de vous aider à démarrer et à travailler rapidement avec IBM Cloud Identity and Access Management (IAM) en invitant les utilisateurs de votre compte et en affectant des droits d'accès Cloud IAM à ces utilisateurs. 
 {:shortdesc}
 
-Ce tutoriel concerne les ressources activées par IAM. Pour les services qui ne prennent pas en charge la création de règles Cloud IAM pour la gestion de l'accès, vous pouvez utiliser l'[accès Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfaccess) ou les [droits d'infrastructure classique](/docs/iam?topic=iam-infrapermission#infrapermission).
+Ce tutoriel concerne les ressources activées par IAM. Pour les services qui ne prennent pas en charge la création de règles Cloud IAM pour la gestion de l'accès, vous pouvez utiliser l'[accès Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfaccess) ou les [droits d'infrastructure classique](/docs/iam?topic=iam-infrapermission#infrapermission). 
 {: note}
 
 
@@ -73,7 +69,7 @@ Ensuite, continuez de configurer votre groupe en ajoutant des utilisateurs ou de
 ### Affectation d'accès à vos groupes
 {: #group_access}
 
-Une fois votre groupe créé, vous pouvez affecter des accès à toutes les entités du groupe en utilisant une seule règle ou plusieurs règles.
+Une fois votre groupe créé, vous pouvez affecter des accès à toutes les entités du groupe en utilisant une seule règle ou plusieurs règles. 
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Groupes d'accès**.
 2. Sélectionnez le nom du groupe auquel vous voulez affecter des accès.
@@ -97,10 +93,10 @@ Pour affecter une nouvelle règle d'accès, procédez comme suit :
 2. Sélectionnez le nom de l'utilisateur auquel vous voulez affecter un accès.
 3. Cliquez sur **Règles d'accès**.
 4. Cliquez sur **Affecter un accès**.
-5. Choisissez comment vous voulez affecter l'accès :
+5. Choisissez comment vous voulez affecter l'accès : 
     * Sélectionnez **Affecter l'accès au sein d'un groupe de ressources** pour accorder l'accès à toutes les ressources d'un groupe ou uniquement aux ressources d'un service spécifique du groupe. Vous pouvez également accorder à l'utilisateur le droit d'afficher, d'éditer ou de gérer l'accès au groupe de ressources en sélectionnant un rôle pour l'accès au groupe de ressources. Sélectionnez **Aucun accès** si vous souhaitez que l'utilisateur ait accès uniquement à la ressource spécifiée et non au groupe auquel elle appartient.
-    * Sélectionnez **Affecter l'accès aux ressources** pour affecter l'accès à toutes les ressources du compte pour lesquelles l'offre Identity and Access est activée, à toutes les ressources d'un service spécifique du compte, à une seule instance ou à une seule ressource d'une instance de service spécifique.
-    * Sélectionnez **Affecter l'accès aux services de gestion des comptes** pour accorder l'accès à tous les services de gestion de compte ou bien à un seul.
+    * Sélectionnez **Affecter l'accès aux ressources** pour affecter l'accès à toutes les ressources du compte pour lesquelles l'offre Identity and Access est activée, à toutes les ressources d'un service spécifique du compte, à une seule instance ou à une seule ressource d'une instance de service spécifique. 
+    * Sélectionnez **Affecter l'accès aux services de gestion des comptes** pour accorder l'accès à tous les services de gestion de compte ou bien à un seul. 
 5. Sélectionnez toute combinaison de rôles afin de définir la portée de l'accès. Pour plus d'informations, voir [Rôles Cloud IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
 6. Cliquez sur **Affecter**.
 
@@ -113,9 +109,9 @@ Vous pouvez mettre à jour un accès existant en éditant les rôles affectés �
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**.
 2. Sélectionnez le nom de l'utilisateur dont vous voulez éditer l'accès.
 3. Cliquez sur **Règles d'accès**.
-4. Cliquez sur **Editer** dans le menu **Actions** ![Icône Liste des actions](../icons/action-menu-icon.svg) sur la ligne correspondant à la règle à éditer.
+4. Cliquez sur **Editer** dans le menu **Actions** ![Icône Liste des actions](../icons/action-menu-icon.svg) sur la ligne correspondant à la règle à éditer. 
 4. Editez la règle en mettant à jour les rôles affectés.
-5. Cliquez sur **Sauvegarder**.
+5. Cliquez sur **Sauvegarder**. 
 
 Vous pouvez supprimer l'accès d'un utilisateur en cliquant sur l'option **Retirer** du menu **Actions** ![Icône Liste des actions](../icons/action-menu-icon.svg) pour la règle à retirer.
 

@@ -6,11 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: VPN password, update VPN password, classic infrastructure VPN
-
-subcollection: iam
-
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -32,8 +27,8 @@ subcollection: iam
 
 若要更新 VPN 密碼，請完成下列步驟：
 
-1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**使用者**。
+1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**使用者**。 
 2. 從清單選取使用者。
 3. 從「使用者詳細資料」頁面，移至 **VPN 密碼**區段。
-4. 按一下**編輯**圖示 ![「編輯」圖示](../icons/icon_write.svg)，以輸入新的 VPN 密碼。
-5. 按一下**更新密碼**。
+4. 按一下**編輯**圖示 ![「編輯」圖示](../icons/icon_write.svg)，以輸入新的 VPN 密碼。 
+5. 按一下**更新密碼**。 

@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-30"
 
-keywords: security questions, MFA, multifactor authentication, login security
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}

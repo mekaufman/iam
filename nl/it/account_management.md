@@ -4,11 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-04-03"
-
-keywords: account management, access, access policy, account administrator
-
-subcollection: iam
+lastupdated: "2019-02-11"
 
 ---
 
@@ -35,7 +31,7 @@ Per assegnare l'accesso a uno o a tutti i servizi di gestione dell'account, comp
 4. Seleziona **Tutti i servizi di gestione account** o seleziona un servizio specifico.
 5. Seleziona qualsiasi combinazione di ruoli per assegnare l'accesso desiderato.
 
-Per concedere a un altro utente l'accesso completo all'account ai fini della gestione dell'accesso degli utenti e di tutte le risorse dell'account, devi assegnare due politiche. Una politica che consenta all'utente di accedere a tutte le risorse dell'account selezionando **Tutti i sevizi abilitati per l'accesso e l'identità** con i ruoli **Amministratore** e **Gestore** assegnati. E una politica che fornisce l'accesso utente a tutti i servizi di gestione dell'account nell'account selezionando **Tutti i servizi di gestione account** con il ruolo assegnato **Amministratore**.
+Per concedere a un altro utente l'accesso completo all'account ai fini della gestione dell'accesso degli utenti e di tutte le risorse dell'account, devi assegnare due politiche. Una politica che consenta all'utente di accedere a tutte le risorse dell'account selezionando **Tutti i sevizi abilitati per l'accesso e l'identità** con il ruolo **Amministratore** assegnato. E una politica che fornisce l'accesso utente a tutti i servizi di gestione dell'account nell'account selezionando **Tutti i servizi di gestione account** con il ruolo assegnato **Amministratore**.
 {: tip}
 
 ## Associazioni di azioni e ruoli per i servizi di gestione dell'account
@@ -67,7 +63,6 @@ Le seguenti tabelle descrivono le azioni che gli utenti possono eseguire quando 
 | Amministratore |  Visualizza casi <br><br> Cerca casi <br><br> Aggiorna casi <br><br> Crea casi    |
 {: caption="Tabella 3. Ruoli ed azioni di esempio per il servizio Centro di supporto" caption-side="top"}
 
-{: #billing-acct-mgmt}
 | Ruoli | Azioni |
 |:-------|----------|
 | Visualizzatore | Visualizza le impostazioni della funzione dell'account <br><br> Visualizza le sottoscrizioni nell'account <br><br> Visualizza il nome dell'account <br><br> Visualizza i gruppi di risorse   |
@@ -83,7 +78,6 @@ Le seguenti tabelle descrivono le azioni che gli utenti possono eseguire quando 
 | Editor |  Crea, aggiorna ed elimina ID e chiavi API  |
 | Amministratore |  Crea, aggiorna ed elimina ID e chiavi API <br><br> Assegna l'accesso alle politiche e agli ID  |
 {: caption="Tabella 5. Ruoli ed azioni di esempio per il servizio Identità IAM" caption-side="top"}
-{: #identity-service-acct-mgmt}
 
 Per il servizio di identità IAM, queste azioni si applicano agli ID servizio all'interno dell'account che l'utente non ha creato. Tutti gli utenti possono creare gli ID servizio. Questi sono gli amministratori di tali ID e possono creare la chiave API associata e le politiche di accesso. Tuttavia, questo servizio di gestione dell'account si applica alla capacità di visualizzare, eliminare ed assegnare l'accesso agli ID servizio nell'account creato da altri utenti.
 {: note}
@@ -92,8 +86,8 @@ Per il servizio di identità IAM, queste azioni si applicano agli ID servizio al
 |:-------|----------|
 | Visualizzatore |   Visualizza i servizi privati    |
 | Operatore | Non applicabile    |
-| Editor |   Modifica i metadati dell'oggetto ma non può modificare la visibilità per i servizi privati     |
-| Amministratore |  Modifica i metadati dell'oggetto o la visibilità per i servizi privati e limita la visibilità di un servizio pubblico.   |
+| Editor | Modifica i metadati dell'oggetto ma non può modificare la visibilità per i servizi privati   |
+| Amministratore |   Modifica i metadati dell'oggetto o la visibilità per i servizi privati e limita la visibilità di un servizio pubblico.   |
 {: caption="Tabella 6. Ruoli e azioni di esempio per il servizio Catalogo globale" caption-side="top"}
 
 | Ruoli | Azioni |

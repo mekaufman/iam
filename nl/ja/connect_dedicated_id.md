@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2015，2018
+  years: 2015，2019
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-02-13"
 
 ---
 
@@ -56,6 +56,7 @@ lastupdated: "2018-11-12"
 専用 ID の資格情報を入力するオプションを選択します。 認証に成功すると、専用 ID はパブリック IBM ID に接続されます。
 
 ## ローカル UAA サーバーへのログインの強制
+{: #force_login}
 
 専用 ID での UAA サーバーへのログインを強制するには、`ibmcloud login` コマンドに `--no-iam` オプションを指定します。
 
@@ -64,6 +65,7 @@ lastupdated: "2018-11-12"
 ```
 
 ## 専用 ID のパブリック IBM ID からの切断 
+{: #disconnect_id}
 
 `ibmcloud iam dedicated-id-disconnect` を使用して、パブリック IBM ID と接続された専用 ID を切断できます。
 

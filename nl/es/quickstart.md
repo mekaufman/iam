@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: get started with IAM, IAM tutorial, IAM quick start
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -22,10 +18,10 @@ subcollection: iam
 # Guía de aprendizaje de iniciación
 {: #getstarted}
 
-Esta guía de aprendizaje está pensada para ayudarle a preparar y ejecutar rápidamente con IBM Cloud Identity and Access Management (IAM) invitando usuarios a su cuenta y asignándoles acceso de Cloud IAM.
+Esta guía de aprendizaje está pensada para ayudarle a preparar y ejecutar rápidamente con IBM Cloud Identity and Access Management (IAM) invitando usuarios a su cuenta y asignándoles acceso de Cloud IAM. 
 {:shortdesc}
 
-Esta guía de aprendizaje es para recursos habilitados para IAM. Para los servicios que no permite la creación de políticas IAM de nube para gestionar el acceso, puede utilizar el [acceso de Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfaccess) o los [permisos de la infraestructura clásica](/docs/iam?topic=iam-infrapermission#infrapermission).
+Esta guía de aprendizaje es para recursos habilitados para IAM. Para los servicios que no permite la creación de políticas IAM de nube para gestionar el acceso, puede utilizar el [acceso de Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfaccess) o los [permisos de la infraestructura clásica](/docs/iam?topic=iam-infrapermission#infrapermission). 
 {: note}
 
 
@@ -73,7 +69,7 @@ A continuación, siga configurando el grupo añadiendo usuarios o ID de servicio
 ### Asignar acceso a los grupos
 {: #group_access}
 
-Después de crear los grupos, puede asignar acceso a todas las entidades del grupo con una sola política o con varias políticas.
+Después de crear los grupos, puede asignar acceso a todas las entidades del grupo con una sola política o con varias políticas. 
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Grupos de acceso**.
 2. Seleccione el nombre del grupo al que desea asignar el acceso.
@@ -97,10 +93,10 @@ Para asignar una nueva política de acceso, siga los pasos siguientes:
 2. Seleccione el nombre del usuario al que desea asignar el acceso.
 3. Pulse **Políticas de acceso**.
 4. Pulse **Asignar acceso**.
-5. Elija la forma de asignar el acceso:
+5. Elija la forma de asignar el acceso: 
     * Seleccione **Asignar acceso dentro de un grupo de recursos** para asignar acceso a todos los recursos dentro de un grupo o solo a los recursos de un servicio específico dentro de un grupo. También debe proporcionar el usuario con acceso para ver, editar o gestionar el acceso al grupo de recursos seleccionando un rol para acceder al grupo de recursos. Seleccione **Sin acceso** si desea que el usuario solo tenga acceso al recurso especificado y no al grupo en el que está organizado.
-    * Seleccione **Asignar acceso a recursos** para asignar acceso a todos los recursos habilitados para identificación y acceso en la cuenta, a todos los recursos de un servicio específico en la cuenta, a una única instancia o a un único recurso dentro de una instancia de servicio específica.
-    * Seleccione **Asignar acceso a servicios de gestión de cuentas** para asignar acceso a todos los servicios de gestión de cuentas o solo a un servicio de gestión de cuentas.
+    * Seleccione **Asignar acceso a recursos** para asignar acceso a todos los recursos habilitados para identificación y acceso en la cuenta, a todos los recursos de un servicio específico en la cuenta, a una única instancia o a un único recurso dentro de una instancia de servicio específica. 
+    * Seleccione **Asignar acceso a servicios de gestión de cuentas** para asignar acceso a todos los servicios de gestión de cuentas o solo a un servicio de gestión de cuentas. 
 5. Seleccione cualquier combinación de roles para definir el ámbito del acceso. Para obtener más información, consulte [Roles de Cloud IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
 6. Pulse **Asignar**.
 
@@ -113,9 +109,9 @@ Puede actualizar los accesos existentes editando los roles asignados a un usuari
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**.
 2. Seleccione el nombre del usuario para el que desea editar el acceso.
 3. Pulse **Políticas de acceso**.
-4. Pulse **Editar** en el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg) en la fila correspondiente a la política que desea editar.
+4. Pulse **Editar** en el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg) en la fila correspondiente a la política que desea editar. 
 4. Edite la política actualizando los roles asignados.
-5. Pulse **Guardar**.
+5. Pulse **Guardar**. 
 
 También puede eliminar el acceso de un usuario pulsando la opción **Eliminar** en el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg) correspondiente a la política que desea eliminar.
 

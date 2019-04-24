@@ -5,10 +5,6 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
-keywords: service ID, service ID access, managing access for service IDs
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -99,7 +95,7 @@ Para eliminar una política existente:
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **ID de servicio**.
 2. Seleccione el ID de servicio de la tabla para la que desea suprimir una política de servicios.
-3. Pulse **Políticas de acceso**.
+3. Pulse **Políticas de acceso**. 
 4. Identifique la fila de la política que desea suprimir y seleccione **Eliminar** en el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg).
 5. Revise los detalles de la política que va a eliminar y luego pulse **Eliminar** para confirmar.
 

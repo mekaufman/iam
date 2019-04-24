@@ -5,10 +5,6 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
-keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}

@@ -45,7 +45,6 @@ Gestion de l'identité et de l'accès
         mngcf.md
         mnginfra.md
         groups.md
-        public_access.md
         accessgroup_rules.md
         userlist.md
 
@@ -81,5 +80,4 @@ Gestion de l'identité et de l'accès
 
     {: .navgroup id="help"}
     faqs.md
-    troubleshoot-iam.md
     {: .navgroup-end}

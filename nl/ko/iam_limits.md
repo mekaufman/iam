@@ -4,10 +4,6 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-30"
 
-keywords: maximum limits, IBM Cloud IAM, limits, maximum policies
-
-subcollection: iam
-
 ---
 
 
@@ -25,10 +21,10 @@ subcollection: iam
 |리소스 |최대 |
 |----------|---------|
 |계정당 액세스 그룹 |500 |
-|사용자당 액세스 그룹 |50 |
-|계정당 서비스 ID |2000 |
+|사용자당 액세스 그룹 |50 | 
+|계정당 서비스 ID |2000 | 
 |ID당 API 키 |20 |
 {:caption="표 1. IAM 계정 한계" caption-side="top"}
 
-계정 내에서 최적의 성능을 보장하기 위해 한 계정 내의 서비스 권한에 대해 최대 1,000개 정책 및 서비스가 권장됩니다.
+계정 내에서 최적의 성능을 보장하기 위해 한 계정 내의 서비스 권한에 대해 최대 1,000개 정책 및 서비스가 권장됩니다. 
 {: tip}

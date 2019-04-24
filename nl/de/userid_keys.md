@@ -3,11 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-03-05"
-
-keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
-
-subcollection: iam
+lastupdated: "2019-01-30"
 
 ---
 
@@ -19,7 +15,7 @@ subcollection: iam
 # API-Schlüssel für Benutzer verwalten
 {: #userapikey}
 
-Ein föderierter oder nicht föderierter Benutzer kann einen API-Schlüssel erstellen, der in der Befehlszeilenschnittstelle (Command-Line Interface, CLI) oder im Rahmen der automatisierten Anmeldung mit Ihrer Benutzeridentität verwendet werden kann. Sie können die Benutzerschnittstelle oder die Befehlszeilenschnittstelle verwenden, um Ihre API-Schlüssel zu verwalten, indem Sie Schlüssel auflisten, erstellen, aktualisieren oder löschen. Wenn Sie die {{site.data.keyword.Bluemix_notm}}-API-Schlüssel verwalten möchten, die Ihrer Benutzeridentität zugeordnet sind, rufen Sie **Verwalten** &gt; **Zugriff (IAM)** &gt; **IBM Cloud-API-Schlüssel** auf. Dann können Sie API-Schlüssel erstellen, bearbeiten oder löschen. Eine vollständige Liste der verfügbaren CLI-Befehle finden Sie im Abschnitt [`ibmcloud iam api-keys`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_keys).
+Ein föderierter oder nicht föderierter Benutzer kann einen API-Schlüssel erstellen, der in der Befehlszeilenschnittstelle (CLI = Command-Line Interface) oder im Rahmen der automatisierten Anmeldung als Benutzeridentität verwendet wird. Sie können die Benutzerschnittstelle oder die Befehlszeilenschnittstelle verwenden, um Ihre API-Schlüssel zu verwalten, indem Sie Schlüssel auflisten, erstellen, aktualisieren oder löschen. Wenn Sie die {{site.data.keyword.Bluemix_notm}}-API-Schlüssel, die Ihrer Benutzeridentität zugeordnet sind, verwalten möchten, rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie **Benutzer** aus. Klicken Sie dann in der Liste auf Ihren Namen und wählen Sie die Option **Benutzerdetails** aus, damit eine Liste Ihrer API-Schlüssel mit Beschreibungen und Daten angezeigt wird. Dann können Sie API-Schlüssel erstellen, bearbeiten oder löschen. Eine vollständige Liste der verfügbaren CLI-Befehle finden Sie im Abschnitt [`ibmcloud iam api-keys`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_keys).
 
 Als [föderierter Benutzer](/docs/account?topic=account-signup#signup) können Sie sich mit einem API-Schlüssel anmelden, indem Sie die Umgebungsvariable `IBMCLOUD_API_KEY` verwenden. Weitere Informationen zur Verwendung eines API-Schlüssels für die Anmeldung finden Sie in [Mit föderierter ID anmelden](/docs/iam?topic=iam-federated_id#federated_id).
 {:shortdesc}
@@ -31,11 +27,11 @@ Als {{site.data.keyword.Bluemix_notm}}-Benutzer können Sie einen API-Schlüssel
 
 Führen Sie die folgenden Schritte aus, um einen API-Schlüssel für Ihre Benutzeridentität in der Benutzerschnittstelle zu erstellen:
 
-1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** &gt; **IBM Cloud-API-Schlüssel** auf.
+1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie dann **Benutzer** aus. Klicken Sie dann in der Liste auf Ihren Namen und wählen Sie die Option **Benutzerdetails** aus.
 2. Klicken Sie auf **{{site.data.keyword.Bluemix_notm}}-API-Schlüssel erstellen**.
 3. Geben Sie einen Namen und eine Beschreibung für den API-Schlüssel ein.
 4. Klicken Sie auf **Erstellen**.
-5. Klicken Sie dann auf **Anzeigen**, damit der API-Schlüssel angezeigt wird. Alternativ können Sie auf **Kopieren** klicken, um den Schlüssel für die spätere Verwendung zu kopieren und zu speichern, oder klicken Sie auf **Herunterladen**.
+5. Klicken Sie anschließend auf **Anzeigen**, damit der API-Schlüssel angezeigt wird und Sie ihn kopieren und zur späteren Verwendung speichern können, oder klicken Sie auf **Herunterladen**.
 
 Aus Sicherheitsgründen kann der API-Schlüssel nur zum Zeitpunkt seiner Erstellung kopiert oder heruntergeladen werden. Wenn der API-Schlüssel verloren geht, müssen Sie einen neuen API-Schlüssel erstellen.
 {: tip}
@@ -46,7 +42,7 @@ Verwenden Sie den folgenden Befehl, um einen API-Schlüssel über die Befehlszei
 
 ```
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
-```
+``` 
 
 
 ## API-Schlüssel aktualisieren
@@ -56,7 +52,7 @@ Wenn Sie den Namen oder die Beschreibung eines API-Schlüssels ändern möchten,
 
 Führen Sie die folgenden Schritte aus, um einen API-Schlüssel zu bearbeiten:
 
-1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** &gt; **IBM Cloud-API-Schlüssel** auf.
+1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie dann **Benutzer** aus. Klicken Sie dann in der Liste auf Ihren Namen und wählen Sie die Option **Benutzerdetails** aus.
 2. Ermitteln Sie die Zeile mit dem API-Schlüssel, den Sie aktualisieren möchten, und wählen Sie dann im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) die Option **Bearbeiten** aus.
 3. Aktualisieren Sie die Informationen für den API-Schlüssel.
 4. Klicken Sie auf **Anwenden**.
@@ -77,7 +73,7 @@ Sie können das Löschen von API-Schlüsseln der Plattform, die Ihre Benutzeride
 ### API-Schlüssel über die Benutzerschnittstelle sperren bzw. entsperren
 {: #lockui}
 
-1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** &gt; **IBM Cloud-API-Schlüssel** auf.
+1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie dann **Benutzer** aus. Klicken Sie dann in der Liste auf Ihren Namen und wählen Sie die Option **Benutzerdetails** aus.
 2. Ermitteln Sie die Zeile mit dem API-Schlüssel, der gesperrt werden soll, und wählen Sie dann im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) die Option **Sperren** aus.
 
 Sie können den API-Schlüssel zu jedem beliebigen Zeitpunkt entsperren, um ihn zu aktualisieren oder aus Ihrem Konto zu entfernen. Wählen Sie dazu in der Tabelle den API-Schlüssel aus, der entsperrt werden soll, und wählen Sie dann im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) die Option **Entsperren** aus.
@@ -144,9 +140,9 @@ ibmcloud iam api-key-unlock test-api-key
 
 Wenn Sie ein Schlüsselrotationsverfahren nutzen, können Sie einen älteren Schlüssel löschen und durch einen neuen ersetzen.
 
-Führen Sie die folgenden Schritte aus, um einen API-Schlüssel zu löschen:
+Führen Sie die folgenden Schritte aus, um einen API-Schlüssel zu löschen: 
 
-1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** &gt; **IBM Cloud-API-Schlüssel** auf.
+1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie dann **Benutzer** aus. Klicken Sie dann in der Liste auf Ihren Namen und wählen Sie die Option **Benutzerdetails** aus.
 2. Ermitteln Sie die Zeile für den API-Schlüssel, der gelöscht werden soll, und wählen Sie dann im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) die Option **Sperren** aus.
 3. Bestätigen Sie anschließend den Löschvorgang durch Klicken auf **Löschen**.
 

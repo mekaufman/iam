@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-30"
 
-keywords: user list visibility, users page setting, user view access, limit access to users list, user list access
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -20,7 +16,7 @@ subcollection: iam
 # Anzeigezugriff für Benutzer festlegen
 {: #userlistview}
 
-Als {{site.data.keyword.Bluemix}}-Kontoeigner können Sie alle Benutzer in Ihrem Konto anzeigen und definieren, wie Benutzer andere Benutzer in dem Konto anzeigen können.
+Als {{site.data.keyword.Bluemix}}-Kontoeigner können Sie alle Benutzer in Ihrem Konto anzeigen und definieren, wie Benutzer andere Benutzer in dem Konto anzeigen können. 
 {:shortdesc}
 
 Wenn die Anzeigeoption **Ansicht ohne Einschränkung** ausgewählt ist, kann jeder beliebige Benutzer in dem Konto andere Benutzer in der {{site.data.keyword.Bluemix_notm}}-Konsole auf der Seite 'Benutzer' anzeigen. Wenn die Anzeigeoption **Eingeschränkte Ansicht** ausgewählt ist, können Benutzer nur solche Benutzer in dem Konto anzeigen, die sie eingeladen haben, mit denen sie eine Cloud Foundry-Organisation gemeinsam nutzen oder die in der Benutzerhierarchie der klassischen Infrastruktur als ihre 'Nachkommen' gelten, d. h. die von ihnen oder von Nachkommen eingeladener Benutzer eingeladen wurden.

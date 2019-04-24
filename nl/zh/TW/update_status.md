@@ -4,10 +4,6 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-28"
 
-keywords: user state, user status, change user status, update user status
-
-subcollection: iam
-
 ---
 
 
@@ -53,7 +49,9 @@ subcollection: iam
 
 若要變更使用者的狀態，請完成下列步驟：
 
-1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**使用者**。
+1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**使用者**。 
 2. 從清單選取使用者。
 3. 從「使用者詳細資料」頁面，選取**使用者狀態**功能表中的一個選項。  
 4. 按一下**套用**。
+
+

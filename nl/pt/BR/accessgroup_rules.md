@@ -4,11 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-10"
-
-keywords: dynamic rules, access groups, specific identity attributes
-
-subcollection: iam
+lastupdated: "2019-01-30"
 
 ---
 
@@ -33,17 +29,17 @@ Somente usuários que já foram convidados para a conta podem ser mapeados para 
 ## Configurando regras
 {: #setup_rules}
 
-As regras dinâmicas são criadas configurando condições que devem ser correspondidas pelos dados que são configurados no provedor de identidade e passados com o ID federado de um usuário durante o login. É possível incluir mais de uma condição para uma regra. Todas as condições configuradas na regra devem ser atendidas para que um usuário seja incluído em um grupo de acesso. Para criar uma regra, siga estas etapas:
+As regras dinâmicas são criadas configurando condições que devem ser correspondidas pelos dados que são configurados no provedor de identidade e passados com o ID federado de um usuário durante o login. Para criar uma regra, siga estas etapas:
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Grupos de acesso**.
 2. Selecione o nome do grupo de acesso para o qual você deseja criar uma regra para abrir a página de detalhes do grupo.
 3. Selecione a guia  ** Regras Dinâmicas ** .
 4. Clique em  ** Incluir regra **.
-5. Insira as informações de seu provedor de identidade que são fornecidas dinamicamente na página Incluir regra. A lista a seguir fornece detalhes para cada campo obrigatório.
+5. Insira as informações de seu provedor de identidade. A lista a seguir fornece detalhes para cada campo obrigatório.
 
 <dl>
 <dt>Nome</dt>
-<dd>Insira um nome customizado para a sua regra que ajude você a se lembrar do tipo de usuários que está incluindo em um grupo de acesso.</dd>
+<dd>Insira um nome customizado para sua regra que ajude a lembrar quais tipos de usuários você está incluindo em um grupo de acesso.</dd>
 <dt>Provedor de identidade</dt>
 <dd>Insira o URI para seu provedor de identidade. Esse é o campo SAML "entityId", que às vezes é referido como o ID do emissor, para o provedor de identidade como parte da configuração de federação para migração com IBMid.</dd>
 <dt>Expiração (em horas)</dt>
@@ -56,7 +52,7 @@ As regras dinâmicas são criadas configurando condições que devem ser corresp
 <dd>Insira o valor de atributo para a instrução do atributo com relação à qual a regra está comparando.</dd>
 </dl>
 
-É possível pensar na regra como um par chave/valor, em que a chave é o que você inclui no campo `Incluir usuários quando` e o valor é o que você insere no campo `Valor`, que especifica com o que a regra deve ser comparada com base no comparador selecionado.
+É possível incluir mais de uma condição para uma regra. Todas as condições configuradas na regra devem ser atendidas para que um usuário seja incluído em um grupo de acesso.
 {: tip}
 
 ## Regra de exemplo

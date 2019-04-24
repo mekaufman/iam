@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -33,17 +29,20 @@ Se disponi del seguente accesso assegnato, puoi aggiornare gli indirizzi IP limi
 
   * Una politica IAM con il ruolo Editor o superiore nel servizio di gestione utenti.
   * Sei un predecessore nella gerarchia dell'infrastruttura classica per l'utente e ti è stata assegnata l'autorizzazione di gestione utenti dell'infrastruttura classica
-
+  
 Puoi gestire autonomamente questa impostazione se l'impostazione di Accesso gestito dall'utente è abilitata nella tua pagina Dettagli utente.
 {: tip}
 
-Per limitare un utente a utilizzare solo indirizzi IP specifici, completa la seguente procedura:
+Per limitare un utente a utilizzare solo indirizzi IP specifici, completa la seguente procedura: 
 
-1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Utenti**.
+1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Utenti**. 
 2. Seleziona un utente dall'elenco.
-3. Dalla pagina Dettagli utente, vai alla sezione **Limitazioni indirizzo IP**.
+3. Dalla pagina Dettagli utente, vai alla sezione **Limitazioni indirizzo IP**. 
 4. Per **Piattaforma cloud**, immetti gli indirizzi IP. Gli indirizzi IP elencati sono gli unici da cui questo utente può accedere a {{site.data.keyword.Bluemix}}.
-5. Per **Infrastruttura classica**, immetti gli indirizzi IP. Gli indirizzi IP elencati sono gli unici da cui l'utente può richiamare un'API dell'infrastruttura classica.
-
+5. Per **Infrastruttura classica**, immetti gli indirizzi IP. Gli indirizzi IP elencati sono gli unici da cui l'utente può richiamare un'API dell'infrastruttura classica. 
+  
   Per immettere un indirizzo IP dell'infrastruttura classica, l'utente deve aver già creato una chiave API dell'infrastruttura classica.
   {: note}
+ 
+
+

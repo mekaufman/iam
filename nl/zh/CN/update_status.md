@@ -4,10 +4,6 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-28"
 
-keywords: user state, user status, change user status, update user status
-
-subcollection: iam
-
 ---
 
 
@@ -53,7 +49,9 @@ subcollection: iam
 
 要更改用户的状态，请完成以下步骤：
 
-1. 在菜单栏中，单击**管理** &gt; **访问权 (IAM)**，然后选择**用户**。
+1. 在菜单栏中，单击**管理** &gt; **访问权 (IAM)**，然后选择**用户**。 
 2. 从列表中选择用户。
 3. 在“用户详细信息”页面中，从**用户状态**菜单中选择选项。  
 4. 单击**应用**。
+
+

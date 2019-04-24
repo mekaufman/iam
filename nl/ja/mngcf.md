@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -64,3 +60,4 @@ subcollection: iam
 3. 組織の行を展開し、割り当てられた役割を確認します。
 
 追加のアクセス権限が必要な場合は、組織の管理者またはアカウント所有者に連絡して、割り当てられた Cloud Foundry の役割を更新するよう依頼する必要があります。
+

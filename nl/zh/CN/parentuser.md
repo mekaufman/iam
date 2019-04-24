@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: parent user, change parent user, classic infrastructure hierarchy
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -24,7 +20,7 @@ subcollection: iam
 如果您具有正确的访问权，那么可以更新用户的父代。“用户列表可视性设置”设置为“受限”时，更新父用户会影响用户查看帐户中其他用户的情况。用户只能看到自己是其父代的其他用户，以及父用户的那些后代所邀请的其他任何用户。
 {:shortdesc}
 
-有关此设置的更多详细信息，请参阅[用户列表可视性设置](/docs/iam?topic=iam-userlistview#userlistview)。
+有关此设置的更多详细信息，请参阅[用户列表可视性设置](/docs/iam?topic=iam-userlistview#userlistview)。 
 
 如果您具有以下访问权，那么可以更新其他用户的父代：
 

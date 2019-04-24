@@ -4,10 +4,6 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-28"
 
-keywords: user state, user status, change user status, update user status
-
-subcollection: iam
-
 ---
 
 
@@ -53,7 +49,9 @@ subcollection: iam
 
 사용자 상태를 변경하려면 다음 단계를 완료하십시오.
 
-1. 메뉴 표시줄에서 **관리** &gt; **액세스(IAM)**를 클릭하고 **사용자**를 선택하십시오.
+1. 메뉴 표시줄에서 **관리** &gt; **액세스(IAM)**를 클릭하고 **사용자**를 선택하십시오. 
 2. 목록에서 사용자를 선택하십시오.
 3. 사용자 세부사항 페이지의 **사용자 상태** 메뉴에서 옵션을 선택하십시오.  
 4. **적용**을 클릭하십시오.
+
+

@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: what is IAM, IBM Cloud IAM, IAM features, IAM API
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -52,11 +48,11 @@ subcollection: iam
 ## 如何使用 Cloud IAM？
 {: #howto}
 
-您可以通过“访问权 (IAM)”UI、CLI 或 API 来访问和使用 Cloud IAM。
+您可以通过“访问权 (IAM)”UI、CLI 或 API 来访问和使用 Cloud IAM。 
 
-* 要使用 UI 来访问 Cloud IAM，请转至**管理** &gt; **访问权 (IAM)**。
+* 要使用 UI 来访问 Cloud IAM，请转至**管理** &gt; **访问权 (IAM)**。 
 * 转至[管理 IAM 访问权、API 密钥、服务标识和访问组](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam)以查看可用的 CLI 命令。
-* 转至以下 API 文档以查看可用的 API：
+* 转至以下 API 文档以查看可用的 API： 
     * [IAM Identity Services API](https://{DomainName}/apidocs/iam-identity-token-api){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")
     * [IAM Access Groups API](https://{DomainName}/apidocs/iam-access-groups){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")
     * [IAM Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")

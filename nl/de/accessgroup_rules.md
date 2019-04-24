@@ -4,11 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-10"
-
-keywords: dynamic rules, access groups, specific identity attributes
-
-subcollection: iam
+lastupdated: "2019-01-30"
 
 ---
 
@@ -33,19 +29,19 @@ Nur Benutzer, die bereits zum Konto eingeladen wurden, können mithilfe dynamisc
 ## Regeln festlegen
 {: #setup_rules}
 
-Dynamische Regeln werden erstellt, indem Bedingungen festgelegt werden. Diese Bedingungen müssen von den Daten erfüllt werden, die im Identitätsprovider konfiguriert sind und während der Anmeldung mit der föderierten ID eines Benutzers übergeben werden. Sie können mehr als eine Bedingung für eine Regel hinzufügen. Alle in der Regel festgelegten Bedingungen müssen erfüllt sein, damit ein Benutzer zu einer Zugriffsgruppe hinzugefügt wird. Führen Sie die folgenden Schritte aus, um eine Regel zu erstellen:
+Dynamische Regeln werden erstellt, indem Bedingungen festgelegt werden. Diese Bedingungen müssen von den Daten erfüllt werden, die im Identitätsprovider konfiguriert sind und während der Anmeldung mit der föderierten ID eines Benutzers übergeben werden. Führen Sie die folgenden Schritte aus, um eine Regel zu erstellen:
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Zugriffsgruppen** aus.
 2. Wählen Sie den Namen der Zugriffsgruppe aus, für die eine Regel erstellt werden soll, um die Detailseite der Gruppe zu öffnen.
 3. Wählen Sie die Registerkarte **Dynamische Regeln** aus.
 4. Klicken Sie auf **Regel hinzufügen**.
-5. Geben Sie die Informationen Ihres Identitätsproviders ein, die auf der Seite 'Regel hinzufügen' dynamisch für Sie bereitgestellt werden. Die folgende Liste enthält Details zu jedem erforderlichen Feld.
+5. Geben Sie die Informationen des Identitätsproviders ein. Die folgende Liste enthält Details zu jedem erforderlichen Feld.
 
 <dl>
 <dt>Name</dt>
-<dd>Geben Sie einen benutzerdefinierten Namen für die Regel ein, anhand dessen Sie die Benutzertypen identifizieren können, die Sie einer Zugriffsgruppe hinzufügen.</dd>
+<dd>Geben Sie einen benutzerdefinierten Namen für die Regel ein, anhand dessen Sie die Benutzertypen identifizieren können, die Sie zu einer Zugriffsgruppe hinzufügen.</dd>
 <dt>Identitätsprovider</dt>
-<dd>Geben Sie den URI für den Identitätsprovider ein. Hierbei handelt es sich um das Feld für die SAML-Entitäts-ID 'entityId', die auch als Aussteller-ID bezeichnet wird, für den Identitätsprovider als Teil der Föderierungskonfiguration für das Onboarding mit einer IBMid.</dd>
+<dd>Geben Sie den URI für den Identitätsprovider ein. Hierbei handelt es sich um das SAML-Feld "entityId", auch als Aussteller-ID bezeichnet, für den Identitätsprovider als Teil der Föderierungskonfiguration für das Onboarding mit der IBMid.</dd>
 <dt>Ablauf (in Stunden)</dt>
 <dd>Mit dieser Option können Sie zusätzliche Sicherheit implementieren, indem Sie ein Zeitlimit für den zugewiesenen Zugriff festlegen. Jeder Benutzer muss sich alle 24 Stunden anmelden, um seinen Zugriff zu aktualisieren, Sie können jedoch einen kürzeren Zeitraum für das Ablaufen des Zugriffs festlegen. Der Mindestzeitraum beträgt eine Stunde. Die Gruppenzugehörigkeit wird nach dem Ablauf dieses Zeitraums widerrufen.</dd>
 <dt>Benutzer in den folgenden Fällen hinzufügen</dt>
@@ -56,7 +52,7 @@ Dynamische Regeln werden erstellt, indem Bedingungen festgelegt werden. Diese Be
 <dd>Geben Sie den Attributwert für die Attributanweisung für den Vergleich mit der Regel ein.</dd>
 </dl>
 
-Sie können sich die Regel als Schlüssel/Wert-Paar vorstellen, wobei der Schlüssel Ihre Eingabe in das Feld `Benutzer hinzufügen, wenn` darstellt, und der Wert das ist, was Sie im Feld `Wert` eingeben, mit dem die Regel auf der Basis des ausgewählten Vergleichsoperators verglichen werden muss.
+Sie können mehr als eine Bedingung für eine Regel hinzufügen. Alle in der Regel festgelegten Bedingungen müssen erfüllt sein, damit ein Benutzer zu einer Zugriffsgruppe hinzugefügt wird.
 {: tip}
 
 ## Beispielregel

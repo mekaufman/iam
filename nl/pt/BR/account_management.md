@@ -4,11 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-04-03"
-
-keywords: account management, access, access policy, account administrator
-
-subcollection: iam
+lastupdated: "2019-02-11"
 
 ---
 
@@ -35,7 +31,8 @@ Para designar acesso a um ou todos os serviços de gerenciamento de conta, concl
 4. Selecione **Todos os serviços de gerenciamento de conta** ou selecione um serviço de gerenciamento de conta específico.
 5. Selecione qualquer combinação de funções para designar o acesso desejado.
 
-Para conceder a outro usuário acesso total à conta para propósitos de gerenciamento de acesso de usuário e de todos os recursos da conta, deve-se designar duas políticas. Uma política que fornece ao usuário acesso a todos os recursos na conta selecionando **Todos os serviços ativados de identidade e acesso** com as funções **Administrador** e **Gerenciador** designadas. Uma política que conceda ao usuário acesso a todos os serviços de gerenciamento de conta na conta selecionando
+Para conceder a outro usuário acesso total à conta para propósitos de gerenciamento de acesso de usuário e de todos os recursos da conta, deve-se designar duas políticas. Uma política que conceda ao usuário
+acesso a todos os recursos na conta selecionando **Todos os serviços ativados para Identity and Access** com a função **Administrador** designada. Uma política que conceda ao usuário acesso a todos os serviços de gerenciamento de conta na conta selecionando
 **Todos os serviços de gerenciamento de conta** com a função **Administrador** designada.
 {: tip}
 
@@ -48,7 +45,7 @@ As tabelas a seguir descrevem as ações que os usuários podem executar quando 
 |:-------|----------|
 | Visualizador |   Visualizar grupos de acesso e membros     |
 | Operador | Não aplicável    |
-| Editor |  Visualizar, criar, editar e excluir grupos <br><br> Incluir ou remover usuários de grupos     |
+| Aplicativos |  Visualizar, criar, editar e excluir grupos <br><br> Incluir ou remover usuários de grupos     |
 | Administrador |  Visualizar, criar, editar e excluir grupos <br><br> Incluir ou remover usuários <br><br> Designar acesso a um grupo <br><br> Gerenciar o acesso para trabalhar com os grupos de acesso   |
 {: caption="Tabela 1. Funções e ações de exemplo para o serviço Grupos de acesso" caption-side="top"}
 
@@ -56,7 +53,7 @@ As tabelas a seguir descrevem as ações que os usuários podem executar quando 
 |:-------|----------|
 | Visualizador |  Visualizar usuários na conta <br><br> Visualizar configurações do perfil do usuário     |
 | Operador | Visualizar usuários na conta <br><br> Visualizar configurações do perfil do usuário  |
-| Editor |  Visualizar, convidar, remover e atualizar usuários da conta <br><br> Visualizar e atualizar as configurações do perfil do usuário    |
+| Aplicativos |  Visualizar, convidar, remover e atualizar usuários da conta <br><br> Visualizar e atualizar as configurações do perfil do usuário    |
 | Administrador | Visualizar, convidar, remover e atualizar usuários da conta <br><br> Visualizar e atualizar as configurações do perfil do usuário    |
 {: caption="Tabela 2. Funções e ações de exemplo para o serviço Gerenciamento de usuário" caption-side="top"}
 
@@ -64,16 +61,15 @@ As tabelas a seguir descrevem as ações que os usuários podem executar quando 
 |:-------|----------|
 | Visualizador |  Visualizar casos <br><br> Procurar casos      |
 | Operador |  Não aplicável    |
-| Editor |  Visualizar casos <br><br> Procurar casos <br><br> Atualizar casos <br><br> Criar casos     |
+| Aplicativos |  Visualizar casos <br><br> Procurar casos <br><br> Atualizar casos <br><br> Criar casos     |
 | Administrador |  Visualizar casos <br><br> Procurar casos <br><br> Atualizar casos <br><br> Criar casos    |
 {: caption="Tabela 3. Funções e ações de exemplo para o serviço Centro de suporte" caption-side="top"}
 
-{: #billing-acct-mgmt}
 | Funções | Ações |
 |:-------|----------|
 | Visualizador | Visualizar configurações de recursos da conta <br><br> Visualizar assinaturas na conta <br><br> Visualizar o nome da conta <br><br> Visualizar grupos de recursos   |
 | Operador | Visualizar configurações de recursos da conta <br><br> Visualizar assinaturas na conta <br><br> Visualizar e mudar o nome da conta <br><br> Visualizar e atualizar grupos de recursos    |
-| Editor |  Visualizar e atualizar as configurações de recursos da conta <br><br> Visualizar assinaturas na conta <br><br> Visualizar ofertas na conta <br><br> Visualizar e aplicar códigos de recurso <br><br> Visualizar e mudar o nome da conta <br><br> Visualizar e atualizar os limites de gastos <br><br> Visualizar, criar e atualizar grupos de recursos    |
+| Aplicativos |  Visualizar e atualizar as configurações de recursos da conta <br><br> Visualizar assinaturas na conta <br><br> Visualizar ofertas na conta <br><br> Visualizar e aplicar códigos de recurso <br><br> Visualizar e mudar o nome da conta <br><br> Visualizar e atualizar os limites de gastos <br><br> Visualizar, criar e atualizar grupos de recursos    |
 | Administrador |  Visualizar e atualizar as configurações de recursos da conta <br><br> Visualizar assinaturas na conta <br><br> Visualizar ofertas na conta <br><br> Visualizar e aplicar códigos de recurso <br><br> Visualizar e mudar o nome da conta <br><br> Visualizar e atualizar os limites de gastos <br><br> Visualizar saldos de assinatura e uso de faixa <br><br> Visualizar, criar, atualizar e designar acesso para gerenciar grupos de recursos  |
 {: caption="Tabela 4. Funções e ações de exemplo para o serviço Faturamento" caption-side="top"}
 
@@ -81,10 +77,9 @@ As tabelas a seguir descrevem as ações que os usuários podem executar quando 
 |:-------|----------|
 | Visualizador |   Visualizar IDs     |
 | Operador | Criar e excluir IDs e chaves API   |
-| Editor |  Crie, atualize e exclua IDs e chaves API  |
+| Aplicativos |  Crie, atualize e exclua IDs e chaves API  |
 | Administrador |  Crie, atualize e exclua IDs e chaves API <br><br> Designar políticas de acesso aos IDs  |
 {: caption="Tabela 5. Funções e ações de exemplo para o serviço Identidade do IAM" caption-side="top"}
-{: #identity-service-acct-mgmt}
 
 Para o Serviço de identidade do IAM, essas ações se aplicam aos IDs de serviço dentro da conta que o usuário não criou. Todos os usuários podem criar IDs de serviço. Eles são os administradores desses IDs e podem criar a chave de API associada e as políticas de acesso. No entanto, esse serviço de gerenciamento de conta se aplica à capacidade de visualizar, excluir e designar acesso aos IDs de serviço na conta criada por outros usuários.
 {: note}
@@ -93,7 +88,7 @@ Para o Serviço de identidade do IAM, essas ações se aplicam aos IDs de servi�
 |:-------|----------|
 | Visualizador |   Visualizar serviços privados    |
 | Operador | Não aplicável    |
-| Editor |   Mudar metadados do objeto, mas não é possível mudar a visibilidade para serviços privados     |
+| Aplicativos |   Mudar metadados do objeto, mas não é possível mudar a visibilidade para serviços privados     |
 | Administrador |  Mudar metadados do objeto ou a visibilidade para serviços privados, além de restringir a visibilidade de um serviço público   |
 {: caption="Tabela 6. Funções e ações de exemplo para o serviço Catálogo global" caption-side="top"}
 
@@ -101,6 +96,6 @@ Para o Serviço de identidade do IAM, essas ações se aplicam aos IDs de servi�
 |:-------|----------|
 | Visualizador |  Todas as ações da função de visualizador para os serviços de gerenciamento de conta     |
 | Operador |  Todas as ações da função de operador para os serviços de gerenciamento de conta     |
-| Editor |  Todas as ações da função de editor para os serviços de gerenciamento de conta     |
+| Aplicativos |  Todas as ações da função de editor para os serviços de gerenciamento de conta     |
 | Administrador |  Todas as ações da função de administrador para os serviços de gerenciamento de conta   |
 {: caption="Tabela 7. Funções e ações de exemplo para uma política em todos os serviços de identidade e acesso" caption-side="top"}

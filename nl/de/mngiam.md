@@ -4,11 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-04-03"
-
-keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
-
-subcollection: iam
+lastupdated: "2019-01-28"
 
 ---
 
@@ -23,7 +19,7 @@ subcollection: iam
 {: #iammanidaccser}
 
 Um den Zugriff zu verwalten oder mithilfe von IAM-Richtlinien Benutzern neue Zugriffsberechtigungen zuzuweisen, müssen Sie der Kontoeigner, der Administrator für alle Services im Konto oder der zugewiesene Administrator für den entsprechenden Service oder die entsprechende Serviceinstanz sein. Weitere Informationen zu den Zugriffsrichtlinien und Rollen finden Sie im Abschnitt zum [IAM-Zugriff](/docs/iam?topic=iam-userroles#userroles).
-{:shortdesc}
+{:shortdesc} 
 
 ## Vorhandene Zugriffsberechtigungen bearbeiten
 {: #edit_existing}
@@ -46,15 +42,15 @@ Beim Bearbeiten des Zugriffs für einen Benutzer oder eine Gruppe erhalten Sie m
 ## Neue Zugriffsberechtigungen zuweisen
 {: #assign_new_access}
 
-Für das Zuweisen des Zugriffs auf Ressourcen stehen zwei Richtlinientypen zur Verfügung:
+Für das Zuweisen des Zugriffs auf Ressourcen stehen zwei Richtlinientypen zur Verfügung:  
 
 * Zugriff auf Ressourcen in einer Ressourcengruppe, einschließlich der Option für nur eine oder für alle Gruppen.
 * Zugriff auf Ressourcen im Konto, einschließlich der Option für nur einen oder für alle Typen.
 
-Wenn Sie einem Benutzer vollständigen Administratorzugriff für [Kontoverwaltungstasks](/docs/iam?topic=iam-account-services#account-services) wie das Einladen und Entfernen von Benutzern, die Ansicht von Abrechnung und Nutzung, die Verwaltung von Service-IDs, Zugriffsgruppen und Benutzerzugriff sowie Zugriff auf alle Kontoressourcen erteilen möchten, müssen Sie zwei Richtlinien erstellen: eine für **Alle Services mit aktiviertem Identity and Access Management** mit den Rollen Administrator und Manager und eine für **Alle Kontoverwaltungsservices** mit der Rolle Administrator.
+Wenn Sie einem Benutzer vollständigen Administratorzugriff für [Kontoverwaltungstasks](/docs/iam?topic=iam-account-services#account-services) wie das Einladen und Entfernen von Benutzern, die Ansicht von Abrechnung und Nutzung, die Verwaltung von Service-IDs, Zugriffsgruppen und Benutzerzugriff sowie Zugriff auf alle Kontoressourcen erteilen möchten, müssen Sie zwei Richtlinien erstellen: eine für **Alle Services mit aktiviertem Identity and Access Management** mit dem Rollenadministrator und eine für **Alle Kontoverwaltungsservices** mit dem Rollenadministrator.
 {: tip}
 
-### Zugriff auf Ressourcen in einer Ressourcengruppe
+### Zugriff auf Ressourcen in einer Ressourcengruppe 
 {: #access_to_resources}
 
 Um Zugriffsberechtigungen für alle Ressourcen einer Ressourcengruppe oder für einen einzelnen Service in einer Ressourcengruppe zuzuweisen, müssen Sie die folgenden Schritte ausführen:
@@ -71,15 +67,15 @@ Um Zugriffsberechtigungen für alle Ressourcen einer Ressourcengruppe oder für 
 ### Zugriff auf Ressourcen
 {: #resourceaccess}
 
-Führen Sie die folgenden Schritte aus, um Zugriffsberechtigungen für eine einzelne Ressource im Konto oder für alle Ressourcen im Konto zuzuweisen:
+Führen Sie die folgenden Schritte aus, um Zugriffsberechtigungen für eine einzelne Ressource im Konto oder für alle Ressourcen im Konto zuzuweisen: 
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Benutzer** aus.
 2. Wählen Sie in der Zeile für den Benutzer, dem Sie Zugriffsberechtigungen zuweisen wollen, das Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) aus und klicken Sie dann auf **Zugriff zuweisen**.
 3. Wählen Sie die Option **Zugriff auf Ressourcen zuweisen** aus.
 4. Wählen Sie einen Service oder die Option **Alle Services mit aktiviertem Identity and Access Management** aus.
-5. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden.
+5. Wählen Sie **Alle aktuellen Regionen** oder eine bestimmte Region aus, wenn Sie vom System dazu aufgefordert werden. 
 6. Wählen Sie **Alle aktuellen Serviceinstanzen** oder eine bestimmte Serviceinstanz aus.
-7. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen.
+7. Abhängig vom ausgewählten Service können die folgenden Felder angezeigt werden. Wenn Sie für diese Felder keine Werte eingeben, wird die Richtlinie nicht auf der Bucketebene, sondern auf der Serviceinstanzebene zugewiesen. 
     * **Ressourcentyp**: Geben Sie **Bucket** ein.
     * **Ressourcen-ID**: Geben Sie den Namen des Buckets ein.
 8. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um dem Benutzer die gewünschten Zugriffsberechtigungen zuzuweisen.

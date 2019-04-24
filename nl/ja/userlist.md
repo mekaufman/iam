@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-30"
 
-keywords: user list visibility, users page setting, user view access, limit access to users list, user list access
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -20,7 +16,7 @@ subcollection: iam
 # ユーザー表示権限の設定
 {: #userlistview}
 
-{{site.data.keyword.Bluemix}} アカウント所有者は、アカウント内のすべてのユーザーを表示することができ、ユーザーがアカウント内の他のユーザーをどの程度表示できるのかを定義できます。
+{{site.data.keyword.Bluemix}} アカウント所有者は、アカウント内のすべてのユーザーを表示することができ、ユーザーがアカウント内の他のユーザーをどの程度表示できるのかを定義できます。 
 {:shortdesc}
 
 **「無制限ビュー」**オプションが選択されている場合、アカウント内のどのユーザーも、{{site.data.keyword.Bluemix_notm}} コンソールの「ユーザー」ページで他のユーザーを表示できます。 **「制限付きビュー」**オプションが選択されている場合、ユーザーが表示できるのは、アカウント内のユーザーのうち、自分が招待したユーザー、Cloud Foundry 組織を共有しているユーザー、およびクラシック・インフラストラクチャー・ユーザー階層で自分の下位にいるユーザー (つまり、自分が招待したか、自分の下位にいる誰かが招待したユーザー) のみに制限されます。

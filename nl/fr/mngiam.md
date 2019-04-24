@@ -4,11 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-04-03"
-
-keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
-
-subcollection: iam
+lastupdated: "2019-01-28"
 
 ---
 
@@ -23,7 +19,7 @@ subcollection: iam
 {: #iammanidaccser}
 
 Pour gérer les droits d'accès ou en accorder de nouveaux à des utilisateurs en utilisant des règles IAM, vous devez être le propriétaire du compte, l'administrateur de tous les services du compte ou l'administrateur affecté au service ou à l'instance de service spécifique. Pour plus d'informations sur les règles d'accès et les rôles, voir [Accès IAM](/docs/iam?topic=iam-userroles#userroles).
-{:shortdesc}
+{:shortdesc} 
 
 ## Edition d'un accès existant
 {: #edit_existing}
@@ -46,7 +42,7 @@ Lorsque vous modifiez l'accès pour un utilisateur ou un groupe, un message peut
 ## Affectation d'un nouvel accès
 {: #assign_new_access}
 
-Vous pouvez affecter l'accès aux ressources en utilisant deux types de règle :
+Vous pouvez affecter l'accès aux ressources en utilisant deux types de règle : 
 
 * Accès aux ressources d'un groupe de ressources spécifique avec l'option de n'en inclure qu'une ou de les inclure toutes
 * Accès aux ressources du compte avec l'option de n'en inclure qu'un seul type ou de les inclure tous
@@ -54,7 +50,7 @@ Vous pouvez affecter l'accès aux ressources en utilisant deux types de règle :
 Si vous désirez accorder à un utilisateur un accès administrateur complet pour lui permettre d'effectuer des tâches de [gestion de compte](/docs/iam?topic=iam-account-services#account-services) comme l'invitation ou la suppression d'utilisateurs, l'affichage de la facturation et de l'utilisation, la gestion des ID service, des groupes d'accès, des accès utilisateur et l'accès à toutes les ressources du compte, vous devez créer deux règles, une sur **Tous les services avec l'offre Identity and Access activée** avec le rôle administrateur et l'autre sur **Tous les services de gestion des comptes** avec le rôle administrateur.
 {: tip}
 
-### Accès à des ressources au sein d'un groupe de ressources
+### Accès à des ressources au sein d'un groupe de ressources 
 {: #access_to_resources}
 
 Pour affecter des droits d'accès à toutes les ressources d'un groupe de ressources ou uniquement à un service d'un groupe de ressources, procédez comme suit :
@@ -71,15 +67,15 @@ Pour affecter des droits d'accès à toutes les ressources d'un groupe de ressou
 ### Accès aux ressources
 {: #resourceaccess}
 
-Pour affecter des droits d'accès à une ressource individuelle du compte ou l'accès à toutes les ressources du compte, procédez comme suit :
+Pour affecter des droits d'accès à une ressource individuelle du compte ou l'accès à toutes les ressources du compte, procédez comme suit : 
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**.
 2. Sur la ligne de l'utilisateur auquel vous souhaitez affecter un accès, sélectionnez le menu **Actions** ![Icône Liste des actions](../icons/action-menu-icon.svg) puis cliquez sur **Affecter un accès**.
 3. Sélectionnez **Affecter l'accès aux ressources**.
 4. Sélectionnez un service ou sélectionnez **Tous les services avec l'offre Identity and Access activée**.
-5. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire.
+5. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire. 
 6. Sélectionnez **Toutes les instances de service en cours** ou une instance de service spécifique.
-7. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez aucune valeur dans ces zones, la règle est affectée au niveau instance de service et non au niveau compartiment.
+7. Selon le service que vous avez sélectionné, les zones suivantes peuvent s'afficher. Si vous n'entrez aucune valeur dans ces zones, la règle est affectée au niveau instance de service et non au niveau compartiment. 
     * **Type de ressource** : entrez **compartiment**.
     * **ID de ressource** : entrez le nom de votre compartiment
 8. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu à l'utilisateur.

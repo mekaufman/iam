@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-30"
 
-keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -21,15 +17,15 @@ subcollection: iam
 # Chamando APIs de serviço do {{site.data.keyword.cloud_notm}}
 {: #iamapikeysforservices}
 
-Para chamar um serviço do {{site.data.keyword.Bluemix}} por meio de uma API, passe as suas credenciais para a API do serviço para autenticar a sua identidade do usuário e o seu acesso para executar ações dentro do contexto do serviço.
+Para chamar um serviço do {{site.data.keyword.Bluemix}} por meio de uma API, passe as suas credenciais para a API do serviço para autenticar a sua identidade do usuário e o seu acesso para executar ações dentro do contexto do serviço. 
 {:shortdesc}
 
-É possível identificar o responsável pela chamada de uma das maneiras a seguir:
+É possível identificar o responsável pela chamada de uma das maneiras a seguir: 
 
 * Chave de API do {{site.data.keyword.Bluemix_notm}} ou chave de API de ID do serviço
 * Token do {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM)
 
-[Chaves de API do {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#userapikey), [Chaves de API do ID de serviço](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys) e tokens do IAM identificam exclusivamente a identidade do responsável pela chamada.  A identidade do responsável pela chamada é um usuário do {{site.data.keyword.Bluemix_notm}} ou um ID do serviço que foi criado em uma conta do {{site.data.keyword.Bluemix_notm}}.
+[Chaves de API do {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#userapikey), [Chaves de API do ID de serviço](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys) e tokens do IAM identificam exclusivamente a identidade do responsável pela chamada. A identidade do responsável pela chamada é um usuário do {{site.data.keyword.Bluemix_notm}} ou um ID do serviço que foi criado em uma conta do {{site.data.keyword.Bluemix_notm}}. 
 
 As chaves de API são credenciais que consistem em uma longa série de caracteres ou números aleatórios. Uma identidade do {{site.data.keyword.Bluemix_notm}} pode ter múltiplas chaves de API. Cada uma dessas chaves de API pode ser gerenciada independentemente, o que significa que se essa chave de API for usada somente por seu serviço, será possível excluir a chave de API sem interromper algum outro componente.
 
@@ -46,7 +42,7 @@ A API do serviço de destino deve fazer a introspecção da chave de API do {{si
 
 Usar uma chave de API do {{site.data.keyword.Bluemix_notm}} é conveniente e torna mais fácil descobrir novas APIs e experimentar protótipos rapidamente. Esse método requer que você envie a chave de API do {{site.data.keyword.Bluemix_notm}} para a API do serviço de destino em um formato legível, que compromete desnecessariamente a chave de API. Além disso, como a API do serviço de destino deve sempre examinar a chave de API, esse método é menos desempenhável e, portanto, não é recomendado para cargas de trabalho de produção.
 
-Para autenticar com a API de um serviço usando uma chave de API, conclua as etapas a seguir:
+Para autenticar com a API de um serviço usando uma chave de API, conclua as etapas a seguir: 
 
   1. Primeiramente, [crie uma chave de API do {{site.data.keyword.Bluemix_notm}} ](/docs/iam?topic=iam-userapikey#creating-an-api-key), se ainda não tiver feito isso.
   2. Envie a chave de API do {{site.data.keyword.Bluemix_notm}} conforme definido em [RFC 7617](https://tools.ietf.org/html/rfc7617){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo") como o cabeçalho de HTTP “Authorization”. Use `apikey` como o nome do usuário e o valor da chave de API como a senha.
@@ -73,11 +69,11 @@ Para recuperar um token de acesso do IAM, o cliente da API deve primeiro chamar 
 
 Para autenticar com a API de um serviço usando um token de acesso, conclua as etapas a seguir:
 
-  1. Primeiramente, [crie uma chave de API do {{site.data.keyword.Bluemix_notm}} ](/docs/iam?topic=iam-userapikey#creating-an-api-key), se ainda não tiver feito isso.
+  1. Primeiramente, [crie uma chave de API do {{site.data.keyword.Bluemix_notm}} ](/docs/iam?topic=iam-userapikey#creating-an-api-key), se ainda não tiver feito isso. 
   2. A próxima etapa para o cliente da API é a recuperação de um token de acesso do IAM, conforme descrito em [Obtendo um token do IAM de uma chave de API](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey).
-  3. Da resposta, extraia a propriedade `access_token` para obter o token de acesso do IAM. `expires_in` indica os segundos até que o token de acesso do IAM `access_token` expire. Use esse valor relativo ou o registro de data e hora absoluto `expiration` com base no [horário do UNIX](https://en.wikipedia.org/wiki/Unix_time){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
+  3. Da resposta, extraia a propriedade `access_token` para obter o token de acesso do IAM. `expires_in` indica os segundos até que o token de acesso do IAM `access_token` expire. Use esse valor relativo ou o registro de data e hora absoluto `expiration` com base no [horário do UNIX](https://en.wikipedia.org/wiki/Unix_time){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo"). 
   4. Envie o token de acesso do IAM conforme descrito em [RFC 6750, seção 2.1. Campo de cabeçalho da solicitação de autorização](https://tools.ietf.org/html/rfc6750#page-5){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo"):
-
+   
 Revise o exemplo a seguir:
 
   1.	Use a Autorização do cabeçalho de HTTP
@@ -87,6 +83,9 @@ Revise o exemplo a seguir:
     ```
     curl -H "Authorization: Bearer eyJhbGciOiJSUzI1Ng..."
     ```
-
+        
   Use o mesmo token de acesso do IAM para chamadas API subsequentes do serviço IBM Cloud para obter o melhor desempenho e escalabilidade.
   {: tip}
+
+
+

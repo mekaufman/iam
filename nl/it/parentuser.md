@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: parent user, change parent user, classic infrastructure hierarchy
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -24,7 +20,7 @@ subcollection: iam
 Se disponi dell'accesso corretto, puoi aggiornare l'utente principale per un utente. L'aggiornamento dell'utente principale influisce sul modo in cui un utente vede gli altri utenti nell'account quando l'impostazione di visibilità dell'elenco utenti è impostata su limitato. Gli utenti vedono solo gli altri utenti per i quali sono un utente principale e tutti gli altri utenti invitati da quei discendenti dell'utente principale.
 {:shortdesc}
 
-Per ulteriori dettagli sull'impostazione, vedi [Impostazione di visibilità dell'elenco utenti](/docs/iam?topic=iam-userlistview#userlistview).
+Per ulteriori dettagli sull'impostazione, vedi [Impostazione di visibilità dell'elenco utenti](/docs/iam?topic=iam-userlistview#userlistview). 
 
 Se disponi del seguente accesso, puoi aggiornare l'utente principale per un altro utente:
 

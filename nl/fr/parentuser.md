@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: parent user, change parent user, classic infrastructure hierarchy
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -24,7 +20,7 @@ subcollection: iam
 Si vous disposez de l'accès correct, vous pouvez mettre à jour le parent d'un utilisateur. La mise à jour de l'utilisateur parent a des conséquences sur la manière dont un utilisateur voit les autres utilisateurs dans le compte lorsque le paramètre de visibilité de liste d'utilisateurs a la valeur Restreint. Les utilisateurs voient uniquement les utilisateurs dont ils sont parents ainsi que les utilisateurs invités par les descendants de l'utilisateur parent.
 {:shortdesc}
 
-Pour plus de détails sur le paramètre, voir le [paramètre de visibilité de liste d'utilisateurs](/docs/iam?topic=iam-userlistview#userlistview).
+Pour plus de détails sur le paramètre, voir le [paramètre de visibilité de liste d'utilisateurs](/docs/iam?topic=iam-userlistview#userlistview). 
 
 Si vous disposez de l'accès suivant, vous pouvez mettre à jour le parent pour un autre utilisateur :
 

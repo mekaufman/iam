@@ -45,7 +45,6 @@ ID 및 액세스 관리
         mngcf.md
         mnginfra.md
         groups.md
-        public_access.md
         accessgroup_rules.md
         userlist.md
 
@@ -81,5 +80,4 @@ ID 및 액세스 관리
 
     {: .navgroup id="help"}
     faqs.md
-    troubleshoot-iam.md
     {: .navgroup-end}

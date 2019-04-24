@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: what is IAM, IBM Cloud IAM, IAM features, IAM API
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -51,11 +47,11 @@ Für Services, die die Erstellung von Cloud IAM-Richtlinien zur Verwaltung des Z
 ## Wie nutze ich Cloud IAM?
 {: #howto}
 
-Der Zugriff auf und die Verwendung von Cloud IAM ist über die Benutzerschnittstelle (UI), die Befehlszeilenschnittstelle (CLI) oder die Anwendungsprogrammierschnittstelle (API) für Identity and Access Management (IAM) möglich.
+Der Zugriff auf und die Verwendung von Cloud IAM ist über die Benutzerschnittstelle (UI), die Befehlszeilenschnittstelle (CLI) oder die Anwendungsprogrammierschnittstelle (API) für Identity and Access Management (IAM) möglich. 
 
-* Wenn Sie über die Benutzerschnittstelle (UI) auf Cloud IAM zugreifen wollen, rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf.
+* Wenn Sie über die Benutzerschnittstelle (UI) auf Cloud IAM zugreifen wollen, rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf. 
 * Lesen Sie den Abschnitt [IAM-Zugriff, API-Schlüssel, Service-IDs und Zugriffsgruppen verwalten](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam), um mehr zu den verfügbaren CLI-Befehlen zu erfahren.
-* Konsultieren Sie die folgenden API-Dokumente, um mehr zu den verfügbaren APIs zu erfahren:
+* Konsultieren Sie die folgenden API-Dokumente, um mehr zu den verfügbaren APIs zu erfahren: 
     * [API für IAM-Identitätsservices](https://{DomainName}/apidocs/iam-identity-token-api){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")
     * [API für IAM-Zugriffsgruppen](https://{DomainName}/apidocs/iam-access-groups){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")
     * [API für IAM-Richtlinienmanagement](https://{DomainName}/apidocs/iam-policy-management){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")

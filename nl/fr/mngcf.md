@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: Cloud Foundry access, assign access, add user to organization, Cloud Foundry roles
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -64,3 +60,4 @@ Si vous devez vérifier l'accès qui vous a été affecté sur un compte auquel 
 3. Développez la ligne de l'organisation puis consultez les rôles affectés.
 
 Si vous avez besoin d'accès supplémentaires, vous devez contacter le responsable de votre organisation ou le propriétaire du compte afin de mettre à jour le rôle Cloud Foundry affecté.
+

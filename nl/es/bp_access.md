@@ -5,10 +5,6 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-28"
 
-keywords: advantage of access groups, access assignment process, assign access, best practice, access management, strategy
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -44,7 +40,7 @@ Aunque estas sugerencias están diseñadas para un caso de ejemplo hipotético, 
 ## Creación de grupos de acceso
 {: #access-group-setup}
 
-Para crear un grupo de acceso, complete los pasos siguientes:
+Para crear un grupo de acceso, complete los pasos siguientes: 
 
 1. En la consola de {{site.data.keyword.Bluemix}}, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Grupos de acceso**.
 2. Pulse **Crear**.
@@ -58,7 +54,7 @@ Después de crear un grupo de acceso, puede añadir usuarios e ID de servicio al
 
 Una política consta de un sujeto, un destino y un rol. En este caso, el sujeto es el grupo de acceso. El destino es aquello a lo que desea que acceda el sujeto, como por ejemplo un conjunto de recursos, una instancia de servicio, todos los servicios de la cuenta o todas las instancias de un servicio. El rol define el nivel de acceso que se otorga a un usuario.
 
-Los roles utilizados con más frecuencia son visor, editor y administrador. El rol de visor proporciona la menor cantidad de acceso para ver instancias y grupos de recursos en una cuenta. El rol de editor tiene más acceso para crear, editar, suprimir y enlazar instancias de servicio. El rol de administrador incluye todo lo necesario para trabajar con una instancia de servicio y puede asignar acceso a los demás. Sin embargo, hay dos categorías distintas de roles que debe tener en cuenta: plataforma y servicio. Para obtener más información sobre los roles que se pueden asignar, consulte los [Roles de nube de IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
+Los roles utilizados con más frecuencia son visor, editor y administrador. El rol de visor proporciona la menor cantidad de acceso para ver instancias y grupos de recursos en una cuenta. El rol de editor tiene más acceso para crear, editar, suprimir y enlazar instancias de servicio. El rol de administrador incluye todo lo necesario para trabajar con una instancia de servicio y puede asignar acceso a los demás. Sin embargo, hay dos categorías distintas de roles que debe tener en cuenta: plataforma y servicio. Para obtener más información sobre los roles que se pueden asignar, consulte los [Roles de nube de IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol). 
 
 ## Asignación de acceso a grupos de acceso
 {: #assigning-access}
@@ -75,3 +71,5 @@ Puede organizar los recursos de un grupo de recursos y los usuarios y los ID de 
 
 Puede otorgar fácilmente acceso de administrador a varios usuarios sobre todo lo relacionado con la cuenta creando un grupo de acceso y asignándole dos políticas. Para crear la primera política, utilice la opción **Asignar acceso a recursos** y seleccione **Todos los servicios habilitados para Identity and Access** con el rol de administrador asignado. Para crear la segunda política, utilice la opción **Asignar acceso a servicios de gestión de cuentas** y seleccione **Todos los servicios de gestión de cuentas** con el rol de administrador asignado.
 {: tip}
+
+

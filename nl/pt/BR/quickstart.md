@@ -6,10 +6,6 @@ copyright:
 
 lastupdated: "2019-01-28"
 
-keywords: get started with IAM, IAM tutorial, IAM quick start
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -22,10 +18,10 @@ subcollection: iam
 # Tutorial Introdução
 {: #getstarted}
 
-Este tutorial é destinado a ajudá-lo a deixar o IBM Cloud Identity and Access Management (IAM) funcionando rapidamente, convidando usuários para sua conta e designando acesso ao Cloud IAM para esses usuários.
+Este tutorial é destinado a ajudá-lo a deixar o IBM Cloud Identity and Access Management (IAM) funcionando rapidamente, convidando usuários para sua conta e designando acesso ao Cloud IAM para esses usuários. 
 {:shortdesc}
 
-Este tutorial é para recursos ativados para IAM. Para serviços que não suportam a criação de políticas do Cloud IAM para gerenciar o acesso, é possível usar o [Acesso do Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfaccess) ou as [permissões de infraestrutura clássica](/docs/iam?topic=iam-infrapermission#infrapermission).
+Este tutorial é para recursos ativados para IAM. Para serviços que não suportam a criação de políticas do Cloud IAM para gerenciar o acesso, é possível usar o [Acesso do Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfaccess) ou as [permissões de infraestrutura clássica](/docs/iam?topic=iam-infrapermission#infrapermission). 
 {: note}
 
 
@@ -77,7 +73,7 @@ Em seguida, continue a configurar seu grupo incluindo usuários ou IDs de servi�
 ### Designe acesso aos seus grupos
 {: #group_access}
 
-Depois de criar seus grupos, é possível designar acesso a todas as entidades dentro do grupo com uma única política ou múltiplas políticas.
+Depois de criar seus grupos, é possível designar acesso a todas as entidades dentro do grupo com uma única política ou múltiplas políticas. 
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Grupos de acesso**.
 2. Selecione o nome do grupo para o qual você deseja designar acesso.
@@ -101,11 +97,11 @@ Para designar uma nova política de acesso, conclua as etapas a seguir:
 2. Selecione o nome do usuário para o qual você deseja designar acesso.
 3. Clique em **Políticas de acesso**.
 4. Clique em **Designar acesso**.
-5. Escolha como deseja designar o acesso:
+5. Escolha como deseja designar o acesso: 
     * Selecione **Designar acesso dentro de um grupo de recursos** para designar acesso a todos os recursos em um grupo ou apenas a recursos para um serviço específico em um grupo. Também é possível fornecer ao usuário o acesso para visualizar, editar ou gerenciar acesso para o grupo de recursos, selecionando uma função para acesso ao grupo de recursos. Selecione **Sem acesso** se você desejar que o usuário tenha acesso somente ao recurso especificado e não ao grupo no qual ele está organizado.
-    * Selecione **Designar acesso a recursos** para designar acesso a todos os recursos ativados pelo Identity and Access na conta, todos os recursos de um serviço específico na conta, uma única instância ou um único recurso em uma instância de serviço específica.
+    * Selecione **Designar acesso a recursos** para designar acesso a todos os recursos ativados pelo Identity and Access na conta, todos os recursos de um serviço específico na conta, uma única instância ou um único recurso em uma instância de serviço específica. 
     * Selecione **Designar acesso aos serviços de gerenciamento de conta** para designar
-acesso a todos os serviços de gerenciamento de conta ou a apenas um serviço de gerenciamento de conta.
+acesso a todos os serviços de gerenciamento de conta ou a apenas um serviço de gerenciamento de conta. 
 5. Selecione qualquer combinação de funções para definir o escopo de acesso. Para obter mais informações, veja [Funções do Cloud IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
 6. Clique em **Designar**.
 
@@ -118,9 +114,9 @@ acesso a todos os serviços de gerenciamento de conta ou a apenas um serviço de
 1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**.
 2. Selecione o nome do usuário para o qual você deseja editar o acesso.
 3. Clique em **Políticas de acesso**.
-4. Clique em **Editar** no menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg) na linha para a política que você deseja editar.
+4. Clique em **Editar** no menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg) na linha para a política que você deseja editar. 
 4. Edite a política atualizando as funções designadas.
-5. Clique em **Salvar**.
+5. Clique em **Salvar**. 
 
 É possível remover o acesso de um usuário clicando na opção **Remover** no menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg) para a política que você deseja remover.
 

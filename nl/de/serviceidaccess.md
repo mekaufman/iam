@@ -5,10 +5,6 @@ copyright:
   years: 2015, 2019
 lastupdated: "2019-01-30"
 
-keywords: service ID, service ID access, managing access for service IDs
-
-subcollection: iam
-
 ---
 
 {:shortdesc: .shortdesc}
@@ -99,7 +95,7 @@ Gehen Sie wie folgt vor, um eine vorhandene Richtlinie zu entfernen:
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Service-IDs** aus.
 2. Wählen Sie die Service-ID, für die eine Servicerichtlinie gelöscht werden soll, in der Tabelle aus.
-3. Klicken Sie auf **Zugriffsrichtlinien**.
+3. Klicken Sie auf **Zugriffsrichtlinien**. 
 4. Ermitteln Sie die Zeile für die Richtlinie, die gelöscht werden soll, und wählen Sie im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) die Option **Entfernen** aus.
 5. Überprüfen Sie die Details zu der Richtlinie, die entfernt werden soll, und klicken Sie dann zur Bestätigung des Vorgangs auf **Entfernen**.
 
