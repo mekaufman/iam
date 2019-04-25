@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-08"
 
 keywords: maximum limits, IBM Cloud IAM, limits, maximum policies
 
@@ -28,6 +28,7 @@ In der folgenden Tabelle sind die Maximalwerte für {{site.data.keyword.Bluemix_
 | Zugriffsgruppen pro Benutzer | 50 |
 | Service-IDs pro Konto | 2000 |
 | API-Schlüssel pro Identität | 20 |
+| Dynamische Regeln pro Zugriffsgruppe | 5 |
 {:caption="Tabelle 1. IAM-Kontolimits" caption-side="top"}
 
 Für eine optimale Leistung Ihres Kontos werden maximal 1.000 Richtlinien und Service-zu-Service-Autorisierungen empfohlen.

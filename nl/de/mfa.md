@@ -21,7 +21,7 @@ subcollection: iam
 # MFA für Benutzer in Ihrem Konto verlangen
 {: #enablemfa}
 
-Als Eigner eines {{site.data.keyword.Bluemix}}-Kontos oder Administrator des Abrechnungsservice können Sie beschließen, dass für jeden Benutzer in dem Konto die Mehrfaktorauthentifizierung (MFA) erforderlich ist. Alle Benutzer mit einer IBMid verwenden eine MFA-Methode mit zeitbasiertem einmaligem Konto (Time-Based One-Time Passcode, TOTP). Alle Benutzer mit einem anderen ID-Typ müssen separat für die Verwendung der TOTP-Methode, der Methode mit Sicherheitsfragen oder der externe Authentifizierungsmethode aktiviert werden.   
+Als Eigner eines {{site.data.keyword.Bluemix}}-Kontos oder Administrator des Abrechnungsservice können Sie festlegen, dass die Mehrfaktorauthentifizierung (MFA) für jeden Benutzer im Konto oder nur für Benutzer ohne föderierte IDs, die kein SSO verwenden, erforderlich ist. Alle Benutzer mit einer IBMid verwenden eine MFA-Methode mit zeitbasiertem einmaligem Konto (Time-Based One-Time Passcode, TOTP). Alle Benutzer mit einem anderen ID-Typ müssen separat für die Verwendung der TOTP-Methode, der Methode mit Sicherheitsfragen oder der externe Authentifizierungsmethode aktiviert werden.  
 {:shortdesc}
 
 ## Vorbereitende Schritte
@@ -29,11 +29,10 @@ Als Eigner eines {{site.data.keyword.Bluemix}}-Kontos oder Administrator des Abr
 
 Berücksichtigen Sie die folgenden Aspekte, bevor Sie die Mehrfaktorauthentifizierung mit einer IBMid (IBMid MFA) für Ihr Konto aktivieren, damit Sie genau wissen, welche Auswirkungen sie auf alle Benutzer in Ihrem Konto hat:
 
-* Wenn Sie MFA für Ihr Konto aktivieren, müssen alle Benutzer bei der nächsten Anmeldung den Prozess der Mehrfaktorauthentifizierung (MFA) durchführen. 
-* API-Schlüssel für Benutzer und Service-IDs funktionieren weiterhin, nachdem MFA aktiviert wurde.
-* Wenn Sie sich über eine native CF-CLI oder -UI bei Cloud Foundry anmelden, müssen Sie API-Schlüssel oder Single Sign-on verwenden, nachdem MFA für das Konto aktiviert wurde.
+* Wenn Sie MFA für Ihr Konto aktivieren, müssen alle Benutzer bei der nächsten Anmeldung den Prozess der Mehrfaktorauthentifizierung (MFA) durchführen.
+* API-Schlüssel für Benutzer und Service-IDs funktionieren weiterhin, nachdem die MFA aktiviert wurde.
+* Wenn die Cloud Foundry-Anmeldung über die Befehlszeilenschnittstelle oder die Benutzerschnittstelle erfolgen soll, müssen API-Schlüssel oder Single Sign-on (SSO) verwendet werden, nachdem die MFA für das Konto aktiviert wurde. 
 * Die MFA für Ihr Konto bezieht sich auf die Anmeldung eines Benutzers, nicht aber auf API-Aufrufe. Wenn ein Benutzer über die Berechtigung zum Durchführen von API-Aufrufen für Ressourcen in Ihrem Konto verfügt, kann der Benutzer derartige Aufrufe ohne Ausführen der MFA tätigen. Wenn der Benutzer zu anderen Konten gehört, kann er API-Aufrufe für Ressourcen in Ihrem Konto durchführen, indem er den API-Schlüssel eines Kontos verwendet, für das keine MFA erforderlich war.
-* Für föderierte Benutzer wird MFA nicht unterstützt.
 * Wenn Sie für Ihr Konto MFA als erforderlich angeben und Benutzer in Ihrem Konto vorhanden sind, die nicht über eine IBMid verfügen, müssen Sie für solche Benutzer in der {{site.data.keyword.Bluemix_notm}}-Konsole auf der Seite 'Benutzerdetails' eine der anderen MFA-Optionen aktivieren. Weitere Informationen finden Sie in [Arten der Mehrfaktorauthentifizierung](/docs/iam?topic=iam-types#types).
 * Planen Sie eine Kommunikations- und Supportstrategie für Benutzer in Ihrem Konto.
   * Wählen Sie ein Datum und eine Uhrzeit mit möglichst geringer Auswirkung auf Ihr Geschäft für die Aktivierung von MFA aus.
@@ -49,8 +48,8 @@ Um die MFA zu aktivieren, müssen Sie der Kontoeigner oder ein Administrator fü
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie anschließend **Einstellungen** aus.
 2. Wählen Sie **Aktualisieren** für die Kontoanmeldungseinstellung aus.
-3. Wählen Sie **Keine** oder **Nur nicht föderierte Benutzer** aus, je nachdem, welcher Authentifizierungstyp erforderlich sein soll.
-4. Wählen Sie das Kontrollkästchen aus, um zu bestätigen, dass Sie die Auswirkungen der erforderlichen MFA für Benutzer in Ihrem Konto kennen, wenn Sie die Option 'Nur nicht föderierte Benutzer' auswählen. 
+3. Wählen Sie **Keine**, **Nur nicht föderierte Benutzer** oder **Alle Benutzer** aus, abhängig davon, welcher Authentifizierungstyp erforderlich sein soll. 
+4. Wählen Sie das Kontrollkästchen aus, um zu bestätigen, dass Sie die Auswirkungen der erforderlichen MFA für Benutzer in Ihrem Konto kennen, wenn Sie die Option 'Nur nicht föderierte Benutzer' auswählen.
 5. Klicken Sie auf **Speichern**.
 
 ## Zeitbasierten einmaligen Kenncode (TOTP) einrichten
@@ -79,10 +78,10 @@ Wenn eine Fehlernachricht mit dem Inhalt angezeigt wird, dass Sie die Authentifi
 ## Erforderliche Mehrfaktorauthentifizierung (MFA) für alle Benutzer in Ihrem Konto inaktivieren
 {: #disablemfa}
 
-Um die MFA zu inaktivieren, müssen Sie der Kontoeigner oder ein Administrator für den Abrechnungskontoverwaltungsservice sein. Das Inaktivieren der MFA wirkt sich nicht auf Benutzer aus, die bereits angemeldet sind. Die Aktion wird bei allen neuen Anmeldungen wirksam. 
+Um die MFA zu inaktivieren, müssen Sie der Kontoeigner oder ein Administrator für den Abrechnungskontoverwaltungsservice sein. Das Inaktivieren der MFA wirkt sich nicht auf Benutzer aus, die bereits angemeldet sind. Die Aktion wird bei allen neuen Anmeldungen wirksam.
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie anschließend **Einstellungen** aus.
-2. Wählen Sie **Bearbeiten** für die Kontoanmeldungseinstellung aus. 
+2. Wählen Sie **Bearbeiten** für die Kontoanmeldungseinstellung aus.
 3. Wählen Sie **Keine** aus.
 4. Klicken Sie auf **Speichern**.
 
