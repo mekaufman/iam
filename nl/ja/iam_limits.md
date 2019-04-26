@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-08"
 
 keywords: maximum limits, IBM Cloud IAM, limits, maximum policies
 
@@ -28,6 +28,7 @@ subcollection: iam
 | ユーザー当たりのアクセス・グループ | 50 |
 | アカウント当たりのサービス ID | 2000 |
 | ID 当たりの API キー | 20 |
+| アクセス・グループ当たりの動的ルール | 5 |
 {:caption="表 1. IAM アカウントの限度" caption-side="top"}
 
 アカウント内で最適のパフォーマンスを確保するため、1 つのアカウント内のポリシーおよびサービス間許可は、最大 1,000 個が推奨されます。
