@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-08"
 
 keywords: maximum limits, IBM Cloud IAM, limits, maximum policies
 
@@ -28,6 +28,7 @@ subcollection: iam
 |每個使用者的存取群組| 50 |
 |每個帳戶的服務 ID|2000 |
 |每個身分的 API 金鑰|20 |
+|每個存取群組的動態規則| 5                |
 {:caption="表 1. IAM 帳戶限制" caption-side="top"}
 
 建議在一個帳戶內最多有 1,000 個原則和服務來維護授權，以確保您的帳戶能夠達到最佳效能。

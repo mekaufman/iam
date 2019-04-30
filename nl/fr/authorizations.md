@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-02-21"
 
 keywords: authorizations, service to service access, access between services
 
@@ -23,7 +23,7 @@ subcollection: iam
 # Octroi d'accès entre services
 {: #serviceauth}
 
-La plupart des fonctionnalités du système IAM (Identity and Access Management) {{site.data.keyword.Bluemix_notm}} se concentrent sur la gestion et l'application de l'accès aux ressources {{site.data.keyword.Bluemix_notm}} par les utilisateurs et leurs applications. Il existe toutefois d'autres scénarios dans lesquels vous pouvoir avoir besoin de fournir un service avec accès à une ressource d'un utilisateur dans un autre service. Tous les utilisateurs de votre compte peuvent créer une autorisation, mais seul un utilisateur disposant du rôle Administrateur peut supprimer une autorisation. Vous pouvez configurer et afficher des autorisations ayant été accordées dans votre compte sur la page **Autorisations**.
+La plupart des fonctionnalités du système IAM (Identity and Access Management) {{site.data.keyword.Bluemix_notm}} se concentrent sur la gestion et l'application de l'accès aux ressources {{site.data.keyword.Bluemix_notm}} par les utilisateurs et leurs applications. Il peut toutefois exister d'autres scénarios dans lesquels vous avez besoin de fournir un service avec accès à une ressource d'un utilisateur dans un autre service. Tous les utilisateurs de votre compte peuvent créer une autorisation, mais seul un utilisateur disposant du rôle Administrateur peut supprimer une autorisation. Vous pouvez configurer et afficher des autorisations dans votre compte sur la page **Autorisations**.
 {:shortdesc}
 
 ## Création d'une autorisation
@@ -34,7 +34,7 @@ Vous pouvez accorder uniquement le niveau d'accès dont vous disposez en tant qu
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Autorisations**.
 2. Cliquez sur **Créer**.
 3. Sélectionnez un service source et un service cible pour l'autorisation. Le service source se voit accorder l'accès au service cible sélectionné.
-4. Sélectionnez un rôle pour affecter l'accès au service source lors de l'accès au service cible.
+4. Sélectionnez un rôle pour affecter l'accès au service source qui accède au service cible.
 5. Cliquez sur **Autoriser**.
 
 Seuls les services qui autorisent l'octroi de ce type d'accès sont disponibles en tant qu'options.

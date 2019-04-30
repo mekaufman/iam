@@ -21,7 +21,7 @@ subcollection: iam
 # Exigence de l'authentification multi-facteur pour les utilisateurs de votre compte
 {: #enablemfa}
 
-En tant qu'administrateur ou propriétaire de compte {{site.data.keyword.Bluemix}} pour le service de facturation, vous pouvez choisir que l'authentification multi-facteur (MFA) soit exigée pour chaque utilisateur du compte. Tous les utilisateurs ayant un IBMid utilisent une méthode d'authentification multi-facteur avec un code d'accès à usage unique à durée limitée (TOTP). Tout utilisateur ayant un autre type d'ID doit pouvoir utiliser séparément la méthode d'authentification externe, la méthode utilisant des questions de sécurité ou la méthode TOTP.  
+En tant qu'administrateur ou propriétaire de compte {{site.data.keyword.Bluemix}} pour le service de facturation, vous pouvez choisir que l'authentification multi-facteur soit exigée pour chaque utilisateur du compte ou uniquement aux utilisateurs ayant des ID non fédérés qui n'utilisent pas la connexion unique. Tous les utilisateurs ayant un IBMid utilisent une méthode d'authentification multi-facteur avec un code d'accès à usage unique à durée limitée (TOTP). Tout utilisateur ayant un autre type d'ID doit pouvoir utiliser séparément la méthode d'authentification externe, la méthode utilisant des questions de sécurité ou la méthode TOTP.  
 {:shortdesc}
 
 ## Avant de commencer
@@ -31,9 +31,8 @@ Consultez les remarques suivantes avant d'activer l'authentification multi-facte
 
 * Lorsque vous activez l'authentification multi-facteur (MFA) pour votre compte, les utilisateurs doivent se soumettre au processus d'authentification multi-facteur lors de la connexion.
 * Les clés d'API pour vos utilisateurs et les ID de service continuent de fonctionner après l'activation de l'authentification multi-facteur.
-* Si la connexion par interface de ligne de commande CF ou interface utilisateur dans Cloud Foundry est nécessaire, vous devez utiliser des clés d'API ou un code d'accès unique une fois que l'authentification multi-facteur est activée pour le compte.
+* Si la connexion par interface de ligne de commande ou interface utilisateur dans Cloud Foundry est nécessaire, vous devez utiliser des clés d'API ou un code d'accès unique une fois que l'authentification multi-facteur est activée pour le compte.
 * L'authentification multi-facteur pour votre compte s'applique à la connexion d'un utilisateur mais ne s'applique pas aux appels d'API. Si un utilisateur dispose des droits lui permettant d'effectuer des appels d'API vers des ressources de votre compte, il peut effectuer cette même action sans procéder à l'authentification multi-facteur. Si l'utilisateur appartient à d'autres comptes, il peut effectuer des appels d'API vers des ressources de votre compte en utilisant une clé d'API d'un compte pour lequel l'authentification multi-facteur n'est pas requise.
-* Si vous êtes un utilisateur fédéré, l'authentification multi-facteur n'est pas prise en charge.
 * Si vous exigez que votre compte utilise l'authentification multi-facteur et que certains utilisateurs de votre compte n'ont pas d'IBMid, vous devez activer une des autres options d'authentification multi-facteur pour cet utilisateur sur la page Détails de l'utilisateur de la console {{site.data.keyword.Bluemix_notm}}. Pour plus d'informations, voir [Types d'authentification multi-facteur](/docs/iam?topic=iam-types#types).
 * Planifiez une stratégie de communication et de support pour les utilisateurs ajoutés à votre compte :
   * Choisissez une date et une heure d'activation de l'authentification multi-facteur dont l'impact sur votre activité doit être minimal.
@@ -49,8 +48,8 @@ Pour activer l'authentification multi-facteur (MFA), vous devez être administra
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Paramètres**.
 2. Sélectionnez **Mettre à jour** pour le paramètre Connexion au compte.
-3. Sélectionnez **Aucun(e)** ou **Utilisateurs non fédérés uniquement** en fonction du type d'authentification devant être exigé.
-4. si vous avez sélectionné l'option Utilisateurs non fédérés uniquement, sélectionnez la case à cocher pour confirmer que vous avez bien compris les conséquences liées à l'authentification multi-facteur pour les utilisateurs de votre compte. 
+3. Sélectionnez **Aucun(e)**, **Utilisateurs non fédérés uniquement** ou **Tous les utilisateurs** en fonction du type d'authentification que vous voulez imposer.
+4. si vous avez sélectionné l'option Utilisateurs non fédérés uniquement, sélectionnez la case à cocher pour confirmer que vous avez bien compris les conséquences liées à l'authentification multi-facteur pour les utilisateurs de votre compte.
 5. Cliquez sur **Sauvegarder**.
 
 ## Configuration de votre authentification TOTP

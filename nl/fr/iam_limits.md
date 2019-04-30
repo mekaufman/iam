@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-08"
 
 keywords: maximum limits, IBM Cloud IAM, limits, maximum policies
 
@@ -28,6 +28,7 @@ Le tableau suivant répertorie les limites maximales pour les ressources {{site.
 | Groupes d'accès par utilisateur | 50 |
 | ID de service par compte | 2000 |
 | Clés d'API par identité | 20 |
+| Règles dynamiques par groupe d'accès | 5 |
 {:caption="Tableau 1. Limites de compte IAM" caption-side="top"}
 
 Un maximum de 1 000 règles et autorisations de service à service sont recommandées pour un compte afin de garantir des performances optimales au sein de ce compte.

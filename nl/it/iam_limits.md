@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-03-08"
 
 keywords: maximum limits, IBM Cloud IAM, limits, maximum policies
 
@@ -28,6 +28,7 @@ La seguente tabella elenca i limiti massimi per le risorse {{site.data.keyword.B
 | Gruppi di accesso per utente | 50 |
 | ID servizio per account | 2000 |
 | Chiavi API per identità | 20 |
+| Regole dinamiche per ogni gruppo di accesso | 5 |
 {:caption="Tabella 1. Limiti dell'account IAM" caption-side="top"}
 
 Per garantire delle prestazioni ottimali nel tuo account, consigliamo un massimo di 1.000 politiche e autorizzazioni da-servizio-a-servizio all'interno di un singolo account.
