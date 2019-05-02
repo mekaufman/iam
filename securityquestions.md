@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: security questions, MFA, multifactor authentication, login security
 
@@ -31,7 +31,7 @@ If you have any of the following access, you can update this setting for other u
 * You are an ancestor in the classic infrastructure hierarchy for the user and you have the Manage users classic infrastructure permission assigned
 
 
-To turn on this MFA option for a user, he or she must first [set up security questions](/docs/account?topic=account-security-questions#security-questions) and answers from the profile Login settings page.
+To turn on this MFA option for a user, he or she must first [set up security questions](/docs/account?topic=account-login-settings#security-questions) and answers from the profile Login settings page.
 {: note}
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Users**.

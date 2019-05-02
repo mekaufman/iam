@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -48,7 +48,7 @@ Using an {{site.data.keyword.Bluemix_notm}} API key is convenient, and it makes 
 
 To authenticate with a service's API by using an API key, complete the following steps:
 
-  1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/iam?topic=iam-userapikey#creating-an-api-key) if you have not already.
+  1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/iam?topic=iam-userapikey#create_user_key) if you have not already.
   2. Send the {{site.data.keyword.Bluemix_notm}} API key as defined in [RFC 7617](https://tools.ietf.org/html/rfc7617){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") as HTTP header “Authorization”. Use `apikey` as the user name, and the API key value as the password.
 
 As an example, the following steps assume that the API key is 0a1A2b3B4c5C6d7D8e9E:
@@ -73,7 +73,7 @@ To retrieve an IAM access token, the API client must first invoke an {{site.data
 
 To authenticate with a service's API by using an access token, complete the following steps:
 
-  1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/iam?topic=iam-userapikey#creating-an-api-key) if you have not already.
+  1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/iam?topic=iam-userapikey#create_user_key) if you have not already.
   2. The next step for the API client is the retrieval of an IAM access token, as described in [Getting an IAM token from an API key](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey).
   3. From the response, extract the property `access_token` to get the IAM access token. `expires_in` indicates the seconds until the IAM access token `access_token` expires. Either use this relative value or the absolute time stamp `expiration` based in [UNIX time](https://en.wikipedia.org/wiki/Unix_time){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
   4. Send the IAM access token as described in [RFC 6750, section 2.1. Authorization Request Header Field](https://tools.ietf.org/html/rfc6750#page-5){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon"):

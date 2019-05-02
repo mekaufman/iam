@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
 
@@ -32,7 +32,7 @@ If you have any of the following access, you can update this setting for other u
 
 To turn on the login setting for a user to be prompted for TOTP MFA, complete the following steps.
 
-To turn on this MFA option for a user, he or she must first [set up TOTP](/docs/account?topic=account-MFA#MFA) from the profile Login settings page.
+To turn on this MFA option for a user, he or she must first [set up TOTP](/docs/account?topic=account-login-settings#MFA) from the profile Login settings page.
 {: note}
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Users**.

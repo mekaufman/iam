@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-02-21"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -23,6 +23,7 @@ subcollection: iam
 {: #serviceids}
 
 A service ID identifies a service or application similar to how a user ID identifies a user. A service ID that you create can be used to enable an application outside of {{site.data.keyword.Bluemix_notm}} access to your {{site.data.keyword.Bluemix_notm}} services. You can assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. Since service IDs are not tied to a specific user, if a user happens to leave an organization and is deleted from the account, the service ID remains ensuring that your application or service stays up and running.
+{:shortdesc}
 
 When you create a service ID, you create a unique name and description that is easy for you to identify and work with in the UI. Once you have created your service ID, you can create API keys specific to each service ID that your application can use to authenticate with your {{site.data.keyword.Bluemix_notm}} services. To ensure that your application has the appropriate access for authenticating with your {{site.data.keyword.Bluemix_notm}} services, you use access policies assigned to each service ID that you create.
 
@@ -159,5 +160,5 @@ ibmcloud iam service-id-unlock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
 
 The following are examples of how a Service ID is used with the {{site.data.keyword.objectstorageshort}} and Cloud SQL Query services.
 
-- {{site.data.keyword.objectstorageshort}} - [Getting Started](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started-cli-#getting-started-cli-).
+- {{site.data.keyword.objectstorageshort}} - [Use the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/cloud-object-storage?topic=cloud-object-storage-cli-ic-use-the-ibm-cli#ic-hmac-credentials).
 - Cloud SQL Query - [How to use the SQL Query REST API ![External link icon](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}.
