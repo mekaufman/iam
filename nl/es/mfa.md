@@ -21,7 +21,7 @@ subcollection: iam
 # Requerimiento de MFA para usuarios de la cuenta
 {: #enablemfa}
 
-Como propietario de una cuenta de {{site.data.keyword.Bluemix}} o administrador del servicio de facturación, puede decidir si quiere exigir la autenticación de multifactores (MFA) para cada usuario de la cuenta. Todos los usuarios con un IBMid utilizan un método de MFA de código de acceso de un solo uso basado en tiempo (TOTP), y cualquier usuario con otro tipo de ID se debe habilitar para que pueda utilizar TOTP, preguntas de seguridad o un método de autenticación externa independiente.  
+Como propietario de una cuenta de {{site.data.keyword.Bluemix}} o administrador del servicio de facturación, puede decidir si quiere exigir la autenticación de multifactores (MFA) para cada usuario de la cuenta o solo para los usuarios que tienen ID no federados y que no utilizan SSO. Todos los usuarios con un IBMid utilizan un método de MFA de código de acceso de un solo uso basado en tiempo (TOTP), y cualquier usuario con otro tipo de ID se debe habilitar para que pueda utilizar TOTP, preguntas de seguridad o un método de autenticación externa independiente.  
 {:shortdesc}
 
 ## Antes de empezar
@@ -31,9 +31,8 @@ Revise las siguientes consideraciones antes de habilitar MFA de IBMid para su cu
 
 * Cuando habilite la MFA en su cuenta, los usuarios deben completar el proceso de MFA la próxima vez que inicien una sesión.
 * Las claves de API para los usuarios y los ID de servicio seguirán funcionando cuando la MFA esté habilitada.
-* Si necesita utilizar una CLI CF nativa o un inicio de sesión de IU en Cloud Foundry, debe utilizar las claves de API o el inicio de sesión único (SSO) cuando la MFA esté habilitada en la cuenta.
+* Si necesita utilizar una CLI o un inicio de sesión de IU en Cloud Foundry, debe utilizar las claves de API o el inicio de sesión único (SSO) cuando la MFA esté habilitada en la cuenta.
 * MFA para su cuenta se aplica al inicio de sesión de un usuario, pero no se aplica a las llamadas de API. Si un usuario tiene permiso para realizar llamadas de API a los recursos de su cuenta, el usuario puede hacerlo sin completar la MFA. Si el usuario pertenece a otras cuentas, el usuario puede realizar llamadas de API a los recursos de su cuenta utilizando una clave de API de una cuenta que no requiera MFA.
-* Si es un usuario federado, la MFA no se admite.
 * Si necesita MFA para su cuenta y tiene usuarios en su cuenta que no tienen un IBMid, debe habilitar una de las otras opciones de MFA para dicho usuario desde la página de detalles de usuario en la consola de {{site.data.keyword.Bluemix_notm}}. Para obtener más información, consulte [Tipos de autenticación de multifactores.](/docs/iam?topic=iam-types#types).
 * Planifique una estrategia de soporte y comunicación para los usuarios de su cuenta:
   * Elija la fecha y la hora en habilitar la MFA que produzca el menor impacto en su empresa.
@@ -49,7 +48,7 @@ Para habilitar la MFA, debe ser el propietario de la cuenta o un administrador d
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Valores**.
 2. Seleccione **Actualizar** para el valor de Inicio de sesión de cuenta.
-3. Seleccione **Ninguno** o **Solo usuarios no federados** en función de qué tipo de autenticación desee que se requiera.
+3. Seleccione **Ninguno**, **Solo usuarios no federados** o **Todos los usuarios** en función de qué tipo de autenticación desee que se requiera.
 4. Marque el recuadro de selección para confirmar que entiende el impacto de requerir MFA para los usuarios de la cuenta, si selecciona la opción de solo usuarios no federados.
 5. Pulse **Guardar**.
 
