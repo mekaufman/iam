@@ -37,7 +37,7 @@ Es posible que no tenga asignado el acceso correcto.
 
 Para comprobar a qué tiene acceso y el nivel de acceso, complete los siguientes pasos. Si necesita solicitar acceso, póngase en contacto con el propietario de la cuenta.
 
-Vaya a **Gestionar** &gt; **Acceso (IAM)**, y seleccione su nombre en la página **Usuarios**. Luego, en función del acceso que busque, seleccione los distintos separadores:
+Vaya a **Gestionar** &gt; **Acceso (IAM)** y seleccione su nombre en la página **Usuarios**. Luego, en función del acceso que busque, seleccione los distintos separadores:
 {: tsResolve}
 
 * Para determinar qué acceso tiene en los grupos de acceso que tiene asignados, seleccione **Grupos de acceso**.

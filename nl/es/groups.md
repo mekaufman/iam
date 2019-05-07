@@ -45,7 +45,7 @@ A continuación, siga configurando el grupo añadiendo usuarios o ID de servicio
 2. Pulse **Añadir usuarios** en el separador **Usuarios**.
 3. Seleccione los usuarios de la lista que desea añadir y pulse **Añadir a grupo**.
 4. Para añadir ID de servicio al grupo pulse el separador **ID de servicio** y luego **Añadir ID de servicio**.
-5. Seleccione los ID de la lista que desea añadir y pulse **Añadir grupo**.
+5. Seleccione los ID de la lista que desea añadir y pulse **Añadir a grupo**.
 
 Puede suprimir un grupo seleccionando la opción **Eliminar grupo**. Cuando elimina un grupo de la cuenta, también elimina todos los usuarios e ID de servicio del grupo y todo el acceso asignado al grupo.
 {: note}

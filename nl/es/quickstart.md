@@ -68,7 +68,7 @@ A continuación, siga configurando el grupo añadiendo usuarios o ID de servicio
 2. Pulse **Añadir usuarios**.
 3. Seleccione los usuarios de la lista que desea añadir y pulse **Añadir a grupo**.
 4. Para añadir ID de servicio al grupo, pulse **ID de servicio**.
-5. Seleccione los ID de la lista que desea añadir y pulse **Añadir grupo**.
+5. Seleccione los ID de la lista que desea añadir y pulse **Añadir a grupo**.
 
 ### Asignar acceso a los grupos
 {: #group_access}

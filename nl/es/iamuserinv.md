@@ -50,12 +50,12 @@ Si desea invitar a usuarios utilizando la interfaz de línea de mandatos (CLI), 
 ## Asignación de acceso de usuario desde una invitación
 {: #assignaccess}
 
-Puede asignar acceso a los usuarios a medida que los invita asignando políticas de IAM de {{site.data.keyword.Bluemix}}, acceso de Cloud Foundry y permisos de la infraestructura clásica. Según las opciones de acceso que esté autorizado a gestionar, puede invitar y proporcionar acceso a usuarios de la cuenta, grupos de recursos, organizaciones, espacios, instancias de servicio e infraestructura clásica. En las secciones siguientes se describen los tres tipos de acceso que se pueden asignar a un usuario invitado.
+Puede asignar acceso a los usuarios a medida que los invita asignando políticas de {{site.data.keyword.Bluemix}} IAM, acceso a Cloud Foundry y permisos de la infraestructura clásica. Según las opciones de acceso que esté autorizado a gestionar, puede invitar y proporcionar acceso a usuarios de la cuenta, grupos de recursos, organizaciones, espacios, instancias de servicio e infraestructura clásica. En las secciones siguientes se describen los tres tipos de acceso que se pueden asignar a un usuario invitado.
 
 ### Servicios
 {: #invite_services}
 
-Puede asignar acceso creando una política de acceso de IAM de {{site.data.keyword.Bluemix_notm}} inicial cuando invite a un nuevo usuario. En la sección Servicios, puede proporcionar a un usuario acceso a servicios de gestión de la cuenta, servicios en un grupo de recursos con acceso para gestionar el grupo de recursos o a un recurso individual en la cuenta.
+Puede asignar acceso creando una política de acceso de {{site.data.keyword.Bluemix_notm}} IAM inicial cuando invite a un nuevo usuario. En la sección Servicios, puede proporcionar a un usuario acceso a servicios de gestión de la cuenta, servicios en un grupo de recursos con acceso para gestionar el grupo de recursos o a un recurso individual en la cuenta.
 
 Cuando el usuario acepte la invitación, puede asignarle acceso adicional. Consulte [Gestión del acceso a recursos](/docs/iam?topic=iam-iammanidaccser#iammanidaccser) para obtener detalles sobre la edición de políticas para añadir roles extra, asignar más acceso o eliminar una política para un usuario.
 

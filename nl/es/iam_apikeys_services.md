@@ -40,7 +40,7 @@ Puede utilizar claves de API para [iniciar una sesión en la interfaz de línea 
 
 Los clientes de API pueden pasar directamente una clave de API de {{site.data.keyword.Bluemix_notm}} a la API del servicio de destino. Para ello, envíe la palabra clave `apikey` como nombre de usuario y la clave de API de {{site.data.keyword.Bluemix_notm}} como contraseña utilizando la cabecera HTTP de autorización básica al servicio de destino.
 
-La API del servicio de destino debe realizar la introspección de la clave de API de {{site.data.keyword.Bluemix_notm}} utilizando el servicio IAM de {{site.data.keyword.Bluemix_notm}}. En el gráfico siguiente se muestran tres interacciones de API. La clave de API de {{site.data.keyword.Bluemix_notm}} se pasa a cada API del servicio de destino, de modo que cada servicio de destino debe buscar los detalles de la clave de API de {{site.data.keyword.Bluemix_notm}} invocando IAM de {{site.data.keyword.Bluemix_notm}}.
+La API del servicio de destino debe realizar la introspección de la clave de API de {{site.data.keyword.Bluemix_notm}} utilizando el servicio {{site.data.keyword.Bluemix_notm}} IAM. En el gráfico siguiente se muestran tres interacciones de API. La clave de API de {{site.data.keyword.Bluemix_notm}} se pasa a cada API del servicio de destino, de modo que cada servicio de destino debe buscar los detalles de la clave de API de {{site.data.keyword.Bluemix_notm}} invocando {{site.data.keyword.Bluemix_notm}} IAM.
 
 ![Autenticación con una API de servicio utilizando una clave de API](images/APIkeyauth.svg "Cómo pasar claves de API a servicios de destino que luego pasan la clave de API a IAM para validar credenciales")
 
@@ -64,10 +64,10 @@ Como ejemplo, en los siguientes pasos se utiliza la clave de API 0a1A2b3B4c5C6d7
   Si utiliza otras herramientas, es posible que tenga que especificar estas credenciales de forma distinta.
   {: tip}
 
-## Cómo pasar una señal de IAM de {{site.data.keyword.Bluemix_notm}} para autenticarse con una API de servicio
+## Cómo pasar una señal de {{site.data.keyword.Bluemix_notm}} IAM para autenticarse con una API de servicio
 {: #token_auth}
 
-Para recuperar una señal de acceso de IAM, primero el cliente de API debe invocar una API de IAM de {{site.data.keyword.Bluemix_notm}} para autenticarse y recuperar dicha señal. La forma recomendada para los clientes de API de servicio de {{site.data.keyword.Bluemix_notm}} es utilizar una clave de API de IAM para obtener una señal de acceso de IAM. La señal de acceso de IAM se puede utilizar para varias invocaciones de servicios de {{site.data.keyword.Bluemix_notm}} que acepten señales de acceso de IAM como método de autenticación. Puesto que las señales de acceso de IAM están firmadas digitalmente con claves asimétricas, los servicios de {{site.data.keyword.Bluemix_notm}} pueden validar una señal de acceso de IAM sin invocar ningún servicio externo. Esto mejora considerablemente el rendimiento de la invocación de una API.
+Para recuperar una señal de acceso de IAM, primero el cliente de API debe invocar una API de {{site.data.keyword.Bluemix_notm}} IAM para autenticarse y recuperar dicha señal. La forma recomendada para los clientes de API de servicio de {{site.data.keyword.Bluemix_notm}} es utilizar una clave de API de IAM para obtener una señal de acceso de IAM. La señal de acceso de IAM se puede utilizar para varias invocaciones de servicios de {{site.data.keyword.Bluemix_notm}} que acepten señales de acceso de IAM como método de autenticación. Puesto que las señales de acceso de IAM están firmadas digitalmente con claves asimétricas, los servicios de {{site.data.keyword.Bluemix_notm}} pueden validar una señal de acceso de IAM sin invocar ningún servicio externo. Esto mejora considerablemente el rendimiento de la invocación de una API.
 
 ![Autenticación con una API de servicio utilizando una señal de acceso](images/tokenauth.svg "Recuperación de una señal de IAM utilizando una clave de API y pasando la señal de acceso a los servicios de destino para validar credenciales")
 

@@ -25,7 +25,7 @@ Una clave de interfaz de programación de aplicaciones (clave de API) es un cód
 
 Para ver sus claves de API, vaya a **Gestionar** > **Acceso (IAM)** > **Claves de API de IBM Cloud**.
 
-## {{site.data.keyword.cloud_notm}} Claves de API
+## Claves de API de {{site.data.keyword.cloud_notm}}
 {: #ibm-cloud-api-keys}
 
 Las claves de API de {{site.data.keyword.cloud}} están asociadas a la identidad del usuario. Solo el usuario con el que está asociada la clave de API puede crearla y suprimirla. Puede utilizar las claves de API de {{site.data.keyword.cloud_notm}} en la interfaz de línea de mandatos (CLI) o como parte de la automatización para iniciar una sesión como su identidad de usuario. También puede utilizar las claves de API de {{site.data.keyword.cloud_notm}} para acceder a las API de infraestructura clásica. Para obtener más información sobre la utilización de una clave de API asociada con su identidad de usuario, consulte [Gestión de las claves de API de usuario](/docs/iam?topic=iam-userapikey#userapikey).
