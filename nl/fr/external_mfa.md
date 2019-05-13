@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: MFA, multifactor authentication, external authentication, order authentication, Symantec, phone-based authentication, cancel authentication order
 
@@ -39,7 +39,7 @@ Pour commander l'authentification externe, procédez comme suit :
 3. Sur la page **Détails de l'utilisateur**, sélectionnez **Commander une authentification externe** dans la section Gérer la connexion de l'utilisateur.
 4. Sélectionnez **Protection de l'identité Symantec** ou **Protection de l'identité par téléphone**.
     * Pour l'authentification Symantec, l'utilisateur doit télécharger l'application [Symantec VIP](https://vip.symantec.com/){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg) et obtenir un ID de données d'identification pour poursuivre le processus de commande.
-    * Pour l'authentification par téléphone, vous pouvez effectuer la commande mais votre utilisateur doit [effectuer la configuration](/docs/account?topic=account-third-party-MFA#third-party-MFA) avant que vous ne puissiez activer l'option.
+    * Pour l'authentification par téléphone, vous pouvez effectuer la commande mais votre utilisateur doit [effectuer la configuration](/docs/account?topic=account-third-party-MFA#setting-up-phone-based-authentication) avant que vous ne puissiez activer l'option.
 5. En fonction de votre sélection, suivez les invites pour consulter le prix et les conditions avant de valider la commande.
 6. Cliquez sur **Commande** pour finaliser votre sélection.
 

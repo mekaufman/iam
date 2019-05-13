@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: event tracking, IAM events, monitoring
 
@@ -22,6 +22,7 @@ subcollection: iam
 {: #tracking}
 
 En tant que responsable de la sécurité, auditeur ou responsable, vous pouvez utiliser le service {{site.data.keyword.cloudaccesstrailfull}} pour suivre comment les utilisateurs et les applications interagissent avec {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM).
+{:shortdesc}
 
 Vous pouvez effectuer le suivi des événements suivants :
 
@@ -31,4 +32,4 @@ Vous pouvez effectuer le suivi des événements suivants :
 * Création, mise à jour ou suppression de règles d'accès
 * Connexion à {{site.data.keyword.Bluemix_notm}} en utilisant une clé d'API, un code d'autorisation, un code d'accès, une clé d'API ou un mot de passe associé à un ID de service.
 
-Pour commencer à surveiller les actions utilisateur, voir [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla). Pour plus d'informations sur les différentes zones d'événement dont vous pouvez effectuer le suivi, voir [Evénements IAM](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_iam#at_events_iam).
+Pour commencer à surveiller les actions utilisateur, voir [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started). Pour plus d'informations sur les différentes zones d'événement dont vous pouvez effectuer le suivi, voir [Evénements IAM](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_iam).

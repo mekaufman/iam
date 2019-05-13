@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-05-01"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -93,7 +93,7 @@ Pour affecter des droits d'accès à une ressource individuelle du compte ou l'a
 3. A partir de l'onglet **Règles d'accès**, sélectionnez le menu **Actions** ![Icône Liste des actions](../icons/action-menu-icon.svg) sur la ligne correspondant à la règle à retirer puis cliquez sur **Retirer**.  
 4. Consultez les détails relatifs à la règle utilisateur que vous êtes sur le point de retirer, puis confirmez le retrait en cliquant sur **Retirer**.
 
-Pour retirer une règle utilisateur à l'aide de l'interface CLI, vous pouvez utiliser la commande [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_delete#ibmcloud_iam_user_policy_delete).
+Pour retirer une règle utilisateur à l'aide de l'interface CLI, vous pouvez utiliser la commande [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_delete).
 ```
 ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
 ```

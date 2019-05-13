@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
 
@@ -32,7 +32,7 @@ Si vous disposez d'un des accès suivants, vous pouvez mettre à jour ce paramè
 
 Pour activer le paramètre de connexion pour qu'un utilisateur soit invité à choisir l'authentification multi-facteur par code d'accès à usage unique à durée limitée, procédez comme suit.
 
-Pour activer cette option d'authentification multi-facteur pour un utilisateur, ce dernier doit tout d'abord [configurer un code d'accès à usage unique à durée limitée](/docs/account?topic=account-MFA#MFA) sur la page Paramètres de connexion du profil.
+Pour activer cette option d'authentification multi-facteur pour un utilisateur, ce dernier doit tout d'abord [configurer un code d'accès à usage unique à durée limitée](/docs/account?topic=account-login-settings#MFA) sur la page Paramètres de connexion du profil.
 {: note}
 
 1. Dans la barre de menus, cliquez sur **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**.

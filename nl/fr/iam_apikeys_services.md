@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -48,7 +48,7 @@ L'utilisation d'une clé d'API {{site.data.keyword.Bluemix_notm}} est recommand�
 
 Pour l'authentification via l'API d'un service en utilisant une clé d'API, procédez comme suit :
 
-  1. Tout d'abord, [créez une clé d'API {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#creating-an-api-key) si vous n'en avez pas encore.
+  1. Tout d'abord, [créez une {{site.data.keyword.Bluemix_notm}}clé d'API](/docs/iam?topic=iam-userapikey#create_user_key) si vous n'en avez pas encore.
   2. Envoyez la clé d'API {{site.data.keyword.Bluemix_notm}}, comme cela est défini sur la page [RFC 7617](https://tools.ietf.org/html/rfc7617){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe"), sous la forme d'en-tête HTTP “Authorization”. Utilisez `apikey` en tant que nom d'utilisateur et la valeur de clé d'API en tant que mot de passe.
 
 Dans la procédure suivante, il est supposé que la clé d'API est 0a1A2b3B4c5C6d7D8e9E :
@@ -73,7 +73,7 @@ Pour extraire un jeton d'accès IAM, le client API doit tout d'abord appeler une
 
 Pour l'authentification via l'API d'un service en utilisant un jeton d'accès, procédez comme suit :
 
-  1. Tout d'abord, [créez une clé d'API {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#creating-an-api-key) si vous n'en avez pas encore.
+  1. Tout d'abord, [créez une {{site.data.keyword.Bluemix_notm}}clé d'API](/docs/iam?topic=iam-userapikey#create_user_key) si vous n'en avez pas encore.
   2. L'étape suivante pour le client API est l'extraction d'un jeton d'accès IAM, comme cela est décrit dans la rubrique [Obtention d'un jeton IBM Cloud IAM  à l'aide d’une clé d'API](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey).
   3. A partir de la réponse, extrayez la propriété `access_token` pour obtenir le jeton d'accès IAM. `expires_in` indique le nombre de secondes avant l'expiration du jeton d'accès IAM `access_token`. Utilisez cette valeur relative ou l'`expiration` de l'horodatage absolu en [temps UNIX](https://en.wikipedia.org/wiki/Unix_time){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
   4. Envoyez le jeton d'accès IAM, comme cela est décrit sur la page [RFC 6750, section 2.1. Authorization Request Header Field](https://tools.ietf.org/html/rfc6750#page-5){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe"):

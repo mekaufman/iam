@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-02-21"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -23,6 +23,7 @@ subcollection: iam
 {: #serviceids}
 
 Un ID de service identifie un service ou une application de la même façon qu'un ID utilisateur identifie un utilisateur. Un ID de service que vous créez peut être utilisé pour permettre à une application située en dehors de {{site.data.keyword.Bluemix_notm}} d'accéder à vos services {{site.data.keyword.Bluemix_notm}}. Vous pouvez affecter des règles d'accès spécifiques à l'ID de service qui limitent les droits d'utilisation à des services spécifiques ou bien combiner des droits d'accès à différents services. Les ID de service n'étant pas liés à un utilisateur spécifique, si un utilisateur quitte une organisation et est supprimé du compte, l'ID de service est conservé de sorte que votre application ou service reste fonctionnel.
+{:shortdesc}
 
 Lorsque vous créez un ID de service, vous créez un nom unique et une description facilement identifiables et gérables dans l'interface utilisateur. Une fois que vous avez créé votre ID de service, vous pouvez créer des clés d'API propres à chaque ID de service utilisable par votre application pour s'authentifier auprès de vos services {{site.data.keyword.Bluemix_notm}}. Pour faire en sorte que votre application dispose des droits d'accès appropriés pour s'authentifier auprès de vos services {{site.data.keyword.Bluemix_notm}}, utilisez les règles d'accès affectées à chaque ID de service que vous créez.
 
@@ -159,5 +160,5 @@ ibmcloud iam service-id-unlock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
 
 Vous trouverez ci-après des exemples d'utilisation d'un ID de service avec les services {{site.data.keyword.objectstorageshort}} et Cloud SQL Query.
 
-- {{site.data.keyword.objectstorageshort}} - [Initiation](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started-cli-#getting-started-cli-).
+- {{site.data.keyword.objectstorageshort}} - [Utilisation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-cli-ic-use-the-ibm-cli#ic-hmac-credentials).
 - Cloud SQL Query - [Utilisation de l'API REST SQL Query ![Icône de lien externe](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}.
