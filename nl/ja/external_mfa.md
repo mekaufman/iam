@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: MFA, multifactor authentication, external authentication, order authentication, Symantec, phone-based authentication, cancel authentication order
 
@@ -39,7 +39,7 @@ subcollection: iam
 3. **「ユーザーの詳細」**ページの「ユーザー・ログインの管理」セクションで、**「外部認証の注文」**を選択します。
 4. **「Symantec ID 保護」**または**「電話ベースの ID 保護」**を選択します。
     * Symantec 認証の場合、注文プロセスを続行するためには、ユーザーが [Symantec VIP](https://vip.symantec.com/){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg) アプリをダウンロードし、資格情報 ID を取得する必要があります。
-    * 電話ベースの認証の場合、注文を続行できますが、ユーザーがユーザー自身の[構成のセットアップ](/docs/account?topic=account-third-party-MFA#third-party-MFA)を行った後でないと、このオプションを有効にすることはできません。
+    * 電話ベースの認証の場合、注文を続行できますが、ユーザーがユーザー自身の[構成のセットアップ](/docs/account?topic=account-third-party-MFA#setting-up-phone-based-authentication)を行った後でないと、このオプションを有効にすることはできません。
 5. 注文する前に、選択に基づいて、プロンプトに従って価格と使用条件を検討します。
 6. **「注文」**をクリックして選択を確定します。
 

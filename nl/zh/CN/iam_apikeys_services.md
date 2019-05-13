@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -48,7 +48,7 @@ API 客户机可以将 {{site.data.keyword.Bluemix_notm}} API 密钥直接传递
 
 要使用 API 密钥向服务的 API 进行认证，请完成以下步骤：
 
-  1. 首先，[创建 {{site.data.keyword.Bluemix_notm}} API 密钥](/docs/iam?topic=iam-userapikey#creating-an-api-key)（如果尚未创建）。
+  1. 首先，[创建 {{site.data.keyword.Bluemix_notm}} API 密钥](/docs/iam?topic=iam-userapikey#create_user_key)（如果尚未创建）。
   2. 将 {{site.data.keyword.Bluemix_notm}} API 密钥作为 HTTP 头“Authorization”发送，如 [RFC 7617](https://tools.ietf.org/html/rfc7617){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 中所定义。将 `apikey` 用作用户名，将 API 密钥值用作密码。
 
 例如，以下步骤假定 API 密钥为 0a1A2b3B4c5C6d7D8e9E：
@@ -73,7 +73,7 @@ API 客户机可以将 {{site.data.keyword.Bluemix_notm}} API 密钥直接传递
 
 要使用访问令牌向服务的 API 进行认证，请完成以下步骤：
 
-  1. 首先，[创建 {{site.data.keyword.Bluemix_notm}} API 密钥](/docs/iam?topic=iam-userapikey#creating-an-api-key)（如果尚未创建）。
+  1. 首先，[创建 {{site.data.keyword.Bluemix_notm}} API 密钥](/docs/iam?topic=iam-userapikey#create_user_key)（如果尚未创建）。
   2. API 客户机的下一个步骤是检索 IAM 访问令牌，如[通过 API 密钥获取 IAM 令牌](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey)中所述。
   3. 从响应中，抽取 `access_token` 属性以获取 IAM 访问令牌。`expires_in` 指示 IAM 访问令牌距离 `access_token` 到期之前的秒数。使用此相对值或使用基于 [UNIX 时间](https://en.wikipedia.org/wiki/Unix_time){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 的绝对时间戳记 `expiration`。
   4. 发送 IAM 访问令牌，如 [RFC 6750 的第 2.1.节 Authorization Request Header Field](https://tools.ietf.org/html/rfc6750#page-5){: new_window} ![外部链接图标](../icons/launch-glyph.svg "外部链接图标") 中所述：

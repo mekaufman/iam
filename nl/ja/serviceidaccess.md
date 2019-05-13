@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: service ID, service ID access, managing access for service IDs
 
@@ -83,7 +83,7 @@ subcollection: iam
 4. 編集するポリシーの行を識別し、**「アクション」** ![「アクションのリスト」アイコン](../icons/action-menu-icon.svg) メニューから**「ポリシーの編集」**を選択します。
 5. 変更を行い、ポリシーを保存します。
 
-CLI を使用してサービス・ポリシーを更新するには、[ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_update#ibmcloud_iam_service_policy_update) コマンドを使用します。
+CLI を使用してサービス・ポリシーを更新するには、[ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_update) コマンドを使用します。
 ```
 ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] {--file JSON_FILE | [-r, --roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]} [-f, --force]",
 ```
@@ -103,7 +103,7 @@ ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] 
 4. 削除するポリシーの行を識別し、**「アクション」** ![「アクションのリスト」アイコン](../icons/action-menu-icon.svg) メニューから**「削除」**を選択します。
 5. 削除しようとしているポリシーの詳細を検討し、確認のために**「削除」**をクリックします。
 
-CLI を使用してサービス・ポリシーを削除するには、[ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_update#ibmcloud_iam_service_policy_delete) コマンドを使用します。
+CLI を使用してサービス・ポリシーを削除するには、[ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_delete) コマンドを使用します。
 ```
 ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
 ```

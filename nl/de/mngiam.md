@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-05-01"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -93,7 +93,7 @@ Führen Sie die folgenden Schritte aus, um Zugriffsberechtigungen für eine einz
 3. Klicken Sie auf der Registerkarte **Zugriffsrichtlinien** in der Zeile für die Richtlinie, die entfernt werden soll, im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) auf **Entfernen**.  
 4. Überprüfen Sie die Details zu der Benutzerrichtlinie, die entfernt werden soll, und klicken Sie dann zur Bestätigung des Vorgangs auf **Entfernen**.
 
-Wenn Sie eine Benutzerrichtlinie über die Befehlszeilenschnittstelle entfernen möchten, können Sie den Befehl [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_delete#ibmcloud_iam_user_policy_delete) verwenden.
+Wenn Sie eine Benutzerrichtlinie über die Befehlszeilenschnittstelle entfernen möchten, können Sie den Befehl [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_delete) verwenden.
 ```
 ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
 ```

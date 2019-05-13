@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -48,7 +48,7 @@ Die Verwendung eines {{site.data.keyword.Bluemix_notm}}-API-Schlüssels ist bequ
 
 Führen Sie die folgenden Schritte aus, um die Authentifizierung bei der API eines Service anhand eines API-Schlüssels durchzuführen:
 
-  1. Zuerst müssen Sie einen [{{site.data.keyword.Bluemix_notm}}-API-Schlüssel erstellen](/docs/iam?topic=iam-userapikey#creating-an-api-key), sofern Sie dies noch nicht getan haben.
+  1. Zuerst müssen Sie einen [{{site.data.keyword.Bluemix_notm}}-API-Schlüssel erstellen](/docs/iam?topic=iam-userapikey#create_user_key), sofern Sie dies noch nicht getan haben.
   2. Senden Sie den {{site.data.keyword.Bluemix_notm}}-API-Schlüssel, wie in [RFC 7617](https://tools.ietf.org/html/rfc7617){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") definiert, als HTTP-Header 'Authorization'. Verwenden Sie `apikey` als Benutzernamen und den Wert des API-Schlüssels als Kennwort.
 
 In dem Beispiel in den folgenden Schritten wird davon ausgegangen, dass der API-Schlüssel den Wert '0a1A2b3B4c5C6d7D8e9E' hat:
@@ -73,7 +73,7 @@ Zum Abrufen eines IAM-Zugriffstokens muss der API-Client zuerst eine {{site.data
 
 Führen Sie die folgenden Schritte aus, um die Authentifizierung bei der API eines Service anhand eines Zugriffstokens durchzuführen:
 
-  1. Zuerst müssen Sie einen [{{site.data.keyword.Bluemix_notm}}-API-Schlüssel erstellen](/docs/iam?topic=iam-userapikey#creating-an-api-key), sofern Sie dies noch nicht getan haben.
+  1. Zuerst müssen Sie einen [{{site.data.keyword.Bluemix_notm}}-API-Schlüssel erstellen](/docs/iam?topic=iam-userapikey#create_user_key), sofern Sie dies noch nicht getan haben.
   2. Als nächsten Schritt muss der API-Client ein IAM-Zugriffstoken abrufen, wie in [IAM-Token mithilfe eines API-Schlüssels abrufen](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey) beschrieben.
   3. Extrahieren Sie aus der Antwort die Eigenschaft `access_token`, um das eigentliche IAM-Zugriffstoken zu erhalten. Dabei gibt `expires_in` den Zeitraum in Sekunden an, nach dessen Ablauf das IAM-Zugriffstoken `access_token` verfällt. Verwenden Sie entweder diesen relativen Wert oder aber die absolute Zeitmarke `expiration` auf der Grundlage der [UNIX-Zeit](https://en.wikipedia.org/wiki/Unix_time){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link").
   4. Senden Sie das IAM-Zugriffstoken wie in [RFC 6750, section 2.1. Authorization Request Header Field](https://tools.ietf.org/html/rfc6750#page-5){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link") beschrieben:

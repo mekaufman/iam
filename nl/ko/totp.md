@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
 
@@ -32,7 +32,7 @@ subcollection: iam
 
 사용자에게 TOTP MFA에 대한 프롬프트를 표시하도록 로그인 설정을 설정하려면 다음 단계를 완료하십시오.
 
-사용자에 대한 이 MFA 옵션을 설정하려면 먼저 사용자가 프로파일 로그인 설정 페이지에서 [TOTP를 설정](/docs/account?topic=account-MFA#MFA)해야 합니다.
+사용자에 대한 이 MFA 옵션을 설정하려면 먼저 사용자가 프로파일 로그인 설정 페이지에서 [TOTP를 설정](/docs/account?topic=account-login-settings#MFA)해야 합니다.
 {: note}
 
 1. 메뉴 표시줄에서 **관리** &gt; **액세스(IAM)**를 클릭하고 **사용자**를 선택하십시오.

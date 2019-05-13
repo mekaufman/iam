@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: security questions, MFA, multifactor authentication, login security
 
@@ -31,7 +31,7 @@ subcollection: iam
 * 사용자에 대한 클래식 인프라 계층에서 조상이며 사용자 클래식 인프라 관리 권한이 지정됨
 
 
-사용자에 대해 이 MFA 옵션을 설정하려면 먼저 사용자가 프로파일 로그인 설정 페이지에서 [보안 질문 설정](/docs/account?topic=account-security-questions#security-questions) 및 답변 설정을 수행해야 합니다.
+사용자에 대해 이 MFA 옵션을 설정하려면 먼저 사용자가 프로파일 로그인 설정 페이지에서 [보안 질문 설정](/docs/account?topic=account-login-settings#security-questions) 및 답변 설정을 수행해야 합니다.
 {: note}
 
 1. 메뉴 표시줄에서 **관리** &gt; **액세스(IAM)**를 클릭하고 **사용자**를 선택하십시오.

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-05-01"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -93,7 +93,7 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 3. 在**访问策略**选项卡中，选择要除去的策略所在行上的**操作** ![“操作列表”图标](../icons/action-menu-icon.svg) 菜单，然后单击**除去**。  
 4. 复查即将除去的用户策略的详细信息，然后通过单击**除去**进行确认。
 
-要使用 CLI 除去用户策略，可以使用 [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_delete#ibmcloud_iam_user_policy_delete) 命令。
+要使用 CLI 除去用户策略，可以使用 [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_delete) 命令。
 ```
 ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
 ```

@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
 
@@ -32,7 +32,7 @@ subcollection: iam
 
 ユーザーに TOTP MFA のプロンプトが出されるようにするログイン設定をオンにするには、以下の手順を実行します。
 
-あるユーザーに対してこの MFA オプションをオンにするには、まず、そのユーザーが、プロファイルの「ログイン設定」ページで [TOTP をセットアップ](/docs/account?topic=account-MFA#MFA)する必要があります。
+あるユーザーに対してこの MFA オプションをオンにするには、まず、そのユーザーが、プロファイルの「ログイン設定」ページで [TOTP をセットアップ](/docs/account?topic=account-login-settings#MFA)する必要があります。
 {: note}
 
 1. メニュー・バーから、**「管理」** &gt; **「アクセス (IAM)」**をクリックして、**「ユーザー」**を選択します。

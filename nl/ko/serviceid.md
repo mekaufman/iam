@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-02-21"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -23,6 +23,7 @@ subcollection: iam
 {: #serviceids}
 
 서비스 ID는 사용자 ID가 사용자를 식별하는 것과 유사한 방법으로 서비스 또는 애플리케이션을 식별합니다. 작성한 서비스 ID를 사용하여 {{site.data.keyword.Bluemix_notm}} 서비스에 대해 {{site.data.keyword.Bluemix_notm}} 액세스 외부에서 애플리케이션을 사용하도록 설정할 수 있습니다. 특정 서비스 사용을 위해 권한을 제한하거나 여러 서비스에 액세스하기 위해 권한을 결합하는 특정 액세스 정책을 서비스 ID에 지정할 수 있습니다. 서비스 ID는 특정 사용자에게 묶여 있지 않으므로, 사용자가 우연히 조직을 나가게 되어 계정에서 삭제되는 경우에도 서비스 ID는 남게 되어 애플리케이션 또는 서비스가 유지되고 실행됩니다.
+{:shortdesc}
 
 서비스 ID를 작성하는 경우 UI에서 식별하고 작업하기 쉬운 고유 이름 및 설명을 작성합니다. 서비스 ID를 작성하면, 애플리케이션에서 {{site.data.keyword.Bluemix_notm}} 서비스 인증에 사용할 수 있는 각 서비스 ID에 특정한 API 키를 작성할 수 있습니다. 애플리케이션에 {{site.data.keyword.Bluemix_notm}} 서비스 인증에 적합한 액세스 권한이 있는지 확인하기 위해, 작성하는 각 서비스 ID에 지정된 액세스 정책을 사용합니다.
 
@@ -159,5 +160,5 @@ ibmcloud iam service-id-unlock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
 
 다음은 {{site.data.keyword.objectstorageshort}} 및 Cloud SQL Query 서비스에 서비스 ID를 사용하는 방법에 대한 예입니다.
 
-- {{site.data.keyword.objectstorageshort}} - [시작하기](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started-cli-#getting-started-cli-).
+- {{site.data.keyword.objectstorageshort}} - [{{site.data.keyword.Bluemix_notm}} CLI 사용](/docs/services/cloud-object-storage?topic=cloud-object-storage-cli-ic-use-the-ibm-cli#ic-hmac-credentials).
 - Cloud SQL Query - [SQL Query REST API 사용법 ![외부 링크 아이콘](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}을 참조하십시오.

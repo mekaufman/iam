@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: MFA, multifactor authentication, external authentication, order authentication, Symantec, phone-based authentication, cancel authentication order
 
@@ -39,7 +39,7 @@ subcollection: iam
 3. **사용자 세부사항** 페이지의 사용자 로그인 관리 섹션에서 **외부 인증 주문**을 선택하십시오.
 4. **Symantec Identity Protection** 또는 **전화 기반 ID 보호**를 선택하십시오.
     * Symantec 인증의 경우 사용자는 [Symantec VIP](https://vip.symantec.com/){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg) 앱을 다운로드하고 인증 정보 ID를 확보하여 주문 프로세스를 계속해야 합니다.
-    * 전화 기반 인증의 경우 주문을 진행할 수 있지만, 옵션을 사용하려면 먼저 사용자가 [해당 구성을 설정](/docs/account?topic=account-third-party-MFA#third-party-MFA)해야 합니다.
+    * 전화 기반 인증의 경우 주문을 진행할 수 있지만, 옵션을 사용하려면 먼저 사용자가 [해당 구성을 설정](/docs/account?topic=account-third-party-MFA#setting-up-phone-based-authentication)해야 합니다.
 5. 선택을 기준으로, 주문 전에 프롬프트에 따라 가격과 이용 약관을 검토하십시오.
 6. **주문**을 클릭하여 선택을 완료하십시오.
 

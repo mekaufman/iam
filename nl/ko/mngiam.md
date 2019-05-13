@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-05-01"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -93,7 +93,7 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 3. **액세스 정책** 탭을 통해, 제거할 정책에 대한 행에서 **조치** ![조치 목록 아이콘](../icons/action-menu-icon.svg) 메뉴를 선택하고 **제거**를 클릭하십시오.  
 4. 제거할 사용자 정책 세부사항을 검토한 후에 **제거**를 클릭하여 확인하십시오.
 
-CLI를 사용하여 사용자 정책을 제거하기 위해 [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_delete#ibmcloud_iam_user_policy_delete) 명령을 사용할 수 있습니다.
+CLI를 사용하여 사용자 정책을 제거하기 위해 [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_delete) 명령을 사용할 수 있습니다.
 ```
 ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
 ```

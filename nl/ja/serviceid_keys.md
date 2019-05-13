@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -23,8 +23,9 @@ subcollection: iam
 {: #serviceidapikeys}
 
 サービス ID は、{{site.data.keyword.Bluemix_notm}} の内部および外部の両方でホストされているアプリケーションによる {{site.data.keyword.Bluemix_notm}} サービスへのアクセスを可能にするために作成されます。 API キーは、特定のサービス ID としてアプリケーションを認証し、そのサービス ID に関連付けられたアクセス権限をアプリケーションに付与するために使用されます。
+{:shortdesc}
 
-サービス ID を作成したら、API キーの作成とサービス・ポリシーの割り当てを開始できます。 各ポリシーは、サービスでの認証に API キーが使用された時に許可されるアクセス・レベルを指定します。 サービス ID の作成およびポリシーの割り当てについて詳しくは、『[サービス ID の作成と処理](/docs/iam?topic=iam-serviceids#serviceids)』を参照してください。 サービス ID の API キーの管理に使用される CLI コマンドの詳細については、『[IAM アクセス権限、API キー、サービス ID、およびアクセス・グループの管理](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_commands_iam)』を参照してください。
+サービス ID を作成したら、API キーの作成とサービス・ポリシーの割り当てを開始できます。 各ポリシーは、サービスでの認証に API キーが使用された時に許可されるアクセス・レベルを指定します。 サービス ID の作成およびポリシーの割り当てについて詳しくは、『[サービス ID の作成と処理](/docs/iam?topic=iam-serviceids#serviceids)』を参照してください。 サービス ID の API キーの管理に使用される CLI コマンドの詳細については、『[IAM アクセス権限、API キー、サービス ID、およびアクセス・グループの管理](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam)』を参照してください。
 
 サービス ID に関連付けられている各 API キーは、そのサービス ID に割り当てられているポリシーを継承します。 例えば、あるアプリケーションで、サービス内のリソースの表示のみを可能にしたい場合は、ビューアー役割が割り当てられたポリシーを持つサービス ID に関連した API キーを使用する必要があります。 そして、別のアプリケーションでは、サービス内でフルアクセスを持てるようにしたい場合は、管理者役割が割り当てられたポリシーを持つ 2 番目のサービス ID に関連付けられた API キーを使用する必要があります。
 
@@ -47,7 +48,7 @@ subcollection: iam
 安全上の理由により、API キーをコピーまたはダウンロードできるのは作成時のみになります。 API キーが失われた場合は、新規 API キーを作成する必要があります。
 {: note}
 
-CLI を使用してサービス ID の API キーを作成するには、[ibmcloud iam service-api-key-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_create) コマンドを使用します。
+CLI を使用してサービス ID の API キーを作成するには、[ibmcloud iam service-api-key-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create) コマンドを使用します。
 ```
 ibmcloud iam service-api-key-create NAME SERVICE_ID [-d, --description DESCRIPTION] [--file FILE] [-f, --force]
 ```
@@ -63,7 +64,7 @@ API キーの更新は、UI で API キーを識別するために使用され�
 3. **「API キー」**をクリックします。
 4. **「アクション」** ![「アクションのリスト」アイコン](../icons/action-menu-icon.svg) メニューから**「名前および説明の編集」**をクリックします。
 
-CLI を使用してサービス ID の API キーを更新するには、[ibmcloud iam service-api-key-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_update) コマンドを使用します。
+CLI を使用してサービス ID の API キーを更新するには、[ibmcloud iam service-api-key-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_update) コマンドを使用します。
 ```
 ibmcloud iam service-api-key-update NAME SERVICE_ID  [-n, --name NEW_sNAME] [-d, --description DESCRIPTION] [-v, --version VERSION] [-f, --force]
 ```
@@ -134,7 +135,7 @@ ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|S
 4. **「API キー」**をクリックします。
 5. **「アクション」** ![「アクションのリスト」アイコン](../icons/action-menu-icon.svg) メニューから**「削除」**をクリックします。
 
-CLI を使用してサービス ID の API キーを削除するには、[ibmcloud iam service-api-key-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_delete) コマンドを使用します。
+CLI を使用してサービス ID の API キーを削除するには、[ibmcloud iam service-api-key-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_delete) コマンドを使用します。
 ```
 ibmcloud iam service-api-key-delete NAME SERVICE_ID [-f, --force]
 ```

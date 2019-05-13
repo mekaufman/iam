@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-03-05"
+lastupdated: "2019-04-30"
 
 keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
 
@@ -23,7 +23,7 @@ subcollection: iam
 Bei einem Schlüssel einer Anwendungsprogrammierschnittstelle (API-Schlüssel) handelt es sich um einen eindeutigen Code, der an eine API übergeben wird, um die aufrufende Anwendung oder den aufrufenden Benutzer zu identifizieren. API-Schlüssel werden verwendet, um zu verfolgen und zu steuern, wie die API verwendet wird, um so z. B. Verwendung in böswilliger Absicht oder Missbrauch der API zu verhindern. Der API-Schlüssel dient oft als eindeutige Kennung und zugleich als geheimes Token für die Authentifizierung. Normalerweise ist ihm eine Gruppe von Zugriffsrechten zugeordnet, die speziell für die ihm zugeordnete Identität gelten.
 {:shortdesc}
 
-Wenn Sie Ihre API-Schlüssel anzeigen möchten, rufen Sie **Verwalten** > **Zugriff (IAM)** > **IBM Cloud-API-Schlüssel** auf.
+Wenn Sie Ihre API-Schlüssel anzeigen möchten, rufen Sie **Verwalten** > **Zugriff (IAM)** > **IBM Cloud-API-Schlüssel** auf. 
 
 ## {{site.data.keyword.cloud_notm}}-API-Schlüssel
 {: #ibm-cloud-api-keys}
@@ -40,7 +40,7 @@ Zusätzlich zu Ihren {{site.data.keyword.cloud_notm}}-API-Schlüsseln stehen ein
 * API-Schlüssel der klassischen Infrastruktur
 * Servicespezifische API-Schlüssel
 
-API-Schlüssel für die klassische Infrastruktur sind API-Schlüssel, die zum Aufrufen der APIs für Services der klassischen Infrastruktur verwendet werden. Sie können immer nur jeweils einen API-Schlüssel für die klassische Infrastruktur erstellen. Die Erstellung eines API-Schlüssels für die klassische Infrastruktur für einen Benutzer erfolgt über die Seite 'Benutzerdetails'.
+API-Schlüssel für die klassische Infrastruktur sind API-Schlüssel, die zum Aufrufen der APIs für Services der klassischen Infrastruktur verwendet werden. Sie können immer nur jeweils einen API-Schlüssel für die klassische Infrastruktur erstellen. Die Erstellung eines API-Schlüssels für die klassische Infrastruktur für sich selbst können Sie über die Seite 'Benutzerdetails' vornehmen.
 
 {{site.data.keyword.cloud_notm}}-API-Schlüssel können auch für den Zugriff auf APIs der klassischen Infrastruktur verwendet werden.
 {: tip}

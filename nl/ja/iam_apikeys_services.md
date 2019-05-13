@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -48,7 +48,7 @@ API クライアントは、ターゲット・サービスの API に {{site.dat
 
 API キーを使用してサービスの API で認証するには、以下の手順を実行します。
 
-  1. まず、[{{site.data.keyword.Bluemix_notm}} API キーを作成](/docs/iam?topic=iam-userapikey#creating-an-api-key)します (まだ作成していない場合)。
+  1. まず、[{{site.data.keyword.Bluemix_notm}} API キーを作成](/docs/iam?topic=iam-userapikey#create_user_key)します (まだ作成していない場合)。
   2. [RFC 7617](https://tools.ietf.org/html/rfc7617){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") で定義されているように HTTP ヘッダー“Authorization”として {{site.data.keyword.Bluemix_notm}} API キーを送信します。 ユーザー名として `apikey` を、パスワードとして API キー値を使用します。
 
 例えば、以下の手順では API キーが 0a1A2b3B4c5C6d7D8e9E であると想定しています。
@@ -73,7 +73,7 @@ IAM アクセス・トークンを取得するには、まず、API クライア
 
 アクセス・トークンを使用してサービスの API で認証するには、以下の手順を実行します。
 
-  1. まず、[{{site.data.keyword.Bluemix_notm}} API キーを作成](/docs/iam?topic=iam-userapikey#creating-an-api-key)します (まだ作成していない場合)。
+  1. まず、[{{site.data.keyword.Bluemix_notm}} API キーを作成](/docs/iam?topic=iam-userapikey#create_user_key)します (まだ作成していない場合)。
   2. API クライアントが行う次のステップは、『[API キーを使用した IAM トークンの取得](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey)』の説明に従って IAM アクセス・トークンを取得することです。
   3. 応答から、プロパティー `access_token` を抽出して IAM アクセス・トークンを取得します。 `expires_in` は、IAM アクセス・トークン `access_token` の有効期限が切れるまでの秒数を示します。 この相対値を使用するか、または、[UNIX 時刻](https://en.wikipedia.org/wiki/Unix_time){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") に基づく絶対タイム・スタンプ `expiration` を使用します。
   4. [RFC 6750 セクション 2.1. Authorization Request Header Field](https://tools.ietf.org/html/rfc6750#page-5){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") に記述されているように、IAM アクセス・トークンを送信します。

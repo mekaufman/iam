@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -23,8 +23,9 @@ subcollection: iam
 {: #serviceidapikeys}
 
 Service-IDs werden erstellt, um Anwendungen, die sowohl in als auch außerhalb von {{site.data.keyword.Bluemix_notm}} gehostet werden, den Zugriff auf Ihre {{site.data.keyword.Bluemix_notm}}-Services zu ermöglichen. API-Schlüssel werden von einer Anwendung benutzt, um sich mit einer bestimmten Service-ID zu authentifizieren und den Zugriff zu erhalten, der dieser Service-ID zugeordnet ist.
+{:shortdesc}
 
-Nach Erstellung einer Service-ID können Sie mit der Erstellung von API-Schlüsseln und der Zuweisung von Servicerichtlinien beginnen. Jede Richtlinie gibt eine bestimmte Zugriffsebene an, die zulässig ist, wenn der API-Schlüssel zur Authentifizierung bei Ihren Services verwendet wird. Weitere Informationen zur Erstellung einer Service-ID und zur Zuweisung von Richtlinien finden Sie in [Service-IDs erstellen und verwenden](/docs/iam?topic=iam-serviceids#serviceids). Detaillierte Informationen zu den CLI-Befehlen, die zur Verwaltung der API-Schlüssel von Service-IDs verwendet werden, finden Sie im Abschnitt [IAM-Zugriff, API-Schlüssel, Service-IDs und Zugriffsgruppen verwalten](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_commands_iam).
+Nach Erstellung einer Service-ID können Sie mit der Erstellung von API-Schlüsseln und der Zuweisung von Servicerichtlinien beginnen. Jede Richtlinie gibt eine bestimmte Zugriffsebene an, die zulässig ist, wenn der API-Schlüssel zur Authentifizierung bei Ihren Services verwendet wird. Weitere Informationen zur Erstellung einer Service-ID und zur Zuweisung von Richtlinien finden Sie in [Service-IDs erstellen und verwenden](/docs/iam?topic=iam-serviceids#serviceids). Detaillierte Informationen zu den CLI-Befehlen, die zur Verwaltung der API-Schlüssel von Service-IDs verwendet werden, finden Sie im Abschnitt [IAM-Zugriff, API-Schlüssel, Service-IDs und Zugriffsgruppen verwalten](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam).
 
 Jeder API-Schlüssel, der einer Service-ID zugeordnet wurde, übernimmt die Richtlinie, die der Service-ID zugewiesen wurde. Wenn Sie z. B. festlegen möchten, dass eine Anwendung einfach zur Anzeige von Ressourcen in einem Service berechtigt sein soll, müssen Sie einen API-Schlüssel mit einer zugeordneten Service-ID verwenden, der eine Richtlinie mit der Rolle des Anzeigeberechtigten zugewiesen ist. Wenn Sie hingegen für eine andere Anwendung festlegen möchten, dass diese über vollständigen Zugriff innerhalb eines Service verfügen soll, so müssen Sie einen API-Schlüssel verwenden, dem eine zweite Service-ID zugeordnet ist, der eine Richtlinie mit der Rolle des Administrators zugewiesen wurde.
 
@@ -47,7 +48,7 @@ Erstellen Sie einen API-Schlüssel, der einer Service-ID zugeordnet werden soll.
 Aus Sicherheitsgründen kann der API-Schlüssel nur zum Zeitpunkt seiner Erstellung kopiert oder heruntergeladen werden. Wenn der API-Schlüssel verloren geht, müssen Sie einen neuen API-Schlüssel erstellen.
 {: note}
 
-Wenn Sie einen API-Schlüssel für eine Service-ID über die Befehlszeilenschnittstelle erstellen möchten, können Sie den Befehl [ibmcloud iam service-api-key-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_create) verwenden.
+Wenn Sie einen API-Schlüssel für eine Service-ID über die Befehlszeilenschnittstelle erstellen möchten, können Sie den Befehl [ibmcloud iam service-api-key-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create) verwenden.
 ```
 ibmcloud iam service-api-key-create NAME SERVICE_ID [-d, --description DESCRIPTION] [--file FILE] [-f, --force]
 ```
@@ -63,7 +64,7 @@ Sie können einen API-Schlüssel aktualisieren, indem Sie den Namen oder die Bes
 3. Klicken Sie auf **API-Schlüssel**.
 4. Klicken Sie im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) auf **Namen bearbeiten & Beschreibung**.
 
-Wenn Sie einen API-Schlüssel für eine Service-ID über die Befehlszeilenschnittstelle aktualisieren möchten, können Sie den Befehl [ibmcloud iam service-api-key-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_update) verwenden.
+Wenn Sie einen API-Schlüssel für eine Service-ID über die Befehlszeilenschnittstelle aktualisieren möchten, können Sie den Befehl [ibmcloud iam service-api-key-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_update) verwenden.
 ```
 ibmcloud iam service-api-key-update NAME SERVICE_ID  [-n, --name NEW_sNAME] [-d, --description DESCRIPTION] [-v, --version VERSION] [-f, --force]
 ```
@@ -134,7 +135,7 @@ Sie können einen API-Schlüssel löschen, der einer Service-ID zugeordnet ist. 
 4. Klicken Sie auf **API-Schlüssel**.
 5. Klicken Sie im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) auf **Löschen**.
 
-Wenn Sie einen API-Schlüssel für eine Service-ID über die Befehlszeilenschnittstelle löschen möchten, können Sie den Befehl [ibmcloud iam service-api-key-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_delete) verwenden.
+Wenn Sie einen API-Schlüssel für eine Service-ID über die Befehlszeilenschnittstelle löschen möchten, können Sie den Befehl [ibmcloud iam service-api-key-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_delete) verwenden.
 ```
 ibmcloud iam service-api-key-delete NAME SERVICE_ID [-f, --force]
 ```

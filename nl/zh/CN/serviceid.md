@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-02-21"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -22,7 +22,8 @@ subcollection: iam
 # 创建和使用服务标识
 {: #serviceids}
 
-服务标识用于标识服务或应用程序，类似于用户标识对用户进行标识的方式。创建的服务标识可用于支持 {{site.data.keyword.Bluemix_notm}} 外部的应用程序访问 {{site.data.keyword.Bluemix_notm}} 服务。您可以向服务标识分配特定访问策略，以限制使用特定服务的许可权，甚至可以将访问不同服务的许可权组合在一起。由于服务标识并不与特定用户绑定，因此即使用户离开组织并将其从帐户中删除，该服务标识仍会保留，以确保您的应用程序或服务保持正常运行。
+服务标识识别服务或应用程序的方式与用户标识识别用户的方式相似。创建的服务标识可用于支持 {{site.data.keyword.Bluemix_notm}} 外部的应用程序访问 {{site.data.keyword.Bluemix_notm}} 服务。您可以向服务标识分配特定访问策略，以限制使用特定服务的许可权，甚至可以将访问不同服务的许可权组合在一起。由于服务标识并不与特定用户绑定，因此即使用户离开组织并将其从帐户中删除，该服务标识仍会保留，以确保您的应用程序或服务保持正常运行。
+{:shortdesc}
 
 创建服务标识时，将创建唯一的名称和描述，方便您在 UI 中识别和使用。一旦创建了服务标识，就可以创建特定于每个服务标识的 API 密钥，应用程序可以使用这些密钥向 {{site.data.keyword.Bluemix_notm}} 服务进行认证。要确保应用程序具有对 {{site.data.keyword.Bluemix_notm}} 服务进行认证的相应访问权，您可使用分配给所创建的每个服务标识的访问策略。
 
@@ -157,5 +158,5 @@ ibmcloud iam service-id-unlock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
 
 下面是如何将服务标识与 {{site.data.keyword.objectstorageshort}} 和 Cloud SQL 查询服务配合使用的示例。
 
-- {{site.data.keyword.objectstorageshort}} - [入门](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started-cli-#getting-started-cli-)。
-- Cloud SQL Query - [如何使用 SQL Query REST API ![外部链接图标](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}.
+- {{site.data.keyword.objectstorageshort}} - [使用 {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/cloud-object-storage?topic=cloud-object-storage-cli-ic-use-the-ibm-cli#ic-hmac-credentials)。
+- Cloud SQL Query - [如何使用 SQL Query REST API ![外部链接图标](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}。

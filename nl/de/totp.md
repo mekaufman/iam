@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
 
@@ -32,7 +32,7 @@ Wenn Sie über eines der folgenden Zugriffsrechte verfügen, können Sie diese E
 
 Führen Sie die folgenden Schritte aus, um die Einstellung zur Aufforderung eines Benutzers bei der Anmeldung zur Durchführung der TOTP-MFA zu aktivieren.
 
-Um diese MFA-Option für einen Benutzer zu aktivieren, muss der Benutzer zuerst auf der Seite 'Anmeldeeinstellungen' für das Profil die [TOTP einrichten](/docs/account?topic=account-MFA#MFA).
+Um diese MFA-Option für einen Benutzer zu aktivieren, muss der Benutzer zuerst auf der Seite 'Anmeldeeinstellungen' für das Profil die [TOTP einrichten](/docs/account?topic=account-login-settings#MFA).
 {: note}
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Benutzer** aus.

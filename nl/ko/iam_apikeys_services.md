@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -48,7 +48,7 @@ API 클라이언트는 {{site.data.keyword.Bluemix_notm}} API 키를 직접 대�
 
 API 키를 사용하여 서비스의 API에서 인증하려면 다음 단계를 완료하십시오.
 
-  1. 아직 없는 경우 먼저 [{{site.data.keyword.Bluemix_notm}} API 키를 작성](/docs/iam?topic=iam-userapikey#creating-an-api-key)하십시오.
+  1. 아직 없는 경우 먼저 [{{site.data.keyword.Bluemix_notm}} API 키를 작성](/docs/iam?topic=iam-userapikey#create_user_key)하십시오.
   2. HTTP 헤더 “Authorization”으로서 [RFC 7617](https://tools.ietf.org/html/rfc7617){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에 정의된 대로 {{site.data.keyword.Bluemix_notm}} API 키를 보내십시오. `apikey`를 사용자 이름으로, API 키 값을 비밀번호로 사용하십시오.
 
 예로서 다음 단계에서는 API 키가 0a1A2b3B4c5C6d7D8e9E라고 가정합니다.
@@ -73,7 +73,7 @@ IAM 액세스 토큰을 검색하려면 API 클라이언트가 먼저 {{site.dat
 
 액세스 토큰을 사용하여 서비스 API에서 인증하려면 다음 단계를 완료하십시오.
 
-  1. 아직 없는 경우 먼저 [{{site.data.keyword.Bluemix_notm}} API 키를 작성](/docs/iam?topic=iam-userapikey#creating-an-api-key)하십시오.
+  1. 아직 없는 경우 먼저 [{{site.data.keyword.Bluemix_notm}} API 키를 작성](/docs/iam?topic=iam-userapikey#create_user_key)하십시오.
   2. [API 키에서 IAM 토큰 가져오기](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey)에 설명된 대로 API 클라이언트에 대한 다음 단계는 IAM 액세스 토큰 검색입니다.
   3. 응답에서 `access_token` 특성을 추출하여 IAM 액세스 토큰을 가져오십시오. `expires_in`은 IAM 액세스 토큰 `access_token`이 만료될 때까지의 시간(초)을 표시합니다. [UNIX 시간](https://en.wikipedia.org/wiki/Unix_time){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")을 기반으로 한 절대 시간소인 `expiration` 또는 이 상대 값을 사용하십시오.
   4. [RFC 6750, 섹션 2.1. 권한 요청 헤더 필드](https://tools.ietf.org/html/rfc6750#page-5){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")에 설명된 대로 IAM 액세스 토큰을 보내십시오.

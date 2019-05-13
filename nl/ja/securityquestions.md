@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: security questions, MFA, multifactor authentication, login security
 
@@ -31,7 +31,7 @@ subcollection: iam
 * 当該ユーザーのクラシック・インフラストラクチャー階層内で上位にいて、かつ、「ユーザーの管理」クラシック・インフラストラクチャー許可を割り当てられている
 
 
-あるユーザーに対してこの MFA オプションをオンにするには、まず、そのユーザーが、プロファイルの「ログイン設定」ページで[セキュリティーのための質問および回答をセットアップ](/docs/account?topic=account-security-questions#security-questions)する必要があります。
+あるユーザーに対してこの MFA オプションをオンにするには、まず、そのユーザーが、プロファイルの「ログイン設定」ページで[セキュリティーのための質問および回答をセットアップ](/docs/account?topic=account-login-settings#security-questions)する必要があります。
 {: note}
 
 1. メニュー・バーから、**「管理」** &gt; **「アクセス (IAM)」**をクリックして、**「ユーザー」**を選択します。

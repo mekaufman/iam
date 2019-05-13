@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-03-05"
+lastupdated: "2019-04-30"
 
 keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
 
@@ -23,7 +23,7 @@ subcollection: iam
 应用程序编程接口密钥（API 密钥）是传入到 API 的唯一代码，用于确定调用应用程序或用户。API 密钥用于跟踪和控制 API 的使用情况，例如阻止恶意使用或滥用 API。API 密钥经常充当进行认证的唯一标识和私钥令牌，而且通常有一组特定于其关联身份的访问权。
 {:shortdesc}
 
-要查看 API 密钥，请转至**管理** > **访问权 (IAM)** > **IBM Cloud API 密钥**。
+要查看 API 密钥，请转至**管理** > **访问权 (IAM)** > **IBM Cloud API 密钥**。 
 
 ## {{site.data.keyword.cloud_notm}}API 密钥
 {: #ibm-cloud-api-keys}
@@ -40,7 +40,7 @@ subcollection: iam
 * 经典基础架构 API 密钥
 * 特定于服务的 API 密钥
 
-经典基础架构 API 密钥用于调用经典基础架构服务的 API。一次只能创建一个经典基础架构 API 密钥。您可以在“用户详细信息”页面中为用户创建经典基础架构 API 密钥。
+经典基础架构 API 密钥用于调用经典基础架构服务的 API。一次只能创建一个经典基础架构 API 密钥。您可以在“用户详细信息”页面中为自己创建经典基础架构 API 密钥。
 
 {{site.data.keyword.cloud_notm}} API 密钥还可用于访问经典基础架构 API。
 {: tip}

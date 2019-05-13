@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: security questions, MFA, multifactor authentication, login security
 
@@ -31,7 +31,7 @@ subcollection: iam
 * 您在经典基础架构层次结构中是用户的祖代，并且分配有“管理用户”经典基础架构许可权。
 
 
-要为用户开启此 MFA 选项，该用户必须首先在概要文件的“登录设置”页面中[设置安全问题](/docs/account?topic=account-security-questions#security-questions)和答案。
+要为用户开启此 MFA 选项，该用户必须首先在概要文件的“登录设置”页面中[设置安全问题](/docs/account?topic=account-login-settings#security-questions)和答案。
 {: note}
 
 1. 在菜单栏中，单击**管理** &gt; **访问权 (IAM)**，然后选择**用户**。

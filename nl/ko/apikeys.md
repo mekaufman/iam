@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-03-05"
+lastupdated: "2019-04-30"
 
 keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
 
@@ -23,7 +23,7 @@ subcollection: iam
 API(Application Programming Interface) 키는 호출 애플리케이션 또는 사용자를 식별하도록 API에 전달되는 고유 코드입니다. API 키를 사용하여 API의 사용을 추적 및 제어할 수 있습니다. 예를 들어, 악의적 사용 또는 남용을 방지하는 데 이 API 키를 사용할 수 있습니다. API 키는 종종 인증을 위한 시크릿 토큰 및 고유 ID 모두의 역할을 하며, 일반적으로 이와 연관된 ID에 대한 액세스 세트를 보유합니다.
 {:shortdesc}
 
-API 키를 보려면 **관리** > **액세스(IAM)** > **IBM Cloud API 키**로 이동하십시오.
+API 키를 보려면 **관리** > **액세스(IAM)** > **IBM Cloud API 키**로 이동하십시오. 
 
 ## {{site.data.keyword.cloud_notm}}API 키
 {: #ibm-cloud-api-keys}
