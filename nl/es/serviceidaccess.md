@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: service ID, service ID access, managing access for service IDs
 
@@ -83,7 +83,7 @@ Para editar una política existente:
 4. Identifique la fila de la política que desea editar y seleccione **Editar política** en el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg).
 5. Realice los cambios y, a continuación, guarde la política.
 
-Para actualizar una política de servicios utilizando la CLI, puede utilizar el mandato [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_update#ibmcloud_iam_service_policy_update).
+Para actualizar una política de servicios utilizando la CLI, puede utilizar el mandato [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_update).
 ```
 ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] {--file JSON_FILE | [-r, --roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]} [-f, --force]",
 ```
@@ -103,7 +103,7 @@ Para eliminar una política existente:
 4. Identifique la fila de la política que desea suprimir y seleccione **Eliminar** en el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg).
 5. Revise los detalles de la política que va a eliminar y luego pulse **Eliminar** para confirmar.
 
-Para suprimir una política de servicios utilizando la CLI, puede utilizar el mandato [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_update#ibmcloud_iam_service_policy_delete).
+Para suprimir una política de servicios utilizando la CLI, puede utilizar el mandato [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_delete).
 ```
 ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
 ```

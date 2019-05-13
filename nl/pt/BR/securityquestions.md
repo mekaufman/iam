@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: security questions, MFA, multifactor authentication, login security
 
@@ -31,7 +31,7 @@ Se você tiver qualquer um dos acessos a seguir, será possível atualizar essa 
 * Você é um antecessor na hierarquia de infraestrutura clássica para o usuário e tem a permissão Gerenciar a infraestrutura clássica de usuários designada
 
 
-Para ativar essa opção de MFA para um usuário, ele ou ela deverá primeiro [configurar perguntas e respostas de segurança](/docs/account?topic=account-security-questions#security-questions) na página Configurações de login do perfil.
+Para ativar essa opção de MFA para um usuário, ele ou ela deverá primeiro [configurar perguntas e respostas de segurança](/docs/account?topic=account-login-settings#security-questions) na página Configurações de login do perfil.
 {: note}
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**.

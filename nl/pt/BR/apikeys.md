@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-03-05"
+lastupdated: "2019-04-30"
 
 keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
 
@@ -23,9 +23,9 @@ subcollection: iam
 Uma chave de interface de programação de aplicativos (chave de API) é um código exclusivo passado para uma API para identificar o aplicativo de chamada ou o usuário. As chaves API são usadas para rastrear e controlar como a API está sendo usada, por exemplo, para evitar uso malicioso ou abuso da API. A chave de API geralmente age como um identificador exclusivo e um token secreto para autenticação e geralmente tem um conjunto de acesso que é específico para a identidade associada a ele.
 {:shortdesc}
 
-Para visualizar as suas chaves de API, acesse **Gerenciar** > **Acessar (IAM)** > **Chaves de API do IBM Cloud**.
+Para visualizar as suas chaves de API, acesse **Gerenciar** > **Acesso (IAM)** > **Chaves de API do IBM Cloud**. 
 
-## {{site.data.keyword.cloud_notm}}Chaves API
+## {{site.data.keyword.cloud_notm}} Chaves API (interface de programação de aplicativos)
 {: #ibm-cloud-api-keys}
 
 As chaves de API do {{site.data.keyword.cloud}} estão associadas à identidade do usuário. Somente o usuário para o qual a chave de API é associada pode criá-la e excluí-la. É possível usar as chaves de API do {{site.data.keyword.cloud_notm}} na interface da linha de comandos (CLI) ou como parte da automação para efetuar login como sua identidade do usuário. Também é possível usar as chave de API do {{site.data.keyword.cloud_notm}} para acessar APIs de infraestrutura clássica. Para obter mais informações sobre como usar uma chave API associada à sua identidade de usuário, veja [Gerenciando chaves API do usuário](/docs/iam?topic=iam-userapikey#userapikey).
@@ -40,7 +40,7 @@ Além de suas chaves de API do {{site.data.keyword.cloud_notm}}, um par de outro
 * Chaves de API de infraestrutura clássica
 * Chaves API específicas do serviço
 
-As chaves de API de infraestrutura clássica são usadas para chamar as APIs para serviços de infraestrutura clássica. É possível criar somente uma chave de API de infraestrutura clássica por vez. É possível criar uma chave de API de infraestrutura clássica para um usuário na página Detalhes do usuário.
+As chaves de API de infraestrutura clássica são usadas para chamar as APIs para serviços de infraestrutura clássica. É possível criar somente uma chave de API de infraestrutura clássica por vez. É possível criar uma chave de API de infraestrutura clássica para si mesmo por meio da página Detalhes do usuário.
 
 As chaves de API do {{site.data.keyword.cloud_notm}} também podem ser usadas para acessar APIs de infraestrutura clássica.
 {: tip}

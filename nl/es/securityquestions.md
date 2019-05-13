@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: security questions, MFA, multifactor authentication, login security
 
@@ -31,7 +31,7 @@ Si tiene alguno de los siguientes accesos, puede actualizar este valor para otro
 * Es un antecesor en la jerarquía de la infraestructura clásica para el usuario y tiene asignado el permiso de la infraestructura clásica de gestión de usuarios
 
 
-Para activar esta opción de MFA para un usuario, este debe [configurar preguntas de seguridad](/docs/account?topic=account-security-questions#security-questions) y respuestas desde la página Valores de inicio de sesión del perfil.
+Para activar esta opción de MFA para un usuario, este debe [configurar preguntas de seguridad](/docs/account?topic=account-login-settings#security-questions) y respuestas desde la página Valores de inicio de sesión del perfil.
 {: note}
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**.

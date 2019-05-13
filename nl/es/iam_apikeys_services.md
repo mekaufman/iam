@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -48,7 +48,7 @@ El uso de una clave de API de {{site.data.keyword.Bluemix_notm}} resulta cómodo
 
 Para autenticarse con una API de servicio utilizando una clave de API, siga los pasos siguientes:
 
-  1. En primer lugar, [cree una clave de API de {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#creating-an-api-key) si aún no lo ha hecho.
+  1. En primer lugar, [cree una clave de API de {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#create_user_key) si aún no lo ha hecho.
   2. Envíe la clave de API de {{site.data.keyword.Bluemix_notm}} tal como se describe en [RFC 7617](https://tools.ietf.org/html/rfc7617){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo") como la cabecera HTTP “Authorization”. Utilice `apikey` como nombre de usuario y el valor de la clave de API como contraseña.
 
 Como ejemplo, en los siguientes pasos se utiliza la clave de API 0a1A2b3B4c5C6d7D8e9E:
@@ -73,7 +73,7 @@ Para recuperar una señal de acceso de IAM, primero el cliente de API debe invoc
 
 Para autenticarse con una API de servicio utilizando una señal de acceso, siga los pasos siguientes:
 
-  1. En primer lugar, [cree una clave de API de {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#creating-an-api-key) si aún no lo ha hecho.
+  1. En primer lugar, [cree una clave de API de {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#create_user_key) si aún no lo ha hecho.
   2. El paso siguiente para el cliente de API es la recuperación de una señal de acceso de IAM, tal como se describe en [Obtención de una señal de IAM a partir de una clave de API](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey).
   3. A partir de la respuesta, extraiga la propiedad `access_token` para obtener la señal de acceso de IAM. `expires_in` indica los segundos hasta que caduque la señal de acceso de IAM `access_token`. Utilice este valor relativo o la indicación de fecha y hora absoluta `expiration` que depende de la [hora de UNIX](https://en.wikipedia.org/wiki/Unix_time){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo").
   4. Envíe la señal de acceso de IAM tal como se describe en [RFC 6750, sección 2.1. Campo de cabecera de solicitud de autorización](https://tools.ietf.org/html/rfc6750#page-5){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo"):

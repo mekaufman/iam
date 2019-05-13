@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
 
@@ -32,7 +32,7 @@ Si tiene alguno de los siguientes accesos, puede actualizar este valor para otro
 
 Para activar el valor de inicio de sesión para que se solicite MFA de TOTP a un usuario, siga estos pasos.
 
-Para activar esta opción de MFA para un usuario, este debe [configurar TOTP](/docs/account?topic=account-MFA#MFA) primero desde la página Valores de inicio de sesión del perfil.
+Para activar esta opción de MFA para un usuario, este debe [configurar TOTP](/docs/account?topic=account-login-settings#MFA) primero desde la página Valores de inicio de sesión del perfil.
 {: note}
 
 1. En la barra de menús, pulse **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**.

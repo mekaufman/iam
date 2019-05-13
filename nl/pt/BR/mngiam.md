@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-05-01"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -93,7 +93,7 @@ Para designar acesso a um recurso individual na conta ou acesso a todos os recur
 3. Na guia **Políticas de acesso**, selecione o menu **Ações** ![Ícone Lista de ações](../icons/action-menu-icon.svg) na linha para a política que você deseja remover e clique em **Remover**.  
 4. Revise os detalhes da política do usuário que você está prestes a remover e, em seguida, confirme clicando em **Remover**.
 
-Para remover uma política do usuário usando a CLI, é possível usar o comando [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_delete#ibmcloud_iam_user_policy_delete).
+Para remover uma política do usuário usando a CLI, é possível usar o comando [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_delete).
 ```
 ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
 ```

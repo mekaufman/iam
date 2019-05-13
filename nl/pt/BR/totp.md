@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
 
@@ -32,7 +32,7 @@ Se você tiver qualquer um dos acessos a seguir, será possível atualizar essa 
 
 Para ativar a configuração de login para que um usuário seja solicitado para a MFA TOTP, conclua as etapas a seguir.
 
-Para ativar essa opção de MFA para um usuário, ele ou ela deverá primeiro [configurar a TOTP](/docs/account?topic=account-MFA#MFA) na página Configurações de login do perfil.
+Para ativar essa opção de MFA para um usuário, ele ou ela deverá primeiro [configurar a TOTP](/docs/account?topic=account-login-settings#MFA) na página Configurações de login do perfil.
 {: note}
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**.

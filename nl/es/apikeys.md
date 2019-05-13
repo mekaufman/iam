@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-03-05"
+lastupdated: "2019-04-30"
 
 keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
 
@@ -23,7 +23,7 @@ subcollection: iam
 Una clave de interfaz de programación de aplicaciones (clave de API) es un código exclusivo que se pasa a una API para identificar la aplicación o el usuario que efectúa la llamada. Las claves de API se utilizan para realizar un seguimiento y un control sobre la forma la que se utiliza la API, por ejemplo, para impedir un uso malintencionado o abusivo de la misma. La clave de API a menudo actúa a la vez como un identificador exclusivo y como una señal secreta para la autenticación, y habitualmente tiene un conjunto de acceso específico de la identidad asociado a la misma.
 {:shortdesc}
 
-Para ver sus claves de API, vaya a **Gestionar** > **Acceso (IAM)** > **Claves de API de IBM Cloud**.
+Para ver sus claves de API, vaya a **Gestionar** > **Acceso (IAM)** > **Claves de API de IBM Cloud**. 
 
 ## Claves de API de {{site.data.keyword.cloud_notm}}
 {: #ibm-cloud-api-keys}
@@ -40,7 +40,7 @@ Además de sus claves de API de {{site.data.keyword.cloud_notm}}, hay un par de 
 * Claves de API de la infraestructura clásica
 * Claves de API específicas del servicio
 
-Las claves de API de la infraestructura clásica se utilizan para llamar a las API para los servicios de la infraestructura clásica. Las claves de API de la infraestructura clásica se deben crear de una en una. Puede crear una clave de API de la infraestructura clásica para un usuario desde la página de detalles de usuario.
+Las claves de API de la infraestructura clásica se utilizan para llamar a las API para los servicios de la infraestructura clásica. Las claves de API de la infraestructura clásica se deben crear de una en una. Puede crear una clave de API de la infraestructura clásica para sí mismo desde la página de detalles de usuario.
 
 También puede utilizar las claves de API de {{site.data.keyword.cloud_notm}} para acceder a las API de la infraestructura clásica.
 {: tip}

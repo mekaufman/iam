@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -23,8 +23,9 @@ subcollection: iam
 {: #serviceidapikeys}
 
 Los ID de servicio se crean para permitir el acceso a los servicios de {{site.data.keyword.Bluemix_notm}} mediante aplicaciones alojadas tanto dentro como fuera de {{site.data.keyword.Bluemix_notm}}. Las claves de API las utiliza una aplicación para autenticarse como un ID de servicio particular y para que se les otorgue el acceso asociado con dicho ID de servicio.
+{:shortdesc}
 
-Una vez que haya creado un ID de servicio, puede empezar a crear claves de API y a asignar políticas de servicio. Cada política especifica el nivel de acceso permitido cuando se utiliza la clave de API para autenticarse con los servicios. Para obtener más información sobre la creación de un ID de servicio y la asignación de políticas, consulte [Creación y trabajo con los ID de servicio](/docs/iam?topic=iam-serviceids#serviceids). Para ver detalles sobre los mandatos de CLI que se utilizan para gestionar claves de API de ID de servicio, consulte [Gestión de acceso de IAM, claves de API, ID de servicio y grupos de acceso](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_commands_iam).
+Una vez que haya creado un ID de servicio, puede empezar a crear claves de API y a asignar políticas de servicio. Cada política especifica el nivel de acceso permitido cuando se utiliza la clave de API para autenticarse con los servicios. Para obtener más información sobre la creación de un ID de servicio y la asignación de políticas, consulte [Creación y trabajo con los ID de servicio](/docs/iam?topic=iam-serviceids#serviceids). Para ver detalles sobre los mandatos de CLI que se utilizan para gestionar claves de API de ID de servicio, consulte [Gestión de acceso de IAM, claves de API, ID de servicio y grupos de acceso](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam).
 
 Cada clave de API que está asociada con un ID de servicio hereda la política que se ha asignado al ID de servicio. Por ejemplo, si desea que una aplicación pueda simplemente ver recursos dentro de un servicio, necesitará utilizar una clave de API asociada con un ID de servicio que tenga una política asignada con el rol de visor. Y, si desea que otra aplicación pueda tener acceso completo dentro de un servicio, necesitará utilizar una clave de API asociada con un segundo ID de servicio que tenga una política asignada con el rol de administrador.
 
@@ -47,7 +48,7 @@ Crear una clave de API para asociar con un ID de servicio.
 Por motivos de seguridad, la clave de API sólo está disponible para copiarse o descargarse en el momento de la creación. Si se pierde la clave de API, deberá crear una nueva clave de API.
 {: note}
 
-Para crear una clave de API para un ID de servicio utilizando la CLI, puede utilizar el mandato [ibmcloud iam service-api-key-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_create).
+Para crear una clave de API para un ID de servicio utilizando la CLI, puede utilizar el mandato [ibmcloud iam service-api-key-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create).
 ```
 ibmcloud iam service-api-key-create NAME SERVICE_ID [-d, --description DESCRIPTION] [--file FILE] [-f, --force]
 ```
@@ -63,7 +64,7 @@ Puede actualizar una clave de API editando el nombre o la descripción utilizada
 3. Pulse **Claves de API**.
 4. En el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg), pulse **Editar nombre y descripción**.
 
-Para actualizar una clave de API para un ID de servicio utilizando la CLI, puede utilizar el mandato [ibmcloud iam service-api-key-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_update).
+Para actualizar una clave de API para un ID de servicio utilizando la CLI, puede utilizar el mandato [ibmcloud iam service-api-key-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_update).
 ```
 ibmcloud iam service-api-key-update NAME SERVICE_ID  [-n, --name NEW_sNAME] [-d, --description DESCRIPTION] [-v, --version VERSION] [-f, --force]
 ```
@@ -134,7 +135,7 @@ Puede suprimir una clave de API que esté asociada con un ID de servicio. Sin em
 4. Pulse **Claves de API**.
 5. En el menú **Acciones** ![Icono Lista de acciones](../icons/action-menu-icon.svg), pulse **Suprimir**.
 
-Para suprimir una clave de API para un ID de servicio utilizando la CLI, puede utilizar el mandato [ibmcloud iam service-api-key-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_delete).
+Para suprimir una clave de API para un ID de servicio utilizando la CLI, puede utilizar el mandato [ibmcloud iam service-api-key-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_delete).
 ```
 ibmcloud iam service-api-key-delete NAME SERVICE_ID [-f, --force]
 ```

@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: MFA, multifactor authentication, external authentication, order authentication, Symantec, phone-based authentication, cancel authentication order
 
@@ -39,7 +39,7 @@ Para solicitar la autenticación externa, siga los pasos siguientes:
 3. En la página **Detalles de usuario**, seleccione **Pedir autenticación externa** en la sección Gestionar inicio de sesión de usuario.
 4. Seleccione **Protección de identidad Symantec** o **Protección de identidad por teléfono**.
     * Para la autenticación de Symantec, el usuario debe descargar la app [VIP de Symantec](https://vip.symantec.com/){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg) y obtener un ID de credencial para continuar con el proceso de solicitud.
-    * Para la autenticación por teléfono, puede continuar con la solicitud, pero el usuario debe [configurar su configuración](/docs/account?topic=account-third-party-MFA#third-party-MFA) para que pueda habilitar la opción.
+    * Para la autenticación por teléfono, puede continuar con la solicitud, pero el usuario debe [configurar su configuración](/docs/account?topic=account-third-party-MFA#setting-up-phone-based-authentication) para que pueda habilitar la opción.
 5. En función de su selección, siga las indicaciones para revisar el precio y los términos antes de realizar el pedido.
 6. Pulse **Pedido** para finalizar la selección.
 
