@@ -44,6 +44,7 @@ Managing identity and access
         account_management.md
         mngcf.md
         mnginfra.md
+        migrated_permissions.md
         groups.md
         public_access.md
         accessgroup_rules.md
