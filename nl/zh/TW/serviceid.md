@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-02-21"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -22,7 +22,7 @@ subcollection: iam
 # 建立及使用服務 ID
 {: #serviceids}
 
-服務 ID 識別服務或應用程式的方式，與使用者 ID 識別使用者的方式類似。您建立的服務 ID 可以用來在 {{site.data.keyword.Bluemix_notm}} 外部啟用應用程式，以存取您的 {{site.data.keyword.Bluemix_notm}} 服務。您可以將特定存取原則指派給服務 ID，而服務 ID 限制用於使用特定服務的許可權，或甚至結合用於存取不同服務的許可權。因為服務 ID 未關聯至特定使用者，所以如果使用者離開組織，並已從帳戶中予以刪除，則服務 ID 仍可確保您的應用程式或服務保持啟動並執行。
+服務 ID 識別服務或應用程式的方式，與使用者 ID 識別使用者的方式類似。您建立的服務 ID 可以用來在 {{site.data.keyword.Bluemix_notm}} 外部啟用應用程式，以存取您的 {{site.data.keyword.Bluemix_notm}} 服務。您可以將特定存取原則指派給服務 ID，而服務 ID 限制用於使用特定服務的許可權，或甚至結合用於存取不同服務的許可權。因為服務 ID 未關聯至特定使用者，所以如果使用者離開組織，並已從帳戶中予以刪除，則服務 ID 仍可確保您的應用程式或服務保持啟動並執行。{:shortdesc}
 
 當您建立服務 ID 時，會建立唯一名稱及說明，方便您在使用者介面中識別及使用服務。在您建立服務 ID 之後，即可建立每一個服務 ID 特有的 API 金鑰，而應用程式可以使用這些金鑰向 {{site.data.keyword.Bluemix_notm}} 服務進行鑑別。若要確定應用程式具有向 {{site.data.keyword.Bluemix_notm}} 服務進行鑑別的適當存取權，請使用指派給所建立之每一個服務 ID 的存取原則。
 
@@ -159,5 +159,5 @@ ibmcloud iam service-id-unlock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
 
 下列範例說明服務 ID 與 {{site.data.keyword.objectstorageshort}} 及 Cloud SQL Query 服務如何搭配使用。
 
-- {{site.data.keyword.objectstorageshort}} - [開始使用](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started-cli-#getting-started-cli-)。
+- {{site.data.keyword.objectstorageshort}} - [使用 {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/cloud-object-storage?topic=cloud-object-storage-cli-ic-use-the-ibm-cli#ic-hmac-credentials)。
 - Cloud SQL Query - [How to use the SQL Query REST API ![External link icon](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}。

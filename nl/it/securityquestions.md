@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: security questions, MFA, multifactor authentication, login security
 
@@ -31,7 +31,7 @@ Se disponi di uno dei seguenti accessi, puoi aggiornare questa impostazione per 
 * Sei un predecessore nella gerarchia dell'infrastruttura classica per l'utente e ti è stata assegnata l'autorizzazione di gestione utenti dell'infrastruttura classica
 
 
-Per attivare questa opzione MFA per un utente, l'utente deve prima [configurare le domande di sicurezza](/docs/account?topic=account-security-questions#security-questions) dalla pagina Impostazioni di accesso del profilo.
+Per attivare questa opzione MFA per un utente, l'utente deve prima [configurare le domande di sicurezza](/docs/account?topic=account-login-settings#security-questions) dalla pagina Impostazioni di accesso del profilo.
 {: note}
 
 1. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Accesso (IAM)** e seleziona **Utenti**.

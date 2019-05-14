@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-05-01"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access
 
@@ -94,7 +94,7 @@ ibmcloud iam user-policy-update USER_NAME POLICY_ID [-v, --version VERSION] {-f,
 3. 從**存取原則**標籤中，選取您要移除之原則列上的**動作** ![「動作清單」圖示](../icons/action-menu-icon.svg) 功能表，然後按一下**移除**。  
 4. 檢閱您即將移除的使用者原則詳細資料，然後按一下**移除**進行確認。
 
-若要使用 CLI 來移除使用者原則，您可以使用 [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_delete#ibmcloud_iam_user_policy_delete) 指令。
+若要使用 CLI 來移除使用者原則，您可以使用 [ibmcloud iam user-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_user_policy_delete) 指令。
 ```
 ibmcloud iam user-policy-delete USER_ID POLICY_ID [-f, --force]
 ```

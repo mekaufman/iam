@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: MFA, multifactor authentication, time-based one-time passcode, TOTP
 
@@ -32,7 +32,7 @@ subcollection: iam
 
 若要開啟提示使用者輸入 TOTP MFA 的登入設定，請完成下列步驟。
 
-若要開啟使用者的這個 MFA 選項，他或她必須先從設定檔「登入設定」頁面[設定 TOTP](/docs/account?topic=account-MFA#MFA)。
+若要開啟使用者的這個 MFA 選項，他或她必須先從設定檔「登入設定」頁面[設定 TOTP](/docs/account?topic=account-login-settings#MFA)。
 {: note}
 
 1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**使用者**。

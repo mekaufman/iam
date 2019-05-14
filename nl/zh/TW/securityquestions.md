@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: security questions, MFA, multifactor authentication, login security
 
@@ -31,7 +31,7 @@ subcollection: iam
 * 您是使用者之標準基礎架構階層中的上代，而且您已獲指派「管理使用者」標準基礎架構許可權。
 
 
-若要開啟使用者的這個 MFA 選項，他或她必須先從設定檔「登入設定」頁面[設定安全問題](/docs/account?topic=account-security-questions#security-questions)及回答。
+若要開啟使用者的這個 MFA 選項，他或她必須先從設定檔「登入設定」頁面[設定安全問題](/docs/account?topic=account-login-settings#security-questions)及回答。
 {: note}
 
 1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**使用者**。

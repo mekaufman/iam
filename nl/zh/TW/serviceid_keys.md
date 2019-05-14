@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -22,9 +22,9 @@ subcollection: iam
 # 管理服務 ID API 金鑰
 {: #serviceidapikeys}
 
-建立服務 ID，以啟用在 {{site.data.keyword.Bluemix_notm}} 內外部管理的應用程式對您 {{site.data.keyword.Bluemix_notm}} 服務的存取。應用程式會使用 API 金鑰來鑑別為特定服務 ID，並獲指派與該服務 ID 相關聯的存取權。
+建立服務 ID，以啟用在 {{site.data.keyword.Bluemix_notm}} 內外部管理的應用程式對您 {{site.data.keyword.Bluemix_notm}} 服務的存取。應用程式會使用 API 金鑰來鑑別為特定服務 ID，並獲指派與該服務 ID 相關聯的存取權。{:shortdesc}
 
-在您建立服務 ID 之後，即可開始建立 API 金鑰，以及指派服務原則。每一個原則都會指定在使用 API 金鑰向服務進行鑑別時所容許的存取層次。如需建立服務 ID 以及指派原則的相關資訊，請參閱[建立及使用服務 ID](/docs/iam?topic=iam-serviceids#serviceids)。如需用來管理服務 ID API 金鑰之 CLI 指令的詳細資料，請參閱[管理 IAM 存取權、API 金鑰、服務 ID 及存取群組](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_commands_iam)。
+在您建立服務 ID 之後，即可開始建立 API 金鑰，以及指派服務原則。每一個原則都會指定在使用 API 金鑰向服務進行鑑別時所容許的存取層次。如需建立服務 ID 以及指派原則的相關資訊，請參閱[建立及使用服務 ID](/docs/iam?topic=iam-serviceids#serviceids)。如需用來管理服務 ID API 金鑰之 CLI 指令的詳細資料，請參閱[管理 IAM 存取權、API 金鑰、服務 ID 及存取群組](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam)。
 
 每一個與服務 ID 相關聯的 API 金鑰都會繼承已指派給服務 ID 的原則。例如，如果您要某個應用程式只能檢視服務內的資源，則需要使用與服務 ID 相關聯的 API 金鑰，而此 API 金鑰具有以「檢視者」角色指派的原則。而且，如果您要另一個應用程式能夠具有服務內的完整存取權，則需要使用與第二個服務 ID 相關聯的 API 金鑰，而此 API 金鑰具有以「管理者」角色指派的原則。
 
@@ -47,7 +47,7 @@ subcollection: iam
 基於安全理由，只可在建立時複製或下載 API 金鑰。如果 API 金鑰遺失，您必須建立新的 API 金鑰。
 {: note}
 
-若要使用 CLI 建立服務 ID 的 API 金鑰，您可以使用 [ibmcloud iam service-api-key-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_create) 指令。
+若要使用 CLI 建立服務 ID 的 API 金鑰，您可以使用 [ibmcloud iam service-api-key-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create) 指令。
 ```
 ibmcloud iam service-api-key-create NAME SERVICE_ID [-d, --description DESCRIPTION] [--file FILE] [-f, --force]
 ```
@@ -63,7 +63,7 @@ ibmcloud iam service-api-key-create NAME SERVICE_ID [-d, --description DESCRIPTI
 3. 按一下 **API 金鑰**。
 4. 從**動作** ![「動作清單」圖示](../icons/action-menu-icon.svg) 功能表中，按一下**編輯名稱及說明**。
 
-若要使用 CLI 更新服務 ID 的 API 金鑰，您可以使用 [ibmcloud iam service-api-key-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_update) 指令。
+若要使用 CLI 更新服務 ID 的 API 金鑰，您可以使用 [ibmcloud iam service-api-key-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_update) 指令。
 ```
 ibmcloud iam service-api-key-update NAME SERVICE_ID  [-n, --name NEW_sNAME] [-d, --description DESCRIPTION] [-v, --version VERSION] [-f, --force]
 ```
@@ -134,7 +134,7 @@ ibmcloud iam service-api-key-unlock (APIKEY_NAME|APIKEY_UUID) (SERVICE_ID_NAME|S
 4. 按一下 **API 金鑰**。
 5. 從**動作** ![「動作清單」圖示](../icons/action-menu-icon.svg) 功能表中，按一下**刪除**。
 
-若要使用 CLI 刪除服務 ID 的 API 金鑰，您可以使用 [ibmcloud iam service-api-key-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_service_api_key_delete) 指令。
+若要使用 CLI 刪除服務 ID 的 API 金鑰，您可以使用 [ibmcloud iam service-api-key-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_delete) 指令。
 ```
 ibmcloud iam service-api-key-delete NAME SERVICE_ID [-f, --force]
 ```

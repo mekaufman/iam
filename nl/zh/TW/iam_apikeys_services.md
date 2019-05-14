@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -48,7 +48,7 @@ API 用戶端可以將 {{site.data.keyword.Bluemix_notm}} API 金鑰直接傳遞
 
 若要使用 API 金鑰向服務的 API 進行鑑別，請完成下列步驟：
 
-  1. 首先，如果您尚未[建立 {{site.data.keyword.Bluemix_notm}} API 金鑰](/docs/iam?topic=iam-userapikey#creating-an-api-key)，請建立一個 API 金鑰。
+  1. 首先，如果您尚未[建立 {{site.data.keyword.Bluemix_notm}} API 金鑰](/docs/iam?topic=iam-userapikey#create_user_key)，請建立一個 API 金鑰。
   2. 將 [RFC 7617](https://tools.ietf.org/html/rfc7617){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 中定義的 {{site.data.keyword.Bluemix_notm}} API 金鑰傳送為 HTTP 標頭 "Authorization"。使用 `apikey` 作為使用者名稱，並使用 API 金鑰值作為密碼。
 
 例如，下列步驟假設 API 金鑰為 0a1A2b3B4c5C6d7D8e9E：
@@ -73,7 +73,7 @@ API 用戶端可以將 {{site.data.keyword.Bluemix_notm}} API 金鑰直接傳遞
 
 若要使用存取記號向服務的 API 進行鑑別，請完成下列步驟：
 
-  1. 首先，如果您尚未[建立 {{site.data.keyword.Bluemix_notm}} API 金鑰](/docs/iam?topic=iam-userapikey#creating-an-api-key)，請建立一個 API 金鑰。
+  1. 首先，如果您尚未[建立 {{site.data.keyword.Bluemix_notm}} API 金鑰](/docs/iam?topic=iam-userapikey#create_user_key)，請建立一個 API 金鑰。
   2. API 用戶端的下一步是擷取 IAM 存取記號，如[從 API 金鑰取得 IAM 記號](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey)中所述。
   3. 從回應中，擷取 `access_token` 內容以取得 IAM 存取記號。`expires_in` 指出 IAM 存取記號 `access_token` 到期之前的秒數。請根據 [UNIX 時間](https://en.wikipedia.org/wiki/Unix_time){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 來使用此相對值或絕對時間戳記 `expiration`。
   4. 傳送 IAM 存取記號，如 [RFC 6750 第 2.1 節，授權要求標頭欄位](https://tools.ietf.org/html/rfc6750#page-5){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示") 中所述：

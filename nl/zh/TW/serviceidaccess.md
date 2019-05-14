@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-05-01"
 
 keywords: service ID, service ID access, managing access for service IDs
 
@@ -84,7 +84,7 @@ subcollection: iam
 4. 識別您要編輯的原則列，然後從**動作** ![「動作清單」圖示](../icons/action-menu-icon.svg) 功能表中選取**編輯原則**。
 5. 進行變更，然後儲存原則。
 
-若要使用 CLI 更新服務原則，您可以使用 [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_update#ibmcloud_iam_service_policy_update) 指令。
+若要使用 CLI 更新服務原則，您可以使用 [ibmcloud iam service-policy-update](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_update) 指令。
 ```
 ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] {--file JSON_FILE | [-r, --roles ROLE_NAME1,ROLE_NAME2...] [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]} [-f, --force]",
 ```
@@ -104,7 +104,7 @@ ibmcloud iam service-policy-update SERVICE_ID POLICY_ID [-v, --version VERSION] 
 4. 識別您要刪除的原則列，然後從**動作** ![「動作清單」圖示](../icons/action-menu-icon.svg) 功能表中選取**移除**。
 5. 檢閱您即將移除之原則的詳細資料，然後按一下**移除**進行確認。
 
-若要使用 CLI 刪除服務原則，您可以使用 [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_user_policy_update#ibmcloud_iam_service_policy_delete) 指令。
+若要使用 CLI 刪除服務原則，您可以使用 [ibmcloud iam service-policy-delete](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_service_policy_delete) 指令。
 ```
 ibmcloud iam service-policy-delete SERVICE_ID POLICY_ID [-f, --force]
 ```

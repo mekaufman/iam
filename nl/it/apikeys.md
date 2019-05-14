@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-03-05"
+lastupdated: "2019-04-30"
 
 keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
 
@@ -23,7 +23,7 @@ subcollection: iam
 Una chiave API (application programming interface) è un codice univoco che viene passato a un'API per identificare l'applicazione o l'utente chiamante. Le chiavi API vengono utilizzate per tracciare e controllare la modalità di utilizzo della API, ad esempio per prevenire l'uso dannoso o l'abuso della API. La chiave API spesso funge sia da identificativo univoco che da token segreto per l'autenticazione e generalmente ha una serie di accesso specifico per l'identità a cui è associata.
 {:shortdesc}
 
-Per visualizzare le tue chiavi API, vai a **Gestisci** > **Accesso (IAM)** > **Chiavi API IBM Cloud**.
+Per visualizzare le tue chiavi API, vai a **Gestisci** > **Accesso (IAM)** > **Chiavi API IBM Cloud**. 
 
 ## {{site.data.keyword.cloud_notm}} Chiavi API
 {: #ibm-cloud-api-keys}
@@ -40,7 +40,7 @@ Oltre alle tue chiavi API {{site.data.keyword.cloud_notm}}, sono disponibili un 
 * Chiavi API dell'infrastruttura classica
 * Chiavi API specifiche del servizio
 
-Le chiavi API dell'infrastruttura classica vengono utilizzate per chiamare le API relative ai servizi dell'infrastruttura classica. Puoi creare una sola chiave API dell'infrastruttura classica alla volta. Per creare una chiave API dell'infrastruttura classica per un utente, utilizza la pagina Dettagli utente.
+Le chiavi API dell'infrastruttura classica vengono utilizzate per chiamare le API relative ai servizi dell'infrastruttura classica. Puoi creare una sola chiave API dell'infrastruttura classica alla volta. Puoi creare una chiave API dell'infrastruttura classica dalla pagina Dettagli utente.
 
 Le chiavi API {{site.data.keyword.cloud_notm}} possono essere utilizzate anche per accedere alle API dell'infrastruttura classica.
 {: tip}
