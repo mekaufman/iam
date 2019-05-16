@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-05-01"
+lastupdated: "2019-05-16"
 
 keywords: event tracking, IAM events, monitoring
 
@@ -17,12 +17,17 @@ subcollection: iam
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:tip: .tip}
+{:note: .note}
+{:deprecated: .deprecated}
 
 # IAM events tracking
 {: #tracking}
 
-As a security officer, auditor, or manager, you can use the {{site.data.keyword.cloudaccesstrailfull}} service to track how users and applications interact with {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM).
+As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full}} service to track how users and applications interact with {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM).
 {:shortdesc}
+
+As of 9 May 2019 the {{site.data.keyword.cloudaccesstraillong}} service is deprecated. You must create an instance of the {{site.data.keyword.at_short}} in your account to continue tracking IAM events. For more information, see [Deprecation of the IBM Cloud Activity Tracker service](https://www.ibm.com/blogs/bluemix/2019/04/deprecating-ibm-cloud-activity-tracker/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+{: deprecated}
 
 You can track the following events:
 
@@ -32,4 +37,4 @@ You can track the following events:
 * Creating, updating, or deleting access policies
 * Logging in to {{site.data.keyword.Bluemix_notm}} by using an API key, authorization code, passcode, password, or an API key associated with a service ID
 
-To get started monitoring your user's actions, see [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started). For more information about each of the event areas that you can track, see [IAM events](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_events_iam).
+To get started monitoring your user's actions, see [{{site.data.keyword.at_short}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started). For more information about each of the event areas that you can track, see [IAM events](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-at_events_iam).
