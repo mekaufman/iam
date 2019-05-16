@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-16"
 
 keywords: get started with IAM, IAM tutorial, IAM quick start
 
@@ -27,6 +27,15 @@ This tutorial is intended to help you get up and running quickly with IBM Cloud 
 
 This tutorial is for IAM-enabled resources. For services that don't support creating Cloud IAM policies for managing access, you can use [Cloud Foundry access](/docs/iam?topic=iam-cfaccess#cfaccess) or [classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission).
 {: note}
+
+## Before you begin
+{: #iam-before-you-begin}
+
+If you are new to using IAM, check out the following documentation to understand more about the features, concepts, and components of the access management system:
+
+* [IBM Cloud Identity and Access Management](/docs/iam?topic=iam-iamoverview) provides a quick overview of what IAM is in {{site.data.keyword.Bluemix_notm}}, the available features, and links to available CLI and API docs.
+* [IAM concepts](/docs/iam?topic=iam-iamconcepts) outlines the high-level concepts in IAM that can help you understand the different components as you get started.
+* [IAM access](/docs/iam?topic=iam-userroles) gives a more in-depth review of how access management works by using access policies.
 
 
 ## Step 1. Invite users and assign initial access
