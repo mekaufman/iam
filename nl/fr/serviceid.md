@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-02-21"
+lastupdated: "2019-05-10"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -160,5 +160,5 @@ ibmcloud iam service-id-unlock ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac976
 
 Vous trouverez ci-après des exemples d'utilisation d'un ID de service avec les services {{site.data.keyword.objectstorageshort}} et Cloud SQL Query.
 
-- {{site.data.keyword.objectstorageshort}} - [Utilisation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-cli-ic-use-the-ibm-cli#ic-hmac-credentials).
+- {{site.data.keyword.objectstorageshort}} - [Utilisation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-ic-use-the-ibm-cli#ic-hmac-credentials).
 - Cloud SQL Query - [Utilisation de l'API REST SQL Query ![Icône de lien externe](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}.

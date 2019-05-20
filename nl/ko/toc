@@ -44,13 +44,14 @@ ID 및 액세스 관리
         account_management.md
         mngcf.md
         mnginfra.md
+        migrated_permissions.md
         groups.md
         public_access.md
         accessgroup_rules.md
         userlist.md
 
     {: .topicgroup}
-    다중 인증
+    다단계 인증
         mfatypes.md
         mfa.md
         totp.md

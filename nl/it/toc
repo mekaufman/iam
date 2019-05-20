@@ -31,7 +31,7 @@ Gestione di identità e accesso
         remove-users.md
 
     {: .topicgroup}
-    Amministrazione degli utenti
+    Gestione degli utenti
         parentuser.md
         update_status.md
         specific_ip.md
@@ -44,6 +44,7 @@ Gestione di identità e accesso
         account_management.md
         mngcf.md
         mnginfra.md
+        migrated_permissions.md
         groups.md
         public_access.md
         accessgroup_rules.md
