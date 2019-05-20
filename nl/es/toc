@@ -39,11 +39,12 @@ Gestión de acceso e identidades
         user_login.md
 
     {: .topicgroup}
-    Gestión del acceso
+    Gestión de acceso
         mngiam.md
         account_management.md
         mngcf.md
         mnginfra.md
+        migrated_permissions.md
         groups.md
         public_access.md
         accessgroup_rules.md
