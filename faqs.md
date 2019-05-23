@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-08"
+lastupdated: "2019-05-23"
 
 keywords: frequently asked question, faq
 
@@ -173,6 +173,12 @@ To delegate the account administrator capabilities, assign the following access:
 2. Select a user's name.
 3. Click **Classic infrastructure**.
 4. Assign permissions from the **Permissions** section, assign access to devices from the **Devices** section, and assign access to VPN subnets for the devices that the user is assigned access from the **VPN access** section.
+
+## How do I manage access for users previously assigned billing and support permissions in my SoftLayer account?
+{: #migrated-permissions-faq}
+{: faq}
+
+All permissions that were previously assigned in your SoftLayer account can be managed in the {{site.data.keyword.Bluemix_notm}} console. Account permissions for managing billing information and support cases are now available in [migrated permissions access groups](/docs/iam?topic=iam-migrated_permissions). All users who were previously assigned these permissions in your SoftLayer account were migrated to these access groups, which are assigned the same level of access by using an IAM policy on the access group.
 
 ## Can every user in my account see all the other users?
 {: #users}
