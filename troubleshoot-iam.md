@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-01"
+lastupdated: "2019-05-23"
 
 ---
 
@@ -75,3 +75,19 @@ You might not be assigned the correct access.
 
 You must ask the account owner to be assigned the **Manage users** classic infrastructure permission, but you must also be an ancestor of the user within the classic infrastructure user hierarchy to view and manage another user's permissions.
 {: tsResolve}
+
+## How can I manage migrated billing and support case permissions in IBM Cloud?
+{: #troubleshoot-migrated-permissions}
+{: troubleshoot}
+
+With the initial migration of users and permissions for managing billing and support cases from your SoftLayer account to your linked {{site.data.keyword.Bluemix_notm}} account, some users might have been missing these permissions. However, all migrated permission access groups are now assigned the correct IAM access policies, ensuring that all users are assigned the correct access that they had previously.
+
+Users don't seem to have the same managing billing and support case permissions in the {{site.data.keyword.Bluemix_notm}} console that they were previously assigned in your SoftLayer account.
+{: tsSymptoms}
+   
+Your migrated permissions access groups might not have been assigned the correct access policies when the users were initially migrated.
+{: tsCauses}
+
+As of 20 May 2019, all [migrated permission access groups](/docs/iam?topic=iam-migrated_permissions) have the correct policies assigned for managing billing information and support cases. If you tried to use these groups before this date, the access groups missing equivalent IAM access policies might have caused a mismatch in the assigned access between the SoftLayer permissions and IAM access. This has been resolved. You can go to **Manage** > **Access (IAM)**, and then select **Access groups** to review the users and policies that are assigned to each access group.
+{: tsResolve}
+
