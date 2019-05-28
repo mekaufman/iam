@@ -99,7 +99,7 @@ You can assign access to a single resource within your account down to the insta
     * **Resource ID**: Enter the name of your bucket.
 7. Select any combination of roles to assign the wanted access.
 
-For more information about the roles that are used when you assign access, see [IAM access](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
+For more information about the roles that are used when you assign access, see [IAM access](/docs/iam?topic=iam-userroles#iamusermanrol).
 
 ### Cloud Foundry access
 {: #invite_cf}
