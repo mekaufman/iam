@@ -63,7 +63,7 @@ To cancel an order for external authentication, you must be an account owner or 
 
 * Manage users classic infrastructure permission
 * Cancel services classic infrastructure permission
-* Administrator for the Support Center account management service or the view, edit, and add ticket migrated classic infrastructure permissions that are not available within the [migrated permission access groups](/docs/iam?topic=iam-predefined#predefined).
+* Administrator for the Support Center account management service or the view, edit, and add ticket migrated classic infrastructure permissions that are not available within the [migrated permission access groups](/docs/iam?topic=iam-migrated_permissions).
 
 To cancel the external authentication order, complete the following steps:
 
