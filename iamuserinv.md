@@ -44,7 +44,7 @@ To invite users or manage user invitations in your account, complete the followi
 
 If you determine that a user does not need access, you can cancel an invitation for any users that are shown in a **Processing** or **Pending** state in the **Status** column. If an invited user did not receive an invitation, you can resend the invitation to any user in a **Pending** state.
 
-If you want to invite users by using the command-line interface (CLI), see the [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite) command.
+If you want to invite users by using the command-line interface (CLI), see the [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) command.
 {: tip}
 
 ## Assigning user access from an invitation
@@ -117,7 +117,7 @@ When you invite new users, you can choose to add the user to an organization in 
 
 For more information about the roles that are used when you assign access, see [Cloud Foundry roles](/docs/iam?topic=iam-cfaccess#cfroles).
 
-You can add a Cloud Foundry role by using the [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite) CLI command, but the console must be used to assign other access or permissions.
+You can add a Cloud Foundry role by using the [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) CLI command, but the console must be used to assign other access or permissions.
 {: tip}
 
 ### Classic infrastructure access
