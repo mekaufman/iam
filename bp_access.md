@@ -57,7 +57,7 @@ After you create an access group, you can add users and service IDs to the group
 
 A policy consists of a subject, target, and role. The subject in this case is the access group. The target is what you want the subject to access, such as a set of resources, a service instance, all services in the account, or all instances of a service. The role defines the level of access that is granted to a user.
 
-The most commonly used roles are viewer, editor, and administrator. The viewer role provides the least amount of access for viewing instances and resource groups in an account. The editor role has more access for creating, editing, deleting, and binding service instances. The administrator role includes everything for working with a service instance and can assign access to others. However, there are two different categories of roles that you should consider: platform and service. For more information about the roles that can be assigned, see the [IAM Cloud roles](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
+The most commonly used roles are viewer, editor, and administrator. The viewer role provides the least amount of access for viewing instances and resource groups in an account. The editor role has more access for creating, editing, deleting, and binding service instances. The administrator role includes everything for working with a service instance and can assign access to others. However, there are two different categories of roles that you should consider: platform and service. For more information about the roles that can be assigned, see the [IAM Cloud roles](/docs/iam?topic=iam-userroles#iamusermanrol).
 
 ## Assigning access to access groups
 {: #assigning-access}
