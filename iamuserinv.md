@@ -115,7 +115,7 @@ When you invite new users, you can choose to add the user to an organization in 
 7. Select a space role to define the level of access for the selected spaces.
 8. Optional: Select **Add space role** to specify an extra role.
 
-For more information about the roles that are used when you assign access, see [Cloud Foundry roles](/docs/iam?topic=iam-cfroles#cfroles).
+For more information about the roles that are used when you assign access, see [Cloud Foundry roles](/docs/iam?topic=iam-cfaccess#cfroles).
 
 You can add a Cloud Foundry role by using the [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite) CLI command, but the console must be used to assign other access or permissions.
 {: tip}
