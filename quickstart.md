@@ -110,7 +110,7 @@ To assign a new access policy, complete the following steps:
     * Select **Assign access within a resource group** to assign access to all resources within a group or to just resources for a specific service within a group. You can also provide the user with access to view, edit, or manage access to the resource group by selecting a role for access to the resource group. Select **No access** if you want the user to have only access to the specified resource and not the group that it's organized in.
     * Select **Assign access to resources** to assign access to all Identity and Access enabled resources across the account, all resources of a specific service across the account, a single instance, or a single resource within a specific service instance.
     * Select **Assign access to Account management services** to assign access to all account management services or just one account management service.
-5. Select any combination of roles to define the scope of access. For more information, see [Cloud IAM roles](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
+5. Select any combination of roles to define the scope of access. For more information, see [Cloud IAM roles](/docs/iam?topic=iam-userroles#iamusermanrol).
 6. Click **Assign**.
 
 
