@@ -52,7 +52,7 @@ Any changes that you make to an existing service ID, such as changing the assign
 ## Locking a service ID
 {: #lock_serviceid}
 
-To avoid a situation where your service ID is deleted causing an outage or disruption for the users of your service, you have the option to lock your service ID using the UI or CLI. Locking a service ID also prevents any policies from being changed, deleted, or assigned. In addition to the ability to lock a service ID, you can [lock individual API keys](/docs/iam?topic=iam-lockkey#lockkey) that are associated with each service ID that you create in your account.
+To avoid a situation where your service ID is deleted causing an outage or disruption for the users of your service, you have the option to lock your service ID using the UI or CLI. Locking a service ID also prevents any policies from being changed, deleted, or assigned. In addition to the ability to lock a service ID, you can [lock individual API keys](/docs/iam?topic=iam-serviceidapikeys#lockkey) that are associated with each service ID that you create in your account.
 
 While locked service IDs cannot be deleted from the account and the access policies can't be updated, locked service IDs can still be removed from any access group that they are added to. This means that any access that is assigned to the ID by its membership in an access group is removed when the service ID is removed from the access group.
 {: note}
