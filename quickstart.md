@@ -131,4 +131,4 @@ You can remove access from a user by clicking the **Remove** option from the **A
 ## Next steps
 {: #next}
 
-Learn what else you can do with Cloud IAM by checking out the [Cloud IAM features](/docs/iam?topic=iam-features#features) list.
+Learn what else you can do with Cloud IAM by checking out the [Cloud IAM features](/docs/iam?topic=iam-iamoverview#features) list.
