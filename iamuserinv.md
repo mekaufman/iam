@@ -40,7 +40,7 @@ To invite users or manage user invitations in your account, complete the followi
   * **Cloud Foundry access**
   * **Classic infrastructure access**.
 
-  For more information, see [Assigning user access](/docs/iam?topic=iam-assignaccess#assignaccess).
+  For more information, see [Assigning user access](/docs/iam?topic=iam-iamuserinv#assignaccess).
 
 If you determine that a user does not need access, you can cancel an invitation for any users that are shown in a **Processing** or **Pending** state in the **Status** column. If an invited user did not receive an invitation, you can resend the invitation to any user in a **Pending** state.
 
