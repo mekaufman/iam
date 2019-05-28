@@ -27,7 +27,7 @@ An access group can be created to organize a set of users and service IDs into a
 
 To manage or create new access groups, you must be the account owner, administrator or editor on the IAM Access Groups service in the account, or the assigned administrator or editor for the all Account Management Services. Additionally, an administrator or editor can be assigned access to manage an individual group by creating an access policy where the resource is the Access Group ID. For more information about access policies and roles for the IAM Access Groups service, see [IAM access](/docs/iam?topic=iam-userroles#userroles).
 
-To make assigning and managing access even easier, you can set up resource groups to organize a set of resources that you want a group of users to have access to. When your resource group is set up, you can assign a policy giving access to all resources within that group instead of creating access policies for individual service instances within your account.
+To make assigning and managing access even easier, you can set up resource groups to organize a set of resources that you want a group of users to have access to. When your resource group is set up, you can assign a policy that gives access to all resources within that group instead of creating access policies for individual service instances within your account.
 {: tip}
 
 ## Creating an access group
@@ -69,6 +69,7 @@ After you set up your group with users and service IDs, you can assign a common 
 5. Choose to assign access by resources within a resource group, individual resources available within the account, or account management services.
 
 To create an access group policy by using the CLI, you can use the [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_policy_create) command.
+
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```
