@@ -22,7 +22,7 @@ subcollection: iam
 # Updating the classic infrastructure VPN password
 {: #vpnpassword}
 
-You can update your own VPN password, or in the case where a user forgets their password and can't reset it themselves, another user with correct access can update that user's VPN password.
+You can update your own VPN password, or in the case where a user forgets their password, another user with correct access can update that user's VPN password.
 {:shortdesc}
 
 If you have the following access, you can update the VPN password for another user:
