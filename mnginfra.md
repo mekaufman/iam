@@ -31,7 +31,7 @@ You must be assigned the Manage users classic infrastructure permission and an a
 
   1. Select **Permissions** to update the user's permissions. You can select from four types of permissions: account, devices, network, and services. Individually select permissions from each category, or use a permission set option to assign permissions in bulk.
 
-    The account management and support permissions that you previously assigned to users in your account are now migrated from classic infrastructure permissions to migrated IAM access groups. For more information, see [Migrated classic infrastructure permissions](/docs/iam?topic=iam-predefined#predefined).
+    The account management and support permissions that you previously assigned to users in your account are now migrated from classic infrastructure permissions to migrated IAM access groups. For more information, see [Migrated classic infrastructure permissions](/docs/iam?topic=iam-migrated_permissions).
     {: tip}
 
   2. To grant a user device access, select **Devices**, and assign the access to specific devices and device types as needed.
