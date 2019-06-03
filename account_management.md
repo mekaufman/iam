@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-06-03"
 
 keywords: account management, access, access policy, account administrator
 
@@ -100,6 +100,6 @@ For the IAM Identity Service, these actions apply to service IDs within the acco
 |:-------|----------|
 | Viewer |  All viewer role actions for the account management services     |
 | Operator |  All operator role actions for the account management services     |
-| Editor |  All editor role actions for the account management services     |
-| Administrator |  All administrator role actions for the account management services   |
+| Editor |  All editor role actions for the account management services and the ability to create resource groups    |
+| Administrator |  All administrator role actions for the account management services and the ability to create resource groups   |
 {: caption="Table 7. Roles and example actions for a policy on all identity and access services" caption-side="top"}
