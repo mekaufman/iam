@@ -39,7 +39,7 @@ Para pedir autenticação externa, conclua as etapas a seguir:
 3. Na página **Detalhes do usuário**, selecione **Pedir autenticação externa** na seção Gerenciar login do usuário.
 4. Selecione **Proteção de identidade da Symantec** ou **Proteção de identidade baseada em telefone**.
     * Para autenticação da Symantec, o usuário deve fazer download do app [Symantec VIP](https://vip.symantec.com/){: new_window} ![Ícone de link externo](../icons/launch-glyph.svg) e obter um ID de credencial para continuar com o processo de pedido.
-    * Para autenticação baseada em telefone, é possível continuar com a ordem, mas seu usuário deve [definir sua configuração](/docs/account?topic=account-third-party-MFA#setting-up-phone-based-authentication) antes de poder ativar a opção.
+    * Para autenticação baseada em telefone, é possível continuar com a ordem, mas seu usuário deve [definir sua configuração](/docs/account?topic=account-login-settings#setting-up-phone-based-authentication) antes de poder ativar a opção.
 5. Com base em sua seleção, siga os prompts para revisar o preço e os termos antes de colocar a ordem.
 6. Clique em **Ordem** para finalizar a sua seleção.
 
@@ -63,7 +63,7 @@ Para cancelar uma ordem para autenticação externa, deve-se ser um proprietári
 
 * Permissão Gerenciar a infraestrutura clássica de usuários
 * Permissão Cancelar a infraestrutura clássica de serviços
-* Administrador para o serviço de gerenciamento de conta do Centro de Suporte ou as permissões de visualização, edição e inclusão de infraestrutura clássica migrada pelo chamado que não estão disponíveis nos [grupos de acesso de permissão migrados](/docs/iam?topic=iam-predefined#predefined).
+* Administrador para o serviço de gerenciamento de conta do Centro de Suporte ou as permissões de visualização, edição e inclusão de infraestrutura clássica migrada pelo chamado que não estão disponíveis nos [grupos de acesso de permissão migrados](/docs/iam?topic=iam-migrated_permissions).
 
 Para cancelar a ordem de autenticação externa, conclua as etapas a seguir:
 

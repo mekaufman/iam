@@ -69,6 +69,7 @@ Après avoir configuré votre groupe avec des utilisateurs et des ID de service,
 5. Choisissez d'affecter l'accès par ressources dans un groupe de ressources, dans les ressources individuelles disponibles dans le compte ou dans les services de gestion de compte.
 
 Pour créer une règle de groupe d'accès en utilisant l'interface CLI, vous pouvez utiliser la commande [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_policy_create).
+
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```

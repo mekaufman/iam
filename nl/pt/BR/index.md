@@ -29,7 +29,7 @@ Uma política designa a um assunto, que é um usuário, [ID de
 serviço](/docs/iam?topic=iam-serviceids#serviceids) ou grupo de acesso, uma ou mais funções com uma combinação de atributos que definem o escopo do acesso
 a um destino. A política pode fornecer acesso a um único serviço até o nível da instância, a um conjunto de recursos
 organizados juntos em um grupo de recursos ou aos serviços de gerenciamento de conta. Dependendo das
-[funções do IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol) designadas, é concedido ao assunto níveis
+[funções do IAM](/docs/iam?topic=iam-userroles#iamusermanrol) designadas, é concedido ao assunto níveis
 variados de acesso para concluir as tarefas de gerenciamento de conta, trabalhar com as instâncias de
 serviço ou acessar um serviço usando a UI ou concluindo as chamadas API.
 

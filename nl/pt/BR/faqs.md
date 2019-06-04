@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-08"
+lastupdated: "2019-05-23"
 
 keywords: frequently asked question, faq
 
@@ -51,7 +51,7 @@ O {{site.data.keyword.containerlong_notm}} é a única exceção; ele é control
 
 Uma política de acesso do IAM é o modo como os usuários, os IDs de serviços e os grupos de acesso em uma conta recebem permissão para trabalhar com uma instância de recurso ou com um serviço específico ativado pelo IAM, gerenciam um grupo de recursos ou concluem tarefas de gerenciamento de conta. Cada política de acesso do IAM é composta por um sujeito, um destino e uma função. Um sujeito é quem tem o acesso. O destino é ao que o sujeito pode ter acesso. A função, se ela for uma função de plataforma ou de serviço, dependendo do contexto do destino selecionado, definirá qual nível de acesso o sujeito tem no destino. 
 
-Um sujeito é um usuário, um ID de serviço ou um grupo de acesso. Um destino pode ser um serviço na conta, um grupo de recursos na conta, um tipo ou uma instância de recurso específico ou um serviço de gerenciamento de conta. As funções fornecidas como opções dependem do destino selecionado. Alguns serviços têm funções específicas de serviço definidas e alguns usam somente as funções de plataforma. Pare entender esse conceito visualmente, veja o gráfico a seguir com um esboço das opções para a criação de uma política do IAM:
+Um sujeito é um usuário, um ID de serviço ou um grupo de acesso. Um destino pode ser um serviço na conta, um grupo de recursos na conta, um tipo ou uma instância de recurso específico ou um serviço de gerenciamento de conta. As funções fornecidas como opções dependem do destino selecionado. Alguns serviços têm funções específicas de serviço definidas e alguns usam somente as funções de plataforma. Para entender esse conceito visualmente, veja o gráfico a seguir com um esboço das opções para a criação de uma política do IAM:
 
 ![Criando políticas do IAM](images/IAM.svg "Como as políticas de acesso do IAM são criadas usando um sujeito, um destino e uma função")
 
@@ -216,6 +216,14 @@ Para delegar os recursos do administrador de conta, designe o acesso a seguir:
 2. Selecione o nome de um usuário.
 3. Clique em **Infraestrutura clássica**.
 4. Designe permissões na seção **Permissões**, designe acesso a dispositivos na seção **Dispositivos** e designe acesso a sub-redes VPN para os dispositivos aos quais o usuário tem acesso designado na seção **Acesso à VPN **.
+
+## Como gerenciar o acesso de usuários designados previamente com permissões de faturamento e suporte em minha conta do SoftLayer?
+{: #migrated-permissions-faq}
+{: faq}
+
+Todas as permissões que foram designadas previamente em sua conta do SoftLayer podem ser gerenciadas no console do {{site.data.keyword.Bluemix_notm}}. Permissões de conta para
+gerenciar informações de faturamento e casos de suporte estão agora disponíveis em [grupos de acesso de permissões migrados](/docs/iam?topic=iam-migrated_permissions). Todos os usuários que foram designados previamente com essas permissões em suas contas do SoftLayer foram migrados para esses grupos de acesso, que são designados com o mesmo nível de acesso usando uma política
+do IAM no grupo de acesso.
 
 ## Todos os usuários em minha conta podem ver todos os outros usuários?
 {: #users}

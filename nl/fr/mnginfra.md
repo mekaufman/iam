@@ -31,7 +31,7 @@ Le droit de gestion de l'infrastructure classique des utilisateurs ainsi qu'un a
 
   1. Sélectionnez **Droits** pour mettre à jour les droits de l'utilisateur. Vous pouvez effectuer une sélection parmi quatre types de droits : compte, périphériques, réseau et services. Sélectionnez individuellement des droits dans chaque catégorie ou utilisez une option d'ensemble de droits pour affecter des droits en bloc.
 
-    Les droits de support et de gestion de compte précédemment affectés aux utilisateurs de votre compte sont désormais migrés des droits d'infrastructure classique vers des groupes d'accès IAM migrés. Pour plus d'informations, voir [Droits d'infrastructure classique migrés](/docs/iam?topic=iam-predefined#predefined).
+    Les droits de support et de gestion de compte précédemment affectés aux utilisateurs de votre compte sont désormais migrés des droits d'infrastructure classique vers des groupes d'accès IAM migrés. Pour plus d'informations, voir [Droits d'infrastructure classique migrés](/docs/iam?topic=iam-migrated_permissions).
     {: tip}
 
   2. Pour octroyer un accès au périphérique utilisateur, sélectionnez **Périphériques** et affectez l'accès aux périphériques et aux types de périphérique, selon les besoins.

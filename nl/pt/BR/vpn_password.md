@@ -22,7 +22,8 @@ subcollection: iam
 # Atualizando a senha de VPN da infraestrutura clássica
 {: #vpnpassword}
 
-É possível atualizar sua própria senha de VPN ou, no caso em que um usuário esquece sua senha e não consegue reconfigurá-la, outro usuário com acesso correto pode atualizar a senha de VPN desse usuário.
+É possível atualizar sua própria senha de VPN ou, no caso em que um usuário tenha esquecido
+sua senha, outro usuário com acesso correto pode atualizar a senha de VPN desse usuário.
 {:shortdesc}
 
 Se você tiver o acesso a seguir, será possível atualizar a senha de VPN para outro usuário:

@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-08"
+lastupdated: "2019-05-23"
 
 keywords: frequently asked question, faq
 
@@ -132,7 +132,7 @@ Le propriétaire du compte peut retirer des utilisateurs du compte, et tout util
 {: faq}
 
 1. Accédez à **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Paramètres**.
-2. Dans la section Connexion au compte, sélectionnez **Mettre à jour** afin de sélectionner l'authentification multi-facteur pour tous les utilisateurs ou uniquement pour les utilisateurs non fédérés. 
+2. Dans la section Connexion au compte, sélectionnez **Mettre à jour** afin de sélectionner l'authentification multi-facteur pour tous les utilisateurs ou uniquement pour les utilisateurs non fédérés.
 
 Pour plus d'informations, voir [Exigence de l'authentification multi-facteur pour les utilisateurs de votre compte](/docs/iam?topic=iam-enablemfa#enablemfa).
 
@@ -173,6 +173,12 @@ Pour déléguer les fonctions d'administrateur de compte, affectez l'accès suiv
 2. Sélectionnez un nom d'utilisateur.
 3. Cliquez sur **Infrastructure classique**.
 4. Affectez des droits à partir de la section **Droits**, affectez des droits d'accès aux périphériques à partir de la section **Périphériques** puis affectez l'accès aux sous-réseaux VPN pour les périphériques auxquels l'utilisateur a accès, accès affecté à partir de la section **Accès VPN**.
+
+## Comment puis-je gérer les droits d'accès des utilisateurs auxquels des droits de facturation et de support ont déjà été affectés dans mon compte SoftLayer ?
+{: #migrated-permissions-faq}
+{: faq}
+
+Tous les droits d'accès qui ont été affectés dans votre compte Softlayer peuvent être gérés dans la console {{site.data.keyword.Bluemix_notm}}. Les droits d'accès au compte pour la gestion des informations de facturation et des cas de support sont désormais disponibles dans les [groupes d'accès des droits migrés](/docs/iam?topic=iam-migrated_permissions). Tous les utilisateurs auxquels ces droits d'accès ont déjà été affectés dans votre compte SoftLayer ont été migrés vers ces groupes d'accès, avec le même niveau de droit d'accès à l'aide d'une règle IAM sur le groupe d'accès. 
 
 ## Tous les utilisateurs de mon compte peuvent-ils voir tous les autres utilisateurs ?
 {: #users}

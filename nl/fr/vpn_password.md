@@ -22,7 +22,7 @@ subcollection: iam
 # Mise à jour du mot de passe de réseau VPN de l'infrastructure classique
 {: #vpnpassword}
 
-Vous pouvez mettre à jour votre propre mot de passe VPN. De plus, lorsqu'un utilisateur oublie son mot de passe et ne peut pas le redéfinir lui-même, un autre utilisateur disposant de l'accès approprié peut mettre à jour le mot de passe VPN du premier utilisateur.
+Vous pouvez mettre à jour votre propre mot de passe VPN, ou si un utilisateur oublie son mot de passe, un autre utilisateur disposant de l'accès approprié peut mettre à jour le mot de passe VPN du premier utilisateur.
 {:shortdesc}
 
 Si vous disposez de l'accès suivant, vous pouvez mettre à jour le mot de passe VPN pour un autre utilisateur :

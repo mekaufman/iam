@@ -43,11 +43,11 @@ das opções que você estiver autorizado a gerenciar:
   * **Acesso ao Cloud Foundry**
   * **Acesso de infraestrutura clássica**.
 
-  Para obter mais informações, veja [Designando acesso de usuário](/docs/iam?topic=iam-assignaccess#assignaccess).
+  Para obter mais informações, veja [Designando acesso de usuário](/docs/iam?topic=iam-iamuserinv#assignaccess).
 
 Se você determinar que um usuário não precisa de acesso, será possível cancelar um convite de quaisquer usuários que forem mostrados em um estado **Processando** ou **Pendente** na coluna **Status**. Se um usuário convidado não tiver recebido um convite, será possível reenviar o convite para qualquer usuário em um estado **Pendente**.
 
-Se você deseja convidar usuários usando a interface da linha de comandos (CLI), veja o comando [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite).
+Se você deseja convidar usuários usando a interface da linha de comandos (CLI), veja o comando [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite).
 {: tip}
 
 ## Designando acesso de usuário por meio de um convite
@@ -105,7 +105,7 @@ gerenciamento de conta específico.
     * **ID do recurso**: Insira o nome do bucket.
 7. Selecione qualquer combinação de funções para designar o acesso desejado.
 
-Para obter mais informações sobre as funções que são usadas quando você designa acesso, veja [Acesso do IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
+Para obter mais informações sobre as funções que são usadas quando você designa acesso, veja [Acesso do IAM](/docs/iam?topic=iam-userroles#iamusermanrol).
 
 ### Acesso ao Cloud Foundry
 {: #invite_cf}
@@ -121,9 +121,9 @@ Ao convidar novos usuários, é possível escolher incluir o usuário em uma org
 7. Selecione uma função de espaço para definir o nível de acesso para os espaços selecionados.
 8. Opcional: selecione **Incluir função de espaço** para especificar uma função extra.
 
-Para obter mais informações sobre as funções que são usadas quando você designa acesso, veja [Funções do Cloud Foundry](/docs/iam?topic=iam-cfroles#cfroles).
+Para obter mais informações sobre as funções que são usadas quando você designa acesso, veja [Funções do Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfroles).
 
-É possível incluir uma função do Cloud Foundry usando o comando da CLI [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite), mas o console deve ser usado para designar outro acesso ou permissões.
+É possível incluir uma função do Cloud Foundry usando o comando da CLI [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite), mas o console deve ser usado para designar outro acesso ou permissões.
 {: tip}
 
 ### Acesso à infraestrutura clássica

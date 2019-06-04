@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-01"
+lastupdated: "2019-05-23"
 
 ---
 
@@ -29,10 +29,10 @@ Les problèmes généraux en matière d'utilisation d'IAM peuvent être liés à
 
 Si vous ne disposez pas de l'accès permettant d'effectuer une tâche spécifique (création d'une instance de service et ajout de cette dernière à un groupe de ressource ou invitation à rejoindre le compte s'adressant à d'autres utilisateurs, par exemple), il peut être nécessaire de vérifier l'accès qui vous a été affecté.
 
-Je ne connais pas le niveau d'accès qui m'a été affecté pour effectuer des actions dans un compte dont je suis membre.
+Je ne connais pas le niveau d'accès qui m'a été affecté pour effectuer des actions dans un compte dont je suis membre. 
 {: tsSymptoms}
    
-Il est possible que l'accès correct ne vous ait pas été affecté.
+Il est possible que l'accès correct ne vous ait pas été affecté. 
 {: tsCauses}
 
 Pour vérifier à quelles ressources vous avez accès ainsi que pour connaître le niveau d'accès, procédez comme suit. Si vous avez besoin de demander l'accès, contactez le propriétaire du compte.
@@ -54,7 +54,7 @@ Si vous n'êtes pas le propriétaire du compte et que l'accès correct ne vous e
 Je ne peux pas inviter des utilisateurs à rejoindre le compte.
 {: tsSymptoms}
    
-Il est possible que l'accès correct ne vous ait pas été affecté.
+Il est possible que l'accès correct ne vous ait pas été affecté. 
 {: tsCauses}
 
 Pour inviter des utilisateurs et gérer les invitations en attente, vous devez être propriétaire du compte, responsable de l'organisation, être un utilisateur disposant d'une règle d'accès IAM et ayant au moins le rôle Editeur pour le service de gestion des comptes, ou vous devez disposer des droits d'infrastructure classique permettant d'ajouter des utilisateurs.
@@ -75,3 +75,19 @@ Il est possible que l'accès correct ne vous ait pas été affecté.
 
 Vous devez demander au propriétaire du compte que le droit d'infrastructure classique **Gérer les utilisateurs** vous soit affecté mais vous devez également être un ancêtre de l'utilisateur dans la hiérarchie des utilisateurs de l'infrastructure classique pour voir et gérer les droits d'un autre utilisateur.
 {: tsResolve}
+
+## Comment puis-je gérer les droits de cas de support et de facturation migrés dans IBM Cloud ?
+{: #troubleshoot-migrated-permissions}
+{: troubleshoot}
+
+Après la migration initiale d'utilisateurs et de droits pour la gestion des informations de facturation et des cas de support depuis votre compte SoftLayer vers votre compte {{site.data.keyword.Bluemix_notm}} lié, il se peut que certains utilisateurs ne disposent pas de ces droits. Toutefois, les règles d'accès IAM appropriées sont désormais affectées à tous les groupes d'accès de droits migrés et ainsi, tous les utilisateurs disposent des droits d'accès appropriés qu'ils possédaient précédemment. 
+
+Les utilisateurs ne semblent pas disposer des mêmes droits pour la gestion des informations de facturation et des cas de support dans la console {{site.data.keyword.Bluemix_notm}} que ceux dont ils disposaient précédemment dans votre compte SoftLayer.
+{: tsSymptoms}
+   
+Il se peut que les règles d'accès appropriées n'aient pas été affectées à vos groupes d'accès de droits migrés lors de la migration initiale des utilisateurs.
+{: tsCauses}
+
+A compter du 20 mai 2019, tous les [groupes d'accès de droits migrés](/docs/iam?topic=iam-migrated_permissions) se voient affecter les règles appropriées pour la gestion des informations de facturation et des cas de support. Si vous avez essayé d'utiliser ces groupes avant cette date, il se peut que les groupes d'accès sans règles d'accès IAM équivalentes aient provoqué des incohérences au niveau des droits affectés entre les droits SoftLayer et l'accès IAM. Ce problème a été résolu. Vous pouvez accéder à **Gérer** > **Accès (IAM)**, puis sélectionner **Groupes d'accès** pour passer en revue les utilisateurs et les règles qui sont affectés à chaque groupe d'accès.
+{: tsResolve}
+

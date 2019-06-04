@@ -31,8 +31,7 @@ uma política de acesso em que o recurso é o ID do grupo de acesso. Para obter 
 
 Para facilitar ainda mais a designação e o gerenciamento de acesso, é possível configurar
 grupos de recursos para organizar um conjunto de recursos ao qual você deseja que um grupo de usuários
-tenha acesso. Quando seu grupo de recursos é configurado, é possível designar uma política fornecendo acesso a
-todos os recursos dentro desse grupo em vez de criar políticas de acesso para instâncias de serviço
+tenha acesso. Quando seu grupo de recursos é configurado, é possível designar uma política fornecendo acesso a todos os recursos dentro desse grupo em vez de criar políticas de acesso para instâncias de serviço
 individuais dentro de sua conta.
 {: tip}
 
@@ -78,6 +77,7 @@ entidades dentro do grupo.
 5. Escolha para designar acesso por recursos dentro de um grupo de recursos, recursos individuais disponíveis dentro da conta ou serviços de gerenciamento de conta.
 
 Para criar uma política de grupo de acesso usando a CLI, é possível usar o comando [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_policy_create).
+
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```

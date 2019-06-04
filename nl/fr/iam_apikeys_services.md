@@ -33,7 +33,7 @@ Vous pouvez identifier l'appelant de l'une des façons suivantes :
 
 Les clés d'API sont des données d'identification composées d'une longue série de caractères aléatoires. Une identité {{site.data.keyword.Bluemix_notm}} peut avoir plusieurs clés d'API. Chacune de ces clés d'API peut être gérée indépendamment, ce qui signifie que si cette clé d'API est utilisée par votre service uniquement, vous pouvez supprimer la clé d'API sans interrompre d'autre composant.
 
-Vous pouvez utiliser des clés d'API pour [vous connecter à l'interface de ligne de commande (CLI) {{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_login#ibmcloud_login) ou pour [générer des jetons IAM](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey). Alors que cela n'est pas recommandé pour la production, vous pouvez également envoyer des clés d'API à des services {{site.data.keyword.Bluemix_notm}}.
+Vous pouvez utiliser des clés d'API pour [vous connecter à l'interface de ligne de commande (CLI){{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) ou pour [générer des jetons IAM](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey). Alors que cela n'est pas recommandé pour la production, vous pouvez également envoyer des clés d'API à des services {{site.data.keyword.Bluemix_notm}}.
 
 ## Transmission d'une clé d'API {{site.data.keyword.Bluemix_notm}} pour l'authentification avec une API de service
 {: #apikey_auth}

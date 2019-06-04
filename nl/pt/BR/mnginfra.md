@@ -31,7 +31,7 @@ Deve-se estar designado à permissão Gerenciar a infraestrutura clássica de us
 
   1. Selecione **Permissões** para atualizar as permissões do usuário. É possível selecionar entre quatro tipos de permissões: conta, dispositivos, rede e serviços. Selecione individualmente as permissões de cada categoria ou use uma opção de conjunto de permissões para designar permissões em massa.
 
-    As permissões de gerenciamento de conta e de suporte que você designou anteriormente para os usuários em sua conta agora são migradas de permissões de infraestrutura clássica para grupos de acesso do IAM migrados. Para obter mais informações, veja [Permissões de infraestrutura clássica migradas](/docs/iam?topic=iam-predefined#predefined).
+    As permissões de gerenciamento de conta e de suporte que você designou anteriormente para os usuários em sua conta agora são migradas de permissões de infraestrutura clássica para grupos de acesso do IAM migrados. Para obter mais informações, veja [Permissões de infraestrutura clássica migradas](/docs/iam?topic=iam-migrated_permissions).
     {: tip}
 
   2. Para conceder a um usuário acesso ao dispositivo, selecione **Dispositivos** e designe o acesso a dispositivos específicos e tipos de dispositivos, conforme necessário.

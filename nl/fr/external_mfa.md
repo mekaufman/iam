@@ -39,7 +39,7 @@ Pour commander l'authentification externe, procédez comme suit :
 3. Sur la page **Détails de l'utilisateur**, sélectionnez **Commander une authentification externe** dans la section Gérer la connexion de l'utilisateur.
 4. Sélectionnez **Protection de l'identité Symantec** ou **Protection de l'identité par téléphone**.
     * Pour l'authentification Symantec, l'utilisateur doit télécharger l'application [Symantec VIP](https://vip.symantec.com/){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg) et obtenir un ID de données d'identification pour poursuivre le processus de commande.
-    * Pour l'authentification par téléphone, vous pouvez effectuer la commande mais votre utilisateur doit [effectuer la configuration](/docs/account?topic=account-third-party-MFA#setting-up-phone-based-authentication) avant que vous ne puissiez activer l'option.
+    * Pour l'authentification par téléphone, vous pouvez effectuer la commande mais votre utilisateur doit [effectuer la configuration](/docs/account?topic=account-login-settings#setting-up-phone-based-authentication) avant que vous ne puissiez activer l'option.
 5. En fonction de votre sélection, suivez les invites pour consulter le prix et les conditions avant de valider la commande.
 6. Cliquez sur **Commande** pour finaliser votre sélection.
 
@@ -63,7 +63,7 @@ Pour annuler une commande d'authentification externe, vous devez être propriét
 
 * Gestion du droit d'infrastructure classique des utilisateurs
 * Annulation du droit d'infrastructure classique des services
-* Administration du service de gestion de compte Centre de support ou droits d'infrastructure classique migrés d'affichage, d'édition et d'ajout de ticket non disponibles dans les [groupes d'accès des droits migrés](/docs/iam?topic=iam-predefined#predefined).
+* Administration du service de gestion de compte Centre de support ou droits d'infrastructure classique migrés d'affichage, d'édition et d'ajout de ticket non disponibles dans les [groupes d'accès migrés des droits](/docs/iam?topic=iam-migrated_permissions).
 
 Pour annuler la commande d'authentification externe, procédez comme suit :
 

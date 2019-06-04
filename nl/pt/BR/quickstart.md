@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-16"
 
 keywords: get started with IAM, IAM tutorial, IAM quick start
 
@@ -27,6 +27,15 @@ Este tutorial é destinado a ajudá-lo a deixar o IBM Cloud Identity and Access 
 
 Este tutorial é para recursos ativados para IAM. Para serviços que não suportam a criação de políticas do Cloud IAM para gerenciar o acesso, é possível usar o [Acesso do Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfaccess) ou as [permissões de infraestrutura clássica](/docs/iam?topic=iam-infrapermission#infrapermission).
 {: note}
+
+## Antes de começar
+{: #iam-before-you-begin}
+
+Se você for novo no uso do IAM, consulte a documentação a seguir para entender mais sobre os recursos, conceitos e componentes do sistema de gerenciamento de acesso:
+
+* O [IBM Cloud Identity and Access Management](/docs/iam?topic=iam-iamoverview) fornece uma visão geral rápida do que é o IAM no {{site.data.keyword.Bluemix_notm}}, dos recursos disponíveis e dos links para docs de CLI e API disponíveis.
+* [Conceitos do IAM](/docs/iam?topic=iam-iamconcepts) descreve os conceitos de alto nível no IAM que podem ajudá-lo a entender os diferentes componentes à medida que você começar.
+* O [acesso ao IAM](/docs/iam?topic=iam-userroles) fornece uma revisão mais detalhada de como o gerenciamento de acesso funciona usando as políticas de acesso.
 
 
 ## Etapa 1. Convidar os usuários e designar o acesso inicial
@@ -106,7 +115,7 @@ Para designar uma nova política de acesso, conclua as etapas a seguir:
     * Selecione **Designar acesso a recursos** para designar acesso a todos os recursos ativados pelo Identity and Access na conta, todos os recursos de um serviço específico na conta, uma única instância ou um único recurso em uma instância de serviço específica.
     * Selecione **Designar acesso aos serviços de gerenciamento de conta** para designar
 acesso a todos os serviços de gerenciamento de conta ou a apenas um serviço de gerenciamento de conta.
-5. Selecione qualquer combinação de funções para definir o escopo de acesso. Para obter mais informações, veja [Funções do Cloud IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
+5. Selecione qualquer combinação de funções para definir o escopo de acesso. Para obter mais informações, veja [Funções do Cloud IAM](/docs/iam?topic=iam-userroles#iamusermanrol).
 6. Clique em **Designar**.
 
 
@@ -127,4 +136,4 @@ acesso a todos os serviços de gerenciamento de conta ou a apenas um serviço de
 ## Próximas Etapas
 {: #next}
 
-Saiba o que mais é possível fazer com o Cloud IAM verificando a lista [Recursos do Cloud IAM](/docs/iam?topic=iam-features#features).
+Saiba o que mais é possível fazer com o Cloud IAM verificando a lista [Recursos do Cloud IAM](/docs/iam?topic=iam-iamoverview#features).

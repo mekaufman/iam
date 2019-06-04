@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-02-21"
+lastupdated: "2019-05-10"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -52,7 +52,7 @@ Quaisquer mudanças feitas em um ID do serviço existente, como mudar as políti
 ## Bloqueando um ID de serviço
 {: #lock_serviceid}
 
-Para evitar uma situação em que seu ID de serviço é excluído causando uma indisponibilidade ou interrupção para os usuários de seu serviço, você tem a opção de bloquear seu ID de serviço usando a UI ou a CLI. Bloquear um ID do serviço também evita que quaisquer políticas sejam mudadas, excluídas ou designadas. Além da capacidade de bloquear um ID do serviço, é possível [bloquear chaves de API individuais](/docs/iam?topic=iam-lockkey#lockkey) que estão associadas a cada ID do serviço que você cria em sua conta.
+Para evitar uma situação em que seu ID de serviço é excluído causando uma indisponibilidade ou interrupção para os usuários de seu serviço, você tem a opção de bloquear seu ID de serviço usando a UI ou a CLI. Bloquear um ID do serviço também evita que quaisquer políticas sejam mudadas, excluídas ou designadas. Além da capacidade de bloquear um ID do serviço, é possível [bloquear chaves de API individuais](/docs/iam?topic=iam-serviceidapikeys#lockkey) que estão associadas a cada ID do serviço que você cria em sua conta.
 
 Embora os IDs de serviço bloqueados não possam ser excluídos da conta e as políticas de acesso não possam ser atualizadas, os IDs de serviço bloqueados ainda podem ser removidos de qualquer grupo de acesso no qual eles estão incluídos. Isso significa que qualquer acesso designado ao ID de sua associação em um grupo de acesso é removido quando o ID do serviço é removido do grupo de acesso.
 {: note}
@@ -162,5 +162,5 @@ Ibmcloud iam service-id-desbloquear ServiceId-cb258cb9-8de3-4ac0-9aec-b2b2d27ac9
 
 A seguir estão exemplos de como um ID de serviço é usado com os serviços {{site.data.keyword.objectstorageshort}} e Cloud SQL Query.
 
-- {{site.data.keyword.objectstorageshort}} - [Use a CLI do {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-cli-ic-use-the-ibm-cli#ic-hmac-credentials).
+- {{site.data.keyword.objectstorageshort}} - [Usar a CLI do {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-ic-use-the-ibm-cli#ic-hmac-credentials).
 - Consulta SQL de nuvem - [Como usar a API de REST da consulta SQL![Ícone de link externo](../icons/launch-glyph.svg)](https://www.youtube.com/embed/s6S4AdJItHk?rel=0){: new_window}.
