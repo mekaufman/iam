@@ -33,7 +33,7 @@ API를 통해 {{site.data.keyword.Bluemix}} 서비스를 호출하려면 서비�
 
 API 키는 긴 일련의 임의 문자 또는 숫자로 구성된 인증 정보입니다. {{site.data.keyword.Bluemix_notm}} ID에 여러 API 키가 포함될 수 있습니다. 이러한 각 API 키는 개별적으로 관리될 수 있으며, 이는 이 API 키가 서비스에서만 사용되는 경우 다른 컴포넌트를 방해하지 않고 API 키를 삭제할 수 있음을 의미합니다.
 
-API 키를 사용하여 [{{site.data.keyword.Bluemix_notm}} 명령행 인터페이스(CLI)에 로그인](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_login#ibmcloud_login)하거나 [IAM 토큰을 생성](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey)할 수 있습니다. 이 API 키가 프로덕션 용도로 권장되지 않는 경우 API 키를 {{site.data.keyword.Bluemix_notm}} 서비스로 보낼 수 있습니다.
+API 키를 사용하여 [{{site.data.keyword.Bluemix_notm}} 명령행 인터페이스(CLI)에 로그인](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login)하거나 [IAM 토큰을 생성](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey)할 수 있습니다. 이 API 키가 프로덕션 용도로 권장되지 않는 경우 API 키를 {{site.data.keyword.Bluemix_notm}} 서비스로 보낼 수 있습니다.
 
 ## {{site.data.keyword.Bluemix_notm}} API 키를 전달하여 서비스 API에서 인증
 {: #apikey_auth}

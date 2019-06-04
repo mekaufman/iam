@@ -31,7 +31,7 @@ Ihnen muss die Berechtigung der klassischen Infrastruktur zum Verwalten von Benu
 
   1. Wählen Sie zum Aktualisieren der Berechtigungen für den Benutzer die Option **Berechtigungen** aus. Es stehen die folgenden vier Typen von Berechtigungen zur Auswahl: 'Konto', 'Geräte', 'Netz' und 'Services'. Wählen Sie einzeln aus jeder Kategorie Berechtigungen aus oder verwenden Sie eine Berechtigungssetoption, um eine Massenzuweisung des Zugriffs durchzuführen.
 
-    Die Berechtigungen für die Kontoverwaltung und den Support, die Sie Benutzern zuvor in Ihrem Konto zugewiesen haben, werden nun von Berechtigungen der klassischen Infrastruktur zu migrierten IAM-Zugriffsgruppen migriert. Weitere Informationen hierzu enthält der Abschnitt [Migrierte Berechtigungen der klassischen Infrastruktur](/docs/iam?topic=iam-predefined#predefined).
+    Die Berechtigungen für die Kontoverwaltung und den Support, die Sie Benutzern zuvor in Ihrem Konto zugewiesen haben, werden nun von Berechtigungen der klassischen Infrastruktur zu migrierten IAM-Zugriffsgruppen migriert. Weitere Informationen hierzu enthält der Abschnitt [Migrierte Berechtigungen der klassischen Infrastruktur](/docs/iam?topic=iam-migrated_permissions).
     {: tip}
 
   2. Wenn Sie einem Benutzer Gerätezugriff erteilen wollen, wählen Sie **Geräte** aus und weisen Sie nach Bedarf den Zugriff für bestimmte Geräte und Gerätetypen zu.

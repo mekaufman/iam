@@ -73,7 +73,7 @@ subcollection: iam
 
 必要な API キーは、{{site.data.keyword.Bluemix_notm}} プラットフォームでの認証に使用される {{site.data.keyword.Bluemix_notm}} の API キーです。クラシック・インフラストラクチャー API キーまたは {{site.data.keyword.Bluemix_notm}} サービスの API キーではありません。
 
-1. [`ibmcloud iam api-key-create` コマンド](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_api_key_create)を使用して API キーを作成します。 以下に示すように、コマンド・ウィンドウにキーを表示するのではなく API キー・ファイルを生成するには、`-f` オプションを使用します。
+1. [`ibmcloud iam api-key-create` コマンド](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create)を使用して API キーを作成します。 以下に示すように、コマンド・ウィンドウにキーを表示するのではなく API キー・ファイルを生成するには、`-f` オプションを使用します。
 
    ```
    ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]
@@ -100,7 +100,8 @@ subcollection: iam
 
     * 環境変数を設定します。 さらに、ご使用のシステムにも環境変数を設定できます。 例えば、IBMCLOUD_API_KEY=api_key_string と指定します。ここで、`api_key_string` は、API キーのカスタム値です。 環境変数が設定された後は、CLI から単純に `ibmcloud login` を指定できます。
 
-   Windows 10 PowerShell の場合は、キー・ファイル名を単一引用符で囲んで `'@key_file_name'` を使用します。{: tip}
+   Windows 10 PowerShell の場合は、キー・ファイル名を単一引用符で囲んで `'@key_file_name'` を使用します。
+   {: tip}
 
   Cloud Foundry CLI を使用してログインするには、以下のように、ユーザー名として `apikey` を指定し、パスワードとして API キー・ストリングを指定します。
 

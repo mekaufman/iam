@@ -33,7 +33,7 @@ Sie können den Aufrufer auf eine der folgenden Arten ermitteln:
 
 Die API-Schlüssel sind Berechtigungsnachweise, die aus einer langen Reihe beliebiger Zeichen oder Zahlen bestehen. Für eine {{site.data.keyword.Bluemix_notm}}-Identität kann es mehrere API-Schlüssel geben. Jeder dieser API-Schlüssel kann unabhängig von den übrigen verwaltet werden. Wenn ein bestimmter API-Schlüssel nur von Ihrem Service verwendet wird, bedeutet das, dass Sie diesen API-Schlüssel löschen können, ohne dass es bei anderen Komponenten hierdurch zu Unterbrechungen kommt.
 
-Sie können API-Schlüssel verwenden, um sich [bei der {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle (CLI) anzumelden](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_login#ibmcloud_login) oder um [IAM-Token zu generieren](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey). Obwohl dies nicht für den Produktionseinsatz empfohlen ist, können Sie API-Schlüssel auch an {{site.data.keyword.Bluemix_notm}}-Services senden.
+Sie können API-Schlüssel verwenden, um sich [bei der {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle (CLI) anzumelden](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) oder um [IAM-Token zu generieren](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey). Obwohl dies nicht für den Produktionseinsatz empfohlen ist, können Sie API-Schlüssel auch an {{site.data.keyword.Bluemix_notm}}-Services senden.
 
 ## {{site.data.keyword.Bluemix_notm}}-API-Schlüssel zum Authentifizieren bei der API eines Service übergeben
 {: #apikey_auth}

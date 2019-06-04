@@ -4,7 +4,7 @@ copyright:
 
   years: 2015，2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-03-27"
 
 keywords: federated ID, enterprise SSO, single sign-on ID, API key login, one-time passcode login
 
@@ -73,7 +73,7 @@ Ein einmaliger Kenncode ruft Code über die {{site.data.keyword.Bluemix_notm}}-K
 
 Der erforderliche API-Schlüssel ist der {{site.data.keyword.Bluemix_notm}}-API-Schlüssel, der für die Authentifizierung bei der {{site.data.keyword.Bluemix_notm}}-Plattform verwendet wird, und nicht der API-Schlüssel für die klassische Infrastruktur oder der {{site.data.keyword.Bluemix_notm}}-Service-API-Schlüssel.
 
-1. Erstellen Sie einen API-Schlüssel mit dem [Befehl `ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_api_key_create). Verwenden Sie die Option `-f`, um eine API-Schlüsseldatei zu erstellen, anstatt den Schlüssel im Befehlsfenster anzuzeigen:
+1. Erstellen Sie einen API-Schlüssel mit dem [Befehl `ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create). Verwenden Sie die Option `-f`, um eine API-Schlüsseldatei zu erstellen, anstatt den Schlüssel im Befehlsfenster anzuzeigen:
 
    ```
    ibmcloud iam api-key-create NAME [-d BESCHREIBUNG] [-f, --file DATEI]
@@ -99,6 +99,9 @@ Der erforderliche API-Schlüssel ist der {{site.data.keyword.Bluemix_notm}}-API-
       ```
 
     * Legen Sie eine Umgebungsvariable fest. Darüber hinaus können Sie auf Ihrem System auch eine Umgebungsvariable definieren. Beispiel: 'IBMCLOUD_API_KEY=api-schlüsselzeichenfolge', wobei `api-schlüsselzeichenfolge` der angepasste Wert des API-Schlüssels ist. Nachdem die Umgebungsvariable definiert worden ist, können Sie einfach `ibmcloud login` in der Befehlszeilenschnittstelle angeben.
+
+   Verwenden Sie für Windows 10 PowerShell `'@key_file_name'`, wobei der Schlüsseldateiname in einfache Anführungszeichen eingeschlossen ist.
+   {: tip}
 
   Um sich über die Cloud Foundry-Befehlszeilenschnittstelle anzumelden, geben Sie `apikey` als Benutzernamen und die API-Schlüsselzeichenfolge als Kennwort an:
 

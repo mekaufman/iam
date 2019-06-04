@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-16"
 
 keywords: get started with IAM, IAM tutorial, IAM quick start
 
@@ -27,6 +27,15 @@ subcollection: iam
 
 本指導教學適用於已啟用 IAM 的資源。對於不支援建立 Cloud IAM 原則來管理存取權的服務，您可以使用 [Cloud Foundry 存取](/docs/iam?topic=iam-cfaccess#cfaccess)或[標準基礎架構許可權](/docs/iam?topic=iam-infrapermission#infrapermission)。
 {: note}
+
+## 開始之前
+{: #iam-before-you-begin}
+
+如果您不熟悉使用 IAM 的方式，請檢閱下列文件以進一步瞭解存取管理系統的特性、概念及元件：
+
+* [IBM Cloud Identity and Access Management](/docs/iam?topic=iam-iamoverview) 可讓您快速瀏覽 IAM 在 {{site.data.keyword.Bluemix_notm}} 中的功用、可用特性，以及可用 CLI 與 API 文件的鏈結。
+* [IAM 概念](/docs/iam?topic=iam-iamconcepts)概述 IAM 中的高階概念，可協助您在開始使用時瞭解不同的元件。
+* [IAM 存取](/docs/iam?topic=iam-userroles)可讓您深入瞭解存取管理如何透過存取原則來運作。
 
 
 ## 步驟 1. 邀請使用者並指派起始存取權
@@ -101,7 +110,7 @@ subcollection: iam
     * 選取**指派資源群組內的存取權**，以指派群組內所有資源的存取權，或只指派群組內特定服務之資源的存取權。您也可以藉由選取存取資源群組的角色，讓使用者有權檢視、編輯或管理資源群組的存取權。如果您要使用者只能存取指定的資源，而非其所屬組織內的群組，請選取**不可存取**。
     * 選取**指派對資源的存取權**以指派下列項目的存取權：帳戶中所有已啟用身分及存取的資源、帳戶中特定服務的所有資源、單一實例，或特定服務實例內的單一實例。
     * 選取**指派對帳戶管理服務的存取權**，以指派對所有帳戶管理服務或只有一個帳戶管理服務的存取權。
-5. 選取任何角色組合，以定義存取範圍。如需相關資訊，請參閱 [Cloud IAM 角色](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)。
+5. 選取任何角色組合，以定義存取範圍。如需相關資訊，請參閱 [Cloud IAM 角色](/docs/iam?topic=iam-userroles#iamusermanrol)。
 6. 按一下**指派**。
 
 
@@ -122,4 +131,4 @@ subcollection: iam
 ## 後續步驟
 {: #next}
 
-參閱 [Cloud IAM 特性](/docs/iam?topic=iam-features#features)清單，以學習您可以使用 Cloud IAM 執行的其他作業。
+參閱 [Cloud IAM 特性](/docs/iam?topic=iam-iamoverview#features)清單，以學習您可以使用 Cloud IAM 執行的其他作業。

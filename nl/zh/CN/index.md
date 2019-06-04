@@ -25,7 +25,7 @@ subcollection: iam
 
 通过 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM)，您可以在整个 {{site.data.keyword.Bluemix_notm}} 上一致、安全地对两个平台服务的用户进行认证并控制对资源的访问权。支持一组 {{site.data.keyword.Bluemix_notm}} 服务使用 Cloud IAM 进行访问控制，这些服务在您的帐户中组织成[资源组](/docs/resources?topic=resources-rgs#rgs)，让用户能够快速、轻松地一次访问多个资源。Cloud IAM 访问策略用于为用户和服务标识分配对帐户中资源的访问权。可以将用户和服务标识分组到一个[访问组](/docs/iam?topic=iam-getstarted#getstarted)中，以轻松向该组内所有实体授予相同级别的访问权。
 
-策略向主体（即用户、[服务标识](/docs/iam?topic=iam-serviceids#serviceids)或访问组）分配一个或多个角色，其中具有定义目标的访问权作用域的属性组合。策略可以提供对下至实例级别的单个服务、汇集在一个资源组的一组资源或者帐户管理服务的访问权。根据分配的 [IAM 角色](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)，主体可以具有不同级别的访问权，以通过使用 UI 或执行 API 调用完成帐户管理任务，使用服务实例或者访问服务。
+策略向主体（即用户、[服务标识](/docs/iam?topic=iam-serviceids#serviceids)或访问组）分配一个或多个角色，其中具有定义目标的访问权作用域的属性组合。策略可以提供对下至实例级别的单个服务、汇集在一个资源组的一组资源或者帐户管理服务的访问权。根据分配的 [IAM 角色](/docs/iam?topic=iam-userroles#iamusermanrol)，主体可以具有不同级别的访问权，以通过使用 UI 或执行 API 调用完成帐户管理任务，使用服务实例或者访问服务。
 
 
 ![用于控制帐户中访问权的 IAM](images/iam-diagram.svg "如何使用 IAM 在帐户中进行访问权管理")
@@ -45,7 +45,7 @@ subcollection: iam
 <dt>用于用户认证的 API 密钥</dt>
 <dd>可以为用户创建多个 API 密钥来支持密钥轮换方案，并且同一密钥可用于访问多个服务。{{site.data.keyword.cloud_notm}} API 密钥支持使用双因子认证或联合标识的用户通过命令行自动向控制台执行认证。用户还可以具有单个经典基础架构 API 密钥，可用于访问经典基础架构 API；但是，这不是必需的，因为您可以使用 {{site.data.keyword.cloud_notm}} API 密钥来访问相同的 API。</dd>
 <dt>服务标识</dt>
-<dd>服务标识用于标识服务或应用程序，类似于用户标识对用户进行标识的方式。这些是应用程序可以用于向 {{site.data.keyword.Bluemix_notm}} 服务进行认证的标识。可以为每个服务标识分配策略，以控制使用服务标识的应用程序允许的访问级别，并且可以创建 API 密钥来启用认证。</dd>
+<dd>服务标识识别服务或应用程序的方式与用户标识识别用户的方式相似。这些是应用程序可以用于向 {{site.data.keyword.Bluemix_notm}} 服务进行认证的标识。可以为每个服务标识分配策略，以控制使用服务标识的应用程序允许的访问级别，并且可以创建 API 密钥来启用认证。</dd>
 </dl>
 
 

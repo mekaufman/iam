@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-16"
 
 keywords: get started with IAM, IAM tutorial, IAM quick start
 
@@ -27,6 +27,15 @@ subcollection: iam
 
 このチュートリアルは、IAM 対応リソースを対象としています。 アクセス権限管理のための Cloud IAM ポリシーの作成をサポートしていないサービスには、[Cloud Foundry アクセス権限](/docs/iam?topic=iam-cfaccess#cfaccess)または[クラシック・インフラストラクチャー許可](/docs/iam?topic=iam-infrapermission#infrapermission)を使用できます。
 {: note}
+
+## 始める前に
+{: #iam-before-you-begin}
+
+IAM を初めて使用する場合は、次の資料を参照して、アクセス管理システムのフィーチャー、概念、およびコンポーネントの詳細を理解してください。
+
+* [IBM Cloud Identity and Access Management](/docs/iam?topic=iam-iamoverview) は、{{site.data.keyword.Bluemix_notm}} において IAM が何であるかの概観、使用可能なフィーチャー、および使用可能な CLI および API 資料へのリンクを提供します。
+* [IAM の概念](/docs/iam?topic=iam-iamconcepts)では、始めるときにさまざまなコンポーネントを理解するのに役立つ、IAM の高レベルの概念について概説します。
+* [IAM アクセス](/docs/iam?topic=iam-userroles)は、アクセス・ポリシーを使用してアクセス管理がどのように機能するかについての詳細なレビューを提供します。
 
 
 ## ステップ 1. ユーザーを招待し、初期アクセス権限を割り当てる
@@ -101,7 +110,7 @@ subcollection: iam
     * グループ内のすべてのリソースへのアクセス権限を割り当てるか、グループ内の特定のサービス用のリソースのみへのアクセス権限を割り当てる場合は、**「リソース・グループ内のアクセス権限の割り当て (Assign access within a resource group)」**を選択します。 リソース・グループにアクセスするための役割を選択することによって、リソース・グループへのアクセス権限の表示、編集、または管理を行うことのできる権限をユーザーに提供することもできます。 指定されたリソースへのアクセス権限のみをユーザーに付与し、そのリソースが編成されているグループへのアクセス権限は付与しない場合は、**「アクセス権限なし」**を選択します。
     * アカウント全体のすべての ID およびアクセス対応リソースへのアクセス権限を割り当てるか、アカウント全体の特定サービスのすべてのリソースへのアクセス権限を割り当てるか、単一インスタンスへのアクセス権限を割り当てるか、または、特定のサービス・インスタンス内の単一リソースへのアクセス権限を割り当てる場合は、**「リソースへのアクセス権限の割り当て (Assign access to resources)」**を選択します。
     * **「アカウント管理サービスへのアクセス権限の割り当て (Assign access to Account management services)」**を選択して、すべてのアカウント管理サービス、または 1 つだけのアカウント管理サービスへのアクセス権限を割り当てます。
-5. アクセス有効範囲を定義する役割の組み合わせを選択します。 アクセス権限について詳しくは、[Cloud IAM 役割](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)を参照してください。
+5. アクセス有効範囲を定義する役割の組み合わせを選択します。 アクセス権限について詳しくは、[Cloud IAM 役割](/docs/iam?topic=iam-userroles#iamusermanrol)を参照してください。
 6. **「割り当て」**をクリックします。
 
 
@@ -122,4 +131,4 @@ subcollection: iam
 ## 次のステップ
 {: #next}
 
-[Cloud IAM の機能](/docs/iam?topic=iam-features#features)リストで、Cloud IAM で他に何を行うことができるのかを検討してください。
+[Cloud IAM の機能](/docs/iam?topic=iam-iamoverview#features)リストで、Cloud IAM で他に何を行うことができるのかを検討してください。

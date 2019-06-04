@@ -22,7 +22,7 @@ subcollection: iam
 # VPN-Kennwort für die klassische Infrastruktur aktualisieren
 {: #vpnpassword}
 
-Sie können Ihr eigenes VPN-Kennwort aktualisieren. Wenn ein Benutzer sein Kennwort vergisst und nicht in der Lage ist, es selbst zurückzusetzen, kann ein anderer Benutzer mit dem entsprechenden Zugriff das VPN-Kennwort für diesen Benutzer aktualisieren.
+Sie können Ihr eigenes VPN-Kennwort aktualisieren. Wenn ein Benutzer sein Kennwort vergisst, kann ein anderer Benutzer mit dem entsprechenden Zugriff das VPN-Kennwort für diesen Benutzer aktualisieren.
 {:shortdesc}
 
 Wenn Sie über die folgenden Zugriffsrechte verfügen, können Sie das VPN-Kennwort für andere Benutzer aktualisieren:

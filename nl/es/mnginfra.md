@@ -31,7 +31,7 @@ Debe tener asignado el permiso de la infraestructura clásica Gestionar usuarios
 
   1. Seleccione **Permisos** para actualizar los permisos del usuario. Puede seleccionar entre cuatro tipos de permisos: cuenta, dispositivos, red y servicios. Seleccione de forma individual los permisos de cada categoría, o utilice una opción de conjunto de permisos para asignar permisos de forma masiva.
 
-    Los permisos de gestión de cuentas y de soporte que ha asignado previamente a los usuarios de la cuenta se migran de los permisos de la infraestructura clásica a los grupos de acceso de IAM migrados. Para obtener más información, consulte [Permisos migrados de la infraestructura clásica](/docs/iam?topic=iam-predefined#predefined).
+    Los permisos de gestión de cuentas y de soporte que ha asignado previamente a los usuarios de la cuenta se migran de los permisos de la infraestructura clásica a los grupos de acceso de IAM migrados. Para obtener más información, consulte [Permisos migrados de la infraestructura clásica](/docs/iam?topic=iam-migrated_permissions).
     {: tip}
 
   2. Para otorgar a un usuario acceso a dispositivos, seleccione **Dispositivos** y asigne el acceso a dispositivos y a tipos de dispositivos específicos que necesite.

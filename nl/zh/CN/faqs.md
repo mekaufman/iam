@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-08"
+lastupdated: "2019-05-23"
 
 keywords: frequently asked question, faq
 
@@ -173,6 +173,12 @@ IAM 访问策略是如何向帐户中的用户、服务标识和访问组授予�
 2. 选择用户的名称。
 3. 单击**经典基础架构**。
 4. 在**许可权**部分中分配许可权，在**设备**部分中分配对设备的访问权，在 **VPN 访问权**部分中分配对设备（用户已分配有访问权进行访问）的 VPN 子网的访问权。
+
+## 如何管理先前在 SoftLayer 帐户中为其分配计费和支持许可权的用户的访问权？
+{: #migrated-permissions-faq}
+{: faq}
+
+先前在 SoftLayer 帐户中分配的所有许可权都可以在 {{site.data.keyword.Bluemix_notm}} 控制台中进行管理。现在，[迁移的许可权访问组](/docs/iam?topic=iam-migrated_permissions)中提供了管理帐单信息和支持案例的帐户许可权。先前在 SoftLayer 帐户中为其分配了这些许可权的所有用户都已迁移到这些访问组，通过对访问组使用 IAM 策略，为其分配了相同的访问级别。
 
 ## 我的帐户中的每个用户都可以看到其他所有用户吗？
 {: #users}

@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-08"
+lastupdated: "2019-05-23"
 
 keywords: frequently asked question, faq
 
@@ -173,6 +173,12 @@ Para delegar las funciones de administrador de la cuenta, asigne el siguiente ac
 2. Seleccione el nombre de un usuario.
 3. Pulse **Infraestructura clásica**.
 4. Asigne permisos desde la sección **Permisos**, asigne acceso a dispositivos desde la sección **Dispositivos** y asigne acceso a subredes VPN para los dispositivos sobre los que el usuario tiene acceso asignado desde la sección **Acceso VPN**.
+
+## ¿Cómo se gestiona el acceso para los usuarios que tenían asignados permisos de soporte y de facturación en mi cuenta de SoftLayer?
+{: #migrated-permissions-faq}
+{: faq}
+
+Todos los permisos asignados anteriormente en su cuenta de SoftLayer se pueden gestionar en la consola de {{site.data.keyword.Bluemix_notm}}. Los permisos de cuenta para gestionar información de facturación y casos de soporte ahora están disponibles en [grupos de acceso de permisos migrados](/docs/iam?topic=iam-migrated_permissions). Todos los usuarios que tenían anteriormente asignados estos permisos en su cuenta de SoftLayer se han migrado a estos grupos de acceso, a los que se asigna el mismo nivel de acceso mediante una política de IAM en el grupo de acceso.
 
 ## ¿Todos los usuarios de mi cuenta pueden ver todos los otros usuarios?
 {: #users}

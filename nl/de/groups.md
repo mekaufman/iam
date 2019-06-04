@@ -69,6 +69,7 @@ Nachdem Sie Ihre Gruppe mit Benutzern und Service-IDs eingerichtet haben, könne
 5. Wählen Sie die Zuweisung von Zugriff nach Ressourcen in einer Ressourcengruppe, nach einzelnen im Konto verfügbaren Ressourcen oder nach Kontoverwaltungsservices aus.
 
 Wenn Sie eine Zugriffsgruppenrichtlinie über die Befehlszeilenschnittstelle (CLI) erstellen möchten, können Sie den Befehl [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_policy_create) verwenden.
+
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```

@@ -40,11 +40,11 @@ Complete los siguientes pasos para invitar a usuarios o para gestionar invitacio
   * **Acceso de Cloud Foundry**
   * **Acceso de la infraestructura clásica**.
 
-  Para obtener más información, consulte [Asignación de acceso de usuario](/docs/iam?topic=iam-assignaccess#assignaccess).
+  Para obtener más información, consulte [Asignación de acceso de usuario](/docs/iam?topic=iam-iamuserinv#assignaccess).
 
 Si determina que un usuario no necesita acceso, puede cancelar una invitación para cualquier usuario que se muestre en estado **Procesando** o **Pendiente** en la columna **Estado**. Si un usuario invitado no ha recibido una invitación, puede volver a enviar la invitación a cualquier usuario en estado **Pendiente**.
 
-Si desea invitar a usuarios utilizando la interfaz de línea de mandatos (CLI), consulte el mandato [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite).
+Si desea invitar a usuarios utilizando la interfaz de línea de mandatos (CLI), consulte el mandato [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite).
 {: tip}
 
 ## Asignación de acceso de usuario desde una invitación
@@ -99,7 +99,7 @@ Puede asignar acceso a un único recurso dentro de su cuenta en la instancia.
     * **ID de recurso**: Especifique el nombre de su grupo.
 7. Seleccione cualquier combinación de roles para asignar el acceso deseado.
 
-Para obtener más información específica sobre los roles que se utilizan al asignar acceso, consulte [Acceso de IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
+Para obtener más información específica sobre los roles que se utilizan al asignar acceso, consulte [Acceso de IAM](/docs/iam?topic=iam-userroles#iamusermanrol).
 
 ### Acceso de Cloud Foundry
 {: #invite_cf}
@@ -115,9 +115,9 @@ Cuando invita a nuevos usuarios, puede elegir añadirlos a una organización en 
 7. Seleccione un rol de espacio para definir el nivel de acceso para los espacios seleccionados.
 8. Opcional: Seleccione **Añadir rol de espacio** para especificar un rol extra.
 
-Para obtener más información sobre los roles que se utilizan al asignar acceso, consulte [Roles de Cloud Foundry](/docs/iam?topic=iam-cfroles#cfroles).
+Para obtener más información sobre los roles que se utilizan al asignar acceso, consulte [Roles de Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfroles).
 
-Es posible añadir un rol de Cloud Foundry utilizando el mandato de CLI [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite), pero se debe utilizar la consola para asignar otros permisos o accesos.
+Es posible añadir un rol de Cloud Foundry utilizando el mandato de CLI [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite), pero se debe utilizar la consola para asignar otros permisos o accesos.
 {: tip}
 
 ### Acceso de infraestructura clásica

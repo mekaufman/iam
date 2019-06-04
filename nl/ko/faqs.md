@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-08"
+lastupdated: "2019-05-23"
 
 keywords: frequently asked question, faq
 
@@ -173,6 +173,12 @@ Cloud Foundry 서비스의 경우 Cloud Foundry 리소스에 대한 액세스를
 2. 사용자 이름을 선택하십시오.
 3. **클래식 인프라**를 클릭하십시오.
 4. **권한** 섹션에서 권한을 지정하고 **디바이스** 섹션에서 디바이스에 대한 액세스를 지정하며 **VPN 액세스** 섹션에서 사용자에게 액세스가 지정된 디바이스의 VPN 서브넷에 대한 액세스를 지정하십시오.
+
+## 내 SoftLayer 계정에서 이전에 청구 및 지원 권한이 지정된 사용자의 액세스 권한은 어떻게 관리합니까?
+{: #migrated-permissions-faq}
+{: faq}
+
+SoftLayer 계정에서 이전에 지정된 모든 권한은 {{site.data.keyword.Bluemix_notm}} 콘솔에서 관리할 수 있습니다. 청구 정보 및 지원 케이스 관리를 위한 계정 권한은 이제 [마이그레이션된 권한 액세스 그룹](/docs/iam?topic=iam-migrated_permissions)에 있습니다. 이전에 SoftLayer 계정에서 이러한 권한이 지정된 모든 사용자는 이러한 액세스 그룹으로 마이그레이션되며, 이들에게는 해당 액세스 그룹에 대한 IAM 정책 사용을 통해 동일한 레벨의 액세스 권한이 지정됩니다. 
 
 ## 내 계정의 모든 사용자가 다른 모든 사용자를 볼 수 있습니까?
 {: #users}

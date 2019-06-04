@@ -40,11 +40,11 @@ subcollection: iam
   * **Cloud Foundry 存取權**
   * **標準基礎架構存取**。
 
-  如需相關資訊，請參閱[指派使用者存取權](/docs/iam?topic=iam-assignaccess#assignaccess)。
+  如需相關資訊，請參閱[指派使用者存取權](/docs/iam?topic=iam-iamuserinv#assignaccess)。
 
 如果判定使用者不需要存取權，您可以針對**狀態**直欄中的**處理中**或**擱置中**狀態所顯示的任何使用者，取消邀請。如果受邀使用者沒有收到邀請，您可以將邀請重新傳送給處於**擱置中**狀態的任何使用者。
 
-如果您要使用指令行介面 (CLI) 來邀請使用者，請參閱 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite) 指令。
+如果您要使用指令行介面 (CLI) 來邀請使用者，請參閱 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) 指令。
 {: tip}
 
 ## 從邀請指派使用者存取權
@@ -100,7 +100,7 @@ subcollection: iam
     * **資源 ID**：輸入您的儲存區名稱。
 7. 選取任何角色組合，以指派想要的存取權。
 
-如需指派存取權時所使用角色的相關資訊，請參閱 [IAM 存取](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)。
+如需指派存取權時所使用角色的相關資訊，請參閱 [IAM 存取](/docs/iam?topic=iam-userroles#iamusermanrol)。
 
 ### Cloud Foundry 存取權
 {: #invite_cf}
@@ -116,9 +116,9 @@ subcollection: iam
 7. 選取空間角色，以定義所選取空間的存取層次。
 8. 選用項目：選取**新增空間角色**，以指定額外角色。
 
-如需指派存取權時所使用角色的相關資訊，請參閱 [Cloud Foundry 角色](/docs/iam?topic=iam-cfroles#cfroles)。
+如需指派存取權時所使用角色的相關資訊，請參閱 [Cloud Foundry 角色](/docs/iam?topic=iam-cfaccess#cfroles)。
 
-您可以使用 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite) CLI 指令來新增 Cloud Foundry 角色，但必須使用主控台來指派其他存取權或許可權。
+您可以使用 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) CLI 指令來新增 Cloud Foundry 角色，但必須使用主控台來指派其他存取權或許可權。
 {: tip}
 
 ### 標準基礎架構存取權

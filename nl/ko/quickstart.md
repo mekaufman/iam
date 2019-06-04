@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-16"
 
 keywords: get started with IAM, IAM tutorial, IAM quick start
 
@@ -27,6 +27,15 @@ subcollection: iam
 
 이 튜토리얼은 IAM 사용 리소스에 대한 튜토리얼입니다. 액세스 관리를 위한 Cloud IAM 정책 작성을 지원하지 않는 서비스의 경우 [Cloud Foundry 액세스](/docs/iam?topic=iam-cfaccess#cfaccess) 또는 [클래식 인프라 권한](/docs/iam?topic=iam-infrapermission#infrapermission)을 사용할 수 있습니다.
 {: note}
+
+## 시작하기 전에
+{: #iam-before-you-begin}
+
+IAM을 처음 사용하는 경우 다음 문서를 확인하여 액세스 관리 시스템의 기능, 개념 및 컴포넌트를 자세히 이해하십시오.
+
+* [IBM Cloud Identity and Access Management](/docs/iam?topic=iam-iamoverview)에서는 {{site.data.keyword.Bluemix_notm}}에서 IAM의 개념에 관한 빠른 개요, 사용 가능한 기능 및 사용 가능한 CLI와 API 문서의 링크를 제공합니다.
+* [IAM 개념](/docs/iam?topic=iam-iamconcepts)에서는 시작할 때 다른 컴포넌트를 이해하는 데 도움이 되는 IAM의 대략적인 개념을 설명합니다.
+* [IAM 액세스](/docs/iam?topic=iam-userroles)에서는 액세스 정책을 사용하여 액세스 관리가 작동하는 방식을 자세히 검토합니다.
 
 
 ## 1단계. 사용자 초대 및 초기 액세스 지정
@@ -101,7 +110,7 @@ subcollection: iam
     * **리소스 그룹 내의 액세스 지정**을 선택하여 그룹 내의 모든 리소스에 대한 액세스를 지정하거나 그룹 내의 특정 서비스에 대한 리소스에 대해서만 액세스를 지정하십시오. 리소스 그룹에 액세스하기 위한 역할을 선택하여 리소스 그룹에 대한 액세스 보기, 편집 또는 관리를 위한 액세스를 사용자에게 제공할 수도 있습니다. 사용자가 지정된 리소스에만 액세스하고 리소스가 속한 그룹에는 액세스할 수 없도록 하려면 **액세스 없음**을 선택하십시오.
     * 계정의 모든 ID 및 액세스 사용 리소스, 계정의 특정 서비스의 모든 리소스, 단일 인스턴스 또는 특정 서비스 인스턴스 내의 단일 리소스에 대한 액세스를 지정하려면 **리소스에 대한 액세스 지정**을 선택하십시오.
     * **계정 관리 서비스에 대한 액세스 지정**을 선택하여 모든 계정 관리 서비스 또는 하나의 계정 관리 서비스에 대한 액세스를 지정하십시오.
-5. 액세스의 범위를 정의하기 위한 역할의 임의의 조합을 선택하십시오. 자세한 정보는 [Cloud IAM 역할](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)을 참조하십시오.
+5. 액세스의 범위를 정의하기 위한 역할의 임의의 조합을 선택하십시오. 자세한 정보는 [Cloud IAM 역할](/docs/iam?topic=iam-userroles#iamusermanrol)을 참조하십시오.
 6. **지정**을 클릭하십시오.
 
 
@@ -122,4 +131,4 @@ subcollection: iam
 ## 다음 단계
 {: #next}
 
-[Cloud IAM 기능](/docs/iam?topic=iam-features#features) 목록을 검토하여 Cloud IAM에서 그 밖에 무엇을 수행할 수 있는지 알아봅니다.
+[Cloud IAM 기능](/docs/iam?topic=iam-iamoverview#features) 목록을 검토하여 Cloud IAM에서 그 밖에 무엇을 수행할 수 있는지 알아봅니다.

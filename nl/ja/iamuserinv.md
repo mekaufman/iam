@@ -40,11 +40,11 @@ subcollection: iam
   * **Cloud Foundry アクセス権限**
   * **クラシック・インフラストラクチャー・アクセス権限**.
 
-  詳しくは、[ユーザー・アクセスの割り当て](/docs/iam?topic=iam-assignaccess#assignaccess)を参照してください。
+  詳しくは、[ユーザー・アクセスの割り当て](/docs/iam?topic=iam-iamuserinv#assignaccess)を参照してください。
 
 ユーザーのアクセス権限は必要ないと判断した場合は、**「状況」**列に**「処理中」**または**「保留中」**の状態と表示されているユーザーの招待を取り消すことができます。 招待されたユーザーが招待を受け取らなかった場合、**「保留中」**状態のユーザーに招待を再送することができます。
 
-コマンド・ライン・インターフェース (CLI) を使用してユーザーを招待したい場合は、[ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite) コマンドを参照してください。
+コマンド・ライン・インターフェース (CLI) を使用してユーザーを招待したい場合は、[ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) コマンドを参照してください。
 {: tip}
 
 ## 招待からのユーザーへのアクセス権限の割り当て
@@ -99,7 +99,7 @@ subcollection: iam
     * **リソース ID**: バケットの名前を入力します。
 7. 必要なアクセス権限を割り当てるための役割の組み合わせを選択します。
 
-アクセス権限を割り当てる際に使用される役割について詳しくは、『[IAM アクセス権限](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)』を参照してください。
+アクセス権限を割り当てる際に使用される役割について詳しくは、『[IAM アクセス権限](/docs/iam?topic=iam-userroles#iamusermanrol)』を参照してください。
 
 ### Cloud Foundry アクセス権限
 {: #invite_cf}
@@ -115,9 +115,9 @@ subcollection: iam
 7. スペースの役割を選択して、選択したスペースへのアクセス・レベルを定義します。
 8. オプション: **「スペースの役割の追加」**を選択して、追加の役割を指定します。
 
-アクセス権限を割り当てる際に使用される役割について詳しくは、『[Cloud Foundry の役割](/docs/iam?topic=iam-cfroles#cfroles)』を参照してください。
+アクセス権限を割り当てる際に使用される役割について詳しくは、『[Cloud Foundry の役割](/docs/iam?topic=iam-cfaccess#cfroles)』を参照してください。
 
-Cloud Foundry の役割を追加するには、[ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite)CLI コマンドを使用できますが、他のアクセス権限または許可を割り当てるにはコンソールを使用する必要があります。
+Cloud Foundry の役割を追加するには、[ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite)CLI コマンドを使用できますが、他のアクセス権限または許可を割り当てるにはコンソールを使用する必要があります。
 {: tip}
 
 ### クラシック・インフラストラクチャー・アクセス権限

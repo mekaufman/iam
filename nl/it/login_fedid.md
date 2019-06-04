@@ -4,7 +4,7 @@ copyright:
 
   years: 2015，2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-03-27"
 
 keywords: federated ID, enterprise SSO, single sign-on ID, API key login, one-time passcode login
 
@@ -73,7 +73,7 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
 
 La chiave API richiesta è la chiave API {{site.data.keyword.Bluemix_notm}} utilizzata per l'autenticazione con la piattaforma {{site.data.keyword.Bluemix_notm}} e non la chiave API dell'infrastruttura classica o la chiave API del servizio {{site.data.keyword.Bluemix_notm}}.
 
-1. Crea una chiave API con il [comando `ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_api_key_create). Utilizza l'opzione `-f` per generare un file della chiave API invece di mostrare la chiave nella finestra di comando:
+1. Crea una chiave API con il [comando `ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create). Utilizza l'opzione `-f` per generare un file della chiave API invece di mostrare la chiave nella finestra di comando:
 
    ```
    ibmcloud iam api-key-create NOME [-d DESCRIZIONE] [-f, --file FILE]
@@ -99,6 +99,9 @@ La chiave API richiesta è la chiave API {{site.data.keyword.Bluemix_notm}} util
       ```
 
     * Imposta una variabile di ambiente. Puoi anche impostare una variabile di ambiente nel tuo sistema. Ad esempio, IBMCLOUD_API_KEY=api_key_string, dove `api_key_string` è il valore personalizzato della chiave API. Una volta impostata la variabile di ambiente, puoi semplicemente specificare `ibmcloud login` dalla CLI.
+
+   Per Windows 10 PowerShell, vuoi utilizzare `'@key_file_name'` con il nome file della chiave racchiuso tra virgolette singole.
+   {: tip}
 
   Per accedere utilizzando la CLI Cloud Foundry, specifica `apikey` come nome utente e la stringa della chiave API come password:
 

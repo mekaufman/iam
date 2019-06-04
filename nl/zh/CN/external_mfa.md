@@ -39,7 +39,7 @@ subcollection: iam
 3. 在**用户详细信息**页面的“管理用户登录”部分中，选择**订购外部认证**。
 4. 选择 **Symantec Identity Protection** 或**基于电话的身份保护**。
     * 对于 Symantec 认证，用户必须下载 [Symantec VIP ](https://vip.symantec.com/){: new_window}![外部链接图标](../icons/launch-glyph.svg) 应用程序，并获取凭证标识才能继续执行订购过程。
-    * 对于基于电话的认证，您可以继续执行订单，但您的用户必须[设置用户配置](/docs/account?topic=account-third-party-MFA#setting-up-phone-based-authentication)，然后您才能启用此选项。
+    * 对于基于电话的认证，您可以继续执行订单，但您的用户必须[设置用户配置](/docs/account?topic=account-login-settings#setting-up-phone-based-authentication)，然后您才能启用此选项。
 5. 根据您的选择，遵循提示来复查价格和条款，然后下单。
 6. 单击**订购**以最终完成您的选择。
 
@@ -63,7 +63,7 @@ subcollection: iam
 
 * “管理用户”经典基础架构许可权
 * “取消服务”经典基础架构许可权
-* 支持中心帐户管理服务的管理员，或具有在[迁移的许可权访问组](/docs/iam?topic=iam-predefined#predefined)内不可用的“查看”、“编辑”和“开具凭单”已迁移经典基础架构许可权。
+* 支持中心帐户管理服务的管理员，或具有在[迁移的许可权访问组](/docs/iam?topic=iam-migrated_permissions)内不可用的“查看”、“编辑”和“开具凭单”已迁移经典基础架构许可权。
 
 要取消外部认证订购，请完成以下步骤：
 

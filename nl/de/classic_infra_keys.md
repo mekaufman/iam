@@ -24,7 +24,7 @@ Mit API-Schlüsseln für die klassische Infrastruktur können Sie auf APIs der k
 
 Wenn Sie Ihre API-Schlüssel für die klassische Infrastruktur verwalten möchten, rufen Sie **Verwalten** > **Zugriff (IAM)** > **IBM Cloud-API-Schlüssel** auf.
 
-  * Wenn Sie einen API-Schlüssel für die klassische Infrastruktur erstellen möchten, klicken Sie im Abschnitt für API-Schlüssel auf **Schlüssel für klassische Infrastruktur erstellen**. 
+  * Wenn Sie einen API-Schlüssel für die klassische Infrastruktur erstellen möchten, klicken Sie im Abschnitt für API-Schlüssel auf **Schlüssel für klassische Infrastruktur erstellen**.
 
      Kopieren Sie den API-Schlüssel oder laden Sie ihn herunter und speichern Sie ihn an einem sicheren Ort. Sie können die Details des API-Schlüssels später über die Option **Details anzeigen** im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) abrufen.
 

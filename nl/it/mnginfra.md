@@ -31,7 +31,7 @@ Devi avere l'autorizzazione di gestione utenti dell'infrastruttura classica ed e
 
   1. Seleziona **Autorizzazioni** per aggiornare le autorizzazioni dell'utente. Puoi selezionare tra quattro tipi di autorizzazioni: account, dispositivi, rete e servizi. Seleziona singolarmente le autorizzazioni da ogni categoria o utilizza l'opzione di una serie di autorizzazioni per assegnare le autorizzazioni in blocco.
 
-    Le autorizzazioni di gestione e supporto dell'account che avevi precedentemente assegnato agli utenti nel tuo account vengono ora migrate dalle autorizzazioni dell'infrastruttura classica ai gruppi di accesso IAM migrati. Per ulteriori informazioni, vedi [Autorizzazioni dell'infrastruttura classica migrate](/docs/iam?topic=iam-predefined#predefined).
+    Le autorizzazioni di gestione e supporto dell'account che avevi precedentemente assegnato agli utenti nel tuo account vengono ora migrate dalle autorizzazioni dell'infrastruttura classica ai gruppi di accesso IAM migrati. Per ulteriori informazioni, vedi [Autorizzazioni dell'infrastruttura classica migrate](/docs/iam?topic=iam-migrated_permissions).
     {: tip}
 
   2. Per concedere a un utente l'accesso al dispositivo, seleziona **Dispositivi** e assegna l'accesso a dispositivi e tipi di dispositivi specifici secondo necessità.

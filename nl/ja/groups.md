@@ -69,6 +69,7 @@ ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 5. リソース・グループ内のリソース別にアクセス権限を割り当てるのか、アカウント内で使用可能な個々のリソース別にアクセス権限を割り当てるのか、またはアカウント管理サービス別にアクセス権限を割り当てるのかを選択します。
 
 CLI を使用してアクセス・グループ・ポリシーを作成するには、[ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_policy_create) コマンドを使用します。
+
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```

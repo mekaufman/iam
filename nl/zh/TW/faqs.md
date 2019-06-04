@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-08"
+lastupdated: "2019-05-23"
 
 keywords: frequently asked question, faq
 
@@ -173,6 +173,12 @@ IAM 存取原則是帳戶中的使用者、服務 ID 及存取群組如何被授
 2. 選取使用者的名稱。
 3. 按一下**標準基礎架構**。
 4. 從**許可權**區段中指派許可權、從**裝置**區段中指派裝置存取權，以及從 **VPN 存取**區段中指派使用者獲指派存取權之裝置的 VPN 子網路存取權。
+
+## 對於先前在 SoftLayer 帳戶中指派計費及支援許可權的使用者，如何管理其存取權？
+{: #migrated-permissions-faq}
+{: faq}
+
+先前在 SoftLayer 帳戶中指派的所有許可權，都可以在 {{site.data.keyword.Bluemix_notm}} 主控台中進行管理。現在，[已移轉許可權存取群組](/docs/iam?topic=iam-migrated_permissions)提供了用來管理計費資訊及支援案例的帳戶許可權。先前在 SoftLayer 帳戶中指派了這些許可權的所有使用者都已移轉至這些存取群組，而這些存取群組可透過存取群組上的 IAM 原則指派相同的存取層次。
 
 ## 我帳戶中的每位使用者都可以看到所有其他使用者嗎？
 {: #users}

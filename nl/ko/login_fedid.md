@@ -4,7 +4,7 @@ copyright:
 
   years: 2015，2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-03-27"
 
 keywords: federated ID, enterprise SSO, single sign-on ID, API key login, one-time passcode login
 
@@ -73,7 +73,7 @@ subcollection: iam
 
 필요한 API 키는 클래식 인프라 API 키 또는 {{site.data.keyword.Bluemix_notm}} 서비스 API 키가 아니라 {{site.data.keyword.Bluemix_notm}} 플랫폼에서 인증하는 데 사용된 {{site.data.keyword.Bluemix_notm}} API 키입니다.
 
-1. [`ibmcloud iam api-key-create` 명령](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_iam_api_key_create#ibmcloud_iam_api_key_create)으로 API 키를 작성하십시오. `-f` 옵션을 사용하여 명령 창에서 키를 표시하는 대신에 API 키 파일을 생성하십시오.
+1. [`ibmcloud iam api-key-create` 명령](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create)으로 API 키를 작성하십시오. `-f` 옵션을 사용하여 명령 창에서 키를 표시하는 대신에 API 키 파일을 생성하십시오.
 
    ```
    ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]
@@ -99,6 +99,9 @@ ibmcloud login --apikey <api_key_string>
       ```
 
     * 환경 변수를 설정합니다. 사용자가 시스템에서 환경 변수를 설정할 수도 있습니다. 예를 들어, IBMCLOUD_API_KEY=api_key_string이며, 여기서 `api_key_string`은 API 키의 사용자 정의 값입니다. 환경 변수가 설정된 후에는 CLI에서 `ibmcloud login`만 지정하면 됩니다.
+
+   Windows 10 PowerShell의 경우, 키 파일 이름 중심으로 작은따옴표가 있는 `'@key_file_name'`을 사용하고자 합니다.
+   {: tip}
 
   Cloud Foundry CLI를 사용하여 로그인하려면 `apikey`를 사용자 이름으로, API 키 문자열을 비밀번호로 지정하십시오.
 

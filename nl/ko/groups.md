@@ -69,6 +69,7 @@ ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 5. 리소스 그룹 내 리소스, 계정 내에서 사용 가능한 개별 리소스 또는 계정 관리 서비스로 액세스를 지정하도록 선택하십시오.
 
 CLI를 사용하여 액세스 그룹 정책을 작성하기 위해 [ibmcloud iam access-group-policy-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_policy_create) 명령을 사용할 수 있습니다.
+
 ```
 ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --roles ROLE_NAME1,ROLE_NAME2... [--service-name SERVICE_NAME] [--service-instance SERVICE_INSTANCE] [--region REGION] [--resource-type RESOURCE_TYPE] [--resource RESOURCE] [--resource-group-name RESOURCE_GROUP_NAME] [--resource-group-id RESOURCE_GROUP_ID]}
 ```

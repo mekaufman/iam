@@ -33,7 +33,7 @@ Las [claves de API de {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-us
 
 Las claves de API son credenciales que constan de una serie larga de caracteres o números aleatorios. Una identidad de {{site.data.keyword.Bluemix_notm}} puede tener varias claves de API. Cada una de estas claves de API se puede gestionar de forma independiente, lo que significa que si solo su servicio utiliza esta clave de API, puede suprimir la clave de la API sin interferir en ningún otro componente.
 
-Puede utilizar claves de API para [iniciar una sesión en la interfaz de línea de mandatos (CLI) de {{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_login#ibmcloud_login) o para [generar señales de IAM](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey). Aunque no se recomienda para uso de producción, también puede enviar claves de API a los servicios de {{site.data.keyword.Bluemix_notm}}.
+Puede utilizar claves de API para [iniciar una sesión en la interfaz de línea de mandatos (CLI) de {{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) o para [generar señales de IAM](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey). Aunque no se recomienda para uso de producción, también puede enviar claves de API a los servicios de {{site.data.keyword.Bluemix_notm}}.
 
 ## Cómo pasar una clave de API de {{site.data.keyword.Bluemix_notm}} para autenticarse con una API de servicio
 {: #apikey_auth}

@@ -22,7 +22,7 @@ subcollection: iam
 # Aggiornamento della password VPN dell'infrastruttura classica
 {: #vpnpassword}
 
-Puoi aggiornare la tua password VPN o, nel caso in cui un utente dimentichi la propria password e non sia in grado di reimpostarla da solo, un altro utente con l'accesso corretto può aggiornare la password VPN di tale utente.
+Puoi aggiornare la tua password VPN o, nel caso in cui un utente dimentichi la propria password, un altro utente con l'accesso corretto può aggiornare la password VPN di tale utente.
 {:shortdesc}
 
 Se disponi del seguente accesso, puoi aggiornare la password VPN per un altro utente:

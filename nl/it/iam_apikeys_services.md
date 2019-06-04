@@ -29,11 +29,11 @@ Puoi identificare il chiamante in uno dei seguenti modi:
 * Chiave API {{site.data.keyword.Bluemix_notm}} o chiave API dell'ID servizio
 * Token IAM (Identity and Access Management) {{site.data.keyword.Bluemix_notm}}
 
-[Le chiavi API {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#userapikey), [le chiavi API dell'ID servizio](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys) e i token IAM identificano in modo univoco l'identità del chiamante. L'identità del chiamante può essere un utente {{site.data.keyword.Bluemix_notm}} o un ID servizio creato in un account {{site.data.keyword.Bluemix_notm}}.
+[Le chiavi API {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#userapikey), [le chiavi API dell'ID servizio](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys) e i token IAM identificano in modo univoco l'identità del chiamante.  L'identità del chiamante può essere un utente {{site.data.keyword.Bluemix_notm}} o un ID servizio creato in un account {{site.data.keyword.Bluemix_notm}}.
 
 Le chiavi API sono credenziali costituite da una lunga serie di caratteri o numeri casuali. Un'identità {{site.data.keyword.Bluemix_notm}} può avere più chiavi API. Ognuna di queste chiavi API può essere gestita in modo indipendente, nel senso che se questa chiave API viene utilizzata solo dal tuo servizio, puoi eliminare la chiave API senza interrompere altri componenti.
 
-Puoi utilizzare le chiavi API per [accedere all'interfaccia riga di comando {{site.data.keyword.Bluemix_notm}} (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_login#ibmcloud_login) o per [generare i token IAM](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey). Sebbene non sia consigliato per l'uso di produzione, puoi anche inviare le chiavi API ai servizi {{site.data.keyword.Bluemix_notm}}.
+Puoi utilizzare le chiavi API per [accedere all'interfaccia riga di comando {{site.data.keyword.Bluemix_notm}} (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) o per [generare i token IAM](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey). Sebbene non sia consigliato per l'uso di produzione, puoi anche inviare le chiavi API ai servizi {{site.data.keyword.Bluemix_notm}}.
 
 ## Passaggio di una chiave API {{site.data.keyword.Bluemix_notm}} per l'autenticazione con un'API del servizio
 {: #apikey_auth}

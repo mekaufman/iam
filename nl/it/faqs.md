@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-08"
+lastupdated: "2019-05-23"
 
 keywords: frequently asked question, faq
 
@@ -43,9 +43,9 @@ Un servizio abilitato a IAM deve trovarsi in un gruppo di risorse e l'accesso al
 {: #iam-policies}
 {: faq}
 
-Una politica di accesso IAM è il modo in cui a utenti, ID servizio e gruppi di accesso in un account viene concessa l'autorizzazione per utilizzare una specifica istanza della risorsa o uno specifico servizio abilitato a IAM, per gestire un gruppo di risorse o per completare le attività di gestione dell'account. Ciascuna politica di accesso IAM è composta da un soggetto, una destinazione e un ruolo. Un soggetto è colui che dispone dell'accesso. La destinazione è l'elemento a cui può avere accesso il soggetto. E il ruolo, a seconda del fatto che si tratti di una piattaforma o di un ruolo del servizio in base al contesto della destinazione selezionata, definisce quale livello di accesso avrà il soggetto nella destinazione. 
+Una politica di accesso IAM è come agli utenti, agli ID servizio e ai gruppi di accesso in un account viene fornita l'autorizzazione a utilizzare un'istanza della risorsa o un servizio abilitato IAM specifico, gestire un gruppo di risorse o completare le attività di gestione dell'account. Ogni politica di accesso IAM è formata da un oggetto, una destinazione e un ruolo. Un oggetto è chi dispone dell'accesso. La destinazione è ciò a cui ha accesso l'oggetto. Ed infine il ruolo, se è un ruolo del servizio o della piattaforma a seconda del contesto della destinazione selezionata, definisce il livello di accesso dell'oggetto sulla destinazione. 
 
-Un soggetto è un utente, un ID servizio o un gruppo di accesso. Una destinazione può essere un servizio nell'account, un gruppo di risorse nell'account, uno specifico tipo o una specifica istanza della risorsa o un servizio di gestione account. E i ruoli che vengono forniti come scelte dipendono dalla tua destinazione selezionata. Alcuni servizi hanno ruoli specifici del servizio che sono definiti e alcuni utilizzano solo ruoli della piattaforma. Per comprendere visivamente questo concetto, controlla il seguente grafico che descrive le opzioni per la creazione di una politica IAM: 
+Un oggetto è un utente, un ID servizio o un gruppo di accesso. Una destinazione può essere un servizio nell'account, un gruppo di risorse nell'account, un tipo o un'istanza della risorsa specifico o un servizio di gestione dell'account. Le scelte dei ruoli che vengono fornite dipendono dalla tua destinazione selezionata. Alcuni servizi hanno dei ruoli specifici per il servizio definiti ed alcuni utilizzano solo i ruoli della piattaforma. Per comprendere questo concetto visivamente, consulta il seguente grafico che illustra le opzioni per la creazione di una politica IAM:
 
 ![Creazione delle politiche IAM](images/IAM.svg "Come vengono create le politiche di accesso IAM utilizzando un oggetto, una destinazione e un ruolo")
 
@@ -108,7 +108,7 @@ Per i servizi Cloud Foundry, devi disporre dei ruoli di gestore organizzazione o
 
 Per l'infrastruttura classica, devi disporre dell'autorizzazione di gestione utenti dell'infrastruttura classica e le autorizzazioni di categoria di servizio e dispositivo per le risorse a cui vuoi concedere l'accesso utente.
 
-## Qual è la differenza tra fornire l'accesso per gestire un gruppo di risorse e fornire l'accesso alle risorse all'interno di un gruppo di risorse? 
+## Qual è la differenza tra l'accesso per gestire un gruppo di risorse e l'accesso alle risorse all'interno di un gruppo di risorse?
 {: #providing-access}
 {: faq}
 
@@ -127,12 +127,12 @@ Il proprietario dell'account può rimuovere tutti gli utenti dall'account e qual
 * Una politica IAM per il servizio di gestione account Gestione utenti con il ruolo di amministratore assegnato ed essere il gestore organizzazione Cloud Foundry se l'utente appartiene a un'organizzazione Cloud Foundry.
 * Se hai l'infrastruttura classica nel tuo account, un utente deve avere una politica IAM per il servizio di gestione account Gestione utenti con il ruolo di amministratore assegnato, essere il gestore organizzazione Cloud Foundry se l'utente appartiene a un'organizzazione Cloud Foundry ed essere un predecessore dell'utente nella gerarchia di utenti dell'infrastruttura classica con assegnata l'autorizzazione di gestione utenti dell'infrastruttura classica.
 
-## Come posso richiedere l'autenticazione multifattore ID IBM per il mio account?
+## Come richiedo l'autenticazione multifattore dell'ID IBM per il mio account?
 {: #multi-factor}
 {: faq}
 
 1. Vai a **Gestisci** &gt; **Accesso (IAM)** e seleziona **Impostazioni**.
-2. Dalla sezione Accesso account, seleziona **Aggiorna** per selezionare la MFA per tutti gli utenti o solo per gli utenti non federati. 
+2. Dalla sezione Accesso account, seleziona **Aggiorna** per selezionare MFA per tutti gli utenti o solo per gli utenti non federati.
 
 Per ulteriori informazioni, vedi [Richiesta di MFA per gli utenti nel tuo account](/docs/iam?topic=iam-enablemfa#enablemfa).
 
@@ -160,7 +160,7 @@ Il controllo dell'accesso e l'organizzazione delle risorse dell'account sono le 
 
 Per delegare le capacità di amministratore dell'account, assegna il seguente accesso:
 
-* Una politica IAM con i ruoli Amministratore e Gestore su tutti i servizi abilitati per l'accesso e l'identità, che consente a un utente di creare istanze del servizio e di assegnare agli utenti l'accesso a tutte le risorse nell'account. 
+* Una politica IAM con i ruoli di amministratore e gestore su tutti i servizi abilitati per l'accesso e l'identità, che consente a un utente di creare istanze del servizio e di assegnare agli utenti l'accesso a tutte le risorse nell'account.
 * Una politica IAM con il ruolo di amministratore su tutti i servizi di gestione dell'account, che consente a un utente di completare attività come invito e rimozione di utenti, gestione dei gruppi di accesso, gestione degli ID servizio, gestione delle offerte del catalogo privato e traccia della fatturazione e dell'utilizzo.
 * La serie di autorizzazioni Super utente per l'infrastruttura classica
 * Gestore di Cloud Foundry per tutte le organizzazioni
@@ -174,6 +174,12 @@ Per delegare le capacità di amministratore dell'account, assegna il seguente ac
 3. Fai clic su **Infrastruttura classica**.
 4. Assegna le autorizzazioni dalla sezione **Autorizzazioni**, assegna l'accesso ai dispositivi dalla sezione **Dispositivi** e assegna l'accesso alle sottoreti VPN per i dispositivi a cui all'utente è stato assegnato l'accesso dalla sezione **Accesso VPN**.
 
+## Come gestisco l'accesso per gli utenti a cui sono state precedentemente assegnate delle autorizzazioni per la fatturazione e il supporto nel mio account SoftLayer?
+{: #migrated-permissions-faq}
+{: faq}
+
+Tutte le autorizzazioni che sono state precedentemente assegnate nel tuo account SoftLayer, possono essere gestite nella console {{site.data.keyword.Bluemix_notm}}. Le autorizzazioni dell'account per la gestione delle informazioni di fatturazione e dei casi di supporto sono ora disponibili nei [gruppi di accesso di autorizzazioni migrati](/docs/iam?topic=iam-migrated_permissions). Tutti gli utenti a cui erano state precedentemente assegnate queste autorizzazioni nel tuo account SoftLayer sono stati migrati a questi gruppi di accesso, a cui è stato assegnato lo stesso livello di accesso utilizzando una politica IAM sul gruppo di accesso.
+
 ## Ogni utente nel mio account può vedere tutti gli altri utenti?
 {: #users}
 {: faq}
@@ -184,7 +190,7 @@ Un proprietario di account può visualizzare tutti gli utenti nell'account e sce
 * **Visualizzazione limitata**: limita la possibilità di visualizzare gli utenti nella pagina Utenti solo a coloro ai quali è stato concesso l'accesso esplicito, insieme a coloro che hanno visibilità di altri utenti tramite un'organizzazione Cloud Foundry condivisa o una relazione di gerarchia dell'utente dell'infrastruttura classica.
 
 
-## Devo assegnare l'accesso a un utente quando lo invito all'account? 
+## Devo assegnare l'accesso a un utente quando lo invito all'account?
 {: #account-invite}
 {: faq}
 

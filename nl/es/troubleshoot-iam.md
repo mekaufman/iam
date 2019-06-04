@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-01"
+lastupdated: "2019-05-23"
 
 ---
 
@@ -75,3 +75,19 @@ Es posible que no tenga asignado el acceso correcto.
 
 Deberá solicitar al propietario de la cuenta que le asigne el permiso de la infraestructura clásica **Gestionar usuarios**, pero también debe ser un antecesor del usuario dentro de la jerarquía de usuarios de la infraestructura clásica para ver y gestionar los permisos de otro usuario.
 {: tsResolve}
+
+## ¿Cómo puedo gestionar permisos migrados de casos de soporte y de facturación en IBM Cloud?
+{: #troubleshoot-migrated-permissions}
+{: troubleshoot}
+
+Con la migración inicial de usuarios y permisos para gestionar facturación y casos de soporte desde la cuenta de SoftLayer en su cuenta de {{site.data.keyword.Bluemix_notm}} enlazada, algunos usuarios pueden haber perdido estos permisos. Sin embargo, a todos los grupos de acceso con permisos migrados ahora se les asignan las políticas de acceso de IAM correctas, lo que garantiza que a todos los usuarios se les asigna el acceso que tenían anteriormente.
+
+Parece que los usuarios no tienen los mismos permisos de gestión de facturación y de casos de soporte en la consola de {{site.data.keyword.Bluemix_notm}} que los que tenían asignados anteriormente en la cuenta de SoftLayer.
+{: tsSymptoms}
+   
+Es posible que a los grupos de acceso de permisos migrados no se les asignaran las políticas de acceso correctas cuando los usuarios se migraron inicialmente.
+{: tsCauses}
+
+A partir del 20 de mayo de 2019, a todos los [grupos de acceso de permisos migrados](/docs/iam?topic=iam-migrated_permissions) se les asignan las políticas correctas para gestionar información y casos de soporte. Si ha intentado utilizar estos grupos antes de esta fecha, es posible que los grupos de acceso sin las políticas de acceso de IAM equivalentes hayan ocasionado una discrepancia de acceso asignado entre los permisos de SoftLayer y el acceso de IAM. Esto se ha resuelto. Puede ir a **Gestionar** > **Acceso (IAM)**, y luego **Grupos de acceso** para revisar los usuarios y las políticas asignadas a cada grupo de acceso.
+{: tsResolve}
+

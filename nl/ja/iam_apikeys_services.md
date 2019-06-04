@@ -33,7 +33,7 @@ API を介して {{site.data.keyword.Bluemix}} サービスを呼び出すには
 
 API キーは、長い一連のランダムな文字または数字からなる資格情報です。 1 つの {{site.data.keyword.Bluemix_notm}} ID が複数の API キーを持つことができます。 これらの API キーはそれぞれ独立して管理できます。これは、ユーザーのサービスでのみ使用される API キーの場合、他のコンポーネントを中断せずにその API キーをユーザーが削除できることを意味します。
 
-API キーを使用して、[{{site.data.keyword.Bluemix_notm}} コマンド・ライン・インターフェース (CLI) にログイン](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_login#ibmcloud_login)したり、[IAM トークンを生成](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey)したりできます。 実動での使用は推奨されませんが、API キーを {{site.data.keyword.Bluemix_notm}} サービスに送信することもできます。
+API キーを使用して、[{{site.data.keyword.Bluemix_notm}} コマンド・ライン・インターフェース (CLI) にログイン](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login)したり、[IAM トークンを生成](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey)したりできます。 実動での使用は推奨されませんが、API キーを {{site.data.keyword.Bluemix_notm}} サービスに送信することもできます。
 
 ## サービス API での認証のための {{site.data.keyword.Bluemix_notm}} API キーの引き渡し
 {: #apikey_auth}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-01"
+lastupdated: "2019-05-23"
 
 ---
 
@@ -75,3 +75,19 @@ lastupdated: "2019-04-01"
 
 您必須要求帳戶擁有者以便被指派**管理使用者**標準基礎架構許可權，但您也必須是標準基礎架構使用者階層內的使用者上代，才能檢視及管理另一位使用者的許可權。
 {: tsResolve}
+
+## 如何在 IBM Cloud 中管理已移轉的計費及支援案例許可權？
+{: #troubleshoot-migrated-permissions}
+{: troubleshoot}
+
+最初將使用者和用來管理計費及支援案例的許可權從 SoftLayer 帳戶移轉到鏈結的 {{site.data.keyword.Bluemix_notm}} 帳戶後，某些使用者可能會遺漏這些許可權。不過，所有已移轉許可權存取群組現在都獲指派正確的 IAM 存取原則，以確保所有使用者獲指派先前擁有的正確存取權。
+
+使用者在 {{site.data.keyword.Bluemix_notm}} 主控台中擁有的管理計費及支援案例許可權似乎與先前在 SoftLayer 帳戶中指派的許可權不同。
+{: tsSymptoms}
+   
+在最初移轉使用者時，已移轉許可權存取群組可能尚未獲指派正確的存取原則。
+{: tsCauses}
+
+從 2019 年 5 月 20 日開始，所有[已移轉許可權存取群組](/docs/iam?topic=iam-migrated_permissions)都獲指派用來管理計費資訊及支援案例的正確原則。如果您在此日期之前嘗試使用這些群組，缺少相等 IAM 存取原則的存取群組會造成 SoftLayer 許可權與 IAM 存取權之間已指派存取權的不相符狀況。此問題已解決。您可以移至**管理** > **存取 (IAM)**，然後選取**存取群組**來檢閱指派給每個存取群組的使用者及原則。
+{: tsResolve}
+

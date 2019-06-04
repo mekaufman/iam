@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-16"
 
 keywords: get started with IAM, IAM tutorial, IAM quick start
 
@@ -27,6 +27,15 @@ Esta guía de aprendizaje está pensada para ayudarle a preparar y ejecutar ráp
 
 Esta guía de aprendizaje es para recursos habilitados para IAM. Para los servicios que no permite la creación de políticas IAM de nube para gestionar el acceso, puede utilizar el [acceso de Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfaccess) o los [permisos de la infraestructura clásica](/docs/iam?topic=iam-infrapermission#infrapermission).
 {: note}
+
+## Antes de empezar
+{: #iam-before-you-begin}
+
+Si no está utilizando IAM, consulte la siguiente documentación para comprender mejor las características, los conceptos y los componentes del sistema de gestión de acceso:
+
+* [IBM Cloud Identity and Access Management](/docs/iam?topic=iam-iamoverview) proporciona una descripción general rápida de lo que es IAM en {{site.data.keyword.Bluemix_notm}}, las características disponibles, y enlaces a los documentos de API y CLI disponibles.
+* [Conceptos de IAM](/docs/iam?topic=iam-iamconcepts) describe los conceptos de alto nivel en IAM, que le ayudan a comprender los distintos componentes cuando empiece.
+* [Acceso de IAM](/docs/iam?topic=iam-userroles) proporciona una revisión más exhaustiva sobre cómo funciona la gestión de acceso utilizando las políticas de acceso.
 
 
 ## Paso 1. Invitar a usuarios y asignar acceso inicial
@@ -101,7 +110,7 @@ Para asignar una nueva política de acceso, siga los pasos siguientes:
     * Seleccione **Asignar acceso dentro de un grupo de recursos** para asignar acceso a todos los recursos dentro de un grupo o solo a los recursos de un servicio específico dentro de un grupo. También debe proporcionar el usuario con acceso para ver, editar o gestionar el acceso al grupo de recursos seleccionando un rol para acceder al grupo de recursos. Seleccione **Sin acceso** si desea que el usuario solo tenga acceso al recurso especificado y no al grupo en el que está organizado.
     * Seleccione **Asignar acceso a recursos** para asignar acceso a todos los recursos habilitados para identificación y acceso en la cuenta, a todos los recursos de un servicio específico en la cuenta, a una única instancia o a un único recurso dentro de una instancia de servicio específica.
     * Seleccione **Asignar acceso a servicios de gestión de cuentas** para asignar acceso a todos los servicios de gestión de cuentas o solo a un servicio de gestión de cuentas.
-5. Seleccione cualquier combinación de roles para definir el ámbito del acceso. Para obtener más información, consulte [Roles de Cloud IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
+5. Seleccione cualquier combinación de roles para definir el ámbito del acceso. Para obtener más información, consulte [Roles de Cloud IAM](/docs/iam?topic=iam-userroles#iamusermanrol).
 6. Pulse **Asignar**.
 
 
@@ -122,4 +131,4 @@ También puede eliminar el acceso de un usuario pulsando la opción **Eliminar**
 ## Pasos siguientes
 {: #next}
 
-Aprenda qué más puede realizar con Cloud IAM echando un vistazo a la lista de [Características de Cloud IAM](/docs/iam?topic=iam-features#features).
+Aprenda qué más puede realizar con Cloud IAM echando un vistazo a la lista de [Características de Cloud IAM](/docs/iam?topic=iam-iamoverview#features).

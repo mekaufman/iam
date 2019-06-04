@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-04-01"
+lastupdated: "2019-05-23"
 
 ---
 
@@ -75,3 +75,19 @@ lastupdated: "2019-04-01"
 
 您必须要求帐户所有者为您分配**管理用户**经典基础架构许可权，但您还必须在经典基础架构用户层次结构中是该用户的祖代，才能查看和管理该用户的许可权。
 {: tsResolve}
+
+## 如何在 IBM Cloud 中管理迁移的计费和支持案例许可权？
+{: #troubleshoot-migrated-permissions}
+{: troubleshoot}
+
+将用户以及管理计费和支持案例的许可权从 SoftLayer 帐户初始迁移到链接的 {{site.data.keyword.Bluemix_notm}} 帐户时，一些用户可能会缺少这些许可权。但是，现在会为所有迁移的许可权访问组分配正确的 IAM 访问策略，确保为所有用户分配先前拥有的正确访问权。
+
+用户在 {{site.data.keyword.Bluemix_notm}} 控制台中拥有的管理计费和支持案例许可权似乎与先前在 SoftLayer 帐户中为其分配的不同。
+{: tsSymptoms}
+   
+初始迁移用户时，可能尚未为迁移的许可权访问组分配正确的访问策略。
+{: tsCauses}
+
+从 2019 年 5 月 20 日开始，所有[迁移的许可权访问组](/docs/iam?topic=iam-migrated_permissions)都会分配有用于管理计费信息和支持案例的正确策略。如果您在此日期之前尝试使用了这些组，那么缺少相应 IAM 访问策略的访问组可能导致了 SoftLayer 许可权中分配的访问权与 IAM 访问权之间的不匹配。此问题现已解决。您可以转至**管理** > **访问权 (IAM)**，然后选择**访问组**来查看分配给每个访问组的用户和策略。
+{: tsResolve}
+

@@ -25,7 +25,7 @@ subcollection: iam
 
 {{site.data.keyword.Bluemix_notm}} IAM(Identity and Access Management)을 사용하면 두 플랫폼 서비스 모두에 대해 안전하게 사용자를 인증하고 {{site.data.keyword.Bluemix_notm}}에서 일관되게 리소스에 대한 액세스를 제어할 수 있습니다. {{site.data.keyword.Bluemix_notm}} 서비스 세트는 액세스 제어를 위해 Cloud IAM을 사용할 수 있으며, 한 번에 둘 이상의 리소스에 대한 빠르고 손쉬운 액세스를 사용자에게 제공할 수 있도록 계정 내에서 [리소스 그룹](/docs/resources?topic=resources-rgs#rgs)으로 구성되어 있습니다. Cloud IAM 액세스 정책을 사용하면 계정 내에서 리소스에 대한 사용자 및 서비스 ID 액세스를 지정할 수 있습니다. 사용자 및 서비스 ID를 [액세스 그룹](/docs/iam?topic=iam-getstarted#getstarted)으로 그룹화하여 그룹 내 모든 엔티티에 동일한 레벨의 액세스를 쉽게 제공할 수 있습니다.
 
-정책은 대상에 대한 액세스 범위를 정의하는 속성의 조합으로 하나 이상의 역할을 사용자 또는 [서비스 ID](/docs/iam?topic=iam-serviceids#serviceids) 또는 액세스 그룹에 해당하는 주체(Subject)에 지정합니다. 정책은 인스턴스 레벨까지 단일 서비스에 대한 액세스를 제공하거나, 리소스 그룹의 함께 구성된 리소스 세트 또는 계정 관리 서비스에 적용될 수 있습니다. 지정된 [IAM 역할](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)에 따라, 주체(Subject)에는 API 호출을 완료하거나 UI를 사용하여 서비스에 액세스하거나 서비스 인스턴스에 대한 작업을 수행하거나 계정 관리 태스크를 완료하기 위한 다양한 레벨의 액세스가 허용됩니다.
+정책은 대상에 대한 액세스 범위를 정의하는 속성의 조합으로 하나 이상의 역할을 사용자 또는 [서비스 ID](/docs/iam?topic=iam-serviceids#serviceids) 또는 액세스 그룹에 해당하는 주체(Subject)에 지정합니다. 정책은 인스턴스 레벨까지 단일 서비스에 대한 액세스를 제공하거나, 리소스 그룹의 함께 구성된 리소스 세트 또는 계정 관리 서비스에 적용될 수 있습니다. 지정된 [IAM 역할](/docs/iam?topic=iam-userroles#iamusermanrol)에 따라, 주체(Subject)에는 API 호출을 완료하거나 UI를 사용하여 서비스에 액세스하거나 서비스 인스턴스에 대한 작업을 수행하거나 계정 관리 태스크를 완료하기 위한 다양한 레벨의 액세스가 허용됩니다.
 
 
 ![계정의 액세스 제어를 위한 IAM](images/iam-diagram.svg "IAM을 사용하여 계정에서 액세스를 관리하는 방법")

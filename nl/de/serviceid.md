@@ -52,7 +52,7 @@ Alle Änderungen, die Sie an einer vorhandenen Service-ID durchführen, wie zum 
 ## Service-ID sperren
 {: #lock_serviceid}
 
-Damit eine Situation vermieden werden kann, in der die Service-ID gelöscht und so ein Ausfall oder eine Unterbrechung für die Benutzer des Service verursacht wird, können Sie Service-ID über die Benutzerschnittstelle oder die Befehlszeilenschnittstelle sperren. Das Sperren einer Service-ID verhindert darüber hinaus, dass Zugriffsrichtlinien geändert, gelöscht oder zugewiesen werden. Sie können eine Service-ID nicht nur sperren, sondern auch [einzelne API-Schlüssel sperren](/docs/iam?topic=iam-lockkey#lockkey), die jeder Service-ID zugeordnet sind, die Sie in Ihrem Konto erstellen.
+Damit eine Situation vermieden werden kann, in der die Service-ID gelöscht und so ein Ausfall oder eine Unterbrechung für die Benutzer des Service verursacht wird, können Sie Service-ID über die Benutzerschnittstelle oder die Befehlszeilenschnittstelle sperren. Das Sperren einer Service-ID verhindert darüber hinaus, dass Zugriffsrichtlinien geändert, gelöscht oder zugewiesen werden. Sie können eine Service-ID nicht nur sperren, sondern auch [einzelne API-Schlüssel sperren](/docs/iam?topic=iam-serviceidapikeys#lockkey), die jeder Service-ID zugeordnet sind, die Sie in Ihrem Konto erstellen.
 
 Gesperrte Service-IDs können zwar nicht aus dem Konto gelöscht und die Zugriffsrichtlinien können nicht aktualisiert werden, doch sie können immer noch aus jeder Zugriffsgruppe entfernt werden, zu der sie hinzugefügt wurden. Das bedeutet, dass jeder Zugriff, der einer ID durch ihre Mitgliedschaft in einer Zugriffsgruppe zugeordnet wurde, entfernt wird, wenn die Service-ID aus der Zugriffsgruppe entfernt wird.
 {: note}

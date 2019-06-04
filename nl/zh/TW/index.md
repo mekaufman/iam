@@ -25,7 +25,7 @@ subcollection: iam
 
 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 可讓您安全地鑑別平台服務的使用者，並跨 {{site.data.keyword.Bluemix_notm}} 一致地控制資源的存取。讓一組 {{site.data.keyword.Bluemix_notm}} 服務使用 Cloud IAM 來存取控制，並在帳戶內組織為[資源群組](/docs/resources?topic=resources-rgs#rgs)，讓使用者可以同時快速並輕鬆地存取多個資源。Cloud IAM 存取原則是用來指派使用者及服務 ID 對帳戶內資源的存取權。您可以將使用者及服務 ID 分組為[存取群組](/docs/iam?topic=iam-getstarted#getstarted)，以將相同的存取層次輕鬆地提供給群組內的所有實體。
 
-原則會指派主體（即使用者、[服務 ID](/docs/iam?topic=iam-serviceids#serviceids) 或存取群組），這是一個以上具有屬性組合的角色，這些屬性用於定義對目標的存取範圍。原則可提供對單一服務（直到實例層次）的存取權，對一組在資源群組中組織在一起之資源的存取權，或對帳戶管理服務的存取權。視您指派的 [IAM 角色](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)而定，容許主體透過不同層次的存取權來完成帳戶管理作業、使用服務實例，或透過使用者介面或完成 API 呼叫來存取服務。
+原則會指派主體（即使用者、[服務 ID](/docs/iam?topic=iam-serviceids#serviceids) 或存取群組），這是一個以上具有屬性組合的角色，這些屬性用於定義對目標的存取範圍。原則可提供對單一服務（直到實例層次）的存取權，對一組在資源群組中組織在一起之資源的存取權，或對帳戶管理服務的存取權。視您指派的 [IAM 角色](/docs/iam?topic=iam-userroles#iamusermanrol)而定，容許主體透過不同層次的存取權來完成帳戶管理作業、使用服務實例，或透過使用者介面或完成 API 呼叫來存取服務。
 
 
 ![用於帳戶存取管理的 IAM](images/iam-diagram.svg "存取管理如何在帳戶中使用 IAM 運作")

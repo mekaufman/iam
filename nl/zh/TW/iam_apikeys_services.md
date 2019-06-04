@@ -33,7 +33,7 @@ subcollection: iam
 
 API 金鑰是包含一連串長隨機字元或數字的認證。{{site.data.keyword.Bluemix_notm}} 身分可以有多個 API 金鑰。每一個 API 金鑰都可以獨立管理，也就是說，如果此 API 金鑰僅供您的服務使用，則您可以刪除 API 金鑰，而不中斷某個其他元件。
 
-您可以使用 API 金鑰[登入 {{site.data.keyword.Bluemix_notm}} 指令行介面 (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_login#ibmcloud_login) 或[產生 IAM 記號](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey)。雖然不建議用於正式作業，但您也可以將 API 金鑰傳送至 {{site.data.keyword.Bluemix_notm}} 服務。
+您可以使用 API 金鑰[登入 {{site.data.keyword.Bluemix_notm}} 指令行介面 (CLI)](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) 或[產生 IAM 記號](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey)。雖然不建議用於正式作業，但您也可以將 API 金鑰傳送至 {{site.data.keyword.Bluemix_notm}} 服務。
 
 ## 傳遞 {{site.data.keyword.Bluemix_notm}} API 金鑰以向服務 API 進行鑑別
 {: #apikey_auth}

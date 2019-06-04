@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-08"
+lastupdated: "2019-05-23"
 
 keywords: frequently asked question, faq
 
@@ -173,6 +173,12 @@ Um die Funktionen des Kontoadministrators zu delegieren, müssen Sie folgenden Z
 2. Wählen Sie den Namen eines Benutzers aus.
 3. Klicken Sie auf **Klassische Infrastruktur**.
 4. Verwenden Sie zum Zuweisen von Berechtigungen den Abschnitt **Berechtigungen**, zum Zuweisen von Zugriff auf Geräte den Abschnitt **Geräte** und zum Zuweisen von Zugriff auf VPN-Teilnetze für die Geräte, für die dem Benutzer Zugriff zugewiesen ist, den Abschnitt **VPN-Zugriff**.
+
+## Wie verwalte ich den Zugriff für Benutzer, denen zuvor Abrechnungs- und Support-Berechtigungen in meinem SoftLayer-Konto zugewiesen wurden? 
+{: #migrated-permissions-faq}
+{: faq}
+
+Alle Berechtigungen, die zuvor in Ihrem SoftLayer-Konto zugewiesen wurden, können in der {{site.data.keyword.Bluemix_notm}}-Konsole verwaltet werden. Zugriffsberechtigungen für die Verwaltung von Abrechnungsinformationen und Supportfällen sind nun in [Zugriffsgruppen mit migrierten Berechtigungen](/docs/iam?topic=iam-migrated_permissions) verfügbar. Alle Benutzer, denen zuvor diese Berechtigungen in Ihrem SoftLayer-Konto zugewiesen wurden, wurden in diese Zugriffsgruppen migriert. Diesen Zugriffsgruppen wird anhand einer IAM-Richtlinie dieselbe Zugriffsebene zugewiesen. 
 
 ## Kann jeder Benutzer in meinem Konto alle anderen Benutzer sehen?
 {: #users}

@@ -39,7 +39,7 @@ Führen Sie die folgenden Schritte aus, um die externe Authentifizierung zu best
 3. Wählen Sie auf der Seite **Benutzerdetails** die Option **Externe Authentifizierung bestellen** im Abschnitt für die Benutzeranmeldung aus.
 4. Wählen Sie **Symantec Identity Protection** oder **Telefongestützter Schutz personenbezogener Daten** aus.
     * Für die Authentifizierung mit Symantec muss der Benutzer die App [Symantec VIP](https://vip.symantec.com/){: new_window} ![Symbol für externen Link](../icons/launch-glyph.svg) herunterladen und eine Berechtigungsnachweis-ID anfordern, um mit dem Bestellablauf fortfahren zu können.
-    * Für die telefongestützte Authentifizierung können Sie mit der Bestellung fortfahren, Ihr Benutzer muss jedoch zuerst seine [Konfiguration einrichten](/docs/account?topic=account-third-party-MFA#setting-up-phone-based-authentication), bevor Sie die Option aktivieren können.
+    * Für die telefongestützte Authentifizierung können Sie mit der Bestellung fortfahren, Ihr Benutzer muss jedoch zuerst seine [Konfiguration einrichten](/docs/account?topic=account-login-settings#setting-up-phone-based-authentication), bevor Sie die Option aktivieren können.
 5. Gehen Sie entsprechend den Eingabeaufforderungen für die von Ihnen getroffene Auswahl vor und überprüfen Sie den Preis und die Bedingungen, bevor Sie die Bestellung aufgeben.
 6. Klicken Sie auf **Bestellen**, um Ihre Auswahl abzuschließen.
 
@@ -63,7 +63,7 @@ Um eine Bestellung für die externe Authentifizierung stornieren zu können, mü
 
 * Berechtigung der klassischen Infrastruktur zum Verwalten von Benutzern
 * Berechtigung der klassischen Infrastruktur zum Stornieren von Services
-* Rolle des Administrators für den Kontoverwaltungsservice von Support Center oder migrierte Berechtigungen der klassischen Infrastruktur zum Anzeigen, Bearbeiten und Hinzufügen von Tickets, die in den [Zugriffsgruppen für migrierte Berechtigungen](/docs/iam?topic=iam-predefined#predefined) nicht verfügbar sind.
+* Rolle des Administrators für den Kontoverwaltungsservice von Support Center oder migrierte Berechtigungen der klassischen Infrastruktur zum Anzeigen, Bearbeiten und Hinzufügen von Tickets, die in den [Zugriffsgruppen für migrierte Berechtigungen](/docs/iam?topic=iam-migrated_permissions) nicht verfügbar sind.
 
 Führen Sie die folgenden Schritte aus, um die Bestellung der externen Authentifizierung zu stornieren:
 

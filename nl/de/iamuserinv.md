@@ -40,11 +40,11 @@ Führen Sie die folgenden Schritte aus, um Benutzer einzuladen oder Einladungen 
   * **Cloud Foundry-Zugriff**
   * **Zugriff auf die klassische Infrastruktur**.
 
-  Weitere Informationen zu diesem Thema erhalten Sie in [Benutzerzugriff zuweisen](/docs/iam?topic=iam-assignaccess#assignaccess).
+  Weitere Informationen zu diesem Thema erhalten Sie in [Benutzerzugriff zuweisen](/docs/iam?topic=iam-iamuserinv#assignaccess).
 
 Wenn Sie entscheiden, dass ein Benutzer keinen Zugriff benötigt, können Sie eine Einladung für beliebige Benutzer abbrechen, die mit dem Status **Verarbeitung läuft** (Processing) oder **Anstehend** (Pending) in der Spalte **Status** angezeigt werden. Wenn ein eingeladener Benutzer keine Einladung empfangen hat, können Sie die Einladung an jeden Benutzer mit dem Status **Anstehend** erneut senden.
 
-Wenn Sie Benutzer über die Befehlszeilenschnittstelle (Command-Line Interface, CLI) einladen möchten, verwenden Sie den Befehl [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite).
+Wenn Sie Benutzer über die Befehlszeilenschnittstelle (Command-Line Interface, CLI) einladen möchten, verwenden Sie den Befehl [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite).
 {: tip}
 
 ## Benutzerzugriff über eine Einladung zuweisen
@@ -99,7 +99,7 @@ Sie können Zugriffsberechtigungen für eine einzelne Ressource innerhalb Ihres 
     * **Ressourcen-ID**: Geben Sie den Namen des Buckets ein.
 7. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um die gewünschten Zugriffsberechtigungen zuzuweisen.
 
-Weitere Informationen zu den Rollen, die bei der Zuweisung von Zugriff verwendet werden, finden Sie im Abschnitt zum [IAM-Zugriff](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
+Weitere Informationen zu den Rollen, die bei der Zuweisung von Zugriff verwendet werden, finden Sie im Abschnitt zum [IAM-Zugriff](/docs/iam?topic=iam-userroles#iamusermanrol).
 
 ### Cloud Foundry-Zugriff
 {: #invite_cf}
@@ -115,9 +115,9 @@ Wenn Sie neue Benutzer einladen, können Sie den Benutzer zu einer Organisation 
 7. Wählen Sie eine Bereichsrolle aus, um die Zugriffsebene für die ausgewählten Bereiche zu definieren.
 8. Optional: Wählen Sie **Bereichsrolle hinzufügen** aus, um eine zusätzliche Rolle anzugeben.
 
-Weitere Informationen zu den Rollen, die bei der Zuweisung von Zugriff verwendet werden, finden Sie im Abschnitt zu [Cloud Foundry-Rollen](/docs/iam?topic=iam-cfroles#cfroles).
+Weitere Informationen zu den Rollen, die bei der Zuweisung von Zugriff verwendet werden, finden Sie im Abschnitt zu [Cloud Foundry-Rollen](/docs/iam?topic=iam-cfaccess#cfroles).
 
-Sie können eine Cloud Foundry-Rolle mithilfe des CLI-Befehls [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite) hinzufügen, aber zum Zuweisen anderer Zugriffsrechte oder Berechtigungen müssen Sie die Konsole verwenden.
+Sie können eine Cloud Foundry-Rolle mithilfe des CLI-Befehls [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) hinzufügen, aber zum Zuweisen anderer Zugriffsrechte oder Berechtigungen müssen Sie die Konsole verwenden.
 {: tip}
 
 ### Zugriff auf die klassische Infrastruktur

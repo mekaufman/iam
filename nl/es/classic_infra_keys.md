@@ -19,7 +19,7 @@ subcollection: iam
 # Gestión de claves de API de la infraestructura clásica
 {: #classic_keys}
 
-Puede utilizar las claves de API de la infraestructura clásica para acceder a las API de la infraestructura clásica. Solo puede tener una clave de API de la infraestructura clásica por usuario. El usuario para cuya cuenta es la clave de API puede crear, suprimir y ver los detalles de la clave de API. Si es un antecesor en la jerarquía de la infraestructura clásica para el usuario y tiene asignado el permiso de la infraestructura clásica de gestión de usuarios, puede ver, crear y suprimir claves de API de la infraestructura clásica para usuarios solo de VPN.
+Puede utilizar las claves de API de la infraestructura clásica para acceder a las API de la infraestructura clásica. Solo puede tener una clave de API de la infraestructura clásica por usuario. El usuario para cuya cuenta es la clave de API puede crear, suprimir y ver los detalles de la clave de API. Si es un antecesor en la jerarquía de la infraestructura clásica para el usuario y tiene el permiso de la infraestructura clásica de gestión de usuarios, puede ver, crear y suprimir claves de API de la infraestructura clásica para usuarios solo de VPN.
 {:shortdesc}
 
 Para gestionar sus claves de API de la infraestructura clásica, vaya a **Gestionar** > **Acceso (IAM)** > **Claves de API de IBM Cloud**.

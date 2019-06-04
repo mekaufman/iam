@@ -39,7 +39,7 @@ subcollection: iam
 3. 從**使用者詳細資料**頁面中，選取「管理使用者的登入」區段中的**訂購外部鑑別**。
 4. 選取 **Symantec 身分保護**或**電話型身分保護**。
     * 對於 Symantec 鑑別，使用者必須下載 [Symantec VIP](https://vip.symantec.com/){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg) 應用程式，並取得認證 ID，才能繼續進行訂購處理程序。
-    * 對於電話型鑑別，您可以繼續進行訂購，但是您的使用者必須先[設定配置](/docs/account?topic=account-third-party-MFA#setting-up-phone-based-authentication)，您才能啟用此選項。
+    * 對於電話型鑑別，您可以繼續進行訂購，但是您的使用者必須先[設定配置](/docs/account?topic=account-login-settings#setting-up-phone-based-authentication)，您才能啟用此選項。
 5. 根據您的選擇，在下訂單之前，請遵循提示來檢閱價格及條款。
 6. 按一下**訂購**，以完成您的選擇。
 
@@ -63,7 +63,7 @@ subcollection: iam
 
 * 管理使用者標準基礎架構許可權
 * 取消服務標準基礎架構許可權
-* 「支援中心」帳戶管理服務的管理者，或[已移轉的許可權存取群組](/docs/iam?topic=iam-predefined#predefined)內無法使用的檢視、編輯及新增問題單已移轉標準基礎架構許可權。
+* 「支援中心」帳戶管理服務的管理者，或[已移轉的許可權存取群組](/docs/iam?topic=iam-migrated_permissions)內無法使用的檢視、編輯及新增問題單已移轉標準基礎架構許可權。
 
 若要取消外部鑑別訂單，請完成下列步驟：
 

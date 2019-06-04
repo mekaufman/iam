@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-16"
 
 keywords: get started with IAM, IAM tutorial, IAM quick start
 
@@ -19,7 +19,7 @@ subcollection: iam
 {:tip: .tip}
 {:note: .note}
 
-# Lernprogramm 'Einführung'
+# Lernprogramm zur Einführung
 {: #getstarted}
 
 Dieses Lernprogramm soll Sie dabei unterstützen, sich schnell mit IBM Cloud Identity and Access Management (IAM) vertraut zu machen. Dazu werden Benutzer zu Ihrem Konto eingeladen und Sie werden diesen Benutzern Cloud IAM-Zugriffsberechtigungen zuweisen.
@@ -27,6 +27,15 @@ Dieses Lernprogramm soll Sie dabei unterstützen, sich schnell mit IBM Cloud Ide
 
 Dieses Lernprogramm behandelt IAM-fähige Ressourcen. Für Services, die die Erstellung von Cloud IAM-Richtlinien zur Verwaltung des Zugriffs nicht unterstützen, können Sie [Cloud Foundry-Zugriff](/docs/iam?topic=iam-cfaccess#cfaccess) oder [Berechtigungen für die klassische Infrastruktur](/docs/iam?topic=iam-infrapermission#infrapermission) verwenden.
 {: note}
+
+## Vorbereitende Schritte
+{: #iam-before-you-begin}
+
+Wenn Sie IAM bisher nicht verwendet haben, finden Sie in der folgenden Dokumentation Informationen zu den Features, Konzepten und Komponenten des Zugriffsverwaltungssystems:
+
+* [IBM Cloud Identity and Access Management](/docs/iam?topic=iam-iamoverview) bietet eine kurze Übersicht über IAM in {{site.data.keyword.Bluemix_notm}}, die verfügbaren Features sowie Links zu verfügbaren Dokumenten zur Befehlszeilenschnittstelle und zur API.
+* [IAM-Konzepte](/docs/iam?topic=iam-iamconcepts) bietet eine Übersicht über die allgemeinen Konzepte in IAM, die die verschiedenen Komponenten veranschaulichen und Sie beim Einstieg unterstützen.
+* [IAM-Zugriff](/docs/iam?topic=iam-userroles) bietet eine detailliertere Beschreibung des Zugriffsmanagements mithilfe von Zugriffsrichtlinien.
 
 
 ## Schritt 1. Benutzer einladen und Anfangszugriffsberechtigungen zuweisen
@@ -101,7 +110,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Zugriffsrichtlinie zuzuweis
     * Wählen Sie **Zugriff in einer Ressourcengruppe zuweisen** aus, um den Zugriff auf alle Ressourcen in einer Gruppe oder nur auf die Ressourcen für einen bestimmten Service in einer Gruppe zuzuweisen. Sie können dem Benutzer auch die Zugriffsberechtigungen zum Anzeigen, Bearbeiten oder Verwalten des Zugriffs auf die Ressourcengruppe erteilen, indem Sie eine Rolle für den Zugriff auf die Ressourcengruppe auswählen. Wählen Sie **Kein Zugriff** aus, wenn der Benutzer ausschließlich Zugriff auf die angegebene Ressource erhalten soll, nicht jedoch auf die Gruppe, in der sich die Ressource befindet.
     * Wählen Sie **Zugriff auf Ressourcen zuweisen** aus, um den Zugriff auf alle Ressourcen mit aktiviertem Identity and Access Management innerhalb des Kontos, alle Ressourcen eines bestimmten Service innerhalb des Kontos, auf eine einzelne Instanz oder eine einzelne Ressource innerhalb einer bestimmten Serviceinstanz zuzuweisen.
     * Wählen Sie **Zugriff auf Kontoverwaltungsservices zuweisen** aus, um Zugriff auf alle oder nur einen Kontoverwaltungsservice zu erteilen.
-5. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um den Geltungsbereich der Zugriffsberechtigungen zu definieren. Weitere Informationen hierzu enthält [Cloud IAM-Rollen](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
+5. Wählen Sie eine beliebige Zusammenstellung von Rollen aus, um den Geltungsbereich der Zugriffsberechtigungen zu definieren. Weitere Informationen hierzu enthält [Cloud IAM-Rollen](/docs/iam?topic=iam-userroles#iamusermanrol).
 6. Klicken Sie auf **Zuweisen**.
 
 
@@ -122,4 +131,4 @@ Sie können die Zugriffsberechtigungen für einen Benutzer entfernen, indem Sie 
 ## Nächste Schritte
 {: #next}
 
-Hier erfahren Sie, welche weiterführenden Schritte Sie mit Cloud IAM ausführen können, indem Sie die Informationen in der Liste der [Cloud IAM-Funktionen](/docs/iam?topic=iam-features#features) lesen.
+Hier erfahren Sie, welche weiterführenden Schritte Sie mit Cloud IAM ausführen können, indem Sie die Informationen in der Liste der [Cloud IAM-Funktionen](/docs/iam?topic=iam-iamoverview#features) lesen.

@@ -40,11 +40,11 @@ subcollection: iam
   * **Cloud Foundry 액세스**
   * **클래식 인프라 액세스**.
 
-  자세한 정보는 [사용자 액세스 지정](/docs/iam?topic=iam-assignaccess#assignaccess)을 참조하십시오.
+  자세한 정보는 [사용자 액세스 지정](/docs/iam?topic=iam-iamuserinv#assignaccess)을 참조하십시오.
 
 사용자에게 액세스 권한이 필요 없다고 판단되면 **상태** 열에서 **처리 중** 또는 **보류 중** 상태로 표시된 사용자에 대한 초대를 취소할 수 있습니다. 초대된 사용자가 초대장을 받지 못한 경우에는 **보류 중** 상태인 사용자에게 초대를 재전송할 수 있습니다.
 
-명령행 인터페이스(CLI)를 사용하여 사용자를 초대하려는 경우 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite) 명령을 참조하십시오.
+명령행 인터페이스(CLI)를 사용하여 사용자를 초대하려는 경우 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) 명령을 참조하십시오.
 {: tip}
 
 ## 초대에서 사용자 액세스 지정
@@ -99,7 +99,7 @@ subcollection: iam
     * **리소스 ID**: 버킷의 이름을 입력하십시오.
 7. 원하는 액세스를 지정하기 위한 역할의 임의의 조합을 선택하십시오.
 
-액세스를 지정할 때 사용되는 역할에 대한 자세한 정보는 [IAM 액세스](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)를 참조하십시오.
+액세스를 지정할 때 사용되는 역할에 대한 자세한 정보는 [IAM 액세스](/docs/iam?topic=iam-userroles#iamusermanrol)를 참조하십시오.
 
 ### Cloud Foundry 액세스
 {: #invite_cf}
@@ -115,9 +115,9 @@ subcollection: iam
 7. 영역 역할을 선택하여 선택된 영역에 대한 액세스 레벨을 정의하십시오.
 8. 선택사항: **영역 역할 추가**를 선택하여 추가 역할을 지정하십시오.
 
-액세스를 지정할 때 사용되는 역할에 대한 자세한 정보는 [Cloud Foundry 역할](/docs/iam?topic=iam-cfroles#cfroles)을 참조하십시오.
+액세스를 지정할 때 사용되는 역할에 대한 자세한 정보는 [Cloud Foundry 역할](/docs/iam?topic=iam-cfaccess#cfroles)을 참조하십시오.
 
-[ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_account_user_invite#ibmcloud_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 다른 액세스 또는 권한을 지정하려면 콘솔을 사용해야 합니다.
+[ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) CLI 명령을 사용하여 Cloud Foundry 역할을 추가할 수 있지만, 다른 액세스 또는 권한을 지정하려면 콘솔을 사용해야 합니다.
 {: tip}
 
 ### 클래식 인프라 액세스

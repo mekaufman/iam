@@ -22,7 +22,7 @@ subcollection: iam
 # Actualización de la contraseña VPN de la infraestructura clásica
 {: #vpnpassword}
 
-Puede actualizar su propia contraseña VPN, o, en el caso de que un usuario olvide su contraseña y no pueda restablecerla por sí misma, otro usuario con el acceso correcto puede actualizar la contraseña VPN del usuario.
+Puede actualizar su propia contraseña VPN, o, en el caso de que un usuario olvide su contraseña, otro usuario con el acceso correcto puede actualizar la contraseña VPN del usuario.
 {:shortdesc}
 
 Si tiene el acceso siguiente, puede actualizar la contraseña VPN de otro usuario:

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-16"
 
 keywords: get started with IAM, IAM tutorial, IAM quick start
 
@@ -27,6 +27,15 @@ subcollection: iam
 
 本教程适用于支持 IAM 的资源。对于不支持创建 Cloud IAM 策略以管理访问权的服务，您可以使用 [Cloud Foundry 访问权](/docs/iam?topic=iam-cfaccess#cfaccess)或[经典基础架构许可权](/docs/iam?topic=iam-infrapermission#infrapermission)。
 {: note}
+
+## 开始之前
+{: #iam-before-you-begin}
+
+如果您初次使用 IAM，请查看以下文档以深入了解访问管理系统的功能、概念和组件：
+
+* [IBM Cloud Identity and Access Management](/docs/iam?topic=iam-iamoverview) 概要介绍了 {{site.data.keyword.Bluemix_notm}} 中的 IAM 是什么、可用功能以及到可用 CLI 和 API 文档的链接。
+* [IAM 概念](/docs/iam?topic=iam-iamconcepts)概要介绍了 IAM 中的高级别概念，可帮助您在入门阶段了解不同的组件。
+* [IAM 访问权](/docs/iam?topic=iam-userroles)更深入介绍了访问管理如何使用访问策略执行任务。
 
 
 ## 步骤 1. 邀请用户并分配初始访问权
@@ -101,7 +110,7 @@ subcollection: iam
     * 选择**分配对资源组的访问权**可分配对组中所有资源的访问权，或分配仅对组中特定服务的资源的访问权。还可以通过选择对资源组的访问角色，为用户提供对资源组的查看、编辑或管理访问权。如果希望用户仅有权访问指定的资源，而无权访问资源所组织成的组，请选择**无访问权**。
     * 选择**分配对资源的访问权**可分配对帐户中所有启用“身份和访问权”的资源的访问权、对帐户中特定服务的所有资源的访问权、对单个实例的访问权或对特定服务实例中单个资源的访问权。
     * 选择**分配对帐户管理服务的访问权**，以分配对所有帐户管理服务或仅一个帐户管理服务的访问权。
-5. 选择任意角色组合来定义访问权的作用域。有关更多信息，请参阅 [Cloud IAM 角色](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)。
+5. 选择任意角色组合来定义访问权的作用域。有关更多信息，请参阅 [Cloud IAM 角色](/docs/iam?topic=iam-userroles#iamusermanrol)。
 6. 单击**分配**。
 
 
@@ -122,4 +131,4 @@ subcollection: iam
 ## 后续步骤
 {: #next}
 
-通过查看 [Cloud IAM 功能](/docs/iam?topic=iam-features#features)列表，了解可以使用 Cloud IAM 执行的其他操作。
+通过查看 [Cloud IAM 功能](/docs/iam?topic=iam-iamoverview#features)列表，了解可以使用 Cloud IAM 执行的其他操作。
