@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-06-03"
+lastupdated: "2019-06-04"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -84,37 +84,23 @@ With platform management roles, users can be assigned varying levels of permissi
 Select all roles that apply when creating a policy. Each role allows separate actions to be completed and doesn't inherit the actions of the lesser roles.
 {: tip}
 
-The following tables provide examples for some of the platform management actions that users can take within the context of catalog resources, resource groups, and account management services. See the documentation for each catalog offering to understand how the roles apply to users within the context of the service that is being used.
+The following table provides examples for some of the platform management actions that users can take within the context of catalog resources and resource groups. See the documentation for each catalog offering to understand how the roles apply to users within the context of the service that is being used.
 
-The first row of the table describes separate options that you can choose from when creating a policy, and the first column describes the selected roles for the policy. The remaining cells map to which role is selected from the first column, and which type of policy has been selected from the options in the first row.
 
-| Access Policy Details | Actions on Services in the Account | Actions on Resources within Resource Groups | Actions for Access to Resource Groups |
-|:--------------|:------------|:-------------|:-------------|
 |  | One or all IAM-enabled services | Selected service in a resource group | Selected resource group |
+|:--------------|:------------|:-------------|:-------------|
 | Viewer role | View instances, aliases, bindings, and credentials | View only specified instances in the resource group | View resource group |
 | Operator role |  View instances and manage aliases, bindings, and credentials |  Not applicable | Not applicable |
 | Editor role |  Create, delete, edit, and view instances. Manage aliases, bindings, and credentials | Create, delete, edit, suspend, resume, view, and bind only specified instances in the resource group | View and edit name of resource group |
 | Administrator role |  All management actions for services | All management actions for the specified instances in the resource group | View, edit, and manage access for the resource group |
+{: row-headers}
+{: class="comparison-table"}
 {: caption="Table 2. Example platform management roles and actions for services in an account" caption-side="top"}
+{: summary="The first row of the table describes separate options that you can choose from when creating a policy, and the first column describes the selected roles for the policy. The remaining cells map to which role is selected from the first column, and which type of policy has been selected from the options in the first row."}
 {: #platformrolestable1}
 
-The following table describes the common actions that you can perform based on the role you're assigned for each account management service. Scroll horizontally to see all entries in the table.
+For information about the specific actions users can take based on their assigned role on account management services, see [Assigning access to account management services](/docs/iam?topic=iam-account-services).
 {: #acctmgmt}
-
-The first row of the table describes specific services that you can choose from when creating a policy, and the first column describes the selected type of role for the policy. The remaining cells map to which role is selected from the options in the first column, and which type of policy has been selected from the options in the first row.
-
-| Access Policy Details |  Actions for Service IDs  | Actions for Managing Access Groups | Actions for Managing Catalog Access | Actions for Access to Manage Users | Actions for Support | Actions for Billing | Actions for all Account Management Services |
-|:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|:--------------|
-|  |  IAM Identity Service |  IAM Access Groups |  Global resource catalog |  User Management  | Support Center | Billing and usage | All account management services |
-| Viewer role |  <ul><li>View IDs</li></ul> |  <ul><li>View access groups and members</li></ul> | <ul><li>View private services</li></ul>  |  <ul><li>View users in the account</li><li>View user profile settings</li></ul> | <ul><li>View cases</li><li>Search cases</li></ul> | <ul><li>View account feature settings</li><li>View subscriptions in account</li><li>View account name</li><li>View resource groups</li></ul> | All viewer role actions for the account management services |
-| Operator role | <ul><li>Create and delete IDs and API keys</li></ul> |  <ul><li>Not applicable</li></ul> | <ul><li>Not applicable</li></ul> |  <ul><li>View users in the account</li><li>View user profile settings</li></ul> | <ul><li>Not applicable</li></ul> | <ul><li>View account feature settings</li><li>View subscriptions in account</li><li>View and change account name</li><li>View and update resource groups</li></ul> | All operator role actions for the account management services |
-| Editor role |  <ul><li>Create, update, and delete IDs and API keys</li></ul> |  <ul><li>View, create, edit, and delete groups</li><li>Add or remove users from groups</li></ul> | <ul><li>Can change object metadata but can't change visibility for private services</li></ul>  | <ul><li>View, invite, remove, and update users from the account</li><li>View and update user profile settings</li></ul> |  <ul><li>View cases</li><li>Search cases</li><li>Update cases</li><li>Create cases</li></ul> | <ul><li>View and update account feature settings</li><li>View subscriptions in account</li><li>View offers in account</li><li>View and apply feature codes</li><li>View and change account name</li><li>View and update spending limits</li><li>View, create, and update resource groups</li></ul> | All editor role actions for the account management services and ability to create resource groups |
-| Administrator role |   <ul><li>Create, update, and delete IDs and API keys</li><li>Assign access policies to IDs</li></ul> |  <ul><li>View, create, edit, and delete groups</li><li>Add or remove users</li><li>Assign access to a group</li><li>Manage access for working with access groups</li></ul> | <ul><li>Can change object metadata or visibility for private services, and restrict visibility of a public service</li></ul> | <ul><li>View, invite, remove, and update users from the account</li><li>View and update user profile settings</li></ul> |  <ul><li>View cases</li><li>Search cases</li><li>Update cases</li><li>Create cases</li></ul> |  <ul><li>View and update account feature settings</li><li>View subscriptions in account</li><li>View offers in account</li><li>View and apply feature codes</li><li>View and change account name</li><li>View and update spending limits</li><li>View subscription balances and track usage</li><li>View, create, update, and assign access to manage resource groups</li></ul> | All administrator role actions for the account management services and ability to create resource groups |
-{: caption="Table 3. Example platform management roles and actions for account management services" caption-side="top"}
-{: #platformrolestable2}
-
-For the IAM Identity Service, these actions apply to service IDs within the account that the user didn't create. All users can create service IDs. They're the administrator for those IDs, and they can create the associated API key and access policies, but this account management service applies to the ability to view, delete, and assign access to service IDs in the account created by other users.
-{: note}
 
 Some services might map specific actions to the platform management roles that are related to the management of the service rather than to the access of the service. As an example, see the following table that details the {{site.data.keyword.containershort_notm}} service actions that are mapped to these roles.
 
@@ -124,7 +110,7 @@ Some services might map specific actions to the platform management roles that a
 | Editor | Perform all platform actions except for managing the account and assigning access policies |<ul><li>Bind a service to a cluster</li><li>Create a webhook</li></ul> |
 | Operator | Perform platform actions required to configure and operate service instances, such as viewing a service's dashboard | <ul><li>Add or remove worker nodes</li><li>Restart or reload worker nodes</li><li>Bind a service to a cluster</li></ul> |
 | Administrator | Perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users |<ul><li>Remove a cluster</li><li>Create a cluster</li><li>Update user access policies</li><li>All actions a viewer, editor, and operator can perform</li></ul>|
-{: caption="Table 4. Example platform management roles and actions for {{site.data.keyword.containershort_notm}} service" caption-side="top"}
+{: caption="Table 3. Example platform management roles and actions for {{site.data.keyword.containershort_notm}} service" caption-side="top"}
 
 ### Service access roles
 {: #service_access_roles}
@@ -139,4 +125,4 @@ The actions that can be taken based on each assigned role vary based on the serv
 |  Reader | Perform read-only actions within a service, such as viewing service-specific resources | List and download objects |
 | Writer | Permissions beyond the reader role, including creating and editing service-specific resources | Create and destroy buckets and objects |
 | Manager | Permissions beyond the writer role to complete privileged actions as defined by the service, plus create and edit service-specific resources | Manage all aspects of data storage, create and destroy buckets and objects |
-{: caption="Table 5. Example service access user roles and actions" caption-side="top"}
+{: caption="Table 4. Example service access user roles and actions" caption-side="top"}
