@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-06-04"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -84,37 +84,23 @@ Mit Plattformmanagementrollen können Benutzern unterschiedliche Berechtigungsst
 Wählen Sie alle gültigen Rollen beim Erstellen einer Richtlinie aus. Jede Rolle ermöglicht die Ausführung separater Aktionen und übernimmt nicht die Aktionen untergeordneter Rollen.
 {: tip}
 
-Die folgenden Tabellen enthalten Beispiele für einige der Plattformmanagementaktionen, die Benutzer im Kontext von Katalogressourcen, Ressourcengruppen und Kontoverwaltungsservices durchführen können. In der Dokumentation zu den verschiedenen Katalogen finden Sie Informationen dazu, wie die Rollen im Kontext des aktuell verwendeten Service auf den Benutzer angewendet werden.
+Die folgende Tabelle entält Beispiele für einige der Plattformmanagementaktionen, die Benutzer im Kontext von Katalogressourcen und Ressourcengruppen durchführen können. In der Dokumentation zu den verschiedenen Katalogen finden Sie Informationen dazu, wie die Rollen im Kontext des aktuell verwendeten Service auf den Benutzer angewendet werden.
 
-In der ersten Zeile der Tabelle werden separate Optionen beschrieben, die Sie für die Erstellung einer Richtlinie auswählen können; in der ersten Spalte werden die ausgewählten Rollen für die Richtlinie beschrieben. Die verbliebenen Zellen werden der in der ersten Spalte ausgewählten Rolle sowie dem in den Optionen in der ersten Zeile ausgewählten Typ von Richtlinie zugeordnet.
 
-| Zugriffsrichtlinie - Details | Aktionen zu Services im Konto | Aktionen für Ressourcen in Ressourcengruppen | Aktionen für Zugriff auf Ressourcengruppen |
-|:--------------|:------------|:-------------|:-------------|
 |  | Einen oder alle IAM-aktivierten Services | Ausgewählten Service in einer Ressourcengruppe | Ausgewählte Ressourcengruppe |
+|:--------------|:------------|:-------------|:-------------|
 | Anzeigeberechtigten-Rolle | Instanzen, Aliasnamen, Bindungen und Berechtigungsnachweise anzeigen | Nur angegebene Instanzen in der Ressourcengruppe anzeigen | Ressourcengruppe anzeigen |
 | Operatorrolle |  Instanzen anzeigen und Aliasnamen, Bindungen und Berechtigungsnachweise verwalten |  Nicht zutreffend | Nicht zutreffend |
 | Bearbeiterrolle |  Instanzen erstellen, löschen, bearbeiten und anzeigen. Aliasnamen, Bindungen und Berechtigungsnachweise verwalten | Nur angegebene Instanzen in der Ressourcengruppe erstellen, löschen, bearbeiten, aussetzen, wiederaufnehmen, anzeigen und binden | Name der Ressourcengruppe anzeigen und bearbeiten |
 | Administratorrolle |  Alle Verwaltungsaktionen für Services | Alle Verwaltungsaktionen für die angegebenen Instanzen in der Ressourcengruppe | Zugriff für die Ressourcengruppe anzeigen, bearbeiten und verwalten |
+{: row-headers}
+{: class="comparison-table"}
 {: caption="Tabelle 2. Beispiele für Plattformmanagementrollen und -aktionen für Services in einem Konto" caption-side="top"}
+{: summary="The first row of the table describes separate options that you can choose from when creating a policy, and the first column describes the selected roles for the policy. The remaining cells map to which role is selected from the first column, and which type of policy has been selected from the options in the first row."}
 {: #platformrolestable1}
 
-Die folgende Tabelle enthält die allgemeinen Aktionen, die Sie je nach zugewiesener Rolle für den jeweiligen Kontoverwaltungsservice ausführen können. Blättern Sie nach unten bzw. oben, um alle Einträge in der nachstehenden Tabelle anzuzeigen.
+Informationen zu den spezifischen Aktionen, die Benutzer auf der Basis ihrer zugewiesenen Rolle für Kontoverwaltungsservices ausführen können, finden Sie in [Zugriff auf Kontoverwaltungsservices zuweisen](/docs/iam?topic=iam-account-services).
 {: #acctmgmt}
-
-In der ersten Zeile der Tabelle werden bestimmte Services beschrieben, die Sie für die Erstellung einer Richtlinie auswählen können; in der ersten Spalte wird der ausgewählte Typ von Rolle für die Richtlinie beschrieben. Die verbliebenen Zellen werden der in den Optionen der ersten Spalte ausgewählten Rolle sowie dem in den Optionen in der ersten Zeile ausgewählten Typ von Richtlinie zugeordnet.
-
-| Zugriffsrichtlinie - Details |  Aktionen für Service-IDs  | Aktionen für die Verwaltung von Zugriffsgruppen | Aktionen für die Verwaltung des Katalogzugriffs | Aktionen für Zugriff zum Verwalten von Benutzern | Aktionen für den Support | Aktionen zur Abrechnung | Aktionen für alle Kontoverwaltungsservices |
-|:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|:--------------|
-|  |  IAM Identity Service |  IAM-Zugriffsgruppen |  Globalen Ressourcenkatalog |  Benutzerverwaltung  | Support Center | Abrechnung und Nutzung | Alle Kontoverwaltungsservices |
-| Anzeigeberechtigten-Rolle |  <ul><li>IDs anzeigen</li></ul> |  <ul><li>Zugriffsgruppen und Mitglieder anzeigen</li></ul> | <ul><li>Private Services anzeigen</li></ul>  |  <ul><li>Benutzer im Konto anzeigen</li><li>Benutzerprofileinstellungen anzeigen</li></ul> | <ul><li>Fälle anzeigen</li><li>Fälle durchsuchen</li></ul> | <ul><li>Funktionseinstellungen für das Konto anzeigen</li><li>Abonnements im Konto anzeigen</li><li>Kontonamen anzeigen</li><li>Ressourcengruppen anzeigen</li></ul> | Alle Rollenaktionen von Anzeigeberechtigten für die Kontoverwaltungsservices |
-| Operatorrolle | <ul><li>IDs und API-Schlüssel erstellen und löschen</li></ul> |  <ul><li>Nicht zutreffend</li></ul> | <ul><li>Nicht zutreffend</li></ul> |  <ul><li>Benutzer im Konto anzeigen</li><li>Benutzerprofileinstellungen anzeigen</li></ul> | <ul><li>Nicht zutreffend</li></ul> | <ul><li>Funktionseinstellungen für das Konto anzeigen</li><li>Abonnements im Konto anzeigen</li><li>Kontonamen anzeigen und ändern</li><li>Ressourcengruppen anzeigen und aktualisieren</li></ul> | Alle Rollenaktionen von Bedienern für die Kontoverwaltungsservices |
-| Bearbeiterrolle |  <ul><li>IDs und API-Schlüssel erstellen, aktualisieren und löschen</li></ul> |  <ul><li>Gruppen anzeigen, erstellen, bearbeiten und löschen</li><li>Benutzer zu Gruppen hinzufügen oder daraus entfernen</li></ul> | <ul><li>Objektmetadaten ändern, nicht jedoch die Sichtbarkeit privater Services</li></ul>  | <ul><li>Benutzer im Konto anzeigen, einladen, entfernen und aktualisieren</li><li>Benutzerprofileinstellungen anzeigen und aktualisieren</li></ul> |  <ul><li>Fälle anzeigen</li><li>Fälle durchsuchen</li><li>Fälle aktualisieren</li><li>Fälle erstellen</li></ul> | <ul><li>Funktionseinstellungen für das Konto anzeigen und aktualisieren</li><li>Abonnements im Konto anzeigen</li><li>Angebote im Konto anzeigen</li><li>Funktionscodes anzeigen und anwenden</li><li>Kontonamen anzeigen und ändern</li><li>Ausgabenlimits anzeigen und aktualisieren</li><li>Ressourcengruppen anzeigen, erstellen und aktualisieren</li></ul> | Alle Rollenaktionen von Bearbeitern für die Kontoverwaltungsservices |
-| Administratorrolle |   <ul><li>IDs und API-Schlüssel erstellen, aktualisieren und löschen</li><li>Zugriffsrichtlinien zu IDs zuweisen</li></ul> |  <ul><li>Gruppen anzeigen, erstellen, bearbeiten und löschen</li><li>Benutzer hinzufügen oder entfernen</li><li>Zugriff auf eine Gruppe zuweisen</li><li>Zugriff für die Arbeit mit Zugriffsgruppen verwalten</li></ul> | <ul><li>Objektmetadaten oder Sichtbarkeit privater Services ändern, Sichtbarkeit eines öffentlichen Service einschränken</li></ul> | <ul><li>Benutzer im Konto anzeigen, einladen, entfernen und aktualisieren</li><li>Benutzerprofileinstellungen anzeigen und aktualisieren</li></ul> |  <ul><li>Fälle anzeigen</li><li>Fälle durchsuchen</li><li>Fälle aktualisieren</li><li>Fälle erstellen</li></ul> |  <ul><li>Funktionseinstellungen für das Konto anzeigen und aktualisieren</li><li>Abonnements im Konto anzeigen</li><li>Angebote im Konto anzeigen</li><li>Funktionscodes anzeigen und anwenden</li><li>Kontonamen anzeigen und ändern</li><li>Ausgabenlimits anzeigen und aktualisieren</li><li>Kontostand für Abonnements und Nutzungsverfolgung anzeigen</li><li>Zugriff zum Verwalten von Ressourcengruppen anzeigen, erstellen, aktualisieren und zuweisen</li></ul> | Alle Rollenaktionen von Administratoren für die Kontoverwaltungsservices|
-{: caption="Tabelle 3. Beispiele für Plattformmanagementrollen und -aktionen für Kontoverwaltungsservices" caption-side="top"}
-{: #platformrolestable2}
-
-Für den IAM Identity Service können diese Aktionen auf Service-IDs innerhalb des Kontos angewendet werden, die nicht vom Benutzer erstellt wurden. Alle Benutzer können Service-IDs erstellen. Sie fungieren als Administratoren für diese IDs und können den zugehörigen API-Schlüssel und Zugriffsrichtlinien erstellen, wobei sich aber dieser Kontoverwaltungsservice auf die Fähigkeit zum Anzeigen, Löschen und Zuweisen von Zugriff auf Service-IDs im Konto bezieht, die von anderen Benutzern erstellt wurden.
-{: note}
 
 Einige Services ordnen möglicherweise bestimmte Aktionen den Plattformmanagementrollen zu, die nicht zum Servicezugriff, sondern zur Serviceverwaltung gehören. Die folgende Tabelle bietet Beispiele mit Details zu den {{site.data.keyword.containershort_notm}}-Serviceaktionen, die diesen Rollen zugeordnet sind.
 
@@ -124,7 +110,7 @@ Einige Services ordnen möglicherweise bestimmte Aktionen den Plattformmanagemen
 | Bearbeiter | Alle Plattformaktionen ausführen mit Ausnahme der Kontoverwaltung und der Zuweisung von Zugriffsrichtlinien |<ul><li>Service an einen Cluster binden</li><li>Webhook erstellen</li></ul> |
 | Bediener | Plattformaktionen ausführen, die für die Konfiguration und den Betrieb von Serviceinstanzen erforderlich sind, z. B. Anzeigen eines Service-Dashboards | <ul><li>Workerknoten hinzufügen oder entfernen</li><li>Workerknoten erneut starten oder erneut laden</li><li>Service an einen Cluster binden</li></ul> |
 | Administrator | Alle Plattformaktionen basierend auf der Ressource ausführen, der diese Rolle zugewiesen ist, einschließlich dem Zuweisen von Zugriffsrichtlinien zu anderen Benutzern |<ul><li>Cluster entfernen</li><li>Cluster erstellen</li><li>Benutzerzugriffsrichtlinien aktualisieren</li><li>Alle Aktionen, die ein Anzeigeberechtigter, Bearbeiter und Bediener ausführen kann</li></ul>|
-{: caption="Tabelle 4. Beispiele zu Plattformmanagementrollen und -aktionen für den {{site.data.keyword.containershort_notm}}-Service" caption-side="top"}
+{: caption="Tabelle 3. Beispiele zu Plattformmanagementrollen und -aktionen für den {{site.data.keyword.containershort_notm}}-Service" caption-side="top"}
 
 ### Servicezugriffsrollen
 {: #service_access_roles}
@@ -139,4 +125,4 @@ Welche Aktionen, die je nach zugewiesener Rolle ausgeführt werden können, hän
 |  Leseberechtigter | Aktionen mit Lesezugriff innerhalb eines Service durchführen, z. B. servicespezifische Ressourcen anzeigen | Objekte auflisten und herunterladen |
 | Schreibberechtigter | Berechtigungen, die über die Rolle der Leseberechtigten hinausgehen, einschließlich Erstellen und Bearbeiten servicespezifischer Ressourcen | Buckets und Objekte erstellen und löschen |
 | Manager | Berechtigungen, die über die Rolle der Schreibberechtigten hinausgehen, um Aktionen durchzuführen, für die vom Service definierte spezielle Berechtigungen erforderlich sind, sowie das Erstellen und Bearbeiten servicespezifischer Ressourcen | Alle Aspekte der Datenspeicherung verwalten, Buckets und Objekte erstellen und löschen |
-{: caption="Tabelle 5. Beispiele für Servicezugriffsbenutzerrollen und Aktionen" caption-side="top"}
+{: caption="Tabelle 4. Beispiele für Servicezugriffsbenutzerrollen und Aktionen" caption-side="top"}

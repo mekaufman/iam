@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-06-03"
 
 keywords: account management, access, access policy, account administrator
 
@@ -100,6 +100,6 @@ Für den IAM Identity Service können diese Aktionen auf Service-IDs innerhalb d
 |:-------|----------|
 | Anzeigeberechtigter |  Alle Rollenaktionen von Anzeigeberechtigten für die Kontoverwaltungsservices     |
 | Bediener |  Alle Rollenaktionen von Bedienern für die Kontoverwaltungsservices     |
-| Bearbeiter |  Alle Rollenaktionen von Bearbeitern für die Kontoverwaltungsservices     |
-| Administrator |  Alle Rollenaktionen von Administratoren für die Kontoverwaltungsservices   |
+| Bearbeiter |  Alle Rollenaktionen von Bearbeitern für die Kontoverwaltungsservices und die Möglichkeit, Ressourcengruppen zu erstellen |
+| Administrator |  Alle Rollenaktionen von Administratoren für die Kontoverwaltungsservices und die Möglichkeit, Ressourcengruppen zu erstellen |
 {: caption="Tabelle 7. Rollen und Beispielaktionen für eine Richtlinie für alle Identitäts- und Zugriffsservices" caption-side="top"}
