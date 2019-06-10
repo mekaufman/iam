@@ -21,7 +21,7 @@ subcollection: iam
 # Logging in with a federated ID
 {: #federated_id}
 
-As a federated user that uses a corporate or enterprise single sign-on ID, you can log in to {{site.data.keyword.Bluemix}} from the command-line interface (CLI) by using either a one-time passcode or an API key.
+As a federated user that uses a corporate or enterprise single sign-on ID, you can log in to {{site.data.keyword.Bluemix}} from the command line interface (CLI) by using either a one-time passcode or an API key.
 {: shortdesc}
 
 ## Using a one-time passcode
@@ -58,7 +58,7 @@ Because a one-time passcode retrieves code from the {{site.data.keyword.Bluemix_
 3. Copy and paste the passcode value in the CLI as your input.
 
   ```
-  cf login -a  https://api.us-south.cf.cloud.ibm.com --sso
+  cf login -a https://api.us-south.cf.cloud.ibm.com --sso
 
   API endpoint: https://api.us-south.cf.cloud.ibm.com
 
@@ -71,7 +71,7 @@ Because a one-time passcode retrieves code from the {{site.data.keyword.Bluemix_
 ## Using an API key
 {: #api_key}
 
-The required API key is the {{site.data.keyword.Bluemix_notm}} API key that's used to authenticate with the {{site.data.keyword.Bluemix_notm}} platform, not the classic infrastructure API key or {{site.data.keyword.Bluemix_notm}} service API key.
+The required API key is the {{site.data.keyword.Bluemix_notm}} API key used to authenticate with the {{site.data.keyword.Bluemix_notm}} platform, not the classic infrastructure API key, or {{site.data.keyword.Bluemix_notm}} service API key.
 
 1. Create an API key with the [`ibmcloud iam api-key-create` command](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create). Use the `-f` option to generate an API key file instead of showing the key in the command window:
 
@@ -100,7 +100,7 @@ The required API key is the {{site.data.keyword.Bluemix_notm}} API key that's us
 
     * Set an environment variable. Additionally, you can also set an environment variable on your system. For example, IBMCLOUD_API_KEY=api_key_string, where `api_key_string` is the custom value of the API key. After the environment variable is set, you can simply specify `ibmcloud login` from the CLI.
 
-   For Windows 10 PowerShell, you want to use `'@key_file_name'` with single quotes around the key file name.
+   For Windows 10 PowerShell, you want to use `'@key_file_name'` with single quotation marks around the key file name.
    {: tip}
 
   To log in by using the Cloud Foundry CLI, specify `apikey` as the user name and the API key string as the password:
