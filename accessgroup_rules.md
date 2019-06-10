@@ -25,7 +25,7 @@ subcollection: iam
 You can create dynamic rules to automatically add federated users to access groups based on specific identity attributes. When your users log in with a federated ID, the data from the identity provider dynamically maps your users to an access group based on the rules that you set.
 {:shortdesc}
 
-Users already have specific identity information within your company's domain, and when they log in with a federated ID, this data can be passed through by using SAML assertions. The SAML assertions or attribute statements that are configured within the identity provider provide the data that is used to create each rule. For example, there might be a true or false attribute statement that defines users as a manager. This information can be used to add all users who are managers to a specific access group for managers that you created in your {{site.data.keyword.Bluemix_notm}} account. For more information, see the [Example rule](/docs/iam?topic=iam-rules#example).
+Users already have specific identity information within your company's domain, and when they log in with a federated ID, this data can be passed through by using SAML assertions. The SAML assertions or attribute statements that are configured within the identity provider provide the data that is used to create each rule. For example, you might have a true or false attribute statement that defines users as a manager. This information can be used to add all users who are managers to a specific access group for managers that you created in your {{site.data.keyword.Bluemix_notm}} account. For more information, see the [Example rule](/docs/iam?topic=iam-rules#example).
 
 Only users who are already invited to the account can be mapped to access groups by using dynamic rules.
 {: note}
@@ -39,7 +39,7 @@ Dynamic rules are created by setting conditions that must be matched by the data
 2. Select the name of the access group that you want to create a rule for to open the group details page.
 3. Select the **Dynamic rules** tab.
 4. Click **Add rule**.
-5. Enter the information from your identity provider which is dynamically provided for you on the Add rule page. The following list provides details for each required field.
+5. Enter the information from your identity provider that is dynamically provided for you on the Add rule page. The following list provides details for each required field.
 
 <dl>
 <dt>Name</dt>
