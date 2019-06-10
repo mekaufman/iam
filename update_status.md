@@ -21,7 +21,7 @@ subcollection: iam
 # Updating a user's status
 {: #status}
 
-A user's assigned status depends on if the user accepted their invitation to join the account, they're a VPN-only user, or if the user administrator set the user as a disabled classic infrastructure user.
+The status for a user depends on if the user accepted their invitation to join the account, they're a VPN-only user, or if the user administrator set the user as a disabled classic infrastructure user.
 {:shortdesc}
 
 If you have the following access, you can update the status of another user:
@@ -45,7 +45,7 @@ You can choose from the following options to update a user's state:
 <dd>The user can't log in to the console, but they do have access to whatever devices and VPN subnets that you assign for classic infrastructure by logging in directly to the appliance.</dd>
 </dl>
 
-When you update a user from from VPN-only status to Active status, the user must know the password to log in to the console. In most cases, this is the SoftLayer ID password, which might need to be reset to be used. In rare cases where the user already has an IBMid, they must log in with the IBMid and password.
+When you update a user from VPN-only status to Active status, the user must know the password to log in to the console. In most cases, this is the SoftLayer ID password, which might need to be reset to be used. In rare cases where the user already has an IBMid, they must log in with the IBMid and password.
 {: note}
 
 ## Updating a user's status
