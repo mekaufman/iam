@@ -23,7 +23,7 @@ subcollection: iam
 # Connecting a dedicated ID to your public IBMid
 {: #connect_dedicated_id}
 
-To log in to a dedicated cloud where public IAM service is available, {{site.data.keyword.Bluemix_notm}} CLI asks you to log in with your public IBMid instead of the dedicated ID.
+To log in to a dedicated cloud where public IAM service is available, you must log in to the {{site.data.keyword.Bluemix_notm}} CLI with your public IBMid instead of the dedicated ID.
 {:shortdesc}
 
 ```
@@ -31,12 +31,12 @@ To log in to a dedicated cloud where public IAM service is available, {{site.dat
   API endpoint: https://api.{dedicated_env}.cloud.ibm.com
 
   Public IAM token service is available in the dedicated environment.
-  Login with your public IBMid, or use '--no-iam' to login as a dedicated user only.
+  Log in with your public IBMid, or use '--no-iam' to log in as a dedicated user only.
 
   Email>
 ```
 
-If your dedicated ID has already been connected to the public IBMid, it will authenticate and log in:
+If your dedicated ID is already connected to the public IBMid, it authenticates and logs in:
 
 ```
   Authenticating...
@@ -45,19 +45,19 @@ If your dedicated ID has already been connected to the public IBMid, it will aut
   Connected to dedicated user my_dedicated_id
 ```
 
-However, if your dedicated ID has not been connected to the public IBMid, you will be prompted to manually connect to the public IBMid:
+However, if your dedicated ID is not connected to the public IBMid, you are prompted to manually connect to the public IBMid:
 
 ```
-  You are logging with an IBMid that does not associated with any dedicated user.
+  You are logging with an IBMid that isn't associated with any dedicated user.
   To set up the connection, input the credentials of the dedicated user.
 
   Choose a credential type:
-  1. Username and password
-  2. One Time Code (Get one at https://login.{dedicated_env}.cloud.ibm.com/passcode)
+  1. User name and password
+  2. One-time code. You can get one at https://login.{dedicated_env}.cloud.ibm.com/passcode)
   Enter a number>
 ```
 
-Select an option to input the credentials for the dedicated ID. After successful authentication, your dedicated ID will be connected to your public IBMid.
+Select an option to input the credentials for the dedicated ID. After successful authentication, your dedicated ID is connected to your public IBMid.
 
 ## Force logging in to local UAA server
 {: #force_login}
