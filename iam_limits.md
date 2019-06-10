@@ -20,7 +20,7 @@ subcollection: iam
 # {{site.data.keyword.Bluemix_notm}} IAM limits
 {: #iam_limits}
 
-The following table lists the maximum limits for {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) resources. These limits apply to any user who can create {{site.data.keyword.Bluemix_notm}} IAM resources, and if a limit is exceeded you will receive an exception and not be allowed to create any new resources beyond that limit.
+The following table lists the maximum limits for {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) resources. These limits apply to any user who can create {{site.data.keyword.Bluemix_notm}} IAM resources. If a limit is exceeded, you receive an exception and are no allowed to create any new resources beyond that limit.
 
 | Resource | Max |
 |----------|---------|
