@@ -21,13 +21,13 @@ subcollection: iam
 # Removing users
 {: #remove}
 
-When you remove a user from the account, the user can no longer log in to the console, switch to your account if they still belong to another account, or access account resources.
+When you remove a user from the account, the user can no longer log in to the console, switch to the account, or access account resources.
 {:shortdesc}
 
 Only account owners or users with the following access can remove users from an account:
 
 * An IAM policy for the User management account management service with the Administrator role assigned and be the Cloud Foundry org manager if the user belongs to a Cloud Foundry org.
-* If you have classic infrastructure in your account, then a user must have an IAM policy for the User management account management service with the Administrator role assigned, be the Cloud Foundry org manager if the user belongs to a Cloud Foundry org, and be an ancestor of the user in the classic infrastructure user hierarchy with the Manage user classic infrastructure permission assigned.
+* If you have classic infrastructure in your account, then a user must be an ancestor of the user in the classic infrastructure user hierarchy with the Manage user classic infrastructure permission assigned. You must also have an IAM policy for the User management account management service with the Administrator role assigned or be the Cloud Foundry org manager if the user belongs to a Cloud Foundry org.
 
 To remove a user from an account, complete the following steps:
 
