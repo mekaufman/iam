@@ -21,10 +21,10 @@ subcollection: iam
 # Updating a user's parent user
 {: #update-parent}
 
-If you have the correct access, you can update the parent for a user. Updating the parent user affects how a user sees other users in the account when the user list visibility setting is set to restricted. Users see only other users for which they are a parent and any other users invited by those descendants of the parent user.
+If you have the correct access, you can update the parent for a user. Updating the parent user affects how a user sees other users in the account when the setting for user list visibility is set to restricted. Users see only other users for which they are a parent and any other users who are invited by those descendants of the parent user.
 {:shortdesc}
 
-See [user list visibility setting](/docs/iam?topic=iam-userlistview#userlistview) for more details about the setting.
+For more information about the setting, see [Setting user view access](/docs/iam?topic=iam-userlistview#userlistview).
 
 If you have the following access, you can update the parent for another user:
 
