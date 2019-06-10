@@ -25,7 +25,13 @@ subcollection: iam
 An access group can be created to organize a set of users and service IDs into a single entity that makes it easy for you to assign access. You can assign a single policy to the group instead of assigning the same access multiple times per individual user or service ID.
 {:shortdesc}
 
-To manage or create new access groups, you must be the account owner, administrator or editor on the IAM Access Groups service in the account, or the assigned administrator or editor for the all Account Management Services. Additionally, an administrator or editor can be assigned access to manage an individual group by creating an access policy where the resource is the Access Group ID. For more information about access policies and roles for the IAM Access Groups service, see [IAM access](/docs/iam?topic=iam-userroles#userroles).
+To manage or create new access groups, you must have the following type of access:
+
+* Account owner
+* Administrator or editor on the IAM Access Groups service in the account
+* Administrator or editor for the all Account Management Services
+
+Additionally, an administrator or editor can be assigned access to manage an individual group by creating an access policy where the resource is the Access group ID. For more information about access policies and roles for the IAM Access Groups service, see [IAM access](/docs/iam?topic=iam-userroles#userroles).
 
 To make assigning and managing access even easier, you can set up resource groups to organize a set of resources that you want a group of users to have access to. When your resource group is set up, you can assign a policy that gives access to all resources within that group instead of creating access policies for individual service instances within your account.
 {: tip}
@@ -51,6 +57,7 @@ You can delete a group by selecting the **Remove group** option. When you remove
 {: note}
 
 To create an access group by using the CLI, you can use the [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_create) command.
+
 ```
 ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```
