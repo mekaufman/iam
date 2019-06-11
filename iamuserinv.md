@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-11"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -17,6 +17,7 @@ subcollection: iam
 {:new_window: target="_blank"}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Inviting users
 {: #iamuserinv}
@@ -44,8 +45,23 @@ To invite users or manage user invitations in your account, complete the followi
 
 If you determine that a user does not need access, you can cancel an invitation for any users that are shown in a **Processing** or **Pending** state in the **Status** column. If an invited user did not receive an invitation, you can resend the invitation to any user in a **Pending** state.
 
-If you want to invite users by using the command-line interface (CLI), see the [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) command.
-{: tip}
+### Inviting users by using the CLI
+{: #cli-invite}
+
+To invite users by using the command-line interface (CLI), run the following command:
+
+```
+ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
+```
+
+By using the CLI, you can choose to assign Cloud Foundry access or no access and work on assigning access later. For more information about the command parameters, see [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite). 
+
+### Inviting users by using the API
+{: #api-invite}
+
+You can use the [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} to invite users in bulk. All users that are included in a single invitation are assigned the same access. When you invite users by using the API, you enter emails in a comma-separated list with each entry surrounded by quotations, for example:
+
+`"email": "cloud_api_example_member@ibm.com", "next_example@ibm.com",`. 
 
 ## Assigning user access from an invitation
 {: #assignaccess}
@@ -57,7 +73,7 @@ You assign access for users as you invite them by assigning {{site.data.keyword.
 
 You can assign access by creating an initial {{site.data.keyword.Bluemix_notm}} IAM access policy when you invite a new user. In the Services section, you can provide a user access to account management services, services in a resource group with access to manage the resource group, or to an individual resource in the account.
 
-After the user accepts the invitation, you can assign additional access. See [Managing access to resources](/docs/iam?topic=iam-iammanidaccser#iammanidaccser) for details on editing policies to add extra roles, assigning more access, or removing a policy for a user.
+After the user accepts the invitation, you can assign more access. See [Managing access to resources](/docs/iam?topic=iam-iammanidaccser#iammanidaccser) for details on editing policies to add extra roles, assigning more access, or removing a policy for a user.
 
 Depending on which service you select when you assign the policy, you might not see all of fields that are described in the following procedures.
 {: note}
