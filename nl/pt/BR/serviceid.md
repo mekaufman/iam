@@ -52,7 +52,7 @@ Quaisquer mudanças feitas em um ID do serviço existente, como mudar as políti
 ## Bloqueando um ID de serviço
 {: #lock_serviceid}
 
-Para evitar uma situação em que seu ID de serviço é excluído causando uma indisponibilidade ou interrupção para os usuários de seu serviço, você tem a opção de bloquear seu ID de serviço usando a UI ou a CLI. Bloquear um ID do serviço também evita que quaisquer políticas sejam mudadas, excluídas ou designadas. Além da capacidade de bloquear um ID do serviço, é possível [bloquear chaves de API individuais](/docs/iam?topic=iam-serviceidapikeys#lockkey) que estão associadas a cada ID do serviço que você cria em sua conta.
+Para evitar uma situação em que seu ID de serviço é excluído causando uma indisponibilidade ou interrupção para os usuários de seu serviço, você tem a opção de bloquear seu ID de serviço usando a UI ou a CLI. Bloquear um ID do serviço também evita que quaisquer políticas sejam mudadas, excluídas ou designadas. Além da capacidade de bloquear um ID do serviço, é possível [bloquear chaves de API individuais](/docs/iam?topic=iam-lockkey#lockkey) que estão associadas a cada ID do serviço que você cria em sua conta.
 
 Embora os IDs de serviço bloqueados não possam ser excluídos da conta e as políticas de acesso não possam ser atualizadas, os IDs de serviço bloqueados ainda podem ser removidos de qualquer grupo de acesso no qual eles estão incluídos. Isso significa que qualquer acesso designado ao ID de sua associação em um grupo de acesso é removido quando o ID do serviço é removido do grupo de acesso.
 {: note}

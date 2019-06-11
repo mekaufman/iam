@@ -52,7 +52,7 @@ Los cambios que realice en un ID de servicio existente, como por ejemplo cambiar
 ## Bloqueo de un ID de servicio
 {: #lock_serviceid}
 
-Para evitar una situación donde su ID de servicio se suprima provocando una interrupción o alteración para los usuarios del servicio, tiene la opción de bloquear el ID de servicio mediante la IU o CLI. El bloqueo de un ID de servicio también impide que las políticas se cambien, se supriman o se asignen. Además de la capacidad de bloquear un ID de servicio, puede [bloquear claves de API individuales](/docs/iam?topic=iam-serviceidapikeys#lockkey) asociadas con cada ID de servicio de la cuenta.
+Para evitar una situación donde su ID de servicio se suprima provocando una interrupción o alteración para los usuarios del servicio, tiene la opción de bloquear el ID de servicio mediante la IU o CLI. El bloqueo de un ID de servicio también impide que las políticas se cambien, se supriman o se asignen. Además de la capacidad de bloquear un ID de servicio, puede [bloquear claves de API individuales](/docs/iam?topic=iam-lockkey#lockkey) asociadas con cada ID de servicio de la cuenta.
 
 Aunque los ID de servicio bloqueados no se pueden suprimir de la cuenta y las políticas de acceso no se pueden actualizar, los ID de servicio bloqueados se pueden eliminar de cualquier grupo de acceso al que se añadan. Esto significa que cualquier acceso asignado al ID mediante su suscripción en un grupo de acceso se elimina cuando el ID de servicio se elimina del grupo de acceso.
 {: note}
