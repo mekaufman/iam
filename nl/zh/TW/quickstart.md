@@ -110,7 +110,7 @@ subcollection: iam
     * 選取**指派資源群組內的存取權**，以指派群組內所有資源的存取權，或只指派群組內特定服務之資源的存取權。您也可以藉由選取存取資源群組的角色，讓使用者有權檢視、編輯或管理資源群組的存取權。如果您要使用者只能存取指定的資源，而非其所屬組織內的群組，請選取**不可存取**。
     * 選取**指派對資源的存取權**以指派下列項目的存取權：帳戶中所有已啟用身分及存取的資源、帳戶中特定服務的所有資源、單一實例，或特定服務實例內的單一實例。
     * 選取**指派對帳戶管理服務的存取權**，以指派對所有帳戶管理服務或只有一個帳戶管理服務的存取權。
-5. 選取任何角色組合，以定義存取範圍。如需相關資訊，請參閱 [Cloud IAM 角色](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)。
+5. 選取任何角色組合，以定義存取範圍。如需相關資訊，請參閱 [Cloud IAM 角色](/docs/iam?topic=iam-userroles#iamusermanrol)。
 6. 按一下**指派**。
 
 
@@ -131,4 +131,4 @@ subcollection: iam
 ## 後續步驟
 {: #next}
 
-參閱 [Cloud IAM 特性](/docs/iam?topic=iam-features#features)清單，以學習您可以使用 Cloud IAM 執行的其他作業。
+參閱 [Cloud IAM 特性](/docs/iam?topic=iam-iamoverview#features)清單，以學習您可以使用 Cloud IAM 執行的其他作業。

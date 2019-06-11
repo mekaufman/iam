@@ -52,7 +52,7 @@ Chaque fois que vous modifiez un ID de service existant (par exemple, si vous ch
 ## Verrouillage d'un ID de service
 {: #lock_serviceid}
 
-Pour éviter que la suppression de votre ID de service ne provoque une indisponibilité ou une interruption pour les utilisateurs de votre service, vous pouvez verrouiller votre ID de service en utilisant l'interface utilisateur ou l'interface CLI. Le verrouillage d'un ID de service empêche que les règles soient changées, supprimées ou affectées. Non seulement, vous pouvez verrouiller un ID de service mais vous pouvez également [verrouiller des clés d'API individuelles](/docs/iam?topic=iam-lockkey#lockkey) associées à chaque ID de service que vous créez dans votre compte.
+Pour éviter que la suppression de votre ID de service ne provoque une indisponibilité ou une interruption pour les utilisateurs de votre service, vous pouvez verrouiller votre ID de service en utilisant l'interface utilisateur ou l'interface CLI. Le verrouillage d'un ID de service empêche que les règles soient changées, supprimées ou affectées. Non seulement, vous pouvez verrouiller un ID de service mais vous pouvez également [verrouiller des clés d'API individuelles](/docs/iam?topic=iam-serviceidapikeys#lockkey) associées à chaque ID de service que vous créez dans votre compte.
 
 Alors que les ID de service ne peuvent pas être supprimés du compte et que les règles d'accès ne peuvent pas être mises à jour, les ID de service verrouillés peuvent toujours être retirés d'un groupe d'accès auquel ils sont ajoutés. Cela signifie que tout accès affecté à l'ID de par son appartenance à un groupe d'accès est retiré dès que l'ID de service ne fait plus partie du groupe d'accès.
 {: note}

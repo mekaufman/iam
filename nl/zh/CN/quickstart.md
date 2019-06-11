@@ -110,7 +110,7 @@ subcollection: iam
     * 选择**分配对资源组的访问权**可分配对组中所有资源的访问权，或分配仅对组中特定服务的资源的访问权。还可以通过选择对资源组的访问角色，为用户提供对资源组的查看、编辑或管理访问权。如果希望用户仅有权访问指定的资源，而无权访问资源所组织成的组，请选择**无访问权**。
     * 选择**分配对资源的访问权**可分配对帐户中所有启用“身份和访问权”的资源的访问权、对帐户中特定服务的所有资源的访问权、对单个实例的访问权或对特定服务实例中单个资源的访问权。
     * 选择**分配对帐户管理服务的访问权**，以分配对所有帐户管理服务或仅一个帐户管理服务的访问权。
-5. 选择任意角色组合来定义访问权的作用域。有关更多信息，请参阅 [Cloud IAM 角色](/docs/iam?topic=iam-iamusermanrol#iamusermanrol)。
+5. 选择任意角色组合来定义访问权的作用域。有关更多信息，请参阅 [Cloud IAM 角色](/docs/iam?topic=iam-userroles#iamusermanrol)。
 6. 单击**分配**。
 
 
@@ -131,4 +131,4 @@ subcollection: iam
 ## 后续步骤
 {: #next}
 
-通过查看 [Cloud IAM 功能](/docs/iam?topic=iam-features#features)列表，了解可以使用 Cloud IAM 执行的其他操作。
+通过查看 [Cloud IAM 功能](/docs/iam?topic=iam-iamoverview#features)列表，了解可以使用 Cloud IAM 执行的其他操作。

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-06-03"
+lastupdated: "2019-01-28"
 
 keywords: what is IAM, IBM Cloud IAM, IAM features, IAM API
 
@@ -54,7 +54,7 @@ subcollection: iam
 「アクセス (IAM)」UI、CLI、または API を介して、Cloud IAM にアクセスして使用することができます。
 
 * UI を使用して Cloud IAM にアクセスするには、**「管理」** &gt; **「アクセス (IAM)」**と進みます。
-* 使用可能な CLI コマンドを確認するには、『[IAM アクセス、 API キー、サービス ID、およびアクセス・グループの管理](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam)』を参照してください。
+* 使用可能な CLI コマンドを確認するには、『[IAM アクセス、 API キー、サービス ID、およびアクセス・グループの管理](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam)』を参照してください。
 * 使用可能な API を確認するには、以下の API 資料を参照してください。
     * [IAM Identity Services API](https://{DomainName}/apidocs/iam-identity-token-api){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")
     * [IAM Access Groups API](https://{DomainName}/apidocs/iam-access-groups){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")

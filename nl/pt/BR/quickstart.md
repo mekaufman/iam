@@ -115,7 +115,7 @@ Para designar uma nova política de acesso, conclua as etapas a seguir:
     * Selecione **Designar acesso a recursos** para designar acesso a todos os recursos ativados pelo Identity and Access na conta, todos os recursos de um serviço específico na conta, uma única instância ou um único recurso em uma instância de serviço específica.
     * Selecione **Designar acesso aos serviços de gerenciamento de conta** para designar
 acesso a todos os serviços de gerenciamento de conta ou a apenas um serviço de gerenciamento de conta.
-5. Selecione qualquer combinação de funções para definir o escopo de acesso. Para obter mais informações, veja [Funções do Cloud IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
+5. Selecione qualquer combinação de funções para definir o escopo de acesso. Para obter mais informações, veja [Funções do Cloud IAM](/docs/iam?topic=iam-userroles#iamusermanrol).
 6. Clique em **Designar**.
 
 
@@ -136,4 +136,4 @@ acesso a todos os serviços de gerenciamento de conta ou a apenas um serviço de
 ## Próximas Etapas
 {: #next}
 
-Saiba o que mais é possível fazer com o Cloud IAM verificando a lista [Recursos do Cloud IAM](/docs/iam?topic=iam-features#features).
+Saiba o que mais é possível fazer com o Cloud IAM verificando a lista [Recursos do Cloud IAM](/docs/iam?topic=iam-iamoverview#features).
