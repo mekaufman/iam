@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-16"
 
 keywords: remove user, delete user, user management
 
@@ -33,3 +33,6 @@ subcollection: iam
 
 1. 從功能表列按一下**管理** &gt; **存取 (IAM)**，然後選取**使用者**。
 2. 從您要移除的使用者列中，選取**動作** ![「動作清單」圖示](../icons/action-menu-icon.svg) 功能表中的**移除使用者**。
+
+如果您收到無法移除標準基礎架構使用者的錯誤訊息，請確定該使用者在使用者階層中的所有後代皆[指派了新母項](/docs/iam?topic=iam-update-parent)、[已在帳戶中停用](/docs/iam?topic=iam-status)或已刪除，然後再試一次。
+{: tip}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-16"
 
 keywords: remove user, delete user, user management
 
@@ -33,3 +33,6 @@ subcollection: iam
 
 1. 메뉴 표시줄에서 **관리** &gt; **액세스(IAM)**를 클릭하고 **사용자**를 선택하십시오.
 2. 제거할 사용자에 대한 행에서 **조치** ![조치 목록 아이콘](../icons/action-menu-icon.svg) 메뉴를 통해 **사용자 제거**를 선택하십시오.
+
+클래식 인프라 사용자를 제거할 수 없다는 오류 메시지가 표시되면 해당 사용자의 사용자 계층 구조에 있는 하위 항목에 [새 상위가 지정](/docs/iam?topic=iam-update-parent)되었는지, [계정에서 사용 안함으로 설정](/docs/iam?topic=iam-status)되었는지 아니면 삭제되었는지 확인하고 다시 시도하십시오.
+{: tip}

@@ -110,7 +110,7 @@ Per assegnare una nuova politica di accesso, completa la seguente procedura:
     * Seleziona **Assegna l'accesso in un gruppo di risorse** per assegnare l'accesso a tutte le risorse in un gruppo o solo alle risorse per un servizio specifico all'interno di un gruppo. Puoi anche fornire all'utente l'accesso per visualizzare, modificare o gestire l'accesso al gruppo risorse selezionando un ruolo per l'accesso al gruppo di risorse. Seleziona **Nessun accesso** se vuoi che l'utente abbia solo accesso alla risorsa specificata e non al gruppo in cui è organizzata.
     * Seleziona **Assegna l'accesso alle risorse** per assegnare l'accesso a tutte le risorse abilitate all'accesso e l'identità nell'account, a tutte le risorse di uno specifico servizio nell'account, a una singola istanza o a una singola risorsa all'interno di una specifica istanza del servizio.
     * Seleziona **Assegna l'accesso ai servizi di gestione account** per assegnare l'accesso a tutti i servizi di gestione dell'account o solo a uno di essi.
-5. Seleziona qualsiasi combinazione di ruoli per definire l'ambito di accesso. Per ulteriori informazioni, vedi [Ruoli Cloud IAM](/docs/iam?topic=iam-userroles#iamusermanrol).
+5. Seleziona qualsiasi combinazione di ruoli per definire l'ambito di accesso. Per ulteriori informazioni, vedi [Ruoli Cloud IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
 6. Fai clic su **Assegna**.
 
 
@@ -124,11 +124,11 @@ Puoi aggiornare l'accesso esistente modificando i ruoli assegnati per un utente.
 3. Fai clic su **Politiche di accesso**.
 4. Fai clic su **Modifica** dal menu **Azioni** ![Icona Elenco di azioni](../icons/action-menu-icon.svg) sulla riga della politica che vuoi modificare.
 4. Modifica la politica aggiornando i ruoli assegnati.
-5. Fai clic su **Save**.
+5. Fai clic su **Salva**.
 
 Puoi rimuovere l'accesso da un utente facendo clic sull'opzione **Rimuovi** dal menu **Azioni** ![Icona Elenco di opzioni](../icons/action-menu-icon.svg) per la politica che vuoi rimuovere.
 
 ## Passi successivi
 {: #next}
 
-Scopri cos'altro puoi fare con Cloud IAM controllando l'elenco delle [Funzioni di Cloud IAM](/docs/iam?topic=iam-iamoverview#features).
+Scopri cos'altro puoi fare con Cloud IAM controllando l'elenco delle [Funzioni di Cloud IAM](/docs/iam?topic=iam-features#features).

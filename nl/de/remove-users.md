@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-16"
 
 keywords: remove user, delete user, user management
 
@@ -33,3 +33,6 @@ Führen Sie die folgenden Schritte aus, um einen Benutzer aus einem Konto zu ent
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Benutzer** aus.
 2. Wählen Sie in der Zeile für den Benutzer, der entfernt werden soll, im Menü **Aktionen** ![Symbol für Aktionsliste](../icons/action-menu-icon.svg) die Option **Benutzer entfernen** aus.
+
+Wenn Sie eine Fehlernachricht erhalten, die angibt, dass ein Benutzer der klassischen Infrastruktur nicht entfernt werden kann, stellen Sie sicher, dass allen Nachkommen dieses Benutzers in der Benutzerhierarchie [ein neues übergeordnetes Element zugewiesen ist](/docs/iam?topic=iam-update-parent), dass sie [im Konto inaktiviert sind](/docs/iam?topic=iam-status) oder dass sie gelöscht sind. Wiederholen Sie anschließend den Vorgang.
+{: tip}

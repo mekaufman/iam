@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-16"
 
 keywords: remove user, delete user, user management
 
@@ -33,3 +33,6 @@ subcollection: iam
 
 1. メニュー・バーから、**「管理」** &gt; **「アクセス (IAM)」**をクリックして、**「ユーザー」**を選択します。
 2. 削除するユーザーの行で**「アクション」** ![「アクションのリスト」アイコン](../icons/action-menu-icon.svg) メニューから**「ユーザーの削除」**を選択します。
+
+クラシック・インフラストラクチャー・ユーザーを削除できないことを示すエラー・メッセージが表示された場合は、そのユーザーのユーザー階層内のどの子孫も、[新しい親が割り当てられている](/docs/iam?topic=iam-update-parent)、[アカウント内で無効である](/docs/iam?topic=iam-status)、または削除されていることを確認して、再試行してください。
+{: tip}

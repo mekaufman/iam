@@ -110,7 +110,7 @@ Pour affecter une nouvelle règle d'accès, procédez comme suit :
     * Sélectionnez **Affecter l'accès au sein d'un groupe de ressources** pour accorder l'accès à toutes les ressources d'un groupe ou uniquement aux ressources d'un service spécifique du groupe. Vous pouvez également accorder à l'utilisateur le droit d'afficher, d'éditer ou de gérer l'accès au groupe de ressources en sélectionnant un rôle pour l'accès au groupe de ressources. Sélectionnez **Aucun accès** si vous souhaitez que l'utilisateur ait accès uniquement à la ressource spécifiée et non au groupe auquel elle appartient.
     * Sélectionnez **Affecter l'accès aux ressources** pour affecter l'accès à toutes les ressources du compte pour lesquelles l'offre Identity and Access est activée, à toutes les ressources d'un service spécifique du compte, à une seule instance ou à une seule ressource d'une instance de service spécifique.
     * Sélectionnez **Affecter l'accès aux services de gestion des comptes** pour accorder l'accès à tous les services de gestion de compte ou bien à un seul.
-5. Sélectionnez toute combinaison de rôles afin de définir la portée de l'accès. Pour plus d'informations, voir [Rôles Cloud IAM](/docs/iam?topic=iam-userroles#iamusermanrol).
+5. Sélectionnez toute combinaison de rôles afin de définir la portée de l'accès. Pour plus d'informations, voir [Rôles Cloud IAM](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
 6. Cliquez sur **Affecter**.
 
 
@@ -131,4 +131,4 @@ Vous pouvez supprimer l'accès d'un utilisateur en cliquant sur l'option **Retir
 ## Etapes suivantes
 {: #next}
 
-Explorez les autres possibilités offertes par Cloud IAM en consultant la liste [Fonctionnalités de Cloud IAM](/docs/iam?topic=iam-iamoverview#features).
+Explorez les autres possibilités offertes par Cloud IAM en consultant la liste [Fonctionnalités de Cloud IAM](/docs/iam?topic=iam-features#features).

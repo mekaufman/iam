@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-05-16"
 
 keywords: remove user, delete user, user management
 
@@ -33,3 +33,6 @@ subcollection: iam
 
 1. 在菜单栏中，单击**管理** &gt; **访问权 (IAM)**，然后选择**用户**。
 2. 在要除去的用户所在的行中，从**操作** ![“操作列表”图标](../icons/action-menu-icon.svg) 菜单中，选择**除去用户**。
+
+如果您收到错误消息，提示无法除去经典基础架构用户，那么请确保该用户的用户层次结构中的所有后代都[已分配新父代](/docs/iam?topic=iam-update-parent)，[在帐户中已禁用](/docs/iam?topic=iam-status)或已删除，然后重试。
+{: tip}
