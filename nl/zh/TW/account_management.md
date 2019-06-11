@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-06-03"
 
 keywords: account management, access, access policy, account administrator
 
@@ -100,6 +100,6 @@ subcollection: iam
 |:-------|----------|
 |檢視者|帳戶管理服務的所有檢視者角色動作：|
 |操作員|帳戶管理服務的所有操作員角色動作：|
-|編輯者|帳戶管理服務的所有編輯者角色動作：|
-|管理者|帳戶管理服務的所有管理者角色動作：|
+|編輯者|帳戶管理服務的所有編輯者角色動作以及建立資源群組的能力|
+|管理者|帳戶管理服務的所有管理者角色動作以及建立資源群組的能力|
 {: caption="表 7. 所有身分及存取服務上原則的角色與範例動作" caption-side="top"}

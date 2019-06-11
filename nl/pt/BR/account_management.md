@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-06-03"
 
 keywords: account management, access, access policy, account administrator
 
@@ -101,6 +101,6 @@ Para o Serviço de identidade do IAM, essas ações se aplicam aos IDs de servi�
 |:-------|----------|
 | Visualizador |  Todas as ações da função de visualizador para os serviços de gerenciamento de conta     |
 | Operador |  Todas as ações da função de operador para os serviços de gerenciamento de conta     |
-| Editor |  Todas as ações da função de editor para os serviços de gerenciamento de conta     |
-| Administrador |  Todas as ações da função de administrador para os serviços de gerenciamento de conta   |
+| Editor |  Todas as ações da função de editor para os serviços de gerenciamento de contas e a capacidade de criar grupos de recursos    |
+| Administrador |  Todas as ações da função de administrador para os serviços de gerenciamento de contas e a capacidade de criar grupos de recursos   |
 {: caption="Tabela 7. Funções e ações de exemplo para uma política em todos os serviços de identidade e acesso" caption-side="top"}
