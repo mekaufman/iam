@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-06-03"
 
 keywords: account management, access, access policy, account administrator
 
@@ -100,6 +100,6 @@ Pour le service d'identité IAM, ces actions s'appliquent aux ID de service dans
 |:-------|----------|
 | Afficheur |  Toutes les actions du rôle Afficheur pour les services de gestion de compte     |
 | Opérateur |  Toutes les actions du rôle Opérateur pour les services de gestion de compte     |
-| Editeur |  Toutes les actions du rôle Editeur pour les services de gestion de compte     |
-| Administrateur |  Toutes les actions du rôle Administrateur pour les services de gestion de compte   |
+| Editeur |  Toutes les actions du rôle Editeur pour les services de gestion de compte et possibilité de créer des groupes de ressources    |
+| Administrateur |  Toutes les actions du rôle Administrateur pour les services de gestion de compte et possibilité de créer des groupes de ressources    |
 {: caption="Tableau 7. Rôles et action pour une règle s'appliquant à tous les services d'identité et d'accès" caption-side="top"}

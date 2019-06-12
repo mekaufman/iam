@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-06-03"
 
 keywords: account management, access, access policy, account administrator
 
@@ -101,6 +101,6 @@ subcollection: iam
 |:-------|----------|
 |查看者| 帐户管理服务的所有查看者角色操作 |
 |操作员| 帐户管理服务的所有操作员角色操作 |
-|编辑者| 帐户管理服务的所有编辑者角色操作 |
-|管理员| 帐户管理服务的所有管理员角色操作|
+|编辑者| 帐户管理服务的所有编辑者角色操作以及创建资源组的能力 |
+|管理员| 帐户管理服务的所有管理员角色操作以及创建资源组的能力 |
 {: caption="表 7. 应用于所有身份和访问权服务的策略的角色和示例操作" caption-side="top"}

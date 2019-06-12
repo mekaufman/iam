@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-06-04"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -84,37 +84,23 @@ Les rôles de gestion de plateforme permettent d'attribuer aux utilisateurs des 
 Sélectionnez tous les rôles qui s'appliquent lors de la création d'une règle. Chaque rôle permet d'effectuer des actions séparées et n'hérite pas des actions des rôles inférieurs.
 {: tip}
 
-Les tableaux suivants fournissent des exemples de certaines actions de gestion de plateforme que les utilisateurs peuvent effectuer dans le contexte de ressources de catalogue, de groupes de ressources et de services de gestion de compte. Pour comprendre comment les rôles s'appliquent aux utilisateurs dans le contexte du service que vous utilisez, reportez-vous à la documentation pour chaque offre de catalogue.
+Les tableaux ci-après fournissent des exemples de certaines actions de gestion de plateforme que les utilisateurs peuvent effectuer dans le contexte de ressources de catalogue et de groupes de ressources. Pour comprendre comment les rôles s'appliquent aux utilisateurs dans le contexte du service que vous utilisez, reportez-vous à la documentation pour chaque offre de catalogue.
 
-La première ligne du tableau décrit différentes options que vous pouvez sélectionner lors de la création d'une règle, et la première colonne décrit les rôles sélectionnés pour la règle. Les cellules restantes sont associées au rôle sélectionné dans la première colonne et au type de règle sélectionné dans les options de la première ligne.
 
-| Détails de la règle d'accès | Actions sur les services du compte | Actions sur les ressources des groupes de ressources | Actions pour l'accès à des groupes de ressources |
-|:--------------|:------------|:-------------|:-------------|
 |  | Un ou tous les services activés pour IAM | Service sélectionné dans un groupe de ressources | Groupe de ressources sélectionné |
+|:--------------|:------------|:-------------|:-------------|
 | Rôle Afficheur | Afficher des instances, des alias, des liaisons et des données d'identification | Afficher uniquement des instances spécifiées du groupe de ressources | Afficher un groupe de ressources |
 | Rôle Opérateur |  Afficher des instances et gérer des alias, des liaisons et des données d'identification |  Non applicable | Non applicable |
 | Rôle Editeur |  Créer, supprimer, éditer et afficher des instances. Gérer des alias, des liaisons et des données d'identification | Créer, supprimer, éditer, suspendre, reprendre, afficher et lier uniquement des instances spécifiées du groupe de ressources | Afficher et éditer le nom d'un groupe de ressources |
 | Rôle Administrateur |  Toutes les actions de gestion pour des services | Toutes les actions de gestion pour des instances spécifiées du groupe de ressources | Afficher, éditer et gérer l'accès pour le groupe de ressources |
+{: row-headers}
+{: class="comparison-table"}
 {: caption="Tableau 2. Exemples de rôles et d'actions de gestion de plateforme pour les services dans un compte" caption-side="top"}
+{: summary="The first row of the table describes separate options that you can choose from when creating a policy, and the first column describes the selected roles for the policy. The remaining cells map to which role is selected from the first column, and which type of policy has been selected from the options in the first row."}
 {: #platformrolestable1}
 
-Le tableau suivant décrit les actions courantes que vous pouvez effectuer en fonction du rôle qui vous est affecté pour chaque service de gestion de compte. Faites défiler l'écran à l'horizontale pour visualiser toutes les entrées du tableau.
+Pour plus d'informations sur les actions spécifiques que les utilisateurs peuvent effectuer en fonction du rôle qui leur a été affecté sur les services de gestion de compte, voir [Affectation de l'accès aux services de gestion de compte](/docs/iam?topic=iam-account-services).
 {: #acctmgmt}
-
-La première ligne du tableau décrit des services spécifiques que vous pouvez sélectionner lors de la création d'une règle, et la première colonne décrit le type de rôle sélectionné pour la règle. Les cellules restantes sont associées au rôle sélectionné dans les options de la première colonne et au type de règle sélectionné dans les options de la première ligne.
-
-| Détails de la règle d'accès |  Actions pour les ID de service  | Actions pour la gestion des groupes d'accès | Actions pour la gestion d'accès au catalogue | Actions pour l'accès afin de gérer les utilisateurs | Actions de support | Actions de facturation | Actions pour tous les services de gestion de compte |
-|:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|:--------------|
-|  |  Service d'identité IAM |  Groupes d'accès IAM |  Catalogue de ressources globales |  Gestion des utilisateurs  | Centre de support | Facturation et utilisation | Tous les services de gestion des comptes |
-| Rôle Afficheur |  <ul><li>Afficher les ID</li></ul> |  <ul><li>Afficher des groupes d'accès et des membres</li></ul> | <ul><li>Afficher les services privés</li></ul>  |  <ul><li>Afficher les utilisateurs du compte</li><li>Afficher les paramètres du profil utilisateur</li></ul> | <ul><li>Afficher les cas</li><li>Rechercher des cas</li></ul> | <ul><li>Afficher les paramètres des fonctions du compte</li><li>Afficher les abonnements dans le compte</li><li>Afficher le nom du compte</li><li>Afficher les groupes de ressources</li></ul> | Toutes les actions du rôle Afficheur pour les services de gestion de compte |
-| Rôle Opérateur | <ul><li>Créer et supprimer des ID et des clés d'API</li></ul> |  <ul><li>Non applicable</li></ul> | <ul><li>Non applicable</li></ul> |  <ul><li>Afficher les utilisateurs du compte</li><li>Afficher les paramètres du profil utilisateur</li></ul> | <ul><li>Non applicable</li></ul> | <ul><li>Afficher les paramètres des fonctions du compte</li><li>Afficher les abonnements dans le compte</li><li>Afficher et modifier le nom du compte</li><li>Afficher et mettre à jour les groupes de ressources</li></ul> | Toutes les actions du rôle Opérateur pour les services de gestion de compte |
-| Rôle Editeur |  <ul><li>Créer, mettre à jour et supprimer des ID et clés d'API</li></ul> |  <ul><li>Afficher, créer, éditer et supprimer des groupes</li><li>Ajouter ou supprimer des utilisateurs dans des groupes</li></ul> | <ul><li>Peut changer les métadonnées d'objet mais ne peut pas changer la visibilité des services privés</li></ul>  | <ul><li>Afficher, inviter, retirer et mettre à jour des utilisateurs dans le compte</li><li>Afficher et mettre à jour les paramètres de profil utilisateur</li></ul> |  <ul><li>Afficher les cas</li><li>Rechercher des cas</li><li>Mettre à jour les cas</li><li>Créer des cas</li></ul> | <ul><li>Afficher et mettre à jour les paramètres de fonctions du compte</li><li>Afficher les abonnements dans le compte</li><li>Afficher les offres dans le compte</li><li>Afficher et appliquer les codes de fonction</li><li>Afficher et modifier le nom du compte</li><li>Afficher et mettre à jour le plafond des dépenses</li><li>Afficher, créer et mettre à jour les groupes de ressources</li></ul> | Toutes les actions du rôle Editeur pour les services de gestion de compte |
-| Rôle Administrateur |   <ul><li>Créer, mettre à jour et supprimer des ID et clés d'API</li><li>Affecter des règles d'accès aux ID</li></ul> |  <ul><li>Afficher, créer, éditer et supprimer des groupes</li><li>Ajouter ou supprimer des utilisateurs</li><li>Affecter l'accès à un groupe</li><li>Gérer l'accès pour utiliser des groupes d'accès</li></ul> | <ul><li>Peut changer les métadonnées d'objet ou la visibilité des services privés et peut restreindre la visibilité d'un service public</li></ul> | <ul><li>Afficher, inviter, retirer et mettre à jour des utilisateurs dans le compte</li><li>Afficher et mettre à jour les paramètres de profil utilisateur</li></ul> |  <ul><li>Afficher les cas</li><li>Rechercher des cas</li><li>Mettre à jour les cas</li><li>Créer des cas</li></ul> |  <ul><li>Afficher et mettre à jour les paramètres de fonctions du compte</li><li>Afficher les abonnements dans le compte</li><li>Afficher les offres dans le compte</li><li>Afficher et appliquer les codes de fonction</li><li>Afficher et modifier le nom du compte</li><li>Afficher et mettre à jour le plafond des dépenses</li><li>Afficher le solde des abonnements et effectuer le suivi de l'utilisation</li><li>Afficher, créer, mettre à jour et affecter un accès pour la gestion des groupes de ressources</li></ul> | Toutes les actions du rôle Administrateur pour les services de gestion de compte|
-{: caption="Tableau 3. Exemples de rôles et d'actions de gestion de plateforme pour les services de gestion de comptes" caption-side="top"}
-{: #platformrolestable2}
-
-Pour le service d'identité IAM, ces actions s'appliquent aux ID de service dans le compte que l'utilisateur n'a pas créés. Tous les utilisateurs peuvent créer des ID de service. Ils sont administrateurs de ces ID et ils peuvent créer la clé d'API et les règles d'accès associées, mais ce service de gestion des comptes s'applique à la possibilité d'afficher, de supprimer et d'affecter l'accès aux ID de service dans le compte créé par d'autres utilisateurs.
-{: note}
 
 Certains services peuvent mapper des actions spécifiques aux rôles de gestion de plateforme qui sont liés à la gestion du service plutôt qu'à l'accès du service. A titre d'exemple, reportez-vous au tableau suivant dans lequel sont décrites les actions de service {{site.data.keyword.containershort_notm}} mappées à ces rôles.
 
@@ -124,7 +110,7 @@ Certains services peuvent mapper des actions spécifiques aux rôles de gestion 
 | Editeur | Effectuer toutes les actions de plateforme à l'exception de la gestion du compte et de l'affectation de règles d'accès |<ul><li>Lier un service à un cluster</li><li>Créer un webhook</li></ul> |
 | Opérateur | Effectuer les actions de plateforme requises pour configurer et exploiter des instances de service, par exemple, l'affichage de tableau de bord d'un service. | <ul><li>Ajouter ou retirer des noeuds d'agent</li><li>Redémarrer ou recharger des noeuds worker</li><li>Lier un service à un cluster</li></ul> |
 | Administrateur | Effectuer toutes les actions de plateforme en fonction de la ressource pour laquelle ce rôle est affecté, y compris l'affectation de règles d'accès à d'autres utilisateurs. |<ul><li>Retirer un cluster</li><li>Créer un cluster</li><li>Mise à jour des règles d'accès utilisateur</li><li>Toutes les actions qu'un afficheur, un éditeur et un opérateur peuvent effectuer</li></ul>|
-{: caption="Tableau 4. Exemple d'actions et de rôles de gestion de plateforme pour le service {{site.data.keyword.containershort_notm}}" caption-side="top"}
+{: caption="Tableau 3. Exemple d'actions et de rôles de gestion de plateforme pour le service {{site.data.keyword.containershort_notm}}" caption-side="top"}
 
 ### Rôles Accès au service
 {: #service_access_roles}
@@ -139,4 +125,4 @@ Les actions qui peuvent être exécutées en fonction de chaque rôle affecté v
 |  Lecteur | Effectuer des actions en lecture seule dans un service, par exemple, afficher les ressources spécifiques d'un service. | Répertorier et télécharger des objets |
 | Auteur | Droits en plus du rôle de lecteur, notamment, créer et éditer des ressources pour un service. | Créer et détruire des compartiments et des objets |
 | Responsable | Droits en plus du rôle d'auteur pour effectuer des actions privilégiées définies par le service, plus créer et éditer des ressources spécifiques des services. | Gérer tous les aspects de stockage de données. Créer et détruire des compartiments et des objets. |
-{: caption="Tableau 5. Exemples d'actions et de rôles utilisateur d'accès au service" caption-side="top"}
+{: caption="Tableau 4. Exemples d'actions et de rôles utilisateur d'accès au service" caption-side="top"}
