@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-10"
+lastupdated: "2019-06-17"
 
 keywords: dynamic rules, access groups, specific identity attributes
 
@@ -33,13 +33,18 @@ Only users who are already invited to the account can be mapped to access groups
 ## Setting up rules
 {: #setup_rules}
 
-Dynamic rules are created by setting conditions that must be matched by the data that is configured within the identity provider and passed in with a user's federated ID during login. You can add more than one condition for a rule. All conditions set in the rule must be met for a user to be added to an access group. To create a rule, follow these steps:
+Dynamic rules are created by setting conditions that must be matched by the data that is configured within the identity provider and passed in with a user's federated ID during login. You can add more than one condition for a rule. All conditions set in the rule must be met for a user to be added to an access group. 
+
+To create a rule, follow these steps:
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
 2. Select the name of the access group that you want to create a rule for to open the group details page.
 3. Select the **Dynamic rules** tab.
 4. Click **Add rule**.
 5. Enter the information from your identity provider that is dynamically provided for you on the Add rule page. The following list provides details for each required field.
+
+You can think of the rule as a key:value pair where the key is what you add in the `Add users when` field, and the value is what you enter in the `Value` field for what the rule must compare against based on the comparator that is selected.
+{: tip}
 
 <dl>
 <dt>Name</dt>
@@ -56,8 +61,8 @@ Dynamic rules are created by setting conditions that must be matched by the data
 <dd>Enter the attribute value for the attribute statement that the rule is comparing against.</dd>
 </dl>
 
-You can think of the rule as a key:value pair where the key is what you add in the `Add users when` field, and the value is what you enter in the `Value` field for what the rule must compare against based on the comparator that is selected.
-{: tip}
+Users added to access groups by using dynamic rules don't display as group members on the users list for the access group. To check a specific user's membership to an access group, you can select that user's name from the account **Users** page, and then click **Access groups**.
+{: note}
 
 ## Example rule
 {: #example}
