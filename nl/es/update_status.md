@@ -21,7 +21,7 @@ subcollection: iam
 # Actualización del estado de un usuario
 {: #status}
 
-El estado asignado de un usuario depende de si el usuario ha aceptado su invitación para unirse a la cuenta, si es un usuario de solo VPN o de si el administrador del usuario ha establecido el usuario como un usuario inhabilitado de la infraestructura clásica.
+El estado de un usuario depende de si el usuario ha aceptado su invitación para unirse a la cuenta, si es un usuario de solo VPN o de si el administrador del usuario ha establecido el usuario como un usuario inhabilitado de la infraestructura clásica.
 {:shortdesc}
 
 Si tiene el acceso siguiente, puede actualizar el estado de otro usuario:

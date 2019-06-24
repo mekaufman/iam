@@ -25,7 +25,13 @@ subcollection: iam
 可以创建一个访问组，用于将一组用户和服务标识组织成单个实体，供您轻松分配访问权。您可以将单个策略分配给该组，而不用对每个用户或服务标识多次指定相同的访问权。
 {:shortdesc}
 
-要管理访问组或创建新的访问组，您必须是帐户所有者，帐户中 IAM 访问组服务的管理员或编辑者，或者是为所有帐户管理服务分配的管理员或编辑者。此外，可以通过创建访问策略（其中的资源是访问组标识），向管理员或编辑者分配管理单个组的访问权。有关 IAM 访问组服务的访问策略和角色的更多信息，请参阅 [IAM 访问权](/docs/iam?topic=iam-userroles#userroles)。
+要管理或创建新的访问组，您必须具有以下类型的访问权：
+
+* 帐户所有者
+* 帐户中 IAM 访问组服务的管理员或编辑者
+* 所有帐户管理服务的管理员或编辑者
+
+此外，可以通过创建访问策略（其中的资源是访问组标识），向管理员或编辑者分配管理单个组的访问权。有关 IAM 访问组服务的访问策略和角色的更多信息，请参阅 [IAM 访问权](/docs/iam?topic=iam-userroles#userroles)。
 
 要更轻松地分配和管理访问权，可以设置资源组来组织希望用户组有权访问的一组资源。设置资源组后，可以为其分配策略，用于授予对该组内所有资源的访问权，而不用为帐户内的各个服务实例分别创建访问策略。
 {: tip}
@@ -51,6 +57,7 @@ subcollection: iam
 {: note}
 
 要使用 CLI 创建访问组，可以使用 [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_create) 命令。
+
 ```
 ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```

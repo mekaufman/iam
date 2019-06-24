@@ -25,7 +25,7 @@ subcollection: iam
 
 身為安全性管理者、審核員或管理員的您，可以使用 {{site.data.keyword.at_full}} 服務追蹤使用者和應用程式與 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 互動的情況。{:shortdesc}
 
-自 2019 年 5 月 9 日開始，已淘汰 {{site.data.keyword.cloudaccesstraillong}} 服務。您必須在帳戶中建立 {{site.data.keyword.at_short}} 的實例，才能繼續追蹤 IAM 事件。如需相關資訊，請參閱[淘汰 IBM Cloud Activity Tracker 服務](https://www.ibm.com/blogs/bluemix/2019/04/deprecating-ibm-cloud-activity-tracker/){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")。
+自 2019 年 5 月 9 日開始，已淘汰 {{site.data.keyword.cloudaccesstraillong}} 服務。您必須在帳戶中建立 {{site.data.keyword.at_short}} 的實例，才能繼續追蹤 IAM 事件。如需相關資訊，請參閱[淘汰 IBM Cloud Activity Tracker 服務](https://www.ibm.com/blogs/cloud-archive/2019/04/deprecating-ibm-cloud-activity-tracker/){: new_window} ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")。
 {: deprecated}
 
 您可以追蹤下列事件：

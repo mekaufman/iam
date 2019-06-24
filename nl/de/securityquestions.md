@@ -25,13 +25,13 @@ subcollection: iam
 Als Administrator mit dem entsprechenden Zugriff können Sie die Option aktivieren, bei der ein Benutzer bei der Anmeldung zur Eingabe von Sicherheitsfragen mit den zugehörigen Antworten aufgefordert wird. Dieser Typ von Mehrfaktorauthentifizierung (MFA) ist im Gegensatz zur ID-basierten Mehrfaktorauthentifizierung nur für ein Konto erforderlich, für das die Einstellung aktiviert ist. Weitere Informationen finden Sie in [Arten der Mehrfaktorauthentifizierung](/docs/iam?topic=iam-types#types).
 {:shortdesc}
 
-Wenn Sie über eines der folgenden Zugriffsrechte verfügen, können Sie diese Einstellung für andere Benutzer in Ihrem Konto aktualisieren:
+Wenn Sie über einen der folgenden Zugriffsberechtigungstypen verfügen, können Sie diese Einstellung für andere Benutzer in Ihrem Konto aktualisieren:
 
-* Rolle 'Editor' oder höher für den Benutzermanagementservice
+* Rolle 'Bearbeiter' oder höher für den Benutzermanagementservice
 * Sie gelten in der Hierarchie der klassischen Infrastruktur als 'Vorfahre' eines Benutzers und Ihnen ist für die klassische Infrastruktur die Berechtigung zum Verwalten von Benutzern zugewiesen
 
 
-Um diese MFA-Option für einen Benutzer zu aktivieren, muss der Benutzer zuerst auf der Seite 'Anmeldeeinstellungen' für das Profil [Sicherheitsfragen festlegen](/docs/account?topic=account-login-settings#security-questions) und die zugehörigen Antworten angeben.
+Um diese MFA-Option für einen Benutzer zu aktivieren, muss der Benutzer [Sicherheitsfragen](/docs/account?topic=account-login-settings#security-questions) und die entsprechenden Antworten auf der Profilseite mit den Anmeldeeinstellungen festlegen.
 {: note}
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Benutzer** aus.

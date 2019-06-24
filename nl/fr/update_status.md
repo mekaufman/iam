@@ -21,7 +21,7 @@ subcollection: iam
 # Mise à jour du statut d'un utilisateur
 {: #status}
 
-Le statut affecté d'un utilisateur varie en fonction des situations suivantes : l'utilisateur a accepté l'invitation à rejoindre le compte, l'utilisateur est de type VPN uniquement ou l'administrateur a défini l'utilisateur en tant qu'utilisateur désactivé d'infrastructure classique.
+Le statut d'un utilisateur varie en fonction des situations suivantes : l'utilisateur a accepté l'invitation à rejoindre le compte, l'utilisateur est de type VPN uniquement ou l'administrateur a défini l'utilisateur en tant qu'utilisateur désactivé d'infrastructure classique.
 {:shortdesc}
 
 Si vous disposez de l'accès suivant, vous pouvez mettre à jour le statut d'un autre utilisateur :

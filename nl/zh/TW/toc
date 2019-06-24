@@ -78,6 +78,18 @@
     iam_limits.md
     monitoring.md
     userstatus.md
+    
+
+    {: .topicgroup}
+    指令參考資料
+        /cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam
+    
+    {: .topicgroup}
+    API 參考資料  
+        [IAM Identity Services API](https://{DomainName}/apidocs/iam-identity-token-api){: new_window}
+        [IAM Access Groups API](https://{DomainName}/apidocs/iam-access-groups){: new_window}
+        [IAM Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: new_window}
+        [使用者管理](https://{DomainName}/apidocs/user-management#invite-users){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}

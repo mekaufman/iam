@@ -23,7 +23,7 @@ subcollection: iam
 # Connexion d'un ID dédié à votre IBMid public
 {: #connect_dedicated_id}
 
-Pour vous connecter à un cloud dédié où le service IAM public est disponible, l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}} vous demande de vous connecter en utilisant votre IBMid public et non l'ID dédié.
+Pour vous connecter à un cloud dédié où le service IAM public est disponible, vous devez vous connecter à l'interface CLI {{site.data.keyword.Bluemix_notm}} en utilisant votre IBMid public à la place de votre ID dédié.
 {:shortdesc}
 
 ```
@@ -31,7 +31,7 @@ Pour vous connecter à un cloud dédié où le service IAM public est disponible
   API endpoint: https://api.{dedicated_env}.cloud.ibm.com
 
   Public IAM token service is available in the dedicated environment.
-  Login with your public IBMid, or use '--no-iam' to login as a dedicated user only.
+  Log in with your public IBMid, or use '--no-iam' to log in as a dedicated user only.
 
   E-mail>
 ```
@@ -45,19 +45,19 @@ Si votre ID dédié est déjà connecté à l'IBMid public, il s'authentifie et 
   Connected to dedicated user my_dedicated_id
 ```
 
-Toutefois, si votre ID dédié n'a pas été connecté à l'IBMid public, vous êtes invité à vous connecter manuellement à l'IBMid public :
+Toutefois, si votre ID dédié n'est pas connecté à l'IBMid public, vous êtes invité à vous connecter manuellement à l'IBMid public :
 
 ```
-  You are logging with an IBMid that does not associated with any dedicated user.
+  You are logging with an IBMid that isn't associated with any dedicated user.
   To set up the connection, input the credentials of the dedicated user.
 
   Choose a credential type:
-  1. Username and password
-  2. One Time Code (Get one at https://login.{dedicated_env}.cloud.ibm.com/passcode)
+  1. User name and password
+  2. One-time code. You can get one at https://login.{dedicated_env}.cloud.ibm.com/passcode)
   Enter a number>
 ```
 
-Sélectionnez une option pour l'entrée des données d'identification pour l'ID dédié. Après une authentification réussie, votre ID dédié est connecté à votre ID public.
+Sélectionnez une option pour l'entrée des données d'identification pour l'ID dédié. Une fois que l'authentification a abouti, votre ID dédié est connecté à votre IBMid public. 
 
 ## Comment forcer une connexion au serveur UAA local ?
 {: #force_login}

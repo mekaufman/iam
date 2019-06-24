@@ -23,7 +23,7 @@ subcollection: iam
 # Conexión de un ID dedicado a su IBMid público
 {: #connect_dedicated_id}
 
-Para iniciar sesión en una nube dedicada en la que el servicio IAM público está disponible, la CLI de {{site.data.keyword.Bluemix_notm}} le solicita que inicie la sesión con el IBMid público en lugar de con el ID dedicado.
+Para iniciar una sesión en una nube dedicada en la que esté disponible el servicio IAM público, debe iniciar una sesión en la CLI de {{site.data.keyword.Bluemix_notm}} con su IBMid público en lugar del ID dedicado.
 {:shortdesc}
 
 ```
@@ -31,12 +31,12 @@ Para iniciar sesión en una nube dedicada en la que el servicio IAM público est
   Punto final de API: https://api.{dedicated_env}.cloud.ibm.com
 
   El servicio de señal de IAM público está disponible en el entorno dedicado.
-  Inicie sesión con su IBMid público, o utilice '--no-iam' para iniciar sesión solo como un usuario dedicado.
+  Inicie sesión con su IBMid público, o utilice '--no-iam' para iniciar sesión sólo como un usuario dedicado.
 
   Correo electrónico>
 ```
 
-Si el ID dedicado ya se ha conectado al IBMid público, se autenticará y se iniciará la sesión:
+Si el ID dedicado ya está conectado al IBMid público, se autentica y se inicia sesión:
 
 ```
   Autenticando...
@@ -45,15 +45,15 @@ Si el ID dedicado ya se ha conectado al IBMid público, se autenticará y se ini
   Conectado con el usuario dedicado my_dedicated_id
 ```
 
-Sin embargo, si el ID dedicado no se ha conectado con el IBMid público, se le solicitará que se conecte manualmente al IBMid público:
+Sin embargo, si el ID dedicado no está conectado al IBMid público, se le solicita que se conecte manualmente al IBMid público:
 
 ```
-  Está registrándose con IBMid que no está asociado con ningún usuario dedicado.
+  Está registrándose con un IBMid que no está asociado con ningún usuario dedicado.
   Para configurar la conexión, especifique las credenciales del usuario dedicado.
 
   Elija un tipo de credencial:
   1. Nombre de usuario y contraseña
-  2. Código de un solo uso (obtenga uno en https://login.{dedicated_env}.cloud.ibm.com/passcode)
+  2. Código de un solo uso. Puede obtener uno en https://login.{dedicated_env}.cloud.ibm.com/passcode)
   Escriba un número>
 ```
 

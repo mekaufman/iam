@@ -23,7 +23,7 @@ subcollection: iam
 # 將專用 ID 連接至公用 IBM ID
 {: #connect_dedicated_id}
 
-若要登入有公用 IAM 服務可用的專用雲端，{{site.data.keyword.Bluemix_notm}} CLI 會要求您使用公用 IBM ID 來登入，而非專用 ID。
+若要登入有公用 IAM 服務可用的專用雲端，您必須使用公用 IBM ID 來登入 {{site.data.keyword.Bluemix_notm}} CLI，而非專用 ID。
 {:shortdesc}
 
 ```
@@ -31,7 +31,7 @@ subcollection: iam
   API endpoint: https://api.{dedicated_env}.cloud.ibm.com
 
   Public IAM token service is available in the dedicated environment.
-  Login with your public IBMid, or use '--no-iam' to login as a dedicated user only.
+  Log in with your public IBMid, or use '--no-iam' to log in as a dedicated user only.
 
   Email>
 ```
@@ -45,15 +45,15 @@ Authenticating...
   Connected to dedicated user my_dedicated_id
 ```
 
-不過，如果您的專用 ID 尚未連接至公用 IBM ID，則系統會提示您手動連接至公用 IBM ID：
+不過，如果您的專用 ID 未連接至公用 IBM ID，則系統會提示您手動連接至公用 IBM ID：
 
 ```
-  You are logging with an IBMid that does not associated with any dedicated user.
+  You are logging with an IBMid that isn't associated with any dedicated user.
   To set up the connection, input the credentials of the dedicated user.
 
   Choose a credential type:
-  1. Username and password
-  2. One Time Code (Get one at https://login.{dedicated_env}.cloud.ibm.com/passcode)
+  1. User name and password
+  2. One-time code. You can get one at https://login.{dedicated_env}.cloud.ibm.com/passcode)
   Enter a number>
 ```
 

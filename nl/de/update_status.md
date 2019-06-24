@@ -21,7 +21,7 @@ subcollection: iam
 # Status eines Benutzers aktualisieren
 {: #status}
 
-Der einem Benutzer zugewiesene Status richtet sich danach, ob der Benutzer die Einladung zum Beitritt zu dem Konto angenommen hat, er ein Benutzer mit dem Status 'Nur VPN' ist oder der Benutzeradministrator den Benutzer als inaktivierten Benutzer der klassischen Infrastruktur festgelegt hat.
+Der Status für einen Benutzer richtet sich danach, ob der Benutzer die Einladung zum Beitritt zu dem Konto angenommen hat, er ein Benutzer mit dem Status 'Nur VPN' ist oder der Benutzeradministrator den Benutzer als inaktivierten Benutzer der klassischen Infrastruktur festgelegt hat.
 {:shortdesc}
 
 Wenn Sie über die folgenden Zugriffsrechte verfügen, können Sie den Status anderer Benutzer aktualisieren:

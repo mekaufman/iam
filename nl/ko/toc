@@ -78,6 +78,17 @@ ID 및 액세스 관리
     iam_limits.md
     monitoring.md
     userstatus.md
+
+    {: .topicgroup}
+    명령 참조
+        /cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam
+    
+    {: .topicgroup}
+    API 참조  
+        [IAM ID 서비스 API](https://{DomainName}/apidocs/iam-identity-token-api){: new_window}
+        [IAM 액세스 그룹 API](https://{DomainName}/apidocs/iam-access-groups){: new_window}
+        [IAM 정책 관리 API](https://{DomainName}/apidocs/iam-policy-management){: new_window}
+        [사용자 관리](https://{DomainName}/apidocs/user-management#invite-users){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}

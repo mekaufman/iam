@@ -25,7 +25,13 @@ subcollection: iam
 Eine Zugriffsgruppe kann erstellt werden, um eine Gruppe von Benutzern und Service-IDs in einer einzigen Entität zu organisieren, die es Ihnen leicht macht, Zugriff zuzuweisen. Sie können der Gruppe eine einzige Richtlinie zuweisen, anstatt denselben Zugriff mehrmals für den einzelnen Benutzer oder die einzelne Service-ID zuzuweisen.
 {:shortdesc}
 
-Um neue Zugriffsgruppen zu verwalten oder zu erstellen, müssen Sie der Kontoeigner, Administrator oder Editor (Bearbeiter) für den IAM-Zugriffsgruppenservice im Konto oder der zugeordnete Administrator oder Editor (Bearbeiter) für 'Alle Kontoverwaltungsservices' sein. Darüber hinaus kann ein Administrator oder Bearbeiter für die Verwaltung einer einzelnen Gruppe zugewiesen werden, indem eine Zugriffsrichtlinie erstellt wird, deren Ressource die Zugriffsgruppen-ID ist. Weitere Informationen über Zugriffsrichtlinien und Rollen für den IAM-Zugriffsgruppenservice finden Sie im Abschnitt zum [IAM-Zugriff](/docs/iam?topic=iam-userroles#userroles).
+Zum Verwalten von Zugriffsgruppen oder zum Erstellen neuer Zugriffsgruppen benötigen Sie die folgenden Zugriffsberechtigungstypen:
+
+* Kontoeigner
+* Administrator oder Bearbeiter für den IAM-Zugriffsgruppenservice im Konto
+* Administrator oder Bearbeiter für alle Kontenverwaltungsservices
+
+Darüber hinaus kann ein Administrator oder Bearbeiter für die Verwaltung einer einzelnen Gruppe zugewiesen werden, indem eine Zugriffsrichtlinie erstellt wird, deren Ressource die Zugriffsgruppen-ID ist. Weitere Informationen über Zugriffsrichtlinien und Rollen für den IAM-Zugriffsgruppenservice finden Sie im Abschnitt zum [IAM-Zugriff](/docs/iam?topic=iam-userroles#userroles).
 
 Um die Zuweisung und Verwaltung des Zugriffs noch einfacher zu gestalten, können Sie Ressourcengruppen einrichten, um eine Gruppe von Ressourcen zu organisieren, auf die eine Gruppe von Benutzern Zugriff haben soll. Wenn Ihre Ressourcengruppe eingerichtet ist, können Sie eine Richtlinie zuordnen, die den Zugriff auf alle Ressourcen in dieser Gruppe ermöglicht, anstatt Zugriffsrichtlinien für einzelne Serviceinstanzen innerhalb Ihres Kontos zu erstellen.
 {: tip}
@@ -51,6 +57,7 @@ Sie können eine Gruppe löschen, indem Sie die Option **Gruppe entfernen** ausw
 {: note}
 
 Wenn Sie eine Zugriffsgruppe über die Befehlszeilenschnittstelle (CLI) erstellen möchten, können Sie den Befehl [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_create) verwenden.
+
 ```
 ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```

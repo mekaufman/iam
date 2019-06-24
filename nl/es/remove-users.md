@@ -21,13 +21,13 @@ subcollection: iam
 # Eliminación de usuarios
 {: #remove}
 
-Cuando elimina un usuario de la cuenta, el usuario deja de poder iniciar una sesión en la consola, cambiar a su cuenta si sigue perteneciendo a otra cuenta y acceder a los recursos de la cuenta.
+Cuando elimina un usuario de la cuenta, el usuario ya no puede iniciar una sesión en la consola, cambiar a la cuenta ni acceder a los recursos de la cuenta.
 {:shortdesc}
 
 Solo los propietarios de la cuenta o los usuarios con el siguiente acceso pueden eliminar usuarios de una cuenta:
 
 * Una política de IAM para el servicio de gestión de cuenta de gestión de usuarios con el rol de administrador asignado y debe ser el gestor de organización de Cloud Foundry si el usuario pertenece a una organización de Cloud Foundry.
-* Si tiene la infraestructura clásica en su cuenta, un usuario debe tener una política de IAM para el servicio de gestión de cuenta de gestión de usuarios con el rol de administrador asignado, debe ser el gestor de organización de Cloud Foundry si el usuario pertenece a una organización de Cloud Foundry y debe ser un antecesor del usuario en la jerarquía de usuarios de la infraestructura clásica con el permiso de gestión de usuarios de infraestructura clásica asignado.
+* Si tiene la infraestructura clásica en su cuenta, un usuario debe ser un antecesor del usuario en la jerarquía de usuarios de la infraestructura clásica con el permiso de gestión de usuarios de infraestructura clásica asignado. También debe tener una política de IAM para el servicio de gestión de cuenta de gestión de usuarios con el rol de administrador asignado o debe ser el gestor de organización de Cloud Foundry si el usuario pertenece a una organización de Cloud Foundry.
 
 Para eliminar un usuario de una cuenta, realice estos pasos:
 

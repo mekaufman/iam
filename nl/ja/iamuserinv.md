@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-11"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -17,6 +17,7 @@ subcollection: iam
 {:new_window: target="_blank"}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # ユーザーの招待
 {: #iamuserinv}
@@ -44,8 +45,23 @@ subcollection: iam
 
 ユーザーのアクセス権限は必要ないと判断した場合は、**「状況」**列に**「処理中」**または**「保留中」**の状態と表示されているユーザーの招待を取り消すことができます。 招待されたユーザーが招待を受け取らなかった場合、**「保留中」**状態のユーザーに招待を再送することができます。
 
-コマンド・ライン・インターフェース (CLI) を使用してユーザーを招待したい場合は、[ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) コマンドを参照してください。
-{: tip}
+### CLI を使用したユーザーの招待
+{: #cli-invite}
+
+コマンド・ライン・インターフェース (CLI) を使用してユーザーを招待するには、以下のコマンドを実行します。
+
+```
+ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
+```
+
+CLI を使用して、Cloud Foundry アクセス権限を割り当てるか、または、アクセス権限を何も割り当てずに後で割り当て処理を行うことを選択できます。コマンド・パラメーターの詳細については、『[ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite)』を参照してください。 
+
+### API を使用したユーザーの招待
+{: #api-invite}
+
+[API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} を使用して、ユーザーを一括で招待できます。単一の招待に含まれるすべてのユーザーに同じアクセス権限が割り当てられます。API を使用してユーザーを招待するときには、以下の例のように、各項目を引用符で囲んだコンマ区切りリストで E メールを入力します。
+
+`"email": "cloud_api_example_member@ibm.com", "next_example@ibm.com",` 
 
 ## 招待からのユーザーへのアクセス権限の割り当て
 {: #assignaccess}
@@ -57,7 +73,7 @@ subcollection: iam
 
 新規ユーザーを招待する際に、初期の {{site.data.keyword.Bluemix_notm}} IAM アクセス・ポリシーを作成して、アクセス権限を割り当てることができます。 「サービス」セクションでは、ユーザーにアカウント管理サービスへのアクセス権限を付与したり、リソース・グループを管理するためのアクセス権限と共にリソース・グループ内のサービスへのアクセス権限を付与したり、アカウント内の個別リソースへのアクセス権限を付与したりできます。
 
-ユーザーが招待を受け入れた後に、追加のアクセス権限を割り当てることが可能です。 役割を追加するためのポリシーの編集、アクセス権限の追加の割り当て、またはユーザーのポリシーの削除について詳しくは、[リソースに対するアクセス権限の管理](/docs/iam?topic=iam-iammanidaccser#iammanidaccser)を参照してください。
+ユーザーが招待を受け入れた後、さらにアクセス権限を割り当てることができます。役割を追加するためのポリシーの編集、アクセス権限の追加の割り当て、またはユーザーのポリシーの削除について詳しくは、[リソースに対するアクセス権限の管理](/docs/iam?topic=iam-iammanidaccser#iammanidaccser)を参照してください。
 
 ポリシーを割り当てる際にどのサービスを選択するかに応じて、以下の手順で説明するフィールドの一部が表示されない可能性があります。
 {: note}

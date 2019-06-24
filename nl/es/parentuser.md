@@ -21,10 +21,10 @@ subcollection: iam
 # Actualización del usuario padre de un usuario
 {: #update-parent}
 
-Si tiene el acceso correcto, puede actualizar el padre de un usuario. La actualización del usuario padre afecta a la forma en que un usuario ve a otros usuarios en la cuenta cuando el valor de visibilidad de la lista de usuarios está establecido en restringido. Los usuarios solo ven a otros usuarios de los que son padres y a cualquier otro usuario invitado por dichos descendientes del usuario padre.
+Si tiene el acceso correcto, puede actualizar el padre de un usuario. La actualización del usuario padre afecta a la forma en que un usuario ve a otros usuarios en la cuenta cuando el valor de visibilidad de la lista de usuarios está establecido en restringido. Los usuarios solo ven otros usuarios de los que son padres y cualquier otro usuario que esté invitado por dichos descendientes del usuario padre.
 {:shortdesc}
 
-Consulte [valor de visibilidad de lista de usuarios](/docs/iam?topic=iam-userlistview#userlistview) para obtener más información sobre el valor.
+Para obtener más información sobre el valor, consulte [Configuración del acceso de vista del usuario](/docs/iam?topic=iam-userlistview#userlistview).
 
 Si tiene el acceso siguiente, puede actualizar el padre de otro usuario:
 

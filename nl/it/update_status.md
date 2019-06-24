@@ -21,7 +21,7 @@ subcollection: iam
 # Aggiornamento dello stato di un utente
 {: #status}
 
-Lo stato assegnato di un utente dipende da se l'utente ha accettato l'invito a unirsi all'account, se è un utente solo VPN o se l'amministratore utente imposta l'utente come utente dell'infrastruttura classica disabilitata.
+Lo stato di un utente dipende dal fatto che l'utente abbia accettato l'invito a unirsi all'account, che sia un utente solo VPN o che l'amministratore dell'utente lo imposti come utente dell'infrastruttura classica disabilitata.
 {:shortdesc}
 
 Se disponi del seguente accesso, puoi aggiornare lo stato di un altro utente:

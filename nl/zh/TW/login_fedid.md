@@ -99,7 +99,7 @@ subcollection: iam
 
     * 設定環境變數。此外，您也可以在系統上設定環境變數。例如，IBMCLOUD_API_KEY=api_key_string，其中 `api_key_string` 是 API 金鑰的自訂值。設定環境變數之後，只需要從 CLI 指定 `ibmcloud login` 即可。
 
-   針對 Windows 10 PowerShell，您想要使用 `'@key_file_name'` 並在金鑰檔名稱週圍使用單引號。
+   針對 Windows 10 PowerShell，您想要使用 `'@key_file_name'` 並在金鑰檔名稱周圍使用單引號。
    {: tip}
 
   若要使用 Cloud Foundry CLI 登入，請指定 `apikey` 作為使用者名稱，並指定 API 金鑰字串作為密碼：

@@ -21,10 +21,10 @@ subcollection: iam
 # Mise à jour d'un utilisateur parent d'un utilisateur
 {: #update-parent}
 
-Si vous disposez de l'accès correct, vous pouvez mettre à jour le parent d'un utilisateur. La mise à jour de l'utilisateur parent a des conséquences sur la manière dont un utilisateur voit les autres utilisateurs dans le compte lorsque le paramètre de visibilité de liste d'utilisateurs a la valeur Restreint. Les utilisateurs voient uniquement les utilisateurs dont ils sont parents ainsi que les utilisateurs invités par les descendants de l'utilisateur parent.
+Si vous disposez de l'accès correct, vous pouvez mettre à jour le parent d'un utilisateur. La mise à jour de l'utilisateur parent a des conséquences sur la manière dont un utilisateur voit les autres utilisateurs dans le compte lorsque le paramètre de visibilité de liste d'utilisateurs est défini sur Restreint. Les utilisateurs voient uniquement les utilisateurs dont ils sont parents ainsi que les utilisateurs invités par les descendants de l'utilisateur parent.
 {:shortdesc}
 
-Pour plus de détails sur le paramètre, voir le [paramètre de visibilité de liste d'utilisateurs](/docs/iam?topic=iam-userlistview#userlistview).
+Pour plus d'informations sur le paramètre, voir [Définition de l'accès à la vue utilisateur](/docs/iam?topic=iam-userlistview#userlistview).
 
 Si vous disposez de l'accès suivant, vous pouvez mettre à jour le parent pour un autre utilisateur :
 

@@ -100,7 +100,7 @@ ibmcloud login --apikey @key_file_name
 
     * 设置环境变量。此外，还可以在系统上设置环境变量。例如，IBMCLOUD_API_KEY=api_key_string，其中 `api_key_string` 是 API 密钥的定制值。设置环境变量后，可以直接通过 CLI 指定 `ibmcloud login`。
 
-   对于 Windows 10 PowerShell，需要使用 `'@key_file_name'`，即用单引号将密钥文件名称括起。
+   对于 Windows 10 PowerShell，需要使用 `'@key_file_name'`，即用单引号将密钥文件名括起。
    {: tip}
 
   要使用 Cloud Foundry CLI 登录，请指定 `apikey` 作为用户名，并指定 API 密钥字符串作为密码：

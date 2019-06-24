@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-11"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -17,6 +17,7 @@ subcollection: iam
 {:new_window: target="_blank"}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # 邀请用户
 {: #iamuserinv}
@@ -44,8 +45,23 @@ subcollection: iam
 
 如果确定某个用户不需要访问权，那么可以对**状态**列中显示为**正在处理**或**暂挂**状态的任何用户取消邀请。如果被邀请用户未收到邀请，那么可以向处于**暂挂**状态的任何用户重新发送邀请。
 
-如果要使用命令行界面 (CLI) 来邀请用户，请参阅 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) 命令。
-{: tip}
+### 使用 CLI 邀请用户
+{: #cli-invite}
+
+要使用命令行界面 (CLI) 来邀请用户，请运行以下命令：
+
+```
+ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
+```
+
+通过使用 CLI，可以选择分配 Cloud Foundry 访问权，或者暂不分配访问权，以后再分配。有关命令参数的更多信息，请参阅 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite)。 
+
+### 使用 API 邀请用户
+{: #api-invite}
+
+可以使用 [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} 批量邀请用户。在单个邀请中包含的所有用户都分配有相同的访问权。使用 API 邀请用户时，可以输入逗号分隔的电子邮件列表，每个条目用引号括起，例如：
+
+`"email": "cloud_api_example_member@ibm.com", "next_example@ibm.com",`。 
 
 ## 通过邀请分配用户访问权
 {: #assignaccess}
@@ -57,7 +73,7 @@ subcollection: iam
 
 邀请新用户时，可以通过创建初始 {{site.data.keyword.Bluemix_notm}} IAM 访问策略来分配访问权。在“服务”部分中，可以向用户提供对帐户管理服务的访问权、对资源组中服务的访问权以管理资源组，或对帐户中单个资源的访问权。
 
-用户接受邀请后，可以为其分配其他访问权。有关编辑策略以添加额外角色、分配更多访问权或除去用户策略的详细信息，请参阅[管理对资源的访问权](/docs/iam?topic=iam-iammanidaccser#iammanidaccser)。
+用户接受邀请后，可以为其分配更多访问权。有关编辑策略以添加额外角色、分配更多访问权或除去用户策略的详细信息，请参阅[管理对资源的访问权](/docs/iam?topic=iam-iammanidaccser#iammanidaccser)。
 
 根据您在分配策略时选择的服务，可能不会看到以下过程中描述的所有字段。
 {: note}

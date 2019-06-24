@@ -25,7 +25,13 @@ subcollection: iam
 您可以建立存取群組，將一組使用者和服務 ID 組織成單一實體，方便您指派存取權。您可以指派單一原則給群組，而不是針對每個個別使用者或服務 ID 指派相同的存取權多次。
 {:shortdesc}
 
-若要管理或建立新的存取群組，您必須是帳戶擁有者、帳戶中「IAM 存取群組」服務的管理者或編輯者，或是所有「帳戶管理服務」的受指派管理者或編輯者。此外，管理者或編輯者可以藉由建立存取原則（其中資源是存取群組 ID）而獲指派存取權來管理個別群組。如需 IAM 存取群組服務之存取原則及角色的相關資訊，請參閱 [IAM 存取](/docs/iam?topic=iam-userroles#userroles)。
+若要管理或建立新的存取群組，您必須具有下列類型的存取權：
+
+* 帳戶擁有者
+* 帳戶中 IAM Access Groups 服務的管理者或編輯者
+* 所有帳戶管理服務的管理者或編輯者
+
+此外，管理者或編輯者可以藉由建立存取原則（其中資源是存取群組 ID）而獲指派存取權來管理個別群組。如需 IAM 存取群組服務之存取原則及角色的相關資訊，請參閱 [IAM 存取](/docs/iam?topic=iam-userroles#userroles)。
 
 若要更輕鬆地指派及管理存取權，您可以設定資源群組，來組織您想要一群使用者能存取的一組資源。設定好資源群組之後，您可以指派一個原則，來提供對該群組內所有資源的存取權，而不是為您帳戶內的個別服務實例建立存取原則。
 {: tip}
@@ -51,6 +57,7 @@ subcollection: iam
 {: note}
 
 若要使用 CLI 建立存取群組，您可以使用 [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_create) 指令。
+
 ```
 ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```

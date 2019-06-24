@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-11"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -17,6 +17,7 @@ subcollection: iam
 {:new_window: target="_blank"}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Invito di utenti
 {: #iamuserinv}
@@ -44,8 +45,23 @@ Per invitare gli utenti o per gestire gli inviti utente nel tuo account, complet
 
 Se determini che un utente non ha bisogno dell'accesso, puoi annullare un invito per tutti gli utenti visualizzati in uno stato **Elaborazione** o **In sospeso** nella colonna **Stato**. Se un utente invitato non riceve un invito, puoi reinviare l'invito a tutti gli utenti nello stato **In sospeso**.
 
-Se vuoi invitare gli utenti utilizzando la CLI (command-line interface), vedi il comando [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite).
-{: tip}
+### Invito di utenti mediante la CLI
+{: #cli-invite}
+
+Per invitare gli utenti utilizzando la CLI (command-line interface), immetti il seguente comando:
+
+```
+ibmcloud account user-invite EMAIL_UTENTE [-o ORG [--org-role RUOLO_ORG] [-s SPAZIO, --space-role RUOLO_SPAZIO]]
+```
+
+Utilizzando la CLI, puoi scegliere se assegnare l'accesso a Cloud Foundry o nessun accesso e lavorare sull'assegnazione dell'accesso in un secondo momento. Per ulteriori informazioni sul parametro del comando, vedi [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite). 
+
+### Invito di utenti mediante l'API
+{: #api-invite}
+
+Puoi utilizzare l'[API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} per invitare gli utenti in blocco. A tutti gli utenti inclusi in un singolo invito viene assegnato lo stesso accesso. Quando inviti gli utenti utilizzando l'API, immetti le email in un elenco separato da virgole con ogni voce racchiusa tra virgolette, ad esempio:
+
+`"email": "cloud_api_example_member@ibm.com", "next_example@ibm.com",`. 
 
 ## Assegnazione dell'accesso utente da un invito
 {: #assignaccess}
@@ -57,7 +73,7 @@ Assegni l'accesso per gli utenti nel momento in cui li inviti, assegnando le pol
 
 Puoi assegnare l'accesso creando una politica di accesso {{site.data.keyword.Bluemix_notm}} IAM iniziale quando inviti un nuovo utente. Nella sezione Servizi, puoi fornire a un utente l'accesso ai servizi di gestione dell'account, ai servizi in un gruppo di risorse con accesso per gestire il gruppo di risorse o a una singola risorsa nell'account.
 
-Dopo che l'utente ha accettato l'invito, puoi assegnare un accesso aggiuntivo. Vedi [Gestione dell'accesso alle risorse](/docs/iam?topic=iam-iammanidaccser#iammanidaccser) per dettagli sulla modifica delle politiche per aggiungere altri ruoli, assegnare un ulteriore accesso o rimuovere una politica per un utente.
+Dopo che l'utente ha accettato l'invito, puoi assegnare ulteriore accesso. Vedi [Gestione dell'accesso alle risorse](/docs/iam?topic=iam-iammanidaccser#iammanidaccser) per dettagli sulla modifica delle politiche per aggiungere altri ruoli, assegnare un ulteriore accesso o rimuovere una politica per un utente.
 
 A seconda del servizio che selezioni quando assegni la politica, potresti non vedere tutti i campi descritti nelle seguenti procedure.
 {: note}

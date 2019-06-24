@@ -23,7 +23,11 @@ subcollection: iam
 En tant que propriétaire de compte {{site.data.keyword.Bluemix}}, vous pouvez voir tous les utilisateurs de votre compte et définir comment les utilisateurs peuvent voir les utilisateurs du compte.
 {:shortdesc}
 
-Lorsque l'option **Affichage non restreint** est sélectionnée, tout utilisateur du compte peut voir les autres utilisateurs sur la page Utilisateurs dans la console {{site.data.keyword.Bluemix_notm}}. Lorsque l'option **Affichage restreint** est sélectionnée, les utilisateurs ne peuvent voir que les utilisateurs des comptes auxquels ils sont invités, ceux avec lesquels ils partagent une organisation Cloud Foundry ou les utilisateurs qui sont leurs descendants dans la hiérarchie d'utilisateurs de l'infrastructure classique, autrement dit les utilisateurs qu'ils ont invités ou ceux invités par leurs descendants.
+Lorsque l'option **Affichage non restreint** est sélectionnée, tout utilisateur du compte peut voir les autres utilisateurs sur la page Utilisateurs dans la console {{site.data.keyword.Bluemix_notm}}. Lorsque l'option **Affichage restreint** est sélectionnée, les utilisateurs peuvent uniquement afficher des types spécifiques d'utilisateurs dans le compte : 
+
+* Les utilisateurs invités par l'utilisateur
+* Les utilisateurs partageant une organisation Cloud Foundry avec l'utilisateur
+* Les utilisateurs descendants de ces utilisateurs dans la hiérarchie utilisateur d'infrastructure classique, à savoir les utilisateurs qu'ils ont invités ou que l'un de leurs descendants a invités.
 
 Par défaut, l'affichage non restreint est défini pour votre compte. Pour mettre à jour ce paramètre, procédez comme suit :
 

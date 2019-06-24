@@ -25,7 +25,13 @@ subcollection: iam
 Se puede crear un grupo de acceso para organizar un conjunto de usuarios e ID de servicio en una sola entidad, lo que le facilita la asignación de acceso. Puede asignar una única política al grupo en lugar de asignar el mismo acceso varias veces por usuario individual o ID de servicio.
 {:shortdesc}
 
-Para gestionar o crear nuevos grupos de acceso, debe ser el propietario de la cuenta, administrador o editor en el servicio IAM Access Groups en la cuenta o el administrador o editor asignado para todos los servicios de gestión de la cuenta. Además, se puede asignar a un administrador o editor acceso para gestionar un grupo individual creando una política de acceso donde el recurso es el ID del grupo de acceso. Para obtener más información sobre las políticas de acceso y los roles correspondientes al servicio IAM Access Groups, consulte [Acceso de IAM](/docs/iam?topic=iam-userroles#userroles).
+Para gestionar o crear nuevos grupos de acceso, debe tener el siguiente tipo de acceso:
+
+* Propietario de la cuenta
+* Administrador o editor en el servicio IAM Access Groups en la cuenta
+* Administrador o editor para todos los servicios de gestión de cuentas
+
+Además, se puede asignar a un administrador o editor acceso para gestionar un grupo individual creando una política de acceso donde el recurso es el ID del grupo de acceso. Para obtener más información sobre las políticas de acceso y los roles correspondientes al servicio IAM Access Groups, consulte [Acceso de IAM](/docs/iam?topic=iam-userroles#userroles).
 
 Para facilitar aún más la asignación y gestión de accesos, puede configurar grupos de recursos para organizar el conjunto de recursos al que desea que un grupo de usuarios tenga acceso. Cuando el grupo de recursos esté configurado, podrá asignar una política que otorgue acceso a todos los recursos del grupo, en lugar de crear políticas de acceso para instancias de servicio individuales de su cuenta.
 {: tip}
@@ -51,6 +57,7 @@ Puede suprimir un grupo seleccionando la opción **Eliminar grupo**. Cuando elim
 {: note}
 
 Para crear un grupo de acceso utilizando la CLI, puede utilizar el mandato [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_create).
+
 ```
 ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```

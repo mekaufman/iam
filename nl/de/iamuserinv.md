@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-11"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -17,6 +17,7 @@ subcollection: iam
 {:new_window: target="_blank"}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Benutzer einladen
 {: #iamuserinv}
@@ -44,8 +45,23 @@ Führen Sie die folgenden Schritte aus, um Benutzer einzuladen oder Einladungen 
 
 Wenn Sie entscheiden, dass ein Benutzer keinen Zugriff benötigt, können Sie eine Einladung für beliebige Benutzer abbrechen, die mit dem Status **Verarbeitung läuft** (Processing) oder **Anstehend** (Pending) in der Spalte **Status** angezeigt werden. Wenn ein eingeladener Benutzer keine Einladung empfangen hat, können Sie die Einladung an jeden Benutzer mit dem Status **Anstehend** erneut senden.
 
-Wenn Sie Benutzer über die Befehlszeilenschnittstelle (Command-Line Interface, CLI) einladen möchten, verwenden Sie den Befehl [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite).
-{: tip}
+### Benutzer über die Befehlszeilenschnittstelle (CLI) einladen
+{: #cli-invite}
+
+Wenn Sie Benutzer über die Befehlszeilenschnittstelle (Command-Line Interface, CLI) einladen möchten, verwenden Sie den folgenden Befehl:
+
+```
+ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
+```
+
+Wenn Sie die Befehlszeilenschnittstelle verwenden, können Sie Cloud Foundry-Zugriffsberechtigungen zuweisen oder Sie können die Zugriffsberechtigungen zu einem späteren Zeitpunkt zuweisen. Weitere Informationen zu den Befehlsparametern finden Sie in [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite). 
+
+### Benutzer über die API einladen
+{: #api-invite}
+
+Sie können die [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} verwenden, um Benutzer über eine Massenoperation einzuladen. Allen Benutzern, die in eine einzelne Einladung einbezogen sind, werden dieselben Zugriffsberechtigungen zugewiesen. Wenn Sie Benutzer über die API einladen, geben Sie die E-Mail-Adressen in einer durch Kommas getrennten Liste ein, wobei die einzelnen Einträge in Anführungszeichen eingeschlossen sind. Beispiel: 
+
+`"email": "cloud_api_example_member@ibm.com", "next_example@ibm.com",`. 
 
 ## Benutzerzugriff über eine Einladung zuweisen
 {: #assignaccess}

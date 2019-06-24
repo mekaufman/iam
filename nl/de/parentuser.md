@@ -24,7 +24,7 @@ subcollection: iam
 Wenn Sie über den entsprechenden Zugriff verfügen, können Sie den übergeordneten Benutzer eines Benutzers aktualisieren. Die Aktualisierung des übergeordneten Benutzers wirkt sich darauf aus, wie die Anzeige anderer Benutzer in dem Konto erfolgt, wenn für die Sichtbarkeit der Benutzerliste die Einstellung 'Eingeschränkte Ansicht' festgelegt ist. Benutzer können nur solche Benutzer sehen, denen sie selbst übergeordnet sind, sowie alle weiteren Benutzer, die von den Nachkommen des übergeordneten Benutzers eingeladen wurden.
 {:shortdesc}
 
-Weitere Informationen zu dieser Einstellung finden Sie in [Sichtbarkeit der Benutzerliste](/docs/iam?topic=iam-userlistview#userlistview).
+Weitere Informatione zu dieser Einstellung finden Sie in [Anzeigezugriffsberechtigung für Benutzer festlegen](/docs/iam?topic=iam-userlistview#userlistview).
 
 Wenn Sie über die folgenden Zugriffsrechte verfügen, können Sie den übergeordneten Benutzer für einen anderen Benutzer aktualisieren:
 

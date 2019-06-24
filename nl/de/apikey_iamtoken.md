@@ -21,8 +21,11 @@ subcollection: iam
 # {{site.data.keyword.Bluemix_notm}} IAM-Token mithilfe eines API-Schlüssels abrufen
 {: #iamtoken_from_apikey}
 
-Auf {{site.data.keyword.Bluemix}}-APIs kann nur von Benutzern zugegriffen werden, die durch eine zugewiesene IAM-Rolle autorisiert sind. Deshalb muss der Benutzer, der die API aufruft, zur Authentifizierung Berechtigungsnachweise für die API übergeben. Sie können ein IAM-Token generieren, indem Sie entweder Ihren [{{site.data.keyword.Bluemix_notm}}-API-Schlüssel](/docs/iam?topic=iam-userapikey#userapikey) oder den [API-Schlüssel einer Service-ID](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys) verwenden. Dieser Prozess wird auch verwendet, wenn Sie eine Anwendung entwickeln, die mit anderen {{site.data.keyword.Bluemix_notm}}-Services zusammenarbeiten muss. Sie müssen den API-Schlüssel einer Service-ID verwenden, um ein Zugriffstoken abzurufen, das an die einzelnen {{site.data.keyword.Bluemix_notm}}-Services übergeben werden soll.
+Auf {{site.data.keyword.Bluemix}}-APIs kann nur von Benutzern zugegriffen werden, die durch eine zugewiesene IAM-Rolle autorisiert sind. Jeder Benutzer, der die API aufruft, muss zur Authentifizierung Berechtigungsnachweise für die API übergeben.
 {:shortdesc}
+
+Sie können ein IAM-Token generieren, indem Sie entweder Ihren [{{site.data.keyword.Bluemix_notm}}-API-Schlüssel](/docs/iam?topic=iam-userapikey#userapikey) oder den [API-Schlüssel einer Service-ID](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys) verwenden. Dieser Prozess wird auch verwendet, wenn Sie eine Anwendung entwickeln, die mit anderen {{site.data.keyword.Bluemix_notm}}-Services zusammenarbeiten muss. Sie müssen den API-Schlüssel einer Service-ID verwenden, um ein Zugriffstoken abzurufen, das an die einzelnen {{site.data.keyword.Bluemix_notm}}-Services übergeben werden soll.
+
 
 1. Verwenden Sie den folgenden `curl`-Befehl, um ein IAM-Token mithilfe eines API-Schlüssels zu generieren.
 
@@ -31,13 +34,16 @@ Auf {{site.data.keyword.Bluemix}}-APIs kann nur von Benutzern zugegriffen werden
 
 ### Header
 {: #header}
+
   - Content-Type: application/x-www-form-urlencoded
   - Accept: application/json
 
+
 ### Parameter
 {: #parameters}
+
   - grant_type=urn:ibm:params:oauth:grant-type:apikey
-  - apikey=*[api-schlüssel]*
+  - apikey=*[API key]*
 
 ```
 curl -k -X POST \

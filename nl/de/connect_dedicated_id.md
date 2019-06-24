@@ -23,7 +23,7 @@ subcollection: iam
 # Dedizierte ID mit öffentlicher IBMid verbinden
 {: #connect_dedicated_id}
 
-Bei der Anmeldung bei einer dedizierten Cloud, bei der der öffentliche IAM-Service verfügbar ist, werden Sie von der {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle dazu aufgefordert, sich mit Ihrer öffentlichen IBMid anstatt mit der dedizierten ID anzumelden.
+Für die Anmeldung bei einer dedizierten Cloud, in der der öffentliche IAM-Service verfügbar ist, müssen Sie sich bei der {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle mit Ihrer öffentlichen IBMid anmelden, nicht mit der dedizierten ID.
 {:shortdesc}
 
 ```
@@ -36,7 +36,7 @@ Bei der Anmeldung bei einer dedizierten Cloud, bei der der öffentliche IAM-Serv
   Email>
 ```
 
-Wenn Ihre dedizierte ID bereits mit der öffentlichen IBMid verbunden ist, werden Authentifizierung und Anmeldung durchgeführt:
+Wenn Ihre dedizierte ID bereits mit der öffentlichen IBMid verbunden ist, werden Authentifizierung und Anmeldung durchgeführt: 
 
 ```
   Authentifizieren...
@@ -52,8 +52,8 @@ Wenn Ihre dedizierte ID jedoch noch nicht mit der öffentlichen IBMid verbunden 
   Um die Verbindung herzustellen, müssen Sie die Berechtigungsnachweise des dedizierten Benutzers eingeben.
 
   Wählen Sie einen Berechtigungsnachweistyp aus:
-  1. Benutzername und Kennwort
-  2. Einmaliger Code (Abruf unter https://login.{dedicated_env}.cloud.ibm.com/passcode)
+  1. Benutzername und Kennwort.
+  2. Einmaliger Code. Dieser kann über https://login.{dedicated_env}.cloud.ibm.com/passcode) abgerufen werden.
   Geben Sie eine Zahl ein. >
 ```
 

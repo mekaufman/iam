@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-11"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -17,6 +17,7 @@ subcollection: iam
 {:new_window: target="_blank"}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Invitación a usuarios
 {: #iamuserinv}
@@ -44,8 +45,23 @@ Complete los siguientes pasos para invitar a usuarios o para gestionar invitacio
 
 Si determina que un usuario no necesita acceso, puede cancelar una invitación para cualquier usuario que se muestre en estado **Procesando** o **Pendiente** en la columna **Estado**. Si un usuario invitado no ha recibido una invitación, puede volver a enviar la invitación a cualquier usuario en estado **Pendiente**.
 
-Si desea invitar a usuarios utilizando la interfaz de línea de mandatos (CLI), consulte el mandato [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite).
-{: tip}
+### Invitación a usuarios mediante la CLI
+{: #cli-invite}
+
+Para invitar usuarios mediante la interfaz de línea de mandatos (CLI), ejecute el siguiente mandato:
+
+```
+ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
+```
+
+Mediante la CLI, puede asignar acceso a Cloud Foundry o no asignar ningún acceso y hacerlo posteriormente. Para obtener más información sobre los parámetros del mandato, consulte [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite). 
+
+### Invitación a usuarios mediante la API
+{: #api-invite}
+
+Puede utilizar la [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} para invitar usuarios de forma masiva. A todos los usuarios incluidos en una sola invitación se les asigna el mismo acceso. Cuando invita usuarios mediante una API, debe especificar los correos electrónicos en una lista separada por comas y debe especificar cada entrada entre comillas; por ejemplo:
+
+`"email": "cloud_api_example_member@ibm.com", "next_example@ibm.com",`. 
 
 ## Asignación de acceso de usuario desde una invitación
 {: #assignaccess}
@@ -57,7 +73,7 @@ Puede asignar acceso a los usuarios a medida que los invita asignando políticas
 
 Puede asignar acceso creando una política de acceso de {{site.data.keyword.Bluemix_notm}} IAM inicial cuando invite a un nuevo usuario. En la sección Servicios, puede proporcionar a un usuario acceso a servicios de gestión de la cuenta, servicios en un grupo de recursos con acceso para gestionar el grupo de recursos o a un recurso individual en la cuenta.
 
-Cuando el usuario acepte la invitación, puede asignarle acceso adicional. Consulte [Gestión del acceso a recursos](/docs/iam?topic=iam-iammanidaccser#iammanidaccser) para obtener detalles sobre la edición de políticas para añadir roles extra, asignar más acceso o eliminar una política para un usuario.
+Cuando el usuario acepte la invitación, puede asignarle más acceso. Consulte [Gestión del acceso a recursos](/docs/iam?topic=iam-iammanidaccser#iammanidaccser) para obtener detalles sobre la edición de políticas para añadir roles extra, asignar más acceso o eliminar una política para un usuario.
 
 En función del servicio que seleccione al asignar la política, es posible que no vea todos los campos descritos en los procedimientos siguientes.
 {: note}

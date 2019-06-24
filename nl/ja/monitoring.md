@@ -26,7 +26,7 @@ subcollection: iam
 セキュリティー担当者、監査員、または管理者として、お客様は {{site.data.keyword.at_full}} サービスを使用して、ユーザーおよびアプリケーションが {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) とどのように対話しているかをトラッキングすることができます。
 {:shortdesc}
 
-2019 年 5 月 9 日以降、{{site.data.keyword.cloudaccesstraillong}} サービスは非推奨になりました。IAM イベントのトラッキングを続行するには、お客様のアカウントで {{site.data.keyword.at_short}} のインスタンスを作成する必要があります。詳しくは、[Deprecation of the IBM Cloud Activity Tracker service](https://www.ibm.com/blogs/bluemix/2019/04/deprecating-ibm-cloud-activity-tracker/){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") を参照してください。
+2019 年 5 月 9 日以降、{{site.data.keyword.cloudaccesstraillong}} サービスは非推奨になりました。 IAM イベントのトラッキングを続行するには、お客様のアカウントで {{site.data.keyword.at_short}} のインスタンスを作成する必要があります。 詳しくは、[Deprecation of the IBM Cloud Activity Tracker service](https://www.ibm.com/blogs/cloud-archive/2019/04/deprecating-ibm-cloud-activity-tracker/){: new_window} ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン") を参照してください。
 {: deprecated}
 
 以下のイベントをトラッキングできます。

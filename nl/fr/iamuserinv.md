@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-11"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -17,6 +17,7 @@ subcollection: iam
 {:new_window: target="_blank"}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Invitation d'utilisateurs
 {: #iamuserinv}
@@ -44,8 +45,23 @@ Pour inviter des utilisateurs ou gérer les invitations d'utilisateur sur votre 
 
 Si vous déterminez qu'un utilisateur n'a pas besoin d'un accès, vous pouvez annuler l'invitation de n'importe quel utilisateur dont l'état indique **En cours de traitement** ou **En attente** dans la colonne **Statut**. Si un utilisateur invité n'a pas reçu d'invitation, vous pouvez renvoyer l'invitation à n'importe quel utilisateur dont l'état indique **En attente**.
 
-Si vous voulez inviter des utilisateurs depuis l'interface de ligne de commande (CLI), voir la commande [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite).
-{: tip}
+### Invitation d'utilisateur via l'interface CLI
+{: #cli-invite}
+
+Pour inviter des utilisateurs via l'interface de ligne de commande (CLI), exécutez la commande suivante :
+
+```
+ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
+```
+
+L'utilisation de l'interface CLI permet de choisir d'affecter ou non l'accès à Cloud Foundry, ou encore de l'affecter ultérieurement. Pour plus d'informations sur les paramètres de commande, voir [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite). 
+
+### Invitation d'utilisateur via API
+{: #api-invite}
+
+Vous pouvez utiliser l'[API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} pour inviter des utilisateurs en bloc. Tous les utilisateurs figurant dans une seule invitation reçoivent le même accès. Lorsque vous invitez des utilisateurs via l'API, vous entrez dans une liste les adresses e-mail séparées par des virgules, chaque entrée étant placée entre guillemets. Par exemple :
+
+`"email": "cloud_api_example_member@ibm.com", "next_example@ibm.com",`. 
 
 ## Affectation de l'accès utilisateur à partir d'une invitation
 {: #assignaccess}
@@ -57,7 +73,7 @@ Vous accordez un accès aux utilisateurs lorsque vous les invitez en leur affect
 
 Vous pouvez affecter un accès en créant une règle d'accès {{site.data.keyword.Bluemix_notm}} IAM initiale lorsque vous invitez un nouvel utilisateur. Dans la section Services, vous pouvez accorder un accès utilisateur à des services de gestion de compte, services se trouvant dans un groupe de ressources avec l'accès permettant de gérer le groupe de ressources ou une ressource individuelle du compte.
 
-Une fois que l'utilisateur a accepté l'invitation, vous pouvez lui accorder des accès supplémentaires. Pour plus d'informations sur l'édition de règles afin d'ajouter des rôles supplémentaires, sur l'affectation d'accès supplémentaire ou sur le retrait d'une règle pour un utilisateur, voir [Gestion de l'accès aux ressources](/docs/iam?topic=iam-iammanidaccser#iammanidaccser).
+Une fois que l'utilisateur a accepté invitation, vous pouvez lui affecter des accès supplémentaires. Pour plus d'informations sur l'édition de règles afin d'ajouter des rôles supplémentaires, sur l'affectation d'accès supplémentaire ou sur le retrait d'une règle pour un utilisateur, voir [Gestion de l'accès aux ressources](/docs/iam?topic=iam-iammanidaccser#iammanidaccser).
 
 Selon le service que vous sélectionnez lorsque vous affectez la règle, il se peut que les zones décrites dans les procédures suivantes ne soient pas toutes affichées.
 {: note}

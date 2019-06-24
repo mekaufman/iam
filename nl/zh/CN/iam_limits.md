@@ -20,7 +20,8 @@ subcollection: iam
 # {{site.data.keyword.Bluemix_notm}} IAM 限制
 {: #iam_limits}
 
-下表列出了 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 资源的最大限制。这些限制适用于有权创建 {{site.data.keyword.Bluemix_notm}} IAM 资源的任何用户。如果超过限制，您将收到异常，并且无法创建超过该限制的任何新资源。
+下表列出了 {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) 资源的最大限制。这些限制适用于可以创建 {{site.data.keyword.Bluemix_notm}} IAM 资源的任何用户。如果超过限制，您将收到异常，并且无法创建超过该限制的任何新资源。
+{:shortdesc}
 
 |资源|最大值|
 |----------|---------|

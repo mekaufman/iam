@@ -26,7 +26,7 @@ subcollection: iam
 보안 담당자, 감사자 또는 관리자는 {{site.data.keyword.at_full}} 서비스를 사용하여 사용자 및 애플리케이션이 {{site.data.keyword.Bluemix_notm}} Identity and Access Management(IAM)와 어떻게 상호작용하는지 추적할 수 있습니다.
 {:shortdesc}
 
-2019년 5월 9일 현재 {{site.data.keyword.cloudaccesstraillong}} 서비스는 더 이상 사용되지 않습니다. IAM 이벤트 추적을 계속하려면 계정에 {{site.data.keyword.at_short}}의 인스턴스를 작성해야 합니다. 자세한 정보는 [IBM Cloud Activity Tracker 서비스 지원 중단](https://www.ibm.com/blogs/bluemix/2019/04/deprecating-ibm-cloud-activity-tracker/){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")을 참조하십시오.
+2019년 5월 9일 현재 {{site.data.keyword.cloudaccesstraillong}} 서비스는 더 이상 사용되지 않습니다. IAM 이벤트 추적을 계속하려면 계정에 {{site.data.keyword.at_short}}의 인스턴스를 작성해야 합니다. 자세한 정보는 [IBM Cloud Activity Tracker 서비스 지원 중단](https://www.ibm.com/blogs/cloud-archive/2019/04/deprecating-ibm-cloud-activity-tracker/){: new_window} ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")을 참조하십시오.
 {: deprecated}
 
 다음 이벤트를 추적할 수 있습니다.

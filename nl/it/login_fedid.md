@@ -21,7 +21,7 @@ subcollection: iam
 # Accesso con un ID federato
 {: #federated_id}
 
-Come utente federato che utilizza un ID SSO (single sign-on) sociale o aziendale, puoi accedere a {{site.data.keyword.Bluemix}} dall'interfaccia riga di comando (o CLI, command-line interface) utilizzando un passcode monouso oppure una chiave API.
+Come utente federato che utilizza un ID SSO (single sign-on) corporativo o aziendale, puoi accedere a {{site.data.keyword.Bluemix}} dalla CLI (command-line interface) utilizzando un passcode monouso o una chiave API.
 {: shortdesc}
 
 ## Utilizzo di un passcode monouso
@@ -58,7 +58,7 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
 3. Copia e incolla il valore del passcode nella CLI.
 
   ```
-  cf login -a  https://api.us-south.cf.cloud.ibm.com --sso
+  cf login -a https://api.us-south.cf.cloud.ibm.com --sso
 
   Endpoint API: https://api.us-south.cf.cloud.ibm.com
 
@@ -71,7 +71,7 @@ Poiché un passcode monouso richiama il codice della console {{site.data.keyword
 ## Utilizzo di una chiave API
 {: #api_key}
 
-La chiave API richiesta è la chiave API {{site.data.keyword.Bluemix_notm}} utilizzata per l'autenticazione con la piattaforma {{site.data.keyword.Bluemix_notm}} e non la chiave API dell'infrastruttura classica o la chiave API del servizio {{site.data.keyword.Bluemix_notm}}.
+La chiave API richiesta è la chiave API di {{site.data.keyword.Bluemix_notm}} utilizzata per l'autenticazione con la piattaforma {{site.data.keyword.Bluemix_notm}} e non la chiave API dell'infrastruttura classica o la chiave API del servizio {{site.data.keyword.Bluemix_notm}}.
 
 1. Crea una chiave API con il [comando `ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create). Utilizza l'opzione `-f` per generare un file della chiave API invece di mostrare la chiave nella finestra di comando:
 

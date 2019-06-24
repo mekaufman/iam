@@ -23,7 +23,11 @@ subcollection: iam
 Als {{site.data.keyword.Bluemix}}-Kontoeigner können Sie alle Benutzer in Ihrem Konto anzeigen und definieren, wie Benutzer andere Benutzer in dem Konto anzeigen können.
 {:shortdesc}
 
-Wenn die Anzeigeoption **Ansicht ohne Einschränkung** ausgewählt ist, kann jeder beliebige Benutzer in dem Konto andere Benutzer in der {{site.data.keyword.Bluemix_notm}}-Konsole auf der Seite 'Benutzer' anzeigen. Wenn die Anzeigeoption **Eingeschränkte Ansicht** ausgewählt ist, können Benutzer nur solche Benutzer in dem Konto anzeigen, die sie eingeladen haben, mit denen sie eine Cloud Foundry-Organisation gemeinsam nutzen oder die in der Benutzerhierarchie der klassischen Infrastruktur als ihre 'Nachkommen' gelten, d. h. die von ihnen oder von Nachkommen eingeladener Benutzer eingeladen wurden.
+Wenn die Anzeigeoption **Ansicht ohne Einschränkung** ausgewählt ist, kann jeder beliebige Benutzer in dem Konto andere Benutzer in der {{site.data.keyword.Bluemix_notm}}-Konsole auf der Seite 'Benutzer' anzeigen. Bei der Auswahl der Option **Eingeschränkte Ansicht** können die Benutzer bestimmte Benutzertypen im Konto anzeigen: 
+
+* Vom jeweiligen Benutzer eingeladene Benutzer
+* Benutzer, die eine Cloud Foundry-Organisation gemeinsam mit dem jeweiligen Benutzer verwenden
+* Benutzer, die Nachkommen des jeweiligen Benutzers in der Benutzerhierarchie der klassischen Infrastruktur sind; also Benutzer, die der jeweilige Benutzer bzw. einer seiner Nachkommen eingeladen hat
 
 Für Ihr Konto ist standardmäßig die einschränkungsfreie Anzeigeoption festgelegt. Führen Sie die folgenden Schritte aus, um diese Einstellung zu aktualisieren:
 

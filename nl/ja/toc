@@ -78,6 +78,17 @@ ID およびアクセス権限の管理
     iam_limits.md
     monitoring.md
     userstatus.md
+
+    {: .topicgroup}
+    コマンド・リファレンス
+        /cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam
+    
+    {: .topicgroup}
+    API リファレンス  
+        [IAM Identity サービス API](https://{DomainName}/apidocs/iam-identity-token-api){: new_window}
+        [IAM アクセス・グループ API](https://{DomainName}/apidocs/iam-access-groups){: new_window}
+        [IAM ポリシー管理 API](https://{DomainName}/apidocs/iam-policy-management){: new_window}
+        [ユーザー管理](https://{DomainName}/apidocs/user-management#invite-users){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}

@@ -21,13 +21,13 @@ subcollection: iam
 # Rimozione di utenti
 {: #remove}
 
-Quando rimuovi un utente dall'account, l'utente non può più accedere alla console, passare al tuo account se appartiene ancora a un altro account o accedere alle risorse dell'account.
+Quando rimuovi un utente dall'account, l'utente non può più accedere alla console, passare all'account o accedere alle risorse dell'account.
 {:shortdesc}
 
 Solo i proprietari dell'account o gli utenti con il seguente accesso possono rimuovere gli utenti da un account:
 
 * Una politica IAM per il servizio di gestione account Gestione utenti con il ruolo di amministratore assegnato ed essere il gestore organizzazione Cloud Foundry se l'utente appartiene a un'organizzazione Cloud Foundry.
-* Se hai l'infrastruttura classica nel tuo account, un utente deve avere una politica IAM per il servizio di gestione account Gestione utenti con il ruolo di amministratore assegnato, essere il gestore organizzazione Cloud Foundry se l'utente appartiene a un'organizzazione Cloud Foundry ed essere un predecessore dell'utente nella gerarchia di utenti dell'infrastruttura classica con assegnata l'autorizzazione di gestione utenti dell'infrastruttura classica.
+* Se hai l'infrastruttura classica nel tuo account, un utente deve essere un predecessore dell'utente nella gerarchia di utenti dell'infrastruttura classica con assegnata l'autorizzazione di gestione utenti dell'infrastruttura classica. Devi inoltre avere una politica IAM per il servizio di gestione account Gestione utenti con il ruolo di amministratore assegnato o essere il gestore organizzazione Cloud Foundry se l'utente appartiene a un'organizzazione Cloud Foundry.
 
 Per rimuovere un utente da un account, completa la seguente procedura:
 

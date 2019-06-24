@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-11"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -17,6 +17,7 @@ subcollection: iam
 {:new_window: target="_blank"}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # 사용자 초대
 {: #iamuserinv}
@@ -44,8 +45,24 @@ subcollection: iam
 
 사용자에게 액세스 권한이 필요 없다고 판단되면 **상태** 열에서 **처리 중** 또는 **보류 중** 상태로 표시된 사용자에 대한 초대를 취소할 수 있습니다. 초대된 사용자가 초대장을 받지 못한 경우에는 **보류 중** 상태인 사용자에게 초대를 재전송할 수 있습니다.
 
-명령행 인터페이스(CLI)를 사용하여 사용자를 초대하려는 경우 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) 명령을 참조하십시오.
-{: tip}
+### CLI를 사용하여 사용자 초대
+{: #cli-invite}
+
+명령행 인터페이스(CLI)를 사용하여 사용자를 초대하려면 다음 명령을 실행하십시오.
+
+
+```
+ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
+```
+
+CLI를 사용하기 전에 Cloud Foundry 액세스 또는 액세스 없음을 지정하거나 나중에 액세스를 지정하도록 선택할 수 있습니다. 명령 매개변수에 대한 자세한 정보는 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite)를 참조하십시오. 
+
+### API를 사용하여 사용자 초대
+{: #api-invite}
+
+[API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external}를 사용하여 한 번에 많은 사용자를 초대할 수 있습니다. 한 번의 초대에 포함되는 모든 사용자에게 동일한 액세스 권한이 지정됩니다. API를 사용하여 사용자를 초대하는 경우 각 항목을 따옴표로 묶어 쉼표로 구분된 목록으로 이메일을 입력합니다. 예를 들면, 다음과 같습니다. 
+
+`"email": "cloud_api_example_member@ibm.com", "next_example@ibm.com",`. 
 
 ## 초대에서 사용자 액세스 지정
 {: #assignaccess}
@@ -57,7 +74,7 @@ subcollection: iam
 
 새 사용자를 초대할 때 초기 {{site.data.keyword.Bluemix_notm}} IAM 액세스 정책을 작성하여 액세스를 지정할 수 있습니다. 서비스 섹션에서 계정 관리 서비스, 리소스 그룹을 관리하는 액세스를 가진 리소스 그룹의 서비스 또는 계정의 개별 리소스에 대한 액세스를 사용자에게 제공할 수 있습니다.
 
-사용자가 초대를 수락한 후에 추가 액세스를 지정할 수 있습니다. 역할을 추가하기 위해 정책 편집, 추가 액세스 지정 또는 사용자를 위한 정책 제거에 대한 세부사항은 [리소스에 대한 액세스 관리](/docs/iam?topic=iam-iammanidaccser#iammanidaccser)를 참조하십시오.
+사용자가 초대를 수락한 후에 더 많은 액세스를 지정할 수 있습니다. 역할을 추가하기 위해 정책 편집, 추가 액세스 지정 또는 사용자를 위한 정책 제거에 대한 세부사항은 [리소스에 대한 액세스 관리](/docs/iam?topic=iam-iammanidaccser#iammanidaccser)를 참조하십시오.
 
 정책을 지정할 때 선택하는 서비스에 따라, 다음 프로시저에서 설명된 필드 중 일부가 표시되지 않을 수 있습니다.
 {: note}

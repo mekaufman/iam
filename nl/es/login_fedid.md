@@ -71,7 +71,7 @@ Dado que un código de acceso de un solo uso recupera código de la consola de {
 ## Utilización de la clave de API
 {: #api_key}
 
-La clave de API necesaria es la clave de API de {{site.data.keyword.Bluemix_notm}} que ha utilizado para autenticarse con la plataforma de {{site.data.keyword.Bluemix_notm}}, no la clave de API de la infraestructura clásica ni la clave de API del servicio de {{site.data.keyword.Bluemix_notm}}.
+La clave de API necesaria es la clave de API de {{site.data.keyword.Bluemix_notm}} utilizada para autenticarse con la plataforma de {{site.data.keyword.Bluemix_notm}}, no la clave de API de la infraestructura clásica ni la clave de API del servicio de {{site.data.keyword.Bluemix_notm}}.
 
 1. Cree una clave de API con el mandato [`ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create). Utilice la opción `-f` para generar un archivo de claves de API en lugar de mostrar la clave en la ventana de mandatos:
 
@@ -100,7 +100,7 @@ La clave de API necesaria es la clave de API de {{site.data.keyword.Bluemix_notm
 
     * Establece una variable de entorno. Además, también puede establecer una variable de entorno en el sistema. Por ejemplo, IBMCLOUD_API_KEY=api_key_string, donde `api_key_string` es el valor personalizado de la clave de API. Después de establecer la variable de entorno, puede especificar `ibmcloud login` desde la CLI.
 
-   Para Windows 10 PowerShell, utilice `'@key_file_name'` con comillas simples alrededor del nombre de archivo de clave.
+   Para Windows 10 PowerShell, utilice `'@key_file_name'` y especifique el nombre del archivo de claves entre comillas simples.
    {: tip}
 
   Para iniciar una sesión utilizando la CLI de Cloud Foundry, especifique `apikey` como el nombre de usuario y la serie de claves de API como la contraseña:

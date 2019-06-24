@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-11"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -17,6 +17,7 @@ subcollection: iam
 {:new_window: target="_blank"}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # 邀請使用者
 {: #iamuserinv}
@@ -44,8 +45,23 @@ subcollection: iam
 
 如果判定使用者不需要存取權，您可以針對**狀態**直欄中的**處理中**或**擱置中**狀態所顯示的任何使用者，取消邀請。如果受邀使用者沒有收到邀請，您可以將邀請重新傳送給處於**擱置中**狀態的任何使用者。
 
-如果您要使用指令行介面 (CLI) 來邀請使用者，請參閱 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) 指令。
-{: tip}
+### 使用 CLI 來邀請使用者
+{: #cli-invite}
+
+若要使用指令行介面 (CLI) 來邀請使用者，請執行下列指令：
+
+```
+ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
+```
+
+使用 CLI，即可選擇指派 Cloud Foundry 存取權或未指派任何存取權，並稍後處理存取權的指派。如需指令參數的相關資訊，請參閱 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite)。 
+
+### 使用 API 來邀請使用者
+{: #api-invite}
+
+您可以使用 [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} 大量邀請使用者。單一邀請中所含的所有使用者都會獲指派相同的存取權。當您使用 API 邀請使用者時，會使用每個以引號括住的項目的逗點區隔清單來輸入電子郵件，例如：
+
+`"email": "cloud_api_example_member@ibm.com", "next_example@ibm.com",`。 
 
 ## 從邀請指派使用者存取權
 {: #assignaccess}

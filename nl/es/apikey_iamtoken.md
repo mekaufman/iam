@@ -21,8 +21,11 @@ subcollection: iam
 # Obtención de una señal de {{site.data.keyword.Bluemix_notm}} IAM mediante una clave de API
 {: #iamtoken_from_apikey}
 
-Solo pueden acceder a las API de {{site.data.keyword.Bluemix}} los usuarios autorizados por un rol de IAM asignado. Por lo tanto, el usuario que está llamando a la API debe pasar credenciales para la API para autenticar. Puede generar una señal de IAM utilizando su [clave de API de {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#userapikey) o bien una [clave de API del ID de servicio](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys). Este proceso también se utiliza si está desarrollando una aplicación que debe trabajar con otros servicios de {{site.data.keyword.Bluemix_notm}}. Debe utilizar una clave de API de ID de servicio para obtener una señal de acceso y pasarla a cada uno de los servicios de {{site.data.keyword.Bluemix_notm}}.
+Solo pueden acceder a las API de {{site.data.keyword.Bluemix}} los usuarios autorizados por un rol de IAM asignado. Cada usuario que está llamando a la API debe pasar credenciales para la API para autenticar. 
 {:shortdesc}
+
+Puede generar una señal de IAM utilizando su [clave de API de {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#userapikey) o bien una [clave de API del ID de servicio](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys). Este proceso también se utiliza si está desarrollando una aplicación que debe trabajar con otros servicios de {{site.data.keyword.Bluemix_notm}}. Debe utilizar una clave de API de ID de servicio para obtener una señal de acceso y pasarla a cada uno de los servicios de {{site.data.keyword.Bluemix_notm}}.
+
 
 1. Utilice el mandato `curl` siguiente para generar una señal de IAM utilizando una clave de API.
 
@@ -31,13 +34,16 @@ Solo pueden acceder a las API de {{site.data.keyword.Bluemix}} los usuarios auto
 
 ### Cabeceras
 {: #header}
+
   - Content-Type: application/x-www-form-urlencoded
   - Accept: application/json
 
+
 ### Parámetros
 {: #parameters}
+
   - grant_type=urn:ibm:params:oauth:grant-type:apikey
-  - apikey=*[clave API]*
+  - apikey=*[API key]*
 
 ```
 curl -k -X POST \

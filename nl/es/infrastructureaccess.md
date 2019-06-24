@@ -24,13 +24,15 @@ subcollection: iam
 Cuando invita a un usuario a su cuenta, puede seleccionar entre tres conjuntos de permisos de la infraestructura clásica que asignan acceso masivo: Solo vista, Usuario básico, Superusuario.
 {:shortdesc}
 
-Cuando invita a alguien a la cuenta, solo usted, el propietario de la cuenta o un usuario con el permiso de la infraestructura clásica Gestionar usuario pueden ajustar los permisos del usuario. Si está asignando permisos y no es el propietario de la cuenta, solo podrá asignar el nivel de permisos o un subconjunto de permisos que ya tenga asignados. Un propietario de cuenta puede actualizar los permisos de otros usuarios de la cuenta para que puedan tener cualquier nivel de acceso.
+Cuando invita a alguien a la cuenta, solo usted, el propietario de la cuenta o un usuario con el permiso de la infraestructura clásica Gestionar usuario pueden ajustar los permisos del usuario. Si no es el propietario de la cuenta, solo puede asignar el nivel de permisos o un subconjunto de permisos que ya tenga asignados. Un propietario de cuenta puede actualizar los permisos de otros usuarios de la cuenta para que puedan tener cualquier nivel de acceso.
 
-Puede definir permisos adicionales después de que el usuario acepte la invitación. Por ejemplo, el conjunto inicial de permisos asignado en la invitación no otorga acceso a dispositivos. Por lo tanto, debe otorgar acceso a dispositivos después de que el usuario haya aceptado la invitación. Para obtener más información, consulte [Gestión de acceso de la infraestructura clásica](/docs/iam?topic=iam-mngclassicinfra#mngclassicinfra).
+
+
+Se pueden establecer permisos adicionales después de que el usuario haya aceptado la invitación. Por ejemplo, el conjunto inicial de permisos asignado en la invitación no otorga acceso a dispositivos. Por lo tanto, debe otorgar acceso a dispositivos después de que el usuario haya aceptado la invitación. Para obtener más información, consulte [Gestión de acceso de la infraestructura clásica](/docs/iam?topic=iam-mngclassicinfra#mngclassicinfra).
 
 En el siguiente gráfico se muestra cómo se asignan los permisos de infraestructura clásica por usuario. Puede otorgar a cada usuario acceso a un dispositivo o servicio de infraestructura clásica seleccionando entre las opciones de permiso granular para personalizar cada acceso de usuario.
 
-![Acceso de infraestructura clásica](images/ClassicIaaS.svg "Asignación de acceso de infraestructura clásica seleccionando un usuario, dispositivo o servicio y, finalmente, cualquier combinación de permisos granulares")
+![Acceso de la infraestructura clásica](images/ClassicIaaS.svg "Asignación de acceso de la infraestructura clásica mediante la selección de un usuario, dispositivo o servicio y de cualquier combinación de permisos granulares")
 
 
 

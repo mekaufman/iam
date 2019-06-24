@@ -26,7 +26,7 @@ subcollection: iam
 En tant que responsable de la sécurité, auditeur ou responsable, vous pouvez utiliser le service {{site.data.keyword.at_full}} pour suivre comment les utilisateurs et les applications interagissent avec {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM).
 {:shortdesc}
 
-Depuis le 9 mai 2019 le service {{site.data.keyword.cloudaccesstraillong}} est obsolète. Vous devez créer une instance {{site.data.keyword.at_short}} dans votre compte pour continuer à suivre les événements IAM. Pour plus d'informations, voir [Obsolescence du service IBM Cloud Activity Tracker](https://www.ibm.com/blogs/bluemix/2019/04/deprecating-ibm-cloud-activity-tracker/){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
+Depuis le 9 mai 2019 le service {{site.data.keyword.cloudaccesstraillong}} est obsolète. Vous devez créer une instance {{site.data.keyword.at_short}} dans votre compte pour continuer à suivre les événements IAM. Pour plus d'informations, voir [Obsolescence du service IBM Cloud Activity Tracker](https://www.ibm.com/blogs/cloud-archive/2019/04/deprecating-ibm-cloud-activity-tracker/){: new_window} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe").
 {: deprecated}
 
 Vous pouvez effectuer le suivi des événements suivants :

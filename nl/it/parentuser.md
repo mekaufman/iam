@@ -21,10 +21,10 @@ subcollection: iam
 # Aggiornamento dell'utente principale di un utente
 {: #update-parent}
 
-Se disponi dell'accesso corretto, puoi aggiornare l'utente principale per un utente. L'aggiornamento dell'utente principale influisce sul modo in cui un utente vede gli altri utenti nell'account quando l'impostazione di visibilità dell'elenco utenti è impostata su limitato. Gli utenti vedono solo gli altri utenti per i quali sono un utente principale e tutti gli altri utenti invitati da quei discendenti dell'utente principale.
+Se disponi dell'accesso corretto, puoi aggiornare l'utente principale per un utente. L'aggiornamento dell'utente principale influisce sul modo in cui un utente vede gli altri utenti nell'account quando l'impostazione per la visibilità dell'elenco utenti è impostata su limitata. Gli utenti vedono solo gli altri utenti per i quali sono un utente principale e tutti gli altri utenti che sono invitati da quei discendenti dell'utente principale.
 {:shortdesc}
 
-Per ulteriori dettagli sull'impostazione, vedi [Impostazione di visibilità dell'elenco utenti](/docs/iam?topic=iam-userlistview#userlistview).
+Per ulteriori informazioni sull'impostazione, vedi [Impostazione dell'accesso alla vista utente](/docs/iam?topic=iam-userlistview#userlistview).
 
 Se disponi del seguente accesso, puoi aggiornare l'utente principale per un altro utente:
 

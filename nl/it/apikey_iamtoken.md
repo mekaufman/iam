@@ -21,8 +21,11 @@ subcollection: iam
 # Ottenimento di un token IAM {{site.data.keyword.Bluemix_notm}} utilizzando una chiave API
 {: #iamtoken_from_apikey}
 
-Alle API {{site.data.keyword.Bluemix}} possono accedere solo gli utenti autorizzati da un ruolo IAM assegnato. Pertanto, l'utente che richiama l'API deve passare le credenziali per l'autenticazione da parte dell'API. Puoi generare un token IAM utilizzando la tua [chiave API {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#userapikey) oppure una [chiave API dell'ID servizio](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys). Questo processo è utilizzato anche se stai sviluppando un'applicazione che deve lavorare con altri servizi {{site.data.keyword.Bluemix_notm}}. Devi utilizzare una chiave API dell'ID servizio per ottenere un token di accesso da passare a ciascuno dei servizi {{site.data.keyword.Bluemix_notm}}.
+Alle API {{site.data.keyword.Bluemix}} possono accedere solo gli utenti autorizzati da un ruolo IAM assegnato. Ogni utente che chiama l'API deve passare le credenziali per l'autenticazione dell'API.
 {:shortdesc}
+
+Puoi generare un token IAM utilizzando la tua [chiave API {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#userapikey) oppure una [chiave API dell'ID servizio](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys). Questo processo è utilizzato anche se stai sviluppando un'applicazione che deve lavorare con altri servizi {{site.data.keyword.Bluemix_notm}}. Devi utilizzare una chiave API dell'ID servizio per ottenere un token di accesso da passare a ciascuno dei servizi {{site.data.keyword.Bluemix_notm}}.
+
 
 1. Utilizza il seguente comando `curl` per generare un token IAM utilizzando una chiave API.
 
@@ -31,13 +34,16 @@ Alle API {{site.data.keyword.Bluemix}} possono accedere solo gli utenti autorizz
 
 ### Intestazioni
 {: #header}
+
   - Content-Type: application/x-www-form-urlencoded
   - Accept: application/json
 
+
 ### Parametri
 {: #parameters}
+
   - grant_type=urn:ibm:params:oauth:grant-type:apikey
-  - apikey=*[Chiave api]*
+  - apikey=*[API key]*
 
 ```
 curl -k -X POST \
