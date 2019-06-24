@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-03"
 
 keywords: what is IAM, IBM Cloud IAM, IAM features, IAM API
 
@@ -54,7 +54,7 @@ Para los servicios que no permite la creación de políticas IAM de nube para ge
 Puede acceder y utilizar Cloud IAM a través de la interfaz de usuario de Acceso (IAM), la CLI o la API.
 
 * Para acceder a Cloud IAM utilizando la interfaz de usuario, vaya a **Gestionar** &gt; **Acceso (IAM)**.
-* Vaya a [Gestión de acceso de IAM, claves de API, ID de servicio y grupos de acceso](/docs/cli/reference/ibmcloud/cli_api_policy.html#ibmcloud_commands_iam) para ver los mandatos de CLI disponibles.
+* Vaya a [Gestión de acceso de IAM, claves de API, ID de servicio y grupos de acceso](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam) para ver los mandatos de CLI disponibles.
 * Consulte la siguiente documentación sobre API para ver las API disponibles:
     * [API de servicios de identidad de IAM](https://{DomainName}/apidocs/iam-identity-token-api){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")
     * [API de grupos de acceso de IAM](https://{DomainName}/apidocs/iam-access-groups){: new_window} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")

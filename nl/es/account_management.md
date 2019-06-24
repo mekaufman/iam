@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-06-03"
 
 keywords: account management, access, access policy, account administrator
 
@@ -100,6 +100,6 @@ Para el servicio IAM Identity Service, estas acciones se aplican a los ID de ser
 |:-------|----------|
 | Visor |  Todas las acciones del rol de visor para los servicios de gestión de cuentas     |
 | Operador |  Todas las acciones del rol de operador para los servicios de gestión de cuentas     |
-| Editor |  Todas las acciones del rol de editor para los servicios de gestión de cuentas     |
-| Administrador |  Todas las acciones del rol de administrador para los servicios de gestión de cuentas   |
+| Editor |  Todas las acciones del rol de editor para los servicios de gestión de cuentas y capacidad para crear grupos de recursos    |
+| Administrador |  Todas las acciones del rol de administrador los servicios de gestión de cuentas y capacidad para crear grupos de recursos   |
 {: caption="Tabla 7. Roles y acciones de ejemplo para una política sobre todos los servicios de acceso e identidad" caption-side="top"}

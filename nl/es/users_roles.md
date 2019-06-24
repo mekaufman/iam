@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-04-03"
+lastupdated: "2019-06-04"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -84,37 +84,23 @@ Con roles de gestión de plataforma, se puede asignar a los usuarios distintos n
 Seleccione todos los roles que se aplican al crear una política. Cada rol permite completar acciones separadas y no hereda las acciones de los roles inferiores.
 {: tip}
 
-En las siguientes tablas se proporcionan ejemplos de algunas de acciones de gestión de plataforma que los usuarios pueden realizar dentro del contexto de recursos de catálogo, grupos de recursos y servicios de gestión de cuentas. Consulte la documentación de cada oferta del catálogo para saber cómo se aplican los roles a los usuarios en el contexto del servicio que está utilizando.
+En la siguiente tabla encontrará ejemplos de algunas de acciones de gestión de plataforma que los usuarios pueden realizar dentro del contexto de recursos de catálogo y grupos de recursos. Consulte la documentación de cada oferta del catálogo para saber cómo se aplican los roles a los usuarios en el contexto del servicio que está utilizando.
 
-En la primera fila de la tabla se describen opciones entre las que puede elegir cuando cree una política, y en la primera columna se describen los roles seleccionados para la política. El resto de las células se correlacionan con el rol seleccionado en la primera columna y con el tipo de política seleccionado entre las opciones de la primera fila.
 
-| Detalles de política de acceso | Acciones sobre servicios de la cuenta | Acciones sobre recursos dentro de grupos de recursos | Acciones para acceder a grupos de recursos |
-|:--------------|:------------|:-------------|:-------------|
 |  | Uno o todos los servicios habilitados de IAM | Servicio seleccionado en un grupo de recursos | Grupo de recursos seleccionado |
+|:--------------|:------------|:-------------|:-------------|
 | Rol Visor | Ver instancias, alias, enlaces y credenciales | Ver solo instancias especificadas en el grupo de recursos | Ver grupo de recursos |
 | Rol Operador |  Ver instancias y gestionar alias, enlaces y credenciales |  No aplicable | No aplicable |
 | Rol Editor |  Crear, suprimir, editar y ver instancias. Gestionar alias, enlaces y credenciales | Crear, suprimir, editar, suspender, reanudar, ver y enlazar solo instancias especificadas en el grupo de recursos | Ver y editar el nombre de grupo de recursos |
 | Rol Administrador |  Todas las acciones de gestión para los servicios | Todas las acciones de gestión para las instancias especificadas en el grupo de recursos | Ver, editar y gestionar el acceso para el grupo de recursos |
+{: row-headers}
+{: class="comparison-table"}
 {: caption="Tabla 2. Roles y acciones de gestión de plataforma de ejemplo para servicios de una cuenta" caption-side="top"}
+{: summary="The first row of the table describes separate options that you can choose from when creating a policy, and the first column describes the selected roles for the policy. The remaining cells map to which role is selected from the first column, and which type of policy has been selected from the options in the first row."}
 {: #platformrolestable1}
 
-En la tabla siguiente se describen las acciones comunes que puede llevar a cabo en función del rol que tenga asignado para cada servicio de gestión de cuentas. Desplácese horizontalmente para ver todas las entradas de la tabla.
+Para obtener información sobre las acciones específicas que pueden emprender los usuarios según su rol asignado sobre los servicios de gestión de cuentas, consulte [Asignación de acceso a los servicios de gestión de cuentas](/docs/iam?topic=iam-account-services).
 {: #acctmgmt}
-
-En la primera fila de la tabla se describen servicios específicos entre los que puede elegir cuando cree una política, y en la primera columna se describen el tipo de rol para la política. El resto de las células se correlacionan con el rol seleccionado entre las opciones en la primera columna y con el tipo de política seleccionado entre las opciones de la primera fila.
-
-| Detalles de política de acceso |  Acciones para ID de servicio  | Acciones para gestionar grupos de acceso | Acciones para gestionar el acceso al catálogo | Acciones para el acceso para gestionar usuarios | Acciones para soporte | Acciones para facturación | Acciones para todos los servicios de gestión de cuentas |
-|:--------------|:-------------|:--------------|:--------------|:-----------|:--------------|:--------------|:--------------|
-|  |  Servicio de identidad IAM |  Grupos de acceso de IAM |  Catálogo de recursos global |  Gestión de usuarios  | Centro de soporte | Facturación y uso | Todos los servicios de gestión de cuentas |
-| Rol Visor |  <ul><li>Ver ID</li></ul> |  <ul><li>Ver miembros y grupos de acceso</li></ul> | <ul><li>Ver servicios privados</li></ul>  |  <ul><li>Ver usuarios de la cuenta</li><li>Ver valores del perfil de usuario</li></ul> | <ul><li>Ver casos</li><li>Buscar casos</li></ul> | <ul><li>Ver valores de características de la cuenta</li><li>Ver suscripciones en la cuenta</li><li>Ver nombre de la cuenta</li><li>Ver grupos de recursos</li></ul> | Todas las acciones del rol de visor para los servicios de gestión de cuentas |
-| Rol Operador | <ul><li>Crear y suprimir ID y claves de API</li></ul> |  <ul><li>No aplicable</li></ul> | <ul><li>No aplicable</li></ul> |  <ul><li>Ver usuarios de la cuenta</li><li>Ver valores del perfil de usuario</li></ul> | <ul><li>No aplicable</li></ul> | <ul><li>Ver valores de características de la cuenta</li><li>Ver suscripciones en la cuenta</li><li>Ver y cambiar nombre de la cuenta</li><li>Ver y actualizar grupos de recursos</li></ul> | Todas las acciones del rol de operador para los servicios de gestión de cuentas |
-| Rol Editor |  <ul><li>Crear, actualizar y suprimir ID y claves de API</li></ul> |  <ul><li>Ver, crear, editar y suprimir grupos</li><li>Añadir o eliminar usuarios de grupos</li></ul> | <ul><li>Puede cambiar los metadatos del objeto, pero no puede cambiar la visibilidad de los servicios privados</li></ul>  | <ul><li>Ver, invitar, eliminar y actualizar usuarios de la cuenta</li><li>Ver y actualizar valores de perfil de usuario</li></ul> |  <ul><li>Ver casos</li><li>Buscar casos</li><li>Actualizar casos</li><li>Crear casos</li></ul> | <ul><li>Ver y actualizar los valores de características de la cuenta</li><li>Ver suscripciones en la cuenta</li><li>Ver ofertas en la cuenta</li><li>Ver y aplicar códigos de característica</li><li>Ver y cambiar nombre de la cuenta</li><li>Ver y actualizar límites de gasto</li><li>Ver, crear y actualizar grupos de recursos</li></ul> | Todas las acciones del rol de editor para los servicios de gestión de cuentas |
-| Rol Administrador |   <ul><li>Crear, actualizar y suprimir ID y claves de API</li><li>Asignar políticas de acceso a ID</li></ul> |  <ul><li>Ver, crear, editar y suprimir grupos</li><li>Añadir o eliminar usuarios</li><li>Asignar acceso a un grupo</li><li>Gestionar el acceso para trabajar con grupos de acceso</li></ul> | <ul><li>Puede cambiar los metadatos de objeto o la visibilidad de los servicios privados y restringir la visibilidad de un servicio público</li></ul> | <ul><li>Ver, invitar, eliminar y actualizar usuarios de la cuenta</li><li>Ver y actualizar valores de perfil de usuario</li></ul> |  <ul><li>Ver casos</li><li>Buscar casos</li><li>Actualizar casos</li><li>Crear casos</li></ul> |  <ul><li>Ver y actualizar los valores de características de la cuenta</li><li>Ver suscripciones en la cuenta</li><li>Ver ofertas en la cuenta</li><li>Ver y aplicar códigos de característica</li><li>Ver y cambiar nombre de la cuenta</li><li>Ver y actualizar límites de gasto</li><li>Ver balances de suscripción y realizar un seguimiento del uso</li><li>Ver, crear, actualizar y asignar acceso para gestionar grupos de recursos</li></ul> | Todas las acciones del rol de administrador para los servicios de gestión de cuentas|
-{: caption="Tabla 3. Roles y acciones de gestión de plataforma de ejemplo para servicios de gestión de cuentas" caption-side="top"}
-{: #platformrolestable2}
-
-Para el servicio IAM Identity Service, estas acciones se aplican a los ID de servicio dentro de la cuenta que el usuario no ha creado. Todos los usuarios pueden crear ID de servicio. Son los administradores de dichos ID y pueden crear la clave de API asociada y las políticas de acceso, pero este servicio de gestión de cuentas se aplica a la capacidad de ver, suprimir y asignar acceso a los ID de servicio de la cuenta creada por otros usuarios.
-{: note}
 
 Algunos servicios pueden correlacionar acciones específicas con los roles de gestión de plataforma que están relacionados con la gestión del servicio en lugar de con el acceso al servicio. Como ejemplo, consulte en la tabla siguiente los detalles de las acciones del servicio {{site.data.keyword.containershort_notm}} que están correlacionadas con dichos roles.
 
@@ -124,7 +110,7 @@ Algunos servicios pueden correlacionar acciones específicas con los roles de ge
 | Editor | Realizar todas las acciones de plataforma excepto la gestión de la cuenta y la asignación de políticas de acceso |<ul><li>Enlazar un servicio a un clúster</li><li>Crear un webhook</li></ul> |
 | Operador | Realizar acciones de plataforma necesarias para configurar y operar instancias de servicio, como la visualización de un panel de control de servicio | <ul><li>Añadir o eliminar nodos trabajadores</li><li>Reiniciar o recargar nodos trabajadores</li><li>Enlazar un servicio a un clúster</li></ul> |
 | Administrador | Realizar todas las acciones de plataforma basadas en el recurso al que se está asignando este rol, incluida la asignación de políticas de acceso a otros usuarios |<ul><li>Eliminar un clúster</li><li>Crear un clúster</li><li>Actualizar políticas de acceso de usuarios</li><li>Todas las acciones que puede realizar un visor, un editor, y un operador</li></ul>|
-{: caption="Tabla 4. Roles y acciones de gestión de plataforma de ejemplo para el servicio {{site.data.keyword.containershort_notm}}" caption-side="top"}
+{: caption="Tabla 3. Roles y acciones de gestión de plataforma de ejemplo para el servicio de {{site.data.keyword.containershort_notm}}" caption-side="top"}
 
 ### Roles de acceso al servicio
 {: #service_access_roles}
@@ -139,4 +125,4 @@ Las acciones que se pueden llevar a cabo en cada rol asignado varían en funció
 |  Lector | Realizar acciones de solo lectura dentro de un servicio, como la visualización de recursos específicos del servicio | Listar y descargar objetos |
 | Escritor | Permisos que van más allá del rol de lector, incluida la creación y la edición de recursos específicos del servicio | Crear y destruir grupos y objetos |
 | Gestor | Permisos que van más allá del rol de escritor para completar las acciones privilegiadas tal como define el servicio, y además crear y editar recursos específicos del servicio | Gestionar todos los aspectos del almacenamiento de datos, crear y destruir grupos y objetos |
-{: caption="Tabla 5. Roles y acciones de usuario de acceso de servicio de ejemplo" caption-side="top"}
+{: caption="Tabla 4. Roles y acciones de usuario de acceso de servicio de ejemplo" caption-side="top"}
