@@ -3,7 +3,8 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-06-11"
+
+lastupdated: "2019-06-25"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -22,7 +23,7 @@ subcollection: iam
 # Inviting users
 {: #iamuserinv}
 
-You can invite users, cancel invitations, and resend a pending invitation to an invited user. In addition, you can invite a single user or multiple users at once.    
+Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) to invite users, cancel invitations, and resend a pending invitation to an invited user. In addition, you can invite a single user or multiple users at once.
 {:shortdesc}
 
 To invite users and manage outstanding invitations, you must be either an account owner, an organization manager, a user with an IAM access policy with Editor or higher role on the user management service, or you must have classic infrastructure permissions to add users.
@@ -43,7 +44,7 @@ To invite users or manage user invitations in your account, complete the followi
 
   For more information, see [Assigning user access](/docs/iam?topic=iam-iamuserinv#assignaccess).
 
-If you determine that a user does not need access, you can cancel an invitation for any users that are shown in a **Processing** or **Pending** state in the **Status** column. If an invited user did not receive an invitation, you can resend the invitation to any user in a **Pending** state.
+If you determine that a user does not need access, you can cancel an invitation for any users that are shown in a Processing or Pending state in the Status column. If an invited user did not receive an invitation, you can resend the invitation to any user in a Pending state.
 
 ### Inviting users by using the CLI
 {: #cli-invite}
@@ -54,14 +55,41 @@ To invite users by using the command-line interface (CLI), run the following com
 ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
 ```
 
-By using the CLI, you can choose to assign Cloud Foundry access or no access and work on assigning access later. For more information about the command parameters, see [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite). 
+By using the CLI, you can choose to assign Cloud Foundry access or no access and work on assigning access later. For more information about the command parameters, see [**`ibmcloud account user-invite`**](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite). 
 
 ### Inviting users by using the API
 {: #api-invite}
 
 You can use the [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} to invite users in bulk. All users that are included in a single invitation are assigned the same access. When you invite users by using the API, you enter emails in a comma-separated list with each entry surrounded by quotations, for example:
 
-`"email": "cloud_api_example_member@ibm.com", "next_example@ibm.com",`. 
+
+```
+curl -X POST \
+  https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9e1a6asdcc861234/users \
+  -H 'Authorization: Bearer <IAM_TOKEN>'
+  -H 'Content-Type: application/json' \
+    -d '{
+      "users": [
+      {
+        "email": "cloud_api_example_member@ibm.com", "second_user@ibm.com", "third_user@ibm.com",
+        "account_role": "Member"
+      }],
+      "iam_policy": [
+      {
+        "roles": [
+        {
+          "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+        }],
+        "resources": [
+        {
+          "accountId": "111d4cfd77b04e9b9e1a6asdcc861234",
+          "resourceType": "resource-group",
+          "resource": "111449dd871049c29ec3a53853ce123e"
+        }]
+      }]
+    }'
+```
+{: codeblock}
 
 ## Assigning user access from an invitation
 {: #assignaccess}
@@ -83,8 +111,8 @@ Depending on which service you select when you assign the policy, you might not 
 
 To delegate some of your responsibilities as an account owner, you can provide a user access to account management services. For example, you can delegate the ability to view billing and usage, invite and remove users, manage access groups, or manage service IDs. You can provide access to all account management services or just one.
 
-1. From the **Invite users** screen, expand the **Services** section.
-2. Select to assign access to **account management services**
+1. On the Invite users page, expand the Services section.
+2. Select **Account management services** from the **Assign access to** list. 
 3. Select **All account management services** or select a specific account management service.
 4. Select any combination of roles to assign the wanted access.
 
@@ -93,10 +121,10 @@ To delegate some of your responsibilities as an account owner, you can provide a
 
 You can assign access to all services within a resource group or a single service type in a resource group.
 
-1. From the **Invite users** screen, expand the **Services** section.
-2. Select to assign access to resources in a **Resource group**.
-3. Choose a resource group.
-4. Choose a role for the **Assign access to a resource group** field to enable the user to view the resource group on the resource list, edit the resource group name, or manage user access to the group. You can select **No access**, if you want the user to be able to access only the resource that you specify and not the group that it is organized in.
+1. On the Invite users page, expand the Servicessection.
+2. Select **Resource group** from the **Assign access to** list.
+3. Select a resource group.
+4. Select a role from the **Assign access to a resource group** list to enable the user to view the resource group on the resource list, edit the resource group name, or manage user access to the group. You can select **No access** if you want the user to be able to access only the resource that you specify and not the group that it is organized in.
 5. Select a service within the resource group, or select to provide access to all services within the selected group.
 6. Select any combination of roles to assign the wanted access. This access applies only to the resources that you selected for the policy. It does not give access to the actual container that is the resource group.
 
@@ -105,12 +133,12 @@ You can assign access to all services within a resource group or a single servic
 
 You can assign access to a single resource within your account down to the instance.
 
-1. From the **Invite users** screen, expand the **Services** section.
-2. Select to assign access to a **Resource**.
+1. On the Invite users page, expand the Services section.
+2. Select **Resource** from the **Assign access to** list. 
 3. Select a service.
-4. Select **All current regions** or a specific region, if your are prompted.
+4. Select **All current regions** or a specific region if your are prompted.
 5. Select **All current service instances** or select a specific service instance.
-6. Depending on the service that you selected, you might see the following fields. If you do not enter values for these fields, the policy is assigned at the service instance level instead of the bucket level.
+6. Depending on the service that you selected you might see the following fields. If you do not enter values for these fields, the policy is assigned at the service instance level instead of the bucket level.
     * **Resource type**: Enter `bucket`.
     * **Resource ID**: Enter the name of your bucket.
 7. Select any combination of roles to assign the wanted access.
@@ -122,18 +150,18 @@ For more information about the roles that are used when you assign access, see [
 
 When you invite new users, you can choose to add the user to an organization in the account. If you add the user to an organization, you can assign him or her an organization role. Then, you choose to give the invited user access to any or all of the spaces in the selected organization with an assigned space role.
 
-1. From the **Invite users** screen, expand the **Cloud Foundry access** section.
+1. On the Invite users page, expand the Cloud Foundry access section.
 2. Select an organization to add the user to.
 3. Select an organization role to define the level of access for the selected organization.
-4. Optional: Select **Add organization role** to specify an extra role.
+4. Optional: Click **Add organization role** to specify an extra role.
 5. Select **All current regions** or a specific region.
 6. Select **All current spaces** or a specific space.
 7. Select a space role to define the level of access for the selected spaces.
-8. Optional: Select **Add space role** to specify an extra role.
+8. Optional: Click **Add space role** to specify an extra role.
 
 For more information about the roles that are used when you assign access, see [Cloud Foundry roles](/docs/iam?topic=iam-cfaccess#cfroles).
 
-You can add a Cloud Foundry role by using the [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) CLI command, but the console must be used to assign other access or permissions.
+You can add a Cloud Foundry role by using the [**`ibmcloud account user-invite`**](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) CLI command, but the console must be used to assign other access or permissions.
 {: tip}
 
 ### Classic infrastructure access
@@ -141,7 +169,7 @@ You can add a Cloud Foundry role by using the [ibmcloud account user-invite](/do
 
 The permissions that are assigned are automatically limited to the subset of permissions that you have. You become the parent user of any user that you invite.
 
-1. From the **Invite users** screen, expand the **Classic infrastructure access** section.
+1. On the Invite users page, expand the Classic infrastructure access section.
 2. Select a permission set to assign predefined bulk permissions.
 
 Access to devices is granted separately after the user is added. Go to the **Classic infrastructure** access option for a user in the console.
@@ -154,6 +182,6 @@ For information about configuring access for users after they are added to your 
 
 As the account owner or a user with the Manage user classic infrastructure permission, you can add a VPN-only user.
 
-1. From the **Users** page, click **Add VPN-only user**.
+1. On the Users page, click **Add VPN-only user**.
 2. Enter the personal information details for the user.
 3. Click **Save**.
