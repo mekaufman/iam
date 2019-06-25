@@ -26,7 +26,7 @@ subcollection: iam
 Como um responsável pela segurança, auditor ou gerenciador, é possível usar o serviço {{site.data.keyword.at_full}} para controlar como os usuários e aplicativos interagem com o {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM).
 {:shortdesc}
 
-A partir de 9 de maio de 2019, o serviço {{site.data.keyword.cloudaccesstraillong}} foi descontinuado. Deve-se criar uma instância do {{site.data.keyword.at_short}} em sua conta para continuar rastreando os eventos do IAM. Para obter mais informações, consulte [Descontinuação do serviço IBM Cloud Activity Tracker](https://www.ibm.com/blogs/bluemix/2019/04/deprecating-ibm-cloud-activity-tracker/){: new_window}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
+A partir de 9 de maio de 2019, o serviço {{site.data.keyword.cloudaccesstraillong}} foi descontinuado. Deve-se criar uma instância do {{site.data.keyword.at_short}} em sua conta para continuar rastreando os eventos do IAM. Para obter mais informações, consulte [Descontinuação do serviço IBM Cloud Activity Tracker](https://www.ibm.com/blogs/cloud-archive/2019/04/deprecating-ibm-cloud-activity-tracker/){: new_window}![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo").
 {: deprecated}
 
 É possível controlar os eventos a seguir:

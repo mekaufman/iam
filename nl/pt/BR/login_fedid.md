@@ -21,7 +21,7 @@ subcollection: iam
 # Efetuando login com um ID federado
 {: #federated_id}
 
-Como um usuário federado que usa um ID de conexão única corporativa, é possível efetuar login no {{site.data.keyword.Bluemix}} por meio da interface da linha de comandos (CLI) usando uma senha descartável ou uma chave de API.
+Como um usuário federado que usa um ID de conexão única corporativo, é possível efetuar login no {{site.data.keyword.Bluemix}} por meio da interface da linha de comandos (CLI) usando uma senha descartável ou uma chave de API.
 {: shortdesc}
 
 ## Usando uma senha única
@@ -71,7 +71,7 @@ Como uma senha única recupera código do console do {{site.data.keyword.Bluemix
 ## Usando uma chave API
 {: #api_key}
 
-A chave de API necessária é a chave de API do {{site.data.keyword.Bluemix_notm}} que é usada para autenticar com a plataforma {{site.data.keyword.Bluemix_notm}}, não a chave de API de infraestrutura clássica ou a chave de API de serviço do {{site.data.keyword.Bluemix_notm}}.
+A chave de API necessária é a chave de API do {{site.data.keyword.Bluemix_notm}} usada para autenticar com a plataforma {{site.data.keyword.Bluemix_notm}}, não a chave de API da infraestrutura clássica ou a chave de API de serviço do {{site.data.keyword.Bluemix_notm}}.
 
 1. Crie uma chave de API com o comando [`ibmcloud iam api-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create). Use a opção `-f` para gerar um arquivo de chave API, em vez de mostrar a chave na janela de comando:
 
@@ -100,7 +100,7 @@ A chave de API necessária é a chave de API do {{site.data.keyword.Bluemix_notm
 
     * Configurar uma variável de ambiente. Além disso, também é possível configurar uma variável de ambiente em seu sistema. Por exemplo, IBMCLOUD_API_KEY=api_key_string, em que `api_key_string` é o valor customizado da chave de API. Após a configuração da variável de ambiente, basta especificar `ibmcloud login` por meio da CLI.
 
-   Para o Windows 10 PowerShell, você deseja usar `'@key_file_name'` com aspas simples ao redor do nome do arquivo de chave.
+   Para o Windows 10 PowerShell, você deseja usar `'@key_file_name'` com aspas simples ao redor do nome do arquivo-chave.
    {: tip}
 
   Para efetuar login usando a CLI do Cloud Foundry, especifique `apikey` como o nome do usuário e a keystring API como a senha:

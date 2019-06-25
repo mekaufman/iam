@@ -25,13 +25,13 @@ subcollection: iam
 Como um administrador com o acesso correto, é possível ativar a opção para que um usuário seja solicitado a fornecer perguntas e respostas de segurança no login. Esse tipo de autenticação de diversos fatores (MFA) é necessário somente para a conta na qual a configuração está ativada. Esse tipo de autenticação de diversos fatores (MFA) é necessário somente para a conta na qual a configuração está ativada, diferentemente da MFA baseada em ID. Para obter mais informações, veja [Tipos de autenticação de diversos fatores](/docs/iam?topic=iam-types#types).
 {:shortdesc}
 
-Se você tiver qualquer um dos acessos a seguir, será possível atualizar essa configuração para outros usuários em sua conta:
+Se você tiver qualquer um dos tipos de acesso a seguir, será possível atualizar essa configuração para outros usuários na sua conta:
 
 * Função de Editor ou superior no serviço de gerenciamento de usuários
 * Você é um antecessor na hierarquia de infraestrutura clássica para o usuário e tem a permissão Gerenciar a infraestrutura clássica de usuários designada
 
 
-Para ativar essa opção de MFA para um usuário, ele ou ela deverá primeiro [configurar perguntas e respostas de segurança](/docs/account?topic=account-login-settings#security-questions) na página Configurações de login do perfil.
+Para ativar essa opção de MFA para um usuário, o usuário deve configurar [perguntas de segurança](/docs/account?topic=account-login-settings#security-questions) e respostas da página de configurações Login do perfil.
 {: note}
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**.

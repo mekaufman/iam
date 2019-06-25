@@ -21,10 +21,10 @@ subcollection: iam
 # Atualizando o usuário pai de um usuário
 {: #update-parent}
 
-Se você tiver o acesso correto, será possível atualizar o pai para um usuário. A atualização do usuário pai afeta como um usuário vê outros usuários na conta quando a configuração de visibilidade da lista de usuários é configurada como restrita. Os usuários veem apenas outros usuários para os quais são pais e quaisquer outros usuários convidados por esses descendentes do usuário pai.
+Se você tiver o acesso correto, será possível atualizar o pai para um usuário. A atualização do usuário pai afeta como um usuário vê outros usuários na conta quando a configuração para a visibilidade da lista de usuários é configurada como restrita. Os usuários veem somente outros usuários para os quais são um pai e quaisquer outros usuários convidados por esses descendentes do usuário pai.
 {:shortdesc}
 
-Veja [configuração de visibilidade da lista de usuários](/docs/iam?topic=iam-userlistview#userlistview) para obter mais detalhes sobre a configuração.
+Para obter mais informações sobre a configuração, consulte [Configurando o acesso de visualização do usuário](/docs/iam?topic=iam-userlistview#userlistview).
 
 Se você tiver o acesso a seguir, será possível atualizar o pai para outro usuário:
 

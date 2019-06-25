@@ -26,8 +26,13 @@ Um grupo de acesso pode ser criado para organizar um conjunto de usuários e IDs
 de designar o mesmo acesso múltiplas vezes por usuário ou ID de serviço individual.
 {:shortdesc}
 
-Para gerenciar ou criar novos grupos de acesso, deve-se ser o proprietário da conta, o administrador ou o editor no serviço de Grupos de acesso do IAM na conta ou o administrador ou editor designado para todos os Serviços de Gerenciamento de Conta. Além disso, um administrador ou editor pode ter acesso designado para gerenciar um grupo individual criando
-uma política de acesso em que o recurso é o ID do grupo de acesso. Para obter mais informações sobre políticas de acesso e funções para o serviço de Grupos de acesso do IAM, veja [Acesso do IAM](/docs/iam?topic=iam-userroles#userroles).
+Para gerenciar ou criar novos grupos de acesso, deve-se ter o tipo de acesso a seguir:
+
+* Proprietário da conta
+* Administrador ou editor no serviço de Grupos de acesso do IAM na conta
+* Administrador ou editor para todos os Serviços de gerenciamento de conta
+
+Além disso, um administrador ou editor pode ter o acesso designado para gerenciar um grupo individual, criando uma política de acesso na qual o recurso é o ID do grupo de acesso. Para obter mais informações sobre políticas de acesso e funções para o serviço de Grupos de acesso do IAM, veja [Acesso do IAM](/docs/iam?topic=iam-userroles#userroles).
 
 Para facilitar ainda mais a designação e o gerenciamento de acesso, é possível configurar
 grupos de recursos para organizar um conjunto de recursos ao qual você deseja que um grupo de usuários
@@ -57,6 +62,7 @@ clique em **Incluir ID de serviço**.
 {: note}
 
 Para criar um grupo de acesso usando a CLI, é possível usar o comando [ibmcloud iam access-group-create](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam#ibmcloud_iam_access_group_create).
+
 ```
 ibmcloud iam access-group-create GROUP_NAME [-d, --description DESCRIPTION]
 ```

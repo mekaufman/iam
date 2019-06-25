@@ -25,7 +25,7 @@ subcollection: iam
 É possível criar regras dinâmicas para incluir automaticamente usuários federados nos grupos de acesso com base em atributos de identidade específicos. Quando seus usuários efetuam login com um ID federado, os dados do provedor de identidade mapeiam dinamicamente seus usuários para um grupo de acesso com base nas regras que você configurou.
 {:shortdesc}
 
-Os usuários já têm informações de identificação específicas dentro do domínio de sua empresa e, quando efetuam login com um ID federado, esses dados podem ser passados por meio do uso de asserções SAML. As asserções SAML ou instruções do atributo que são configuradas no provedor de identidade fornecem os dados que são usados para criar cada regra. Por exemplo, pode haver uma instrução do atributo true ou false que defina usuários como um gerenciador. Essas informações podem ser usadas para incluir todos os usuários que são gerenciadores em um grupo de acesso específico para gerenciadores que você criou em sua conta do {{site.data.keyword.Bluemix_notm}}. Para obter mais informações, consulte a [Regra de exemplo](/docs/iam?topic=iam-rules#example).
+Os usuários já têm informações de identificação específicas dentro do domínio de sua empresa e, quando efetuam login com um ID federado, esses dados podem ser passados por meio do uso de asserções SAML. As asserções SAML ou instruções do atributo que são configuradas no provedor de identidade fornecem os dados que são usados para criar cada regra. Por exemplo, é possível que você tenha uma instrução do atributo true ou false que defina usuários como um gerenciador. Essas informações podem ser usadas para incluir todos os usuários que são gerenciadores em um grupo de acesso específico para gerenciadores que você criou em sua conta do {{site.data.keyword.Bluemix_notm}}. Para obter mais informações, consulte a [Regra de exemplo](/docs/iam?topic=iam-rules#example).
 
 Somente usuários que já foram convidados para a conta podem ser mapeados para grupos de acesso usando regras dinâmicas.
 {: note}
@@ -39,7 +39,7 @@ As regras dinâmicas são criadas configurando condições que devem ser corresp
 2. Selecione o nome do grupo de acesso para o qual você deseja criar uma regra para abrir a página de detalhes do grupo.
 3. Selecione a guia  ** Regras Dinâmicas ** .
 4. Clique em  ** Incluir regra **.
-5. Insira as informações de seu provedor de identidade que são fornecidas dinamicamente na página Incluir regra. A lista a seguir fornece detalhes para cada campo obrigatório.
+5. Insira as informações do seu provedor de identidade que são fornecidas dinamicamente para você na página Incluir regra. A lista a seguir fornece detalhes para cada campo obrigatório.
 
 <dl>
 <dt>Nome</dt>

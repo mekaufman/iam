@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-01-28"
+lastupdated: "2019-06-11"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -17,6 +17,7 @@ subcollection: iam
 {:new_window: target="_blank"}
 {:tip: .tip}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Convidando usuários
 {: #iamuserinv}
@@ -47,8 +48,23 @@ das opções que você estiver autorizado a gerenciar:
 
 Se você determinar que um usuário não precisa de acesso, será possível cancelar um convite de quaisquer usuários que forem mostrados em um estado **Processando** ou **Pendente** na coluna **Status**. Se um usuário convidado não tiver recebido um convite, será possível reenviar o convite para qualquer usuário em um estado **Pendente**.
 
-Se você deseja convidar usuários usando a interface da linha de comandos (CLI), veja o comando [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite).
-{: tip}
+### Convidando usuários usando a CLI
+{: #cli-invite}
+
+Para convidar usuários usando a interface da linha de comandos (CLI), execute o comando a seguir:
+
+```
+ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
+```
+
+Usando a CLI, é possível optar por designar o acesso ao Cloud Foundry ou nenhum acesso e trabalhar na designação do acesso mais tarde. Para obter mais informações sobre os parâmetros de comando, consulte [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite). 
+
+### Convidando usuários usando a API
+{: #api-invite}
+
+É possível usar a [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} para convidar usuários em massa. Todos os usuários que estão incluídos em um único convite são designados ao mesmo acesso. Ao convidar usuários usando a API, você insere e-mails em uma lista separada por vírgulas com cada entrada incluída entre aspas, por exemplo:
+
+`"email": "cloud_api_example_member@ibm.com", "next_example@ibm.com",`. 
 
 ## Designando acesso de usuário por meio de um convite
 {: #assignaccess}
@@ -60,7 +76,7 @@ Você designa acesso para usuários à medida que os convida, designando as pol�
 
 É possível designar acesso criando uma política de acesso inicial do {{site.data.keyword.Bluemix_notm}} IAM quando você convida um novo usuário. Na seção Serviços, é possível fornecer a um usuário acesso a serviços de gerenciamento de conta, serviços em um grupo de recursos com acesso para gerenciar o grupo de recursos ou a um recurso individual na conta.
 
-Depois que o usuário aceita o convite, é possível designar acesso adicional. Veja [Gerenciando o acesso a recursos](/docs/iam?topic=iam-iammanidaccser#iammanidaccser) para obter detalhes sobre a edição de políticas para incluir funções extras, a designação de mais acesso ou a remoção de uma política para um usuário.
+Após o usuário aceitar o convite, é possível designar mais acesso. Veja [Gerenciando o acesso a recursos](/docs/iam?topic=iam-iammanidaccser#iammanidaccser) para obter detalhes sobre a edição de políticas para incluir funções extras, a designação de mais acesso ou a remoção de uma política para um usuário.
 
 Dependendo de qual serviço você seleciona ao designar a política, talvez não veja todos os campos que são descritos nos procedimentos a seguir.
 {: note}

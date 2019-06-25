@@ -21,7 +21,7 @@ subcollection: iam
 # Atualizando o status de um usuário
 {: #status}
 
-O status designado de um usuário depende se o usuário aceitou seu convite para se associar à conta, se é um usuário somente VPN ou se o administrador de usuários configurou o usuário como um de uma infraestrutura clássica desativado.
+O status para um usuário depende se o usuário aceitou seu convite para participar da conta, se eles são um usuário VPN somente ou se o administrador de usuário configurou o usuário como um usuário de infraestrutura clássica desativado.
 {:shortdesc}
 
 Se você tiver o acesso a seguir, será possível atualizar o status de outro usuário:
@@ -45,7 +45,7 @@ Para obter mais informações sobre os tipos de status do usuário, veja [Estado
 <dd>O usuário não pode efetuar login no console, mas ele tem acesso a quaisquer dispositivos e sub-redes VPN que você designa para a infraestrutura clássica, efetuando login diretamente no dispositivo.</dd>
 </dl>
 
-Quando você atualiza um usuário do status Somente VPN para o status Ativo, o usuário deve saber a senha para efetuar login no console. Na maioria dos casos, essa é a senha do ID do SoftLayer, que pode precisar ser reconfigurada para ser usada. Em casos raros em que o usuário já tem um IBMid, ele deve efetuar login com o IBMid e a senha.
+Quando você atualiza um usuário do status somente VPN para o status Ativo, o usuário deve saber a senha para efetuar login no console. Na maioria dos casos, essa é a senha do ID do SoftLayer, que pode precisar ser reconfigurada para ser usada. Em casos raros em que o usuário já tem um IBMid, ele deve efetuar login com o IBMid e a senha.
 {: note}
 
 ## Atualizando o status de um usuário

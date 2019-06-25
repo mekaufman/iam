@@ -78,6 +78,17 @@ Gerenciando a identidade e o acesso
     iam_limits.md
     monitoring.md
     userstatus.md
+
+    {: .topicgroup}
+    Referência de comando
+        /cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam
+    
+    {: .topicgroup}
+    Referência de API  
+        [API de serviços de identidade do IAM](https://{DomainName}/apidocs/iam-identity-token-api){: new_window}
+        [API de grupos de acesso do IAM](https://{DomainName}/apidocs/iam-access-groups){: new_window}
+        [API de gerenciamento de política do IAM](https://{DomainName}/apidocs/iam-policy-management){: new_window}
+        [Gerenciamento de usuário](https://{DomainName}/apidocs/user-management#invite-users){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}

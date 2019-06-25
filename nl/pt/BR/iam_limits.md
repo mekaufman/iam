@@ -20,7 +20,8 @@ subcollection: iam
 # Limites do {{site.data.keyword.Bluemix_notm}} IAM
 {: #iam_limits}
 
-A tabela a seguir lista os limites máximos para recursos do {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Esses limites se aplicam a qualquer usuário que possa criar recursos do {{site.data.keyword.Bluemix_notm}} IAM e, se um limite for excedido, você receberá uma exceção e não poderá criar nenhum novo recurso além desse limite.
+A tabela a seguir lista os limites máximos para recursos do {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Esses limites se aplicam a qualquer usuário que possa criar recursos do {{site.data.keyword.Bluemix_notm}} IAM. Se um limite é excedido, você recebe uma exceção e não é permitido criar nenhum novo recurso além desse limite.
+{:shortdesc}
 
 | Recurso | Máx. |
 |----------|---------|
