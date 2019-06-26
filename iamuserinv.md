@@ -121,7 +121,7 @@ To delegate some of your responsibilities as an account owner, you can provide a
 
 You can assign access to all services within a resource group or a single service type in a resource group.
 
-1. On the Invite users page, expand the Servicessection.
+1. On the Invite users page, expand the Services section.
 2. Select **Resource group** from the **Assign access to** list.
 3. Select a resource group.
 4. Select a role from the **Assign access to a resource group** list to enable the user to view the resource group on the resource list, edit the resource group name, or manage user access to the group. You can select **No access** if you want the user to be able to access only the resource that you specify and not the group that it is organized in.
