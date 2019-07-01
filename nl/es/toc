@@ -78,10 +78,7 @@ Gestión de acceso e identidades
     iam_limits.md
     monitoring.md
     userstatus.md
-
-    {: .topicgroup}
-    Consulta de mandatos
-        /cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam
+    [Consulta de mandatos](/cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam)
     
     {: .topicgroup}
     Consulta de API  
