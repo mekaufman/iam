@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-10"
+lastupdated: "2019-06-17"
 
 keywords: dynamic rules, access groups, specific identity attributes
 
@@ -33,13 +33,18 @@ Somente usuários que já foram convidados para a conta podem ser mapeados para 
 ## Configurando regras
 {: #setup_rules}
 
-As regras dinâmicas são criadas configurando condições que devem ser correspondidas pelos dados que são configurados no provedor de identidade e passados com o ID federado de um usuário durante o login. É possível incluir mais de uma condição para uma regra. Todas as condições configuradas na regra devem ser atendidas para que um usuário seja incluído em um grupo de acesso. Para criar uma regra, siga estas etapas:
+As regras dinâmicas são criadas configurando condições que devem ser correspondidas pelos dados que são configurados no provedor de identidade e passados com o ID federado de um usuário durante o login. É possível incluir mais de uma condição para uma regra. Todas as condições configuradas na regra devem ser atendidas para que um usuário seja incluído em um grupo de acesso. 
+
+Para criar uma regra, siga estas etapas:
 
 1. Na barra de menus, clique em **Gerenciar** &gt; **Acesso (IAM)** e selecione **Grupos de acesso**.
 2. Selecione o nome do grupo de acesso para o qual você deseja criar uma regra para abrir a página de detalhes do grupo.
 3. Selecione a guia  ** Regras Dinâmicas ** .
 4. Clique em  ** Incluir regra **.
 5. Insira as informações do seu provedor de identidade que são fornecidas dinamicamente para você na página Incluir regra. A lista a seguir fornece detalhes para cada campo obrigatório.
+
+É possível pensar na regra como um par chave/valor, em que a chave é o que você inclui no campo `Incluir usuários quando` e o valor é o que você insere no campo `Valor`, que especifica com o que a regra deve ser comparada com base no comparador selecionado.
+{: tip}
 
 <dl>
 <dt>Nome</dt>
@@ -56,8 +61,8 @@ As regras dinâmicas são criadas configurando condições que devem ser corresp
 <dd>Insira o valor de atributo para a instrução do atributo com relação à qual a regra está comparando.</dd>
 </dl>
 
-É possível pensar na regra como um par chave/valor, em que a chave é o que você inclui no campo `Incluir usuários quando` e o valor é o que você insere no campo `Valor`, que especifica com o que a regra deve ser comparada com base no comparador selecionado.
-{: tip}
+Os usuários incluídos nos grupos de acesso usando regras dinâmicas não são exibidos como membros do grupo na lista de usuários para o grupo de acesso. Para verificar a participação de um usuário específico em um grupo de acesso, é possível selecionar o nome desse usuário na página **Usuários** da conta e, em seguida, clicar em **Grupos de acesso**.
+{: note}
 
 ## Regra de exemplo
 {: #example}

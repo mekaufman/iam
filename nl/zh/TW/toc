@@ -78,11 +78,7 @@
     iam_limits.md
     monitoring.md
     userstatus.md
-    
-
-    {: .topicgroup}
-    指令參考資料
-        /cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam
+    [指令參考資料](/cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam)
     
     {: .topicgroup}
     API 參考資料  

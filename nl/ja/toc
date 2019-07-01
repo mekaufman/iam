@@ -78,10 +78,7 @@ ID およびアクセス権限の管理
     iam_limits.md
     monitoring.md
     userstatus.md
-
-    {: .topicgroup}
-    コマンド・リファレンス
-        /cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam
+    [コマンド解説書](/cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam)
     
     {: .topicgroup}
     API リファレンス  
