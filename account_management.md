@@ -4,9 +4,9 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-06-03"
+lastupdated: "2019-07-01"
 
-keywords: account management, access, access policy, account administrator
+keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service
 
 subcollection: iam
 
@@ -22,7 +22,8 @@ subcollection: iam
 # Assigning access to account management services
 {: #account-services}
 
-As the account owner or the administrator of an account management service, you can use account management services to grant users in the account access to invite users to the account, track billing and usage, and work with support cases. Users with access can also manage service IDs, access policies, catalog entries, and access groups.
+As the account owner or the administrator of an account management service, you can use these services to grant users access to complete tasks such as invite users to the account, track billing and usage, and work with support cases. Users with account management access policies can also manage service IDs, access policies, catalog entries, and access groups.
+{:shortdesc}
 
 ## Creating policies for account management service access
 {: #account-management-access}
@@ -35,13 +36,18 @@ To assign access to one or all account management services, complete the followi
 4. Select **All Account Management Services** or select a specific account management service.
 5. Select any combination of roles to assign the wanted access.
 
-To grant another user full access to the account for the purposes of managing user access and all account resources, you must assign two policies. One policy that gives the user access to all resources in the account by selecting **All Identity and Access enabled services** with the **Administrator** and **Manager** roles assigned. And, one policy that gives the user access to all account management services in the account by selecting **All account management services** with the **Administrator** role assigned.
+To grant another user full access to the account for the purposes of managing user access and all account resources, you must assign two policies. One policy that gives the user access to all resources in the account by selecting **All Identity and Access enabled services** with the **Administrator** and **Manager** role assigned. And, one policy that gives the user access to all account management services in the account by selecting **All account management services** with the **Administrator** role assigned.
 {: tip}
 
-## Action to role mappings for account management services
+## Actions and roles for account management services
 {: #account-management-actions-roles}
 
-The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users.
+The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users. 
+
+### Access groups
+{: #access-groups-account-management}
+
+You can give users access to view, create, edit, and delete access groups in the account by using the access groups account management service. 
 
 | Roles | Actions |
 |:-------|----------|
@@ -51,6 +57,11 @@ The following tables outline the actions that users can take when they are assig
 | Administrator |  View, create, edit, and delete groups <br><br> Add or remove users <br><br> Assign access to a group <br><br> Manage access for working with access groups   |
 {: caption="Table 1. Roles and example actions for the Access groups service" caption-side="top"}
 
+### User management
+{: #user-management-account-management}
+
+You can give users access to view users in an account, invite and remove users, and view and update user profile settings with the user management account management service. 
+
 | Roles | Actions |
 |:-------|----------|
 | Viewer |  View users in the account <br><br> View user profile settings     |
@@ -58,6 +69,14 @@ The following tables outline the actions that users can take when they are assig
 | Editor |  View, invite, remove, and update users from the account <br><br> View and update user profile settings    |
 | Administrator | View, invite, remove, and update users from the account <br><br> View and update user profile settings    |
 {: caption="Table 2. Roles and example actions for the User Management service" caption-side="top"}
+
+The viewer role on the user management service is a commonly assigned role for users also being assigned a role to view or manage support cases. This is because if an account owner restricts the visibility of the user list in the IAM settings, it can cause users to not be able to see support cases opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect their ability to view cases in the account
+{: tip}
+
+### Support center
+{: #support-center-account-management}
+
+You can give users access to manage support cases by using the support center service.
 
 | Roles | Actions |
 |:-------|----------|
@@ -67,7 +86,14 @@ The following tables outline the actions that users can take when they are assig
 | Administrator |  View cases <br><br> Search cases <br><br> Update cases <br><br> Create cases    |
 {: caption="Table 3. Roles and example actions for the Support Center service" caption-side="top"}
 
+It is common to assign users the viewer role on the user management service in addition to a support center access policy to ensure that users can see all cases in the account regardless of how the account owner has set the user list visibility setting. If the user list visibility setting is set to restricted, making it so users are restricted from seeing other users in the account, this can limit a user's ability to view, search, and manage support cases in an account that they did not open themselves.
+{: tip}
+
+### Billing
 {: #billing-acct-mgmt}
+
+You can give users access to update account settings, view subscriptions, view offers, apply feature codes, update spending limits, and track usage by using the billing service.
+
 | Roles | Actions |
 |:-------|----------|
 | Viewer | View account feature settings <br><br> View subscriptions in account <br><br> View account name <br><br> View resource groups   |
@@ -75,6 +101,11 @@ The following tables outline the actions that users can take when they are assig
 | Editor |  View and update account feature settings <br><br> View subscriptions in account <br><br> View offers in account <br><br> View and apply feature codes <br><br> View and change account name <br><br> View and update spending limits <br><br> View, create, and update resource groups    |
 | Administrator |  View and update account feature settings <br><br> View subscriptions in account <br><br> View offers in account <br><br> View and apply feature codes <br><br> View and change account name <br><br> View and update spending limits <br><br> View subscription balances and track usage <br><br> View, create, update, and assign access to manage resource groups  |
 {: caption="Table 4. Roles and example actions for the Billing service" caption-side="top"}
+
+### IAM identity service
+{: #identity-service-account-management}
+
+You can give users access to manage service IDs by using the IAM identity service. For the IAM identity service, these actions apply to service IDs within the account that the user didn't create. All users can create service IDs. They are the administrator for those IDs, and they can create the associated API key and access policies. However, this account management service applies to the ability to view, delete, and assign access to service IDs in the account created by other users.
 
 | Roles | Actions |
 |:-------|----------|
@@ -85,8 +116,11 @@ The following tables outline the actions that users can take when they are assig
 {: caption="Table 5. Roles and example actions for the IAM Identity service" caption-side="top"}
 {: #identity-service-acct-mgmt}
 
-For the IAM Identity Service, these actions apply to service IDs within the account that the user didn't create. All users can create service IDs. They're the administrator for those IDs, and they can create the associated API key and access policies. However, this account management service applies to the ability to view, delete, and assign access to service IDs in the account created by other users.
-{: note}
+
+### Global catalog
+{: #global-catalog-account-management}
+
+You can give users access to view private services in the catalog or change the visibility for others users for private services by using the global catalog service.
 
 | Roles | Actions |
 |:-------|----------|
@@ -96,6 +130,13 @@ For the IAM Identity Service, these actions apply to service IDs within the acco
 | Administrator |  Change object metadata or visibility for private services, and restrict visibility of a public service   |
 {: caption="Table 6. Roles and example actions for the Global Catalog service" caption-side="top"}
 
+
+### All account management services option
+{: #all-account-management}
+
+To quickly give users a wide-ranging set of account management access, you can assign a policy on the all account management services option. Depending on the role that is selected, all applicable actions per the selected role for each account management service can be completed by the subject of the policy.
+
+
 | Roles | Actions |
 |:-------|----------|
 | Viewer |  All viewer role actions for the account management services     |
@@ -103,3 +144,5 @@ For the IAM Identity Service, these actions apply to service IDs within the acco
 | Editor |  All editor role actions for the account management services and the ability to create resource groups    |
 | Administrator |  All administrator role actions for the account management services and the ability to create resource groups   |
 {: caption="Table 7. Roles and example actions for a policy on all identity and access services" caption-side="top"}
+
+
