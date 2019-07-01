@@ -44,7 +44,7 @@ To grant another user full access to the account for the purposes of managing us
 
 The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users. 
 
-### Access groups
+### IAM access groups service
 {: #access-groups-account-management}
 
 You can give users access to view, create, edit, and delete access groups in the account by using the access groups account management service. 
