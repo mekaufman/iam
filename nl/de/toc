@@ -78,10 +78,7 @@ Identität und Zugriff verwalten
     iam_limits.md
     monitoring.md
     userstatus.md
-
-    {: .topicgroup}
-    Befehlsreferenz
-        /cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam
+    [Befehlsreferenz](/cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam)
     
     {: .topicgroup}
     API-Referenz  

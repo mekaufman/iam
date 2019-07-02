@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-04-10"
+lastupdated: "2019-06-17"
 
 keywords: dynamic rules, access groups, specific identity attributes
 
@@ -33,13 +33,18 @@ Nur Benutzer, die bereits zum Konto eingeladen wurden, können mithilfe dynamisc
 ## Regeln festlegen
 {: #setup_rules}
 
-Dynamische Regeln werden erstellt, indem Bedingungen festgelegt werden. Diese Bedingungen müssen von den Daten erfüllt werden, die im Identitätsprovider konfiguriert sind und während der Anmeldung mit der föderierten ID eines Benutzers übergeben werden. Sie können mehr als eine Bedingung für eine Regel hinzufügen. Alle in der Regel festgelegten Bedingungen müssen erfüllt sein, damit ein Benutzer zu einer Zugriffsgruppe hinzugefügt wird. Führen Sie die folgenden Schritte aus, um eine Regel zu erstellen:
+Dynamische Regeln werden erstellt, indem Bedingungen festgelegt werden. Diese Bedingungen müssen von den Daten erfüllt werden, die im Identitätsprovider konfiguriert sind und während der Anmeldung mit der föderierten ID eines Benutzers übergeben werden. Sie können mehr als eine Bedingung für eine Regel hinzufügen. Alle in der Regel festgelegten Bedingungen müssen erfüllt sein, damit ein Benutzer zu einer Zugriffsgruppe hinzugefügt wird. 
+
+Führen Sie die folgenden Schritte aus, um eine Regel zu erstellen:
 
 1. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Zugriff (IAM)** und wählen Sie **Zugriffsgruppen** aus.
 2. Wählen Sie den Namen der Zugriffsgruppe aus, für die eine Regel erstellt werden soll, um die Detailseite der Gruppe zu öffnen.
 3. Wählen Sie die Registerkarte **Dynamische Regeln** aus.
 4. Klicken Sie auf **Regel hinzufügen**.
 5. Geben Sie die Informationen Ihres Identitätsproviders ein, die auf der Seite 'Regel hinzufügen' dynamisch für Sie bereitgestellt werden. Die folgende Liste enthält Details zu jedem erforderlichen Feld.
+
+Sie können sich die Regel als Schlüssel/Wert-Paar vorstellen, wobei der Schlüssel Ihre Eingabe in das Feld `Benutzer hinzufügen, wenn` darstellt, und der Wert das ist, was Sie im Feld `Wert` eingeben, mit dem die Regel auf der Basis des ausgewählten Vergleichsoperators verglichen werden muss.
+{: tip}
 
 <dl>
 <dt>Name</dt>
@@ -56,8 +61,8 @@ Dynamische Regeln werden erstellt, indem Bedingungen festgelegt werden. Diese Be
 <dd>Geben Sie den Attributwert für die Attributanweisung für den Vergleich mit der Regel ein.</dd>
 </dl>
 
-Sie können sich die Regel als Schlüssel/Wert-Paar vorstellen, wobei der Schlüssel Ihre Eingabe in das Feld `Benutzer hinzufügen, wenn` darstellt, und der Wert das ist, was Sie im Feld `Wert` eingeben, mit dem die Regel auf der Basis des ausgewählten Vergleichsoperators verglichen werden muss.
-{: tip}
+Benutzer, die mithilfe von dynamischen Rollen Zugriffsgruppen hinzugefügt wurden, werden in der Benutzerliste für die Zugriffsgruppe nicht als Gruppenmitglied angezeigt. Um die Zugehörigkeit eines bestimmten Benutzers zu einer Zugriffsgruppe zu überprüfen, können Sie den Namen dieses Benutzers auf der Kontoseite **Benutzer** auswählen und dann auf **Zugriffsgruppen** klicken.
+{: note}
 
 ## Beispielregel
 {: #example}
