@@ -21,7 +21,7 @@ subcollection: iam
 # Ordering external authentication MFA for a user
 {: #external}
 
-As an administrator with the correct access, you can order external authentication and enable the multi-factor authentication (MFA) option for a user's login. You are charged a monthly fee for the external authentication options. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled unlike ID-based MFA. For more information, see [Types of multifactor authentication](/docs/iam?topic=iam-types#types).
+As an administrator with the correct access, you can order external authentication and enable the multifactor authentication (MFA) option for a user's login. You are charged a monthly fee for the external authentication options. This type of multifactor authentication (MFA) is required only for the account where the setting is enabled unlike ID-based MFA. For more information, see [Types of multifactor authentication](/docs/iam?topic=iam-types#types).
 {:shortdesc}
 
 ## Ordering external authentication
