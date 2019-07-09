@@ -3,7 +3,8 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-06-11"
+
+lastupdated: "2019-06-25"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -22,7 +23,7 @@ subcollection: iam
 # Invitation d'utilisateurs
 {: #iamuserinv}
 
-Vous pouvez inviter des utilisateurs, annuler des invitations, et renvoyer une invitation en attente à un utilisateur invité. En outre, vous pouvez inviter un utilisateur unique ou plusieurs utilisateurs à la fois.    
+Utilisez {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) pour inviter des utilisateurs, annuler des invitations, et renvoyer une invitation en attente à un utilisateur invité. En outre, vous pouvez inviter un utilisateur unique ou plusieurs utilisateurs à la fois.
 {:shortdesc}
 
 Pour inviter des utilisateurs et gérer les invitations en attente, vous devez être propriétaire du compte, responsable de l'organisation, être un utilisateur disposant d'une règle d'accès IAM et ayant au moins le rôle Editeur pour le service de gestion des utilisateurs, ou vous devez avoir des droits d'infrastructure classique pour ajouter des utilisateurs.
@@ -43,7 +44,7 @@ Pour inviter des utilisateurs ou gérer les invitations d'utilisateur sur votre 
 
   Pour plus d'informations, voir [Octroi d'un accès utilisateur](/docs/iam?topic=iam-iamuserinv#assignaccess).
 
-Si vous déterminez qu'un utilisateur n'a pas besoin d'un accès, vous pouvez annuler l'invitation de n'importe quel utilisateur dont l'état indique **En cours de traitement** ou **En attente** dans la colonne **Statut**. Si un utilisateur invité n'a pas reçu d'invitation, vous pouvez renvoyer l'invitation à n'importe quel utilisateur dont l'état indique **En attente**.
+Si vous déterminez qu'un utilisateur n'a pas besoin d'un accès, vous pouvez annuler l'invitation de n'importe quel utilisateur dont l'état indique En cours de traitement ou En attente dans la colonne Statut. Si un utilisateur invité n'a pas reçu d'invitation, vous pouvez renvoyer l'invitation à n'importe quel utilisateur dont l'état indique En attente.
 
 ### Invitation d'utilisateur via l'interface CLI
 {: #cli-invite}
@@ -54,14 +55,41 @@ Pour inviter des utilisateurs via l'interface de ligne de commande (CLI), exécu
 ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
 ```
 
-L'utilisation de l'interface CLI permet de choisir d'affecter ou non l'accès à Cloud Foundry, ou encore de l'affecter ultérieurement. Pour plus d'informations sur les paramètres de commande, voir [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite). 
+L'utilisation de l'interface CLI permet de choisir d'affecter ou non l'accès à Cloud Foundry, ou encore de l'affecter ultérieurement. Pour plus d'informations sur les paramètres de commande, voir [**`ibmcloud account user-invite`**](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite). 
 
 ### Invitation d'utilisateur via API
 {: #api-invite}
 
 Vous pouvez utiliser l'[API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} pour inviter des utilisateurs en bloc. Tous les utilisateurs figurant dans une seule invitation reçoivent le même accès. Lorsque vous invitez des utilisateurs via l'API, vous entrez dans une liste les adresses e-mail séparées par des virgules, chaque entrée étant placée entre guillemets. Par exemple :
 
-`"email": "cloud_api_example_member@ibm.com", "next_example@ibm.com",`. 
+
+```
+curl -X POST \
+  https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9e1a6asdcc861234/users \
+  -H 'Authorization: Bearer <IAM_TOKEN>'
+  -H 'Content-Type: application/json' \
+    -d '{
+      "users": [
+      {
+        "email": "cloud_api_example_member@ibm.com", "second_user@ibm.com", "third_user@ibm.com",
+        "account_role": "Member"
+      }],
+      "iam_policy": [
+      {
+        "roles": [
+        {
+          "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+        }],
+        "resources": [
+        {
+          "accountId": "111d4cfd77b04e9b9e1a6asdcc861234",
+          "resourceType": "resource-group",
+          "resource": "111449dd871049c29ec3a53853ce123e"
+        }]
+      }]
+    }'
+```
+{: codeblock}
 
 ## Affectation de l'accès utilisateur à partir d'une invitation
 {: #assignaccess}
@@ -83,8 +111,8 @@ Selon le service que vous sélectionnez lorsque vous affectez la règle, il se p
 
 Pour déléguer certaines de vos responsabilités en tant que propriétaire de compte, vous pouvez fournir un accès utilisateur aux services de gestion de compte. Par exemple, vous pouvez déléguer l'autorisation d'afficher les informations de facturation et d'utilisation, d'inviter et de supprimer des utilisateurs, de gérer des groupes d'accès ou de gérer des ID de service. Vous pouvez octroyer l'accès à tous les services de gestion de compte ou bien à un seul.
 
-1. Dans l'écran **Inviter des utilisateurs**, développez la section **Services**.
-2. Sélectionnez d'affecter l'accès aux **Services de gestion des comptes**
+1. Dans la page Inviter des utilisateurs, développez la section Services.
+2. Sélectionnez **Services de gestion des comptes** dans la liste **Affecter l'accès à**. 
 3. Sélectionnez **Tous les services de gestion des comptes** ou bien un service de gestion de compte spécifique.
 4. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu.
 
@@ -93,10 +121,10 @@ Pour déléguer certaines de vos responsabilités en tant que propriétaire de c
 
 Vous pouvez accorder l'accès à tous les services d'un groupe de ressources ou à un seul type de service d'un groupe de ressources.
 
-1. Dans l'écran **Inviter des utilisateurs**, développez la section **Services**.
-2. Sélectionnez d'affecter l'accès aux ressources d'un **groupe de ressources**.
+1. Dans la page Inviter des utilisateurs, développez la section Services.
+2. Sélectionnez **Groupe de ressources** dans la liste **Affecter l'accès à**.
 3. Sélectionnez un groupe de ressources.
-4. Sélectionnez un rôle dans la zone **Affecter l'accès à un groupe de ressources** pour autoriser l'utilisateur à afficher le groupe de ressources dans la liste des ressources, à éditer le nom du groupe de ressources ou à gérer l'accès des utilisateurs au groupe. Vous pouvez sélectionner **Aucun accès**, si vous souhaitez que l'utilisateur puisse accéder uniquement à la ressource spécifiée et non au groupe auquel elle appartient.
+4. Sélectionnez un rôle dans la liste **Affecter l'accès à un groupe de ressources** pour autoriser l'utilisateur à afficher le groupe de ressources dans la liste des ressources, à éditer le nom du groupe de ressources ou à gérer l'accès des utilisateurs au groupe. Vous pouvez sélectionner **Aucun accès**, si vous souhaitez que l'utilisateur puisse accéder uniquement à la ressource spécifiée et non au groupe auquel elle appartient.
 5. Sélectionnez un service dans le groupe de ressources ou sélectionnez d'accorder l'accès à tous les services du groupe sélectionné.
 6. Sélectionnez toute combinaison de rôles pour affecter l'accès voulu. Cet accès s'applique uniquement aux ressources sélectionnées pour la règle. Il n'accorde pas l'accès au conteneur que constitue le groupe de ressources.
 
@@ -105,8 +133,8 @@ Vous pouvez accorder l'accès à tous les services d'un groupe de ressources ou 
 
 Vous pouvez accorder l'accès à une seule ressource de votre compte jusqu'au niveau instance.
 
-1. Dans l'écran **Inviter des utilisateurs**, développez la section **Services**.
-2. Sélectionnez d'affecter l'accès une **ressource**.
+1. Dans la page Inviter des utilisateurs, développez la section Services.
+2. Sélectionnez **Ressource** dans la liste **Affecter l'accès à**. 
 3. Sélectionnez un service.
 4. Sélectionnez **Toutes les régions en cours** ou une région spécifique, si vous êtes invité à le faire.
 5. Sélectionnez **Toutes les instances de service en cours** ou une instance de service spécifique.
@@ -122,18 +150,18 @@ Pour plus d'informations sur les rôles utilisés lors de l'affectation de l'acc
 
 Lorsque vous invitez de nouveaux utilisateurs, vous pouvez choisir d'ajouter l'utilisateur à une organisation dans le compte. Si vous ajoutez l'utilisateur à une organisation, vous pouvez lui attribuer un rôle dans l'organisation. Vous pouvez ensuite accorder à l'utilisateur invité un accès à n'importe quel espace (voire à tous) dans l'organisation sélectionnée, avec le rôle d'espace qui lui est affecté.
 
-1. Dans l'écran **Inviter des utilisateurs**, développez la section **Accès Cloud Foundry**.
+1. Dans la page Inviter des utilisateurs, développez la section Accès Cloud Foundry.
 2. Sélectionnez une organisation à laquelle ajouter l'utilisateur.
 3. Sélectionnez un rôle d'organisation afin de définir le niveau d'accès pour l'organisation sélectionnée.
-4. Facultatif : sélectionnez **Ajouter un rôle d'organisation** pour spécifier un rôle supplémentaire.
+4. Facultatif : cliquez sur **Ajouter un rôle d'organisation** pour spécifier un rôle supplémentaire.
 5. Sélectionnez **Toutes les régions en cours** ou une région spécifique.
 6. Sélectionnez **Tous les espaces en cours** ou un espace spécifique.
 7. Sélectionnez un rôle d'espace afin de définir un niveau d'accès pour les espaces sélectionnés.
-8. Facultatif : sélectionnez **Ajouter un rôle d'espace** pour spécifier un rôle supplémentaire.
+8. Facultatif : cliquez sur **Ajouter un rôle d'espace** pour spécifier un rôle supplémentaire.
 
 Pour plus d'informations sur les rôles utilisés lors de l'affectation de l'accès, voir [Rôles Cloud Foundry](/docs/iam?topic=iam-cfaccess#cfroles).
 
-Vous pouvez ajouter un rôle Cloud Foundry à l'aide de la commande de l'interface de ligne de commande [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite), mais vous devez utiliser la console pour lui accorder d'autres accès ou autorisations.
+Vous pouvez ajouter un rôle Cloud Foundry à l'aide de la commande de l'interface de ligne de commande [**`ibmcloud account user-invite`**](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite), mais vous devez utiliser la console pour lui accorder d'autres accès ou autorisations.
 {: tip}
 
 ### Accès à l'infrastructure classique
@@ -141,7 +169,7 @@ Vous pouvez ajouter un rôle Cloud Foundry à l'aide de la commande de l'interfa
 
 Les droits accordés sont limités automatiquement au sous-ensemble de droits dont vous disposez. Vous devenez l'utilisateur parent de tout utilisateur que vous invitez.
 
-1. Dans l'écran **Inviter des utilisateurs**, développez la section **Accès à l'infrastructure classique**.
+1. Dans la page Inviter des utilisateurs, développez la section Accès à l'infrastructure classique.
 2. Sélectionnez un ensemble de droits pour affecter des droits en bloc prédéfinis.
 
 L'accès aux périphériques est accordé séparément après l'ajout de l'utilisateur. Accédez à l'option d'accès **Infrastructure classique** pour un utilisateur de la console.
@@ -154,6 +182,6 @@ Pour plus d'informations sur la configuration des droits d'accès pour les utili
 
 En tant que propriétaire de compte ou qu'utilisateur disposant de droits de gestion d'infrastructure classique d'utilisateur, vous pouvez ajouter un utilisateur VPN uniquement.
 
-1. Sur la page **Utilisateurs**, cliquez sur **Ajouter un utilisateur VPN uniquement**.
+1. Sur la page Utilisateurs, cliquez sur **Ajouter un utilisateur VPN uniquement**.
 2. Entrez les détails des informations personnelles de l'utilisateur.
 3. Cliquez sur **Sauvegarder**.

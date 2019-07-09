@@ -3,7 +3,8 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-06-11"
+
+lastupdated: "2019-06-25"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -22,7 +23,7 @@ subcollection: iam
 # 邀请用户
 {: #iamuserinv}
 
-您可以邀请用户，取消邀请，以及向被邀请用户重新发送待处理邀请。此外，您可以一次邀请单个用户或多个用户。    
+使用 {{site.data.keyword.Bluemix}} Identity and Access Management (IAM)，可以邀请用户，取消邀请，以及向被邀请用户重新发送待处理邀请。此外，您可以一次邀请单个用户或多个用户。
 {:shortdesc}
 
 要邀请用户并管理待处理邀请，您必须是帐户所有者、组织管理者或者具有对用户管理服务的编辑者或更高角色的 IAM 访问策略的用户，或者您必须具有添加用户的经典基础架构许可权。
@@ -43,7 +44,7 @@ subcollection: iam
 
   有关更多信息，请参阅[分配用户访问权](/docs/iam?topic=iam-iamuserinv#assignaccess)。
 
-如果确定某个用户不需要访问权，那么可以对**状态**列中显示为**正在处理**或**暂挂**状态的任何用户取消邀请。如果被邀请用户未收到邀请，那么可以向处于**暂挂**状态的任何用户重新发送邀请。
+如果确定某个用户不需要访问权，那么可以对“状态”列中显示为“正在处理”或“暂挂”状态的任何用户取消邀请。如果被邀请用户未收到邀请，那么可以向处于“暂挂”状态的任何用户重新发送邀请。
 
 ### 使用 CLI 邀请用户
 {: #cli-invite}
@@ -54,14 +55,41 @@ subcollection: iam
 ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
 ```
 
-通过使用 CLI，可以选择分配 Cloud Foundry 访问权，或者暂不分配访问权，以后再分配。有关命令参数的更多信息，请参阅 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite)。 
+通过使用 CLI，可以选择分配 Cloud Foundry 访问权，或者暂不分配访问权，以后再分配。有关命令参数的更多信息，请参阅 [**`ibmcloud account user-invite`**](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite)。 
 
 ### 使用 API 邀请用户
 {: #api-invite}
 
 可以使用 [API](https://cloud.ibm.com/apidocs/user-management#invite-users){: external} 批量邀请用户。在单个邀请中包含的所有用户都分配有相同的访问权。使用 API 邀请用户时，可以输入逗号分隔的电子邮件列表，每个条目用引号括起，例如：
 
-`"email": "cloud_api_example_member@ibm.com", "next_example@ibm.com",`。 
+
+```
+curl -X POST \
+  https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9e1a6asdcc861234/users \
+  -H 'Authorization: Bearer <IAM_TOKEN>'
+  -H 'Content-Type: application/json' \
+    -d '{
+      "users": [
+      {
+        "email": "cloud_api_example_member@ibm.com", "second_user@ibm.com", "third_user@ibm.com",
+        "account_role": "Member"
+      }],
+      "iam_policy": [
+      {
+        "roles": [
+        {
+          "id": "crn:v1:bluemix:public:iam::::role:Viewer"
+        }],
+        "resources": [
+        {
+          "accountId": "111d4cfd77b04e9b9e1a6asdcc861234",
+          "resourceType": "resource-group",
+          "resource": "111449dd871049c29ec3a53853ce123e"
+        }]
+      }]
+    }'
+```
+{: codeblock}
 
 ## 通过邀请分配用户访问权
 {: #assignaccess}
@@ -83,8 +111,8 @@ ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE,
 
 要委派您作为帐户所有者的一些职责，您可以向用户提供对帐户管理服务的访问权。例如，您可以委派查看计费和使用情况，邀请和除去用户，管理访问组或管理服务标识的功能。您可以向所有帐户管理服务或仅一个帐户管理服务提供访问权。
 
-1. 在**邀请用户**屏幕中，展开**服务**部分。
-2. 选择分配对**帐户管理服务**的访问权。
+1. 在“邀请用户”页面上，展开“服务”部分。
+2. 从**将访问权分配给**列表中，选择**帐户管理服务**。 
 3. 选择**所有帐户管理服务**，或选择特定的帐户管理服务。
 4. 选择任意角色组合来分配所需的访问权。
 
@@ -93,10 +121,10 @@ ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE,
 
 可以分配对资源组中所有服务的访问权，也可以分配对资源组中单个服务类型的访问权。
 
-1. 在**邀请用户**屏幕中，展开**服务**部分。
-2. 选择分配对**资源组**中资源的访问权。
+1. 在“邀请用户”页面上，展开“服务”部分。
+2. 从**将访问权分配给**列表中，选择**资源组**。
 3. 选择资源组。
-4. 为**分配对资源组的访问权**字段选择角色，以支持用户在资源列表上查看资源组，编辑资源组名称或管理用户对该组的访问权。如果希望用户仅有权访问您指定的资源，而无权访问资源所组织成的组，那么可以选择**无访问权**。
+4. 从**分配对资源组的访问权**列表中选择角色，以支持用户在资源列表上查看资源组，编辑资源组名称或管理用户对该组的访问权。如果希望用户仅有权访问您指定的资源，而无权访问资源所组织到的组，那么可以选择**无访问权**。
 5. 选择资源组中的服务，或选择提供对所选组中所有服务的访问权。
 6. 选择任意角色组合来分配所需的访问权。此访问权仅适用于为策略选择的资源。它并不授予对实际容器（即资源组）的访问权。
 
@@ -105,8 +133,8 @@ ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE,
 
 可以分配对帐户中单个资源下至实例的访问权。
 
-1. 在**邀请用户**屏幕中，展开**服务**部分。
-2. 选择分配对**资源**的访问权。
+1. 在“邀请用户”页面上，展开“服务”部分。
+2. 从**将访问权分配给**列表中，选择**资源**。 
 3. 选择服务。
 4. 选择**所有当前区域**或特定区域（如果系统提示选择）。
 5. 选择**所有当前服务实例**或选择特定服务实例。
@@ -122,18 +150,18 @@ ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE,
 
 当您邀请新用户时，您可以选择将用户添加到帐户中的组织。如果您向组织添加用户，那么可以向该用户分配组织角色。然后，选择通过分配的空间角色为受邀的用户提供所选组织中任何或所有空间的访问权。
 
-1. 在**邀请用户**屏幕中，展开 **Cloud Foundry 访问权**部分。
+1. 在“邀请用户”页面上，展开“Cloud Foundry 访问权”部分。
 2. 选择要将用户添加到的组织。
 3. 选择组织角色，以定义所选组织的访问级别。
-4. 可选：选择**添加组织角色**以指定额外角色。
+4. 可选：单击**添加组织角色**以指定额外角色。
 5. 选择**所有当前区域**或特定区域。
 6. 选择**所有当前空间**或特定空间。
 7. 选择空间角色，以定义所选空间的访问级别。
-8. 可选：选择**添加空间角色**以指定额外角色。
+8. 可选：单击**添加空间角色**以指定额外角色。
 
 有关分配访问权时使用的角色的更多信息，请参阅 [Cloud Foundry 角色](/docs/iam?topic=iam-cfaccess#cfroles)。
 
-您可以使用 [ibmcloud account user-invite](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) CLI 命令来添加 Cloud Foundry 角色，但必须使用控制台来分配其他访问权或许可权。
+您可以使用 [**`ibmcloud account user-invite`**](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_account#ibmcloud_account_user_invite) CLI 命令来添加 Cloud Foundry 角色，但必须使用控制台来分配其他访问权或许可权。
 {: tip}
 
 ### 经典基础架构访问权
@@ -141,7 +169,7 @@ ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE,
 
 所分配的许可权会自动限制为您所拥有的许可权的子集。您将成为您邀请的任何用户的父用户。
 
-1. 在**邀请用户**屏幕中，展开**经典基础架构访问权**部分。
+1. 在“邀请用户”页面上，展开“经典基础架构访问权”部分。
 2. 选择用于分配预定义批量许可权的许可权集。
 
 对设备的访问权将在添加用户后单独授予。请转至控制台中用户的**经典基础架构**访问权选项。
@@ -154,6 +182,6 @@ ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE,
 
 作为帐户所有者或具有“管理用户”经典基础架构许可权的用户，您可以添加仅使用 VPN 的用户。
 
-1. 在**用户**页面中，单击**添加仅使用 VPN 的用户**。
+1. 在“用户”页面上，单击**添加仅使用 VPN 的用户**。
 2. 输入用户的个人详细信息。
 3. 单击**保存**。
