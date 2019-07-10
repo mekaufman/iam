@@ -28,7 +28,7 @@ subcollection: iam
 A policy assigns a subject, which is a user, [service ID](/docs/iam?topic=iam-serviceids#serviceids), or access group, one or more roles with a combination of attributes that define the scope of access to a target. The policy can provide access to a single service down to the instance level, to a set of resources organized together in a resource group, or to account management services. Depending on the [IAM roles](/docs/iam?topic=iam-userroles#iamusermanrol) that you assign, the subject is allowed varying levels of access for completing account management tasks, working with service instances, or accessing a service by using the UI or completing API calls.
 
 
-![IAM for access control in an account](images/iam-diagram.svg "How access management works in an account by using IAM")
+![IAM for access control in an account](images/iam-diagram.svg "How access management works in an account by using IAM"){: caption="Figure 1. How access management works in an account by using IAM" caption-side="bottom"}
 
 For services that do not support creating Cloud IAM policies for managing access, you can use [Cloud Foundry access](/docs/iam?topic=iam-cfaccess#cfaccess) or [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission).
 
