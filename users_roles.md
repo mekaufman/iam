@@ -32,7 +32,7 @@ A policy grants a subject one or multiple roles to a set of resources so that sp
 
 The following graphic helps to explain how the IAM policy is created. Policies are always created by specifying the subject first. The subject is a specific user, service ID, or an access group. Next, the target of the policy is selected which is what you are allowing the user to access, for example: all services in a resource group, all IAM-enabled services in the account, account management services, or a particular service instance. Finally, you complete your access policy by selecting from the available roles. These roles define exactly what actions a user can complete. More configuration options might be available, depending on the service you select.
 
-![Creating IAM policies](images/IAM.svg "How IAM access policies are created by using a subject, target, and role")
+![Creating IAM policies](images/IAM.svg "How IAM access policies are created by using a subject, target, and role"){: caption="Figure 1. How IAM access policies are created by using a subject, target, and role" caption-side="bottom"}
 
 You can assign and manage policies if you have the proper role. The following table shows policy management tasks and the role that is required for each.
 
