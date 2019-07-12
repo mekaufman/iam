@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-05-16"
+lastupdated: "2019-07-12"
 
 keywords: event tracking, IAM events, monitoring
 
@@ -23,13 +23,13 @@ subcollection: iam
 # IAM events tracking
 {: #tracking}
 
-As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full}} service to track how users and applications interact with {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM).
+As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full}} service to track how users and applications interact with {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). 
 {:shortdesc}
 
 As of 9 May 2019 the {{site.data.keyword.cloudaccesstraillong}} service is deprecated. You must create an instance of the {{site.data.keyword.at_short}} in your account to continue tracking IAM events. For more information, see [Deprecation of the IBM Cloud Activity Tracker service](https://www.ibm.com/blogs/cloud-archive/2019/04/deprecating-ibm-cloud-activity-tracker/){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
 {: deprecated}
 
-You can track the following events:
+You must create an instance of the {{site.data.keyword.at_short}} service in the `eu-de` region region to start tracking IAM events. When you create the instance, you can track the following events:
 
 * Managing access groups by creating and deleting groups or adding and removing users
 * Creating, updating, or deleting service IDs
