@@ -26,14 +26,11 @@ Lorsque vous invitez un utilisateur à rejoindre votre compte, vous pouvez effec
 
 Lorsque vous invitez une personne à rejoindre le compte, seul vous, le propriétaire du compte ou un utilisateur disposant du droit Gestion de l'infrastructure classique d'utilisateur, pouvez adapter les droits pour l'utilisateur. Si vous n'êtes pas le propriétaire du compte, vous pouvez affecter uniquement le niveau de droits ou un sous-ensemble du droit qui vous a déjà été affecté. Un propriétaire de compte peut mettre à jour les droits de n'importe quel utilisateur du compte afin de lui accorder le niveau d'accès souhaité.
 
-
-
 Des droits supplémentaires peuvent être définis après que l'utilisateur a accepté l'invitation. Par exemple, l'ensemble de droits initiaux accordé lors de l'invitation ne donne pas accès aux périphériques. Par conséquent, vous devez octroyer l'accès aux périphériques une fois que l'utilisateur a accepté l'invitation. Pour plus d'informations, voir [Gestion de l'accès à l'infrastructure classique](/docs/iam?topic=iam-mngclassicinfra#mngclassicinfra).
 
 Le graphique suivant présente comment les droits d'infrastructure classique sont affectés par utilisateur. Vous pouvez accorder à chaque utilisateur l'accès à un périphérique ou à un service d'infrastructure classique en effectuant une sélection parmi les options de droits granulaires afin de personnaliser l'accès de chaque utilisateur.
 
 ![Accès à l'infrastructure classique](images/ClassicIaaS.svg "Affectation de l'accès à l'infrastructure classique en sélectionnant un utilisateur, un périphérique ou un service, puis une combinaison de droits granulaires")
-
 
 
 ## Droits d'infrastructure classique migrés

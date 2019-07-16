@@ -72,6 +72,8 @@ Gestion de l'identité et de l'accès
         classic_infra_keys.md
         apikey_iamtoken.md
         iam_apikeys_services.md
+        
+    saml-federation.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

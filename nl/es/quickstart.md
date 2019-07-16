@@ -108,7 +108,7 @@ Para asignar una nueva política de acceso, siga los pasos siguientes:
 4. Pulse **Asignar acceso**.
 5. Elija la forma de asignar el acceso:
     * Seleccione **Asignar acceso dentro de un grupo de recursos** para asignar acceso a todos los recursos dentro de un grupo o solo a los recursos de un servicio específico dentro de un grupo. También debe proporcionar el usuario con acceso para ver, editar o gestionar el acceso al grupo de recursos seleccionando un rol para acceder al grupo de recursos. Seleccione **Sin acceso** si desea que el usuario solo tenga acceso al recurso especificado y no al grupo en el que está organizado.
-    * Seleccione **Asignar acceso a recursos** para asignar acceso a todos los recursos habilitados para identificación y acceso en la cuenta, a todos los recursos de un servicio específico en la cuenta, a una única instancia o a un único recurso dentro de una instancia de servicio específica.
+    * Seleccione **Asignar acceso a recursos** para asignar acceso a todos los recursos habilitados para Identity and Access en la cuenta, a todos los recursos de un servicio específico de la cuenta, a una única instancia o a un único recurso dentro de una instancia de servicio específica.
     * Seleccione **Asignar acceso a servicios de gestión de cuentas** para asignar acceso a todos los servicios de gestión de cuentas o solo a un servicio de gestión de cuentas.
 5. Seleccione cualquier combinación de roles para definir el ámbito del acceso. Para obtener más información, consulte [Roles de Cloud IAM](/docs/iam?topic=iam-userroles#iamusermanrol).
 6. Pulse **Asignar**.

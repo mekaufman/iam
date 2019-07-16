@@ -42,7 +42,7 @@ Los clientes de API pueden pasar directamente una clave de API de {{site.data.ke
 
 La API del servicio de destino debe realizar la introspección de la clave de API de {{site.data.keyword.Bluemix_notm}} utilizando el servicio {{site.data.keyword.Bluemix_notm}} IAM. En el gráfico siguiente se muestran tres interacciones de API. La clave de API de {{site.data.keyword.Bluemix_notm}} se pasa a cada API del servicio de destino, de modo que cada servicio de destino debe buscar los detalles de la clave de API de {{site.data.keyword.Bluemix_notm}} invocando {{site.data.keyword.Bluemix_notm}} IAM.
 
-![Autenticación con una API de servicio utilizando una clave de API](images/APIkeyauth.svg "Cómo pasar claves de API a servicios de destino que luego pasan la clave de API a IAM para validar credenciales")
+![Autenticación con una API de servicio mediante una clave de API](images/APIkeyauth.svg "Paso de claves de API a servicios de destino, que luego pasan la clave de API a IAM para validar las credenciales")
 
 El uso de una clave de API de {{site.data.keyword.Bluemix_notm}} resulta cómodo y facilita el descubrimiento de nuevas API y la prueba rápida de prototipos. Este método requiere que envíe la clave de API de {{site.data.keyword.Bluemix_notm}} a la API del servicio de destino en un formato legible, lo que compromete innecesariamente la seguridad de la clave de API. Además, como la API del servicio de destino siempre debe realizar una introspección de la clave de API, este método ofrece un rendimiento menor y, por lo tanto, no se recomienda para cargas de trabajo de producción.
 
@@ -69,7 +69,7 @@ Como ejemplo, en los siguientes pasos se utiliza la clave de API 0a1A2b3B4c5C6d7
 
 Para recuperar una señal de acceso de IAM, primero el cliente de API debe invocar una API de {{site.data.keyword.Bluemix_notm}} IAM para autenticarse y recuperar dicha señal. La forma recomendada para los clientes de API de servicio de {{site.data.keyword.Bluemix_notm}} es utilizar una clave de API de IAM para obtener una señal de acceso de IAM. La señal de acceso de IAM se puede utilizar para varias invocaciones de servicios de {{site.data.keyword.Bluemix_notm}} que acepten señales de acceso de IAM como método de autenticación. Puesto que las señales de acceso de IAM están firmadas digitalmente con claves asimétricas, los servicios de {{site.data.keyword.Bluemix_notm}} pueden validar una señal de acceso de IAM sin invocar ningún servicio externo. Esto mejora considerablemente el rendimiento de la invocación de una API.
 
-![Autenticación con una API de servicio utilizando una señal de acceso](images/tokenauth.svg "Recuperación de una señal de IAM utilizando una clave de API y pasando la señal de acceso a los servicios de destino para validar credenciales")
+![Autenticación con una API de servicio mediante una señal de acceso](images/tokenauth.svg "Recuperación de una señal desde IAM mediante una clave de API y paso de la señal de acceso a servicios de destino para validar las credenciales")
 
 Para autenticarse con una API de servicio utilizando una señal de acceso, siga los pasos siguientes:
 

@@ -22,17 +22,17 @@ subcollection: iam
 # Accès IAM
 {: #userroles}
 
-Tous les services organisés en un groupe de ressources dans votre compte sont gérés via {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Le rôle d'administrateur des accès au compte pour le service Cloud IAM est automatiquement affecté aux propriétaires de compte. En tant qu'administrateur de compte, vous pouvez affecter et gérer l'accès des utilisateurs, créer des groupes de ressources, créer des groupes d'accès, afficher les informations de facturation et de suivi, et créer des instances de service. Vous accordez l'accès aux utilisateurs, aux ID de service et aux groupes d'accès en créant des règles qui définissent une cible pour l'accès de l'objet de la règle et un rôle qui définit le type d'accès autorisé.
+Tous les services organisés en un groupe de ressources dans votre compte sont gérés via {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM). Le rôle d'administrateur des accès au compte pour le service Cloud IAM est automatiquement affecté aux propriétaires de compte. En tant qu'administrateur de compte, vous pouvez affecter et gérer l'accès des utilisateurs, créer des groupes de ressources, créer des groupes d'accès, afficher les informations de facturation et de suivi, et créer des instances de service. Vous accordez l'accès aux utilisateurs, aux ID de service et aux groupes d'accès en créant des règles qui définissent une cible à laquelle le sujet de la règle peut accéder et un rôle qui définit le type d'accès autorisé.
 {: shortdesc}
 
 ## Quelles sont les règles Cloud IAM et qui peut les affecter ?
 {: #iamusermanpol}
 
-Une règle accorde à un objet un ou plusieurs rôles sur un ensemble de ressources de sorte que des actions spécifiques puissent être engagées dans le contexte des ressources cible spécifiées.
+Une règle accorde à un sujet un ou plusieurs rôles sur un ensemble de ressources de sorte que des actions spécifiques puissent être engagées dans le contexte des ressources cible spécifiées.
 
-Le graphique suivant présente comment la règle IAM est créée. Les règles sont toujours créées en spécifiant l'objet en premier. L'objet est un utilisateur spécifique, un ID de service ou un groupe d'accès. Ensuite, la cible de la règle est sélectionnée. Il s'agit des éléments auxquels l'utilisateur est autorisé à accéder, comme tous les services d'un groupe de ressources, tous les services activés par IAM dans le compte, les services de gestion des comptes ou une instance de service spécifique. Pour finir, terminez votre règle d'accès en effectuant une sélection parmi les rôles disponibles. Ces rôles définissent les actions pouvant être effectuées par un utilisateur. D'autres options de configuration peuvent être disponibles, selon le service que vous sélectionnez.
+Le graphique suivant présente comment la règle IAM est créée. Les règles sont toujours créées en spécifiant le sujet en premier. Le sujet est un utilisateur spécifique, un ID de service ou un groupe d'accès. Ensuite, la cible de la règle est sélectionnée. Il s'agit des éléments auxquels l'utilisateur est autorisé à accéder, comme tous les services d'un groupe de ressources, tous les services activés par IAM dans le compte, les services de gestion des comptes ou une instance de service spécifique. Pour finir, terminez votre règle d'accès en effectuant une sélection parmi les rôles disponibles. Ces rôles définissent les actions pouvant être effectuées par un utilisateur. D'autres options de configuration peuvent être disponibles, selon le service que vous sélectionnez.
 
-![Création de règles IAM](images/IAM.svg "Mode de création des règles d'accès IAM en utilisant un objet, une cible et un rôle")
+![Création de règles IAM](images/IAM.svg "Mode de création des règles d'accès IAM en utilisant un sujet, une cible et un rôle")
 
 Vous pouvez affecter et gérer des règles si le rôle approprié vous a été attribué. Le tableau suivant décrit les tâches de gestion des règles et le rôle requis pour chacune.
 

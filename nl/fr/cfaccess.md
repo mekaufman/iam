@@ -27,10 +27,7 @@ Actuellement, les services ne peuvent pas tous être gérés à l'aide de Cloud 
 
 Le graphique suivant présente comment les rôles, les espaces et les organisations Cloud Foundry sont liés à un compte qui peut avoir un grand nombre d'utilisateurs, d'organisations et d'espaces. Chaque utilisateur peut être affecté à autant d'organisations et d'espaces que nécessaire. De plus, lorsque des utilisateurs sont affectés à une organisation et à un espace, vous pouvez définir le niveau d'accès à utiliser en choisissant un rôle Cloud Foundry.
 
-
 ![Accès à l'aide d'organisations et d'espaces Cloud Foundry dans un compte](images/cf-diagram.svg "Fonctionnement des accès dans un compte à l'aide d'organisations, d'espaces et de rôles Cloud Foundry")
-
-
 
 ## Rôles Cloud Foundry
 {: #cfroles}
