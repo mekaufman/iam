@@ -72,16 +72,15 @@ Gestione di identità e accesso
         classic_infra_keys.md
         apikey_iamtoken.md
         iam_apikeys_services.md
+        
+    saml-federation.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     iam_limits.md
     monitoring.md
     userstatus.md
-
-    {: .topicgroup}
-    Riferimento ai comandi
-        /cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam
+    [Riferimento ai comandi](/cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam)
     
     {: .topicgroup}
     Guida di riferimento API  

@@ -21,7 +21,7 @@ subcollection: iam
 # Ordinazione dell'autenticazione esterna MFA per un utente
 {: #external}
 
-Come amministratore con l'accesso corretto, puoi ordinare l'autenticazione esterna e abilitare l'opzione di autenticazione multifattore (MFA) per l'accesso di un utente. Per le opzioni di autenticazione esterne ti viene addebitata una tariffa mensile. Questo tipo di autenticazione multifattore (MFA) è richiesto solo per l'account in cui l'impostazione è abilitata diversamente dalla MFA basata sull'ID. Per ulteriori informazioni, vedi [Tipi di autenticazione multifattore](/docs/iam?topic=iam-types#types).
+Come amministratore con l'accesso corretto, puoi ordinare l'autenticazione esterna e abilitare l'opzione MFA (multifactor authentication) per l'accesso di un utente. Per le opzioni di autenticazione esterne ti viene addebitata una tariffa mensile. Questo tipo di autenticazione multifattore (MFA) è richiesto solo per l'account in cui l'impostazione è abilitata diversamente dalla MFA basata sull'ID. Per ulteriori informazioni, vedi [Tipi di autenticazione multifattore](/docs/iam?topic=iam-types#types).
 {:shortdesc}
 
 ## Ordinazione dell'autenticazione esterna

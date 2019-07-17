@@ -27,10 +27,7 @@ Al momento, non tutti i servizi possono essere gestiti utilizzando Cloud IAM. Pu
 
 Il seguente grafico descrive come vengono correlati le organizzazioni, gli spazi e i ruoli Cloud Foundry all'interno di un account. Un account può avere molti utenti, organizzazioni e spazi. Ogni utente può essere assegnato a tutte le organizzazioni e spazi necessari e quando vengono assegnati a un'organizzazione e spazio, puoi configurare il livello di accesso da utilizzare assegnando un ruolo Cloud Foundry.
 
-
 ![Accesso a un account utilizzando le organizzazioni, gli spazi e i ruoli Cloud Foundry](images/cf-diagram.svg "Come funziona l'accesso a un account utilizzando le organizzazioni, gli spazi e i ruoli Cloud Foundry")
-
-
 
 ## Ruoli Cloud Foundry
 {: #cfroles}

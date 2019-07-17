@@ -29,10 +29,7 @@ no espaço aos quais a instância pertence com uma função do Cloud Foundry des
 
 O gráfico a seguir descreve como as organizações, os espaços e as funções do Cloud Foundry estão relacionados em uma conta. Uma conta pode ter muitos usuários, organizações e espaços. Cada usuário pode ser designado a tantas organizações e espaços quanto o necessário e, quando eles são designados a uma organização e a um espaço, é possível configurar o nível de acesso para trabalhar dentro de cada um designando uma função do Cloud Foundry.
 
-
 ![Acesso usando organizações e espaços do Cloud Foundry em uma conta](images/cf-diagram.svg "Como o acesso em uma conta funciona usando organizações,espaços e funções do Cloud Foundry")
-
-
 
 
 ## Funções do Cloud Foundry
@@ -49,7 +46,7 @@ As funções a seguir podem ser designadas no nível de organização:
 | Função organizacional | Permissões |
 |-------------------|-------------|
 |Gerenciador | Os gerenciadores de organização podem criar, visualizar, editar ou excluir espaços dentro da organização, visualizar o uso e cota da organização, convidar os usuários para a organização, gerenciar quem tem acesso à organização e suas funções na organização, além de gerenciar domínios customizados para a organização. |
-|Gerenciador de faturamento | Os gerentes de faturamento podem visualizar informações de tempo de execução e de uso de serviço para a organização na página Uso. |
+|Gerenciador de faturamento | Os gerentes de faturamento podem visualizar informações de tempo de execução e de uso de serviço para a organização na página Uso.  |
 |Auditor | Auditores da organização podem visualizar o conteúdo do aplicativo e do serviço na organização. Os auditores também podem visualizar os usuários na organização e suas funções designadas, além da cota da organização. |
 {:caption="Tabela 1. Funções e permissões de organização" caption-side="top"}
 

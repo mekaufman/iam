@@ -21,7 +21,9 @@ subcollection: iam
 # Pedindo a MFA de autenticação externa para um usuário
 {: #external}
 
-Como um administrador com o acesso correto, é possível pedir a autenticação externa e ativar a opção de autenticação de diversos fatores (MFA) para o login de um usuário. Você é cobrado por uma taxa mensal para as opções de autenticação externa. Esse tipo de autenticação de diversos fatores (MFA) é necessário somente para a conta na qual a configuração está ativada, diferentemente da MFA baseada em ID. Para obter mais informações, veja [Tipos de autenticação de diversos fatores](/docs/iam?topic=iam-types#types).
+Como administrador com o acesso correto, é possível solicitar autenticação
+externa e ativar a opção de autenticação de diversos fatores (MFA) para o login de um
+usuário. Você é cobrado por uma taxa mensal para as opções de autenticação externa. Esse tipo de autenticação de diversos fatores (MFA) é necessário somente para a conta na qual a configuração está ativada, diferentemente da MFA baseada em ID. Para obter mais informações, veja [Tipos de autenticação de diversos fatores](/docs/iam?topic=iam-types#types).
 {:shortdesc}
 
 ## Pedindo autenticação externa

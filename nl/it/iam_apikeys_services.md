@@ -42,7 +42,7 @@ I client API possono passare direttamente una chiave API {{site.data.keyword.Blu
 
 L'API del servizio di destinazione deve esaminare la chiave API {{site.data.keyword.Bluemix_notm}} utilizzando il servizio {{site.data.keyword.Bluemix_notm}} IAM. Il seguente grafico mostra tre interazioni API. La chiave API {{site.data.keyword.Bluemix_notm}} viene passata all'API di ogni servizio di destinazione, pertanto ogni servizio di destinazione deve cercare i dettagli della chiave API {{site.data.keyword.Bluemix_notm}} richiamando {{site.data.keyword.Bluemix_notm}} IAM.
 
-![Autenticazione con un'API del servizio utilizzando una chiave API](images/APIkeyauth.svg "Passaggio di chiavi API ai servizi di destinazione che quindi passano la chiave API a IAM per convalidare le credenziali")
+![Autenticazione presso una API del servizio utilizzando una chiave API](images/APIkeyauth.svg "Passaggio di chiavi API ai servizi di destinazione che passano quindi la chiave API a IAM per convalidare le credenziali")
 
 L'utilizzo di una chiave API {{site.data.keyword.Bluemix_notm}} è comodo e semplifica la scoperta di nuove API e la possibilità di provare rapidamente i prototipi. Questo metodo richiede l'invio della chiave API {{site.data.keyword.Bluemix_notm}} all'API del servizio di destinazione in un formato leggibile, che compromette inutilmente la chiave API. Inoltre, poiché l'API del servizio di destinazione deve sempre esaminare la chiave API, questo metodo è meno performante e pertanto non è consigliato per i carichi di lavoro di produzione.
 
@@ -69,7 +69,7 @@ A titolo di esempio, nei seguenti passi si presuppone che la tua chiave API sia 
 
 Per richiamare un token di accesso IAM, il client API deve prima richiamare un'API {{site.data.keyword.Bluemix_notm}} IAM per autenticare e richiamare tale token. Il modo preferito per i client API del servizio {{site.data.keyword.Bluemix_notm}} è quello di utilizzare una chiave API IAM per ottenere un token di accesso IAM. Il token di accesso IAM può essere utilizzato per più richiami di servizi {{site.data.keyword.Bluemix_notm}} che accettano i token di accesso IAM come metodo di autenticazione. Poiché i token di accesso IAM sono firmati digitalmente con chiavi asimmetriche, i servizi {{site.data.keyword.Bluemix_notm}} possono convalidare un token di accesso IAM senza richiamare alcun servizio esterno. Questo migliora notevolmente le prestazioni del richiamo di un'API.
 
-![Autenticazione con un'API del servizio utilizzando un token di accesso ](images/tokenauth.svg "Richiamo di un token da IAM utilizzando una chiave API e passando il token di accesso ai servizi di destinazione per convalidare le credenziali")
+![Autenticazione presso una API del servizio utilizzando un token di accesso](images/tokenauth.svg "Richiamo di un token da IAM utilizzando una chiave API e passando il token di accesso ai servizi di destinazione per convalidare le credenziali")
 
 Per l'autenticazione con l'API di un servizio utilizzando un token di accesso, completa la seguente procedura:
 

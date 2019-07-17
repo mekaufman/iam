@@ -26,14 +26,11 @@ Quando você convida um usuário para sua conta, é possível selecionar entre t
 
 Quando você convida alguém para a conta, somente você, o proprietário da conta ou um usuário com a permissão Gerenciar a infraestrutura clássica de usuários pode ajustar as permissões para o usuário. É possível designar somente o nível de permissões ou um subconjunto da permissão que você já tem designada, se você não for o proprietário da conta. Um proprietário da conta pode atualizar as permissões de qualquer pessoa na conta para ter qualquer nível de acesso.
 
-
-
 Permissões adicionais podem ser configuradas depois que o usuário aceita o convite. Por exemplo, o conjunto de permissões inicial designado no convite não concede acesso a dispositivos. Portanto, deve-se conceder acesso ao dispositivo após o usuário aceitar o convite. Para obter mais informações, veja [Gerenciando o acesso de infraestrutura clássica](/docs/iam?topic=iam-mngclassicinfra#mngclassicinfra).
 
 O gráfico a seguir mostra como as permissões de infraestrutura clássica são designadas por usuário. É possível conceder a cada usuário acesso a um serviço ou dispositivo de infraestrutura clássica selecionando, nas opções de permissão granular, a customização do acesso de cada usuário.
 
 ![Acesso de infraestrutura clássica](images/ClassicIaaS.svg "Designando acesso de infraestrutura clássica selecionando um usuário, dispositivo ou serviço e, em seguida, qualquer combinação de permissões granulares")
-
 
 
 ## Permissões de infraestrutura clássica migradas

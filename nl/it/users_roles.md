@@ -58,7 +58,7 @@ Puoi fornire l'accesso dettagliato per gli utenti, gli ID servizio o i gruppi di
 * Le risorse in una singola istanza
 * Un singolo tipo di risorsa all'interno di un'istanza, ad esempio un bucket in un'istanza {{site.data.keyword.objectstorageshort}}
 
-Per concedere a un altro utente l'accesso completo all'account ai fini della gestione dell'accesso degli utenti e della gestione di tutte le risorse dell'account, devi assegnare due politiche. Una politica che consenta all'utente di accedere a tutte le risorse dell'account selezionando **Tutti i sevizi abilitati per l'accesso e l'identità** con i ruoli **Amministratore** e **Gestore** assegnati. E una politica che fornisce l'accesso utente a tutti i servizi di gestione dell'account nell'account selezionando **Tutti i servizi di gestione account** con il ruolo assegnato **Amministratore**.
+Per concedere a un altro utente l'accesso completo all'account ai fini della gestione dell'accesso degli utenti e della gestione di tutte le risorse dell'account, devi assegnare due politiche. Una politica che consenta all'utente di accedere a tutte le risorse dell'account selezionando **Tutti i servizi abilitati per l'accesso e l'identità** con i ruoli **Amministratore** e **Gestore** assegnati. E una politica che fornisce l'accesso utente a tutti i servizi di gestione dell'account nell'account selezionando **Tutti i servizi di gestione account** con il ruolo assegnato **Amministratore**.
 {: tip}
 
 ## Ruoli Cloud IAM
