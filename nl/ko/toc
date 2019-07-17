@@ -72,6 +72,8 @@ ID 및 액세스 관리
         classic_infra_keys.md
         apikey_iamtoken.md
         iam_apikeys_services.md
+        
+    saml-federation.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

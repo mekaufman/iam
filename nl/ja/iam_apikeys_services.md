@@ -42,7 +42,7 @@ API クライアントは、ターゲット・サービスの API に {{site.dat
 
 ターゲット・サービス API は、{{site.data.keyword.Bluemix_notm}} IAM サービスを使用して、{{site.data.keyword.Bluemix_notm}} API キーをイントロスペクトする必要があります。 以下の図は、3 つの API 相互作用を示しています。 {{site.data.keyword.Bluemix_notm}} API キーは各ターゲット・サービスの API に渡されるため、各ターゲット・サービスが {{site.data.keyword.Bluemix_notm}} IAM を呼び出して {{site.data.keyword.Bluemix_notm}} API キー詳細を検索する必要があります。
 
-![API キーを使用したサービス API での認証](images/APIkeyauth.svg "ターゲット・サービスに API キーを渡し、ターゲット・サービスは資格情報を検証するために API キーを IAM に渡す")
+![API キーを使用したサービス API での認証](images/APIkeyauth.svg "API キーがターゲット・サービスへ引き渡され、ターゲット・サービスは資格情報を検証するために API キーを IAM を引き渡す")
 
 {{site.data.keyword.Bluemix_notm}} API キーの使用は便利であり、新しい API を見つけてプロトタイプを素早く試してみることが容易になります。 この方法では、{{site.data.keyword.Bluemix_notm}} API キーを読み取り可能な形式でターゲット・サービスの API に送信する必要があるため、API キーが不必要に漏えいされます。 さらに、ターゲット・サービスの API は必ず API キーをイントロスペクトする必要があるため、この方法は効率的ではなく、従って実動ワークロードには推奨されません。
 
@@ -69,7 +69,7 @@ API キーを使用してサービスの API で認証するには、以下の�
 
 IAM アクセス・トークンを取得するには、まず、API クライアントは {{site.data.keyword.Bluemix_notm}} IAM API を呼び出して、そのトークンを認証および取得する必要があります。 {{site.data.keyword.Bluemix_notm}} サービス API クライアント向けの推奨される方法は、IAM API キーを使用して IAM アクセス・トークンを取得することです。 IAM アクセス・トークンは、認証方式として IAM アクセス・トークンを受け入れる {{site.data.keyword.Bluemix_notm}} サービスの複数回の呼び出しのために使用できます。 IAM アクセス・トークンは非対称鍵でデジタル署名されるため、{{site.data.keyword.Bluemix_notm}} サービスは、外部サービスを何も呼び出さずに IAM アクセス・トークンを検証できます。 これにより、API 呼び出しのパフォーマンスが大幅に向上します。
 
-![サービス API でのアクセス・トークンを使用した認証](images/tokenauth.svg "API キーを使用して IAM からトークンを取得し、資格情報を検証するためにターゲット・サービスにアクセス・トークンを渡す")
+![アクセス・トークンを使用したサービス API での認証](images/tokenauth.svg "API キーを使用して IAM からトークンが取得され、資格情報を検証するためにアクセス・トークンがターゲット・サービスに引き渡される")
 
 アクセス・トークンを使用してサービスの API で認証するには、以下の手順を実行します。
 

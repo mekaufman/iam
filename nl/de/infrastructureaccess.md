@@ -26,14 +26,11 @@ Wenn Sie einen Benutzer zu Ihrem Konto einladen, können Sie zwischen drei Berec
 
 Wenn Sie jemanden zum Konto einladen, können nur Sie, der Kontoeigner, oder ein Benutzer mit der Berechtigung der klassischen Infrastruktur zum Verwalten von Benutzern die Berechtigungen für den Benutzer anpassen. Wenn Sie nicht der Kontoeigner sind, können Sie nur Berechtigungen der Berechtigungsebene, die Ihnen bereits zugewiesen sind, bzw. eine Untergruppe dieser Berechtigungen zuweisen. Ein Kontoeigner kann die Berechtigungen eines jeden Benutzers in dem Konto so aktualisieren, dass der Benutzer eine beliebige Zugriffsebene erhält.
 
-
-
 Zusätzliche Berechtigungen können festgelegt werden, nachdem der Benutzer die Einladung angenommen hat. Mit dem Ausgangsberechtigungsset, das der Einladung zugewiesen ist, wird beispielsweise kein Zugriff auf Geräte erteilt. Daher müssen Sie den Gerätezugriff erteilen, nachdem der Benutzer die Einladung akzeptiert hat. Weitere Informationen hierzu enthält der Abschnitt [Zugriff auf die klassische Infrastruktur verwalten](/docs/iam?topic=iam-mngclassicinfra#mngclassicinfra).
 
 In der folgenden Abbildung wird dargestellt, wie Berechtigungen für die klassische Infrastruktur pro Benutzer zugeordnet werden. Sie können jedem Benutzer Zugriff auf einen klassischen Infrastrukturservice oder auf ein Gerät gewähren, indem Sie aus den detaillierten Berechtigungsoptionen eine Auswahl treffen, um den Zugriff jedes Benutzers anzupassen.
 
 ![Zugriffsberechtigungen der klassischen Infrastruktur ](images/ClassicIaaS.svg "Zugriffsberechtigungen der klassischen Infrastruktur durch Auswahl eines Benutzers, Geräts oder Service und anschließende Auswahl einer beliebigen Kombination aus differenzierten Berechtigungen zuweisen")
-
 
 
 ## Migrierte Berechtigungen der klassischen Infrastruktur

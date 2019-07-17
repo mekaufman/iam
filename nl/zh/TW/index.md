@@ -28,7 +28,7 @@ subcollection: iam
 原則會指派主體（即使用者、[服務 ID](/docs/iam?topic=iam-serviceids#serviceids) 或存取群組），這是一個以上具有屬性組合的角色，這些屬性用於定義對目標的存取範圍。原則可提供對單一服務（直到實例層次）的存取權，對一組在資源群組中組織在一起之資源的存取權，或對帳戶管理服務的存取權。視您指派的 [IAM 角色](/docs/iam?topic=iam-userroles#iamusermanrol)而定，容許主體透過不同層次的存取權來完成帳戶管理作業、使用服務實例，或透過使用者介面或完成 API 呼叫來存取服務。
 
 
-![用於帳戶存取管理的 IAM](images/iam-diagram.svg "存取管理如何在帳戶中使用 IAM 運作")
+![用於帳戶存取管理的 IAM](images/iam-diagram.svg "使用 IAM 時的帳戶存取管理運作方式"){: caption="圖 1. 使用 IAM 時的帳戶存取管理運作方式" caption-side="bottom"}
 
 對於不支援建立 Cloud IAM 原則來管理存取權的服務，您可以使用 [Cloud Foundry 存取](/docs/iam?topic=iam-cfaccess#cfaccess)或[標準基礎架構許可權](/docs/iam?topic=iam-infrapermission#infrapermission)。
 

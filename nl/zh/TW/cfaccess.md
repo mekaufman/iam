@@ -27,10 +27,7 @@ subcollection: iam
 
 下圖概述 Cloud Foundry 組織、空間和角色在帳戶內的關係。帳戶可以有許多使用者、組織及空間。每個使用者可以視需要指派到許多組織及空間，而當他們被指派到組織及空間時，您可以藉由指派 Cloud Foundry 角色，設定要在每一者之內工作的存取層次。
 
-
-![使用帳戶中的 Cloud Foundry 組織及空間來進行存取](images/cf-diagram.svg "使用 Cloud Foundry 組織、空間及角色時的帳戶存取運作方式")
-
-
+![使用 Cloud Foundry 組織、空間及角色時的帳戶存取運作方式](images/cf-diagram.svg "使用 Cloud Foundry 組織、空間及角色時的帳戶存取運作方式"){: caption="圖 1. 使用 Cloud Foundry 組織、空間及角色時的帳戶存取運作方式" caption-side="bottom"}
 
 ## Cloud Foundry 角色
 {: #cfroles}
@@ -39,7 +36,7 @@ Cloud Foundry 角色會授與對帳戶內組織及空間的存取權。Cloud Fou
 
 Cloud Foundry 存取權的指派是藉由將使用者新增至組織及空間，然後指派組織角色和空間角色。視指派的角色類型而定，該名使用者可以針對新增至特定空間的服務實例完成特定的動作。
 
-![Cloud Foundry 存取權](images/CF.svg "指派使用者對 Cloud Foundry 組織及空間的存取權")
+![Cloud Foundry 存取權](images/CF.svg "指派使用者對 Cloud Foundry 組織及空間的存取權"){: caption="圖 2. 指派使用者對 Cloud Foundry 組織及空間的存取權" caption-side="bottom"}
 
 您可以在組織層次指派下列角色：
 

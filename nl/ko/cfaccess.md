@@ -27,10 +27,7 @@ subcollection: iam
 
 다음 그래픽에서는 계정에서 Cloud Foundry 조직, 영역 및 역할이 관련되는 방식을 대략적으로 설명합니다. 계정에는 사용자, 조직 및 영역이 여럿일 수 있습니다. 각 사용자는 필요한 수만큼 많은 조직과 영역에 지정될 수 있으며, 조직과 영역에 지정할 때 Cloud Foundry 역할을 지정하여 각각에서 작동할 액세스 레벨을 설정할 수 있습니다.
 
-
-![계정의 Cloud Foundry 조직 및 영역을 사용한 액세스](images/cf-diagram.svg "Cloud Foundry 조직, 영역 및 역할을 사용하여 계정의 액세스가 작동하는 방식")
-
-
+![계정의 Cloud Foundry 조직 및 영역을 사용한 액세스](images/cf-diagram.svg "Cloud Foundry 조직, 영역 및 역할을 사용하여 계정의 액세스가 작동하는 방식"){: caption="Figure 1. How access in an account works by using Cloud Foundry orgs, spaces, and roles" caption-side="bottom"}
 
 ## Cloud Foundry 역할
 {: #cfroles}
@@ -39,14 +36,14 @@ Cloud Foundry 역할은 계정 내의 조직과 영역에 대한 액세스를 �
 
 조직과 영역에 사용자를 추가한 다음 조직 역할과 영역 역할을 지정하여 Cloud Foundry 액세스 권한을 지정합니다. 지정된 역할 유형에 따라 해당 사용자는 특정 영역에 추가된 서비스 인스턴스의 특정 조치를 완료할 수 있습니다.
 
-![Cloud Foundry 액세스](images/CF.svg "Cloud Foundry 조직 및 영역에 사용자 액세스 권한 지정")
+![Cloud Foundry 액세스](images/CF.svg "Cloud Foundry 조직 및 영역에 사용자 액세스 권한 지정"){: caption="Figure 2. Assigning a user access to a Cloud Foundry org and space" caption-side="bottom"}
 
 조직 레벨에서 지정할 수 있는 역할은 다음과 같습니다.
 
 |조직 역할 |권한 |
 |-------------------|-------------|
 |관리자 |조직 관리자는 조직 내에서 영역을 작성하거나, 편집하거나, 삭제하거나 볼 수 있으며, 조직의 사용량 및 할당량을 보고, 사용자를 조직에 초대하고, 조직에 액세스할 수 있는 사용자 및 해당 사용자의 조직 내 역할을 관리하고 조직에 대한 사용자 정의 도메인을 관리할 수 있습니다. |
-|청구 관리자 |청구 관리자는 사용량 페이지에서 조직의 런타임 및 서비스 사용량 정보를 볼 수 있습니다.|
+|청구 관리자 |청구 관리자는 사용량 페이지에서 조직의 런타임 및 서비스 사용량 정보를 볼 수 있습니다.  |
 |감사자 |조직 감사자는 조직에 있는 애플리케이션 및 서비스 컨텐츠를 볼 수 있습니다. 또한 감사자는 조직의 사용자와 지정된 역할 및 조직에 대한 할당량을 볼 수 있습니다. |
 {:caption="표 1. 조직 역할 및 권한" caption-side="top"}
 

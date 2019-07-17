@@ -27,10 +27,7 @@ subcollection: iam
 
 下图概述了帐户中的 Cloud Foundry 组织、空间和角色是如何关联的。一个帐户可以具有多个用户、组织和空间。可以根据需要将每个用户分配给任意数量的组织和空间，将用户分配给组织和空间后，就可以通过分配 Cloud Foundry 角色来设置要在每个组织和空间中使用的访问级别。
 
-
 ![使用帐户中的 Cloud Foundry 组织和空间进行访问](images/cf-diagram.svg "如何使用 Cloud Foundry 组织、空间和角色使帐户中的访问权生效")
-
-
 
 ## Cloud Foundry 角色
 {: #cfroles}

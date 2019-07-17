@@ -27,10 +27,7 @@ Derzeit können nicht alle Services unter Verwendung von Cloud IAM verwaltet wer
 
 In der folgenden Grafik wird dargestellt, wie sich Cloud Foundry-Organisationen, -Bereiche und -Rollen in einem Konto befinden. Ein Konto kann viele Benutzer, Organisationen und Bereiche haben. Jedem Benutzer können beliebig viele Organisationen und Bereiche zugewiesen werden. Wenn sie einer Organisation und einem Bereich zugewiesen sind, können Sie die Zugriffsebene für die Arbeit festlegen, indem Sie eine Cloud Foundry-Rolle zuweisen.
 
-
 ![Zugriff mithilfe von Cloud Foundry-Organisationen und -Bereichen in einem Konto](images/cf-diagram.svg "Informationen zum Zugriff in einem Konto mithilfe von Cloud Foundry-Organisationen, -Bereichen und -Rollen")
-
-
 
 ## Cloud Foundry-Rollen
 {: #cfroles}

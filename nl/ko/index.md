@@ -28,7 +28,7 @@ subcollection: iam
 정책은 대상에 대한 액세스 범위를 정의하는 속성의 조합으로 하나 이상의 역할을 사용자 또는 [서비스 ID](/docs/iam?topic=iam-serviceids#serviceids) 또는 액세스 그룹에 해당하는 주체(Subject)에 지정합니다. 정책은 인스턴스 레벨까지 단일 서비스에 대한 액세스를 제공하거나, 리소스 그룹의 함께 구성된 리소스 세트 또는 계정 관리 서비스에 적용될 수 있습니다. 지정된 [IAM 역할](/docs/iam?topic=iam-userroles#iamusermanrol)에 따라, 주체(Subject)에는 API 호출을 완료하거나 UI를 사용하여 서비스에 액세스하거나 서비스 인스턴스에 대한 작업을 수행하거나 계정 관리 태스크를 완료하기 위한 다양한 레벨의 액세스가 허용됩니다.
 
 
-![계정의 액세스 제어를 위한 IAM](images/iam-diagram.svg "IAM을 사용하여 계정에서 액세스를 관리하는 방법")
+![계정의 액세스 제어를 위한 IAM](images/iam-diagram.svg "IAM을 사용하여 계정에서 액세스를 관리하는 방법"){: caption="Figure 1. How access management works in an account by using IAM" caption-side="bottom"}
 
 액세스 관리를 위한 Cloud IAM 정책 작성을 지원하지 않는 서비스의 경우 [Cloud Foundry 액세스](/docs/iam?topic=iam-cfaccess#cfaccess) 또는 [클래식 인프라 권한](/docs/iam?topic=iam-infrapermission#infrapermission)을 사용할 수 있습니다.
 

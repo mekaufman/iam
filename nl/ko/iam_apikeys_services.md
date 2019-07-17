@@ -42,7 +42,7 @@ API 클라이언트는 {{site.data.keyword.Bluemix_notm}} API 키를 직접 대�
 
 대상 서비스 API는 {{site.data.keyword.Bluemix_notm}} IAM 서비스를 사용하여 {{site.data.keyword.Bluemix_notm}} API 키를 조사해야 합니다. 다음 그래픽은 세 가지 API 상호작용을 보여줍니다. {{site.data.keyword.Bluemix_notm}} API 키는 모든 대상 서비스의 API로 전달되므로, 각 대상 서비스가 {{site.data.keyword.Bluemix_notm}} IAM을 호출하여 {{site.data.keyword.Bluemix_notm}} API 키 세부사항을 검색해야 합니다.
 
-![API 키를 사용하여 서비스 API에서 인증](images/APIkeyauth.svg "API 키를 IAM에 전달하여 인증 정보를 유효성 검증하는 대상 서비스에 API 키 전달")
+![API 키를 사용하여 서비스 API 인증](images/APIkeyauth.svg "API 키를 IAM으로 전달하는 대상 서비스로 API 키를 전달하여 인증 정보 유효성 검증"){: caption="Figure 1. Passing API keys to target services which then pass the API key to IAM to validate credentials" caption-side="bottom"}
 
 {{site.data.keyword.Bluemix_notm}} API 키 사용은 편리하며 이를 통해 새 API를 쉽게 검색하고 신속하게 프로토타입을 사용해 볼 수 있습니다. 이 방법에서는 {{site.data.keyword.Bluemix_notm}} API 키를 읽기 가능한 형식으로 대상 서비스의 API에 보내야 하며, 이는 불필요하게 API 키를 손상시킵니다. 또한 대상 서비스의 API는 항상 API 키를 조사해야 하기 때문에 이 방법은 성능을 저하시키므로 프로덕션 워크로드에 권장되지 않습니다.
 
@@ -69,7 +69,7 @@ API 키를 사용하여 서비스의 API에서 인증하려면 다음 단계를 
 
 IAM 액세스 토큰을 검색하려면 API 클라이언트가 먼저 {{site.data.keyword.Bluemix_notm}} IAM API를 호출하여 이 토큰을 인증하고 검색해야 합니다. {{site.data.keyword.Bluemix_notm}} 서비스 API 클라이언트에 대한 선호되는 방식은 IAM API 키를 사용하여 IAM 액세스 토큰을 가져오는 것입니다. IAM 액세스 토큰은 인증 방법으로 IAM 액세스 토큰을 허용하는 {{site.data.keyword.Bluemix_notm}} 서비스의 다중 호출에 사용할 수 있습니다. IAM 액세스 토큰이 비대칭 키를 사용하여 디지털로 서명되었으므로 {{site.data.keyword.Bluemix_notm}} 서비스는 외부 서비스를 호출하지 않고 IAM 액세스 토큰을 유효성 검증할 수 있습니다. 이는 API 호출 성능을 크게 향상시킵니다.
 
-![액세스 토큰을 사용하여 서비스 API에서 인증](images/tokenauth.svg "API 키를 사용하고 인증 정보를 유효성 검증하도록 대상 서비스에 액세스 토큰을 전달하여 IAM에서 토큰 검색")
+![액세스 토큰을 사용하여 서비스 API 인증](images/tokenauth.svg "API 키를 사용하여 IAM에서 토큰 검색 및 액세스 토큰을 대상 서비스로 전달하여 인증 정보 유효성 검증"){: caption="Figure 2. Retrieving a token from IAM by using an API key and passing the access token to target services to validate credentials" caption-side="bottom"}
 
 액세스 토큰을 사용하여 서비스 API에서 인증하려면 다음 단계를 완료하십시오.
 

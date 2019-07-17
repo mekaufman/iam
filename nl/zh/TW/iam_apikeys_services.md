@@ -42,7 +42,7 @@ API 用戶端可以將 {{site.data.keyword.Bluemix_notm}} API 金鑰直接傳遞
 
 目標服務 API 必須使用 {{site.data.keyword.Bluemix_notm}} IAM 服務來內部檢查 {{site.data.keyword.Bluemix_notm}} API 金鑰。下圖顯示三個 API 互動。{{site.data.keyword.Bluemix_notm}} API 金鑰會傳遞至每個目標服務的 API，因此每個目標服務都必須呼叫 {{site.data.keyword.Bluemix_notm}} IAM 來查閱 {{site.data.keyword.Bluemix_notm}} API 金鑰詳細資料。
 
-![使用 API 金鑰，以向服務 API 進行鑑別](images/APIkeyauth.svg "將 API 金鑰傳遞至目標服務，然後將 API 金鑰傳遞至 IAM 來驗證認證")
+![使用 API 金鑰向服務 API 進行鑑別](images/APIkeyauth.svg "傳遞 API 金鑰至目標服務，然後將 API 金鑰傳給 IAM 以驗證認證"){: caption="圖 1. 傳遞 API 金鑰至目標服務，然後將 API 金鑰傳給 IAM 以驗證認證" caption-side="bottom"}
 
 使用 {{site.data.keyword.Bluemix_notm}} API 金鑰很方便，可讓您輕鬆探索新的 API，並快速試用原型。此方法需要您以可讀取的格式將 {{site.data.keyword.Bluemix_notm}} API 金鑰傳送至目標服務的 API，這樣不一定會危及 API 金鑰。此外，因為目標服務的 API 必須一律內部檢查 API 金鑰，所以此方法的效能不佳，因此不建議用於正式作業工作負載。
 
@@ -69,7 +69,7 @@ API 用戶端可以將 {{site.data.keyword.Bluemix_notm}} API 金鑰直接傳遞
 
 若要擷取 IAM 存取記號，API 用戶端必須先呼叫 {{site.data.keyword.Bluemix_notm}} IAM API 來鑑別及擷取該記號。{{site.data.keyword.Bluemix_notm}} 服務 API 用戶端的偏好方式是使用 IAM API 金鑰來取得 IAM 存取記號。IAM 存取記號可以用於多次呼叫 {{site.data.keyword.Bluemix_notm}} 服務，而這些服務接受 IAM 存取記號作為鑑別方法。因為 IAM 存取記號是使用非對稱金鑰進行數位簽署，所以 {{site.data.keyword.Bluemix_notm}} 服務可以驗證 IAM 存取記號，而不需要呼叫任何外部服務。這會大幅改善呼叫 API 的效能。
 
-![使用存取記號，以向服務 API 進行鑑別](images/tokenauth.svg "使用 API 金鑰從 IAM 擷取記號，以及將存取記號傳遞至目標服務來驗證認證")
+![使用存取記號向服務 API 進行鑑別](images/tokenauth.svg "使用 API 金鑰從 IAM 擷取記號，然後將存取記號傳給目標服務，以驗證認證"){: caption="圖 2. 使用 API 金鑰從 IAM 擷取記號，然後將存取記號傳給目標服務，以驗證認證" caption-side="bottom"}
 
 若要使用存取記號向服務的 API 進行鑑別，請完成下列步驟：
 

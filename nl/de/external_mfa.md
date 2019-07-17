@@ -21,7 +21,7 @@ subcollection: iam
 # Externe Authentifizierung mit Mehrfaktorauthentifizierung (MFA) für einen Benutzer bestellen
 {: #external}
 
-Als Administrator mit dem entsprechenden Zugriff können Sie die externe Authentifizierung bestellen und die Option der Mehrfaktorauthentifizierung (MFA) für die Anmeldung eines Benutzers aktivieren. Für die Optionen der externen Authentifizierung wird Ihnen eine monatliche Gebühr berechnet. Dieser Typ von Mehrfaktorauthentifizierung (MFA) ist im Gegensatz zur ID-basierten Mehrfaktorauthentifizierung nur für ein Konto erforderlich, für das die Einstellung aktiviert ist. Weitere Informationen finden Sie in [Arten der Mehrfaktorauthentifizierung](/docs/iam?topic=iam-types#types).
+Als Administrator mit den entsprechenden Zugriffsberechtigungen können Sie die externe Authentifizierung bestellen und die Option der Mehrfaktorauthentifizierung (MFA) für die Anmeldung eines Benutzers aktivieren. Für die Optionen der externen Authentifizierung wird Ihnen eine monatliche Gebühr berechnet. Dieser Typ von Mehrfaktorauthentifizierung (MFA) ist im Gegensatz zur ID-basierten Mehrfaktorauthentifizierung nur für ein Konto erforderlich, für das die Einstellung aktiviert ist. Weitere Informationen finden Sie in [Arten der Mehrfaktorauthentifizierung](/docs/iam?topic=iam-types#types).
 {:shortdesc}
 
 ## Externe Authentifizierung bestellen

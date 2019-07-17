@@ -42,7 +42,7 @@ API-Clients können einen {{site.data.keyword.Bluemix_notm}}-API-Schlüssel dire
 
 Die Zielservice-API muss den {{site.data.keyword.Bluemix_notm}}-API-Schlüssel unter Verwendung des {{site.data.keyword.Bluemix_notm}} IAM-Service selbst überwachen. In der folgenden Abbildung sind drei API-Interaktionen dargestellt. Der {{site.data.keyword.Bluemix_notm}}-API-Schlüssel wird an die API eines jeden Zielservice übergeben, so dass jeder Zielservice die Details des {{site.data.keyword.Bluemix_notm}}-API-Schlüssels durch Aufrufen von {{site.data.keyword.Bluemix_notm}} IAM suchen muss.
 
-![Authentifizierung bei einer Service-API anhand eines API-Schlüssels](images/APIkeyauth.svg "Übergeben von API-Schlüsseln an Zielservices, die ihrerseits den API-Schlüssel zum Prüfen der Berechtigungsnachweise an IAM übergeben")
+![Authentifizierung bei einer Service-API mithilfe eines API-Schlüssels](images/APIkeyauth.svg "API-Schlüssel an Zielservices übergeben, die den API-Schlüssel dann zur Validierung der Berechtigungsnachweise an IAM weiterleiten.")
 
 Die Verwendung eines {{site.data.keyword.Bluemix_notm}}-API-Schlüssels ist bequem und durch sie ist es einfach, neue APIs zu erkennen und Prototypen auszuprobieren. Bei diesem Verfahren ist es erforderlich, den {{site.data.keyword.Bluemix_notm}}-API-Schlüssel in lesbarem Format an die Zielservice-API zu schicken, was den API-Schlüssel unnötig beeinträchtigt. Da die API des Zielservice den API-Schlüssel stets selbst überwachen muss, ist dieses Verfahren außerdem weniger leistungsfähig und wird daher nicht für Arbeitslasten im Produktionsbetrieb empfohlen.
 
@@ -69,7 +69,7 @@ In dem Beispiel in den folgenden Schritten wird davon ausgegangen, dass der API-
 
 Zum Abrufen eines IAM-Zugriffstokens muss der API-Client zuerst eine {{site.data.keyword.Bluemix_notm}} IAM-API aufrufen, um dieses Token zu authentifizieren und abzurufen. Das bevorzugte Verfahren für API-Clients des {{site.data.keyword.Bluemix_notm}}-Service besteht darin, ein IAM-Zugriffstoken mithilfe eines IAM-API-Schlüssels abzurufen. Das IAM-Zugriffstoken kann für mehrere Aufrufe von {{site.data.keyword.Bluemix_notm}}-Services verwendet werden, die IAM-Zugriffstoken als Authentifizierungsmethode akzeptieren. Da IAM-Zugriffstoken mit asymmetrischen Schlüsseln digital signiert sind, können {{site.data.keyword.Bluemix_notm}}-Services ein IAM-Zugriffstoken überprüfen, ohne dazu einen externen Service aufrufen zu müssen. Dadurch wird die Leistung beim Aufrufen einer API erheblich verbessert.
 
-![Authentifizierung bei einer Service-API anhand eines Zugriffstokens](images/tokenauth.svg "Abrufen eines Tokens von IAM anhand eines API-Schlüssels und Übergeben des Tokens an Zielservices zwecks Überprüfung der Berechtigungsnachweise")
+![Authentifizierung bei einer Service-API mithilfe eines Zugriffstokens](images/tokenauth.svg "Token mithilfe eines API-Schlüssels von IAM abrufen und das Zugriffstoken zur Validierung der Berechtigungsnachweise an Zielservices übergeben.")
 
 Führen Sie die folgenden Schritte aus, um die Authentifizierung bei der API eines Service anhand eines Zugriffstokens durchzuführen:
 
