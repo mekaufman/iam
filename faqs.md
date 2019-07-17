@@ -165,14 +165,13 @@ To delegate the account administrator capabilities, assign the following access:
 * The Super user permission set for classic infrastructure
 * Cloud Foundry manager for all orgs
 
-## How do I assign access to infrastructure and devices?
+## Where do I manage a user's access to infrastructure? 
 {: #infrastructure-devices}
 {: faq}
 
-1. Go to **Manage** &gt; **Access (IAM)**, and select **Users**.
-2. Select a user's name.
-3. Click **Classic infrastructure**.
-4. Assign permissions from the **Permissions** section, assign access to devices from the **Devices** section, and assign access to VPN subnets for the devices that the user is assigned access from the **VPN access** section.
+Access for classic infrastructure starts with the user. For more information, see [Managing classic infrastructure access](/docs/iam?topic=iam-mngclassicinfra).
+
+If you need to assign access to IAM-enabled infrastructure services, such as {{site.data.keyword.vpc_full}}, you assign access to a user or access group from the **Access policies** tab.
 
 ## How do I manage access for users previously assigned billing and support permissions in my SoftLayer account?
 {: #migrated-permissions-faq}
