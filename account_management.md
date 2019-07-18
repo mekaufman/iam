@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-07-01"
+lastupdated: "2019-07-18"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service
 
@@ -44,7 +44,7 @@ To grant another user full access to the account for the purposes of managing us
 
 The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users. 
 
-### IAM access groups service
+### Access groups
 {: #access-groups-account-management}
 
 You can give users access to view, create, edit, and delete access groups in the account by using the access groups account management service. 
@@ -96,10 +96,10 @@ You can give users access to update account settings, view subscriptions, view o
 
 | Roles | Actions |
 |:-------|----------|
-| Viewer | View account feature settings <br><br> View subscriptions in account <br><br> View account name <br><br> View resource groups   |
-| Operator | View account feature settings <br><br> View subscriptions in account <br><br> View and change account name <br><br> View and update resource groups    |
-| Editor |  View and update account feature settings <br><br> View subscriptions in account <br><br> View offers in account <br><br> View and apply feature codes <br><br> View and change account name <br><br> View and update spending limits <br><br> View, create, and update resource groups    |
-| Administrator |  View and update account feature settings <br><br> View subscriptions in account <br><br> View offers in account <br><br> View and apply feature codes <br><br> View and change account name <br><br> View and update spending limits <br><br> View subscription balances and track usage <br><br> View, create, update, and assign access to manage resource groups  |
+| Viewer | View account feature settings <br><br> View subscriptions in account <br><br> View account name |
+| Operator | View account feature settings <br><br> View subscriptions in account <br><br> View and change account name    |
+| Editor |  View and update account feature settings <br><br> View subscriptions in account <br><br> View offers in account <br><br> View and apply feature codes <br><br> View and change account name <br><br> View and update spending limits  |
+| Administrator |  View and update account feature settings <br><br> View subscriptions in account <br><br> View offers in account <br><br> View and apply feature codes <br><br> View and change account name <br><br> View and update spending limits <br><br> View subscription balances and track usage <br><br> Create an enterprise  |
 {: caption="Table 4. Roles and example actions for the Billing service" caption-side="top"}
 
 ### IAM identity service
@@ -129,6 +129,7 @@ You can give users access to view private services in the catalog or change the 
 | Editor |   Change object metadata but can't change visibility for private services     |
 | Administrator |  Change object metadata or visibility for private services, and restrict visibility of a public service   |
 {: caption="Table 6. Roles and example actions for the Global Catalog service" caption-side="top"}
+
 
 
 ### All account management services option
