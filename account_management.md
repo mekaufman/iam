@@ -92,14 +92,14 @@ It is common to assign users the viewer role on the user management service in a
 ### Billing
 {: #billing-acct-mgmt}
 
-You can give users access to update account settings, view subscriptions, view offers, apply feature codes, update spending limits, and track usage by using the billing service.
+You can give users access to update account settings, view subscriptions, view offers, apply subscription and feature codes, update spending limits, and track usage by using the billing service.
 
 | Roles | Actions |
 |:-------|----------|
 | Viewer | View account feature settings <br><br> View subscriptions in account <br><br> View account name |
 | Operator | View account feature settings <br><br> View subscriptions in account <br><br> View and change account name    |
-| Editor |  View and update account feature settings <br><br> View subscriptions in account <br><br> View offers in account <br><br> View and apply feature codes <br><br> View and change account name <br><br> View and update spending limits  |
-| Administrator |  View and update account feature settings <br><br> View subscriptions in account <br><br> View offers in account <br><br> View and apply feature codes <br><br> View and change account name <br><br> View and update spending limits <br><br> View subscription balances and track usage <br><br> Create an enterprise  |
+| Editor |  View and update account feature settings <br><br> View subscriptions in account <br><br> View offers in account <br><br> View and apply subscription and feature codes <br><br> View and change account name <br><br> View and update spending limits  |
+| Administrator |  View and update account feature settings <br><br> View subscriptions in account <br><br> View offers in account <br><br> View and apply subscription and feature codes <br><br> View and change account name <br><br> View and update spending limits <br><br> View subscription balances and track usage <br><br> Create an enterprise  |
 {: caption="Table 4. Roles and example actions for the Billing service" caption-side="top"}
 
 ### IAM identity service
