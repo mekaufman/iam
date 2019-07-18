@@ -26,7 +26,7 @@ subcollection: iam
 You can update permissions for classic infrastructure services or add device and VPN subnet access for a user at any time. To access the classic infrastructure permissions, go to **Manage** &gt; **Access (IAM)**, select **Users**. Then, select the user's name that you want to update access for, and click **Classic infrastructure**.
 {:shortdesc}
 
-You must be assigned the Manage users classic infrastructure permission and an ancestor of the user within the classic infrastructure user hierarchy. Account owners have full access to the account, so they do not see the permissions on the page. Individual users can't edit their own permissions, and they also don't see permissions on the page.
+You must be assigned the Manage users classic infrastructure permission and be an ancestor of the user within the classic infrastructure user hierarchy. Account owners have full access to the account, so they do not see the permissions on the page. Individual users can't edit their own permissions, and they also don't see permissions on the page.
 {: note}
 
   1. Select **Permissions** to update the user's permissions. You can select from four types of permissions: account, devices, network, and services. Individually select permissions from each category, or use a permission set option to assign permissions in bulk.
