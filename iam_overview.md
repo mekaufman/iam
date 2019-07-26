@@ -31,7 +31,7 @@ The identity concept in {{site.data.keyword.Bluemix_notm}} IAM consists of user 
 
 To authenticate with an API or CLI as a user or service ID, {{site.data.keyword.cloud_notm}} API keys can be used. These API keys are provided through Cloud IAM and therefore cannot be used generally to authenticate with IBMid outside of IBM Cloud. A user can also have a single classic infrastructure API key that can be used to access classic infrastructure APIs; however, this is not required as you can use {{site.data.keyword.cloud_notm}} API keys to access the same APIs.
 
-The final piece of the identity concept in IAM is {{site.data.keyword.Bluemix_notm}} resources, which are identified by their cloud resource names (CRN). For more information, see [Cloud Resource Names](/docs/overview?topic=overview-crn#crn)
+The final piece of the identity concept in IAM is {{site.data.keyword.Bluemix_notm}} resources, which are identified by their cloud resource names (CRN). For more information, see [Cloud Resource Names](/docs/overview?topic=overview-crn#crn).
 
 ## Access management
 {: #am}
