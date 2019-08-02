@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-05-23"
+lastupdated: "2019-08-02"
 
 keywords: frequently asked question, faq
 
@@ -73,6 +73,12 @@ Go to **Manage** &gt; **Access (IAM)**, and select your name on the Users page. 
 {: faq}
 
 The account owner can update your access to any resource in the account, or you can contact any user who is assigned the administrator role on the service or service instance.
+
+## How do I find the IAM ID for a user or myself?
+{: #iam-id}
+{: faq}
+
+Go to **Manage** > **Access (IAM)**, and select **Users**. Then, select your name or another user's name from the list. You can find the IAM ID for that user along with their email address on the User details page.
 
 ## Why should I use resource groups and access groups?
 {: #resource-groups}
