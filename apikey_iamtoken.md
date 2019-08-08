@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-08-08"
 
-keywords: IAM token, token, API key, generate token
+keywords: IAM token, token, API key, generate token, access token
 
 subcollection: iam
 
@@ -17,17 +17,18 @@ subcollection: iam
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
 
-# Getting an {{site.data.keyword.Bluemix_notm}} IAM token by using an API key
+# Generating an {{site.data.keyword.Bluemix_notm}} IAM token by using an API key
 {: #iamtoken_from_apikey}
 
-{{site.data.keyword.Bluemix}} APIs can be accessed only by users that are authorized by an assigned IAM role. Each user that is calling the API must pass credentials for the API to authenticate. 
+Generate an {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) token by using either your IAM API key or a service ID's API key. {{site.data.keyword.Bluemix_notm}} APIs can be accessed only by users who are authorized by an assigned IAM role. Each user who is calling the API must pass credentials for the API to authenticate.
 {:shortdesc}
 
 You can generate an IAM token by using either your [{{site.data.keyword.Bluemix_notm}} API key](/docs/iam?topic=iam-userapikey#userapikey) or a [service ID's API key](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys). This process is also used if you are developing an application that needs to work with other {{site.data.keyword.Bluemix_notm}} services. You must use a service ID API key to get an access token to be passed to each of the {{site.data.keyword.Bluemix_notm}} services.
 
 
-1. Use the following `curl` command to generate an IAM token by using an API key.
+Use the following `curl` command to generate an IAM token by using an API key.
 
 ### POST /identity/token
 {: #post_id_token}
@@ -70,3 +71,6 @@ The following sample is the expected response:
 }
 ```
 {: codeblock}
+
+An IAM token is valid for 60 minutes, and it is subject to change. When a token expires, you must generate a new one.
+{: note}
