@@ -54,7 +54,7 @@ Para el acceso para ver casos, cree dos políticas independientes con el rol de 
 
 Para volver a crear los permisos migrados que están disponibles en cada grupo de acceso, puede asignar políticas a usuarios individuales o crear nuevos grupos de acceso en la cuenta. La ventaja de crear un nuevo grupo de acceso es que puede optar por combinar un conjunto de permisos para un grupo de acceso en lugar de gestionar un conjunto de grupos de acceso con el ámbito granular del acceso establecido para cada uno de ellos. Para este ejemplo, los pasos describen cómo crear un nuevo grupo de acceso y asignar una política de acceso equivalente para ver el resumen de cuenta y todos los casos de soporte.
 
-Es posible que al volver a crear estos permisos mediante la asignación de nuevas políticas de acceso de IAM para los servicios de gestión de cuentas se incluyan permisos adicionales al permiso individual que está disponible en el grupo de acceso de permisos migrados. Por ejemplo, si asigna a un usuario el rol de visor sobre el servicio Facturación, dicho usuario podrá hacer más que simplemente ver el resumen de cuenta. Para obtener una lista completa de las acciones permitidas para cada rol, consulte
+Es posible que al volver a crear estos permisos mediante la asignación de nuevas políticas de acceso de IAM para los servicios de gestión de cuentas se incluyan permisos adicionales al permiso individual que está disponible en el grupo de acceso de permisos migrados. Por ejemplo, si asigna a un usuario el rol de visor sobre el servicio de Facturación, dicho usuario podrá hacer más que simplemente ver el resumen de cuenta. Para obtener una lista completa de las acciones permitidas para cada rol, consulte
 [Asignación de acceso a servicios de gestión de usuarios](/docs/iam?topic=iam-account-services#account-services).
 {: important}
 
@@ -87,7 +87,7 @@ Tras configurar el grupo con usuarios e ID de servicio, asigne el acceso al grup
 
 Ahora hay tres políticas asignadas al grupo:
 
-* Una política para ver el resumen de la cuenta y todas las demás acciones asociadas al rol de visor en el servicio Facturación.
+* Una política para ver el resumen de la cuenta y todas las demás acciones asociadas al rol de visor en el servicio de Facturación.
 * Una política para ver y buscar casos de soporte en la cuenta.
 * Una política para ver todos los usuarios de la cuenta y todas las demás acciones asociadas al rol de visor en el servicio Gestión de usuarios.
 

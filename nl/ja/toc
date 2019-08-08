@@ -19,6 +19,7 @@ ID およびアクセス権限の管理
         infrastructureaccess.md
 
     bp_access.md
+    enterprise-access.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -39,7 +40,7 @@ ID およびアクセス権限の管理
         user_login.md
 
     {: .topicgroup}
-    アクセス管理
+    アクセス権限の管理
         mngiam.md
         account_management.md
         mngcf.md
@@ -49,6 +50,7 @@ ID およびアクセス権限の管理
         public_access.md
         accessgroup_rules.md
         userlist.md
+        assign-enterprise-access.md
 
     {: .topicgroup}
     多要素認証
@@ -72,7 +74,7 @@ ID およびアクセス権限の管理
         classic_infra_keys.md
         apikey_iamtoken.md
         iam_apikeys_services.md
-        
+
     saml-federation.md
     {: .navgroup-end}
 
@@ -81,9 +83,9 @@ ID およびアクセス権限の管理
     monitoring.md
     userstatus.md
     [コマンド解説書](/cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam)
-    
+
     {: .topicgroup}
-    API リファレンス  
+    API リファレンス
         [IAM Identity サービス API](https://{DomainName}/apidocs/iam-identity-token-api){: new_window}
         [IAM アクセス・グループ API](https://{DomainName}/apidocs/iam-access-groups){: new_window}
         [IAM ポリシー管理 API](https://{DomainName}/apidocs/iam-policy-management){: new_window}

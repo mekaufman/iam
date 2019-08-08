@@ -19,6 +19,7 @@ Identität und Zugriff verwalten
         infrastructureaccess.md
 
     bp_access.md
+    enterprise-access.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -49,6 +50,7 @@ Identität und Zugriff verwalten
         public_access.md
         accessgroup_rules.md
         userlist.md
+        assign-enterprise-access.md
 
     {: .topicgroup}
     Mehrfaktorauthentifizierung
@@ -72,7 +74,7 @@ Identität und Zugriff verwalten
         classic_infra_keys.md
         apikey_iamtoken.md
         iam_apikeys_services.md
-        
+
     saml-federation.md
     {: .navgroup-end}
 
@@ -81,9 +83,9 @@ Identität und Zugriff verwalten
     monitoring.md
     userstatus.md
     [Befehlsreferenz](/cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam)
-    
+
     {: .topicgroup}
-    API-Referenz  
+    API-Referenz
         [IAM-Identitätsservice-API](https://{DomainName}/apidocs/iam-identity-token-api){: new_window}
         [IAM-Zugriffsgruppen-API](https://{DomainName}/apidocs/iam-access-groups){: new_window}
         [IAM-Richtlinienverwaltungs-API](https://{DomainName}/apidocs/iam-policy-management){: new_window}

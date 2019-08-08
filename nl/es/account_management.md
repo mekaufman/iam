@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-07-01"
+lastupdated: "2019-07-24"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service
 
@@ -43,12 +43,12 @@ Para otorgar acceso completo a la cuenta a otro usuario con el fin de gestionar 
 ## Acciones y roles para los servicios de gestión de cuentas
 {: #account-management-actions-roles}
 
-En las tablas siguientes se indican las acciones que pueden realizar los usuarios cuando se les asigna un rol determinado para cada servicio de gestión de cuentas. Consulte la información para asegurarse de asignar el nivel de acceso correcto a los usuarios. 
+En las tablas siguientes se indican las acciones que pueden realizar los usuarios cuando se les asigna un rol determinado para cada servicio de gestión de cuentas. Consulte la información para asegurarse de asignar el nivel de acceso correcto a los usuarios.
 
-### Servicio de grupos de acceso de IAM
+### Grupos de acceso
 {: #access-groups-account-management}
 
-Puede otorgar a los usuarios acceso para ver, crear, editar y suprimir grupos de acceso en la cuenta mediante el servicio de gestión de cuentas de grupos de acceso. 
+Puede otorgar a los usuarios acceso para ver, crear, editar y suprimir grupos de acceso en la cuenta mediante el servicio de gestión de cuentas de grupos de acceso.
 
 | Roles | Acciones |
 |:-------|----------|
@@ -61,7 +61,7 @@ Puede otorgar a los usuarios acceso para ver, crear, editar y suprimir grupos de
 ### Gestión de usuarios
 {: #user-management-account-management}
 
-Puede otorgar a los usuarios acceso para ver los usuarios de una cuenta, invitar y eliminar usuarios, y ver y actualizar valores de perfil de usuario con el servicio de gestión de cuentas de gestión de usuarios. 
+Puede otorgar a los usuarios acceso para ver los usuarios de una cuenta, invitar y eliminar usuarios, y ver y actualizar valores de perfil de usuario con el servicio de gestión de cuentas de gestión de usuarios.
 
 | Roles | Acciones |
 |:-------|----------|
@@ -93,14 +93,14 @@ Resulta habitual asignar a los usuarios el rol de visor en el servicio de gesti�
 ### Facturación
 {: #billing-acct-mgmt}
 
-Puede otorgar a los usuarios acceso para actualizar los valores de cuenta, ver suscripciones, ver ofertas, aplicar códigos de característica, actualizar los límites de gastos y realizar un seguimiento de la utilización mediante el servicio de facturación.
+Puede otorgar a los usuarios acceso para actualizar los valores de cuenta, ver suscripciones, ver ofertas, aplicar códigos de características y suscripciones, actualizar los límites de gastos y realizar un seguimiento de la utilización mediante el servicio de facturación.
 
 | Roles | Acciones |
 |:-------|----------|
-| Visor | Ver valores de características de la cuenta <br><br> Ver suscripciones en la cuenta <br><br> Ver nombre de la cuenta <br><br> Ver grupos de recursos   |
-| Operador | Ver valores de características de la cuenta <br><br> Ver suscripciones en la cuenta <br><br> Ver y cambiar nombre de la cuenta <br><br> Ver y actualizar grupos de recursos    |
-| Editor |  Ver y actualizar los valores de características de la cuenta <br><br> Ver suscripciones en la cuenta <br><br> Ver ofertas en la cuenta <br><br> Ver y aplicar códigos de característica <br><br> Ver y cambiar nombre de la cuenta <br><br> Ver y actualizar límites de gasto <br><br> Ver, crear y actualizar grupos de recursos    |
-| Administrador |  Ver y actualizar los valores de características de la cuenta <br><br> Ver suscripciones en la cuenta <br><br> Ver ofertas en la cuenta <br><br> Ver y aplicar códigos de característica <br><br> Ver y cambiar nombre de la cuenta <br><br> Ver y actualizar límites de gasto <br><br> Ver balances de suscripción y realizar un seguimiento del uso <br><br> Ver, crear, actualizar y asignar acceso para gestionar grupos de recursos  |
+| Visor | Ver valores de características de la cuenta <br><br> Ver suscripciones en la cuenta <br><br> Ver nombre de la cuenta |
+| Operador | Ver valores de características de la cuenta <br><br> Ver suscripciones en la cuenta <br><br> Ver y cambiar nombre de la cuenta    |
+| Editor |  Ver y actualizar los valores de características de la cuenta <br><br> Ver suscripciones en la cuenta <br><br> Ver ofertas en la cuenta <br><br> Ver y aplicar códigos de características y suscripciones <br><br> Ver y cambiar nombre de la cuenta <br><br> Ver y actualizar límites de gasto  |
+| Administrador |  Ver y actualizar los valores de características de la cuenta <br><br> Ver suscripciones en la cuenta <br><br> Ver ofertas en la cuenta <br><br> Ver y aplicar códigos de características y suscripciones <br><br> Ver y cambiar nombre de la cuenta <br><br> Ver y actualizar límites de gasto <br><br> Ver balances de suscripción y realizar un seguimiento del uso <br><br> Crear una empresa  |
 {: caption="Tabla 4. Roles y acciones de ejemplo para el servicio de facturación" caption-side="top"}
 
 ### Servicio de identidad IAM
@@ -132,6 +132,21 @@ Puede otorgar a los usuarios acceso para ver los servicios privados en el catál
 {: caption="Tabla 6. Roles y acciones de ejemplo para el servicio de catálogo global" caption-side="top"}
 
 
+### Empresa
+{: #enterprise-account-management}
+
+El servicio de empresa se utiliza para asignar acceso a los usuarios para gestionar una empresa creando cuentas dentro de la empresa, asignando cuentas a grupos de cuentas, dando nombre a grupos de cuenta y más. Este tipo de política sólo funciona si está asignada dentro de la cuenta de empresa. 
+
+| Roles | Acciones |
+|:-------|----------|
+| Visor |  Ver la empresa, los grupos de cuentas y las cuentas    |
+| Operador |  Ver la empresa, los grupos de cuentas y las cuentas    |
+| Editor |  Ver y actualizar la empresa, incluyendo el nombre y el dominio, crear cuentas y grupos de cuentas, ver informes de uso e importar cuentas. |
+| Administrador |  Ver y actualizar la empresa, incluyendo el nombre y el dominio, crear cuentas y grupos de cuentas, mover cuentas de un grupo de cuentas a otro, importar cuentas existentes y ver informes de uso  |
+| Visor de informes de uso | Ver la empresa, las cuentas y grupos de cuentas y ver los informes de uso de todas las cuentas de la empresa. |
+{: caption="Tabla 7. Roles y acciones de ejemplo para el servicio de empresa" caption-side="top"}
+
+
 ### Opción Todos los servicios de gestión de cuentas
 {: #all-account-management}
 
@@ -144,6 +159,4 @@ Para otorgar rápidamente a los usuarios un amplio conjunto de acceso de gestió
 | Operador |  Todas las acciones del rol de operador para los servicios de gestión de cuentas     |
 | Editor |  Todas las acciones del rol de editor para los servicios de gestión de cuentas y capacidad para crear grupos de recursos    |
 | Administrador |  Todas las acciones del rol de administrador los servicios de gestión de cuentas y capacidad para crear grupos de recursos   |
-{: caption="Tabla 7. Roles y acciones de ejemplo para una política sobre todos los servicios de acceso e identidad" caption-side="top"}
-
-
+{: caption="Tabla 8. Roles y acciones de ejemplo para una política en todos los servicios de identidad y acceso" caption-side="top"}
