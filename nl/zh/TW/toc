@@ -19,6 +19,7 @@
         infrastructureaccess.md
 
     bp_access.md
+    enterprise-access.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -49,6 +50,7 @@
         public_access.md
         accessgroup_rules.md
         userlist.md
+        assign-enterprise-access.md
 
     {: .topicgroup}
     多因子鑑別
@@ -72,7 +74,7 @@
         classic_infra_keys.md
         apikey_iamtoken.md
         iam_apikeys_services.md
-        
+
     saml-federation.md
     {: .navgroup-end}
 
@@ -81,13 +83,13 @@
     monitoring.md
     userstatus.md
     [指令參考資料](/cli/reference/ibmcloud/cloud-cli-ibmcloud_commands_iam)
-    
+
     {: .topicgroup}
-    API 參考資料  
+    API 參考資料
         [IAM Identity Services API](https://{DomainName}/apidocs/iam-identity-token-api){: new_window}
         [IAM Access Groups API](https://{DomainName}/apidocs/iam-access-groups){: new_window}
         [IAM Policy Management API](https://{DomainName}/apidocs/iam-policy-management){: new_window}
-        [使用者管理](https://{DomainName}/apidocs/user-management#invite-users){: new_window}
+        [User Management](https://{DomainName}/apidocs/user-management#invite-users){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}

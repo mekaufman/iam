@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-07-01"
+lastupdated: "2019-07-24"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service
 
@@ -42,12 +42,12 @@ Per concedere a un altro utente l'accesso completo all'account ai fini della ges
 ## Azioni e ruoli per i servizi di gestione dell'account
 {: #account-management-actions-roles}
 
-Le seguenti tabelle descrivono le azioni che gli utenti possono eseguire quando viene loro assegnato uno specifico ruolo per ogni servizio di gestione dell'account. Riesamina le informazioni per assicurarti che stai assegnando il livello di accesso corretto ai tuoi utenti. 
+Le seguenti tabelle descrivono le azioni che gli utenti possono eseguire quando viene loro assegnato uno specifico ruolo per ogni servizio di gestione dell'account. Riesamina le informazioni per assicurarti che stai assegnando il livello di accesso corretto ai tuoi utenti.
 
-### Servizio dei gruppi di accesso IAM
+### Gruppi di accesso
 {: #access-groups-account-management}
 
-Puoi dare agli utenti l'accesso per visualizzare, creare, modificare ed eliminare gruppi di accesso nell'account utilizzando il servizio di gestione degli account di gruppi di accesso. 
+Puoi dare agli utenti l'accesso per visualizzare, creare, modificare ed eliminare gruppi di accesso nell'account utilizzando il servizio di gestione degli account di gruppi di accesso.
 
 | Ruoli | Azioni |
 |:-------|----------|
@@ -60,7 +60,7 @@ Puoi dare agli utenti l'accesso per visualizzare, creare, modificare ed eliminar
 ### Gestione utenti
 {: #user-management-account-management}
 
-Puoi dare agli utenti l'accesso per visualizzare utenti in un account, invitare e rimuovere utenti e visualizzare e aggiornare le impostazioni di profilo utente con il servizio di gestione degli account di gestione utente. 
+Puoi dare agli utenti l'accesso per visualizzare utenti in un account, invitare e rimuovere utenti e visualizzare e aggiornare le impostazioni di profilo utente con il servizio di gestione degli account di gestione utente.
 
 | Ruoli | Azioni |
 |:-------|----------|
@@ -92,14 +92,14 @@ Puoi dare agli utenti l'accesso per gestire i casi di supporto utilizzando il se
 ### Fatturazione
 {: #billing-acct-mgmt}
 
-Puoi dare agli utenti l'accesso per aggiornare le impostazioni dell'account, visualizzare le sottoscrizioni, visualizzare le offerte, applicare codici funzione, aggiornare i limiti di spesa e tracciare l'utilizzo servendosi del servizio di fatturazione.
+Puoi dare agli utenti l'accesso per aggiornare le impostazioni dell'account, visualizzare le sottoscrizioni, visualizzare le offerte, applicare codici sottoscrizione e funzione, aggiornare i limiti di spesa e tracciare l'utilizzo servendosi del servizio di fatturazione.
 
 | Ruoli | Azioni |
 |:-------|----------|
-| Visualizzatore | Visualizza le impostazioni della funzione dell'account <br><br> Visualizza le sottoscrizioni nell'account <br><br> Visualizza il nome dell'account <br><br> Visualizza i gruppi di risorse   |
-| Operatore | Visualizza le impostazioni della funzione dell'account <br><br> Visualizza le sottoscrizioni nell'account <br><br> Visualizza e modifica il nome dell'account <br><br> Visualizza e aggiorna i gruppi di risorse    |
-| Editor |  Visualizza e aggiorna le impostazioni della funzione dell'account <br><br> Visualizza le sottoscrizioni nell'account <br><br> Visualizza le offerte nell'account <br><br> Visualizza e applica i codici funzione <br><br> Visualizza e modifica il nome dell'account <br><br> Visualizza e aggiorna i limiti di spesa <br><br> Visualizza, crea e aggiorna i gruppi di risorse    |
-| Amministratore |  Visualizza e aggiorna le impostazioni della funzione dell'account <br><br> Visualizza le sottoscrizioni nell'account <br><br> Visualizza le offerte nell'account <br><br> Visualizza e applica i codici funzione <br><br> Visualizza e modifica il nome dell'account <br><br> Visualizza e aggiorna i limiti di spesa <br><br> Visualizza i bilanci della sottoscrizione e traccia l'utilizzo <br><br> Visualizza, crea, aggiorna e assegna l'accesso per gestire i gruppi di risorse  |
+| Visualizzatore | Visualizza le impostazioni della funzione dell'account <br><br> Visualizza le sottoscrizioni nell'account <br><br> Visualizza il nome dell'account |
+| Operatore | Visualizza le impostazioni della funzione dell'account <br><br> Visualizza le sottoscrizioni nell'account <br><br> Visualizza e modifica il nome dell'account    |
+| Editor |  Visualizza e aggiorna le impostazioni della funzione dell'account <br><br> Visualizza le sottoscrizioni nell'account <br><br> Visualizza le offerte nell'account <br><br> Visualizza e applica i codici sottoscrizione e funzione <br><br> Visualizza e modifica il nome dell'account <br><br> Visualizza e aggiorna i limiti di spesa  |
+| Amministratore |  Visualizza e aggiorna le impostazioni della funzione dell'account <br><br> Visualizza le sottoscrizioni nell'account <br><br> Visualizza le offerte nell'account <br><br> Visualizza e applica i codici sottoscrizione e funzione <br><br> Visualizza e modifica il nome dell'account <br><br> Visualizza e aggiorna i limiti di spesa <br><br> Visualizza i bilanci della sottoscrizione e traccia l'utilizzo <br><br> Crea un'azienda  |
 {: caption="Tabella 4. Ruoli ed azioni di esempio per il servizio Fatturazione" caption-side="top"}
 
 ### Servizio di identità IAM
@@ -131,6 +131,21 @@ Puoi dare agli utenti l'accesso per visualizzare i servizi privati nel catalogo 
 {: caption="Tabella 6. Ruoli e azioni di esempio per il servizio Catalogo globale" caption-side="top"}
 
 
+### Azienda
+{: #enterprise-account-management}
+
+Il servizio aziendale viene utilizzato per assegnare agli utenti l'accesso per gestire un'azienda creando degli account all'interno di essa, assegnando gli account a dei gruppi di account, fornendo un nome ai gruppi di account e altro ancora. Questo tipo di politica funziona solo se viene assegnata all'interno dell'account aziendale. 
+
+| Ruoli | Azioni |
+|:-------|----------|
+| Visualizzatore |  Visualizzare l'azienda, i gruppi di account e gli account    |
+| Operatore |  Visualizzare l'azienda, i gruppi di account e gli account    |
+| Editor |  Visualizzare e aggiornare l'azienda inclusi il nome e il dominio, creare gli account e i gruppi di account, visualizzare i report di utilizzo e importare gli account |
+| Amministratore |  Visualizzare e aggiornare l'azienda inclusi il nome e il dominio, creare gli account e i gruppi di account, spostare gli account tra i gruppi di account, importare account esistenti e visualizzare i report di utilizzo   |
+| Visualizzatore del report di utilizzo | Visualizzare l'azienda, gli account e i gruppi di account e visualizzare i report di utilizzo di tutti gli account nell'azienda. |
+{: caption="Tabella 7. Ruoli ed azioni di esempio per il servizio aziendale" caption-side="top"}
+
+
 ### Opzione di tutti i servizi di gestione dell'account
 {: #all-account-management}
 
@@ -143,6 +158,4 @@ Per dare rapidamente agli utenti un ampio insieme di accesso di gestione dell'ac
 | Operatore |  Tutte le azioni del ruolo operatore per i servizi di gestione dell'account     |
 | Editor |  Tutte le azioni del ruolo editor per i servizi di gestione dell'account e la capacità di creare i gruppi di risorse    |
 | Amministratore |  Tutte le azioni del ruolo amministratore per i servizi di gestione dell'account e la capacità di creare i gruppi di risorse   |
-{: caption="Tabella 7. Ruoli e azioni di esempio per una politica su tutti i servizi di identità e di accesso" caption-side="top"}
-
-
+{: caption="Tabella 8. Ruoli e azioni di esempio per una politica su tutti i servizi di identità e di accesso" caption-side="top"}

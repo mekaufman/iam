@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-07-01"
+lastupdated: "2019-07-24"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service
 
@@ -42,12 +42,12 @@ Pour accorder à un autre utilisateur l'accès complet au compte à des fins de 
 ## Actions et rôles pour les services de gestion des comptes
 {: #account-management-actions-roles}
 
-Le tableau suivant met en avant les actions pouvant être effectuées par les utilisateurs lorsqu'un rôle spécifique est affecté pour chaque service de gestion des comptes. Consultez les informations afin de vous assurer que vous affectez le niveau d'accès correct à vos utilisateurs. 
+Le tableau suivant met en avant les actions pouvant être effectuées par les utilisateurs lorsqu'un rôle spécifique est affecté pour chaque service de gestion des comptes. Consultez les informations afin de vous assurer que vous affectez le niveau d'accès correct à vos utilisateurs.
 
-### Services de groupes d'accès IAM
+### Groupes d'accès
 {: #access-groups-account-management}
 
-Vous pouvez accorder aux utilisateurs des droits d'accès pour afficher, créer, éditer et supprimer des groupes d'accès dans le compte en utilisant le service de gestion des comptes des groupes d'accès. 
+Vous pouvez accorder aux utilisateurs des droits d'accès pour afficher, créer, éditer et supprimer des groupes d'accès dans le compte en utilisant le service de gestion des comptes des groupes d'accès.
 
 | Rôles | Actions |
 |:-------|----------|
@@ -60,7 +60,7 @@ Vous pouvez accorder aux utilisateurs des droits d'accès pour afficher, créer,
 ### Gestion des utilisateurs
 {: #user-management-account-management}
 
-Vous pouvez accorder aux utilisateurs des droits d'accès pour afficher les utilisateurs d'un compte, inviter et supprimer des utilisateurs, ainsi qu'afficher et mettre à jour les paramètres de profils d'utilisateur avec le service de gestion des comptes Gestion des utilisateurs. 
+Vous pouvez accorder aux utilisateurs des droits d'accès pour afficher les utilisateurs d'un compte, inviter et supprimer des utilisateurs, ainsi qu'afficher et mettre à jour les paramètres de profils d'utilisateur avec le service de gestion des comptes Gestion des utilisateurs.
 
 | Rôles | Actions |
 |:-------|----------|
@@ -92,14 +92,14 @@ Il est courant d'affecter le rôle Afficheur aux utilisateurs sur le service de 
 ### Facturation
 {: #billing-acct-mgmt}
 
-Vous pouvez accorder aux utilisateurs des droits d'accès pour mettre à jour les paramètres d'un compte, afficher les abonnements, afficher les offres, appliquer des codes fonction, mettre à jour les plafonds de dépenses et procéder au suivi de l'utilisation à l'aide du service de facturation.
+Vous pouvez accorder aux utilisateurs des droits d'accès pour mettre à jour les paramètres de compte, afficher des abonnements, afficher des offres, appliquer des codes d'abonnement et de fonction, mettre à jour les limites de dépense et suivre l'utilisation à l'aide du service de facturation.
 
 | Rôles | Actions |
 |:-------|----------|
-| Afficheur | Afficher les paramètres des fonctions du compte <br><br> Afficher les abonnements dans le compte <br><br> Afficher le nom du compte <br><br> Afficher les groupes de ressources   |
-| Opérateur | Afficher les paramètres des fonctions du compte <br><br> Afficher les abonnements dans le compte <br><br> Afficher et modifier le nom du compte <br><br> Afficher et mettre à jour les groupes de ressources    |
-| Editeur |  Afficher et mettre à jour les paramètres de fonctions du compte <br><br> Afficher les abonnements dans le compte <br><br> Afficher les offres dans le compte <br><br> Afficher et appliquer les codes de fonction <br><br> Afficher et modifier le nom du compte <br><br> Afficher et mettre à jour le plafond des dépenses <br><br> Afficher, créer et mettre à jour les groupes de ressources    |
-| Administrateur |  Afficher et mettre à jour les paramètres de fonctions du compte <br><br> Afficher les abonnements dans le compte <br><br> Afficher les offres dans le compte <br><br> Afficher et appliquer les codes de fonction <br><br> Afficher et modifier le nom du compte <br><br> Afficher et mettre à jour le plafond des dépenses <br><br> Afficher le solde des abonnements et effectuer le suivi de l'utilisation <br><br> Afficher, créer, mettre à jour et affecter un accès pour la gestion des groupes de ressources  |
+| Afficheur | Afficher les paramètres des fonctions du compte <br><br> Afficher les abonnements dans le compte <br><br> Afficher le nom du compte |
+| Opérateur | Afficher les paramètres des fonctions du compte <br><br> Afficher les abonnements dans le compte <br><br> Afficher et modifier le nom du compte    |
+| Editeur |  Afficher et mettre à jour les paramètres de fonctions du compte <br><br> Afficher les abonnements dans le compte <br><br> Afficher les offres dans le compte <br><br> Afficher et appliquer des codes d'abonnement et de fonction <br><br> Afficher et modifier le nom du compte <br><br> Afficher et mettre à jour le plafond des dépenses  |
+| Administrateur |  Afficher et mettre à jour les paramètres de fonctions du compte <br><br> Afficher les abonnements dans le compte <br><br> Afficher les offres dans le compte <br><br> Afficher et appliquer des codes d'abonnement et de fonction <br><br> Afficher et modifier le nom du compte <br><br> Afficher et mettre à jour le plafond des dépenses <br><br> Afficher le solde des abonnements et effectuer le suivi de l'utilisation <br><br> Créer une entreprise  |
 {: caption="Tableau 4. Rôles et action pour le service Facturation" caption-side="top"}
 
 ### Service d'identité IAM
@@ -131,6 +131,21 @@ Vous pouvez accorder aux utilisateurs des droits d'accès pour afficher des serv
 {: caption="Tableau 6. Rôles et actions pour le service de catalogue global" caption-side="top"}
 
 
+### Entreprise
+{: #enterprise-account-management}
+
+Le service d'entreprise permet d'affecter aux utilisateurs un accès pour gérer une entreprise en créant des comptes dans l'entreprise, en affectant des comptes à des groupes de comptes, en attribuant des noms aux groupes de comptes et bien plus encore. Ce type de règle fonctionne uniquement si elle est affectée dans le compte de l'entreprise. 
+
+| Rôles | Actions |
+|:-------|----------|
+| Afficheur |  Affichage de l'entreprise, des groupes de comptes et des comptes    |
+| Opérateur |  Affichage de l'entreprise, des groupes de comptes et des comptes    |
+| Editeur |  Affichage et mise à jour de l'entreprise incluant le nom et le domaine, création de comptes et de groupes de comptes, affichage des rapports d'utilisation et importation de comptes. |
+| Administrateur |  Affichage et mise à jour de l'entreprise incluant le nom et le domaine, création de comptes et de groupes de comptes, déplacement de comptes entre différents groupes de comptes, importation de comptes existants et affichage de rapports d'utilisation  |
+| Afficheur du rapport d'utilisation | Affichage de l'entreprise, des comptes et des groupes de comptes et affichage des rapports d'utilisation pour tous les comptes de l'entreprise. |
+{: caption="Tableau 7. Rôles et actions pour le service Entreprise" caption-side="top"}
+
+
 ### Option Tous les services de gestion des comptes
 {: #all-account-management}
 
@@ -143,6 +158,4 @@ Pour accorder rapidement aux utilisateurs un large éventail d'accès en matièr
 | Opérateur |  Toutes les actions du rôle Opérateur pour les services de gestion de compte     |
 | Editeur |  Toutes les actions du rôle Editeur pour les services de gestion de compte et possibilité de créer des groupes de ressources    |
 | Administrateur |  Toutes les actions du rôle Administrateur pour les services de gestion de compte et possibilité de créer des groupes de ressources   |
-{: caption="Tableau 7. Rôles et action pour une règle s'appliquant à tous les services d'identité et d'accès" caption-side="top"}
-
-
+{: caption="Tableau 8. Rôles et actions pour une règle de tous les services d'identité et d'accès" caption-side="top"}

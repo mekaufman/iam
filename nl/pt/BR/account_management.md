@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-07-01"
+lastupdated: "2019-07-24"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service
 
@@ -44,12 +44,12 @@ Para conceder a outro usuário acesso total à conta para propósitos de gerenci
 ## Ações e funções para serviços de gerenciamento de conta
 {: #account-management-actions-roles}
 
-As tabelas a seguir descrevem as ações que os usuários podem executar quando uma função específica é designada a eles para cada serviço de gerenciamento de conta. Revise as informações para assegurar-se de que esteja designando o nível correto de acesso a seus usuários. 
+As tabelas a seguir descrevem as ações que os usuários podem executar quando uma função específica é designada a eles para cada serviço de gerenciamento de conta. Revise as informações para assegurar-se de que esteja designando o nível correto de acesso a seus usuários.
 
-### Serviço de grupos de acesso do IAM
+### Grupos de acesso
 {: #access-groups-account-management}
 
-É possível fornecer aos usuários acesso para visualizar, criar, editar e excluir grupos de acesso na conta, usando o serviço de gerenciamento de conta de grupos de acesso. 
+É possível fornecer aos usuários acesso para visualizar, criar, editar e excluir grupos de acesso na conta, usando o serviço de gerenciamento de conta de grupos de acesso.
 
 | Funções | Ações |
 |:-------|----------|
@@ -62,7 +62,7 @@ As tabelas a seguir descrevem as ações que os usuários podem executar quando 
 ### Gerenciamento de usuários
 {: #user-management-account-management}
 
-É possível fornecer aos usuários acesso para visualizar usuários em uma conta, convidar e remover usuários e visualizar e atualizar as configurações de perfil do usuário com o serviço de gerenciamento de conta de gerenciamento de usuários. 
+É possível fornecer aos usuários acesso para visualizar usuários em uma conta, convidar e remover usuários e visualizar e atualizar as configurações de perfil do usuário com o serviço de gerenciamento de conta de gerenciamento de usuários.
 
 | Funções | Ações |
 |:-------|----------|
@@ -94,14 +94,14 @@ A função de visualizador no serviço de gerenciamento de usuários é uma fun�
 ### Faturamento
 {: #billing-acct-mgmt}
 
-É possível fornecer aos usuários acesso para atualizar as configurações de conta, visualizar assinaturas, visualizar ofertas, aplicar códigos de recurso, atualizar limites de gastos e rastrear o uso utilizando o serviço de faturamento.
+É possível fornecer aos usuários acesso para atualizar as configurações de conta, visualizar assinaturas, visualizar ofertas, aplicar códigos de assinatura e de recurso, atualizar limites de gastos e rastrear o uso utilizando o serviço de faturamento.
 
 | Funções | Ações |
 |:-------|----------|
-| Visualizador | Visualizar configurações de recursos da conta <br><br> Visualizar assinaturas na conta <br><br> Visualizar o nome da conta <br><br> Visualizar grupos de recursos   |
-| Operador | Visualizar configurações de recursos da conta <br><br> Visualizar assinaturas na conta <br><br> Visualizar e mudar o nome da conta <br><br> Visualizar e atualizar grupos de recursos    |
-| Editor |  Visualizar e atualizar as configurações de recursos da conta <br><br> Visualizar assinaturas na conta <br><br> Visualizar ofertas na conta <br><br> Visualizar e aplicar códigos de recurso <br><br> Visualizar e mudar o nome da conta <br><br> Visualizar e atualizar os limites de gastos <br><br> Visualizar, criar e atualizar grupos de recursos    |
-| Administrador |  Visualizar e atualizar as configurações de recursos da conta <br><br> Visualizar assinaturas na conta <br><br> Visualizar ofertas na conta <br><br> Visualizar e aplicar códigos de recurso <br><br> Visualizar e mudar o nome da conta <br><br> Visualizar e atualizar os limites de gastos <br><br> Visualizar saldos de assinatura e uso de faixa <br><br> Visualizar, criar, atualizar e designar acesso para gerenciar grupos de recursos  |
+| Visualizador | Visualizar configurações de recursos da conta <br><br> Visualizar assinaturas na conta <br><br> Visualizar o nome da conta |
+| Operador | Visualizar configurações de recursos da conta <br><br> Visualizar assinaturas na conta <br><br> Visualizar e mudar o nome da conta    |
+| Editor |  Visualizar e atualizar as configurações de recursos da conta <br><br> Visualizar assinaturas na conta <br><br> Visualizar ofertas na conta <br><br> Visualizar e aplicar códigos de assinatura e de recurso <br><br> Visualizar e mudar o nome da conta <br><br> Visualizar e atualizar os limites de gastos  |
+| Administrador |  Visualizar e atualizar as configurações de recursos da conta <br><br> Visualizar assinaturas na conta <br><br> Visualizar ofertas na conta <br><br> Visualizar e aplicar códigos de assinatura e de recurso <br><br> Visualizar e mudar o nome da conta <br><br> Visualizar e atualizar os limites de gastos <br><br> Visualizar saldos de assinatura e uso de faixa <br><br> Criar uma empresa  |
 {: caption="Tabela 4. Funções e ações de exemplo para o serviço Faturamento" caption-side="top"}
 
 ### Serviço de identidade do IAM
@@ -133,6 +133,21 @@ A função de visualizador no serviço de gerenciamento de usuários é uma fun�
 {: caption="Tabela 6. Funções e ações de exemplo para o serviço Catálogo global" caption-side="top"}
 
 
+### Corporativo
+{: #enterprise-account-management}
+
+O serviço corporativo é usado para designar acesso de usuários a fim de gerenciar uma empresa ao criar contas dentro da empresa, designando contas a grupos de contas, nomeando grupos de contas e mais. Esse tipo de política funcionará somente se for atribuída dentro da conta corporativa. 
+
+| Funções | Ações |
+|:-------|----------|
+| Visualizador |  Visualizar a empresa, os grupos de contas e as contas    |
+| Operador |  Visualizar a empresa, os grupos de contas e as contas    |
+| Editor |  Visualizar e atualizar a empresa incluindo o nome e o domínio, criar contas e grupos de contas, visualizar relatórios de uso e importar contas. |
+| Administrador |  Visualizar e atualizar a empresa incluindo o nome e o domínio, criar contas e grupos de contas, mover as contas entre os grupos de contas, importar as contas existentes e visualizar os relatórios de uso  |
+| Visualizador de relatório de uso | Visualizar a empresa, as contas e os grupos de contas e visualizar os relatórios de uso para todas as contas na empresa. |
+{: caption="Tabela 7. Funções e ações de exemplo para o Serviço corporativo" caption-side="top"}
+
+
 ### Opção de todos os serviços de gerenciamento de contas
 {: #all-account-management}
 
@@ -145,6 +160,4 @@ Para fornecer rapidamente aos usuários um amplo conjunto de acesso de gerenciam
 | Operador |  Todas as ações da função de operador para os serviços de gerenciamento de conta     |
 | Editor |  Todas as ações da função de editor para os serviços de gerenciamento de contas e a capacidade de criar grupos de recursos    |
 | Administrador |  Todas as ações da função de administrador para os serviços de gerenciamento de contas e a capacidade de criar grupos de recursos   |
-{: caption="Tabela 7. Funções e ações de exemplo para uma política em todos os serviços de identidade e acesso" caption-side="top"}
-
-
+{: caption="Tabela 8. Funções e ações de exemplo para uma política sobre todos os serviços de identidade e acesso" caption-side="top"}
