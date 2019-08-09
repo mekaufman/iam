@@ -27,12 +27,9 @@ Managing identity and access
     connect_dedicated_id.md
 
     {: .topicgroup}
-    Adding users to your account
+    Administering users
         iamuserinv.md
         remove-users.md
-
-    {: .topicgroup}
-    Administering users
         parentuser.md
         update_status.md
         specific_ip.md
