@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-08-08"
 
-keywords: IAM token, token, API key, generate token
+keywords: IAM token, token, API key, generate token, access token
 
 subcollection: iam
 
@@ -17,17 +17,18 @@ subcollection: iam
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
 
-# {{site.data.keyword.Bluemix_notm}} IAM-Token mithilfe eines API-Schlüssels abrufen
+# {{site.data.keyword.Bluemix_notm}} IAM-Token mithilfe eines API-Schlüssels generieren
 {: #iamtoken_from_apikey}
 
-Auf {{site.data.keyword.Bluemix}}-APIs kann nur von Benutzern zugegriffen werden, die durch eine zugewiesene IAM-Rolle autorisiert sind. Jeder Benutzer, der die API aufruft, muss zur Authentifizierung Berechtigungsnachweise für die API übergeben.
+Sie können ein {{site.data.keyword.Bluemix}} Identity and Access Management-Token (IAM-Token) generieren, indem Sie entweder Ihren IAM-API-Schlüssel oder den API-Schlüssel einer Service-ID verwenden. Auf {{site.data.keyword.Bluemix_notm}}-APIs kann nur von Benutzern zugegriffen werden, die durch eine zugewiesene IAM-Rolle autorisiert sind. Jeder Benutzer, der die API aufruft, muss zur Authentifizierung Berechtigungsnachweise für die API übergeben.
 {:shortdesc}
 
 Sie können ein IAM-Token generieren, indem Sie entweder Ihren [{{site.data.keyword.Bluemix_notm}}-API-Schlüssel](/docs/iam?topic=iam-userapikey#userapikey) oder den [API-Schlüssel einer Service-ID](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys) verwenden. Dieser Prozess wird auch verwendet, wenn Sie eine Anwendung entwickeln, die mit anderen {{site.data.keyword.Bluemix_notm}}-Services zusammenarbeiten muss. Sie müssen den API-Schlüssel einer Service-ID verwenden, um ein Zugriffstoken abzurufen, das an die einzelnen {{site.data.keyword.Bluemix_notm}}-Services übergeben werden soll.
 
 
-1. Verwenden Sie den folgenden `curl`-Befehl, um ein IAM-Token mithilfe eines API-Schlüssels zu generieren.
+Verwenden Sie den folgenden `curl`-Befehl, um ein IAM-Token mithilfe eines API-Schlüssels zu generieren.
 
 ### POST /identity/token
 {: #post_id_token}
@@ -70,3 +71,6 @@ Das folgende Beispiel zeigt, welche Antwort erwartet wird:
 }
 ```
 {: codeblock}
+
+Ein IAM-Token ist für einen Zeitraum von 60 Minuten gültig und Änderungen sind vorbehalten. Nach Ablauf eines Tokens muss ein neues generiert werden.
+{: note}

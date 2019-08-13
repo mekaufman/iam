@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-08-08"
 
-keywords: IAM token, token, API key, generate token
+keywords: IAM token, token, API key, generate token, access token
 
 subcollection: iam
 
@@ -17,17 +17,18 @@ subcollection: iam
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
 
-# Ottenimento di un token IAM {{site.data.keyword.Bluemix_notm}} utilizzando una chiave API
+# Generazione di un token IAM {{site.data.keyword.Bluemix_notm}} utilizzando una chiave API
 {: #iamtoken_from_apikey}
 
-Alle API {{site.data.keyword.Bluemix}} possono accedere solo gli utenti autorizzati da un ruolo IAM assegnato. Ogni utente che chiama l'API deve passare le credenziali per l'autenticazione dell'API.
+Genera un token {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) utilizzando la tua chiave API IAM o la chiave API dell'ID servizio. Alle API {{site.data.keyword.Bluemix_notm}} possono accedere solo gli utenti autorizzati da un ruolo IAM assegnato. Ogni utente che richiama l'API deve passare le credenziali dell'API per l'autenticazione.
 {:shortdesc}
 
 Puoi generare un token IAM utilizzando la tua [chiave API {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#userapikey) oppure una [chiave API dell'ID servizio](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys). Questo processo è utilizzato anche se stai sviluppando un'applicazione che deve lavorare con altri servizi {{site.data.keyword.Bluemix_notm}}. Devi utilizzare una chiave API dell'ID servizio per ottenere un token di accesso da passare a ciascuno dei servizi {{site.data.keyword.Bluemix_notm}}.
 
 
-1. Utilizza il seguente comando `curl` per generare un token IAM utilizzando una chiave API.
+Utilizza il seguente comando `curl` per generare un token IAM utilizzando una chiave API.
 
 ### POST /identity/token
 {: #post_id_token}
@@ -70,3 +71,6 @@ Il seguente esempio è la risposta prevista:
 }
 ```
 {: codeblock}
+
+Un token IAM è valido per 60 minuti ed è soggetto a modifiche. Quando un token scade, devi generarne un altro.
+{: note}

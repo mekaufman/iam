@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-05-23"
+lastupdated: "2019-08-02"
 
 keywords: frequently asked question, faq
 
@@ -73,6 +73,12 @@ Vai a **Gestisci** &gt; **Accesso (IAM)** e seleziona il tuo nome nella pagina U
 {: faq}
 
 Il proprietario dell'account può aggiornare il tuo accesso a qualsiasi risorsa nell'account oppure puoi contattare qualsiasi utente a cui è assegnato il ruolo di amministratore sul servizio o sull'istanza del servizio.
+
+## Come trovo l'ID IAM per un utente o per me stesso?
+{: #iam-id}
+{: faq}
+
+Vai a **Gestisci** > **Accesso (IAM)** e seleziona **Utenti**. Quindi, seleziona il tuo nome o il nome di un altro utente dall'elenco. Puoi trovare l'ID IAM per tale utente insieme al suo indirizzo email sulla pagina Dettagli utente.
 
 ## Perché dovrei usare gruppi di risorse e gruppi di accesso?
 {: #resource-groups}
@@ -165,14 +171,13 @@ Per delegare le capacità di amministratore dell'account, assegna il seguente ac
 * La serie di autorizzazioni Super utente per l'infrastruttura classica
 * Gestore di Cloud Foundry per tutte le organizzazioni
 
-## Come assegno l'accesso alle infrastrutture e ai dispositivi?
+## Dove posso gestire l'accesso di un utente all'infrastruttura? 
 {: #infrastructure-devices}
 {: faq}
 
-1. Vai a **Gestisci** &gt; **Accesso (IAM)** e seleziona **Utenti**.
-2. Seleziona il nome di un utente.
-3. Fai clic su **Infrastruttura classica**.
-4. Assegna le autorizzazioni dalla sezione **Autorizzazioni**, assegna l'accesso ai dispositivi dalla sezione **Dispositivi** e assegna l'accesso alle sottoreti VPN per i dispositivi a cui all'utente è stato assegnato l'accesso dalla sezione **Accesso VPN**.
+L'accesso per l'infrastruttura classica inizia con l'utente. Per ulteriori informazioni, vedi [Gestione dell'accesso all'infrastruttura classica](/docs/iam?topic=iam-mngclassicinfra).
+
+Se devi assegnare l'accesso ai servizi dell'infrastruttura abilitati IAM, ad esempio {{site.data.keyword.vpc_full}}, assegna l'accesso a un utente o a un gruppo di accesso dalla scheda **Politiche di accesso**.
 
 ## Come gestisco l'accesso per gli utenti a cui sono state precedentemente assegnate delle autorizzazioni per la fatturazione e il supporto nel mio account SoftLayer?
 {: #migrated-permissions-faq}

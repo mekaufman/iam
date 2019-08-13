@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-05-23"
+lastupdated: "2019-08-02"
 
 keywords: frequently asked question, faq
 
@@ -73,6 +73,12 @@ Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie auf der Seite
 {: faq}
 
 Der Kontoeigner kann Ihren Zugriff auf eine beliebige Ressource im Konto aktualisieren oder Sie können einen beliebigen Benutzer kontaktieren, der die Administratorrolle für den Service oder die Serviceinstanz innehat.
+
+## Wie finde ich die IAM-ID für einen Benutzer oder für mich?
+{: #iam-id}
+{: faq}
+
+Rufen Sie **Verwalten** > **Zugriff (IAM)** auf und wählen Sie dann **Benutzer** aus. Wählen Sie dann Ihren Namen oder den Namen eines anderen Benutzers in der Liste aus. Sie finden die IAM-ID für diesen Benutzer zusammen mit dessen E-Mail-Adresse auf der Benutzerdetailseite. 
 
 ## Warum sollte ich Ressourcengruppen und Zugriffsgruppen verwenden?
 {: #resource-groups}
@@ -142,7 +148,7 @@ Weitere Informationen finden Sie in [MFA für Benutzer in Ihrem Konto verlangen]
 
 Service- und Plattformrollen sind zwei verschiedene Typen von Rollen:
 
-* Plattformrollen sind die Art und Weise, wie Sie mit einem Service in einem Konto arbeiten, z. B. Instanzen erstellen, Instanzen binden und den Benutzerzugriff auf den Service verwalten. Für Plattformservices ermöglichen diese Rollen den Benutzern beispielsweise, Ressourcengruppen zu erstellen und Service-IDs zu verwalten. Plattformrollen sind: Administrator, Bearbeiter, Bediener und Anzeigeberechtigter.
+* Plattformrollen sind die Art und Weise, wie Sie mit einem Service in einem Konto arbeiten, z. B. Instanzen erstellen, Instanzen binden und den Benutzerzugriff auf den Service verwalten. Für Plattformservices ermöglichen diese Rollen den Benutzern beispielsweise, Ressourcengruppen zu erstellen und Service-IDs zu verwalten. Plattformrollen sind: Administrator, Bearbeiter, Operator und Anzeigeberechtigter.
 
 * Servicerollen definieren die Möglichkeit, Aktionen für einen Service auszuführen und sind für jeden Service spezifisch. Zu den Aktionen zählen das Ausführen von API-Aufrufen oder das Zugreifen auf die Benutzerschnittstelle. Servicerollen sind: Manager, Schreibberechtigter und Leseberechtigter. Weitere Informationen darüber, wie diese Rollen angewendet werden, finden Sie in der Dokumentation des jeweiligen Service.
 
@@ -165,20 +171,19 @@ Um die Funktionen des Kontoadministrators zu delegieren, müssen Sie folgenden Z
 * Das Berechtigungsset des Superusers für die klassische Infrastruktur.
 * Die Rolle des Cloud Foundry-Managers für alle Organisationen.
 
-## Wie kann ich Zugriff auf die Infrastruktur und auf Geräte zuweisen?
+## Wo kann ich den Benutzerzugriff auf die Infrastruktur verwalten? 
 {: #infrastructure-devices}
 {: faq}
 
-1. Rufen Sie **Verwalten** &gt; **Zugriff (IAM)** auf und wählen Sie dann **Benutzer** aus.
-2. Wählen Sie den Namen eines Benutzers aus.
-3. Klicken Sie auf **Klassische Infrastruktur**.
-4. Verwenden Sie zum Zuweisen von Berechtigungen den Abschnitt **Berechtigungen**, zum Zuweisen von Zugriff auf Geräte den Abschnitt **Geräte** und zum Zuweisen von Zugriff auf VPN-Teilnetze für die Geräte, für die dem Benutzer Zugriff zugewiesen ist, den Abschnitt **VPN-Zugriff**.
+Der Zugriff auf die klassische Infrastruktur beginnt beim Benutzer. Weitere Informationen hierzu enthält der Abschnitt [Zugriff auf die klassische Infrastruktur verwalten](/docs/iam?topic=iam-mngclassicinfra).
 
-## Wie verwalte ich den Zugriff für Benutzer, denen zuvor Abrechnungs- und Support-Berechtigungen in meinem SoftLayer-Konto zugewiesen wurden? 
+Wenn Sie Zugriffsberechtigungen für IAM-fähige Infrastrukturservices zuweisen möchten, wie z. B. {{site.data.keyword.vpc_full}}, weisen Sie über die Registerkarte **Zugriffsrichtlinien** die Zugriffsberechtigung einem Benutzer oder einer Zugriffsgruppe zu.
+
+## Wie verwalte ich den Zugriff für Benutzer, denen zuvor Abrechnungs- und Support-Berechtigungen in meinem SoftLayer-Konto zugewiesen wurden?
 {: #migrated-permissions-faq}
 {: faq}
 
-Alle Berechtigungen, die zuvor in Ihrem SoftLayer-Konto zugewiesen wurden, können in der {{site.data.keyword.Bluemix_notm}}-Konsole verwaltet werden. Zugriffsberechtigungen für die Verwaltung von Abrechnungsinformationen und Supportfällen sind nun in [Zugriffsgruppen mit migrierten Berechtigungen](/docs/iam?topic=iam-migrated_permissions) verfügbar. Alle Benutzer, denen zuvor diese Berechtigungen in Ihrem SoftLayer-Konto zugewiesen wurden, wurden in diese Zugriffsgruppen migriert. Diesen Zugriffsgruppen wird anhand einer IAM-Richtlinie dieselbe Zugriffsebene zugewiesen. 
+Alle Berechtigungen, die zuvor in Ihrem SoftLayer-Konto zugewiesen wurden, können in der {{site.data.keyword.Bluemix_notm}}-Konsole verwaltet werden. Zugriffsberechtigungen für die Verwaltung von Abrechnungsinformationen und Supportfällen sind nun in [Zugriffsgruppen mit migrierten Berechtigungen](/docs/iam?topic=iam-migrated_permissions) verfügbar. Alle Benutzer, denen zuvor diese Berechtigungen in Ihrem SoftLayer-Konto zugewiesen wurden, wurden in diese Zugriffsgruppen migriert. Diesen Zugriffsgruppen wird anhand einer IAM-Richtlinie dieselbe Zugriffsebene zugewiesen.
 
 ## Kann jeder Benutzer in meinem Konto alle anderen Benutzer sehen?
 {: #users}
