@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-05-23"
+lastupdated: "2019-08-02"
 
 keywords: frequently asked question, faq
 
@@ -88,6 +88,12 @@ Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione seu nome na página Usuá
 
 O proprietário da conta pode atualizar o seu acesso a qualquer recurso na conta ou é possível entrar em contato
 com qualquer usuário que tenha a função de administrador designada no serviço ou na instância de serviço.
+
+## Como localizo o ID do IAM para um usuário ou para mim mesmo?
+{: #iam-id}
+{: faq}
+
+Acesse **Gerenciar** > **Acesso (IAM)** e selecione **Usuários**. Em seguida, selecione seu nome ou o nome de outro usuário na lista. É possível localizar o ID do IAM para esse usuário juntamente com seu endereço de e-mail na página Detalhes do usuário.
 
 ## Por que devo usar grupos de recursos e grupos de acesso?
 {: #resource-groups}
@@ -208,14 +214,13 @@ Para delegar os recursos do administrador de conta, designe o acesso a seguir:
 * A permissão de Superusuário configurada para a infraestrutura clássica
 * Gerenciador do Cloud Foundry para todas as organizações
 
-## Como designar acesso a infraestrutura e dispositivos?
+## Onde eu gerencio o acesso de um usuário à infraestrutura? 
 {: #infrastructure-devices}
 {: faq}
 
-1. Acesse **Gerenciar** &gt; **Acesso (IAM)** e selecione **Usuários**.
-2. Selecione o nome de um usuário.
-3. Clique em **Infraestrutura clássica**.
-4. Designe permissões na seção **Permissões**, designe acesso a dispositivos na seção **Dispositivos** e designe acesso a sub-redes VPN para os dispositivos aos quais o usuário tem acesso designado na seção **Acesso à VPN **.
+O acesso à infraestrutura clássica começa com o usuário. Para obter mais informações, veja [Gerenciando o acesso de infraestrutura clássica](/docs/iam?topic=iam-mngclassicinfra).
+
+Se for necessário designar acesso aos serviços de infraestrutura ativados para IAM, como o {{site.data.keyword.vpc_full}}, designe acesso a um usuário ou a um grupo de acesso por meio da guia **Políticas de acesso**.
 
 ## Como gerenciar o acesso de usuários designados previamente com permissões de faturamento e suporte em minha conta do SoftLayer?
 {: #migrated-permissions-faq}

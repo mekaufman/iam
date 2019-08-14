@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-30"
+lastupdated: "2019-08-08"
 
-keywords: IAM token, token, API key, generate token
+keywords: IAM token, token, API key, generate token, access token
 
 subcollection: iam
 
@@ -17,17 +17,18 @@ subcollection: iam
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
 
-# Obtendo um token do {{site.data.keyword.Bluemix_notm}} IAM usando uma chave API
+# Gerando um token do {{site.data.keyword.Bluemix_notm}} IAM usando uma chave de API
 {: #iamtoken_from_apikey}
 
-As APIs do {{site.data.keyword.Bluemix}} podem ser acessadas somente pelos usuários que estão autorizados por uma função de IAM designada. Cada usuário que está chamando a API deve passar credenciais para a API autenticar.
+Gerar um token do {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) usando a chave de API do IAM ou a chave de API do ID de serviço. As APIs do {{site.data.keyword.Bluemix_notm}} podem ser acessadas apenas por usuários que estão autorizados por uma função do IAM designada. Cada usuário que está chamando a API deve transmitir credenciais para que a API seja autenticada.
 {:shortdesc}
 
 É possível gerar um token do IAM usando sua [chave de API do {{site.data.keyword.Bluemix_notm}}](/docs/iam?topic=iam-userapikey#userapikey) ou uma [chave de API do ID de serviço](/docs/iam?topic=iam-serviceidapikeys#serviceidapikeys). Este processo também será usado se você estiver desenvolvendo um aplicativo que precisa trabalhar com outros serviços do {{site.data.keyword.Bluemix_notm}}. Deve-se usar uma chave API do ID de serviço para obter um token de acesso para ser passado para cada um dos serviços do {{site.data.keyword.Bluemix_notm}}.
 
 
-1. Use o comando `curl` a seguir para gerar um token do IAM usando uma chave API.
+Use o comando `curl` a seguir para gerar um token do IAM usando uma chave API.
 
 ### POST /identity/token
 {: #post_id_token}
@@ -70,3 +71,6 @@ A amostra a seguir é a resposta esperada:
 }
 ```
 {: codeblock}
+
+Um token do IAM é válido por 60 minutos e está sujeito à mudança. Quando um token expirar, deve-se gerar um novo.
+{: note}

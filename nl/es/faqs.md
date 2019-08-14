@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-05-23"
+lastupdated: "2019-08-02"
 
 keywords: frequently asked question, faq
 
@@ -73,6 +73,12 @@ Vaya a **Gestionar** &gt; **Acceso (IAM)** y seleccione su nombre en la página 
 {: faq}
 
 El propietario de la cuenta puede actualizar su acceso a cualquier recurso de la cuenta, o bien puede ponerse en contacto con cualquier usuario que tenga asignado el rol de administrador sobre el servicio o la instancia de servicio.
+
+## ¿Cómo puedo saber el ID de IAM de un usuario o el mío?
+{: #iam-id}
+{: faq}
+
+Vaya a **Gestionar** > **Acceso (IAM)** y seleccione **Usuarios**. A continuación, seleccione su nombre o el de otro usuario en la lista. Puede ver ID de IAM del usuario junto con su dirección de correo electrónico en la página Detalles de usuario.
 
 ## ¿Por qué debo utilizar grupos de recursos y grupos de acceso?
 {: #resource-groups}
@@ -165,14 +171,13 @@ Para delegar las funciones de administrador de la cuenta, asigne el siguiente ac
 * El conjunto de permisos de superusuario para la infraestructura clásica
 * Gestor de Cloud Foundry para todas las organizaciones
 
-## ¿Cómo se asigna acceso a la infraestructura y a los dispositivos?
+## ¿Dónde puedo gestionar el acceso de un usuario a la infraestructura? 
 {: #infrastructure-devices}
 {: faq}
 
-1. Vaya a **Gestionar** &gt; **Acceso (IAM)** y seleccione **Usuarios**.
-2. Seleccione el nombre de un usuario.
-3. Pulse **Infraestructura clásica**.
-4. Asigne permisos desde la sección **Permisos**, asigne acceso a dispositivos desde la sección **Dispositivos** y asigne acceso a subredes VPN para los dispositivos sobre los que el usuario tiene acceso asignado desde la sección **Acceso VPN**.
+El acceso a la infraestructura clásica empieza por el usuario. Para obtener más información, consulte [Gestión de acceso de la infraestructura clásica](/docs/iam?topic=iam-mngclassicinfra).
+
+Si tiene que asignar acceso a servicios de infraestructura habilitados para IAM, como {{site.data.keyword.vpc_full}}, asigne acceso a un usuario o grupo de acceso del separador **Políticas de acceso**.
 
 ## ¿Cómo se gestiona el acceso para los usuarios que tenían asignados permisos de soporte y de facturación en mi cuenta de SoftLayer?
 {: #migrated-permissions-faq}

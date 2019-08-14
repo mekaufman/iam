@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-05-23"
+lastupdated: "2019-08-02"
 
 keywords: frequently asked question, faq
 
@@ -43,11 +43,11 @@ Un service activé pour IAM doit résider dans un groupe de ressources et l'acc�
 {: #iam-policies}
 {: faq}
 
-Une règle d'accès IAM détermine comment sont accordés aux utilisateurs, ID de service et groupes d'accès d'un compte les droits d'utiliser une instance de ressource ou de service spécifique activée pour IAM, de gérer un groupe de ressources ou d'effectuer des tâches de gestion des comptes. Chaque règle d'accès IAM est constituée d'un objet, d'une cible et d'un rôle. L'objet indique qui détient l'accès. La cible correspond à l'élément auquel l'objet peut accéder. Et le rôle, qu'il s'agisse d'un rôle de plateforme ou de service selon le contexte de la cible sélectionnée, définit le niveau d'accès à la cible dont bénéficie l'objet. 
+Une règle d'accès IAM détermine comment sont accordés aux utilisateurs, ID de service et groupes d'accès d'un compte les droits d'utiliser une instance de ressource ou de service spécifique activée pour IAM, de gérer un groupe de ressources ou d'effectuer des tâches de gestion des comptes. Chaque règle d'accès IAM est constituée d'un sujet, d'une cible et d'un rôle. Le sujet indique qui détient l'accès. La cible correspond à l'élément auquel le sujet peut accéder. Et le rôle, qu'il s'agisse d'un rôle de plateforme ou de service selon le contexte de la cible sélectionnée, définit le niveau d'accès à la cible dont bénéficie le sujet. 
 
-L'objet est un utilisateur, un ID de service ou un groupe d'accès. La cible peut être un service ou un groupe de ressources dans le compte, un type ou une instance de ressource spécifique ou un service de gestion des comptes. En outre, les rôles sont proposés sous forme de choix qui dépendent de la cible sélectionnée. Certains services disposent de rôles définis propres au service, tandis que d'autres utilisent uniquement des rôles de plateforme. Pour visualiser ce concept, examinez le graphique suivant qui donne un aperçu des options de création d'une règle IAM :
+Le sujet est un utilisateur, un ID de service ou un groupe d'accès. La cible peut être un service ou un groupe de ressources dans le compte, un type ou une instance de ressource spécifique ou un service de gestion des comptes. En outre, les rôles sont proposés sous forme de choix qui dépendent de la cible sélectionnée. Certains services disposent de rôles définis propres au service, tandis que d'autres utilisent uniquement des rôles de plateforme. Pour visualiser ce concept, examinez le graphique suivant qui donne un aperçu des options de création d'une règle IAM :
 
-![Création de règles IAM](images/IAM.svg "Mode de création des règles d'accès IAM en utilisant un objet, une cible et un rôle")
+![Création de règles IAM](images/IAM.svg "Mode de création des règles d'accès IAM en utilisant un sujet, une cible et un rôle")
 
 ## IAM et Cloud Foundry sont-ils associés ?
 {: #iam-cloudfoundry}
@@ -73,6 +73,14 @@ Accédez à **Gérer** &gt; **Accès (IAM)** puis sélectionnez votre nom sur la
 {: faq}
 
 Le propriétaire du compte peut mettre à jour l'accès à n'importe quelle ressource du compte ou vous pouvez contacter un utilisateur affecté au rôle administrateur sur le service ou l'instance de service.
+
+## Comment trouver l'ID IAM pour un utilisateur ou moi-même ?
+{: #iam-id}
+{: faq}
+
+Accédez à **Gérer** > **Accès (IAM)** puis sélectionnez **Utilisateurs**. 
+Sélectionnez ensuite votre nom ou celui d'un autre utilisateur dans la liste. 
+Vous pouvez trouver l'ID IAM pour cet utilisateur avec son adresse électronique sur la page Détails de l'utilisateur.
 
 ## Pourquoi dois-je utiliser des groupes de ressources et des groupes d'accès ?
 {: #resource-groups}
@@ -165,20 +173,19 @@ Pour déléguer les fonctions d'administrateur de compte, affectez l'accès suiv
 * Le droit Super-utilisateur défini pour l'infrastructure classique
 * Gestionnaire Cloud Foundry pour toutes les organisations
 
-## Comment affecter l'accès à l'infrastructure et aux périphériques ?
+## Où puis-je gérer l'accès d'un utilisateur à l'infrastructure ? 
 {: #infrastructure-devices}
 {: faq}
 
-1. Accédez à **Gérer** &gt; **Accès (IAM)** puis sélectionnez **Utilisateurs**.
-2. Sélectionnez un nom d'utilisateur.
-3. Cliquez sur **Infrastructure classique**.
-4. Affectez des droits à partir de la section **Droits**, affectez des droits d'accès aux périphériques à partir de la section **Périphériques** puis affectez l'accès aux sous-réseaux VPN pour les périphériques auxquels l'utilisateur a accès, accès affecté à partir de la section **Accès VPN**.
+L'accès à l'infrastructure classique commence par l'utilisateur. Pour plus d'informations, voir [Gestion de l'accès à l'infrastructure classique](/docs/iam?topic=iam-mngclassicinfra).
+
+Si vous avez besoin d'affecter l'accès à des services d'infrastructure activés par IAM, comme par exemple {{site.data.keyword.vpc_full}}, vous affectez l'accès à un utilisateur ou à un groupe d'accès à partir de l'onglet **Règles d'accès**.
 
 ## Comment puis-je gérer les droits d'accès des utilisateurs auxquels des droits de facturation et de support ont déjà été affectés dans mon compte SoftLayer ?
 {: #migrated-permissions-faq}
 {: faq}
 
-Tous les droits d'accès qui ont été affectés dans votre compte Softlayer peuvent être gérés dans la console {{site.data.keyword.Bluemix_notm}}. Les droits d'accès au compte pour la gestion des informations de facturation et des cas de support sont désormais disponibles dans les [groupes d'accès des droits migrés](/docs/iam?topic=iam-migrated_permissions). Tous les utilisateurs auxquels ces droits d'accès ont déjà été affectés dans votre compte SoftLayer ont été migrés vers ces groupes d'accès, avec le même niveau de droit d'accès à l'aide d'une règle IAM sur le groupe d'accès. 
+Tous les droits d'accès qui ont été affectés dans votre compte Softlayer peuvent être gérés dans la console {{site.data.keyword.Bluemix_notm}}. Les droits d'accès au compte pour la gestion des informations de facturation et des cas de support sont désormais disponibles dans les [groupes d'accès des droits migrés](/docs/iam?topic=iam-migrated_permissions). Tous les utilisateurs auxquels ces droits d'accès ont déjà été affectés dans votre compte SoftLayer ont été migrés vers ces groupes d'accès, avec le même niveau de droit d'accès à l'aide d'une règle IAM sur le groupe d'accès.
 
 ## Tous les utilisateurs de mon compte peuvent-ils voir tous les autres utilisateurs ?
 {: #users}
