@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam?topic=iam-getstarted" path="iam"}
+{: .toc subcollection="iam" category="platform_services" audience="platform" arm="1919690" href="/docs/iam?topic=iam-getstarted" path="iam"}
 Identität und Zugriff verwalten
 
     {: .navgroup id="learn"}
@@ -27,12 +27,9 @@ Identität und Zugriff verwalten
     connect_dedicated_id.md
 
     {: .topicgroup}
-    Benutzer zu Ihrem Konto hinzufügen
+    Benutzer verwalten
         iamuserinv.md
         remove-users.md
-
-    {: .topicgroup}
-    Benutzer verwalten
         parentuser.md
         update_status.md
         specific_ip.md

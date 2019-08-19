@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-06-25"
+lastupdated: "2019-08-08"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -20,7 +20,7 @@ subcollection: iam
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Benutzer einladen
+# Benutzer zu einem Konto einladen
 {: #iamuserinv}
 
 Verwenden Sie {{site.data.keyword.Bluemix}} Identity and Access Management (IAM), um Benutzer einzuladen, Einladungen zu stornieren und eine ausstehende Einladung an einen eingeladenen Benutzer erneut zu senden. Darüber hinaus können Sie einen einzelnen Benutzer oder mehrere Benutzer gleichzeitig einladen.

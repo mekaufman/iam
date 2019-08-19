@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-08-08"
+lastupdated: "2019-08-09"
 
 keywords: remove user, delete user
 
@@ -21,7 +21,7 @@ subcollection: iam
 # Eliminar usuarios de una cuenta
 {: #remove}
 
-Cuando elimina un usuario de una cuenta, el usuario deja de poder iniciar una sesión en la consola, cambiar a su cuenta si sigue perteneciendo a otra cuenta y acceder a los recursos de la cuenta.
+Cuando elimina un usuario de una cuenta, el usuario deja de poder iniciar una sesión en la consola, cambiar a su cuenta si sigue perteneciendo a otra cuenta y acceder a los recursos de la cuenta. Al eliminar un usuario de una cuenta, no se suprime el IBMid de dicho usuario.
 {:shortdesc}
 
 Solo los propietarios de la cuenta o los usuarios con el siguiente acceso pueden eliminar usuarios de una cuenta:

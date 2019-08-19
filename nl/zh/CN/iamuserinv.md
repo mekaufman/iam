@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-06-25"
+lastupdated: "2019-08-08"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -20,7 +20,7 @@ subcollection: iam
 {:note: .note}
 {:external: target="_blank" .external}
 
-# 邀请用户
+# 邀请用户加入帐户
 {: #iamuserinv}
 
 使用 {{site.data.keyword.Bluemix}} Identity and Access Management (IAM)，可以邀请用户，取消邀请，以及向被邀请用户重新发送待处理邀请。此外，您可以一次邀请单个用户或多个用户。

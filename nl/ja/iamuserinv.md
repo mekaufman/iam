@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-06-25"
+lastupdated: "2019-08-08"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -20,10 +20,10 @@ subcollection: iam
 {:note: .note}
 {:external: target="_blank" .external}
 
-# ユーザーの招待
+# アカウントへのユーザーの招待
 {: #iamuserinv}
 
-{{site.data.keyword.Bluemix}} の ID およびアクセス管理 (IAM) を使用して、ユーザーの招待、招待のキャンセル、および招待されるユーザーへの保留中の招待の再送を行います。さらに、単一のユーザーを招待することも、一度に複数のユーザーを招待することも可能です。
+{{site.data.keyword.Bluemix}} の ID およびアクセス管理 (IAM) を使用して、ユーザーの招待、招待のキャンセル、および招待されるユーザーへの保留中の招待の再送を行います。 さらに、単一のユーザーを招待することも、一度に複数のユーザーを招待することも可能です。
 {:shortdesc}
 
 ユーザーの招待、および未処理の招待の管理を行うには、アカウント所有者、組織管理者、または、IAM アクセス・ポリシーでユーザー管理サービスに対するエディター以上の役割が付与されたユーザーであるか、あるいは、ユーザーを追加するためのクラシック・インフラストラクチャー許可を持っている必要があります。

@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-08-08"
+lastupdated: "2019-08-09"
 
 keywords: remove user, delete user
 
@@ -21,7 +21,7 @@ subcollection: iam
 # Rimozione degli utenti da un account
 {: #remove}
 
-Quando rimuovi un utente da un account, l'utente non può più accedere alla console, passare al tuo account se appartiene ancora a un altro account o accedere alle risorse dell'account.
+Quando rimuovi un utente da un account, l'utente non può più accedere alla console, passare al tuo account se appartiene ancora a un altro account o accedere alle risorse dell'account. La rimozione di un utente da un account non elimina l'ID IBM dell'utente.
 {:shortdesc}
 
 Solo i proprietari dell'account o gli utenti con il seguente accesso possono rimuovere gli utenti da un account:

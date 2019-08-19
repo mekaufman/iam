@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-08-08"
+lastupdated: "2019-08-09"
 
 keywords: remove user, delete user
 
@@ -22,6 +22,7 @@ subcollection: iam
 {: #remove}
 
 从帐户中除去用户后，该用户即无法再登录到控制台，无法切换到您的帐户（如果他们仍然属于其他帐户），也无法访问帐户资源。
+从帐户中除去用户不会删除改用户的 IBM 标识。
 {:shortdesc}
 
 只有帐户所有者或具有以下访问权的用户可以从帐户中除去用户：

@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam?topic=iam-getstarted" path="iam"}
+{: .toc subcollection="iam" category="platform_services" audience="platform" arm="1919690" href="/docs/iam?topic=iam-getstarted" path="iam"}
 管理身份和访问权
 
     {: .navgroup id="learn"}
@@ -27,12 +27,9 @@
     connect_dedicated_id.md
 
     {: .topicgroup}
-    向帐户添加用户
+    管理用户
         iamuserinv.md
         remove-users.md
-
-    {: .topicgroup}
-    管理用户
         parentuser.md
         update_status.md
         specific_ip.md

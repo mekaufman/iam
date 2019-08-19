@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-06-25"
+lastupdated: "2019-08-08"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -20,7 +20,7 @@ subcollection: iam
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Invitación a usuarios
+# Invitación de usuarios a una cuenta
 {: #iamuserinv}
 
 Utilice {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) para invitar a usuarios, cancelar invitaciones y volver a enviar una invitación pendiente a un usuario invitado. Además, puede invitar a un único usuario o a varios usuarios de una vez.
@@ -111,7 +111,7 @@ En función del servicio que seleccione al asignar la política, es posible que 
 
 Para delegar algunas de sus responsabilidades como propietario de cuenta, puede proporcionar un acceso de usuario a los servicios de gestión de la cuenta. Por ejemplo, puede delegar la capacidad de ver información de facturación y uso, de invitar y eliminar usuarios, de gestionar grupos de acceso o de gestionar ID de servicio. Puede proporcionar acceso a todos los servicios de gestión de cuentas o solo a uno.
 
-1. En la página Invitar a usuarios, expanda la sección Servicios. 
+1. En la página Invitar a usuarios, expanda la sección Servicios.
 2. Seleccione **Servicios de gestión de cuentas** en la lista **Asignar acceso a**. 
 3. Seleccione **Todos los servicios de gestión de cuentas** o seleccione un servicio de gestión de cuentas específico.
 4. Seleccione cualquier combinación de roles para asignar el acceso deseado.
@@ -121,10 +121,10 @@ Para delegar algunas de sus responsabilidades como propietario de cuenta, puede 
 
 Puede asignar acceso a todos los servicios dentro de un grupo de recursos o a un único tipo de servicio en un grupo de recursos.
 
-1. En la página Invitar a usuarios, expanda la sección Servicios. 
+1. En la página Invitar a usuarios, expanda la sección Servicios.
 2. Seleccione **Grupo de recursos** en la lista **Asignar acceso a**.
 3. Seleccione un grupo de recursos.
-4. Seleccione un rol de la lista **Asignar acceso a un grupo de recursos** para permitir que el usuario pueda ver el grupo de recursos en la lista de recursos, editar el nombre del grupo de recursos o gestionar el acceso de usuario al grupo. Puede seleccionar **Sin acceso** si desea que el usuario solo tenga acceso al recurso que especifique y no al grupo en el que está organizado. 
+4. Seleccione un rol de la lista **Asignar acceso a un grupo de recursos** para permitir que el usuario pueda ver el grupo de recursos en la lista de recursos, editar el nombre del grupo de recursos o gestionar el acceso de usuario al grupo. Puede seleccionar **Sin acceso** si desea que el usuario solo tenga acceso al recurso que especifique y no al grupo en el que está organizado.
 5. Seleccione un servicio dentro del grupo de recursos o seleccione proporcionar acceso a todos los servicios dentro del grupo seleccionado.
 6. Seleccione cualquier combinación de roles para asignar el acceso deseado. Este acceso solo se aplica a los recursos que ha seleccionado para la política. No proporciona acceso al contenedor actual que es el grupo de recursos.
 
@@ -133,8 +133,8 @@ Puede asignar acceso a todos los servicios dentro de un grupo de recursos o a un
 
 Puede asignar acceso a un único recurso dentro de su cuenta en la instancia.
 
-1. En la página Invitar a usuarios, expanda la sección Servicios. 
-2. Seleccione **Recurso** en la lista **Asignar acceso a**.  
+1. En la página Invitar a usuarios, expanda la sección Servicios.
+2. Seleccione **Recurso** en la lista **Asignar acceso a**. 
 3. Seleccione un servicio.
 4. Seleccione **Todas las regiones actuales** o una región específica si se le solicita.
 5. Seleccione **Todas las instancias de servicio actuales** o seleccione una instancia de servicio específica.
@@ -150,7 +150,7 @@ Para obtener más información específica sobre los roles que se utilizan al as
 
 Cuando invita a nuevos usuarios, puede elegir añadirlos a una organización en la cuenta. Si añade el usuario a una organización, puede asignarle un rol de la organización. A continuación, seleccione proporcionar acceso al usuario invitado a uno o a todos los espacios de la organización seleccionada con un rol de espacio asignado.
 
-1. En la página Invitar a usuarios, expanda la sección Acceso a Cloud Foundry. 
+1. En la página Invitar a usuarios, expanda la sección Acceso a Cloud Foundry.
 2. Seleccione una organización en la que añadir al usuario.
 3. Seleccione un rol de organización para definir el nivel de acceso para la organización seleccionada.
 4. Opcional: pulse **Añadir rol de organización** para especificar un rol adicional.
@@ -169,7 +169,7 @@ Es posible añadir un rol de Cloud Foundry utilizando el mandato de CLI [**`ibmc
 
 Los permisos que se asignan se limitan automáticamente al subconjunto de permisos que posee. Se convierte en usuario padre de cualquier usuario que invite.
 
-1. En la página Invitar a usuarios, expanda la sección Acceso a la infraestructura clásica. 
+1. En la página Invitar a usuarios, expanda la sección Acceso a la infraestructura clásica.
 2. Seleccione un conjunto de permisos para asignar permisos masivos predefinidos.
 
 El acceso a dispositivos se otorga de forma separada después de añadir el usuario. Vaya a la opción de acceso **Infraestructura clásica** para un usuario en la consola.

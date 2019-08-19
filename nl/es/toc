@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="iam" audience="platform" arm="1919690" href="/docs/iam?topic=iam-getstarted" path="iam"}
+{: .toc subcollection="iam" category="platform_services" audience="platform" arm="1919690" href="/docs/iam?topic=iam-getstarted" path="iam"}
 Gestión de acceso e identidades
 
     {: .navgroup id="learn"}
@@ -27,12 +27,9 @@ Gestión de acceso e identidades
     connect_dedicated_id.md
 
     {: .topicgroup}
-    Adición de usuarios a su cuenta
+    Administración de usuarios
         iamuserinv.md
         remove-users.md
-
-    {: .topicgroup}
-    Administración de usuarios
         parentuser.md
         update_status.md
         specific_ip.md

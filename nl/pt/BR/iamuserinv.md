@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-06-25"
+lastupdated: "2019-08-08"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -20,7 +20,7 @@ subcollection: iam
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Convidando usuários
+# Convidando usuários para uma conta
 {: #iamuserinv}
 
 Use o {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) para convidar usuários, cancelar convites e reenviar um convite pendente para um usuário convidado. Além disso, é possível convidar um único usuário ou múltiplos usuários de uma vez.
