@@ -6,11 +6,7 @@ Managing identity and access
 
     {: .navgroup id="learn"}
     quickstart.md
-
-    {: .topicgroup}
-    What is IAM?
-        index.md
-        iam_overview.md
+    index.md
 
     {: .topicgroup}
     User roles and permissions
