@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2019
-lastupdated: "2019-03-05"
+lastupdated: "2019-08-27"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP
 
@@ -47,10 +47,10 @@ When the multifactor authentication account setting is enabled, all IBMid users 
 To enable MFA, you must be the account owner or an administrator for the billing account management service. Enabling MFA does not affect users that are already logged in, as the enforcement of MFA on the account takes effect only at new logins. Make sure you notify your account users that MFA is enabled, and describe the impact to users at their next login.
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Settings**.
-2. Select **Update** for the Account login setting.
+2. Click **Edit** for the Account login setting.
 3. Select **None**, **Non-federated users only**, or **All users** depending on which type of authentication you want to require.
 4. Select the check box to confirm that you understand the impact of requiring MFA for users in your account, if you select the non-federated users only option.
-5. Click **Save**.
+5. Click **Update**.
 
 ## Setting up your TOTP
 {: #setupapp}
@@ -84,4 +84,3 @@ To disable MFA, you must be the account owner or an administrator for the accoun
 2. Select **Edit** for the Account login setting.
 3. Select **None**.
 4. Click **Save**.
-
