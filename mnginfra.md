@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-08-28"
+lastupdated: "2019-09-06"
 
 
 keywords: classic infrastructure access, VPN subnet access, classic infrastructure permissions, device access
@@ -41,16 +41,17 @@ You must be assigned the Manage users classic infrastructure permission and be a
 
   3. To update a user's access to VPN subnets, select **VPN subnets**.
 
-    Use the **Auto-assign** option to set how the user gets access to VPN subnets based on their device access. If this option is set to on, the user is automatically assigned access to all subnets for the devices they already have access to. You can set this option to off to manually select subnets from the list.
-    {: tip}
-
     You must have the following type of access to assign VPN access:
 
     * To update your own access, you must have the VPN Administration permission.
     * To update a user to which you are a parent, you must have the VPN Administration permission.
     * To update any user's access, you must have the VPN Administration permission and an IAM policy on the User management service with Viewer role or higher assigned.
     
+Use the **Auto-assign** option to set how the user gets access to VPN subnets based on their device access. If this option is set to on, the user is automatically assigned access to all subnets for the devices they already have access to. You can set this option to off to manually select subnets from the list.
+{: tip}
+    
      You can define the type of VPN subnets that the user has access to by using the **VPN type** option. If you select **None**, no VPN access can be assigned. If you have the correct access, you can define the type of VPN subnets that the user has access to by using the VPN type option. If you select None, no VPN access can be assigned. 
 
-The PPTP option is deprecated, so if you have this option and clear it, it is no longer available.
-{: deprecated}
+
+ The PPTP option is deprecated, so if you have this option and clear it, it is no longer available.
+ {: deprecated}
