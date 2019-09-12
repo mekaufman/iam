@@ -22,8 +22,11 @@ subcollection: iam
 {:faq: data-hd-content-type='faq'}
 {:note: .note}
 
-# FAQs
+# FAQs for IAM
 {: #iamfaq}
+
+FAQs for {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) might include questions about access control for resources, resource groups, account management, classic infrastructure resources, and access groups. To find all FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
+{: shortdesc}
 
 ## What is {{site.data.keyword.cloud_notm}} Identity and Access Management?
 {: #whatisiam}
