@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-02-21"
+lastupdated: "2019-09-12"
 
 keywords: authorizations, service to service access, access between services
 
@@ -33,7 +33,7 @@ You can only grant the level of access that you have as a user of the target ser
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Authorizations**.
 2. Click **Create**.
-3. Select a source and target service for the authorization. The source service is given access to the selected target service.
+3. Select a source, target service, and optionally, a target service instance for the authorization. The source service is given access to the selected target service.
 4. Select a role to assign access to the source service that accesses the target service.
 5. Click **Authorize**.
 
