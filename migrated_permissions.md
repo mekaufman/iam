@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-06-24"
+lastupdated: "2019-09-12"
 
 keywords: migrated permissions, SoftLayer account permissions, migrated permission access group, migrated classic infrastructure permissions
 
@@ -37,9 +37,9 @@ You can continue to manage these migrated classic infrastructure permissions for
 |-----------------------------------|-------------|-----------------------------------------|----------|
 | View account summary | View the account summary page and invoices and payments.  |  Billing |  Viewer    |
 | Get compliance reports | Request compliance reports. | Billing |    Viewer |
-| Edit company profile | Edit the company profile information. | Billing  | Operator |
-| Update payment details | Update the recurring monthly payment information. | Billing   | Operator |
-| Limit EU case restriction | Enable or disable the EU Supported option to restrict support case data to the European Union.  |   Billing |   Operator   |
+| Edit company profile | Edit the company profile information. | Billing  | Editor |
+| Update payment details | Update the recurring monthly payment information. | Billing   | Editor |
+| Limit EU case restriction | Enable or disable the EU Supported option to restrict support case data to the European Union.  |   Billing |   Not applicable   |
 | Add cases and view orders | Create support cases and view all orders.  | Support Center |   Editor   |
 | Edit cases | Edit any support case. | Support Center |   Editor |
 | Search cases | Search all support cases if the view cases permission is also assigned. | Support Center |  Viewer |
@@ -89,4 +89,3 @@ Three policies are now assigned to your group:
 * A policy for viewing the account summary and all other actions that are associated with the viewer role in the Billing service.
 * A policy for viewing and searching support cases in the account.
 * A policy for viewing all users in the account and all other actions that are associated with the viewer role on the User Management service.
-
