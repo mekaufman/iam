@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-03-08"
 
-keywords: maximum limits, IBM Cloud IAM, limits, maximum policies
+keywords: maximum limits limits, maximum policies, IBM Cloud IAM
 
 subcollection: iam
 
