@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2019-07-24"
+lastupdated: "2019-09-18"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service
 
@@ -42,12 +42,12 @@ To grant another user full access to the account for the purposes of managing us
 ## Actions and roles for account management services
 {: #account-management-actions-roles}
 
-The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users.
+The following tables outline the actions that users can take when they are assigned a specific role for each account management service. Review the information to ensure that you are assigning the correct level of access to your users. 
 
 ### Access groups
 {: #access-groups-account-management}
 
-You can give users access to view, create, edit, and delete access groups in the account by using the access groups account management service.
+You can give users access to view, create, edit, and delete access groups in the account by using the access groups account management service. 
 
 | Roles | Actions |
 |:-------|----------|
@@ -60,7 +60,7 @@ You can give users access to view, create, edit, and delete access groups in the
 ### User management
 {: #user-management-account-management}
 
-You can give users access to view users in an account, invite and remove users, and view and update user profile settings with the user management account management service.
+You can give users access to view users in an account, invite and remove users, and view and update user profile settings with the user management account management service. 
 
 | Roles | Actions |
 |:-------|----------|
@@ -134,7 +134,7 @@ You can give users access to view private services in the catalog or change the 
 ### Enterprise
 {: #enterprise-account-management}
 
-The enterprise service is used for assigning users access to manage an enterprise by creating accounts within the enterprise, assigning accounts to account groups, naming account groups, and more. This type of policy is works only if it is assigned within the enterprise account. 
+You can use the enterprise service to assign users access to to manage an enterprise by creating accounts within the enterprise, assigning accounts to account groups, naming account groups, and more. This type of policy works only if it is assigned within the enterprise account. 
 
 | Roles | Actions |
 |:-------|----------|
@@ -145,6 +145,19 @@ The enterprise service is used for assigning users access to manage an enterpris
 | Usage report viewer | View the enterprise, accounts, and account groups and view usage reports for all accounts in the enterprise. |
 {: caption="Table 7. Roles and example actions for the Enterprise service" caption-side="top"}
 
+
+### License and entitlement 
+{: #license-entitlement-management}
+
+You can use the license and entitlement service to assign users access to manage licenses and entitlements within an account. Any member of an account can view and use an account’s entitlement.  
+ 
+| Roles | Actions |
+|:-------|----------|
+| Viewer |  Not applicable     |
+| Operator |  Not applicable     |
+| Editor |  Editors can create entitlements and view, update, bind, or delete only the entitlements they acquired. |
+| Administrator |  Administrators can create entitlements and view, update, bind, or delete any entitlements in the account. |
+{: caption="Table 8. Roles and example actions for the license and entitlement service" caption-side="top"}
 
 ### All account management services option
 {: #all-account-management}
@@ -158,4 +171,4 @@ To quickly give users a wide-ranging set of account management access, you can a
 | Operator |  All operator role actions for the account management services     |
 | Editor |  All editor role actions for the account management services and the ability to create resource groups    |
 | Administrator |  All administrator role actions for the account management services and the ability to create resource groups   |
-{: caption="Table 8. Roles and example actions for a policy on all identity and access services" caption-side="top"}
+{: caption="Table 9. Roles and example actions for a policy on all identity and access services" caption-side="top"}
