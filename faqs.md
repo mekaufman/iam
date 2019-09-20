@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-08-02"
+lastupdated: "2019-09-19"
 
 keywords: frequently asked question, faq
 
@@ -173,6 +173,12 @@ To delegate the account administrator capabilities, assign the following access:
 * An IAM policy with Administrator role on All account management services, which enables a user to complete tasks like inviting and removing users, managing access groups, managing service IDs, managing private catalog offerings, and track billing and usage.
 * The Super user permission set for classic infrastructure
 * Cloud Foundry manager for all orgs
+
+## What access enables a user to work with a single resource?
+{: #resources-and-rg}
+{: faq}
+
+A user must be assigned an access policy on the specific resource including a at least the Viewer role on the resource group which contains the resource. To assign this type of policy, see [Assigning access to resources](/docs/iam?topic=iam-iammanidaccser#resourceaccess).
 
 ## Where do I manage a user's access to infrastructure? 
 {: #infrastructure-devices}
