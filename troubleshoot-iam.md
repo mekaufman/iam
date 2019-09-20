@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-23"
+lastupdated: "2019-09-20"
 
 ---
 
@@ -22,6 +22,30 @@ lastupdated: "2019-05-23"
 
 General problems with using IAM might include needing access to a resource or account to perform a task or identifying the right type of access to assign users in your account to perform specific tasks. In many cases, you can recover from these problems by following a few easy steps.
 {:shortdesc}
+
+## My user can't access a resource from the Resource list page
+{: #troubleshoot-serviceaccess}
+{: troubleshoot}
+
+A user has an access policy on a specific resource or a service in the account, but they can't access the service from the Resource list page.
+
+When the user selects the service name, the following error message is displayed:
+{: tsSymptoms}
+
+`You do not have access to any organizations, spaces, or resource groups in this region. Check that you have the apporpriate access with your account owner or administrator.`
+
+   
+In addition to access to the type of service or specific resource, the user must also have access to the resource group or space that contains the resource. To access the resource instance within a specific account, a user must be assigned at least the Viewer role or higher on the resource group itself. 
+{: tsCauses}
+
+1. Go to **Manage** &gt; **Access (IAM)**, and select the user's name from **Users** page. 
+2. From the **Access policies** tab, select **Assign access**. 
+3. Select **Assign access within a resource group**. Then, select a specific resource group if you want to limit the user to view or manage only resources in that resource group, or select **All resource groups**. 
+4. Next, select the role that you want the user to have. The Viewer role is sufficient to enable the user to access the resource. 
+{: tsResolve}
+
+For more information about what other actions a user can perform with a policy on the resource group itself, see [Assigning access to resource groups and the resources within them](/docs/resources?topic=resources-bp_resourcegroups#assigning_access_rgs).
+
 
 ## How do I know what access I am assigned?
 {: #troubleshoot-myaccess}
@@ -90,4 +114,3 @@ Your migrated permissions access groups might not have been assigned the correct
 
 As of 20 May 2019, all [migrated permission access groups](/docs/iam?topic=iam-migrated_permissions) have the correct policies assigned for managing billing information and support cases. If you tried to use these groups before this date, the access groups missing equivalent IAM access policies might have caused a mismatch in the assigned access between the SoftLayer permissions and IAM access. This has been resolved. You can go to **Manage** > **Access (IAM)**, and then select **Access groups** to review the users and policies that are assigned to each access group.
 {: tsResolve}
-
