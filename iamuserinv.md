@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2019
 
-lastupdated: "2019-08-08"
+lastupdated: "2019-09-20"
 
 keywords: invite, invite users, invitation access, vpn-only user
 
@@ -70,10 +70,19 @@ curl -X POST \
   -H 'Content-Type: application/json' \
     -d '{
       "users": [
-      {
-        "email": "cloud_api_example_member@ibm.com", "second_user@ibm.com", "third_user@ibm.com",
-        "account_role": "Member"
-      }],
+            {
+              "email": "cloud_api_example_member@ibm.com",
+              "account_role": "Member"
+            },
+            {
+              "email": "second_user@ibm.com",
+              "account_role": "Member"
+            },
+            {
+              "email": "third_user@ibm.com",
+              "account_role": "Member"
+            }
+      ],
       "iam_policy": [
       {
         "roles": [
