@@ -155,6 +155,12 @@ Service and platform roles are two different types of roles:
 
 * Service roles define the ability to perform actions on a service and are specific to every service such as performing API calls or accessing the UI. Service roles are: manager, writer, and reader. For more information about how these roles apply, refer to the specific service's documentation.
 
+## What actions are mapped to each IAM role?
+{: #action-mapping}
+{: faq} 
+
+When you invite a new user or assign a user IAM access, you can view the actions that are associated with each role. Click the **Actions for role** option to view a list of all actions that are mapped to a specific role. By reviewing the mapping of actions to roles, you can confidently know what access you're assigning. 
+
 ## What is the difference between a resource group and Cloud Foundry orgs and spaces?
 {: #groups-organizations}
 {: faq}
