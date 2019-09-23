@@ -82,7 +82,7 @@ You can invite one or multiple users in a single invite. If you invite multiple 
 2. Click **Invite users**.
 3. Enter the email addresses of the users that you want to invite.
 4. (Optional) If you already have access groups set up, click **Add** in the row of the access group to which you want to add the users.
-5. (Optional) Expand the **Manually assign users access** section if you want to assign individual IAM service or resource policies, account management access, Cloud Foundry roles, or classic infrastructure permissions.
+5. (Optional) Expand the **Manually assign users access** section if you want to assign Cloud Foundry roles, classic infrastructure permissions, individual IAM service or resource policies, or account management access.
   1. Select the tile for the type of access to assign, and follow the prompts to define the scope of access. Select all roles that apply.
   
   Click the **Actions for role** option to view a list of all actions that are mapped to a specific role. 
