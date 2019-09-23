@@ -4,9 +4,9 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-05-16"
+lastupdated: "2019-09-23"
 
-keywords: get started with IAM, IAM tutorial, IAM quick start
+keywords: get started with IAM,getting started with Identity and Access Management tutorial,IAM tutorial,IAM quick start,resource group,access group, access policy, inviting users
 
 subcollection: iam
 
@@ -19,13 +19,13 @@ subcollection: iam
 {:tip: .tip}
 {:note: .note}
 
-# Getting started tutorial
+# Getting started with IAM tutorial
 {: #getstarted}
 
-This tutorial is intended to help you get up and running quickly with IBM Cloud Identity and Access Management (IAM) by inviting users to your account and assigning Cloud IAM access to those users.
+Get up and running quickly with {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) by setting up access groups for quick access assignments, inviting users to your account, and managing their access.
 {:shortdesc}
 
-This tutorial is for IAM-enabled resources. For services that don't support creating Cloud IAM policies for managing access, you can use [Cloud Foundry access](/docs/iam?topic=iam-cfaccess#cfaccess) or [classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission).
+This tutorial is for IAM-enabled resources. For services that don't support creating IAM policies for managing access, you can use [Cloud Foundry access](/docs/iam?topic=iam-cfaccess#cfaccess) or [classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission).
 {: note}
 
 ## Before you begin
@@ -38,28 +38,10 @@ If you are new to using IAM, check out the following documentation to understand
 * [IAM access](/docs/iam?topic=iam-userroles) gives a more in-depth review of how access management works by using access policies.
 
 
-## Step 1. Invite users and assign initial access
-{: #step1}
-
-You can invite one or multiple users and set an initial access policy for the users on the invitation. If you invite multiple users in one invitation, the same access is assigned to each of the users. In the access section of the Invite users page, you see only the sections that you have access to assign.
-
-As the account owner, you can assign Cloud IAM roles for users that you invite in the Services section. You can provide access to all resources in a resource group, all resources for a specific service in a resource group, all Identity and Access enabled services in the account, a single resource in the account, or access to account management services:
-
-1. Go to **Manage** &gt; **Access (IAM)**, and select **Users**.
-2. Click **Invite users**.
-3. Specify the email address of the users that you want to invite.
-4. In the **Access** section, expand the **Services** option.
-5. Choose to assign access to a **Resource**, resources within a **Resource group**, or **Account management services**.
-6. Depending on your selection, follow the prompts to specify the wanted access. If you selected the resource group option, you can also provide the user with access to view, edit, or manage access to the resource group by selecting a role for access to the resource group.
-7. If you have permission, you can also assign Cloud Foundry or infrastructure access on the invitation.
-8. Click **Invite users**.
-
-For more information, see [Inviting users and assigning access](/docs/iam?topic=iam-iamuserinv#iamuserinv).
-
-## Step 2. Create access groups
+## Step 1. Create access groups
 {: #step2}
 
-To streamline the process of assigning access to users in your account, you can create access groups. Access groups are a way to organize users and service IDs that you can then easily assign access to by defining a single policy for the entire group.
+To streamline the process of assigning access to users in your account, you can create access groups. Access groups are a way to organize users and service IDs so that you can then easily assign access to by adding one or more policies for the entire group. Then, you can add or remove users and service IDs as needed instead of assigning individual access to each user.
 
 ### Set up your groups
 {: #group_setup}
@@ -82,20 +64,40 @@ Next, continue to set up your group by adding users or service IDs:
 ### Assign access to your groups
 {: #group_access}
 
-After you create your groups, you can assign access to all entities within the group with a single policy or multiple policies.
+After you create your access groups, you can assign access to all members of the group with one or more policies.
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
 2. Select the name of the group that you want to assign access for.
-3. From the **Access policies** tab, click **Assign access** to set up an access policy. Repeat as needed to assign more access.
+3. From the **Access policies** tab, click **Assign access** to assign an access policy. Repeat as needed to assign more access.
 
-By organizing resources in resource groups and users in access groups, you can assign a group of users access to a group of resources with a single policy, which reduces the overall number of policies you need to manage.
+By organizing resources in resource groups and users in access groups, you can assign a group of users access to a group of resources with a single policy, which reduces the overall number of policies that you need to manage.
 {: tip}
+
+## Step 2. Invite users 
+{: #step1}
+
+You can invite one or multiple users in a single invite. If you invite multiple users in one invitation, the same access is assigned to each user. However, you can invite users to your account with no access, and assign them access later.
+
+1. Go to **Manage** &gt; **Access (IAM)**, and select **Users**.
+2. Click **Invite users**.
+3. Enter the email addresses of the users that you want to invite.
+4. (Optional) If you already have access groups set up, click **Add** in the row of the access group to which you want to add the users.
+5. (Optional) Expand the **Manually assign users access** section if you want to assign individual IAM service or resource policies, account management access, Cloud Foundry roles, or classic infrastructure permissions.
+  1. Select the tile for the type of access to assign, and follow the prompts to define the scope of access. Select all roles that apply.
+  
+  Click the **Actions for role** option to view a list of all actions that are mapped to a specific role. 
+  {: tip}
+  
+  2. Click **Add** to save the access assignment.
+6. After you add all the necessary access and you're ready to send the invitation, Click **Invite**.
+
+For more information, see [Inviting users to an account](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 
 ## Step 3. Manage access for existing users
 {: #user_access_manage}
 
-After you invite users, assign initial access, and create your access groups, you might want to assign more access or edit the initial access that you assigned to ensure all users and groups in your account have the wanted level of access.
+After you invite users, you might want to assign more access or edit the initial access that you assigned to ensure all users and access groups in your account have the correct level of access.
 
 ### Assigning new access
 {: #new_access}
@@ -107,11 +109,16 @@ To assign a new access policy, complete the following steps:
 3. Click **Access policies**.
 4. Click **Assign access**.
 5. Choose how you want to assign access:
-    * Select **Assign access within a resource group** to assign access to all resources within a group or to just resources for a specific service within a group. You can also provide the user with access to view, edit, or manage access to the resource group by selecting a role for access to the resource group. Select **No access** if you want the user to have only access to the specified resource and not the group that it's organized in.
+    * Select **Assign access within a resource group** to assign access to all resources within a group or to just resources for a specific service within a group. You can also provide the user with access to view, edit, or manage access to the resource group by selecting a role for access to the resource group. 
+    
+  Assign the Viewer role or higher for the resource group that contains the resource to ensure that the user can access the     resource from the Resource list page.
+  {:tip}
+    
     * Select **Assign access to resources** to assign access to all Identity and Access enabled resources across the account, all resources of a specific service across the account, a single instance, or a single resource within a specific service instance.
     * Select **Assign access to Account management services** to assign access to all account management services or just one account management service.
-5. Select any combination of roles to define the scope of access. For more information, see [Cloud IAM roles](/docs/iam?topic=iam-userroles#iamusermanrol).
-6. Click **Assign**.
+    
+6. Select any combination of roles or permissions to define the scope of access. For more information, see [Cloud IAM roles](/docs/iam?topic=iam-iamusermanrol#iamusermanrol).
+7. Click **Assign**.
 
 
 ### Editing existing access
@@ -131,4 +138,4 @@ You can remove access from a user by clicking the **Remove** option from the **A
 ## Next steps
 {: #next}
 
-Learn what else you can do with Cloud IAM by checking out the [Cloud IAM features](/docs/iam?topic=iam-iamoverview#features) list.
+Learn what else you can do with {{site.data.keyword.Bluemix_notm}} IAM by checking out the [Cloud IAM features](/docs/iam?topic=iam-iamoverview#features) list.

@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-09-19"
+lastupdated: "2019-09-23"
 
 keywords: frequently asked question, faq
 
@@ -155,6 +155,12 @@ Service and platform roles are two different types of roles:
 
 * Service roles define the ability to perform actions on a service and are specific to every service such as performing API calls or accessing the UI. Service roles are: manager, writer, and reader. For more information about how these roles apply, refer to the specific service's documentation.
 
+## What actions are mapped to each IAM role?
+{: #action-mapping}
+{: faq} 
+
+When you invite a new user or assign a user IAM access, you can view the actions that are associated with each role. Click the **Actions for role** option to view a list of all actions that are mapped to a specific role. By reviewing the mapping of actions to roles, you can confidently know what access you're assigning. 
+
 ## What is the difference between a resource group and Cloud Foundry orgs and spaces?
 {: #groups-organizations}
 {: faq}
@@ -203,17 +209,11 @@ An account owner can view all users in the account and choose how users can view
 * **Unrestricted view**: All users in your account can view everyone else in the account.
 * **Restricted view**: Limits the ability to view users on the Users page to only those who have been granted explicit access, along with those who have visibility of other users through a shared Cloud Foundry org or a classic infrastructure user hierarchy relationship.
 
-
 ## Do I need to assign access to a user when I invite them to the account?
 {: #account-invite}
 {: faq}
 
-Yes. You must assign a user access within one of the three access management systems:
-
-* An IAM access policy on a resource, resource group, or account management services
-* A Cloud Foundry role for an org and space
-* A permission set for classic infrastructure
-
+No. You can invite users, and then assign access later.
 
 ## How do I add authentication into my web and mobile apps?
 {: #appid}
