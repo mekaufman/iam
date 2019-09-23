@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-09-19"
+lastupdated: "2019-09-23"
 
 keywords: frequently asked question, faq
 
@@ -203,17 +203,11 @@ An account owner can view all users in the account and choose how users can view
 * **Unrestricted view**: All users in your account can view everyone else in the account.
 * **Restricted view**: Limits the ability to view users on the Users page to only those who have been granted explicit access, along with those who have visibility of other users through a shared Cloud Foundry org or a classic infrastructure user hierarchy relationship.
 
-
 ## Do I need to assign access to a user when I invite them to the account?
 {: #account-invite}
 {: faq}
 
-Yes. You must assign a user access within one of the three access management systems:
-
-* An IAM access policy on a resource, resource group, or account management services
-* A Cloud Foundry role for an org and space
-* A permission set for classic infrastructure
-
+No. You can invite users, and then assign access later.
 
 ## How do I add authentication into my web and mobile apps?
 {: #appid}
