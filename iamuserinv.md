@@ -52,13 +52,13 @@ To invite users, complete the following steps:
   * Add users to access groups. Click **Add** for each access group that you want the users to belong to. 
   * Manually assign users access. Expand this section to assign individual IAM access policies, Cloud Foundry roles, or classic infrastructure permissions.
      * Select **Cloud Foundry**, choose an organization, then select a region to select a specific space, and assign a space role. An organization and space role are both required to add the access assignment to the invite.
+     * Select **Classic infrastructure**, and then choose from the three permission sets.
      * Select **IAM services**, and then select the option for all services or just a specific service. Next, you can scope the access to the entire account, all resource groups, or just one resource group. Then, select all roles that apply. To view what actions are mapped to each role, click the **Actions for role** option to view a list of all actions that are mapped to a specific role. 
      
          If you select the **Account** scope for the access policy, the user must already have the Viewer role or higher on the resource group or groups that contain the resources you want the user to have access to. Without a role on a resource group, the user can't work with the resource from the Resource list page in the console.
          {: tip}
      
      * Select **Account management**, and then choose from the all account management services option or select a specific service. Then, select all roles that apply.
-     * Select **Classic infrastructure**, and then choose from the three permission sets.
 5. Select **Add** to save the access assignment to the invitation.
 6. After you add all the necessary access assignments, click **Invite**.
 
