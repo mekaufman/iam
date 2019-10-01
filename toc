@@ -6,6 +6,7 @@ Managing identity and access
 
     {: .navgroup id="learn"}
     quickstart.md
+    manageaccess.md
     index.md
 
     {: .topicgroup}
