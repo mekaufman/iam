@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2019
-lastupdated: "2019-03-05"
+lastupdated: "2019-10-02"
 
 keywords: classic infrastructure API keys, classic infrastructure API, SoftLayer API key
 
@@ -15,6 +15,7 @@ subcollection: iam
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:new_window: target="_blank"}
+{:note: .note}
 
 # Managing classic infrastructure API keys
 {: #classic_keys}
@@ -26,9 +27,11 @@ To manage your classic infrastructure API keys, go to **Manage** > **Access (IAM
 
   * To create a classic infrastructure API key, click **Create a classic infrastructure key** in the API keys section.
 
-     Copy or download the API key, and save it in a safe place. You can retrieve the details of the API key later by using the **View details** option from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.
+     Copy or download the API key, and save it in a safe place. You can retrieve the details of the API key later.
 
      When you create a classic infrastructure API key, you can use the IP address restrictions feature on the **User details** page.
      {: tip}
+     
+  * To get the details of a classic infrastructure API key after you create it, click the **View details** option from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu. You can copy the API key value or get your API user name, which is also called your classic infrastructure user name.
 
   * To delete a classic infrastructure API key, select **Delete** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu on the row for the API key in the API keys section.
