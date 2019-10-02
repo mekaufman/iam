@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-05-14"
+lastupdated: "2019-10-02"
 
 keywords: SoftLayer permissions, classic infrastructure access, classic infrastructure permission, migrated SoftLayer permissions, migrated permission access group
 
@@ -17,6 +17,7 @@ subcollection: iam
 {:screen: .screen}
 {:important: .important}
 {:new_window: target="_blank"}
+{:tip: .tip}
 
 # Classic infrastructure permissions
 {: #infrapermission}
@@ -28,10 +29,12 @@ When you invite someone to the account, only you, the account owner, or a user w
 
 Extra permissions can be set after the user accepts the invitation. For example, the initial permission set assigned on the invitation doesn't grant access to devices. So, you must grant device access after the user accepts the invitation. For more information, see [Managing classic infrastructure access](/docs/iam?topic=iam-mngclassicinfra#mngclassicinfra).
 
+Support center account management access is recommended for users working with classic infrastructure resources. To perform many tasks when working with classic infrastructure resources, such as creating or deleting a virtual server instance, users must have access to work with support cases. For more information about assigning this type of access, see [Assigning access to account management services](/docs/iam?topic=iam-account-services).
+{: tip}
+
 The following graphic shows how classic infrastructure permissions are assigned per user. You can grant each user access to a classic infrastructure service or device by selecting from the granular permission options to customize each user's access.
 
 ![Classic infrastructure access](images/ClassicIaaS.svg "Assigning classic infrastructure access by selecting a user, device, or service, then any combination of granular permissions"){: caption="Figure 1. Assigning classic infrastructure access by selecting a user, device, or service, then any combination of granular permissions" caption-side="bottom"}
-
 
 ## Migrated classic infrastructure permissions
 {: #predefined}
