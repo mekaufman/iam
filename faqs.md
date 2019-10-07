@@ -6,7 +6,7 @@ copyright:
 
   years: 2018, 2019
 
-lastupdated: "2019-09-23"
+lastupdated: "2019-10-07"
 
 keywords: frequently asked question, faq
 
@@ -185,20 +185,6 @@ To delegate the account administrator capabilities, assign the following access:
 {: faq}
 
 A user must be assigned an access policy on the specific resource including a at least the Viewer role on the resource group which contains the resource. To assign this type of policy, see [Assigning access to resources](/docs/iam?topic=iam-iammanidaccser#resourceaccess).
-
-## Where do I manage a user's access to infrastructure? 
-{: #infrastructure-devices}
-{: faq}
-
-Access for classic infrastructure starts with the user. For more information, see [Managing classic infrastructure access](/docs/iam?topic=iam-mngclassicinfra).
-
-If you need to assign access to IAM-enabled infrastructure services, such as {{site.data.keyword.vpc_full}}, you assign access to a user or access group from the **Access policies** tab.
-
-## How do I manage access for users previously assigned billing and support permissions in my SoftLayer account?
-{: #migrated-permissions-faq}
-{: faq}
-
-All permissions that were previously assigned in your SoftLayer account can be managed in the {{site.data.keyword.Bluemix_notm}} console. Account permissions for managing billing information and support cases are now available in [migrated permissions access groups](/docs/iam?topic=iam-migrated_permissions). All users who were previously assigned these permissions in your SoftLayer account were migrated to these access groups, which are assigned the same level of access by using an IAM policy on the access group.
 
 ## Can every user in my account see all the other users?
 {: #users}
