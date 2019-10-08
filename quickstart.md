@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2019
 
-lastupdated: "2019-09-23"
+lastupdated: "2019-10-08"
 
 keywords: get started with IAM,getting started with Identity and Access Management tutorial,IAM tutorial,IAM quick start,resource group,access group, access policy, inviting users
 
@@ -34,7 +34,7 @@ This tutorial is for IAM-enabled resources. For services that don't support crea
 If you are new to using IAM, check out the following documentation to understand more about the features, concepts, and components of the access management system:
 
 * [IBM Cloud Identity and Access Management](/docs/iam?topic=iam-iamoverview) provides a quick overview of what IAM is in {{site.data.keyword.Bluemix_notm}}, the available features, and links to available CLI and API docs.
-* [IAM concepts](/docs/iam?topic=iam-iamconcepts) outlines the high-level concepts in IAM that can help you understand the different components as you get started.
+* [IAM concepts](/docs/iam?topic=iam-iamoverview) outlines the high-level concepts in IAM that can help you understand the different components as you get started.
 * [IAM access](/docs/iam?topic=iam-userroles) gives a more in-depth review of how access management works by using access policies.
 
 
