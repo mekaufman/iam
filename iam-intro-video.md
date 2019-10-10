@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated:  "2019-10-08"
+lastupdated:  "2019-10-10"
 
 keywords: IAM, what is IAM, Identity and Access Management video, introduction to IAM
 
@@ -22,7 +22,7 @@ subcollection: iam
 # Video - {{site.data.keyword.cloud_notm}} IAM introduction video
 {: #show_me_video}
 
-With {{site.data.keyword.cloud}} Identity and Access Management (IAM), you can add and remove users to your account, create access groups for a quick access assignment process, assign individual access to all types of resources including IAM, Cloud Foundry, and classic infrastructure, and more.
+With {{site.data.keyword.cloud}} Identity and Access Management (IAM), you can add and remove users to your account, assign users access, and more. Create access groups to quickly assign groups of users the same access, or assign individual access to all types of resources, including IAM, Cloud Foundry, and classic infrastructure.
 {: shortdesc}
 
 <div class="embed-responsive embed-responsive-16by9" data-hd-video="video">
