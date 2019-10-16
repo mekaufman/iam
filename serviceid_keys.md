@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2019
-lastupdated: "2019-05-01"
+lastupdated: "2019-10-16"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -28,6 +28,9 @@ Service IDs are created to enable access to your {{site.data.keyword.Bluemix_not
 Once you create a service ID, you can start creating API keys and assigning service policies. Each policy specifies the level of access that is allowed when the API key is used to authenticate with your services. For more information about creating a service ID and assigning policies, see [Creating and working with service IDs](/docs/iam?topic=iam-serviceids#serviceids). For details on the CLI commands that are used to manage service ID API keys, see [Managing IAM access, API keys, service IDs, and access groups](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_iam).
 
 Each API key that is associated with a service ID inherits the policy that has been assigned to the service ID. For example, if you want one application to be able to simply view resources within a service, then you need to use an API key associated with a service ID that has a policy assigned with the Viewer role. And, if you want another application to be able to have full access within a service, then you need to use an API key associated with a second service ID that has a policy assigned with the Administrator role.
+
+All users have access to create a service ID in an account to which they are a member. However, to allow a user in an account access to view or manage a service ID that they did not create themselves, they are required to have access with a role on the IAM identity service account management service. For more information, see [IAM identity service](docs/iam?topic=iam-account-services#identity-service-account-management).
+{: tip}
 
 For more information, see [Examples of how to use a service ID](/docs/iam?topic=iam-serviceids#examples_serviceid).
 
